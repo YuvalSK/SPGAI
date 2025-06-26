@@ -93,7 +93,7 @@ pca = PCA(n_components=10)
 pca_data = pca.fit_transform(scaled_data)
 
 # 2-tSNE
-tsne1 = TSNE(n_jobs=4, #if openTSNE
+tsne1 = TSNE(n_jobs=4,
             n_components=2,
             perplexity=30, 
             learning_rate=200, 
@@ -103,7 +103,7 @@ tsne1 = TSNE(n_jobs=4, #if openTSNE
             verbose=True)
 tsne1_result = tsne1.fit(pca_data)
 
-tsne2 = TSNE(n_jobs=4, #if openTSNE
+tsne2 = TSNE(n_jobs=4,
             n_components=2,
             perplexity=50, 
             learning_rate=200, 
@@ -112,7 +112,7 @@ tsne2 = TSNE(n_jobs=4, #if openTSNE
             random_state=1111, 
             verbose=True)
 tsne2_result = tsne2.fit(pca_data)
-#tsne_result = tsne.fit_transform(pca_data)
+#tsne_result = tsne.fit_transform(pca_data) # if not openTSNE
 
 # 3-UMAP
 umap1_model = umap.UMAP(n_jobs=4,
@@ -171,14 +171,15 @@ axs[0,1].set_xlabel(f'PC3 [A.U.] ({pca.explained_variance_ratio_[2]:.1%} varianc
 
 
 # t-SNE plot
-axs[1,0].scatter(tsne1_result[:, 0], tsne1_result[:, 1],     
+axs[1,0].scatter(tsne_result[:, 0], tsne_result[:, 1],     
                facecolors='none',
                edgecolors='gray', 
                s=10,
                alpha=0.7)
 axs[1,0].set_xlabel('t-SNE 1 [A.U.]')
 axs[1,0].set_ylabel('t-SNE 2 [A.U.]')
-axs[1,0].set_title('t-SNE with perplexity = 30 [A.U.]')
+axs[1,0].set_title('t-SNE with perplexity = 30')
+
 
 axs[1,1].scatter(tsne2_result[:, 0], tsne2_result[:, 1],     
                facecolors='none',
@@ -187,7 +188,7 @@ axs[1,1].scatter(tsne2_result[:, 0], tsne2_result[:, 1],
                alpha=0.7)
 axs[1,1].set_xlabel('t-SNE 1 [A.U.]')
 #axs[1,1].set_ylabel('t-SNE 2 [A.U.]')
-axs[1,1].set_title('t-SNE with perplexity = 50 [A.U.]')
+axs[1,1].set_title('t-SNE with perplexity = 50')
 
 
 # UMAP plot
@@ -198,16 +199,16 @@ axs[2,0].scatter(umap1_result[:, 0], umap1_result[:, 1],
                alpha=0.7)
 axs[2,0].set_xlabel('UMAP 1 [A.U.]')
 axs[2,0].set_ylabel('UMAP 2 [A.U.]')
-axs[2,0].set_title('UMAP with n_neighbors = 15 [A.U.]')
+axs[2,0].set_title('UMAP with n_neighbors = 15')
 
-axs[2,1].scatter(umap2_result[:, 0], umap2_result[:, 1], 
+axs[1,1].scatter(umap2_result[:, 0], umap2_result[:, 1], 
                facecolors='none',
                edgecolors='gray',
                s=10,
                alpha=0.7)
-axs[2,1].set_xlabel('UMAP 1 [A.U.]')
-#axs[2,1].set_ylabel('UMAP 2 [A.U.]')
-axs[2,1].set_title('UMAP with n_neighbors = 150 [A.U.]')
+axs[1,1].set_xlabel('UMAP 1 [A.U.]')
+axs[1,1].set_ylabel('UMAP 2 [A.U.]')
+axs[1,1].set_title('UMAP with n_neighbors = 150')
 
 
 plt.tight_layout()
