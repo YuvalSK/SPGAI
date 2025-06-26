@@ -117,7 +117,7 @@ umap_model = umap.UMAP(n_jobs=4,
 
 umap_result = umap_model.fit_transform(pca_data)
 
-fig, axs = plt.subplots(3, 3, figsize=(18, 5))
+fig, axs = plt.subplots(2, 3, figsize=(18, 5))
 
 # PCA plots
 pca = PCA(n_components=3)
@@ -158,13 +158,13 @@ axs[1,0].set_xlabel('t-SNE 1 [A.U.]')
 axs[1,0].set_ylabel('t-SNE 2 [A.U.]')
 
 # UMAP plot
-axs[1,1].scatter(umap_result[:, 0], umap_result[:, 1], 
+axs[1,2].scatter(umap_result[:, 0], umap_result[:, 1], 
                facecolors='none',
                edgecolors='gray',
                s=10,
                alpha=0.7)
-axs[1,1].set_xlabel('UMAP 1 [A.U.]')
-axs[1,1].set_ylabel('UMAP 2 [A.U.]')
+axs[1,2].set_xlabel('UMAP 1 [A.U.]')
+axs[1,2].set_ylabel('UMAP 2 [A.U.]')
 
 plt.tight_layout()
 #plt.show()
