@@ -56,7 +56,6 @@ dataset.setup(
 #print("Image shape:", img.shape)
 #dataset.intensity.to_csv(f"{src_name}.csv")
 
-#### dimensionality reduction analysis
 # --- Corr ---
 spearman_corr = dataset.intensity.corr(method='spearman')
 plt.figure(figsize=(16, 12))
@@ -66,7 +65,11 @@ sns.heatmap(spearman_corr, cmap='coolwarm',
 plt.title('Spearman Correlation Heatmap')
 plt.savefig(f"Figures/{src_name}-spearman.png", dpi=600)
  
-#normalization Z + arcsinh (as in Harpaz 2022)     
+
+#### dimensionality reduction analysis
+    #normalization (as in Harpaz 2022):
+    ## 1) Z transform
+    ## 2) arcsinh     
 scaler = StandardScaler()
 z_data = scaler.fit_transform(dataset.intensity)
 
