@@ -9,6 +9,8 @@ Created on Wed Jun 18 18:44:49 2025
 from ai4bmr_datasets import Danenberg2022, Jackson2020, Keren2018
 from pathlib import Path
 
+import numpy as np
+import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 #from sklearn.manifold import TSNE
@@ -63,11 +65,13 @@ sns.heatmap(spearman_corr, cmap='coolwarm',
             vmax = 1, vmin=-1)
 plt.title('Spearman Correlation Heatmap')
 plt.savefig(f"Figures/{src_name}-spearman.png", dpi=600)
-## the raw markers are mostly anticorrelated, not sure why
  
-#change to arcsinh + Ztransform (as in Harpaz 2022)     
+#normalization Z + arcsinh (as in Harpaz 2022)     
 scaler = StandardScaler()
-scaled_data = scaler.fit_transform(dataset.intensity)
+z_data = scaler.fit_transform(dataset.intensity)
+
+scFac=5
+scaled_data=np.arcsinh(z_data/scFac)
 
 pca = PCA()
 pca_result = pca.fit(scaled_data)
@@ -84,16 +88,15 @@ plt.axvline(x=elbow1, c='r', linestyle="dashed", label=f"{explained_variance[:el
 elbow2 = 10
 plt.axvline(x=elbow2, c='r', linestyle="dotted", label=f"{explained_variance[:elbow2].sum()*100:.1f}% variation by {elbow2} PCs")
 plt.legend()
-plt.savefig(f"Figures/{src_name}-pca-scree.png", dpi=600)
+plt.savefig(f"Figures/{src_name}-pca-scree-norm.png", dpi=600)
 ## with elbow methods, seems 3 components are not bad => ~30% of variance
-
 
 # reducing dimensions of data
 pca = PCA(n_components=10)
 pca_data = pca.fit_transform(scaled_data)
 
 # 2-tSNE
-tsne1 = TSNE(n_jobs=4,
+tsne1 = TSNE(n_jobs=2,
             n_components=2,
             perplexity=30, 
             learning_rate=200, 
@@ -103,7 +106,7 @@ tsne1 = TSNE(n_jobs=4,
             verbose=True)
 tsne1_result = tsne1.fit(pca_data)
 
-tsne2 = TSNE(n_jobs=4,
+tsne2 = TSNE(n_jobs=2,
             n_components=2,
             perplexity=50, 
             learning_rate=200, 
@@ -115,24 +118,22 @@ tsne2_result = tsne2.fit(pca_data)
 #tsne_result = tsne.fit_transform(pca_data) # if not openTSNE
 
 # 3-UMAP
-umap1_model = umap.UMAP(n_jobs=4,
+umap1_model = umap.UMAP(n_jobs=2,
                        n_components=2, 
                        n_neighbors=15, 
                        min_dist=0.05, 
                        n_epochs=200,
                        metric='euclidean',
-                       random_state=1111,
                        verbose=True)
 
 umap1_result = umap1_model.fit_transform(pca_data)
 
-umap2_model = umap.UMAP(n_jobs=4,
+umap2_model = umap.UMAP(n_jobs=2,
                        n_components=2, 
-                       n_neighbors=150, 
+                       n_neighbors=45, 
                        min_dist=0.05, 
                        n_epochs=200,
                        metric='euclidean',
-                       random_state=1111,
                        verbose=True)
 
 umap2_result = umap2_model.fit_transform(pca_data)
@@ -208,11 +209,11 @@ axs[1,1].scatter(umap2_result[:, 0], umap2_result[:, 1],
                alpha=0.7)
 axs[1,1].set_xlabel('UMAP 1 [A.U.]')
 axs[1,1].set_ylabel('UMAP 2 [A.U.]')
-axs[1,1].set_title('UMAP with n_neighbors = 150')
+axs[1,1].set_title('UMAP with n_neighbors = 45')
 
 
 plt.tight_layout()
 #plt.show()
-plt.savefig(f'Figures/{src_name}-exploration.png', dpi=600)
+plt.savefig(f'Figures/{src_name}-exploration-norm.png', dpi=600)
 
 
