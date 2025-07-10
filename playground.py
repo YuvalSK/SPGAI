@@ -45,7 +45,13 @@ dataset.setup(
     metadata_version="published", load_metadata=True
 )
 
-#### example properties:
+dataset.intensity.head()
+dataset.metadata.head()
+
+dataset.intensity.to_parquet(f"{src_name}-intensity.parquet", engine="pyarrow", compression="snappy")
+dataset.metadata.to_parquet(f"{src_name}-metadata.parquet", engine="pyarrow", compression="snappy")
+
+#### example properties of the dataset:
 #print(len(dataset.sample_ids))    # List of sample IDs
 #print(dataset.images.keys()) # Dictionary of images
 #print(dataset.masks.keys())  # Dictionary of masks
@@ -54,10 +60,14 @@ dataset.setup(
 #sample_id = dataset.sample_ids[0]  # get the first sample ID
 #img = dataset.images[sample_id].data
 #print("Image shape:", img.shape)
-#dataset.intensity.to_csv(f"{src_name}.csv")
+
+#to load the data
+#df = pd.read_parquet(f"{src_name}.parquet", engine="pyarrow")
+#df_meta = pd.read_parquet(f"{src_name}-metadata.parquet", engine="pyarrow")
+#print(set(df_meta.label))
 
 # --- Corr ---
-spearman_corr = dataset.intensity.corr(method='spearman')
+spearman_corr = df.corr(method='spearman')
 plt.figure(figsize=(16, 12))
 sns.heatmap(spearman_corr, cmap='coolwarm',
             annot_kws={"size": 3},
@@ -67,12 +77,13 @@ plt.savefig(f"Figures/{src_name}-spearman.png", dpi=600)
  
 
 #### dimensionality reduction analysis
-    #normalization (as in Harpaz 2022):
-    ## 1) Z transform
-    ## 2) arcsinh     
-scaler = StandardScaler()
-z_data = scaler.fit_transform(dataset.intensity)
+#normalization (as in Harpaz 2022):
 
+## 1) Z transform
+scaler = StandardScaler()
+z_data = scaler.fit_transform(df)
+
+## 2) arcsinh     
 scFac=5
 scaled_data=np.arcsinh(z_data/scFac)
 
@@ -80,45 +91,80 @@ pca = PCA()
 pca_result = pca.fit(scaled_data)
 explained_variance = pca.explained_variance_ratio_
 
-# Scree plot
-plt.figure(figsize=(10, 6))
-plt.plot(range(1, len(explained_variance) + 1), explained_variance, 'o-', linewidth=2)
-plt.xlabel('PCs')
-plt.ylabel('Explained Variation')
-plt.grid(True)
-elbow1 = 3
-plt.axvline(x=elbow1, c='r', linestyle="dashed", label=f"{explained_variance[:elbow1].sum()*100:.1f}% variation by {elbow1} PCs")
-elbow2 = 10
-plt.axvline(x=elbow2, c='r', linestyle="dotted", label=f"{explained_variance[:elbow2].sum()*100:.1f}% variation by {elbow2} PCs")
-plt.legend()
-plt.savefig(f"Figures/{src_name}-pca-scree-norm.png", dpi=600)
-## with elbow methods, seems 3 components are not bad => ~30% of variance
+def pca_plots(data):  
+    fig, axs = plt.subplots(2, 1, figsize=(10, 6))
+    pca = PCA(n_components=2)
+    pca_result = pca.fit_transform(scaled_data)
+    
+    ########## bottom plot ########## 
+    axs[1].plot(range(1, len(explained_variance) + 1), explained_variance, 
+                color='gray')
+    
+    cumulative_variance = explained_variance.cumsum()
+    axs[1].plot(range(1, len(cumulative_variance) + 1),
+        cumulative_variance,
+        color='k',
+        linestyle='--',
+        marker='o',
+    )
+    
+    axs[1].set_xlabel('PCs')
+    axs[1].set_ylabel('Explained Variation')
+    elbow1 = 2
+    axs[1].axvline(x=elbow1, c='r', linestyle="dashed", label=f"{explained_variance[:elbow1].sum()*100:.1f}% variation by {elbow1} PCs")
+    axs[1].legend(loc='center right')
+    
+    ########## top plot ########## 
+    palette = {'epithelial': '#1f77b4', 'non-epithelial': '#ff7f0e'}  # blue & orange
+    df_meta['super_category'] = df_meta['is_epithelial'].map({1: 'epithelial', 0: 'non-epithelial'})
+    
+    for category in ['epithelial', 'non-epithelial']:
+        mask = df_meta['super_category'].eq(category).to_numpy(dtype=bool)
+        axs[0].scatter(pca_result[mask, 0], pca_result[mask, 1],
+                       alpha=0.5,
+                       label=category,
+                       color=palette[category])
+    
+    axs[0].legend(loc='upper right')
+    axs[0].set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%})')
+    axs[0].set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%})')
+    
+    plt.tight_layout()
+    plt.savefig(f"Figures/{src_name}-pca-norm-main.png", dpi=600)
+
+pca_plots(scaled_data)
 
 # reducing dimensions of data
 pca = PCA(n_components=10)
 pca_data = pca.fit_transform(scaled_data)
+
 
 # 2-tSNE
 tsne1 = TSNE(n_jobs=2,
             n_components=2,
             perplexity=30, 
             learning_rate=200, 
-            n_iter=500, 
+            n_iter=300, 
             metric="euclidean",
             random_state=1111, 
             verbose=True)
 tsne1_result = tsne1.fit(pca_data)
 
+df = pd.DataFrame(tsne1_result)
+df.to_csv(f'{src_name}-dm-tsne1.csv')
+
 tsne2 = TSNE(n_jobs=2,
             n_components=2,
             perplexity=50, 
             learning_rate=200, 
-            n_iter=500, 
+            n_iter=300, 
             metric="euclidean",
             random_state=1111, 
             verbose=True)
 tsne2_result = tsne2.fit(pca_data)
-#tsne_result = tsne.fit_transform(pca_data) # if not openTSNE
+
+df = pd.DataFrame(tsne2_result)
+df.to_csv(f'{src_name}-dm-tsne2.csv')
 
 # 3-UMAP
 umap1_model = umap.UMAP(n_jobs=2,
@@ -131,6 +177,9 @@ umap1_model = umap.UMAP(n_jobs=2,
 
 umap1_result = umap1_model.fit_transform(pca_data)
 
+df = pd.DataFrame(umap1_result)
+df.to_csv(f'{src_name}-dm-umap1.csv')
+
 umap2_model = umap.UMAP(n_jobs=2,
                        n_components=2, 
                        n_neighbors=45, 
@@ -141,82 +190,50 @@ umap2_model = umap.UMAP(n_jobs=2,
 
 umap2_result = umap2_model.fit_transform(pca_data)
 
+df = pd.DataFrame(umap2_result)
+df.to_csv(f'{src_name}-dm-umap2.csv')
+
 #visualization
-fig, axs = plt.subplots(2, 3, figsize=(18, 5))
-
-# PCA plots
-pca = PCA(n_components=3)
-pca_result = pca.fit_transform(scaled_data)
-
-axs[0,0].scatter(pca_result[:, 0], pca_result[:, 1], 
-               facecolors='none',
-               edgecolors='gray',
-               s=10,
-               alpha=0.7)
-axs[0,0].set_xlabel(f'PC1 [A.U.] ({pca.explained_variance_ratio_[0]:.1%} variance)')
-axs[0,0].set_ylabel(f'PC2 [A.U.] ({pca.explained_variance_ratio_[1]:.1%} variance)')
-
-'''
-axs[0,1].scatter(pca_result[:, 0], pca_result[:, 2], 
-               facecolors='none',
-               edgecolors='gray',
-               s=10,
-               alpha=0.7)
-axs[0,1].set_xlabel(f'PC1 [A.U.] ({pca.explained_variance_ratio_[0]:.1%} variance)')
-axs[0,1].set_ylabel(f'PC3 [A.U.] ({pca.explained_variance_ratio_[2]:.1%} variance)')
-'''
-axs[0,1].scatter(pca_result[:, 2], pca_result[:, 1], 
-               facecolors='none',
-               edgecolors='gray',
-               s=10,
-               alpha=0.7)
-axs[0,1].set_ylabel(f'PC2 [A.U.] ({pca.explained_variance_ratio_[1]:.1%} variance)')
-axs[0,1].set_xlabel(f'PC3 [A.U.] ({pca.explained_variance_ratio_[2]:.1%} variance)')
-
+fig, axs = plt.subplots(2, 2, figsize=(18, 5))
 
 # t-SNE plot
-axs[1,0].scatter(tsne_result[:, 0], tsne_result[:, 1],     
+axs[0,0].scatter(tsne1_result[:, 0], tsne1_result[:, 1],     
                facecolors='none',
                edgecolors='gray', 
-               s=10,
-               alpha=0.7)
-axs[1,0].set_xlabel('t-SNE 1 [A.U.]')
-axs[1,0].set_ylabel('t-SNE 2 [A.U.]')
-axs[1,0].set_title('t-SNE with perplexity = 30')
+               alpha=0.2)
+axs[0,0].set_xlabel('t-SNE 1 [A.U.]')
+axs[0,0].set_ylabel('t-SNE 2 [A.U.]')
+axs[0,0].set_title('t-SNE with perplexity = 30')
 
-
-axs[1,1].scatter(tsne2_result[:, 0], tsne2_result[:, 1],     
+axs[0,1].scatter(tsne2_result[:, 0], tsne2_result[:, 1],     
                facecolors='none',
                edgecolors='gray', 
-               s=10,
-               alpha=0.7)
-axs[1,1].set_xlabel('t-SNE 1 [A.U.]')
-#axs[1,1].set_ylabel('t-SNE 2 [A.U.]')
-axs[1,1].set_title('t-SNE with perplexity = 50')
+               alpha=0.2)
+axs[0,1].set_xlabel('t-SNE 1 [A.U.]')
+axs[0,1].set_ylabel('t-SNE 2 [A.U.]')
+axs[0,1].set_title('t-SNE with perplexity = 50')
 
 
 # UMAP plot
-axs[2,0].scatter(umap1_result[:, 0], umap1_result[:, 1], 
+axs[1,0].scatter(umap1_result[:, 0], umap1_result[:, 1], 
                facecolors='none',
                edgecolors='gray',
-               s=10,
-               alpha=0.7)
-axs[2,0].set_xlabel('UMAP 1 [A.U.]')
-axs[2,0].set_ylabel('UMAP 2 [A.U.]')
-axs[2,0].set_title('UMAP with n_neighbors = 15')
+               alpha=0.2)
+axs[1,0].set_xlabel('UMAP 1 [A.U.]')
+axs[1,0].set_ylabel('UMAP 2 [A.U.]')
+axs[1,0].set_title('UMAP with n_neighbors = 15')
 
 axs[1,1].scatter(umap2_result[:, 0], umap2_result[:, 1], 
                facecolors='none',
                edgecolors='gray',
-               s=10,
-               alpha=0.7)
+               alpha=0.2)
 axs[1,1].set_xlabel('UMAP 1 [A.U.]')
 axs[1,1].set_ylabel('UMAP 2 [A.U.]')
 axs[1,1].set_title('UMAP with n_neighbors = 45')
 
-
 plt.tight_layout()
-#plt.show()
+plt.show()
+
 plt.savefig(f'Figures/{src_name}-exploration-norm.png', dpi=600)
 
 
