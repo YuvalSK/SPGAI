@@ -76,28 +76,22 @@ sns.heatmap(spearman_corr, cmap='coolwarm',
 plt.title('Correlation Heatmap (p)')
 plt.savefig(f"Figures/{src_name}-spearman.png", dpi=600)
 
-#normalization
-## 1) Z transform
-scaler = StandardScaler()
-z_data = scaler.fit_transform(df)
-
-## 2) arcsinh     
+#normalization (as in Harpaz 2022):
+# Step 1: arcsinh normalization
 scFac=5
-scaled_data=np.arcsinh(z_data/scFac)
+scaled_data=np.arcsinh(df/scFac)
 
-## To do:
-### 3) residual to accont for systematic effects 
+# Step 2: Z-transform
+scaler = StandardScaler()
+z_data = scaler.fit_transform(scaled_data)
 
-# Compute total intensity per cell
-scaled_data = pd.DataFrame(scaled_data)
-scaled_data = scaled_data.sum(axis=1).values.reshape(-1, 1)
+# Step 3: Residuals to account for systematic effects
+z_df = pd.DataFrame(z_data, columns=df.columns, index=df.index)
+total_intensity = z_df.sum(axis=1).values.reshape(-1, 1)
+df_residuals = pd.DataFrame(index=df.index, columns=df.columns)
 
-# Initialize empty DataFrame for residuals
-df_residuals = pd.DataFrame(index=scaled_data.index, columns=scaled_data.columns)
-
-# For each marker, regress on total intensity and store residuals
 for marker in df.columns:
-    y = df[marker].values.reshape(-1, 1)
+    y = z_df[marker].values.reshape(-1, 1)
     model = LinearRegression().fit(total_intensity, y)
     y_pred = model.predict(total_intensity)
     residuals = (y - y_pred).ravel()
@@ -113,12 +107,8 @@ plt.savefig(f"Figures/{src_name}-spearman-res.png", dpi=600)
 
 
 #### dimensionality reduction analysis
-#normalization (as in Harpaz 2022):
-
-
-
 pca = PCA()
-pca_result = pca.fit(scaled_data)
+pca_result = pca.fit(df_residuals)
 explained_variance = pca.explained_variance_ratio_
 
 def pca_plots(data, file_name):  
@@ -144,7 +134,7 @@ def pca_plots(data, file_name):
     axs[1].axvline(x=elbow1, c='r', linestyle="dashed", label=f"{explained_variance[:elbow1].sum()*100:.1f}% variation by {elbow1} PCs")
     axs[1].legend(loc='center right')
     elbow2 = 10
-    axs[1].axvline(x=elbow2, c='k', linestyle="dashed", label=f"{explained_variance[:elbow2].sum()*100:.1f}% variation by {elbow1} PCs")
+    axs[1].axvline(x=elbow2, c='k', linestyle="dashed", label=f"{explained_variance[:elbow2].sum()*100:.1f}% variation by {elbow2} PCs")
     axs[1].legend(loc='center right')
     
     ########## top plot ########## 
@@ -159,25 +149,24 @@ def pca_plots(data, file_name):
                        color=palette[category])
     
     axs[0].legend(loc='upper right')
-    axs[0].set_xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%})')
-    axs[0].set_ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%})')
+    axs[0].set_xlabel(f'PC1 ({explained_variance[0]:.1%})')
+    axs[0].set_ylabel(f'PC2 ({explained_variance[1]:.1%})')
     
     plt.tight_layout()
     plt.savefig(file_name, dpi=600)
 
-pca_plots(scaled_data, f"Figures/{src_name}-pca-norm-res-main.png")
+pca_plots(df_residuals, f"Figures/{src_name}-pca-norm-res-main.png")
 
 # reducing dimensions of data
 pca = PCA(n_components=10)
-pca_data = pca.fit_transform(scaled_data)
-
+pca_data = pca.fit_transform(df_residuals)
 
 # 2-tSNE
 tsne1 = TSNE(n_jobs=2,
             n_components=2,
-            perplexity=30, 
+            perplexity=10, 
             learning_rate=200, 
-            n_iter=250, 
+            n_iter=200, 
             metric="euclidean",
             random_state=1111, 
             verbose=True)
@@ -188,9 +177,9 @@ df.to_csv(f'Results/{src_name}-dm-res-tsne1.csv')
 
 tsne2 = TSNE(n_jobs=2,
             n_components=2,
-            perplexity=50, 
+            perplexity=30, 
             learning_rate=200, 
-            n_iter=300, 
+            n_iter=200, 
             metric="euclidean",
             random_state=1111, 
             verbose=True)
@@ -204,7 +193,7 @@ umap1_model = umap.UMAP(n_jobs=2,
                        n_components=2, 
                        n_neighbors=15, 
                        min_dist=0.05, 
-                       n_epochs=100,
+                       n_epochs=200,
                        metric='euclidean',
                        verbose=True)
 
@@ -215,9 +204,9 @@ df.to_csv(f'Results/{src_name}-dm-res-umap1.csv')
 
 umap2_model = umap.UMAP(n_jobs=2,
                        n_components=2, 
-                       n_neighbors=45, 
+                       n_neighbors=50, 
                        min_dist=0.05, 
-                       n_epochs=100,
+                       n_epochs=200,
                        metric='euclidean',
                        verbose=True)
 
@@ -236,7 +225,7 @@ def plot_dm(file_name):
                    alpha=0.2)
     axs[0,0].set_xlabel('t-SNE 1 [A.U.]')
     axs[0,0].set_ylabel('t-SNE 2 [A.U.]')
-    axs[0,0].set_title('t-SNE with perplexity = 30')
+    axs[0,0].set_title('t-SNE with perplexity = 10')
     
     axs[0,1].scatter(tsne2_result[:, 0], tsne2_result[:, 1],     
                    facecolors='none',
@@ -244,7 +233,7 @@ def plot_dm(file_name):
                    alpha=0.2)
     axs[0,1].set_xlabel('t-SNE 1 [A.U.]')
     axs[0,1].set_ylabel('t-SNE 2 [A.U.]')
-    axs[0,1].set_title('t-SNE with perplexity = 50')
+    axs[0,1].set_title('t-SNE with perplexity = 30')
     
     
     # UMAP plot
@@ -262,7 +251,7 @@ def plot_dm(file_name):
                    alpha=0.2)
     axs[1,1].set_xlabel('UMAP 1 [A.U.]')
     axs[1,1].set_ylabel('UMAP 2 [A.U.]')
-    axs[1,1].set_title('UMAP with n_neighbors = 45')
+    axs[1,1].set_title('UMAP with n_neighbors = 50')
     
     labels = df_meta['label'].unique()
     palette = {label: color for label, color in zip(labels, sns.color_palette(n_colors=len(labels)))}
@@ -287,7 +276,7 @@ def plot_dm(file_name):
                        color=palette[label])
         
     handles, labels = axs[0,0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, 1.08),
+    fig.legend(handles, labels, loc='outside right upper',
                ncol=6, fontsize='x-small', frameon=True)    
     
     
