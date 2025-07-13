@@ -21,6 +21,18 @@ import umap.umap_ as umap
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+params = {'axes.titlesize': 30,
+          'legend.fontsize': 12,
+          'figure.figsize': (16, 10),
+          'axes.labelsize': 20,
+          'axes.titlesize': 20,
+          'xtick.labelsize': 20,
+          'ytick.labelsize': 20,
+          'figure.titlesize': 30}
+plt.rcParams.update(params)
+plt.style.use('seaborn-whitegrid')
+sns.set_style("white")
+
 srcs = [Danenberg2022, Jackson2020, Keren2018] 
 src = srcs[0]
 src_name = str(src).split(".")[-1][:-2]
@@ -65,7 +77,7 @@ dataset.metadata.to_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="p
 #to load the data
 df = pd.read_parquet(f"{base_dir}/{src_name}.parquet", engine="pyarrow")
 df_meta = pd.read_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="pyarrow")
-#print(set(df_meta.label))
+print(set(df_meta.label))
 
 # --- Corr ---
 spearman_corr = df.corr(method='spearman')
@@ -77,27 +89,30 @@ plt.title('Correlation Heatmap (p)')
 plt.savefig(f"Figures/{src_name}-spearman.png", dpi=600)
 
 #normalization (as in Harpaz 2022):
-# Step 1: arcsinh normalization
-scFac=5
-scaled_data=np.arcsinh(df/scFac)
-
-# Step 2: Z-transform
-scaler = StandardScaler()
-z_data = scaler.fit_transform(scaled_data)
-
-# Step 3: Residuals to account for systematic effects
-z_df = pd.DataFrame(z_data, columns=df.columns, index=df.index)
+# Step 1: Residuals to account for systematic effects
+z_df = df
 total_intensity = z_df.sum(axis=1).values.reshape(-1, 1)
-df_residuals = pd.DataFrame(index=df.index, columns=df.columns)
 
+df_residuals = pd.DataFrame(index=df.index, columns=df.columns)
 for marker in df.columns:
     y = z_df[marker].values.reshape(-1, 1)
     model = LinearRegression().fit(total_intensity, y)
     y_pred = model.predict(total_intensity)
     residuals = (y - y_pred).ravel()
     df_residuals[marker] = residuals
+        
     
-spearman_corr_res = df_residuals.corr(method='spearman')
+# Step 2: arcsinh normalization
+scFac=5
+scaled_data=np.arcsinh(df_residuals/scFac)
+
+# Step 3: Z-transform
+scaler = StandardScaler()
+z_data = scaler.fit_transform(scaled_data)
+
+z_data = pd.DataFrame(z_data, index=df.index, columns=df.columns)
+
+spearman_corr_res = z_data.corr(method='spearman')
 plt.figure(figsize=(16, 12))
 sns.heatmap(spearman_corr_res, cmap='coolwarm',
             annot_kws={"size": 3},
@@ -108,54 +123,73 @@ plt.savefig(f"Figures/{src_name}-spearman-res.png", dpi=600)
 
 #### dimensionality reduction analysis
 pca = PCA()
-pca_result = pca.fit(df_residuals)
+pca_result = pca.fit(z_data)
 explained_variance = pca.explained_variance_ratio_
 
-def pca_plots(data, file_name):  
-    fig, axs = plt.subplots(2, 1, figsize=(10, 6))
+def wrap_label(label, width=10):
+    return '\n'.join([label[i:i+width] for i in range(0, len(label), width)])
+
+    
+def pca_plots(data, file_name):
+    
     pca = PCA(n_components=2)
     pca_result = pca.fit_transform(scaled_data)
-    
-    ########## bottom plot ########## 
-    axs[1].plot(range(1, len(explained_variance) + 1), explained_variance, 
-                color='gray')
-    
-    cumulative_variance = explained_variance.cumsum()
-    axs[1].plot(range(1, len(cumulative_variance) + 1),
-        cumulative_variance,
-        color='k',
-        linestyle='--',
-        marker='o',
-    )
-    
-    axs[1].set_xlabel('PCs')
-    axs[1].set_ylabel('Explained Variation')
-    elbow1 = 2
-    axs[1].axvline(x=elbow1, c='r', linestyle="dashed", label=f"{explained_variance[:elbow1].sum()*100:.1f}% variation by {elbow1} PCs")
-    axs[1].legend(loc='center right')
-    elbow2 = 10
-    axs[1].axvline(x=elbow2, c='k', linestyle="dashed", label=f"{explained_variance[:elbow2].sum()*100:.1f}% variation by {elbow2} PCs")
-    axs[1].legend(loc='center right')
-    
-    ########## top plot ########## 
-    palette = {'epithelial': '#1f77b4', 'non-epithelial': '#ff7f0e'}  # blue & orange
+    palette = {'epithelial': 'red', 'non-epithelial': 'blue'}
     df_meta['super_category'] = df_meta['is_epithelial'].map({1: 'epithelial', 0: 'non-epithelial'})
     
+    fig = plt.figure(figsize=(14, 8))
+    gs = fig.add_gridspec(2, 2, width_ratios=[1, 2])
+    ax2 = fig.add_subplot(gs[:, 0])
+    ax1 = fig.add_subplot(gs[0, 1])
+    ax3 = fig.add_subplot(gs[1, 1])
+    ########## left plot ########## 
+    ax2.bar(range(1, len(explained_variance) + 1), explained_variance, 
+                facecolor='none',
+                edgecolor='k')
+    
+    cumulative_variance = explained_variance.cumsum()
+    ax2.plot(range(1, len(cumulative_variance) + 1),
+        cumulative_variance,
+        color='k')
+    ax2.set_xlabel('PCs')
+    ax2.set_ylabel('Variation')
+    elbow1 = 2
+    ax2.axvline(x=elbow1, c='k', linestyle="dashed", label=f"{explained_variance[:elbow1].sum()*100:.2f}% by {elbow1} PCs")
+    elbow2 = 10
+    #ax2.axvline(x=elbow2, c='gray', linestyle="dotted", label=f"{explained_variance[:elbow2].sum()*100:.1f}% by {elbow2} PCs")
+    print(f"{explained_variance[:elbow2].sum()*100:.1f}% by {elbow2} PCs")
+    ax2.set_ylim(0,1.01)
+    ax2.legend(loc='center right', frameon=True)
+    ########## top plot ########## 
     for category in ['epithelial', 'non-epithelial']:
         mask = df_meta['super_category'].eq(category).to_numpy(dtype=bool)
-        axs[0].scatter(pca_result[mask, 0], pca_result[mask, 1],
-                       alpha=0.5,
+        ax1.scatter(pca_result[mask, 0], pca_result[mask, 1],
+                       alpha=0.2,
                        label=category,
-                       color=palette[category])
-    
-    axs[0].legend(loc='upper right')
-    axs[0].set_xlabel(f'PC1 ({explained_variance[0]:.1%})')
-    axs[0].set_ylabel(f'PC2 ({explained_variance[1]:.1%})')
+                       facecolors='none',
+                       edgecolor=palette[category])
+    ax1.legend(loc='upper right', frameon=True)
+    ax1.set_xlabel(f'PC1 ({explained_variance[0]:.2%})')
+    ax1.set_ylabel(f'PC2 ({explained_variance[1]:.2%})')
+    ########## middle plot ########## 
+    pc1_weights = pca.components_[0]
+    features = data.columns
+    sorted_indices = np.argsort(np.abs(pc1_weights))
+    sorted_features = features[sorted_indices]
+    sorted_weights = pc1_weights[sorted_indices]
+    ax3.barh(sorted_features, sorted_weights, color='k')
+    ax3.axvline(x=0, c='k')
+    ax3.set_xlabel('PC1 weights')
+    ax3.set_yticks(range(len(sorted_features)))
+    #wrapped_labels = [wrap_label(label, width=5) for label in sorted_features]
+    ax3.set_yticklabels(sorted_features, 
+                        rotation=0, 
+                        fontsize=6)
     
     plt.tight_layout()
     plt.savefig(file_name, dpi=600)
 
-pca_plots(df_residuals, f"Figures/{src_name}-pca-norm-res-main.png")
+pca_plots(z_data, f"Figures/{src_name}-pca-norm-res-main.png")
 
 # reducing dimensions of data
 pca = PCA(n_components=10)
