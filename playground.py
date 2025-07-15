@@ -221,7 +221,7 @@ tsne1 = TSNE(n_jobs=2,
 tsne1_result = tsne1.fit(pca_data)
 
 df = pd.DataFrame(tsne1_result)
-df.to_csv(f'Results/{src_name}-dm-res-tsne1.csv')
+df.to_csv(f'Results/{src_name}-dm-tsne1.csv')
 
 tsne2 = TSNE(n_jobs=2,
             n_components=2,
@@ -234,7 +234,7 @@ tsne2 = TSNE(n_jobs=2,
 tsne2_result = tsne2.fit(pca_data)
 
 df = pd.DataFrame(tsne2_result)
-df.to_csv(f'Results/{src_name}-dm-res-tsne2.csv')
+df.to_csv(f'Results/{src_name}-dm-tsne2.csv')
 
 # 3-UMAP
 umap1_model = umap.UMAP(n_jobs=2,
@@ -248,7 +248,7 @@ umap1_model = umap.UMAP(n_jobs=2,
 umap1_result = umap1_model.fit_transform(pca_data)
 
 df = pd.DataFrame(umap1_result)
-df.to_csv(f'Results/{src_name}-dm-res-umap1.csv')
+df.to_csv(f'Results/{src_name}-dm-umap1.csv')
 
 umap2_model = umap.UMAP(n_jobs=2,
                        n_components=2, 
@@ -261,7 +261,7 @@ umap2_model = umap.UMAP(n_jobs=2,
 umap2_result = umap2_model.fit_transform(pca_data)
 
 df = pd.DataFrame(umap2_result)
-df.to_csv(f'Results/{src_name}-dm-res-umap2.csv')
+df.to_csv(f'Results/{src_name}-dm-umap2.csv')
 
 def plot_dm(file_name):
     fig, axs = plt.subplots(2, 2, figsize=(18, 5))
