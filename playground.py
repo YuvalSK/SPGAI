@@ -22,13 +22,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 params = {'axes.titlesize': 30,
-          'legend.fontsize': 12,
+          'legend.fontsize': 16,
           'figure.figsize': (16, 10),
-          'axes.labelsize': 20,
-          'axes.titlesize': 20,
-          'xtick.labelsize': 20,
-          'ytick.labelsize': 20,
+          'axes.labelsize': 8,
+          'axes.titlesize': 12,
+          'xtick.labelsize': 12,
+          'ytick.labelsize': 12,
           'figure.titlesize': 30}
+
 plt.rcParams.update(params)
 plt.style.use('seaborn-whitegrid')
 sns.set_style("white")
@@ -42,11 +43,11 @@ base_dir = Path(f"c://Users//User/Projects/Epigenetics/{src_name}")  # can be No
 dataset = src(base_dir)
 
 # issues:
-    ## Danenbergh2022 - complete (manually run an R script to convert file types) 
+    ## Danenbergh2022 - manually run an R script to convert file types
     ## Jackson2020 - this runs an error with pandas formating (series and Int32 indexing)
     # FileNotFoundError: [Errno 2] No such file or directory: 'c:\\Users\\User\\Projects\\Epigenetics\\Jackson2020\\02_processed\\metadata\\published'
-    ## Keren2019
-    # DeflateError: libdeflate_zlib_decompress returned LIBDEFLATE_INSUFFICIENT_SPACE
+    ## Keren2019 - DeflateError: libdeflate_zlib_decompress returned LIBDEFLATE_INSUFFICIENT_SPACE
+
 dataset.prepare_data()  # only needs to be run once
 
 dataset.setup(image_version="published", mask_version="published")
@@ -64,67 +65,77 @@ dataset.metadata.head()
 dataset.intensity.to_parquet(f"{base_dir}/{src_name}-intensity.parquet", engine="pyarrow", compression="snappy")
 dataset.metadata.to_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="pyarrow", compression="snappy")
 
-#### example properties of the dataset:
-#print(len(dataset.sample_ids))    # List of sample IDs
-#print(dataset.images.keys()) # Dictionary of images
-#print(dataset.masks.keys())  # Dictionary of masks
-#print(dataset.intensity.shape)  # Cell x marker matrix
-#print(dataset.metadata.shape)   # Cell x annotation matrix
-#sample_id = dataset.sample_ids[0]  # get the first sample ID
-#img = dataset.images[sample_id].data
-#print("Image shape:", img.shape)
 
 #to load the data
 df = pd.read_parquet(f"{base_dir}/{src_name}.parquet", engine="pyarrow")
 df_meta = pd.read_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="pyarrow")
 print(set(df_meta.label)) #cell types
 
-# --- Corr ---
+# --- Raw corr ---
 spearman_corr = df.corr(method='spearman')
 plt.figure(figsize=(16, 12))
 sns.heatmap(spearman_corr, cmap='coolwarm',
-            annot_kws={"size": 3},
             vmax = 1, vmin=-1)
-plt.title('Correlation Heatmap (p)')
-plt.savefig(f"Figures/{src_name}-spearman.png", dpi=600)
+plt.tight_layout()
+plt.savefig(f"Figures/{src_name}-spearman-raw.png", dpi=600)
 
-#normalization (as in Harpaz 2022):
-# Step 1: Residuals to account for systematic effects
-z_df = df
-total_intensity = z_df.sum(axis=1).values.reshape(-1, 1)
 
-df_residuals = pd.DataFrame(index=df.index, columns=df.columns)
-for marker in df.columns:
-    print(marker)
-    y = z_df[marker].values.reshape(-1, 1)
-    model = LinearRegression().fit(total_intensity, y)
-    y_pred = model.predict(total_intensity)
+# --- Normalization ---
+# exploration to determine how to reduce systematic technical variation?
+## archsinh and then regress out noise or the opposite? 
+plt.hist(df["histone_h3"], bins=10, facecolor='none', edgecolor='k', 
+         label='H3 raw', log=True)
+plt.hist(np.arcsinh(df["histone_h3"]), bins=20, 
+         edgecolor='blue', 
+         label='H3 arcsinh', log=True)
+plt.legend()
+plt.show()
+## The common approch is arcsinh → regress. This reduces the influence of high-intensity outliers (by compressing extreme values).
+## for this analysis, we will do the opposite (regress out → arcsinh). This increases the influence of high-intensity outliers (by using the raw cytof values) 
+
+## regress out by total signal or core histones? 
+tot = df.sum(axis=1)
+plt.scatter(df["histone_h3"], tot, facecolor='none', edgecolor='k')
+plt.plot(df["histone_h3"],df["histone_h3"],c='k',linestyle='--')
+plt.xlabel('Histone H3')
+plt.ylabel('Total signal')
+plt.show()
+## for this analysis, we assume the assume core histones (e.g., H3) should be expressed at a similar level in all cells
+
+def norm(data, idv):
+        
+  #step 1: regressing out systematic noise by idv
+  df_residuals = pd.DataFrame(index=data.index, columns=data.columns)
+  for marker in data.columns:
+    y = data[marker].values.reshape(-1, 1)
+    model = LinearRegression().fit(idv, y)
+    y_pred = model.predict(idv)
     residuals = (y - y_pred).ravel()
     df_residuals[marker] = residuals
-        
-    
-# Step 2: arcsinh normalization
-scFac=5
-scaled_data=np.arcsinh(df_residuals/scFac)
+  # Step 2: arcsinh normalization
+  scFac=5
+  scaled_data=np.arcsinh(df_residuals/scFac)
+  # Step 3: Z-transform
+  scaler = StandardScaler()
+  z_data = scaler.fit_transform(scaled_data)
+  #back to df
+  z_data = pd.DataFrame(z_data, columns=data.columns, index=data.index)
+  return z_data
 
-# Step 3: Z-transform
-scaler = StandardScaler()
-z_data = scaler.fit_transform(scaled_data)
+h3_intensity = df["histone_h3"].values.reshape(-1, 1) # Reshape to 2D array
+df_norm = norm(df, h3_intensity)
 
-z_data = pd.DataFrame(z_data, index=df.index, columns=df.columns)
-
-spearman_corr_res = z_data.corr(method='spearman')
+# after normalization
+spearman_corr = df_norm.corr(method='spearman')
 plt.figure(figsize=(16, 12))
-sns.heatmap(spearman_corr_res, cmap='coolwarm',
-            annot_kws={"size": 3},
+sns.heatmap(spearman_corr, cmap='coolwarm',
             vmax = 1, vmin=-1)
-plt.title('Residuals Correlation Heatmap (p)')
-plt.savefig(f"Figures/{src_name}-spearman-res.png", dpi=600)
+plt.tight_layout()
+plt.savefig(f"Figures/{src_name}-spearman-norm.png", dpi=600)
 
-
-#### dimensionality reduction analysis
+# --- Dimensionality reduction ---
 pca = PCA()
-pca_result = pca.fit(z_data)
+pca_result = pca.fit(df_norm)
 explained_variance = pca.explained_variance_ratio_
 
 def wrap_label(label, width=10):
@@ -134,7 +145,7 @@ def wrap_label(label, width=10):
 def pca_plots(data, file_name):
     
     pca = PCA(n_components=2)
-    pca_result = pca.fit_transform(scaled_data)
+    pca_result = pca.fit_transform(data)
     palette = {'epithelial': 'red', 'non-epithelial': 'blue'}
     df_meta['super_category'] = df_meta['is_epithelial'].map({1: 'epithelial', 0: 'non-epithelial'})
     
@@ -155,7 +166,7 @@ def pca_plots(data, file_name):
     ax2.set_xlabel('PCs')
     ax2.set_ylabel('Variation')
     elbow1 = 2
-    ax2.axvline(x=elbow1, c='k', linestyle="dashed", label=f"{explained_variance[:elbow1].sum()*100:.2f}% by {elbow1} PCs")
+    ax2.axvline(x=elbow1, c='purple', linestyle="--", label=f"{explained_variance[:elbow1].sum()*100:.1f}% by {elbow1} PCs")
     elbow2 = 10
     #ax2.axvline(x=elbow2, c='gray', linestyle="dotted", label=f"{explained_variance[:elbow2].sum()*100:.1f}% by {elbow2} PCs")
     print(f"{explained_variance[:elbow2].sum()*100:.1f}% by {elbow2} PCs")
@@ -164,23 +175,24 @@ def pca_plots(data, file_name):
     ########## top plot ########## 
     for category in ['epithelial', 'non-epithelial']:
         mask = df_meta['super_category'].eq(category).to_numpy(dtype=bool)
-        ax1.scatter(pca_result[mask, 0], pca_result[mask, 1],
+        ax1.scatter(pca_result[mask, 1], pca_result[mask, 0],
                        alpha=0.2,
                        label=category,
                        facecolors='none',
                        edgecolor=palette[category])
     ax1.legend(loc='upper right', frameon=True)
-    ax1.set_xlabel(f'PC1 ({explained_variance[0]:.2%})')
-    ax1.set_ylabel(f'PC2 ({explained_variance[1]:.2%})')
+    ax1.set_ylabel(f'PC1 ({explained_variance[0]:.1%})')
+    ax1.set_xlabel(f'PC2 ({explained_variance[1]:.1%})')
+    
     ########## middle plot ########## 
-    pc1_weights = pca.components_[0]
+    pc2_weights = pca.components_[1]
     features = data.columns
-    sorted_indices = np.argsort(np.abs(pc1_weights))
+    sorted_indices = np.argsort(np.abs(pc2_weights))
     sorted_features = features[sorted_indices]
-    sorted_weights = pc1_weights[sorted_indices]
+    sorted_weights = pc2_weights[sorted_indices]
     ax3.barh(sorted_features, sorted_weights, color='k')
     ax3.axvline(x=0, c='k')
-    ax3.set_xlabel('PC1 weights')
+    ax3.set_xlabel('PC2 weights')
     ax3.set_yticks(range(len(sorted_features)))
     #wrapped_labels = [wrap_label(label, width=5) for label in sorted_features]
     ax3.set_yticklabels(sorted_features, 
@@ -190,11 +202,12 @@ def pca_plots(data, file_name):
     plt.tight_layout()
     plt.savefig(file_name, dpi=600)
 
-pca_plots(z_data, f"Figures/{src_name}-pca-norm-res-main.png")
+pca_plots(df_norm, f"Figures/{src_name}-pca-norm.png")
 
-# reducing dimensions of data
-pca = PCA(n_components=10)
-pca_data = pca.fit_transform(df_residuals)
+# for faster computation
+n_d = 10
+pca = PCA(n_components=n_d)
+pca_data = pca.fit_transform(df_norm)
 
 # 2-tSNE
 tsne1 = TSNE(n_jobs=2,
@@ -320,5 +333,15 @@ def plot_dm(file_name):
 
     plt.savefig(file_name, dpi=600)
 
-plot_dm(f'Figures/{src_name}-dr-norm-res-all.png')
+plot_dm(f'Figures/{src_name}-dr-norm-all.png')
 
+################# draft code ###################
+#### example properties of the dataset:
+#print(len(dataset.sample_ids))    # List of sample IDs
+#print(dataset.images.keys()) # Dictionary of images
+#print(dataset.masks.keys())  # Dictionary of masks
+#print(dataset.intensity.shape)  # Cell x marker matrix
+#print(dataset.metadata.shape)   # Cell x annotation matrix
+#sample_id = dataset.sample_ids[0]  # get the first sample ID
+#img = dataset.images[sample_id].data
+#print("Image shape:", img.shape)
