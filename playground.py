@@ -77,7 +77,7 @@ dataset.metadata.to_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="p
 #to load the data
 df = pd.read_parquet(f"{base_dir}/{src_name}.parquet", engine="pyarrow")
 df_meta = pd.read_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="pyarrow")
-print(set(df_meta.label))
+print(set(df_meta.label)) #cell types
 
 # --- Corr ---
 spearman_corr = df.corr(method='spearman')
@@ -95,6 +95,7 @@ total_intensity = z_df.sum(axis=1).values.reshape(-1, 1)
 
 df_residuals = pd.DataFrame(index=df.index, columns=df.columns)
 for marker in df.columns:
+    print(marker)
     y = z_df[marker].values.reshape(-1, 1)
     model = LinearRegression().fit(total_intensity, y)
     y_pred = model.predict(total_intensity)
