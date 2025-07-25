@@ -21,6 +21,10 @@ import umap.umap_ as umap
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+def form(x):
+    return x.strip().lower().replace('-', '_')
+ 
+    
 params = {'axes.titlesize': 30,
           'legend.fontsize': 16,
           'figure.figsize': (16, 10),
@@ -87,7 +91,6 @@ marker_colors = {
     form('estrogen_receptor_alpha'): 'orange',
     form('c_erb_b_2_her2_3b5'): 'orange',
     form('c_erb_b_2_her2_d8f12'): 'orange',
-
     # TME - Stromal + Immune
     form('cxcl12_sdf_1'): 'blue',
     form('cd3'): 'blue',
@@ -185,15 +188,10 @@ plt.savefig(f"Figures/{src_name}-spearman-norm.png", dpi=600)
 # --- Dimensionality reduction ---
 
 # --- PCA ---
-
 pca = PCA()
 pca_result = pca.fit(df_norm)
 explained_variance = pca.explained_variance_ratio_
-
-
-def form(x):
-    return x.strip().lower().replace('-', '_')
-    
+  
 def pca_plot(data, tags, marker_colors, file_name):
     pca = PCA(n_components=2)
     pca_result = pca.fit_transform(data)
@@ -244,8 +242,8 @@ def pca_plot(data, tags, marker_colors, file_name):
         ax_scatter.scatter(
             pca_result[mask, 1],  # PC2 on x-axis
             pca_result[mask, 0],  # PC1 on y-axis
-            s=3,
-            alpha=0.2,
+            s=2,
+            alpha=0.1,
             label=labels[g]
         )
     ax_scatter.legend(loc='upper right', frameon=True)
@@ -332,11 +330,10 @@ def pca_plot(data, tags, marker_colors, file_name):
             fontweight='bold', 
             va='top', 
             ha='right')
-    
-
     plt.tight_layout()
     plt.savefig(file_name, dpi=600)
     plt.close(fig)
+
 pca_plot(df_norm, "is_epithelial", marker_colors, f"Figures/{src_name}-pca-norm.png")
 
 # to reduce computational time and memory use
@@ -354,7 +351,7 @@ us = [5, 10, 15, 30, 50]
 m = 'euclidean' # or cosine
 
 for p in ps: 
-    print(p)
+    print(f"...tSNE with perplexity: {p}")
     tsne = TSNE(n_jobs=2,
                 n_components=2,
                 perplexity=p, 
@@ -371,7 +368,7 @@ for p in ps:
     
 # UMAP
 for u in us:
-    print(u)
+    print(f"...UMAP with number of neughbors: {u}")
     umap_model = umap.UMAP(n_jobs=2,
                            n_components=2, 
                            n_neighbors=u, 
@@ -394,11 +391,11 @@ def plot_dr(tsne_perplexities, umap_neighbors):
     
     # Load results
     tsne_results = [
-        pd.read_csv(f'Results/{src_name}-dm-tsne-{p}-m.csv').to_numpy() 
+        pd.read_csv(f'Results/{src_name}-tsne-{p}-{m}.csv').to_numpy() 
         for p in tsne_perplexities
     ]
     umap_results = [
-        pd.read_csv(f'Results/{src_name}-dm-umap-{n}-m.csv').to_numpy() 
+        pd.read_csv(f'Results/{src_name}-umap-{n}-{m}.csv').to_numpy() 
         for n in umap_neighbors
     ]
     
@@ -411,7 +408,10 @@ def plot_dr(tsne_perplexities, umap_neighbors):
         for label in [0, 1]:
             mask = df_meta['is_epithelial'].eq(label).to_numpy(dtype=bool)
             ax.scatter(result[mask, 1], result[mask, 2],
-                       alpha=0.2, color=color_map[label], label=label_map[label], s=2)
+                       alpha=0.1, 
+                       s=1,
+                       color=color_map[label], 
+                       label=label_map[label])
         ax.set_xlabel('t-SNE 1 [A.U.]')
         ax.set_ylabel('t-SNE 2 [A.U.]')
         ax.set_title(f't-SNE, perplexity={p}')
@@ -436,7 +436,7 @@ def plot_dr(tsne_perplexities, umap_neighbors):
     fig.legend(handles, labels_, loc='upper right', bbox_to_anchor=(1.12, 1), borderaxespad=0.)
     
     plt.tight_layout()
-    plt.savefig(f'Figures/{src_name}-dr-summary.png', dpi=500)
+    plt.savefig(f'Figures/{src_name}-dr-summary-{m}.png', dpi=500)
     #plt.close(fig)
 
 plot_dr(ps, us)
