@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jun 18 18:44:49 2025
-
+V completed with 15-D by PCA
+- run with more dimensions
 @author: YSK
 """
 %aimport typing_extensions
@@ -10,6 +11,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import os
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
@@ -19,6 +21,7 @@ from openTSNE import TSNE #faster
 import umap.umap_ as umap
 
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FormatStrFormatter
 import seaborn as sns
 
 def form(x):
@@ -74,35 +77,14 @@ df = pd.read_parquet(f"{base_dir}/{src_name}.parquet", engine="pyarrow")
 
 #load labels
 df_meta = pd.read_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="pyarrow")
-print(set(df_meta.is_epithelial)) #cell types
-print(set(df_meta.label)) #cell types
+#print(set(df_meta.is_epithelial)) #cell types
+#print(set(df_meta.label)) #cell types
 
-#labels for visualization
+#cells labels for visualization
 df_meta['epithelial_label'] = df_meta.apply(
     lambda row: 'epithelial' if row['is_epithelial'] == 1 else row['label'],
     axis=1
 )
-
-marker_colors = {
-    # Epithelial (Tumor)
-    form('pan_cytokeratin'): 'orange',
-    form('cytokeratin_8_18'): 'orange',
-    form('cytokeratin_5'): 'orange',
-    form('estrogen_receptor_alpha'): 'orange',
-    form('c_erb_b_2_her2_3b5'): 'orange',
-    form('c_erb_b_2_her2_d8f12'): 'orange',
-    # TME - Stromal + Immune
-    form('cxcl12_sdf_1'): 'blue',
-    form('cd3'): 'blue',
-    form('cd4'): 'blue',
-    form('cd8a'): 'blue',
-    form('cd20'): 'blue',
-    form('cd45'): 'blue',
-    form('cd45ra'): 'blue',
-    form('cd68'): 'blue',
-    form('cd163'): 'blue',
-    form('foxp3'): 'blue',
-}
 
 # --- Raw corr ---
 spearman_corr = df.corr(method='spearman')
@@ -116,10 +98,9 @@ markers are mainly positivly correlated without normaization, suggesting systema
 '''
 
 # --- Normalization ---
-
 def plot_core_h3(df, file_name):
     
-    df['tot'] = df.sum(axis=1)  
+    temp = df.sum(axis=1)  
     fig = plt.figure()
     gs = fig.add_gridspec(2, 2)
     ax2 = fig.add_subplot(gs[0, 0]) # avg
@@ -131,14 +112,14 @@ def plot_core_h3(df, file_name):
     ax1.set_ylabel('Freq. [#]')
     ax1.set_xlabel('Intensity')
     ax1.legend()
-    ax2.hist(df["tot"], bins=20, 
+    ax2.hist(temp, bins=20, 
              facecolor='none', edgecolor='k', 
              label='Total signal', log=True)
     ax2.set_ylabel('Freq. [#]')
     ax2.set_xlabel('Intensity')
     ax2.legend()
     ax3.scatter(np.arcsinh(df["histone_h3"]), 
-                np.arcsinh(df["tot"]), 
+                np.arcsinh(temp), 
                 facecolor='none', edgecolor='k',
                 alpha=0.5)
     ax3.plot(np.arcsinh(df["histone_h3"]),np.arcsinh(df["histone_h3"]),c='gray',linestyle='--')
@@ -187,12 +168,61 @@ plt.savefig(f"Figures/{src_name}-spearman-norm.png", dpi=600)
 
 # --- Dimensionality reduction ---
 
-# --- PCA ---
+# 1) PCA
 pca = PCA()
 pca_result = pca.fit(df_norm)
 explained_variance = pca.explained_variance_ratio_
-  
-def pca_plot(data, tags, marker_colors, file_name):
+
+def pca_plot(data, tags, file_name):
+    #colors
+    blues = plt.colormaps.get_cmap('Blues')
+    reds = plt.colormaps.get_cmap('Reds')
+    dark_red = reds(0.8)
+    dark_blue = blues(0.8)
+    light_red = reds(0.4)
+    light_blue = blues(0.4) 
+    
+    marker_colors = {
+        # Epithelial (Tumor)
+        form('pan_cytokeratin'): light_red,
+        form('cytokeratin_8_18'): light_red,
+        form('cytokeratin_5'): light_red,
+        form('estrogen_receptor_alpha'): light_red,
+        form('c_erb_b_2_her2_3b5'): light_red,
+        form('c_erb_b_2_her2_d8f12'): light_red,
+        # TME
+        form('cxcl12_sdf_1'): light_blue,
+        form('cd3'): light_blue,
+        form('cd4'): light_blue,
+        form('cd8a'): light_blue,
+        form('cd20'): light_blue,
+        form('cd45'): light_blue,
+        form('cd45ra'): light_blue,
+        form('cd68'): light_blue,
+        form('cd163'): light_blue,
+        form('foxp3'): light_blue
+    }
+    # Data for table
+    columns = ['Marker name', 'Tag', 'Function']
+    table_data = [
+        ['cxcl12_sdf_1', 'TME', 'Stromal: chemokine'],
+        ['cd68', 'TME', 'Immune: macrophage'],
+        ['cd163', 'TME', 'Immune: M2 Macrophage'],
+        ['foxp3', 'TME', 'Immune: regulatory T-cell'],
+        ['cd45', 'TME', 'Immune: pan-leukocyte'],
+        ['cd45ra', 'TME', 'Immune: naive T-cell'],
+        ['cd3', 'TME', 'Immune: mature T-cell'],
+        ['cd4', 'TME', 'Immune: helper T-cell'],
+        ['cd8a', 'TME', 'Immune: cytotoxic T-cell'],
+        ['cd20', 'TME', 'Immune: B-cell'],
+        ['pan_cytokeratin', 'Epithelial', 'General epithelial'],
+        ['cytokeratin_8_18', 'Epithelial', 'Luminal epithelial'],
+        ['c_erb_b_2_her2_3b5', 'Epithelial', 'HER2 oncogene'],
+        ['estrogen_receptor_alpha', 'Epithelial', 'Hormone receptor (ERα)'],
+        ['c_erb_b_2_her2_d8f12', 'Epithelial', 'HER2 oncogene'],
+        ['cytokeratin_5', 'Epithelial', 'Basal epithelial']
+    ] 
+    
     pca = PCA(n_components=2)
     pca_result = pca.fit_transform(data)
     explained_variance = pca.explained_variance_ratio_
@@ -213,7 +243,8 @@ def pca_plot(data, tags, marker_colors, file_name):
     ax_pc1.axvline(x=0, c='k')
     ax_pc1.set_xlabel('PC1 weights')
     ax_pc1.set_yticks(range(len(sorted_features_pc1)))
-    ax_pc1.set_yticklabels(sorted_features_pc1, fontsize=8)
+    ax_pc1.set_yticklabels(sorted_features_pc1, fontsize=10)
+    ax_pc1.xaxis.set_major_formatter(FormatStrFormatter('%.1f'))
     # Plot PC2 weights (Bottom Right)
     pc2_weights = pca.components_[1]
     features = data.columns
@@ -225,7 +256,7 @@ def pca_plot(data, tags, marker_colors, file_name):
     ax_pc2.axvline(x=0, c='k')
     ax_pc2.set_xlabel('PC2 weights')
     ax_pc2.set_yticks(y_pos)  # Set y positions to the correct range
-    ax_pc2.set_yticklabels(sorted_features_pc2, fontsize=8)
+    ax_pc2.set_yticklabels(sorted_features_pc2, fontsize=10)
     for label in ax_pc2.get_yticklabels():
         feature = form(label.get_text())
         color = marker_colors.get(feature, 'black')
@@ -237,43 +268,22 @@ def pca_plot(data, tags, marker_colors, file_name):
         label.set_color(color)
     # Plot PC1 x PC2 space (Top Right) - PC1 on y-axis, PC2 on x-axis
     labels = {1:"Epithelial", 0:"TME"}
+    colors = {1: dark_red, 0: dark_blue}
+    
     for g in range(len(labels)):
         mask = df_meta[tags].eq(g).to_numpy(dtype=bool)
         ax_scatter.scatter(
             pca_result[mask, 1],  # PC2 on x-axis
             pca_result[mask, 0],  # PC1 on y-axis
-            s=2,
-            alpha=0.1,
-            label=labels[g]
+            s=3,
+            alpha=0.2,
+            label=labels[g],
+            color=colors[g]
         )
-    ax_scatter.legend(loc='upper right', frameon=True)
+    ax_scatter.legend(loc='upper right', frameon=True, markerscale=6)
     ax_scatter.set_xlabel(f'PC2 ({explained_variance[1]:.1%})')
     ax_scatter.set_ylabel(f'PC1 ({explained_variance[0]:.1%})')
     
-    # Data for table
-    table_data = [
-        ['cxcl12_sdf_1', 'TME', 'Stromal: chemokine'],
-        ['cd68', 'TME', 'Immune: macrophage'],
-        ['cd163', 'TME', 'Immune: M2 Macrophage'],
-        ['foxp3', 'TME', 'Immune: regulatory T-cell'],
-        ['cd45', 'TME', 'Immune: pan-leukocyte'],
-        ['cd45ra', 'TME', 'Immune: naive T-cell'],
-        ['cd3', 'TME', 'Immune: mature T-cell'],
-        ['cd4', 'TME', 'Immune: helper T-cell'],
-        ['cd8a', 'TME', 'Immune: cytotoxic T-cell'],
-        ['cd20', 'TME', 'Immune: B-cell'],
-        ['pan_cytokeratin', 'Epithelial', 'General epithelial'],
-        ['cytokeratin_8_18', 'Epithelial', 'Luminal epithelial'],
-        ['c_erb_b_2_her2_3b5', 'Epithelial', 'HER2 oncogene'],
-        ['estrogen_receptor_alpha', 'Epithelial', 'Hormone receptor (ERα)'],
-        ['c_erb_b_2_her2_d8f12', 'Epithelial', 'HER2 oncogene'],
-        ['cytokeratin_5', 'Epithelial', 'Basal epithelial']
-    ]
-        
-    # Column labels
-    columns = ['Marker name', 'Tag', 'Function']
-    
-    # Create the table
     table = ax_table.table(
         cellText=table_data,
         colLabels=columns,
@@ -284,7 +294,7 @@ def pca_plot(data, tags, marker_colors, file_name):
     
     table.auto_set_font_size(False)
     table.set_fontsize(10)
-    table.scale(1, 1.2)
+    table.scale(1, 1.1)
     
     for (row, col), cell in table.get_celld().items():
         if row == 0:
@@ -292,9 +302,9 @@ def pca_plot(data, tags, marker_colors, file_name):
         if col == 1:  # Tag column
             tag_val = cell.get_text().get_text()
             if "Epithelial" in tag_val:
-                cell.set_facecolor("#ffa500")   # Light orange
+                cell.set_facecolor(light_red)
             elif "TME" in tag_val:
-                cell.set_facecolor("#cce0ff")   # Light blue
+                cell.set_facecolor(light_blue)
     # Header formatting
     for (row, col), cell in table.get_celld().items():
         if row == 0:
@@ -334,62 +344,30 @@ def pca_plot(data, tags, marker_colors, file_name):
     plt.savefig(file_name, dpi=600)
     plt.close(fig)
 
-pca_plot(df_norm, "is_epithelial", marker_colors, f"Figures/{src_name}-pca-norm.png")
+pca_plot(df_norm, "is_epithelial", f"Figures/{src_name}-pca-norm.png")
 
 # to reduce computational time and memory use
 # Note: we loose some information (~50% variance)
-n_d = 15
-pca = PCA(n_components=n_d)
-pca_data = pca.fit_transform(df_norm)
+#n_d = 20
+#pca = PCA(n_components=n_d)
+#pca_data = pca.fit_transform(df_norm)
 
-#df_norm = df_norm.reset_index(drop=True)  # Reset to default index
-#X = df_norm.values  # Convert to NumPy array
+data = df_norm.to_numpy()
+
+# Index to array
+index_col = df.index.to_numpy().reshape(-1, 1)
+X = np.hstack([index_col, data])
 
 # --- tSNE & UMAP ---
-ps = [5, 10, 15, 30, 50]
-us = [5, 10, 15, 30, 50]
-m = 'euclidean' # or cosine
-
-for p in ps: 
-    print(f"...tSNE with perplexity: {p}")
-    tsne = TSNE(n_jobs=2,
-                n_components=2,
-                perplexity=p, 
-                learning_rate=200, 
-                n_iter=200, 
-                metric=m,
-                random_state=1111, 
-                verbose=False)
-    tsne_result = tsne.fit(pca_data)
-    temp = pd.DataFrame(tsne_result)
-    temp.to_csv(f'Results/{src_name}-tsne-{p}-{m}.csv')
-    del temp
-    del tsne_result 
-    
-# UMAP
-for u in us:
-    print(f"...UMAP with number of neughbors: {u}")
-    umap_model = umap.UMAP(n_jobs=2,
-                           n_components=2, 
-                           n_neighbors=u, 
-                           min_dist=0.1, 
-                           n_epochs=200,
-                           metric=m,
-                           verbose=False)
-    
-    umap_result = umap_model.fit_transform(pca_data)
-    
-    temp = pd.DataFrame(umap_result)
-    temp.to_csv(f'Results/{src_name}-umap-{u}-{m}.csv')
-    del temp
-    del umap_result 
+ps = [5, 15, 30, 50]
+us = [5, 15, 30, 50]
+ms = ['euclidean','cosine']
 
 def plot_dr(tsne_perplexities, umap_neighbors):
     
     color_map = {1: 'orange', 0: 'blue'}
     label_map = {1: 'Epithelial', 0: 'TME'}
     
-    # Load results
     tsne_results = [
         pd.read_csv(f'Results/{src_name}-tsne-{p}-{m}.csv').to_numpy() 
         for p in tsne_perplexities
@@ -412,8 +390,6 @@ def plot_dr(tsne_perplexities, umap_neighbors):
                        s=1,
                        color=color_map[label], 
                        label=label_map[label])
-        ax.set_xlabel('t-SNE 1 [A.U.]')
-        ax.set_ylabel('t-SNE 2 [A.U.]')
         ax.set_title(f't-SNE, perplexity={p}')
     
     # --- Bottom row: UMAP ---
@@ -422,14 +398,19 @@ def plot_dr(tsne_perplexities, umap_neighbors):
         for label in [0, 1]:
             mask = df_meta['is_epithelial'].eq(label).to_numpy(dtype=bool)
             ax.scatter(result[mask, 1], result[mask, 2],
-                       alpha=0.2, color=color_map[label], label=label_map[label], s=2)
-        ax.set_xlabel('UMAP 1 [A.U.]')
-        ax.set_ylabel('UMAP 2 [A.U.]')
+                       alpha=0.1, 
+                       color=color_map[label], 
+                       label=label_map[label], 
+                       s=1)
         ax.set_title(f'UMAP, n_neighbors={n}')
     
     # Remove unused bottom-right axes
     #for j in range(3, 5):
     #    fig.delaxes(axs[1, j])
+    axs[0,0].set_xlabel('t-SNE 1 [A.U.]')
+    axs[0,0].set_ylabel('t-SNE 2 [A.U.]')
+    axs[1,0].set_xlabel('UMAP 1 [A.U.]')
+    axs[1,0].set_ylabel('UMAP 2 [A.U.]')
     
     # Shared legend
     handles, labels_ = axs[0, 0].get_legend_handles_labels()
@@ -437,9 +418,52 @@ def plot_dr(tsne_perplexities, umap_neighbors):
     
     plt.tight_layout()
     plt.savefig(f'Figures/{src_name}-dr-summary-{m}.png', dpi=500)
-    #plt.close(fig)
+    plt.close(fig)
+    print("...figure created")
 
-plot_dr(ps, us)
+for m in ms:
+    for p in ps: 
+        tsne_filename = f'Results/{src_name}-tsne-{p}-{m}.csv'
+        if not os.path.exists(tsne_filename):
+            print(f"...tSNE with perplexity: {p}")
+            tsne = TSNE(n_jobs=2,
+                        n_components=2,
+                        perplexity=p, 
+                        learning_rate=200, 
+                        n_iter=200, 
+                        metric=m,
+                        random_state=1111, 
+                        verbose=False)
+            tsne_result = tsne.fit(X) #or pca_data
+            temp = pd.DataFrame(tsne_result)
+            temp.to_csv(f'Results/{src_name}-tsne-{p}-{m}.csv')
+            del temp
+            del tsne_result 
+        else:
+            print(f"...skipping tSNE with perplexity {p} (file exists)")
+    # UMAP
+    for u in us:
+        umap_filename = f'Results/{src_name}-umap-{u}-{m}.csv'
+        if not os.path.exists(umap_filename):
+            print(f"...UMAP with number of neughbors: {u}")
+            umap_model = umap.UMAP(n_jobs=2,
+                                   n_components=2, 
+                                   n_neighbors=u, 
+                                   min_dist=0.1, 
+                                   n_epochs=200,
+                                   metric=m,
+                                   verbose=False)
+            
+            umap_result = umap_model.fit_transform(X) #or pca_data
+            temp = pd.DataFrame(umap_result)
+            temp.to_csv(f'Results/{src_name}-umap-{u}-{m}.csv')
+            del temp
+            del umap_result 
+        else:
+            print(f"...skipping UMAP with neighbors {u} (file exists)")    
+    plot_dr(ps, us)
+
+
 
 ################# draft code ###################
 #### example properties of the dataset:
