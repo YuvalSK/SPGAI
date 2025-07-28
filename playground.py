@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jun 18 18:44:49 2025
-V completed with 15-D by PCA
-- run with more dimensions
+- run with normalized data (not 15PCs)
 @author: YSK
 """
 %aimport typing_extensions
@@ -26,8 +25,7 @@ import seaborn as sns
 
 def form(x):
     return x.strip().lower().replace('-', '_')
- 
-    
+   
 params = {'axes.titlesize': 30,
           'legend.fontsize': 16,
           'figure.figsize': (16, 10),
@@ -86,7 +84,7 @@ df_meta['epithelial_label'] = df_meta.apply(
     axis=1
 )
 
-# --- Raw corr ---
+# --- Raw corr --- 
 spearman_corr = df.corr(method='spearman')
 plt.figure(figsize=(16, 12))
 sns.heatmap(spearman_corr, cmap='coolwarm',
@@ -168,7 +166,7 @@ plt.savefig(f"Figures/{src_name}-spearman-norm.png", dpi=600)
 
 # --- Dimensionality reduction ---
 
-# 1) PCA
+# 1) PCA #
 pca = PCA()
 pca_result = pca.fit(df_norm)
 explained_variance = pca.explained_variance_ratio_
@@ -352,15 +350,12 @@ pca_plot(df_norm, "is_epithelial", f"Figures/{src_name}-pca-norm.png")
 #pca = PCA(n_components=n_d)
 #pca_data = pca.fit_transform(df_norm)
 
-data = df_norm.to_numpy()
+X = df_norm.to_numpy()
+VI = inv(np.cov(X.T))
 
-# Index to array
-index_col = df.index.to_numpy().reshape(-1, 1)
-X = np.hstack([index_col, data])
-
-# --- tSNE & UMAP ---
-ps = [5, 15, 30, 50]
-us = [5, 15, 30, 50]
+# 2) tSNE & UMAP #
+ps = [10, 30, 50, 200]
+us = [10, 15, 30, 50]
 ms = ['euclidean','cosine']
 
 def plot_dr(tsne_perplexities, umap_neighbors):
@@ -417,7 +412,7 @@ def plot_dr(tsne_perplexities, umap_neighbors):
     fig.legend(handles, labels_, loc='upper right', bbox_to_anchor=(1.12, 1), borderaxespad=0.)
     
     plt.tight_layout()
-    plt.savefig(f'Figures/{src_name}-dr-summary-{m}.png', dpi=500)
+    plt.savefig(f'Figures/{src_name}-dr-norm-{m}.png', dpi=500)
     plt.close(fig)
     print("...figure created")
 
@@ -428,7 +423,8 @@ for m in ms:
             print(f"...tSNE with perplexity: {p}")
             tsne = TSNE(n_jobs=2,
                         n_components=2,
-                        perplexity=p, 
+                        perplexity=p,
+                        initialization="pca",
                         learning_rate=200, 
                         n_iter=200, 
                         metric=m,
@@ -445,7 +441,7 @@ for m in ms:
     for u in us:
         umap_filename = f'Results/{src_name}-umap-{u}-{m}.csv'
         if not os.path.exists(umap_filename):
-            print(f"...UMAP with number of neughbors: {u}")
+            print(f"...UMAP with number of neighbors: {u}")
             umap_model = umap.UMAP(n_jobs=2,
                                    n_components=2, 
                                    n_neighbors=u, 
