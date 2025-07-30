@@ -36,7 +36,7 @@ params = {'axes.titlesize': 30,
           'figure.titlesize': 30}
 
 plt.rcParams.update(params)
-plt.style.use('seaborn-whitegrid')
+plt.style.use('seaborn-v0_8-whitegrid')
 
 srcs = [Danenberg2022, Jackson2020, Keren2018] 
 src = srcs[0]
@@ -51,7 +51,7 @@ dataset = src(base_dir)
     ## Jackson2020 - this runs an error with pandas formating (series and Int32 indexing)
     # FileNotFoundError: [Errno 2] No such file or directory: 'c:\\Users\\User\\Projects\\Epigenetics\\Jackson2020\\02_processed\\metadata\\published'
     ## Keren2019 - DeflateError: libdeflate_zlib_decompress returned LIBDEFLATE_INSUFFICIENT_SPACE
-
+'''
 dataset.prepare_data()  # only needs to be run once
 
 dataset.setup(image_version="published", mask_version="published")
@@ -68,7 +68,7 @@ dataset.metadata.head()
 
 dataset.intensity.to_parquet(f"{base_dir}/{src_name}-intensity.parquet", engine="pyarrow", compression="snappy")
 dataset.metadata.to_parquet(f"{base_dir}/{src_name}-metadata.parquet", engine="pyarrow", compression="snappy")
-
+'''
 
 #load the data from parquet
 df = pd.read_parquet(f"{base_dir}/{src_name}.parquet", engine="pyarrow")
@@ -83,7 +83,7 @@ df_meta['epithelial_label'] = df_meta.apply(
     lambda row: 'epithelial' if row['is_epithelial'] == 1 else row['label'],
     axis=1
 )
-
+'''
 # --- Raw corr --- 
 spearman_corr = df.corr(method='spearman')
 plt.figure(figsize=(16, 12))
@@ -91,11 +91,9 @@ sns.heatmap(spearman_corr, cmap='coolwarm',
             vmax = 1, vmin=-1)
 plt.tight_layout()
 plt.savefig(f"Figures/{src_name}-spearman-raw.png", dpi=600)
-'''
-markers are mainly positivly correlated without normaization, suggesting systematic/technical noise... 
-'''
 
-# --- Normalization ---
+#markers are mainly positivly correlated without normaization, suggesting systematic/technical noise... 
+
 def plot_core_h3(df, file_name):
     
     temp = df.sum(axis=1)  
@@ -127,6 +125,8 @@ def plot_core_h3(df, file_name):
     plt.savefig(file_name, dpi=600)
     
 plot_core_h3(df, f"Figures/{src_name}-h3.png")
+'''
+# --- Normalization ---
 
 def norm(data, idv):
     """
@@ -157,6 +157,7 @@ def norm(data, idv):
 h3_intensity = df["histone_h3"].values.reshape(-1, 1) # Reshape to 2D array
 df_norm = norm(df, h3_intensity)
 
+'''
 spearman_corr = df_norm.corr(method='spearman')
 plt.figure()
 sns.heatmap(spearman_corr, cmap='coolwarm',
@@ -346,23 +347,35 @@ pca_plot(df_norm, "is_epithelial", f"Figures/{src_name}-pca-norm.png")
 
 # to reduce computational time and memory use
 # Note: we loose some information (~50% variance)
-#n_d = 20
+#n_d = 15
 #pca = PCA(n_components=n_d)
 #pca_data = pca.fit_transform(df_norm)
+'''
 
 X = df_norm.to_numpy()
-VI = inv(np.cov(X.T))
 
 # 2) tSNE & UMAP #
-ps = [10, 30, 50, 200]
-us = [10, 15, 30, 50]
+ps = [15, 30, 50]
+us = [15, 30, 50]
 ms = ['euclidean','cosine']
+
+def sort_key(label, priority_label):
+    return (0 if label.lower() == priority_label.lower() else 1, label.lower())
 
 def plot_dr(tsne_perplexities, umap_neighbors):
     
-    color_map = {1: 'orange', 0: 'blue'}
-    label_map = {1: 'Epithelial', 0: 'TME'}
+    reds = plt.colormaps.get_cmap('Reds')
+    dark_red = reds(0.8)
     
+    labels = df_meta['epithelial_label'].unique()
+    cmap = plt.colormaps.get_cmap('tab20')
+    colors = [cmap(i / max(1, len(labels) - 1)) for i in range(len(labels))]
+    color_map = {}
+    for i, label in enumerate(labels):
+        if label.lower() == 'epithelial':
+            color_map[label] = dark_red
+        else:
+            color_map[label] = colors[i]    
     tsne_results = [
         pd.read_csv(f'Results/{src_name}-tsne-{p}-{m}.csv').to_numpy() 
         for p in tsne_perplexities
@@ -378,49 +391,69 @@ def plot_dr(tsne_perplexities, umap_neighbors):
     # --- Top row: t-SNE ---
     for i, (p, result) in enumerate(zip(tsne_perplexities, tsne_results)):
         ax = axs[0, i]
-        for label in [0, 1]:
-            mask = df_meta['is_epithelial'].eq(label).to_numpy(dtype=bool)
+        for label in labels:
+            mask = df_meta['epithelial_label'] == label
+            mask = mask.to_numpy(dtype=bool)
             ax.scatter(result[mask, 1], result[mask, 2],
-                       alpha=0.1, 
-                       s=1,
-                       color=color_map[label], 
-                       label=label_map[label])
+                       alpha=0.3, 
+                       s=4,
+                       facecolor=color_map[label], 
+                       label=label,
+                       edgecolors='none')
+        ax.set_xlabel('t-SNE 1 [A.U.]')
         ax.set_title(f't-SNE, perplexity={p}')
     
     # --- Bottom row: UMAP ---
     for i, (n, result) in enumerate(zip(umap_neighbors, umap_results)):
         ax = axs[1, i]
-        for label in [0, 1]:
-            mask = df_meta['is_epithelial'].eq(label).to_numpy(dtype=bool)
+        for label in labels:
+            mask = df_meta['epithelial_label'] == label
+            mask = mask.to_numpy(dtype=bool)
             ax.scatter(result[mask, 1], result[mask, 2],
-                       alpha=0.1, 
-                       color=color_map[label], 
-                       label=label_map[label], 
-                       s=1)
+                       alpha=0.3, 
+                       facecolor=color_map[label], 
+                       label=label, 
+                       s=4,
+                       edgecolor='none')
+        ax.set_xlabel('UMAP 1 [A.U.]')
         ax.set_title(f'UMAP, n_neighbors={n}')
     
     # Remove unused bottom-right axes
     #for j in range(3, 5):
     #    fig.delaxes(axs[1, j])
-    axs[0,0].set_xlabel('t-SNE 1 [A.U.]')
     axs[0,0].set_ylabel('t-SNE 2 [A.U.]')
-    axs[1,0].set_xlabel('UMAP 1 [A.U.]')
     axs[1,0].set_ylabel('UMAP 2 [A.U.]')
     
     # Shared legend
     handles, labels_ = axs[0, 0].get_legend_handles_labels()
-    fig.legend(handles, labels_, loc='upper right', bbox_to_anchor=(1.12, 1), borderaxespad=0.)
+    priority_label = 'epithelial'
+    sorted_pairs = sorted(zip(labels_, handles), key=lambda x: sort_key(x[0],priority_label))
+    labels_, handles = zip(*sorted_pairs)
+    fig.legend(handles, labels_, 
+               loc='upper center',
+               fontsize='medium',
+               bbox_to_anchor=(0.5, 0.1),
+               framealpha=1,
+               ncol=5,
+               markerscale=8,
+               frameon=False)
     
-    plt.tight_layout()
-    plt.savefig(f'Figures/{src_name}-dr-norm-{m}.png', dpi=500)
+    #axs[0,0].legend(loc='upper right',
+    #                facecolor='white',
+    #                framealpha=1,
+    #                frameon=True,  
+    #                markerscale=10)
+    plt.tight_layout(rect=[0, 0.1, 1, 1])
+    plt.savefig(f'Figures/{src_name}-dr-norm-{m}.png', dpi=300)
     plt.close(fig)
-    print("...figure created")
+    print("figure created!")
 
 for m in ms:
+    print(f"calculating with {m}:")
     for p in ps: 
         tsne_filename = f'Results/{src_name}-tsne-{p}-{m}.csv'
         if not os.path.exists(tsne_filename):
-            print(f"...tSNE with perplexity: {p}")
+            print(f"...tSNE (perplexity = {p})")
             tsne = TSNE(n_jobs=2,
                         n_components=2,
                         perplexity=p,
@@ -436,12 +469,12 @@ for m in ms:
             del temp
             del tsne_result 
         else:
-            print(f"...skipping tSNE with perplexity {p} (file exists)")
+            print(f"......skipping tSNE with perplexity = {p} (file exists)")
     # UMAP
     for u in us:
         umap_filename = f'Results/{src_name}-umap-{u}-{m}.csv'
         if not os.path.exists(umap_filename):
-            print(f"...UMAP with number of neighbors: {u}")
+            print(f"...UMAP (# of neighbors = {u}")
             umap_model = umap.UMAP(n_jobs=2,
                                    n_components=2, 
                                    n_neighbors=u, 
@@ -456,9 +489,8 @@ for m in ms:
             del temp
             del umap_result 
         else:
-            print(f"...skipping UMAP with neighbors {u} (file exists)")    
+            print(f"......skipping UMAP with neighbors = {u} (file exists)")    
     plot_dr(ps, us)
-
 
 
 ################# draft code ###################
