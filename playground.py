@@ -83,20 +83,10 @@ df_meta['epithelial_label'] = df_meta.apply(
     lambda row: 'epithelial' if row['is_epithelial'] == 1 else row['label'],
     axis=1
 )
-'''
-# --- Raw corr --- 
-spearman_corr = df.corr(method='spearman')
-plt.figure(figsize=(16, 12))
-sns.heatmap(spearman_corr, cmap='coolwarm',
-            vmax = 1, vmin=-1)
-plt.tight_layout()
-plt.savefig(f"Figures/{src_name}-spearman-raw.png", dpi=600)
-
-#markers are mainly positivly correlated without normaization, suggesting systematic/technical noise... 
 
 def plot_core_h3(df, file_name):
     
-    temp = df.sum(axis=1)  
+    temp = df.sum(axis=1) - df["histone_h3"]  
     fig = plt.figure()
     gs = fig.add_gridspec(2, 2)
     ax2 = fig.add_subplot(gs[0, 0]) # avg
@@ -110,7 +100,7 @@ def plot_core_h3(df, file_name):
     ax1.legend()
     ax2.hist(temp, bins=20, 
              facecolor='none', edgecolor='k', 
-             label='Total signal', log=True)
+             label='Total - H3', log=True)
     ax2.set_ylabel('Freq. [#]')
     ax2.set_xlabel('Intensity')
     ax2.legend()
@@ -125,7 +115,7 @@ def plot_core_h3(df, file_name):
     plt.savefig(file_name, dpi=600)
     
 plot_core_h3(df, f"Figures/{src_name}-h3.png")
-'''
+
 # --- Normalization ---
 
 def norm(data, idv):
@@ -157,13 +147,32 @@ def norm(data, idv):
 h3_intensity = df["histone_h3"].values.reshape(-1, 1) # Reshape to 2D array
 df_norm = norm(df, h3_intensity)
 
-'''
+# --- Raw corr --- 
+fig = plt.figure()
+gs = fig.add_gridspec(1, 2)
+ax1 = fig.add_subplot(gs[0]) # h3
+ax2 = fig.add_subplot(gs[1]) # avg
+    
+spearman_corr_raw = df.corr(method='spearman')
+sns.heatmap(spearman_corr_raw, cmap='coolwarm',
+            xticklabels=True, yticklabels=True,
+            vmax = 1, vmin=-1,ax=ax1)
 spearman_corr = df_norm.corr(method='spearman')
-plt.figure()
 sns.heatmap(spearman_corr, cmap='coolwarm',
-            vmax = 1, vmin=-1)
+            xticklabels=True, yticklabels=False,
+            vmax = 1, vmin=-1, ax=ax2)
+ax1.set_xticklabels(ax1.get_xmajorticklabels(), fontsize=8) # Adjust fontsize as desired
+ax1.set_yticklabels(ax1.get_xmajorticklabels(), fontsize=8) # Adjust fontsize as desired
+ax2.set_xticklabels(ax2.get_xmajorticklabels(), fontsize=8) # Adjust fontsize as desired
 plt.tight_layout()
 plt.savefig(f"Figures/{src_name}-spearman-norm.png", dpi=600)
+
+#markers are mainly positivly correlated without normaization, suggesting systematic/technical noise... 
+
+
+
+
+
 
 # --- Dimensionality reduction ---
 
@@ -174,10 +183,10 @@ explained_variance = pca.explained_variance_ratio_
 
 def pca_plot(data, tags, file_name):
     #colors
-    blues = plt.colormaps.get_cmap('Blues')
-    reds = plt.colormaps.get_cmap('Reds')
-    dark_red = reds(0.8)
-    dark_blue = blues(0.8)
+    reds = plt.colormaps.get_cmap('Blues')
+    blues = plt.colormaps.get_cmap('Reds')
+    dark_red = reds(0.7)
+    dark_blue = blues(0.7)
     light_red = reds(0.4)
     light_blue = blues(0.4) 
     
@@ -227,9 +236,9 @@ def pca_plot(data, tags, file_name):
     explained_variance = pca.explained_variance_ratio_
     fig = plt.figure()
     gs = fig.add_gridspec(2, 2)
-    ax_pc1 = fig.add_subplot(gs[0, 1])
+    ax_pc1 = fig.add_subplot(gs[1, 0])
     ax_scatter = fig.add_subplot(gs[0, 0])
-    ax_pc2 = fig.add_subplot(gs[1, 0])
+    ax_pc2 = fig.add_subplot(gs[0, 1])
     ax_table = fig.add_subplot(gs[1, 1])
     ax_table.axis('off')  # No axis needed for table
     # Plot PC1 weights (Top Left)
@@ -272,16 +281,16 @@ def pca_plot(data, tags, file_name):
     for g in range(len(labels)):
         mask = df_meta[tags].eq(g).to_numpy(dtype=bool)
         ax_scatter.scatter(
-            pca_result[mask, 1],  # PC2 on x-axis
-            pca_result[mask, 0],  # PC1 on y-axis
+            pca_result[mask, 0],  # PC1
+            pca_result[mask, 1],  # PC2
             s=3,
             alpha=0.2,
             label=labels[g],
             color=colors[g]
         )
     ax_scatter.legend(loc='upper right', frameon=True, markerscale=6)
-    ax_scatter.set_xlabel(f'PC2 ({explained_variance[1]:.1%})')
-    ax_scatter.set_ylabel(f'PC1 ({explained_variance[0]:.1%})')
+    ax_scatter.set_xlabel(f'PC1 ({explained_variance[0]:.1%})')
+    ax_scatter.set_ylabel(f'PC2 ({explained_variance[1]:.1%})')
     
     table = ax_table.table(
         cellText=table_data,
@@ -310,7 +319,7 @@ def pca_plot(data, tags, file_name):
             cell.set_fontsize(12)
             cell.set_facecolor('#e0e0e0')    
     sns.despine(ax=ax_pc1, top = True, right = True)
-    ax_pc1.text(-0.15, 1.05, '(b)', 
+    ax_pc1.text(-0.15, 1.05, '(c)', 
             transform=ax_pc1.transAxes,
             fontsize=14, 
             fontweight='bold', 
@@ -324,7 +333,7 @@ def pca_plot(data, tags, file_name):
             va='top', 
             ha='right')
     sns.despine(ax=ax_pc2, top = True, right = True)
-    ax_pc2.text(-0.15, 1.05, '(c)', 
+    ax_pc2.text(-0.15, 1.05, '(b)', 
             transform=ax_pc2.transAxes,
             fontsize=14, 
             fontweight='bold', 
@@ -343,7 +352,9 @@ def pca_plot(data, tags, file_name):
     plt.savefig(file_name, dpi=600)
     plt.close(fig)
 
-pca_plot(df_norm, "is_epithelial", f"Figures/{src_name}-pca-norm.png")
+df_dropped = df_norm.drop(columns=['histone_h3']) 
+
+pca_plot(df_dropped, "is_epithelial", f"Figures/{src_name}-pca-norm.png")
 
 # to reduce computational time and memory use
 # Note: we loose some information (~50% variance)
