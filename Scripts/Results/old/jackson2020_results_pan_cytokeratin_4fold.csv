@@ -1,0 +1,2 @@
+marker,RMSE_mean,RMSE_std,Pearson_mean,Pearson_std,FID_mean(clean),FID_std,best_fold_idx,best_model_path,splits_path,cache_dir
+pan_cytokeratin,0.23653958164004513,0.04044725851478452,0.1459488868713379,0.11249171942472458,313.1394396996952,9.622832482129617,2,./cv_cache/model_jackson2020_pan_cytokeratin_fold2.pth,./cv_cache/cv_splits_jackson2020_pan_cytokeratin_4fold.pkl,./cv_cache
