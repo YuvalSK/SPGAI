@@ -1,3 +1,5 @@
+?test even lower lr? 
+
 best_hyperparams = {'lr': 2e-05,
                     'alpha': 0.985}
 
