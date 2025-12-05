@@ -1,3 +1,13 @@
+best_hyperparams = {'lr': 2e-05,
+                    'alpha': 0.985}
+
+[FINAL RESULTS] histone_h3_trimethylate
+  Test RMSE: 0.2506
+  Test Pearson: -0.1965
+  Test FID: 176.32
+
+
+Fine-tuning hyperparams with Cross validation (k=3, 10 trials): 
 | Trial | Learning rate (lr) | Alpha  | Mean CV loss | Rank (lower is better) |
 | ----- | ------------------ | ------ | ------------ | ---------------------- |
 | 0     | 8.6050 × 10⁻⁵      | 0.9856 | 0.0358       | 2                      |
@@ -15,10 +25,5 @@
   Test RMSE: 0.2714
   Test Pearson: -0.1969
   Test FID: 204.48
-  
-best_hyperparams = {'lr': 2e-05,
-                    'alpha': 0.985}
-
-
 
 
