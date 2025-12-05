@@ -1,31 +1,24 @@
-?test even lower lr? 
+?need to run with the new vis function, maybe with lower e.g., lr = 5e-6?
 
-best_hyperparams = {'lr': 2e-05,
-                    'alpha': 0.985}
-
-[FINAL RESULTS] histone_h3_trimethylate
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] 
+histone_h3_trimethylate
   Test RMSE: 0.2506
   Test Pearson: -0.1965
   Test FID: 176.32
+  best_hyperparams = {'lr': 2e-05,
+                    'alpha': 0.985}
 
-
-Fine-tuning hyperparams with Cross validation (k=3, 10 trials): 
-| Trial | Learning rate (lr) | Alpha  | Mean CV loss | Rank (lower is better) |
-| ----- | ------------------ | ------ | ------------ | ---------------------- |
-| 0     | 8.6050 × 10⁻⁵      | 0.9856 | 0.0358       | 2                      |
-| 1     | 2.3524 × 10⁻⁴      | 0.9539 | 0.0479       | 4                      |
-| 2     | 4.6532 × 10⁻⁵      | 0.9140 | 0.0576       | 7                      |
-| 3     | 3.5326 × 10⁻⁵      | 0.9780 | 0.0389       | 3                      |
-| 4     | 1.6278 × 10⁻⁴      | 0.9637 | 0.0500       | 6                      |
-| 5     | 3.1789 × 10⁻⁵      | 0.9873 | **0.0331**   | **1 (best)**           |
-| 6     | 3.1206 × 10⁻⁴      | 0.9191 | 0.0722       | 9                      |
-| 7     | 5.0036 × 10⁻⁵      | 0.9165 | 0.0625       | 8                      |
-| 8     | 7.0609 × 10⁻⁵      | 0.9472 | 0.0486       | 5                      |
-| 9     | 1.0113 × 10⁻⁴      | 0.9262 | 0.0800       | 10                     |
-
-[FINAL RESULTS] with trial 5 params for histone_h3_trimethylate:
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS]
+histone_h3_trimethylate:
   Test RMSE: 0.2714
   Test Pearson: -0.1969
   Test FID: 204.48
-
+  best_hyperparams = {'lr': 3.17e-05,
+                    'alpha': 0.987}
 
