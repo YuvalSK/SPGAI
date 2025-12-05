@@ -1,3 +1,8 @@
-best_hyperparams = {'lr': 2e-05,
-                        'alpha': 0.985}
-
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] estrogen_receptor_alpha
+  Test RMSE: 0.3013
+  Test Pearson: -0.1794
+  Test FID: 265.35
+  Hyperparams: {'lr': 2e-05, 'alpha': 0.985}
