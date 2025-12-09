@@ -12,14 +12,3 @@ histone_h3_trimethylate
   best_hyperparams = {'lr': 2e-05,
                     'alpha': 0.985}
 
-==========
-FINAL EVALUATION
-==========
-[FINAL RESULTS]
-histone_h3_trimethylate:
-  Test RMSE: 0.2714
-  Test Pearson: -0.1969
-  Test FID: 204.48
-  best_hyperparams = {'lr': 3.17e-05,
-                    'alpha': 0.987}
-

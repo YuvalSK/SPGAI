@@ -1,0 +1,35 @@
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.3743
+  Test Pearson: -0.0630
+  Test FID: 346.64
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] cytokeratin_5
+  Test RMSE: 0.4085
+  Test Pearson: -0.1112
+  Test FID: 371.65
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+  ==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] cytokeratin_8_18
+  Test RMSE: 0.4420
+  Test Pearson: -0.1204
+  Test FID: 313.99
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+  ==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] ki67
+  Test RMSE: 0.4668
+  Test Pearson: -0.1164
+  Test FID: 340.76
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}

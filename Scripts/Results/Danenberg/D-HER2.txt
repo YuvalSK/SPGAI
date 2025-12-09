@@ -1,8 +1,0 @@
-==========
-FINAL EVALUATION
-==========
-[FINAL RESULTS] c-erbB-2 - Her2
-  Test RMSE: 0.4627
-  Test Pearson: -0.1642
-  Test FID: 292.70
-  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
