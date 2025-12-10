@@ -7,3 +7,9 @@ Test Pearson: -0.1691
 Test FID: 257.67
 Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
 
+Other:
+[FINAL RESULTS] ERa
+  Test RMSE: 0.5954
+  Test Pearson: 0.0668
+  Test FID: 329.95
+  Hyperparams: {'lr': 0.001, 'alpha': 0.9}

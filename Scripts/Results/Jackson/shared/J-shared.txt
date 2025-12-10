@@ -1,0 +1,21 @@
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.3181
+  Test Pearson: 0.0884
+  Test FID: 298.44
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  Total training time for pan_cytokeratin: 116.67 minutes
+
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] cytokeratin_5
+  Test RMSE: 0.3790
+  Test Pearson: -0.1151
+  Test FID: 270.70
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  
+
+
