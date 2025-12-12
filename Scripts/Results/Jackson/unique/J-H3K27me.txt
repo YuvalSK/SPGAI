@@ -1,4 +1,4 @@
-run again to get norm vis and with lower lr 5e-5
+run again to get norm vis
 
 ==========
 FINAL EVALUATION
