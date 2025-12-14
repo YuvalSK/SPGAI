@@ -1,0 +1,15 @@
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.3717
+  Test Pearson: -0.0326
+  Test FID: 283.57
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+  Total training + external test time for pan_cytokeratin: 92.33 minutes
+
+[FINAL RESULTS] HER2
+  Test RMSE: 0.3986
+  Test Pearson: -0.1903
+  Test FID: 250.24
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  Total training + external test time for HER2: 86.27 minutes
+
