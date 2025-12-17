@@ -1,15 +1,53 @@
-[FINAL RESULTS] pan_cytokeratin
-  Test RMSE: 0.3717
-  Test Pearson: -0.0326
-  Test FID: 283.57
-  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+['cd20', 'cd3', 'cd45', 'cd68', 
+'cytokeratin_5', 'cytokeratin_8_18', 
+'ki_67', 'pan_cytokeratin', 'sma']
 
-  Total training + external test time for pan_cytokeratin: 92.33 minutes
 
-[FINAL RESULTS] HER2
-  Test RMSE: 0.3986
-  Test Pearson: -0.1903
-  Test FID: 250.24
-  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
-  Total training + external test time for HER2: 86.27 minutes
+[FINAL RESULTS] cd20
+  Test RMSE: 0.0379
+  Test Pearson: -0.0676
+  Test FID: 289.52
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for cd20: 124.99 minutes
 
+[FINAL RESULTS] cd3
+  Test RMSE: 0.0501
+  Test Pearson: 0.1569
+  Test FID: 316.49
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for cd3: 125.90 minutes
+
+[FINAL RESULTS] cd45
+  Test RMSE: 0.0693
+  Test Pearson: -0.0267
+  Test FID: 176.85
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for cd45: 128.62 minutes
+
+[FINAL RESULTS] cd68
+  Test RMSE: 0.0400
+  Test Pearson: 0.1308
+  Test FID: 314.11
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for cd68: 129.16 minutes
+
+[FINAL RESULTS] cytokeratin_5
+  Test RMSE: 0.0620
+  Test Pearson: -0.0881
+  Test FID: 259.15
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for cytokeratin_5: 129.54 minutes
+
+[FINAL RESULTS] cytokeratin_8_18
+  Test RMSE: 0.1634
+  Test Pearson: 0.1771
+  Test FID: 205.15
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for cytokeratin_8_18: 126.65 minutes
+
+[FINAL RESULTS] ki_67
+  Test RMSE: 0.0406
+  Test Pearson: 0.1767
+  Test FID: 261.76
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training + external test time for ki_67: 125.89 minutes
