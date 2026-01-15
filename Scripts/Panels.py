@@ -7,7 +7,7 @@ markers_by_ds = {}
 for ds in datasets:
     path = f"Results/{ds}/panel.parquet"
     df = pd.read_parquet(path, engine="fastparquet")
-
+    df.head()
     markers = (
         df["target"]
         .dropna()
@@ -20,6 +20,7 @@ for ds in datasets:
     # keep deterministic ordering
     markers_by_ds[ds] = sorted(markers)
 
+print(markers_by_ds)
 # 2) Build global counts: in how many datasets each marker appears
 marker_counts = Counter()
 for ds, markers in markers_by_ds.items():

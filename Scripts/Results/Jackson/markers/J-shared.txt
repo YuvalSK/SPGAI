@@ -1,0 +1,47 @@
+==========
+FINAL EVALUATION
+==========
+
+[FINAL RESULTS] ERa
+  Test RMSE: 0.0437
+  Test Pearson: 0.1624
+  Test FID: 251.13
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  --Total training time for ERa: 147.47 minutes
+
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.3181
+  Test Pearson: 0.0884
+  Test FID: 298.44
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  Total training time for pan_cytokeratin: 116.67 minutes
+
+[FINAL RESULTS] cytokeratin_5
+  Test RMSE: 0.3790
+  Test Pearson: -0.1151
+  Test FID: 270.70
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  
+[FINAL RESULTS] cytokeratin_8_18
+  Test RMSE: 0.4008
+  Test Pearson: -0.1023
+  Test FID: 257.05
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  Total training time for cytokeratin_8_18: 163.40 minutes
+
+[FINAL RESULTS] ki67
+  Test RMSE: 0.3905
+  Test Pearson: -0.1128
+  Test FID: 295.01
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  Total training time for ki67: 162.86 minutes
+
+[FINAL RESULTS] HER2
+  Test RMSE: 0.3512
+  Test Pearson: -0.1553
+  Test FID: 240.74
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+  Total training time for HER2: 158.60 minutes
+
+
+
