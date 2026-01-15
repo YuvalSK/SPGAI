@@ -1,2 +1,0 @@
-marker,RMSE_mean,RMSE_std,Pearson_mean,Pearson_std,FID_mean(clean),FID_std,best_fold_idx,best_model_path,splits_path,cache_dir
-CD45,0.24553347692007405,0.08978782197411883,-0.12178697437047958,0.1136682853102684,286.2847338309542,29.085507297494118,1,./cv_cache/model_danenberg2022_CD45_fold1.pth,./cv_cache/cv_splits_danenberg2022_CD45_4fold.pkl,./cv_cache

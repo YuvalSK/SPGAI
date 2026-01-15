@@ -1,2 +1,0 @@
-marker,RMSE_mean,RMSE_std,Pearson_mean,Pearson_std,FID_mean(clean),FID_std,best_fold_idx,best_model_path,splits_path,cache_dir
-pan_cytokeratin,0.23563607542516973,0.019912813830395504,0.21015283465385437,0.04255452752113342,238.50556942076685,22.53177721651998,1,./cv_cache/model_danenberg2022_pan_cytokeratin_fold1.pth,./cv_cache/cv_splits_danenberg2022_pan_cytokeratin_4fold.pkl,./cv_cache

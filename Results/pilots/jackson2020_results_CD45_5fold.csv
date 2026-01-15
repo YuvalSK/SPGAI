@@ -1,0 +1,2 @@
+marker,RMSE_mean,RMSE_std,Pearson_mean,Pearson_std,FID_mean(clean),FID_std,best_fold_idx,best_model_path,splits_path,cache_dir
+CD45,0.22699817580749293,0.026362606755777878,0.024035469628870487,0.037352403986071044,359.1485519125679,12.64215709901627,4,./cv_cache/model_jackson2020_CD45_fold4.pth,./cv_cache/cv_splits_jackson2020_CD45_4fold.pkl,./cv_cache

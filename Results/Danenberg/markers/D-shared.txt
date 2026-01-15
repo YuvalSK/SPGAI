@@ -1,0 +1,54 @@
+==========
+FINAL EVALUATION
+==========
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.3743
+  Test Pearson: -0.0630
+  Test FID: 346.64
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+
+[FINAL RESULTS] cytokeratin_5
+  Test RMSE: 0.4085
+  Test Pearson: -0.1112
+  Test FID: 371.65
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+
+[FINAL RESULTS] cytokeratin_8_18
+  Test RMSE: 0.4420
+  Test Pearson: -0.1204
+  Test FID: 313.99
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+
+[FINAL RESULTS] ki67
+  Test RMSE: 0.4668
+  Test Pearson: -0.1164
+  Test FID: 340.76
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+
+[FINAL RESULTS] Her2 (c-erbB-2)
+  Test RMSE: 0.4627
+  Test Pearson: -0.1642
+  Test FID: 292.70
+  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
+
+Other attemps:
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.4698
+  Test Pearson: 0.0713
+  Test FID: 373.85
+  Hyperparams: {'lr': 0.0002, 'alpha': 0.8}
+
+[FINAL RESULTS] HER2_3b5
+  Test RMSE: 0.7747
+  Test Pearson: -0.2960
+  Test FID: 324.26
+  Hyperparams: {'lr': 0.001, 'alpha': 0.9}
+  
+
+
+
+

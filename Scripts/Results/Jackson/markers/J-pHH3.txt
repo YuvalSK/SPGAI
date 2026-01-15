@@ -1,6 +1,0 @@
-[FINAL RESULTS] pHH3
-  Test RMSE: 0.3567
-  Test Pearson: -0.1357
-  Test FID: 317.12
-  Hyperparams: {'lr': 5e-06, 'alpha': 0.985}
-  Total training time for pHH3: 159.73 minutes

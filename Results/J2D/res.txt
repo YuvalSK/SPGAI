@@ -1,0 +1,84 @@
+- fix the RMSE issue - done! a small influence on rmse but corr is different! 
+- maybe in previous analyses the corr is not global rather avg. over batchs?
+
+markers = ['ERa','HER2', 'cytokeratin_5', 'cytokeratin_8_18', 'pan_cytokeratin',
+'cd20', 'cd3', 'cd45', 'cd68', 
+'ki_67', 'sma']
+
+[FINAL RESULTS] HER2
+  Test RMSE: 0.0873
+  Test Pearson: 0.450
+  Test FID: 161.5
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for c_erb_b_2_her2: 129.54 minutes
+
+[FINAL RESULTS] ERa
+  Test RMSE: 0.1302
+  Test Pearson: 0.5775
+  Test FID: 166.5
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for c_erb_b_2_her2: 130.93 minutes
+
+[FINAL RESULTS] cytokeratin_5
+  Test RMSE: 0.0519
+  Test Pearson: 0.0808
+  Test FID: 337.9
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for cytokeratin_5: 129.54 minutes
+
+[FINAL RESULTS] cytokeratin_8_18
+  Test RMSE: 0.1243
+  Test Pearson: 0.3682
+  Test FID: 189.6
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for cytokeratin_8_18: 126.65 minutes
+
+[FINAL RESULTS] ki_67
+  Test RMSE: 0.0451
+  Test Pearson: 0.1750
+  Test FID: 263.2
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for ki_67: 125.89 minutes
+
+[FINAL RESULTS] pan_cytokeratin
+  Test RMSE: 0.148
+  Test Pearson: 0.574
+  Test FID: 198.5
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for pan_cytokeratin: 125.96 minutes
+
+[FINAL RESULTS] sma
+  Test RMSE: 0.0973
+  Test Pearson: 0.13
+  Test FID: 186.9
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for sma: 134.48 minutes
+
+[FINAL RESULTS] cd20
+  Test RMSE: 0.0370
+  Test Pearson: 0.2176
+  Test FID: 351.2
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for cd20: 124.99 minutes
+
+[FINAL RESULTS] cd3
+  Test RMSE: 0.0547
+  Test Pearson: 0.1471
+  Test FID: 346.3
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for cd3: 125.90 minutes
+
+[FINAL RESULTS] cd45
+  Test RMSE: 0.0705
+  Test Pearson: 0.3704
+  Test FID: 206.2
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for cd45: 128.62 minutes
+
+[FINAL RESULTS] cd68
+  Test RMSE: 0.0446
+  Test Pearson: 0.0966
+  Test FID: 361.3
+  Hyperparams: {'lr': 0.0001, 'alpha': 0.985}
+  Total training for cd68: 129.16 minutes
+
