@@ -1,6 +1,3 @@
-- fix the RMSE issue - done! a small influence on rmse but corr is different! 
-- maybe in previous analyses the corr is not global rather avg. over batchs?
-
 markers = ['ERa','HER2', 'cytokeratin_5', 'cytokeratin_8_18', 'pan_cytokeratin',
 'cd20', 'cd3', 'cd45', 'cd68', 
 'ki_67', 'sma']
