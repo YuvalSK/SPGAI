@@ -44,14 +44,16 @@ Marker groups:
 
   Per-marker ResNet-UNet (PCA)       : 0.290
   Joint ResNet-UNet                  : 0.234
-  Joint ResNet-UNet + HyperConv (POC): 0.305
+  Joint ResNet-UNet + HyperConv: 0.305
 
-  For reference (different task/cohort — NOT directly comparable):
-    EVA (foundation model, zero-shot)    : 0.284
-    VirTues (foundation model)           : 0.728
+  For reference (Held-out cohort of 743 images — NOT directly comparable):
+    EVA (ImmuneVIS preprocessing pipeline, zero-shot)    : 0.284
+    VirTues* (immuneVis prepro)           : 0.728
     ImmuVis_Conv (foundation model)      : 0.774
 
---- Per-marker Pearson ---
+*Their original preprocessing pipeline requies statistics from unseen test cohort. But even with it ImmuneVis>Virtues
+
+--- Per-marker Pearson (Ours) ---
 
   Marker       | Per-marker (PCA) | Joint  | HyperConv (POC)
   -------------|------------------|--------|----------------
@@ -71,7 +73,7 @@ Marker groups:
 
   Per-marker ResNet-UNet (PCA)       : 251.7
   Joint ResNet-UNet                  : 253.0
-  Joint ResNet-UNet + HyperConv (POC): 234.1
+  Joint ResNet-UNet + HyperConv      : 234.1
 
   Notable HyperConv FID improvements:
     CK5   : 241 vs 378 (joint baseline)
@@ -99,48 +101,77 @@ breast cancer IMC cohorts exist with incompatible panels, and integrating them r
 either re-staining (expensive, often impossible on archival tissue) or computational
 imputation. Current state-of-the-art approaches (VirTues, EVA, ImmuVis) address panel
 heterogeneity through increasingly large foundation models pretrained on tens of millions
-of patches, effectively throwing compute and parameters at the problem. We argue that the
-bottleneck is not model capacity but preprocessing: standard arcsinh + filter + min-max
-normalization treats each channel as an independent intensity signal, ignoring the fact
-that a large fraction of any marker's pixel-level variance is structurally driven —
-explained by nuclear density and DNA content rather than true antibody expression. We
-propose a biologically-grounded preprocessing pipeline that explicitly removes this
-structural component via cross-marker regression on control channels (Histone H3, DNA1,
-DNA2) before model training, forcing the network to learn residual marker-specific
-expression patterns. Using a compact ResNet-UNet trained from scratch on a single breast
-cancer cohort (Jackson2020), we show this preprocessing alone enables competitive
-cross-cohort generalisation to an independent breast cancer dataset (Danenberg2022),
-matching or outperforming large pretrained foundation models on the same task — without
-their computational requirements. This makes the approach accessible to the typical IMC
-lab, which has one or two cohorts, a single GPU, and no path to pretraining on 17 million
-patches.
+of patches. While pretrained checkpoints can in principle be fine-tuned on a single GPU
+(e.g. via QLoRA), the pretraining itself requires a large curated multi-cohort dataset —
+a resource most IMC labs, which typically have one or two cohorts, do not possess. We
+argue that the bottleneck is not model capacity but preprocessing: standard arcsinh +
+filter + min-max normalization treats each channel as an independent intensity signal,
+ignoring the fact that a large fraction of any marker's pixel-level variance is
+structurally driven — explained by nuclear density and DNA content rather than true
+antibody expression. We propose a family of biologically-grounded, segmentation-free
+preprocessing pipelines that operate directly at the pixel level and explicitly remove
+this structural component using the nuclear control channels (Histone H3, DNA1, DNA2): a
+per-marker regression-residual scheme, and a multiplicative (scTransform-inspired) variant
+that estimates a marker-specific technical sensitivity (gamma) to a single nuclear axis
+and corrects each marker proportionally, anchored at the median. Using a compact
+ResNet-UNet trained from scratch on a single breast cancer cohort (Jackson2020), we
+present preliminary results suggesting competitive cross-cohort generalisation to an
+independent breast cancer dataset (Danenberg2022). We hypothesize that biological signal
+cleaning — not model scale — is the key ingredient for cross-cohort transfer; we test this
+directly by comparing these pipelines against ImmuVis-style preprocessing on the same
+architecture (pending).
 
 
 ========================================
 KEY FOLLOW-UP EXPERIMENTS
 ========================================
 
-1. PREPROCESSING PIPELINE ABLATION (priority)
-   Implement ImmuVis-style preprocessing on the same ResNet-UNet architecture and run
-   the same Jackson→Danenberg evaluation.
-   ImmuVis preprocessing: arcsinh(x/5) + Butterworth low-pass filter (order 2, cutoff
-   0.2 Nyquist — see Uchal et al. 2026 Appendix A.7) + panel-wise 99th-percentile
-   min-max normalization.
-   Compare per-marker and joint ResNet-UNet under:
-     (a) Regression-residual preprocessing (ours)
-     (b) ImmuVis-style preprocessing
-   This directly tests whether the preprocessing is the key ingredient for cross-cohort
-   generalisation. VirTues comparison not needed — ImmuVis already demonstrates
-   superiority over VirTues under both preprocessing pipelines (their Tables 1 and 8).
+1. PREPROCESSING PIPELINE ABLATION (TOP PRIORITY — tests the paper's central claim)
+   Same ResNet-UNet architecture, same Jackson→Danenberg evaluation, varying ONLY the
+   preprocessing. Three arms:
+     (a) Regression-residual (current): one SGDRegressor per input channel on
+         [H3, DNA1, DNA2] in raw intensity space → arcsinh residual → z-score.
+         NOTE: this is ALREADY marker-specific — each channel gets its own coefficients.
+     (b) Multiplicative gamma-correction (new, scTransform-inspired): arcsinh FIRST →
+         regress each marker on a single nuclear technical axis T = PC1([H3,DNA1,DNA2])
+         → subtract gamma_m * (ln T − median ln T). Differs from (a) in three ways:
+         multiplicative (log-space) rather than additive (raw-space) model; a single
+         anchored technical axis instead of multivariate control regression; and
+         median-centering so typical-permeability pixels are unchanged.
+     (c) ImmuVis-style: arcsinh(x/5) + Butterworth low-pass (order 2, 0.2 Nyquist;
+         Uchal et al. 2026 App. A.7) + panel-wise 99th-percentile min-max.
+   If (a)/(b) match or beat (c), biology-grounded cleaning beats signal processing at
+   fixed model size. VirTues comparison not needed — ImmuVis already dominates it under
+   both pipelines (their Tables 1 and 8).
 
-2. FID AS STANDARD EVALUATION METRIC
+2. PIXEL-LEVEL vs CELL-SEGMENTED NORMALIZATION (resolve and justify)
+   DECISION: keep the pixel-wise approach as primary; do NOT segment for normalization.
+   Rationale:
+     - The information segmentation would recover is already present at the pixel level:
+       high Ki-67 at (x,y) already implies a cell is there, and low signal implies it is
+       not. The model maps pixels → pixels, so the correction should live at the same
+       resolution.
+     - Segmentation injects error the pixel pipeline avoids: (i) segmentation mistakes in
+       dense tumor tissue at ~1um IMC resolution; (ii) collapsing each cell to a mean
+       discards the subcellular texture the UNet exploits and FID measures; (iii) painting
+       per-cell scalar corrections back onto pixel masks yields piecewise-constant images
+       — an artificial representation that adds noise and destroys spatial structure.
+     - The CyTOF model's T_i is a per-cell permeability scalar; at the pixel level
+       T = PC1(nuclear channels) is instead a nuclear-density / subcellular-architecture
+       signal. For a spatial generative model, removing that pixel-level structure is
+       appropriate and needs no per-cell abstraction.
+   OPTIONAL control (low priority, only if a reviewer demands it): compute gamma_m per
+   segmented cell, broadcast back to pixels, and confirm it does NOT outperform the
+   pixel-level correction — i.e. show segmentation adds cost and noise without benefit.
+
+3. FID AS A STANDARD EVALUATION METRIC
    ImmuVis, VirTues, and EVA report only MSE and Pearson — no spatial plausibility
-   metric. Introduce FID as a complementary evaluation axis:
-     - Show that high Pearson does not guarantee biologically plausible spatial structure
-     - Per-marker FID breakdown: structural/epithelial markers (CK5, panCK) show
-       largest FID gaps between conditions
-     - Argue FID should be standard in IMC virtual staining benchmarks
-     - Optional: compute FID of ImmuVis pretrained checkpoint zero-shot on J→D task
+   metric. Introduce FID as a complementary axis:
+     - High Pearson does not guarantee biologically plausible spatial structure.
+     - Per-marker FID breakdown: structural/epithelial markers (CK5, panCK) show the
+       largest FID gaps between conditions.
+     - Argue FID should be standard in IMC virtual-staining benchmarks.
+     - Optional: FID of the ImmuVis pretrained checkpoint zero-shot on the J→D task.
 
 
 ========================================
