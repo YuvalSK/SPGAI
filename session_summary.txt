@@ -119,7 +119,36 @@ present preliminary results suggesting competitive cross-cohort generalisation t
 independent breast cancer dataset (Danenberg2022). We hypothesize that biological signal
 cleaning — not model scale — is the key ingredient for cross-cohort transfer; we test this
 directly by comparing these pipelines against ImmuVis-style preprocessing on the same
-architecture (pending).
+architecture (pending). Beyond cohort integration, per-marker imputability yields a
+data-driven criterion for panel design: markers recoverable from the rest of the panel are
+partially redundant and can be dropped to free scarce metal-tag channels for markers that
+cannot.
+
+
+========================================
+POTENTIAL APPLICATIONS & IMPACT
+========================================
+
+1. Cohort integration / panel harmonization (core use case)
+   Impute markers missing from one cohort's panel using another's, enabling joint
+   analysis of cohorts with incompatible panels — without re-staining archival tissue.
+
+2. Data-driven panel design (NEW)
+   Per-marker imputation accuracy is a direct readout of how much INDEPENDENT information
+   each marker carries given the rest of the panel:
+     - Highly predictable markers (recoverable from the others) are partially REDUNDANT —
+       candidates to drop, freeing a scarce metal-tag channel.
+     - Poorly predictable markers (e.g. Ki-67, CD68 in current results) carry UNIQUE
+       signal — must be measured; prioritize them on the panel.
+   The imputation model becomes a tool to maximize independent biological information per
+   channel under IMC's hard channel budget.
+   CAVEAT: low predictability can mean "biologically independent" OR merely "noisy / hard
+   to predict." Predictability is necessary-but-not-sufficient evidence of redundancy —
+   pair it with a signal-quality check before dropping a marker.
+
+3. Biological QC of the imputation itself
+   An imputed marker that reproduces known co-expression relationships (see Experiment 4)
+   is evidence the model learned biology, not dataset-specific intensity artifacts.
 
 
 ========================================
@@ -172,6 +201,35 @@ KEY FOLLOW-UP EXPERIMENTS
        largest FID gaps between conditions.
      - Argue FID should be standard in IMC virtual-staining benchmarks.
      - Optional: FID of the ImmuVis pretrained checkpoint zero-shot on the J→D task.
+
+4. BIOLOGICAL-RELATIONSHIP VALIDATION OF IMPUTED MARKERS (no ground truth needed)
+   Goal: show an imputed marker preserves known biology in the TARGET cohort even though
+   that marker was never measured there — validating both the imputation and the
+   panel-design use case above.
+   Design:
+     - Pick a marker M present in Jackson but ABSENT from Danenberg. Strong candidates
+       (Jackson-only, well-characterized relationships): GATA3, progesterone receptor,
+       E-cadherin, vimentin, CK19/CK7, EGFR.
+     - Train to predict M from the shared inputs; apply to Danenberg → predicted-M map.
+     - Validate against markers that ARE measured in Danenberg, via known relationships:
+         GATA3       → POSITIVE spatial correlation with ERa (luminal program); enriched
+                       in epithelial (panCK+), depleted in stroma (SMA+) and immune (CD45+).
+         E-cadherin  → co-localizes with panCK / CK8-18; absent in SMA+ stroma.
+         Vimentin    → ANTI-correlates with epithelial panCK; enriched in stroma (SMA+).
+         EGFR        → tracks basal epithelium (CK5+).
+     - Quantify: compare corr(predicted_M, measured_X) in Danenberg against the SAME
+       corr(M, X) measured directly in Jackson (where both exist). Preservation of the
+       relationship = success. Include a NEGATIVE control (a pair expected to be
+       unrelated, e.g. GATA3 vs CD45) to demonstrate specificity, not a global intensity
+       artifact.
+     - Optional cell-level check: segment Danenberg, type cells from measured markers,
+       confirm predicted M is enriched in the expected cell type (e.g. GATA3 high in
+       luminal epithelial cells).
+   NOTE on the H3K27me3 example: in Jackson→Danenberg this maps to the Jackson-only
+   'histone_h3_trimethylate' channel. A repressive chromatin mark has only WEAK, noisy
+   pixel-level relationships (mild anti-correlation with proliferation/Ki-67 and active
+   chromatin), so use the lineage/luminal markers above as the PRIMARY validation and
+   treat any chromatin-mark relationship as a secondary, harder test.
 
 
 ========================================
