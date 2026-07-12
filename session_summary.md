@@ -184,6 +184,79 @@ Three arms:
 Possible paper narrative: A cheap, single-cohort, biology-grounded preprocessing (gamma) MATCHES foundation-model-style preprocessing on accuracy and BEATS it on spatial fidelity, at a fraction of the data cost. Also, FID as a needed IMC benchmark metric.
 
 ========================================
+ABUNDANCE vs STRUCTURE (Experiments 1 & 2) — @Results/.../e2_arm_marker_table.csv, e2_did_contrasts.csv
+========================================
+
+THE QUESTION (hypothesis)
+  A high pixel-to-pixel correlation between the predicted and the true marker could be
+  misleading. The model might only be guessing each image's OVERALL LEVEL of a marker
+  (which patient is high or low) while getting the actual SPATIAL PATTERN inside the tissue
+  wrong. If that is what is happening, the marker is not really "imputable" — you could not
+  drop it from a panel, because you would lose its spatial biology. We were especially
+  worried about ERα, which varies a lot in overall level between patients. So we asked:
+  does the good correlation come from real spatial recovery, or just from ranking patients
+  by abundance?
+
+HOW WE TESTED IT
+  Inference only — no retraining. We split the pixel correlation into three parts, per
+  marker:
+    - pooled: all pixels together (the number we usually report).
+    - between-image: correlation of the per-image AVERAGES — does the model get which
+      images are high or low overall (abundance).
+    - within-image: correlation after subtracting each image's own average — does the model
+      get the spatial pattern inside the image (structure).
+  Experiment 1: the residual checkpoint, three markers — ERα (main test), HER2 (backup),
+    panCK (control that should keep its structure).
+  Experiment 2: extended to ALL 3 preprocessing arms (residual, gamma, immuvis) × ALL 11
+    markers. Added a between-PATIENT version (pixel-weighted patient averages) as a
+    sensitivity check, a signal-quality score for each true channel (fraction of "on" pixels
+    and signal-to-noise), and a paired patient-level bootstrap (1000x, 718 patients over
+    794 Danenberg images) for confidence intervals. We also tested whether the
+    PREPROCESSING itself changes spatial recovery, using a paired contrast
+    Δ = (within_A − within_B) − (between_A − between_B) between each pair of arms.
+  Sanity check: the between-image and within-image pieces must add back up to the total.
+  They do (identity residual ~1e-15).
+
+MAIN RESULTS
+  1. No marker "flips" to abundance-only. Even ERα — the marker with the strongest
+     patient-ranking signal (between-image r = 0.82) — still recovers real spatial
+     structure (within-image r ≈ 0.52). So the correlations are NOT just abundance; the
+     model does learn the pattern inside the tissue.
+  2. Markers fall into clear, arm-stable PREDICTABILITY TIERS by within-image r:
+       HIGH: ERα (0.46), panCK (0.44)
+       MID:  HER2 (0.33), CD45 (0.31), CK8/18 (0.26), SMA (0.25)
+       LOW:  CD20 (0.17), Ki-67 (0.10), CD3 (0.10), CK5 (0.08), CD68 (0.04)
+     The LOW tier lines up almost exactly with LOW signal quality (few "on" pixels) — these
+     channels are weak/noisy, not specially "abundance-only".
+  3. Between-image ≈ between-patient everywhere → the abundance ranking is real, not an
+     artifact of some patients contributing many images.
+  4. Most of the true signal is WITHIN images (only ~2–20% of a marker's variance is
+     between images), so there is plenty of spatial pattern to recover.
+  5. Preprocessing DOES change spatial recovery for some markers. Clearest pattern: the
+     ImmuVis low-pass filter INFLATES the abundance (between-image) correlation for the weak
+     immune markers without adding spatial content — e.g. CD3 between-image r jumps
+     0.31 → 0.60 from residual to immuvis while within-image barely moves (0.09 → 0.11).
+     So ImmuVis makes those predictions MORE abundance-driven; residual and gamma keep them
+     more spatial.
+  6. The "abundance-leaning" flag (high abundance, low spatial) fired only for CD3, CD68,
+     Ki-67 in some arms — but ALL are low-signal-quality markers, so we do NOT read this as
+     a real biological "abundance-only" result. It just means "weak / hard to predict".
+
+WHAT IT MEANS (interpretation)
+  - The good correlations are real: the model recovers spatial biology inside the image, not
+    just the patient's overall level. This supports the virtual-staining and panel-design
+    claims — the well-predicted markers (ERα, panCK, HER2, CD45) really are imputable in the
+    meaningful, spatial sense.
+  - Pooled correlation alone can flatter a pipeline, because it mixes in the easy abundance
+    part. The WITHIN-image correlation is the honest metric, and it is the one that separates
+    the arms — the same lesson as the FID story: the headline accuracy number hides
+    differences that spatial metrics reveal.
+  - For weak markers we still cannot separate "biologically unique" from "just noisy": the
+    low-predictability markers are simply low-signal. This confirms the panel-design caveat —
+    pair predictability with a signal-quality check before calling a marker redundant.
+
+
+========================================
 PROPOSED ABSTRACT
 ========================================
 
@@ -202,9 +275,20 @@ and whether preprocessing (not scale) governs that transfer. Standard data norma
 fixed, we find that biology-grounded cleaning does not beat foundation-model-style signal processing on intensity accuracy (mean Pearson gamma 0.27 vs ImmuVis-style 0.28). Crucially, however, the gamma pipeline matches that accuracy while producing markedly more spatially realistic
 images (mean FID 202 vs 213) — with no multi-cohort pretraining. We conclude that at fixed
 model size a cheap, single-cohort preprocessing recipe is competitive with the
-preprocessing used by large foundation models. Additionally, spatial fidelity (FID) — which
+preprocessing used by large foundation models. We further ask whether these correlations
+reflect genuine spatial recovery or merely getting each image's overall marker level right.
+Splitting the pixel correlation into a between-image (abundance) and a within-image (spatial)
+component, we find that even the most abundance-dominated marker (ERα) keeps substantial
+within-image structure — the predictions are spatially real, not abundance artifacts — while
+markers separate into stable predictability tiers that track true-signal quality. Because
+pooled correlation can be inflated by the easy between-image component (e.g. low-pass signal
+processing raises abundance agreement for weak markers without adding spatial content), the
+within-image correlation is a more honest readout that, like spatial fidelity (FID) — which
 current IMC virtual-staining benchmarks omit — distinguishes pipelines that intensity
-correlation alone does not. Such per-marker imputability could support a data-driven criterion for panel design: markers recoverable from the rest of the panel can be dropped to free scarce metal-tag channels for markers that cannot.
+correlation alone does not. Such per-marker imputability, judged on spatial recovery and
+signal quality rather than pooled correlation, could support a data-driven criterion for
+panel design: markers recoverable from the rest of the panel can be dropped to free scarce
+metal-tag channels for markers that cannot.
 
 
 ========================================
@@ -234,36 +318,17 @@ POTENTIAL APPLICATIONS & IMPACT
 KEY FOLLOW-UP EXPERIMENTS
 ========================================
 
-1. PIXEL-LEVEL vs CELL-SEGMENTED NORMALIZATION (resolve and justify)
-   DECISION: keep the pixel-wise approach as primary; do NOT segment for normalization.
-   Rationale:
-     - The information segmentation would recover is already present at the pixel level:
-       high Ki-67 at (x,y) already implies a cell is there, and low signal implies it is
-       not. The model maps pixels → pixels, so the correction should live at the same
-       resolution.
-     - Segmentation injects error the pixel pipeline avoids: (i) segmentation mistakes in
-       dense tumor tissue at ~1um IMC resolution; (ii) collapsing each cell to a mean
-       discards the subcellular texture the UNet exploits and FID measures; (iii) painting
-       per-cell scalar corrections back onto pixel masks yields piecewise-constant images
-       — an artificial representation that adds noise and destroys spatial structure.
-     - The CyTOF model's T_i is a per-cell permeability scalar; at the pixel level
-       T = PC1(nuclear channels) is instead a nuclear-density / subcellular-architecture
-       signal. For a spatial generative model, removing that pixel-level structure is
-       appropriate and needs no per-cell abstraction.
-   OPTIONAL control (low priority, only if a reviewer demands it): compute gamma_m per
-   segmented cell, broadcast back to pixels, and confirm it does NOT outperform the
-   pixel-level correction — i.e. show segmentation adds cost and noise without benefit.
+1. Inference only. Load the existing Jackson→Danenberg checkpoints, run them, and save the predicted and true image for each marker. Focus on ERα (main test), HER2 (backup), and panCK (should stay good — the comparison). Split the correlation three ways, per marker. Pooled correlation (your current number); between-image (correlation of the per-image averages — does it get which patients are high or low); within-image (correlation after subtracting each image's own mean — does it get the spatial pattern). Report within-image two ways: pooled-after-centering and the median per-image value. Bootstrap by patient if you can tell which image belongs to which patient; otherwise by image, and say so. Quick check: the within and between pieces of variance/covariance should add up to the total. Finally, Look for the flip. The signal you're after: ERα scores high on pooled and between-image but low on within-image. If you see that, you have your candidate.
+2. Check if the flip matters for panels — no segmentation needed. Fix all thresholds first on Jackson (ERα-positive cutoff, panCK-high cutoff, neighborhood size ~10 px) — never tune them on Danenberg. Then, inside panCK-high epithelial regions only, ask whether predicted ERα recovers true ERα's variation there — i.e. beyond just "it's in the epithelium," which panCK already gives it for free. Two controls make it clean. First prove the test works: true ERα must look clearly different from a shifted (location-scrambled) copy of itself. Then the flip is confirmed if predicted ERα looks the same as its own shifted copy while true ERα does not. Call it a failure using a preset error size on a real number — the epithelial ERα-positive fraction.
 
-2. FID AS A STANDARD EVALUATION METRIC
-   ImmuVis, VirTues, and EVA report only MSE and Pearson — no spatial plausibility
-   metric. Introduce FID as a complementary axis:
-     - High Pearson does not guarantee biologically plausible spatial structure.
-     - Per-marker FID breakdown: structural/epithelial markers (CK5, panCK) show the
-       largest FID gaps between conditions.
-     - Argue FID should be standard in IMC virtual-staining benchmarks.
-     - Optional: FID of the ImmuVis pretrained checkpoint zero-shot on the J→D task.
+What each result buys you. Claim ERα is falsely "imputable" only if it keeps abundance but loses both within-image and within-epithelium detail, while panCK keeps both. One marker clearing this justifies moving to the strong-model check (phase 2). The paper needs the full marker map plus HER2 as a second example.
 
-3. BIOLOGICAL-RELATIONSHIP VALIDATION OF IMPUTED MARKERS (no ground truth needed)
+
+========================================
+Draft
+========================================
+
+BIOLOGICAL-RELATIONSHIP VALIDATION OF IMPUTED MARKERS (no ground truth needed)
    Goal: show an imputed marker preserves known biology in the TARGET cohort even though
    that marker was never measured there — validating both the imputation and the
    panel-design use case above.
