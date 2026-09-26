@@ -198,3 +198,24 @@ The ladder is valid only if every control lands on its expected rung.
 1. Whether an unpublished cohort is available (it would reopen the pretraining comparison, D2).
 2. Whether to include one foundation model in S1/S2 as an example application (section 5).
 3. Compute budget: 3 settings × 2 arms × 3 seeds × (joint model) ≈ 18 training runs.
+
+## 13. Side project: link to the breast-cancer CyTOF / C2S project
+
+**What and why.** The CyTOF project (7 breast tumours, 31 markers) found a trade-off between two ways of representing each cell. Rank encoding (the "sentence" C2S reads) groups marker-high cells more tightly than raw intensity. But intensity is better at predicting a held-out marker from the cell's neighbours in marker space. Those neighbours are cells with similar profiles, not cells that are physically close, because CyTOF dissociates the tissue and loses spatial coordinates. Building a "virtual spatial" layout for the CyTOF cells from an IMC model was considered and rejected. A single cell's markers carry only a weak signal about its location, so any such layout would mostly copy the IMC prior, making every spatial finding circular and impossible to validate on CyTOF. The honest question is whether the encoding that groups similar profiles better also better reflects a cell's real physical surroundings. IMC cell tables have both profiles and coordinates, so they can answer that directly. This extends the C2S result from similarity in marker space to tissue organisation. It reuses the leave-target-out kNN predictor from rung R5 (section 6.2) as shared code, and uses intensity space for R5, as the CyTOF results support.
+
+**How.**
+- **Data:** Danenberg cell tables (published single-cell data plus coordinates), restricted to the markers shared with the 31-marker CyTOF panel.
+- **Step 1 (go/no-go):** measure how well a cell's own profile predicts its physical surroundings:
+  - Surroundings = the immune, stromal and epithelial fractions among the cell's 10 nearest cells in physical space, and a cellular-neighbourhood label.
+  - Model: gradient boosting.
+  - Validation: patient-level CV.
+  - Stop if the neighbourhood label is predicted at AUROC ≲ 0.65. Transferring any spatial information to CyTOF would then be meaningless.
+- **Step 2 (main test):** for each encoding (intensity under the same scalings as the CyTOF study, and rank):
+  - Build the profile kNN graph (k = 30).
+  - For each cell, check whether its profile neighbours share its physical-neighbourhood composition: correlation of the composition vectors, and agreement of neighbourhood labels.
+  - Compare against a shuffled-coordinates null, with a patient bootstrap for CIs.
+  - Result: does the rank advantage inside the representation carry over to physical space, or does intensity win, as it does in held-out marker prediction?
+- **Step 3 (only if Step 1 passes):** train the Step 1 predictor on IMC and apply it to CyTOF cells.
+  - It gives each cell a predicted neighbourhood with a calibrated probability (the Bayesian version of the virtual-space idea).
+  - It is validated only on held-out IMC patients, never on CyTOF.
+  - It is reported as a hypothesis generator, with the caveats: CyTOF and IMC intensities differ, and IMC cell measurements include signal spilling over from neighbouring cells.
