@@ -1,0 +1,234 @@
+[{"stream_name":"stderr","time":5.45547702,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.45553762,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":6.219682702,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.219730592,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.219740852,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.219744182,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.76857051,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.76861203,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.7686167,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.768620511,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.236565993,"data":"sanity checks passed\n"}
+,{"stream_name":"stdout","time":10.743088249,"data":"{\n"}
+,{"stream_name":"stdout","time":10.743133459,"data":" \"danenberg\": [\n"}
+,{"stream_name":"stdout","time":10.743140409,"data":"  \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":10.743145699,"data":"  \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":10.743151089,"data":" ],\n"}
+,{"stream_name":"stdout","time":10.743155719,"data":" \"jackson\": [\n"}
+,{"stream_name":"stdout","time":10.743160759,"data":"  \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":10.743209639,"data":"  \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":10.743216979,"data":" ]\n"}
+,{"stream_name":"stdout","time":10.743222079,"data":"}\n"}
+,{"stream_name":"stdout","time":13.211396792,"data":"ER^{hi}CXCL12^{+}             epithelial\n"}
+,{"stream_name":"stdout","time":13.211442722,"data":"Ep CD57^{+}                   epithelial\n"}
+,{"stream_name":"stdout","time":13.211449782,"data":"HER2^{+}                      epithelial\n"}
+,{"stream_name":"stdout","time":13.211454862,"data":"CK^{med}ER^{lo}               epithelial\n"}
+,{"stream_name":"stdout","time":13.211459732,"data":"CK^{lo}ER^{med}               epithelial\n"}
+,{"stream_name":"stdout","time":13.211464752,"data":"CK^{lo}ER^{lo}                epithelial\n"}
+,{"stream_name":"stdout","time":13.211469492,"data":"CK^{+} CXCL12^{+}             epithelial\n"}
+,{"stream_name":"stdout","time":13.211474192,"data":"CK8-18^{hi}ER^{lo}            epithelial\n"}
+,{"stream_name":"stdout","time":13.211478892,"data":"Ep Ki67^{+}                   epithelial\n"}
+,{"stream_name":"stdout","time":13.211498272,"data":"CK8-18^{hi}CXCL12^{hi}        epithelial\n"}
+,{"stream_name":"stdout","time":13.211502972,"data":"MHC I \u0026 II^{hi}               epithelial\n"}
+,{"stream_name":"stdout","time":13.211508412,"data":"MHC I^{hi}CD57^{+}            epithelial\n"}
+,{"stream_name":"stdout","time":13.211526822,"data":"MHC^{hi}CD15^{+}              epithelial\n"}
+,{"stream_name":"stdout","time":13.211530572,"data":"CD15^{+}                      epithelial\n"}
+,{"stream_name":"stdout","time":13.211534192,"data":"Basal                         epithelial\n"}
+,{"stream_name":"stdout","time":13.211537762,"data":"CK8-18^{+} ER^{hi}            epithelial\n"}
+,{"stream_name":"stdout","time":13.211541282,"data":"Macrophages                       immune\n"}
+,{"stream_name":"stdout","time":13.211544952,"data":"Macrophages \u0026 granulocytes        immune\n"}
+,{"stream_name":"stdout","time":13.211548772,"data":"Ki67^{+}                          immune\n"}
+,{"stream_name":"stdout","time":13.211552182,"data":"Granulocytes                      immune\n"}
+,{"stream_name":"stdout","time":13.211555582,"data":"B cells                           immune\n"}
+,{"stream_name":"stdout","time":13.211559122,"data":"CD8^{+} T cells                   immune\n"}
+,{"stream_name":"stdout","time":13.211562472,"data":"CD57^{+}                          immune\n"}
+,{"stream_name":"stdout","time":13.211565652,"data":"CD4^{+} T cells \u0026 APCs            immune\n"}
+,{"stream_name":"stdout","time":13.211569672,"data":"CD4^{+} T cells                   immune\n"}
+,{"stream_name":"stdout","time":13.211572822,"data":"CD38^{+} lymphocytes              immune\n"}
+,{"stream_name":"stdout","time":13.211576022,"data":"T_{Reg} \u0026 T_{Ex}                  immune\n"}
+,{"stream_name":"stdout","time":13.211579372,"data":"Fibroblasts                      stromal\n"}
+,{"stream_name":"stdout","time":13.211582562,"data":"Endothelial                      stromal\n"}
+,{"stream_name":"stdout","time":13.211585742,"data":"Myofibroblasts PDPN^{+}          stromal\n"}
+,{"stream_name":"stdout","time":13.211588922,"data":"Myofibroblasts                   stromal\n"}
+,{"stream_name":"stdout","time":13.211592152,"data":"Fibroblasts FSP1^{+}             stromal\n"}
+,{"stream_name":"stdout","time":15.303019313,"data":"danenberg: 1,062,219 cells, 704 images, 650 patients, 32 phenotypes, 36 markers\n"}
+,{"stream_name":"stderr","time":15.303916343,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":15.303936173,"data":"\n"}
+,{"stream_name":"stderr","time":15.303940233,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":17.908433096,"data":"[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:    2.4s\n"}
+,{"stream_name":"stderr","time":17.908475396,"data":"\n"}
+,{"stream_name":"stderr","time":17.908479916,"data":"[Parallel(n_jobs=4)]: Done  33 tasks      | elapsed:    2.4s\n"}
+,{"stream_name":"stderr","time":29.067135639,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:   13.6s\n"}
+,{"stream_name":"stderr","time":29.067175619,"data":"\n"}
+,{"stream_name":"stderr","time":29.069178649,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed:   13.6s\n"}
+,{"stream_name":"stderr","time":47.92043581,"data":"[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:   32.4s\n"}
+,{"stream_name":"stderr","time":47.92047122,"data":"\n"}
+,{"stream_name":"stderr","time":47.92049886,"data":"[Parallel(n_jobs=4)]: Done 357 tasks      | elapsed:   32.4s\n"}
+,{"stream_name":"stderr","time":64.88271663,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed:   49.4s\n"}
+,{"stream_name":"stderr","time":64.88278095,"data":"\n"}
+,{"stream_name":"stderr","time":64.88278757,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed:   49.4s\n"}
+,{"stream_name":"stderr","time":68.076724886,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed:   52.6s finished\n"}
+,{"stream_name":"stderr","time":68.076761256,"data":"\n"}
+,{"stream_name":"stderr","time":68.076765886,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed:   52.6s finished\n"}
+,{"stream_name":"stdout","time":68.165057155,"data":"danenberg per-image: 0.9 min\n"}
+,{"stream_name":"stdout","time":71.08744698,"data":"MC14 Hypoxic                epithelial\n"}
+,{"stream_name":"stdout","time":71.087491561,"data":"MC25 CK+ HR lo              epithelial\n"}
+,{"stream_name":"stdout","time":71.087498771,"data":"MC24 CK+ HR+                epithelial\n"}
+,{"stream_name":"stdout","time":71.087503531,"data":"MC23 CK+ HR hi              epithelial\n"}
+,{"stream_name":"stdout","time":71.087507921,"data":"MC22 CK lo HR lo            epithelial\n"}
+,{"stream_name":"stdout","time":71.087512501,"data":"MC21 Epithelial low         epithelial\n"}
+,{"stream_name":"stdout","time":71.087517171,"data":"MC20 CK7+                   epithelial\n"}
+,{"stream_name":"stdout","time":71.087521651,"data":"MC19 CK7+ CK hi Ecadh hi    epithelial\n"}
+,{"stream_name":"stdout","time":71.087526041,"data":"MC18 Basal CK               epithelial\n"}
+,{"stream_name":"stdout","time":71.087530411,"data":"MC17 p53+ EGFR+             epithelial\n"}
+,{"stream_name":"stdout","time":71.087534981,"data":"MC16 Proliferative          epithelial\n"}
+,{"stream_name":"stdout","time":71.087539531,"data":"MC15 Apoptotic              epithelial\n"}
+,{"stream_name":"stdout","time":71.087543871,"data":"MC26 CK lo HR hi p53+       epithelial\n"}
+,{"stream_name":"stdout","time":71.087548501,"data":"MC27 Myoepithelial          epithelial\n"}
+,{"stream_name":"stdout","time":71.087553011,"data":"MC06 Macrophage                 immune\n"}
+,{"stream_name":"stdout","time":71.087557481,"data":"MC05 T cell                     immune\n"}
+,{"stream_name":"stdout","time":71.087562311,"data":"MC04 Macrophage                 immune\n"}
+,{"stream_name":"stdout","time":71.087566841,"data":"MC03 T cell                     immune\n"}
+,{"stream_name":"stdout","time":71.087571151,"data":"MC02 T \u0026 B cells                immune\n"}
+,{"stream_name":"stdout","time":71.087576551,"data":"MC01 B cell                     immune\n"}
+,{"stream_name":"stdout","time":71.087581141,"data":"MC12 Large elongated           stromal\n"}
+,{"stream_name":"stdout","time":71.087585871,"data":"MC11 Fibronectin hi            stromal\n"}
+,{"stream_name":"stdout","time":71.087590841,"data":"MC10 Small elongated           stromal\n"}
+,{"stream_name":"stdout","time":71.087595231,"data":"MC09 Small circular            stromal\n"}
+,{"stream_name":"stdout","time":71.087600191,"data":"MC08 Vimentin hi               stromal\n"}
+,{"stream_name":"stdout","time":71.087604541,"data":"MC07 Endothelial               stromal\n"}
+,{"stream_name":"stdout","time":71.087609091,"data":"MC13 SMA hi Vimentin hi        stromal\n"}
+,{"stream_name":"stdout","time":73.288253043,"data":"jackson: 1,126,124 cells, 542 images, 349 patients, 27 phenotypes, 32 markers\n"}
+,{"stream_name":"stderr","time":73.301228952,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":73.301273842,"data":"\n"}
+,{"stream_name":"stderr","time":73.303192913,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":76.783786001,"data":"[Parallel(n_jobs=4)]: Done  58 tasks      | elapsed:    3.5s\n"}
+,{"stream_name":"stderr","time":76.783870271,"data":"\n"}
+,{"stream_name":"stderr","time":76.786164963,"data":"[Parallel(n_jobs=4)]: Done  58 tasks      | elapsed:    3.5s\n"}
+,{"stream_name":"stderr","time":96.733487307,"data":"[Parallel(n_jobs=4)]: Done 226 tasks      | elapsed:   23.4s\n"}
+,{"stream_name":"stderr","time":96.733567317,"data":"\n"}
+,{"stream_name":"stderr","time":96.733575047,"data":"[Parallel(n_jobs=4)]: Done 226 tasks      | elapsed:   23.4s\n"}
+,{"stream_name":"stderr","time":132.974697408,"data":"[Parallel(n_jobs=4)]: Done 429 tasks      | elapsed:   59.7s\n"}
+,{"stream_name":"stderr","time":132.974759698,"data":"\n"}
+,{"stream_name":"stderr","time":132.980323218,"data":"[Parallel(n_jobs=4)]: Done 429 tasks      | elapsed:   59.7s\n"}
+,{"stream_name":"stderr","time":138.476237858,"data":"[Parallel(n_jobs=4)]: Done 542 out of 542 | elapsed:  1.1min finished\n"}
+,{"stream_name":"stderr","time":138.476287048,"data":"\n"}
+,{"stream_name":"stderr","time":138.476460318,"data":"[Parallel(n_jobs=4)]: Done 542 out of 542 | elapsed:  1.1min finished\n"}
+,{"stream_name":"stdout","time":138.50153886,"data":"jackson per-image: 1.1 min\n"}
+,{"stream_name":"stdout","time":138.84553286,"data":"   cohort                    marker  E_intensity  E_rank  E_rank_minus_int  same_type_intensity  same_type_rank  same_type_rank_minus_int  chance_type  type_loss_within_broad_class  type_loss_to_other_broad_class\n"}
+,{"stream_name":"stdout","time":138.84557004,"data":"danenberg                 all_cells          NaN     NaN               NaN                0.528           0.460                    -0.068        0.233                         0.025                           0.042\n"}
+,{"stream_name":"stdout","time":138.845577041,"data":"danenberg      beta_2_microglobulin        2.130   2.399             0.270                0.482           0.420                    -0.062        0.199                         0.020                           0.042\n"}
+,{"stream_name":"stdout","time":138.84558267,"data":"danenberg        c_erb_b_2_her2_3b5        2.434   2.677             0.243                0.579           0.524                    -0.055        0.260                         0.028                           0.027\n"}
+,{"stream_name":"stdout","time":138.84558827,"data":"danenberg      c_erb_b_2_her2_d8f12        2.381   2.524             0.143                0.577           0.520                    -0.058        0.260                         0.028                           0.030\n"}
+,{"stream_name":"stdout","time":138.845593781,"data":"danenberg                caveolin_1        2.413   2.442             0.028                0.513           0.448                    -0.065        0.198                         0.018                           0.047\n"}
+,{"stream_name":"stdout","time":138.84559889,"data":"danenberg                     cd11c        2.087   2.281             0.194                0.524           0.463                    -0.061        0.228                         0.022                           0.039\n"}
+,{"stream_name":"stdout","time":138.84560429,"data":"danenberg                     cd134        1.535   1.803             0.268                0.525           0.461                    -0.065        0.237                         0.023                           0.042\n"}
+,{"stream_name":"stdout","time":138.84560999,"data":"danenberg cd140b_pdgf_receptor_beta        2.228   2.321             0.093                0.487           0.417                    -0.070        0.192                         0.019                           0.051\n"}
+,{"stream_name":"stdout","time":138.84561727,"data":"danenberg                      cd15        1.884   2.024             0.140                0.543           0.479                    -0.064        0.245                         0.023                           0.041\n"}
+,{"stream_name":"stdout","time":138.84563833,"data":"danenberg                      cd16        2.252   2.430             0.178                0.488           0.423                    -0.065        0.204                         0.016                           0.049\n"}
+,{"stream_name":"stdout","time":138.84564313,"data":"danenberg                     cd163        1.980   2.194             0.215                0.497           0.432                    -0.066        0.215                         0.020                           0.046\n"}
+,{"stream_name":"stdout","time":138.845646641,"data":"danenberg                      cd20        2.141   2.296             0.155                0.561           0.500                    -0.060        0.249                         0.029                           0.031\n"}
+,{"stream_name":"stdout","time":138.84565057,"data":"danenberg                cd278_icos        1.845   2.074             0.229                0.553           0.490                    -0.063        0.249                         0.026                           0.036\n"}
+,{"stream_name":"stdout","time":138.845654461,"data":"danenberg                cd279_pd_1        2.074   2.279             0.205                0.560           0.499                    -0.061        0.251                         0.027                           0.034\n"}
+,{"stream_name":"stdout","time":138.845727501,"data":"danenberg                       cd3        2.133   2.344             0.211                0.536           0.474                    -0.063        0.238                         0.034                           0.029\n"}
+,{"stream_name":"stdout","time":138.84573451,"data":"danenberg                 cd31_v_wf        2.181   2.323             0.142                0.541           0.477                    -0.064        0.220                         0.025                           0.039\n"}
+,{"stream_name":"stdout","time":138.845746241,"data":"danenberg                      cd38        2.228   2.378             0.151                0.559           0.500                    -0.059        0.247                         0.031                           0.029\n"}
+,{"stream_name":"stdout","time":138.845750281,"data":"danenberg                       cd4        2.201   2.363             0.162                0.505           0.448                    -0.056        0.225                         0.027                           0.030\n"}
+,{"stream_name":"stdout","time":138.845754681,"data":"danenberg                      cd45        2.276   2.608             0.333                0.499           0.440                    -0.059        0.215                         0.029                           0.029\n"}
+,{"stream_name":"stdout","time":138.84575777,"data":"danenberg                    cd45ra        2.534   2.595             0.061                0.566           0.506                    -0.060        0.244                         0.034                           0.026\n"}
+,{"stream_name":"stdout","time":138.84576151,"data":"danenberg                      cd57        2.072   2.274             0.202                0.553           0.493                    -0.060        0.245                         0.028                           0.032\n"}
+,{"stream_name":"stdout","time":138.845765601,"data":"danenberg                      cd68        2.257   2.373             0.116                0.474           0.409                    -0.065        0.198                         0.015                           0.050\n"}
+,{"stream_name":"stdout","time":138.845769141,"data":"danenberg                      cd8a        2.168   2.278             0.110                0.538           0.475                    -0.063        0.234                         0.032                           0.030\n"}
+,{"stream_name":"stdout","time":138.845773041,"data":"danenberg          cleaved_caspase3        2.268   2.403             0.135                0.564           0.507                    -0.058        0.250                         0.025                           0.032\n"}
+,{"stream_name":"stdout","time":138.845782461,"data":"danenberg              cxcl12_sdf_1        2.368   2.539             0.170                0.575           0.519                    -0.056        0.257                         0.030                           0.026\n"}
+,{"stream_name":"stdout","time":138.845786441,"data":"danenberg             cytokeratin_5        1.727   1.971             0.243                0.552           0.486                    -0.065        0.246                         0.022                           0.044\n"}
+,{"stream_name":"stdout","time":138.84579037,"data":"danenberg          cytokeratin_8_18        2.343   2.541             0.198                0.566           0.510                    -0.056        0.256                         0.030                           0.026\n"}
+,{"stream_name":"stdout","time":138.845794581,"data":"danenberg   estrogen_receptor_alpha        2.679   2.948             0.269                0.565           0.506                    -0.059        0.248                         0.026                           0.032\n"}
+,{"stream_name":"stdout","time":138.845798261,"data":"danenberg                     foxp3        1.662   1.942             0.280                0.529           0.465                    -0.064        0.239                         0.025                           0.039\n"}
+,{"stream_name":"stdout","time":138.84580203,"data":"danenberg                      fsp1        2.156   2.311             0.155                0.475           0.411                    -0.064        0.192                         0.023                           0.041\n"}
+,{"stream_name":"stdout","time":138.845805481,"data":"danenberg             gitr_tnfrsf18        1.942   2.184             0.242                0.550           0.489                    -0.061        0.248                         0.026                           0.035\n"}
+,{"stream_name":"stdout","time":138.84580901,"data":"danenberg                   hla_abc        2.286   2.583             0.298                0.481           0.419                    -0.062        0.191                         0.021                           0.041\n"}
+,{"stream_name":"stdout","time":138.84581287,"data":"danenberg                    hla_dr        2.306   2.479             0.173                0.486           0.422                    -0.064        0.199                         0.014                           0.050\n"}
+,{"stream_name":"stdout","time":138.845816541,"data":"danenberg                     ki_67        2.125   1.720            -0.405                0.530           0.468                    -0.062        0.240                         0.021                           0.041\n"}
+,{"stream_name":"stdout","time":138.845820481,"data":"danenberg           pan_cytokeratin        2.931   3.091             0.161                0.558           0.506                    -0.052        0.248                         0.031                           0.020\n"}
+,{"stream_name":"stdout","time":138.845824201,"data":"danenberg                podoplanin        1.976   2.124             0.149                0.541           0.477                    -0.065        0.239                         0.024                           0.041\n"}
+,{"stream_name":"stdout","time":138.845827441,"data":"danenberg                       sma        2.125   2.270             0.145                0.527           0.456                    -0.072        0.207                         0.023                           0.049\n"}
+,{"stream_name":"stdout","time":138.84583119,"data":"  jackson                 all_cells          NaN     NaN               NaN                0.593           0.523                    -0.070        0.278                         0.026                           0.044\n"}
+,{"stream_name":"stdout","time":138.845839621,"data":"  jackson            c_erb_b_2_her2        2.775   3.034             0.259                0.691           0.651                    -0.040        0.326                         0.024                           0.016\n"}
+,{"stream_name":"stdout","time":138.845843401,"data":"  jackson                     c_myc        2.427   2.619             0.192                0.661           0.607                    -0.054        0.299                         0.028                           0.027\n"}
+,{"stream_name":"stdout","time":138.845847181,"data":"  jackson     carbonic_anhydrase_ix        2.604   2.676             0.072                0.677           0.630                    -0.047        0.313                         0.024                           0.023\n"}
+,{"stream_name":"stdout","time":138.845850601,"data":"  jackson                      cd20        2.059   2.218             0.159                0.638           0.574                    -0.064        0.300                         0.028                           0.036\n"}
+,{"stream_name":"stdout","time":138.84585425,"data":"  jackson                       cd3        2.127   2.123            -0.004                0.617           0.528                    -0.089        0.268                         0.031                           0.058\n"}
+,{"stream_name":"stdout","time":138.845858021,"data":"  jackson                      cd44        2.772   2.871             0.098                0.573           0.495                    -0.079        0.241                         0.028                           0.051\n"}
+,{"stream_name":"stdout","time":138.845861321,"data":"  jackson                      cd45        2.460   2.472             0.012                0.562           0.472                    -0.091        0.237                         0.029                           0.062\n"}
+,{"stream_name":"stdout","time":138.84586503,"data":"  jackson                      cd68        2.491   2.412            -0.079                0.516           0.435                    -0.081        0.219                         0.027                           0.054\n"}
+,{"stream_name":"stdout","time":138.845868561,"data":"  jackson              cleaved_parp        2.427   2.532             0.105                0.629           0.572                    -0.057        0.278                         0.027                           0.030\n"}
+,{"stream_name":"stdout","time":138.84587271,"data":"  jackson            cytokeratin_19        2.861   3.108             0.247                0.685           0.646                    -0.039        0.323                         0.024                           0.014\n"}
+,{"stream_name":"stdout","time":138.845876421,"data":"  jackson             cytokeratin_5        2.095   2.337             0.243                0.651           0.600                    -0.052        0.301                         0.024                           0.028\n"}
+,{"stream_name":"stdout","time":138.84587989,"data":"  jackson             cytokeratin_7        2.337   2.373             0.036                0.662           0.613                    -0.049        0.320                         0.024                           0.026\n"}
+,{"stream_name":"stdout","time":138.84588313,"data":"  jackson          cytokeratin_8_18        3.082   3.282             0.200                0.682           0.642                    -0.040        0.325                         0.025                           0.015\n"}
+,{"stream_name":"stdout","time":138.845886501,"data":"  jackson     e_cadherin_p_cadherin        3.148   3.344             0.197                0.686           0.647                    -0.039        0.326                         0.024                           0.015\n"}
+,{"stream_name":"stdout","time":138.84588973,"data":"  jackson                      egfr        2.325   2.420             0.096                0.657           0.604                    -0.053        0.302                         0.024                           0.029\n"}
+,{"stream_name":"stdout","time":138.845897721,"data":"  jackson   estrogen_receptor_alpha        2.425   2.593             0.168                0.677           0.627                    -0.050        0.325                         0.026                           0.024\n"}
+,{"stream_name":"stdout","time":138.84590145,"data":"  jackson               fibronectin        2.517   2.657             0.141                0.492           0.411                    -0.081        0.206                         0.018                           0.063\n"}
+,{"stream_name":"stdout","time":138.84590513,"data":"  jackson                     gata3        2.673   2.935             0.261                0.687           0.643                    -0.044        0.326                         0.027                           0.017\n"}
+,{"stream_name":"stdout","time":138.845908981,"data":"  jackson        histone_h3_phospho        2.159   2.286             0.127                0.627           0.561                    -0.066        0.282                         0.029                           0.037\n"}
+,{"stream_name":"stdout","time":138.84591201,"data":"  jackson   histone_h3_trimethylate        2.443   2.620             0.177                0.683           0.631                    -0.052        0.307                         0.027                           0.025\n"}
+,{"stream_name":"stdout","time":138.84591531,"data":"  jackson          keratin_14_krt14        2.127   2.333             0.206                0.647           0.592                    -0.055        0.293                         0.026                           0.028\n"}
+,{"stream_name":"stdout","time":138.845919061,"data":"  jackson                     ki_67        2.176   2.086            -0.090                0.609           0.550                    -0.059        0.296                         0.024                           0.034\n"}
+,{"stream_name":"stdout","time":138.845922841,"data":"  jackson                     m_tor        2.945   2.992             0.048                0.703           0.662                    -0.041        0.327                         0.025                           0.016\n"}
+,{"stream_name":"stdout","time":138.845926701,"data":"  jackson                       p53        1.911   2.163             0.252                0.648           0.591                    -0.057        0.307                         0.025                           0.032\n"}
+,{"stream_name":"stdout","time":138.84593061,"data":"  jackson           pan_cytokeratin        4.404   4.573             0.169                0.679           0.640                    -0.039        0.330                         0.022                           0.017\n"}
+,{"stream_name":"stdout","time":138.845934681,"data":"  jackson progesterone_receptor_a_b        2.578   2.771             0.193                0.684           0.638                    -0.046        0.316                         0.026                           0.020\n"}
+,{"stream_name":"stdout","time":138.845938721,"data":"  jackson                        s6        2.188   2.238             0.050                0.593           0.530                    -0.064        0.276                         0.026                           0.037\n"}
+,{"stream_name":"stdout","time":138.84594253,"data":"  jackson                      slug        2.128   2.315             0.186                0.634           0.573                    -0.061        0.288                         0.028                           0.033\n"}
+,{"stream_name":"stdout","time":138.84594647,"data":"  jackson                       sma        2.742   2.722            -0.020                0.536           0.452                    -0.085        0.223                         0.029                           0.056\n"}
+,{"stream_name":"stdout","time":138.84595469,"data":"  jackson                     twist        2.331   2.515             0.184                0.651           0.598                    -0.053        0.295                         0.028                           0.026\n"}
+,{"stream_name":"stdout","time":138.84595859,"data":"  jackson                      v_wf        2.197   2.265             0.068                0.602           0.521                    -0.081        0.252                         0.038                           0.043\n"}
+,{"stream_name":"stdout","time":138.84596209,"data":"  jackson                  vimentin        2.908   2.951             0.043                0.528           0.435                    -0.092        0.199                         0.035                           0.058\n"}
+,{"stream_name":"stdout","time":138.870625582,"data":"{\n"}
+,{"stream_name":"stdout","time":138.870668482,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":138.870673072,"data":"  \"n_markers\": 36,\n"}
+,{"stream_name":"stdout","time":138.870676492,"data":"  \"enrichment_rank_higher_ci\": 35,\n"}
+,{"stream_name":"stdout","time":138.870679562,"data":"  \"enrichment_rank_lower_ci\": 1,\n"}
+,{"stream_name":"stdout","time":138.870682552,"data":"  \"purity_rank_lower_ci\": 36,\n"}
+,{"stream_name":"stdout","time":138.870685632,"data":"  \"purity_rank_higher_ci\": 0,\n"}
+,{"stream_name":"stdout","time":138.870688502,"data":"  \"median_E_diff\": 0.1718087973050479,\n"}
+,{"stream_name":"stdout","time":138.870692062,"data":"  \"median_purity_diff\": -0.0624030246454953,\n"}
+,{"stream_name":"stdout","time":138.870695362,"data":"  \"spearman_Ediff_vs_puritydiff\": 0.12792792792792793,\n"}
+,{"stream_name":"stdout","time":138.870698812,"data":"  \"all_cells_purity\": [\n"}
+,{"stream_name":"stdout","time":138.870701982,"data":"   0.5280973778863143,\n"}
+,{"stream_name":"stdout","time":138.870703902,"data":"   0.46034088335688605,\n"}
+,{"stream_name":"stdout","time":138.870705822,"data":"   0.233115227235905\n"}
+,{"stream_name":"stdout","time":138.870707692,"data":"  ],\n"}
+,{"stream_name":"stdout","time":138.870709542,"data":"  \"all_cells_loss_within_broad\": 0.025295165517866453,\n"}
+,{"stream_name":"stdout","time":138.870711532,"data":"  \"all_cells_loss_other_broad\": 0.04246132901156177\n"}
+,{"stream_name":"stdout","time":138.870713492,"data":" },\n"}
+,{"stream_name":"stdout","time":138.870715372,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":138.870717302,"data":"  \"n_markers\": 32,\n"}
+,{"stream_name":"stdout","time":138.870719222,"data":"  \"enrichment_rank_higher_ci\": 27,\n"}
+,{"stream_name":"stdout","time":138.870721172,"data":"  \"enrichment_rank_lower_ci\": 2,\n"}
+,{"stream_name":"stdout","time":138.870723112,"data":"  \"purity_rank_lower_ci\": 32,\n"}
+,{"stream_name":"stdout","time":138.870725012,"data":"  \"purity_rank_higher_ci\": 0,\n"}
+,{"stream_name":"stdout","time":138.870727012,"data":"  \"median_E_diff\": 0.14973779835547396,\n"}
+,{"stream_name":"stdout","time":138.870728962,"data":"  \"median_purity_diff\": -0.05441048405881801,\n"}
+,{"stream_name":"stdout","time":138.870730922,"data":"  \"spearman_Ediff_vs_puritydiff\": 0.6173020527859238,\n"}
+,{"stream_name":"stdout","time":138.870732892,"data":"  \"all_cells_purity\": [\n"}
+,{"stream_name":"stdout","time":138.870734782,"data":"   0.5927955346987311,\n"}
+,{"stream_name":"stdout","time":138.870736672,"data":"   0.5228661252162707,\n"}
+,{"stream_name":"stdout","time":138.870738532,"data":"   0.2783657704723426\n"}
+,{"stream_name":"stdout","time":138.870740392,"data":"  ],\n"}
+,{"stream_name":"stdout","time":138.870755892,"data":"  \"all_cells_loss_within_broad\": 0.02573821768110795,\n"}
+,{"stream_name":"stdout","time":138.870758082,"data":"  \"all_cells_loss_other_broad\": 0.044191191801352454\n"}
+,{"stream_name":"stdout","time":138.870760092,"data":" }\n"}
+,{"stream_name":"stdout","time":138.870761912,"data":"}\n"}
+,{"stream_name":"stdout","time":140.091142725,"data":"done\n"}
+,{"stream_name":"stderr","time":144.940930016,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":144.940971046,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":145.095964785,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":145.095995725,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":145.678957161,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":145.941132246,"data":"[NbConvertApp] Writing 51015 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":148.311164179,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":149.122240797,"data":"[NbConvertApp] Writing 409677 bytes to __results__.html\n"}
+]

@@ -1,0 +1,201 @@
+[{"stream_name":"stderr","time":8.606443214,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.606522653,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.606529726,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.606533792,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.397015702000001,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.397055607,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.397143261,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.397149313,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.911965986,"data":"marker in space: 3.19   left out (independent markers): 0.98\n"}
+,{"stream_name":"stdout","time":13.912135773,"data":"sanity checks passed\n"}
+,{"stream_name":"stdout","time":18.726357661,"data":"prep checks: {'all_35_channels_mapped': True, 'cells_\u003e=500k': True, 'tumour_images_\u003e=400': True, 'mask_match_\u003e=98%': True, 'mask_one_to_one': True, 'alignment_dna1_r\u003e0.9': True}\n"}
+,{"stream_name":"stdout","time":22.739555649,"data":"1,126,124 cells, 542 images, 349 patients\n"}
+,{"stream_name":"stdout","time":22.739603555,"data":"         cells  images  patients\n"}
+,{"stream_name":"stdout","time":22.739610255,"data":"cohort                          \n"}
+,{"stream_name":"stdout","time":22.739614875,"data":"basel   767415     284       278\n"}
+,{"stream_name":"stdout","time":22.739618079,"data":"zurich  358709     258        71\n"}
+,{"stream_name":"stderr","time":25.902064994,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":25.90210687,"data":"\n"}
+,{"stream_name":"stderr","time":25.90211356,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":84.908244453,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:   58.8s\n"}
+,{"stream_name":"stderr","time":84.908323261,"data":"\n"}
+,{"stream_name":"stderr","time":84.908330235,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:   58.8s\n"}
+,{"stream_name":"stderr","time":526.841363094,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed:  8.3min\n"}
+,{"stream_name":"stderr","time":526.841414579,"data":"\n"}
+,{"stream_name":"stderr","time":526.841422922,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed:  8.3min\n"}
+,{"stream_name":"stderr","time":1718.797725978,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 28.2min\n"}
+,{"stream_name":"stderr","time":1718.798304215,"data":"\n"}
+,{"stream_name":"stderr","time":1718.798315562,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 28.2min\n"}
+,{"stream_name":"stderr","time":4510.965538885,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 74.7min\n"}
+,{"stream_name":"stderr","time":4510.965613987,"data":"\n"}
+,{"stream_name":"stderr","time":4510.965620607,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 74.7min\n"}
+,{"stream_name":"stderr","time":8234.198567005,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 136.8min\n"}
+,{"stream_name":"stderr","time":8234.198724949,"data":"\n"}
+,{"stream_name":"stderr","time":8234.198737138,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 136.8min\n"}
+,{"stream_name":"stderr","time":8855.6906927,"data":"[Parallel(n_jobs=4)]: Done 542 out of 542 | elapsed: 147.2min finished\n"}
+,{"stream_name":"stderr","time":8855.690741049,"data":"\n"}
+,{"stream_name":"stderr","time":8855.690749913,"data":"[Parallel(n_jobs=4)]: Done 542 out of 542 | elapsed: 147.2min finished\n"}
+,{"stream_name":"stdout","time":8855.719905305,"data":"per-image: 147.2 min\n"}
+,{"stream_name":"stdout","time":8859.97972189,"data":"(946048, 14)\n"}
+,{"stream_name":"stdout","time":8861.335017766,"data":" space  variant       value  intensity  intensity_lo  intensity_hi  rank  rank_lo  rank_hi   diff  diff_lo  diff_hi\n"}
+,{"stream_name":"stdout","time":8861.335066812,"data":"cytof6 standard      E_prof      3.436         3.363         3.503 2.611    2.566    2.653 -0.825   -0.862   -0.790\n"}
+,{"stream_name":"stdout","time":8861.335073358,"data":"cytof6 standard beyond_type      1.845         1.769         1.916 1.135    1.089    1.182 -0.710   -0.745   -0.675\n"}
+,{"stream_name":"stdout","time":8861.335076779,"data":"cytof6 standard      E_phys      1.721           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8861.335080177,"data":"cytof6      lto      E_prof      2.063         2.011         2.112 1.687    1.655    1.720 -0.376   -0.406   -0.347\n"}
+,{"stream_name":"stdout","time":8861.3350835,"data":"cytof6      lto beyond_type      0.577         0.533         0.622 0.323    0.296    0.351 -0.254   -0.281   -0.226\n"}
+,{"stream_name":"stdout","time":8861.335086892,"data":"cytof6      lto      E_phys      1.721           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8861.335090325,"data":"full32 standard      E_prof      2.523         2.492         2.552 2.648    2.615    2.678  0.125    0.112    0.136\n"}
+,{"stream_name":"stdout","time":8861.335093767,"data":"full32 standard beyond_type      0.924         0.894         0.953 1.034    0.999    1.066  0.110    0.097    0.120\n"}
+,{"stream_name":"stdout","time":8861.335096947,"data":"full32 standard      E_phys      1.666           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8861.335100203,"data":"full32      lto      E_prof      2.132         2.102         2.159 2.193    2.163    2.222  0.062    0.050    0.072\n"}
+,{"stream_name":"stdout","time":8861.335103321,"data":"full32      lto beyond_type      0.566         0.544         0.589 0.620    0.593    0.645  0.054    0.042    0.063\n"}
+,{"stream_name":"stdout","time":8861.335106446,"data":"full32      lto      E_phys      1.666           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8861.335109646,"data":"              marker_name  E_prof_intensity  E_prof_rank  rank_minus_int  E_phys_intensity\n"}
+,{"stream_name":"stdout","time":8861.335112815,"data":"                    ki_67              2.15         2.06           -0.08              1.27\n"}
+,{"stream_name":"stdout","time":8861.335115909,"data":"                     cd68              2.48         2.42           -0.06              1.45\n"}
+,{"stream_name":"stdout","time":8861.335119257,"data":"                      cd3              2.14         2.13           -0.01              1.30\n"}
+,{"stream_name":"stdout","time":8861.335122523,"data":"                      sma              2.75         2.77            0.02              1.63\n"}
+,{"stream_name":"stdout","time":8861.335127191,"data":"                     cd45              2.48         2.51            0.03              1.50\n"}
+,{"stream_name":"stdout","time":8861.335130455,"data":"                     v_wf              2.23         2.26            0.04              1.32\n"}
+,{"stream_name":"stdout","time":8861.33514621,"data":"            cytokeratin_7              2.35         2.39            0.04              1.45\n"}
+,{"stream_name":"stdout","time":8861.335148938,"data":"                 vimentin              2.94         2.99            0.05              1.69\n"}
+,{"stream_name":"stdout","time":8861.33515141,"data":"                    m_tor              2.93         2.98            0.05              1.93\n"}
+,{"stream_name":"stdout","time":8861.335153843,"data":"                     egfr              2.38         2.45            0.08              1.75\n"}
+,{"stream_name":"stdout","time":8861.335156531,"data":"    carbonic_anhydrase_ix              2.66         2.74            0.08              1.91\n"}
+,{"stream_name":"stdout","time":8861.335159182,"data":"                       s6              2.17         2.25            0.09              1.48\n"}
+,{"stream_name":"stdout","time":8861.335161681,"data":"                     cd44              2.73         2.84            0.11              1.98\n"}
+,{"stream_name":"stdout","time":8861.335164181,"data":"             cleaved_parp              2.39         2.50            0.11              1.64\n"}
+,{"stream_name":"stdout","time":8861.335166604,"data":"       histone_h3_phospho              2.16         2.29            0.13              1.35\n"}
+,{"stream_name":"stdout","time":8861.335169044,"data":"              fibronectin              2.47         2.61            0.14              1.94\n"}
+,{"stream_name":"stdout","time":8861.335171524,"data":"                     cd20              2.09         2.25            0.16              1.44\n"}
+,{"stream_name":"stdout","time":8861.335173951,"data":"  histone_h3_trimethylate              2.44         2.62            0.18              1.59\n"}
+,{"stream_name":"stdout","time":8861.335176608,"data":"  estrogen_receptor_alpha              2.47         2.65            0.18              1.57\n"}
+,{"stream_name":"stdout","time":8861.335179135,"data":"                     slug              2.15         2.33            0.18              1.55\n"}
+,{"stream_name":"stdout","time":8861.335181701,"data":"                    twist              2.40         2.58            0.18              1.54\n"}
+,{"stream_name":"stdout","time":8861.335184205,"data":"                    c_myc              2.50         2.69            0.19              1.81\n"}
+,{"stream_name":"stdout","time":8861.335186633,"data":"         keratin_14_krt14              2.15         2.34            0.19              1.52\n"}
+,{"stream_name":"stdout","time":8861.335189065,"data":"progesterone_receptor_a_b              2.60         2.80            0.21              1.67\n"}
+,{"stream_name":"stdout","time":8861.335191567,"data":"    e_cadherin_p_cadherin              3.13         3.34            0.21              2.35\n"}
+,{"stream_name":"stdout","time":8861.335193996,"data":"         cytokeratin_8_18              3.01         3.23            0.22              1.88\n"}
+,{"stream_name":"stdout","time":8861.335196643,"data":"          pan_cytokeratin              4.10         4.32            0.22              2.48\n"}
+,{"stream_name":"stdout","time":8861.335199525,"data":"            cytokeratin_5              2.13         2.36            0.23              1.46\n"}
+,{"stream_name":"stdout","time":8861.335202048,"data":"                      p53              2.00         2.24            0.24              1.35\n"}
+,{"stream_name":"stdout","time":8861.335204536,"data":"           c_erb_b_2_her2              2.78         3.03            0.24              1.93\n"}
+,{"stream_name":"stdout","time":8861.335206966,"data":"           cytokeratin_19              2.85         3.12            0.26              1.74\n"}
+,{"stream_name":"stdout","time":8861.335211909,"data":"                    gata3              2.70         3.01            0.31              1.74\n"}
+,{"stream_name":"stdout","time":8864.467711059,"data":" size       value  intensity  rank   diff  diff_lo  diff_hi\n"}
+,{"stream_name":"stdout","time":8864.467755347,"data":"    6      E_prof      3.429 2.495 -0.934   -0.958   -0.911\n"}
+,{"stream_name":"stdout","time":8864.467761653,"data":"    6 beyond_type      1.836 1.059 -0.777   -0.803   -0.751\n"}
+,{"stream_name":"stdout","time":8864.467765753,"data":"   12      E_prof      2.895 2.606 -0.289   -0.301   -0.278\n"}
+,{"stream_name":"stdout","time":8864.467769305,"data":"   12 beyond_type      1.310 1.076 -0.235   -0.246   -0.224\n"}
+,{"stream_name":"stdout","time":8864.467772863,"data":"   18      E_prof      2.711 2.643 -0.068   -0.079   -0.058\n"}
+,{"stream_name":"stdout","time":8864.467776485,"data":"   18 beyond_type      1.112 1.061 -0.052   -0.061   -0.043\n"}
+,{"stream_name":"stdout","time":8864.467780682,"data":"   24      E_prof      2.591 2.635  0.044    0.033    0.055\n"}
+,{"stream_name":"stdout","time":8864.467784534,"data":"   24 beyond_type      0.998 1.040  0.043    0.032    0.052\n"}
+,{"stream_name":"stdout","time":8864.467788149,"data":"   31      E_prof      2.528 2.644  0.116    0.103    0.127\n"}
+,{"stream_name":"stdout","time":8864.467791979,"data":"   31 beyond_type      0.931 1.035  0.103    0.091    0.114\n"}
+,{"stream_name":"stdout","time":8864.467795659,"data":"   32      E_prof      2.523 2.648  0.125    0.112    0.136\n"}
+,{"stream_name":"stdout","time":8864.467799273,"data":"   32 beyond_type      0.924 1.034  0.110    0.097    0.120\n"}
+,{"stream_name":"stdout","time":8875.809745982,"data":" space  variant  rho_rank  rho_intensity   diff  diff_lo  diff_hi\n"}
+,{"stream_name":"stdout","time":8875.809798366,"data":"cytof6 standard     0.406          0.337  0.069    0.035    0.102\n"}
+,{"stream_name":"stdout","time":8875.809804774,"data":"cytof6      lto     0.736          0.762 -0.027   -0.036   -0.018\n"}
+,{"stream_name":"stdout","time":8875.809810051,"data":"full32 standard     0.653          0.656 -0.004   -0.012    0.006\n"}
+,{"stream_name":"stdout","time":8875.809815484,"data":"full32      lto     0.676          0.698 -0.023   -0.029   -0.016\n"}
+,{"stream_name":"stdout","time":8876.01991987,"data":"{\n"}
+,{"stream_name":"stdout","time":8876.019960134,"data":" \"cytof6\": {\n"}
+,{"stream_name":"stdout","time":8876.019967056,"data":"  \"1_rank_beats_intensity\": false,\n"}
+,{"stream_name":"stdout","time":8876.019972006,"data":"  \"1_diff\": [\n"}
+,{"stream_name":"stdout","time":8876.019976527,"data":"   -0.8254183893088871,\n"}
+,{"stream_name":"stdout","time":8876.019981024,"data":"   -0.8621683614335591,\n"}
+,{"stream_name":"stdout","time":8876.01998609,"data":"   -0.7899924713478595\n"}
+,{"stream_name":"stdout","time":8876.019990641,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8876.019995336,"data":"  \"2_survives_leave_one_out\": false,\n"}
+,{"stream_name":"stdout","time":8876.020000527,"data":"  \"2_diff_lto\": [\n"}
+,{"stream_name":"stdout","time":8876.020004992,"data":"   -0.37589474138968754,\n"}
+,{"stream_name":"stdout","time":8876.020009844,"data":"   -0.4057132115005305,\n"}
+,{"stream_name":"stdout","time":8876.02001449,"data":"   -0.34741247622357546\n"}
+,{"stream_name":"stdout","time":8876.020019197,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8876.020023915,"data":"  \"3_rank_higher_beyond_type\": false,\n"}
+,{"stream_name":"stdout","time":8876.02002863,"data":"  \"3_diff_beyond_type\": [\n"}
+,{"stream_name":"stdout","time":8876.020033449,"data":"   -0.7098469546188023,\n"}
+,{"stream_name":"stdout","time":8876.020057013,"data":"   -0.7453271433655292,\n"}
+,{"stream_name":"stdout","time":8876.020061243,"data":"   -0.6749666582713747\n"}
+,{"stream_name":"stdout","time":8876.020064786,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8876.02006832,"data":"  \"4_rank_tracks_tissue_better\": true,\n"}
+,{"stream_name":"stdout","time":8876.020071836,"data":"  \"4_rho_rank_vs_intensity\": [\n"}
+,{"stream_name":"stdout","time":8876.020074471,"data":"   0.40564345139887453,\n"}
+,{"stream_name":"stdout","time":8876.02007682,"data":"   0.3370663768762576,\n"}
+,{"stream_name":"stdout","time":8876.020079163,"data":"   0.034509493766319364,\n"}
+,{"stream_name":"stdout","time":8876.020082092,"data":"   0.10185893737250966\n"}
+,{"stream_name":"stdout","time":8876.02008449,"data":"  ]\n"}
+,{"stream_name":"stdout","time":8876.02008688,"data":" },\n"}
+,{"stream_name":"stdout","time":8876.020089292,"data":" \"full32\": {\n"}
+,{"stream_name":"stdout","time":8876.020091665,"data":"  \"1_rank_beats_intensity\": true,\n"}
+,{"stream_name":"stdout","time":8876.020094088,"data":"  \"1_diff\": [\n"}
+,{"stream_name":"stdout","time":8876.020096535,"data":"   0.12458191602900277,\n"}
+,{"stream_name":"stdout","time":8876.020098933,"data":"   0.11163242670953213,\n"}
+,{"stream_name":"stdout","time":8876.02010167,"data":"   0.13575994152676102\n"}
+,{"stream_name":"stdout","time":8876.020104804,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8876.020108295,"data":"  \"2_survives_leave_one_out\": true,\n"}
+,{"stream_name":"stdout","time":8876.020112137,"data":"  \"2_diff_lto\": [\n"}
+,{"stream_name":"stdout","time":8876.020115914,"data":"   0.0618881988647919,\n"}
+,{"stream_name":"stdout","time":8876.020119508,"data":"   0.049796839830038624,\n"}
+,{"stream_name":"stdout","time":8876.020123292,"data":"   0.07200625636136586\n"}
+,{"stream_name":"stdout","time":8876.020127077,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8876.020131323,"data":"  \"3_rank_higher_beyond_type\": true,\n"}
+,{"stream_name":"stdout","time":8876.020135594,"data":"  \"3_diff_beyond_type\": [\n"}
+,{"stream_name":"stdout","time":8876.020139441,"data":"   0.1095288538433994,\n"}
+,{"stream_name":"stdout","time":8876.020143085,"data":"   0.09707817556576001,\n"}
+,{"stream_name":"stdout","time":8876.020146692,"data":"   0.1201093366977644\n"}
+,{"stream_name":"stdout","time":8876.020150363,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8876.020153994,"data":"  \"4_rank_tracks_tissue_better\": false,\n"}
+,{"stream_name":"stdout","time":8876.020157809,"data":"  \"4_rho_rank_vs_intensity\": [\n"}
+,{"stream_name":"stdout","time":8876.0201619,"data":"   0.6526171374579393,\n"}
+,{"stream_name":"stdout","time":8876.020165626,"data":"   0.6563378377231321,\n"}
+,{"stream_name":"stdout","time":8876.020169332,"data":"   -0.011639262786907068,\n"}
+,{"stream_name":"stdout","time":8876.020173027,"data":"   0.006182081684405276\n"}
+,{"stream_name":"stdout","time":8876.020176643,"data":"  ]\n"}
+,{"stream_name":"stdout","time":8876.020180324,"data":" }\n"}
+,{"stream_name":"stdout","time":8876.020183256,"data":"}\n"}
+,{"stream_name":"stdout","time":8876.957338594,"data":"done\n"}
+,{"stream_name":"stderr","time":8882.862415482,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8882.862462277,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8883.074463702,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8883.07450854,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8883.864160433,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8883.91537923,"data":"[NbConvertApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('outputs' was unexpected)\n"}
+,{"stream_name":"stderr","time":8883.915417708,"data":"\n"}
+,{"stream_name":"stderr","time":8883.915422148,"data":"Failed validating 'additionalProperties' in markdown_cell:\n"}
+,{"stream_name":"stderr","time":8883.915425254,"data":"\n"}
+,{"stream_name":"stderr","time":8883.915428196,"data":"On instance['cells'][0]:\n"}
+,{"stream_name":"stderr","time":8883.915431815,"data":"{'cell_type': 'markdown',\n"}
+,{"stream_name":"stderr","time":8883.915435734,"data":" 'id': 'c27aa998',\n"}
+,{"stream_name":"stderr","time":8883.915439453,"data":" 'metadata': {'papermill': {'duration': 0.005219,\n"}
+,{"stream_name":"stderr","time":8883.915443646,"data":"                            'end_time': '2026-09-28T10:00:15.321302+00:00',\n"}
+,{"stream_name":"stderr","time":8883.915447605,"data":"                            'exception': False,\n"}
+,{"stream_name":"stderr","time":8883.915451688,"data":"                            'start_time': '2026-09-28T10:00:15.316083+00:00',\n"}
+,{"stream_name":"stderr","time":8883.915456094,"data":"                            'status': 'completed'},\n"}
+,{"stream_name":"stderr","time":8883.915460409,"data":"              'tags': []},\n"}
+,{"stream_name":"stderr","time":8883.915464051,"data":" 'outputs': ['...0 outputs...'],\n"}
+,{"stream_name":"stderr","time":8883.915467797,"data":" 'source': '# kNN enrichment of marker-high cells: rank vs intensity '\n"}
+,{"stream_name":"stderr","time":8883.915471596,"data":"           '(Jackso...'}\n"}
+,{"stream_name":"stderr","time":8884.262952005,"data":"[NbConvertApp] Writing 37577 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8887.288337772,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8887.337094207,"data":"[NbConvertApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('outputs' was unexpected)\n"}
+,{"stream_name":"stderr","time":8887.337132401,"data":"\n"}
+,{"stream_name":"stderr","time":8887.337139043,"data":"Failed validating 'additionalProperties' in markdown_cell:\n"}
+,{"stream_name":"stderr","time":8887.337143175,"data":"\n"}
+,{"stream_name":"stderr","time":8887.337146876,"data":"On instance['cells'][0]:\n"}
+,{"stream_name":"stderr","time":8887.337151015,"data":"{'cell_type': 'markdown',\n"}
+,{"stream_name":"stderr","time":8887.337154864,"data":" 'id': 'c27aa998',\n"}
+,{"stream_name":"stderr","time":8887.337159038,"data":" 'metadata': {'papermill': {'duration': 0.005219,\n"}
+,{"stream_name":"stderr","time":8887.337162865,"data":"                            'end_time': '2026-09-28T10:00:15.321302+00:00',\n"}
+,{"stream_name":"stderr","time":8887.337166824,"data":"                            'exception': False,\n"}
+,{"stream_name":"stderr","time":8887.337170244,"data":"                            'start_time': '2026-09-28T10:00:15.316083+00:00',\n"}
+,{"stream_name":"stderr","time":8887.337172928,"data":"                            'status': 'completed'},\n"}
+,{"stream_name":"stderr","time":8887.337175407,"data":"              'tags': []},\n"}
+,{"stream_name":"stderr","time":8887.337177807,"data":" 'outputs': ['...0 outputs...'],\n"}
+,{"stream_name":"stderr","time":8887.337180275,"data":" 'source': '# kNN enrichment of marker-high cells: rank vs intensity '\n"}
+,{"stream_name":"stderr","time":8887.337240043,"data":"           '(Jackso...'}\n"}
+,{"stream_name":"stderr","time":8888.49878975,"data":"[NbConvertApp] Writing 387591 bytes to __results__.html\n"}
+]

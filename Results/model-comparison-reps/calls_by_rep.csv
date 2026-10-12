@@ -1,0 +1,221 @@
+cohort,model,vs,marker,0,1,2,pattern,consistent
+danenberg,GCN,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,MLP,cd20,better,n.s.,n.s.,better/n.s./n.s.,False
+danenberg,GCN,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,MLP,cd68,n.s.,worse,better,n.s./worse/better,False
+danenberg,GCN,MLP,cytokeratin_5,n.s.,better,worse,n.s./better/worse,False
+danenberg,GCN,MLP,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,MLP,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,MLP,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,MLP,sma,worse,better,n.s.,worse/better/n.s.,False
+danenberg,GCN,Table,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,Table,cd20,better,n.s.,better,better/n.s./better,False
+danenberg,GCN,Table,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,Table,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,Table,cd68,better,n.s.,better,better/n.s./better,False
+danenberg,GCN,Table,cytokeratin_5,n.s.,n.s.,worse,n.s./n.s./worse,False
+danenberg,GCN,Table,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,Table,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,Table,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,GCN,Table,sma,n.s.,better,better,n.s./better/better,False
+danenberg,GraphSAGE,MLP,c_erb_b_2_her2,n.s.,worse,worse,n.s./worse/worse,False
+danenberg,GraphSAGE,MLP,cd20,n.s.,n.s.,better,n.s./n.s./better,False
+danenberg,GraphSAGE,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,GraphSAGE,MLP,cd45,worse,worse,n.s.,worse/worse/n.s.,False
+danenberg,GraphSAGE,MLP,cd68,better,n.s.,n.s.,better/n.s./n.s.,False
+danenberg,GraphSAGE,MLP,cytokeratin_5,n.s.,better,worse,n.s./better/worse,False
+danenberg,GraphSAGE,MLP,cytokeratin_8_18,n.s.,n.s.,worse,n.s./n.s./worse,False
+danenberg,GraphSAGE,MLP,ki_67,n.s.,better,better,n.s./better/better,False
+danenberg,GraphSAGE,MLP,pan_cytokeratin,worse,better,worse,worse/better/worse,False
+danenberg,GraphSAGE,MLP,sma,worse,worse,worse,worse/worse/worse,True
+danenberg,GraphSAGE,Table,c_erb_b_2_her2,better,better,worse,better/better/worse,False
+danenberg,GraphSAGE,Table,cd20,better,n.s.,better,better/n.s./better,False
+danenberg,GraphSAGE,Table,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,GraphSAGE,Table,cd45,n.s.,worse,better,n.s./worse/better,False
+danenberg,GraphSAGE,Table,cd68,better,better,n.s.,better/better/n.s.,False
+danenberg,GraphSAGE,Table,cytokeratin_5,n.s.,better,worse,n.s./better/worse,False
+danenberg,GraphSAGE,Table,cytokeratin_8_18,better,n.s.,n.s.,better/n.s./n.s.,False
+danenberg,GraphSAGE,Table,ki_67,n.s.,n.s.,worse,n.s./n.s./worse,False
+danenberg,GraphSAGE,Table,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,GraphSAGE,Table,sma,worse,n.s.,worse,worse/n.s./worse,False
+danenberg,MLP,Table,c_erb_b_2_her2,better,better,better,better/better/better,True
+danenberg,MLP,Table,cd20,better,n.s.,better,better/n.s./better,False
+danenberg,MLP,Table,cd3,n.s.,n.s.,better,n.s./n.s./better,False
+danenberg,MLP,Table,cd45,better,better,better,better/better/better,True
+danenberg,MLP,Table,cd68,better,better,n.s.,better/better/n.s.,False
+danenberg,MLP,Table,cytokeratin_5,n.s.,worse,n.s.,n.s./worse/n.s.,False
+danenberg,MLP,Table,cytokeratin_8_18,better,worse,better,better/worse/better,False
+danenberg,MLP,Table,ki_67,n.s.,worse,worse,n.s./worse/worse,False
+danenberg,MLP,Table,pan_cytokeratin,n.s.,worse,worse,n.s./worse/worse,False
+danenberg,MLP,Table,sma,better,better,better,better/better/better,True
+danenberg,ResNet-UNet gamma,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,cd20,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,cd68,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,cytokeratin_5,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,MLP,sma,better,better,better,better/better/better,True
+danenberg,ResNet-UNet gamma,Table,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,cd20,n.s.,worse,n.s.,n.s./worse/n.s.,False
+danenberg,ResNet-UNet gamma,Table,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,cd68,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,cytokeratin_5,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet gamma,Table,sma,better,better,better,better/better/better,True
+danenberg,ResNet-UNet immuvis,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,cd20,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,cd68,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,cytokeratin_5,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,MLP,sma,better,better,better,better/better/better,True
+danenberg,ResNet-UNet immuvis,Table,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,cd20,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,cd68,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,cytokeratin_5,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet immuvis,Table,sma,better,better,better,better/better/better,True
+danenberg,ResNet-UNet residual,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,cd20,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,cd68,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,cytokeratin_5,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,MLP,sma,better,better,better,better/better/better,True
+danenberg,ResNet-UNet residual,Table,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,cd20,n.s.,worse,n.s.,n.s./worse/n.s.,False
+danenberg,ResNet-UNet residual,Table,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,cd68,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,cytokeratin_5,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,ki_67,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+danenberg,ResNet-UNet residual,Table,sma,better,better,better,better/better/better,True
+danenberg,Table,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,Table,MLP,cd20,worse,n.s.,worse,worse/n.s./worse,False
+danenberg,Table,MLP,cd3,n.s.,n.s.,worse,n.s./n.s./worse,False
+danenberg,Table,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,Table,MLP,cd68,worse,worse,n.s.,worse/worse/n.s.,False
+danenberg,Table,MLP,cytokeratin_5,n.s.,better,n.s.,n.s./better/n.s.,False
+danenberg,Table,MLP,cytokeratin_8_18,worse,better,worse,worse/better/worse,False
+danenberg,Table,MLP,ki_67,n.s.,better,better,n.s./better/better,False
+danenberg,Table,MLP,pan_cytokeratin,n.s.,better,better,n.s./better/better,False
+danenberg,Table,MLP,sma,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,MLP,cd20,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+danenberg,Table + ring,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,MLP,cd68,worse,worse,n.s.,worse/worse/n.s.,False
+danenberg,Table + ring,MLP,cytokeratin_5,better,better,better,better/better/better,True
+danenberg,Table + ring,MLP,cytokeratin_8_18,worse,better,n.s.,worse/better/n.s.,False
+danenberg,Table + ring,MLP,ki_67,n.s.,better,better,n.s./better/better,False
+danenberg,Table + ring,MLP,pan_cytokeratin,n.s.,better,better,n.s./better/better,False
+danenberg,Table + ring,MLP,sma,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,Table,c_erb_b_2_her2,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+danenberg,Table + ring,Table,cd20,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+danenberg,Table + ring,Table,cd3,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,Table,cd45,worse,worse,worse,worse/worse/worse,True
+danenberg,Table + ring,Table,cd68,n.s.,n.s.,worse,n.s./n.s./worse,False
+danenberg,Table + ring,Table,cytokeratin_5,better,better,better,better/better/better,True
+danenberg,Table + ring,Table,cytokeratin_8_18,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+danenberg,Table + ring,Table,ki_67,n.s.,n.s.,worse,n.s./n.s./worse,False
+danenberg,Table + ring,Table,pan_cytokeratin,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+danenberg,Table + ring,Table,sma,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,cd20,worse,worse,n.s.,worse/worse/n.s.,False
+jackson,GCN,MLP,cd3,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,cd45,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,cd68,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,cytokeratin_5,n.s.,worse,n.s.,n.s./worse/n.s.,False
+jackson,GCN,MLP,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,ki_67,n.s.,worse,worse,n.s./worse/worse,False
+jackson,GCN,MLP,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,MLP,sma,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,c_erb_b_2_her2,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,cd20,worse,worse,n.s.,worse/worse/n.s.,False
+jackson,GCN,Table,cd3,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,cd45,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,cd68,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,cytokeratin_5,worse,worse,n.s.,worse/worse/n.s.,False
+jackson,GCN,Table,cytokeratin_8_18,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,ki_67,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,pan_cytokeratin,worse,worse,worse,worse/worse/worse,True
+jackson,GCN,Table,sma,worse,worse,worse,worse/worse/worse,True
+jackson,GraphSAGE,MLP,c_erb_b_2_her2,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,GraphSAGE,MLP,cd20,better,better,n.s.,better/better/n.s.,False
+jackson,GraphSAGE,MLP,cd3,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,GraphSAGE,MLP,cd45,better,better,better,better/better/better,True
+jackson,GraphSAGE,MLP,cd68,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,GraphSAGE,MLP,cytokeratin_5,better,n.s.,better,better/n.s./better,False
+jackson,GraphSAGE,MLP,cytokeratin_8_18,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,GraphSAGE,MLP,ki_67,better,better,better,better/better/better,True
+jackson,GraphSAGE,MLP,pan_cytokeratin,better,n.s.,better,better/n.s./better,False
+jackson,GraphSAGE,MLP,sma,better,better,better,better/better/better,True
+jackson,GraphSAGE,Table,c_erb_b_2_her2,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,GraphSAGE,Table,cd20,better,better,n.s.,better/better/n.s.,False
+jackson,GraphSAGE,Table,cd3,better,better,n.s.,better/better/n.s.,False
+jackson,GraphSAGE,Table,cd45,better,better,better,better/better/better,True
+jackson,GraphSAGE,Table,cd68,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,GraphSAGE,Table,cytokeratin_5,n.s.,n.s.,better,n.s./n.s./better,False
+jackson,GraphSAGE,Table,cytokeratin_8_18,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,GraphSAGE,Table,ki_67,n.s.,n.s.,better,n.s./n.s./better,False
+jackson,GraphSAGE,Table,pan_cytokeratin,n.s.,n.s.,better,n.s./n.s./better,False
+jackson,GraphSAGE,Table,sma,better,better,better,better/better/better,True
+jackson,MLP,Table,c_erb_b_2_her2,n.s.,better,n.s.,n.s./better/n.s.,False
+jackson,MLP,Table,cd20,n.s.,better,n.s.,n.s./better/n.s.,False
+jackson,MLP,Table,cd3,n.s.,better,n.s.,n.s./better/n.s.,False
+jackson,MLP,Table,cd45,better,better,n.s.,better/better/n.s.,False
+jackson,MLP,Table,cd68,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,MLP,Table,cytokeratin_5,worse,n.s.,n.s.,worse/n.s./n.s.,False
+jackson,MLP,Table,cytokeratin_8_18,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,MLP,Table,ki_67,worse,worse,worse,worse/worse/worse,True
+jackson,MLP,Table,pan_cytokeratin,worse,n.s.,n.s.,worse/n.s./n.s.,False
+jackson,MLP,Table,sma,worse,n.s.,n.s.,worse/n.s./n.s.,False
+jackson,Table,MLP,c_erb_b_2_her2,n.s.,worse,n.s.,n.s./worse/n.s.,False
+jackson,Table,MLP,cd20,n.s.,worse,n.s.,n.s./worse/n.s.,False
+jackson,Table,MLP,cd3,n.s.,worse,n.s.,n.s./worse/n.s.,False
+jackson,Table,MLP,cd45,worse,worse,n.s.,worse/worse/n.s.,False
+jackson,Table,MLP,cd68,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table,MLP,cytokeratin_5,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,Table,MLP,cytokeratin_8_18,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table,MLP,ki_67,better,better,better,better/better/better,True
+jackson,Table,MLP,pan_cytokeratin,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,Table,MLP,sma,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,Table + ring,MLP,c_erb_b_2_her2,n.s.,n.s.,better,n.s./n.s./better,False
+jackson,Table + ring,MLP,cd20,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table + ring,MLP,cd3,n.s.,worse,n.s.,n.s./worse/n.s.,False
+jackson,Table + ring,MLP,cd45,better,n.s.,better,better/n.s./better,False
+jackson,Table + ring,MLP,cd68,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table + ring,MLP,cytokeratin_5,better,better,better,better/better/better,True
+jackson,Table + ring,MLP,cytokeratin_8_18,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table + ring,MLP,ki_67,better,better,better,better/better/better,True
+jackson,Table + ring,MLP,pan_cytokeratin,better,better,better,better/better/better,True
+jackson,Table + ring,MLP,sma,better,better,better,better/better/better,True
+jackson,Table + ring,Table,c_erb_b_2_her2,n.s.,n.s.,better,n.s./n.s./better,False
+jackson,Table + ring,Table,cd20,better,better,n.s.,better/better/n.s.,False
+jackson,Table + ring,Table,cd3,better,n.s.,n.s.,better/n.s./n.s.,False
+jackson,Table + ring,Table,cd45,better,better,better,better/better/better,True
+jackson,Table + ring,Table,cd68,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table + ring,Table,cytokeratin_5,better,n.s.,better,better/n.s./better,False
+jackson,Table + ring,Table,cytokeratin_8_18,n.s.,n.s.,n.s.,n.s./n.s./n.s.,True
+jackson,Table + ring,Table,ki_67,better,better,n.s.,better/better/n.s.,False
+jackson,Table + ring,Table,pan_cytokeratin,better,better,better,better/better/better,True
+jackson,Table + ring,Table,sma,better,better,better,better/better/better,True

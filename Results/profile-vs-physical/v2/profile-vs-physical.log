@@ -1,0 +1,138 @@
+[{"stream_name":"stderr","time":11.588048343,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.588148624,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.588154325,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.588157443,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.483739416,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.483784658,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.483795732,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.48379938,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.640960856,"data":"         enc    obs     n1     n2    ex1    ex2\n"}
+,{"stream_name":"stdout","time":19.641048482,"data":"1  intensity -1.664 -0.015 -0.009 -1.649 -1.654\n"}
+,{"stream_name":"stdout","time":19.641053897,"data":"6       rank -1.400 -0.008 -0.011 -1.392 -1.389\n"}
+,{"stream_name":"stdout","time":19.64105775,"data":"         enc    obs     n1     n2    ex1    ex2\n"}
+,{"stream_name":"stdout","time":19.641061467,"data":"1  intensity -0.005 -0.015 -0.014  0.010  0.009\n"}
+,{"stream_name":"stdout","time":19.641065043,"data":"6       rank -0.002 -0.008 -0.011  0.006  0.009\n"}
+,{"stream_name":"stdout","time":19.641068721,"data":"sanity checks passed\n"}
+,{"stream_name":"stdout","time":20.937367816,"data":"prep checks: {'all_table_images_on_kaggle': True, 'mask_shapes_match': True, 'mask_match_\u003e=99%': True, 'mask_one_to_one': True, 'alignment_dna1_r\u003e0.9': True, 'clinical_er_coverage\u003e=0.8': True}\n"}
+,{"stream_name":"stdout","time":24.410922599,"data":"(1123466, 54) (6530904, 3) 4 cpus\n"}
+,{"stream_name":"stdout","time":25.680155494,"data":"1,062,219 cells, 704 images, 650 patients\n"}
+,{"stream_name":"stdout","time":25.680204914,"data":"                                 broad  epi_frac       n\n"}
+,{"stream_name":"stdout","time":25.680212209,"data":"ER^{hi}CXCL12^{+}           epithelial       1.0   54811\n"}
+,{"stream_name":"stdout","time":25.680218372,"data":"Ep CD57^{+}                 epithelial       1.0   11301\n"}
+,{"stream_name":"stdout","time":25.680239906,"data":"HER2^{+}                    epithelial       1.0   32552\n"}
+,{"stream_name":"stdout","time":25.680246666,"data":"CK^{med}ER^{lo}             epithelial       1.0  117390\n"}
+,{"stream_name":"stdout","time":25.680252534,"data":"CK^{lo}ER^{med}             epithelial       1.0   17738\n"}
+,{"stream_name":"stdout","time":25.680258455,"data":"CK^{lo}ER^{lo}              epithelial       1.0   83614\n"}
+,{"stream_name":"stdout","time":25.680264611,"data":"CK^{+} CXCL12^{+}           epithelial       1.0   63674\n"}
+,{"stream_name":"stdout","time":25.680270431,"data":"CK8-18^{hi}ER^{lo}          epithelial       1.0   13024\n"}
+,{"stream_name":"stdout","time":25.680276232,"data":"Ep Ki67^{+}                 epithelial       1.0   24513\n"}
+,{"stream_name":"stdout","time":25.68028238,"data":"CK8-18^{hi}CXCL12^{hi}      epithelial       1.0   73594\n"}
+,{"stream_name":"stdout","time":25.680288264,"data":"MHC I \u0026 II^{hi}             epithelial       1.0    7373\n"}
+,{"stream_name":"stdout","time":25.68029457,"data":"MHC I^{hi}CD57^{+}          epithelial       1.0    7190\n"}
+,{"stream_name":"stdout","time":25.680342787,"data":"MHC^{hi}CD15^{+}            epithelial       1.0    4366\n"}
+,{"stream_name":"stdout","time":25.680348402,"data":"CD15^{+}                    epithelial       1.0   44864\n"}
+,{"stream_name":"stdout","time":25.680353026,"data":"Basal                       epithelial       1.0   24606\n"}
+,{"stream_name":"stdout","time":25.680357577,"data":"CK8-18^{+} ER^{hi}          epithelial       1.0   20208\n"}
+,{"stream_name":"stdout","time":25.680362161,"data":"Macrophages                     immune       0.0   40456\n"}
+,{"stream_name":"stdout","time":25.680366722,"data":"Macrophages \u0026 granulocytes      immune       0.0    3960\n"}
+,{"stream_name":"stdout","time":25.680371604,"data":"Ki67^{+}                        immune       0.0    1974\n"}
+,{"stream_name":"stdout","time":25.680376233,"data":"Granulocytes                    immune       0.0    6259\n"}
+,{"stream_name":"stdout","time":25.680380768,"data":"B cells                         immune       0.0   28284\n"}
+,{"stream_name":"stdout","time":25.680385346,"data":"CD8^{+} T cells                 immune       0.0   34472\n"}
+,{"stream_name":"stdout","time":25.680389863,"data":"CD57^{+}                        immune       0.0    2957\n"}
+,{"stream_name":"stdout","time":25.680394505,"data":"CD4^{+} T cells \u0026 APCs          immune       0.0   19416\n"}
+,{"stream_name":"stdout","time":25.680399176999998,"data":"CD4^{+} T cells                 immune       0.0   15575\n"}
+,{"stream_name":"stdout","time":25.680403783,"data":"CD38^{+} lymphocytes            immune       0.0   11238\n"}
+,{"stream_name":"stdout","time":25.680408367,"data":"T_{Reg} \u0026 T_{Ex}                immune       0.0    6317\n"}
+,{"stream_name":"stdout","time":25.680413165,"data":"Fibroblasts                    stromal       0.0  121211\n"}
+,{"stream_name":"stdout","time":25.680417747,"data":"Endothelial                    stromal       0.0   47355\n"}
+,{"stream_name":"stdout","time":25.680422358,"data":"Myofibroblasts PDPN^{+}        stromal       0.0   27199\n"}
+,{"stream_name":"stdout","time":25.680426816,"data":"Myofibroblasts                 stromal       0.0   90369\n"}
+,{"stream_name":"stdout","time":25.680431533,"data":"Fibroblasts FSP1^{+}           stromal       0.0    4359\n"}
+,{"stream_name":"stdout","time":33.996528345,"data":"CN sizes: [147458 139996  70461  50248 153852  73247  39159  83507 244683  59608]\n"}
+,{"stream_name":"stdout","time":35.437835707,"data":"6,198,634 contact pairs mapped\n"}
+,{"stream_name":"stderr","time":35.48599941,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":35.486055943,"data":"\n"}
+,{"stream_name":"stderr","time":35.486066395,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":107.41933803,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  1.2min\n"}
+,{"stream_name":"stderr","time":107.419390099,"data":"\n"}
+,{"stream_name":"stderr","time":107.419397809,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  1.2min\n"}
+,{"stream_name":"stderr","time":423.710715474,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed:  6.5min\n"}
+,{"stream_name":"stderr","time":423.710821318,"data":"\n"}
+,{"stream_name":"stderr","time":423.710830589,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed:  6.5min\n"}
+,{"stream_name":"stderr","time":1171.7043336,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 18.9min\n"}
+,{"stream_name":"stderr","time":1171.704628418,"data":"\n"}
+,{"stream_name":"stderr","time":1171.704639045,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 18.9min\n"}
+,{"stream_name":"stderr","time":2141.62932123,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 35.1min\n"}
+,{"stream_name":"stderr","time":2141.629389141,"data":"\n"}
+,{"stream_name":"stderr","time":2141.629398144,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 35.1min\n"}
+,{"stream_name":"stderr","time":2141.978571473,"data":"/tmp/ipykernel_16/397906239.py:42: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":2142.181675275,"data":"/tmp/ipykernel_16/397906239.py:42: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":2142.181727368,"data":"\n"}
+,{"stream_name":"stderr","time":2142.184834975,"data":"/tmp/ipykernel_16/397906239.py:42: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":3371.757400365,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 55.6min\n"}
+,{"stream_name":"stderr","time":3371.757454103,"data":"\n"}
+,{"stream_name":"stderr","time":3371.757460364,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 55.6min\n"}
+,{"stream_name":"stderr","time":4517.4586326,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed: 74.7min\n"}
+,{"stream_name":"stderr","time":4517.458711651,"data":"\n"}
+,{"stream_name":"stderr","time":4517.458719582,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed: 74.7min\n"}
+,{"stream_name":"stderr","time":4869.370645315,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed: 80.6min finished\n"}
+,{"stream_name":"stderr","time":4869.370704218,"data":"\n"}
+,{"stream_name":"stderr","time":4869.370713795,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed: 80.6min finished\n"}
+,{"stream_name":"stdout","time":4869.441984146,"data":"per-image analysis: 80.6 min\n"}
+,{"stream_name":"stdout","time":4920.184597646,"data":"cytof6 intensity done\n"}
+,{"stream_name":"stdout","time":4955.714317889,"data":"cytof6 rank done\n"}
+,{"stream_name":"stdout","time":5002.994509707,"data":"full36 intensity done\n"}
+,{"stream_name":"stdout","time":5051.262675571,"data":"full36 rank done\n"}
+,{"stream_name":"stderr","time":5052.237268809,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5052.23734678,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5052.237355622,"data":"\n"}
+,{"stream_name":"stderr","time":5052.23736754,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5052.237390239,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5061.437866398,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5061.437927532,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5061.437935193,"data":"\n"}
+,{"stream_name":"stderr","time":5061.43794118,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5061.437947679,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5061.770532784,"data":"/usr/local/lib/python3.12/dist-packages/numpy/_core/_methods.py:127: RuntimeWarning: invalid value encountered in reduce\n"}
+,{"stream_name":"stderr","time":5061.770610005,"data":"  ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)\n"}
+,{"stream_name":"stderr","time":5061.770642545,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5061.770654065,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5061.770657677,"data":"/usr/local/lib/python3.12/dist-packages/numpy/_core/_methods.py:127: RuntimeWarning: invalid value encountered in reduce\n"}
+,{"stream_name":"stderr","time":5061.770661115,"data":"  ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)\n"}
+,{"stream_name":"stderr","time":5061.770681511,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5061.770686795,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5061.770691209,"data":"\n"}
+,{"stream_name":"stderr","time":5061.770696049,"data":"/usr/local/lib/python3.12/dist-packages/numpy/_core/_methods.py:127: RuntimeWarning: invalid value encountered in reduce\n"}
+,{"stream_name":"stderr","time":5061.770700794,"data":"  ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)\n"}
+,{"stream_name":"stderr","time":5061.770705123,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5061.770710082,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stderr","time":5061.770714515,"data":"/usr/local/lib/python3.12/dist-packages/numpy/_core/_methods.py:127: RuntimeWarning: invalid value encountered in reduce\n"}
+,{"stream_name":"stderr","time":5061.770719112,"data":"  ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)\n"}
+,{"stream_name":"stderr","time":5061.770723062,"data":"/usr/local/lib/python3.12/dist-packages/numpy/lib/_function_base_impl.py:4779: RuntimeWarning: invalid value encountered in subtract\n"}
+,{"stream_name":"stderr","time":5061.770727162,"data":"  diff_b_a = subtract(b, a)\n"}
+,{"stream_name":"stdout","time":5062.300552942,"data":"Profile neighbours carry physical context beyond cell type with the CyTOF-matched markers\n"}
+,{"stream_name":"stdout","time":5062.300604629,"data":"                                                                              A2_ex1                                                               A2_ex2                                                              B1f_ex2 closer_than_chance closer_beyond_type context_beyond_type\n"}
+,{"stream_name":"stdout","time":5062.300629419,"data":"cytof6/intensity    (-0.12501757607974398, -0.133232591900276, -0.11739085261724765)  (-0.05542312120815787, -0.05892586037603159, -0.052247053711066166)   (0.018609946010326846, 0.017267519181921858, 0.020048607627460836)               True               True                True\n"}
+,{"stream_name":"stdout","time":5062.300637082,"data":"cytof6/rank        (-0.0932036197956544, -0.09990515751528511, -0.08656405660952068)  (-0.04073029551192378, -0.043613778455518726, -0.03810485844598869)  (0.006374925378260789, 0.0054379516790965384, 0.007412933783741326)               True               True                True\n"}
+,{"stream_name":"stdout","time":5062.300643003,"data":"full36/intensity  (-0.22642987199314982, -0.23777648566112908, -0.21620994741176922)   (-0.13882759230854647, -0.14512542263637498, -0.13287645695407727)     (0.043007335358490356, 0.0410939822328853, 0.045072587955347555)               True               True                True\n"}
+,{"stream_name":"stdout","time":5062.300649077,"data":"full36/rank       (-0.24790599255398726, -0.25972927847753496, -0.23679867478047173)    (-0.1582570659266546, -0.16462265893383227, -0.15236990165190162)   (0.040661374766279595, 0.038865763964401244, 0.042591037007506743)               True               True                True\n"}
+,{"stream_name":"stdout","time":5062.30072688,"data":"     space  contact_excl   k metric            contrast    diff      lo      hi\n"}
+,{"stream_name":"stdout","time":5062.300733353,"data":"32  cytof6             1  30     A2      rank-intensity  0.0147  0.0130  0.0163\n"}
+,{"stream_name":"stdout","time":5062.300737958,"data":"33  cytof6             1  30     A2  rank_avg-intensity  0.0147  0.0129  0.0163\n"}
+,{"stream_name":"stdout","time":5062.300742217,"data":"36  cytof6             1  30    B1f      rank-intensity -0.0122 -0.0131 -0.0114\n"}
+,{"stream_name":"stdout","time":5062.300746973,"data":"37  cytof6             1  30    B1f  rank_avg-intensity -0.0125 -0.0133 -0.0116\n"}
+,{"stream_name":"stdout","time":5062.300751854,"data":"72  full36             1  30     A2      rank-intensity -0.0194 -0.0216 -0.0172\n"}
+,{"stream_name":"stdout","time":5062.300759163,"data":"73  full36             1  30     A2  rank_avg-intensity -0.0193 -0.0215 -0.0171\n"}
+,{"stream_name":"stdout","time":5062.30076398,"data":"76  full36             1  30    B1f      rank-intensity -0.0023 -0.0034 -0.0013\n"}
+,{"stream_name":"stdout","time":5062.300768267,"data":"77  full36             1  30    B1f  rank_avg-intensity -0.0025 -0.0036 -0.0015\n"}
+,{"stream_name":"stdout","time":5063.969058671,"data":"done\n"}
+,{"stream_name":"stderr","time":5070.002158772,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5070.002268711,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5070.262865001,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5070.262918247,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5071.136856671,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":5071.624612153,"data":"[NbConvertApp] Writing 50192 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":5074.962964779,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5076.345562255,"data":"[NbConvertApp] Writing 457943 bytes to __results__.html\n"}
+]

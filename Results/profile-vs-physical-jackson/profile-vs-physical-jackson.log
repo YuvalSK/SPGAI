@@ -1,0 +1,180 @@
+[{"stream_name":"stderr","time":11.284207125,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.284336966,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.284344603,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.284348671,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.226521996,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.226572646,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.226578069,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.226582194,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.30060414,"data":"         enc    obs     n1     n2    ex1    ex2\n"}
+,{"stream_name":"stdout","time":19.300670967,"data":"1  intensity -1.664 -0.015 -0.010 -1.649 -1.654\n"}
+,{"stream_name":"stdout","time":19.300675578,"data":"8       rank -1.400 -0.012 -0.011 -1.388 -1.389\n"}
+,{"stream_name":"stdout","time":19.300679185,"data":"         enc    obs     n1     n2    ex1    ex2\n"}
+,{"stream_name":"stdout","time":19.300683253,"data":"1  intensity -0.005 -0.015 -0.010  0.010  0.005\n"}
+,{"stream_name":"stdout","time":19.300686795,"data":"8       rank -0.002 -0.011 -0.013  0.009  0.010\n"}
+,{"stream_name":"stdout","time":19.300690307,"data":"sanity checks passed\n"}
+,{"stream_name":"stdout","time":21.925928738,"data":"prep checks: {'all_35_channels_mapped': True, 'cells_\u003e=500k': True, 'tumour_images_\u003e=400': True, 'mask_match_\u003e=98%': True, 'mask_one_to_one': True, 'alignment_dna1_r\u003e0.9': True}\n"}
+,{"stream_name":"stdout","time":25.94981873,"data":"(1224411, 48) (6339338, 3) 4 cpus\n"}
+,{"stream_name":"stdout","time":27.700364128,"data":"1,126,124 cells, 542 images, 349 patients\n"}
+,{"stream_name":"stdout","time":27.951269061,"data":"         cells  images  patients\n"}
+,{"stream_name":"stdout","time":27.951334013,"data":"cohort                          \n"}
+,{"stream_name":"stdout","time":27.951341859,"data":"basel   767415     284       278\n"}
+,{"stream_name":"stdout","time":27.951346763,"data":"zurich  358709     258        71\n"}
+,{"stream_name":"stdout","time":27.951351947,"data":"                               broad       n\n"}
+,{"stream_name":"stdout","time":27.951356667,"data":"MC14 Hypoxic              epithelial   21508\n"}
+,{"stream_name":"stdout","time":27.951362125,"data":"MC25 CK+ HR lo            epithelial   79672\n"}
+,{"stream_name":"stdout","time":27.951366915,"data":"MC24 CK+ HR+              epithelial   44090\n"}
+,{"stream_name":"stdout","time":27.95137162,"data":"MC23 CK+ HR hi            epithelial   56719\n"}
+,{"stream_name":"stdout","time":27.951376362,"data":"MC22 CK lo HR lo          epithelial  114085\n"}
+,{"stream_name":"stdout","time":27.951381451,"data":"MC21 Epithelial low       epithelial   46882\n"}
+,{"stream_name":"stdout","time":27.951384789,"data":"MC20 CK7+                 epithelial   49416\n"}
+,{"stream_name":"stdout","time":27.951387952,"data":"MC19 CK7+ CK hi Ecadh hi  epithelial   40048\n"}
+,{"stream_name":"stdout","time":27.951391104,"data":"MC18 Basal CK             epithelial   28590\n"}
+,{"stream_name":"stdout","time":27.9513943,"data":"MC17 p53+ EGFR+           epithelial   23242\n"}
+,{"stream_name":"stdout","time":27.95142172,"data":"MC16 Proliferative        epithelial   45326\n"}
+,{"stream_name":"stdout","time":27.951424594,"data":"MC15 Apoptotic            epithelial   24659\n"}
+,{"stream_name":"stdout","time":27.951426972,"data":"MC26 CK lo HR hi p53+     epithelial   10158\n"}
+,{"stream_name":"stdout","time":27.95142957,"data":"MC27 Myoepithelial        epithelial    7418\n"}
+,{"stream_name":"stdout","time":27.951432547,"data":"MC06 Macrophage               immune     190\n"}
+,{"stream_name":"stdout","time":27.951435132,"data":"MC05 T cell                   immune    4493\n"}
+,{"stream_name":"stdout","time":27.951437533,"data":"MC04 Macrophage               immune   34719\n"}
+,{"stream_name":"stdout","time":27.951440233,"data":"MC03 T cell                   immune  113786\n"}
+,{"stream_name":"stdout","time":27.951442579,"data":"MC02 T \u0026 B cells              immune   17408\n"}
+,{"stream_name":"stdout","time":27.951445833,"data":"MC01 B cell                   immune   38040\n"}
+,{"stream_name":"stdout","time":27.951448173,"data":"MC12 Large elongated         stromal      97\n"}
+,{"stream_name":"stdout","time":27.951451031,"data":"MC11 Fibronectin hi          stromal   53014\n"}
+,{"stream_name":"stdout","time":27.95145342,"data":"MC10 Small elongated         stromal  112013\n"}
+,{"stream_name":"stdout","time":27.951455961,"data":"MC09 Small circular          stromal   36443\n"}
+,{"stream_name":"stdout","time":27.951458367,"data":"MC08 Vimentin hi             stromal   81927\n"}
+,{"stream_name":"stdout","time":27.951460737,"data":"MC07 Endothelial             stromal   34410\n"}
+,{"stream_name":"stdout","time":27.951463104,"data":"MC13 SMA hi Vimentin hi      stromal    7771\n"}
+,{"stream_name":"stdout","time":36.798496949,"data":"CN sizes: [ 49014 107646 120400 168958 141996  88047 314855  57797  22057  55354]\n"}
+,{"stream_name":"stdout","time":38.513348475,"data":"5,898,764 contact pairs mapped\n"}
+,{"stream_name":"stderr","time":38.569856597,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":38.569907267,"data":"\n"}
+,{"stream_name":"stderr","time":38.56991398,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":143.273951946,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  1.7min\n"}
+,{"stream_name":"stderr","time":143.274012718,"data":"\n"}
+,{"stream_name":"stderr","time":143.274019126,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  1.7min\n"}
+,{"stream_name":"stderr","time":821.329037291,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed: 13.0min\n"}
+,{"stream_name":"stderr","time":821.329109202,"data":"\n"}
+,{"stream_name":"stderr","time":821.329258725,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed: 13.0min\n"}
+,{"stream_name":"stderr","time":2407.65444384,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 39.5min\n"}
+,{"stream_name":"stderr","time":2407.654627376,"data":"\n"}
+,{"stream_name":"stderr","time":2407.654636604,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 39.5min\n"}
+,{"stream_name":"stderr","time":5952.064439759,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 98.6min\n"}
+,{"stream_name":"stderr","time":5952.06452907,"data":"\n"}
+,{"stream_name":"stderr","time":5952.067086766,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 98.6min\n"}
+,{"stream_name":"stderr","time":10622.933030174,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 176.4min\n"}
+,{"stream_name":"stderr","time":10622.933343797,"data":"\n"}
+,{"stream_name":"stderr","time":10622.933391813,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 176.4min\n"}
+,{"stream_name":"stderr","time":11694.949163115,"data":"[Parallel(n_jobs=4)]: Done 542 out of 542 | elapsed: 194.3min finished\n"}
+,{"stream_name":"stderr","time":11694.949218867,"data":"\n"}
+,{"stream_name":"stderr","time":11694.949225166,"data":"[Parallel(n_jobs=4)]: Done 542 out of 542 | elapsed: 194.3min finished\n"}
+,{"stream_name":"stdout","time":11694.963587089,"data":"per-image analysis: 194.3 min\n"}
+,{"stream_name":"stdout","time":11739.376591968,"data":"cytof6 intensity done\n"}
+,{"stream_name":"stdout","time":11773.939719824,"data":"cytof6 rank done\n"}
+,{"stream_name":"stdout","time":11817.235833368,"data":"full32 intensity done\n"}
+,{"stream_name":"stdout","time":11861.939420824,"data":"full32 rank done\n"}
+,{"stream_name":"stdout","time":11879.444345895,"data":"Profile neighbours carry physical context beyond cell type with the CyTOF-matched markers\n"}
+,{"stream_name":"stdout","time":11879.444421517,"data":"                                                                              A2_ex1                                                              A2_ex2                                                            B1f_ex2 closer_than_chance closer_beyond_type context_beyond_type\n"}
+,{"stream_name":"stdout","time":11879.444431967,"data":"cytof6/intensity  (-0.19368797678598762, -0.20574065256101726, -0.18169569191996618)   (-0.1217370244867187, -0.12918786298143592, -0.11433302775869851)  (0.055278795471606385, 0.05301275936931436, 0.057489477158189695)               True               True                True\n"}
+,{"stream_name":"stdout","time":11879.444437689,"data":"cytof6/rank        (-0.1322834858267213, -0.14164606077649108, -0.12263546031513896)  (-0.07650933613976883, -0.08159407958396223, -0.07082278434745316)    (0.029287624973441277, 0.02754342938055495, 0.0309789590390475)               True               True                True\n"}
+,{"stream_name":"stdout","time":11879.444443229,"data":"full32/intensity  (-0.35916651915717984, -0.37807830107674967, -0.33945246152689496)     (-0.2584981216988575, -0.2733539097989256, -0.2448793270491335)     (0.07814027546804243, 0.07528119007640137, 0.0809163937825744)               True               True                True\n"}
+,{"stream_name":"stdout","time":11879.444448498,"data":"full32/rank         (-0.3428083401477873, -0.3612958815514528, -0.32402194912125143)  (-0.24418565996680383, -0.25775626006930435, -0.23143988228194246)    (0.06049519953099564, 0.057988875869631216, 0.0629233019652263)               True               True                True\n"}
+,{"stream_name":"stdout","time":11879.444453889,"data":"     space  contact_excl   k metric        contrast    diff      lo      hi\n"}
+,{"stream_name":"stdout","time":11879.444459901,"data":"22  cytof6             1  30     A2  rank-intensity  0.0452  0.0418  0.0489\n"}
+,{"stream_name":"stdout","time":11879.444464949,"data":"24  cytof6             1  30    B1f  rank-intensity -0.0260 -0.0273 -0.0245\n"}
+,{"stream_name":"stdout","time":11879.444469898,"data":"50  full32             1  30     A2  rank-intensity  0.0143  0.0100  0.0183\n"}
+,{"stream_name":"stdout","time":11879.444474544,"data":"52  full32             1  30    B1f  rank-intensity -0.0176 -0.0192 -0.0161\n"}
+,{"stream_name":"stdout","time":11883.347846377,"data":" size metric stat  intensity  intensity_lo  intensity_hi    rank  rank_lo  rank_hi    diff  diff_lo  diff_hi  no_harm\n"}
+,{"stream_name":"stdout","time":11883.347899599,"data":"    6     A2  obs    -0.2204       -0.2324       -0.2085 -0.1459  -0.1547  -0.1373  0.0744   0.0701   0.0789    False\n"}
+,{"stream_name":"stdout","time":11883.347906896,"data":"    6     A2  ex2    -0.1354       -0.1427       -0.1287 -0.0812  -0.0858  -0.0769  0.0542   0.0506   0.0575    False\n"}
+,{"stream_name":"stdout","time":11883.347970741,"data":"    6    B1f  obs     0.2963        0.2812        0.3121  0.2099   0.1975   0.2229 -0.0864  -0.0904  -0.0826    False\n"}
+,{"stream_name":"stdout","time":11883.347977453,"data":"    6    B1f  ex2     0.0456        0.0436        0.0473  0.0237   0.0225   0.0249 -0.0219  -0.0227  -0.0210    False\n"}
+,{"stream_name":"stdout","time":11883.347982596,"data":"    6     T1  obs     0.4890        0.4740        0.5028  0.4154   0.4004   0.4288 -0.0736  -0.0758  -0.0714    False\n"}
+,{"stream_name":"stdout","time":11883.347986578,"data":"    6     T1  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.347990753,"data":"    6    T1b  obs     0.7471        0.7378        0.7558  0.6779   0.6685   0.6868 -0.0692  -0.0718  -0.0667    False\n"}
+,{"stream_name":"stdout","time":11883.347994867,"data":"    6    T1b  ex2    -0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.347998916,"data":"   12     A2  obs    -0.2865       -0.3016       -0.2714 -0.2303  -0.2430  -0.2174  0.0562   0.0517   0.0606    False\n"}
+,{"stream_name":"stdout","time":11883.348002967,"data":"   12     A2  ex2    -0.1891       -0.1993       -0.1794 -0.1438  -0.1519  -0.1363  0.0452   0.0417   0.0488    False\n"}
+,{"stream_name":"stdout","time":11883.348007314,"data":"   12    B1f  obs     0.3397        0.3236        0.3564  0.2957   0.2809   0.3115 -0.0441  -0.0465  -0.0418    False\n"}
+,{"stream_name":"stdout","time":11883.348011427,"data":"   12    B1f  ex2     0.0592        0.0569        0.0614  0.0407   0.0389   0.0425 -0.0186  -0.0195  -0.0175    False\n"}
+,{"stream_name":"stdout","time":11883.348015408,"data":"   12     T1  obs     0.5300        0.5154        0.5439  0.4664   0.4519   0.4800 -0.0636  -0.0654  -0.0621    False\n"}
+,{"stream_name":"stdout","time":11883.3480195,"data":"   12     T1  ex2     0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.34802346,"data":"   12    T1b  obs     0.7748        0.7657        0.7835  0.7303   0.7215   0.7387 -0.0445  -0.0462  -0.0431    False\n"}
+,{"stream_name":"stdout","time":11883.348027507,"data":"   12    T1b  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348033396,"data":"   18     A2  obs    -0.3225       -0.3395       -0.3056 -0.2831  -0.2982  -0.2681  0.0394   0.0350   0.0436    False\n"}
+,{"stream_name":"stdout","time":11883.3480374,"data":"   18     A2  ex2    -0.2168       -0.2286       -0.2055 -0.1839  -0.1939  -0.1741  0.0329   0.0291   0.0363    False\n"}
+,{"stream_name":"stdout","time":11883.348041705,"data":"   18    B1f  obs     0.3636        0.3473        0.3808  0.3330   0.3175   0.3499 -0.0306  -0.0327  -0.0286    False\n"}
+,{"stream_name":"stdout","time":11883.348045701,"data":"   18    B1f  ex2     0.0680        0.0654        0.0704  0.0499   0.0478   0.0521 -0.0180  -0.0193  -0.0168    False\n"}
+,{"stream_name":"stdout","time":11883.34804986,"data":"   18     T1  obs     0.5616        0.5475        0.5750  0.4948   0.4806   0.5082 -0.0668  -0.0688  -0.0649    False\n"}
+,{"stream_name":"stdout","time":11883.348052554,"data":"   18     T1  ex2    -0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348055205,"data":"   18    T1b  obs     0.8038        0.7954        0.8116  0.7580   0.7497   0.7660 -0.0458  -0.0477  -0.0441    False\n"}
+,{"stream_name":"stdout","time":11883.348059182,"data":"   18    T1b  ex2     0.0000       -0.0000        0.0000 -0.0000  -0.0000  -0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348084314,"data":"   24     A2  obs    -0.3446       -0.3622       -0.3264 -0.3146  -0.3312  -0.2978  0.0300   0.0253   0.0345    False\n"}
+,{"stream_name":"stdout","time":11883.348090096,"data":"   24     A2  ex2    -0.2361       -0.2489       -0.2240 -0.2100  -0.2213  -0.1990  0.0261   0.0220   0.0299    False\n"}
+,{"stream_name":"stdout","time":11883.348094301,"data":"   24    B1f  obs     0.3742        0.3578        0.3915  0.3473   0.3316   0.3641 -0.0269  -0.0291  -0.0248    False\n"}
+,{"stream_name":"stdout","time":11883.348098369,"data":"   24    B1f  ex2     0.0738        0.0712        0.0764  0.0553   0.0530   0.0575 -0.0185  -0.0199  -0.0172    False\n"}
+,{"stream_name":"stdout","time":11883.348102383,"data":"   24     T1  obs     0.5757        0.5617        0.5892  0.5085   0.4944   0.5219 -0.0672  -0.0694  -0.0651    False\n"}
+,{"stream_name":"stdout","time":11883.348106344,"data":"   24     T1  ex2     0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348110427,"data":"   24    T1b  obs     0.8134        0.8050        0.8213  0.7692   0.7612   0.7772 -0.0442  -0.0460  -0.0425    False\n"}
+,{"stream_name":"stdout","time":11883.34811437,"data":"   24    T1b  ex2     0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.34811862,"data":"   31     A2  obs    -0.3683       -0.3870       -0.3487 -0.3506  -0.3688  -0.3322  0.0176   0.0126   0.0224    False\n"}
+,{"stream_name":"stdout","time":11883.348123357,"data":"   31     A2  ex2    -0.2566       -0.2712       -0.2430 -0.2410  -0.2544  -0.2285  0.0155   0.0113   0.0195    False\n"}
+,{"stream_name":"stdout","time":11883.34812754,"data":"   31    B1f  obs     0.3834        0.3670        0.4011  0.3606   0.3446   0.3777 -0.0228  -0.0252  -0.0206    False\n"}
+,{"stream_name":"stdout","time":11883.348131536,"data":"   31    B1f  ex2     0.0778        0.0750        0.0805  0.0603   0.0577   0.0627 -0.0175  -0.0190  -0.0161    False\n"}
+,{"stream_name":"stdout","time":11883.348135505,"data":"   31     T1  obs     0.5882        0.5744        0.6017  0.5188   0.5048   0.5323 -0.0694  -0.0720  -0.0671    False\n"}
+,{"stream_name":"stdout","time":11883.348139722,"data":"   31     T1  ex2     0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348142849,"data":"   31    T1b  obs     0.8204        0.8121        0.8283  0.7767   0.7686   0.7843 -0.0437  -0.0458  -0.0419    False\n"}
+,{"stream_name":"stdout","time":11883.348145389,"data":"   31    T1b  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348149381,"data":"   32     A2  obs    -0.3709       -0.3898       -0.3511 -0.3546  -0.3732  -0.3358  0.0163   0.0112   0.0211    False\n"}
+,{"stream_name":"stdout","time":11883.348153499,"data":"   32     A2  ex2    -0.2585       -0.2734       -0.2449 -0.2442  -0.2578  -0.2314  0.0143   0.0100   0.0183    False\n"}
+,{"stream_name":"stdout","time":11883.348157731,"data":"   32    B1f  obs     0.3846        0.3682        0.4025  0.3620   0.3460   0.3790 -0.0227  -0.0252  -0.0204    False\n"}
+,{"stream_name":"stdout","time":11883.348161948,"data":"   32    B1f  ex2     0.0781        0.0753        0.0809  0.0605   0.0580   0.0629 -0.0176  -0.0192  -0.0161    False\n"}
+,{"stream_name":"stdout","time":11883.348166228,"data":"   32     T1  obs     0.5913        0.5776        0.6046  0.5211   0.5074   0.5346 -0.0702  -0.0727  -0.0678    False\n"}
+,{"stream_name":"stdout","time":11883.348170496,"data":"   32     T1  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11883.348191537,"data":"   32    T1b  obs     0.8229        0.8147        0.8308  0.7786   0.7707   0.7863 -0.0444  -0.0465  -0.0425    False\n"}
+,{"stream_name":"stdout","time":11883.348197305,"data":"   32    T1b  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":11884.360658549,"data":"done\n"}
+,{"stream_name":"stderr","time":11891.210307517,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":11891.210441023,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":11891.509017887,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":11891.509065784,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":11892.455190013,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":11892.522959612,"data":"[NbConvertApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('outputs' was unexpected)\n"}
+,{"stream_name":"stderr","time":11892.523016912,"data":"\n"}
+,{"stream_name":"stderr","time":11892.523022939,"data":"Failed validating 'additionalProperties' in markdown_cell:\n"}
+,{"stream_name":"stderr","time":11892.523027969,"data":"\n"}
+,{"stream_name":"stderr","time":11892.52303283,"data":"On instance['cells'][0]:\n"}
+,{"stream_name":"stderr","time":11892.523038123,"data":"{'cell_type': 'markdown',\n"}
+,{"stream_name":"stderr","time":11892.523043383,"data":" 'id': '55191d27',\n"}
+,{"stream_name":"stderr","time":11892.523047844,"data":" 'metadata': {'papermill': {'duration': 0.007716,\n"}
+,{"stream_name":"stderr","time":11892.523052461,"data":"                            'end_time': '2026-09-28T10:00:18.752494+00:00',\n"}
+,{"stream_name":"stderr","time":11892.523057534,"data":"                            'exception': False,\n"}
+,{"stream_name":"stderr","time":11892.523062586,"data":"                            'start_time': '2026-09-28T10:00:18.744778+00:00',\n"}
+,{"stream_name":"stderr","time":11892.523067844,"data":"                            'status': 'completed'},\n"}
+,{"stream_name":"stderr","time":11892.523072565,"data":"              'tags': []},\n"}
+,{"stream_name":"stderr","time":11892.523077136,"data":" 'outputs': ['...0 outputs...'],\n"}
+,{"stream_name":"stderr","time":11892.523081967,"data":" 'source': '# Profile proximity vs physical proximity (Jackson 2020 IMC): '\n"}
+,{"stream_name":"stderr","time":11892.523086877,"data":"           're...'}\n"}
+,{"stream_name":"stderr","time":11892.928602869,"data":"[NbConvertApp] Writing 60822 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":11896.744706823,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":11896.805114398,"data":"[NbConvertApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('outputs' was unexpected)\n"}
+,{"stream_name":"stderr","time":11896.805166586,"data":"\n"}
+,{"stream_name":"stderr","time":11896.805173488,"data":"Failed validating 'additionalProperties' in markdown_cell:\n"}
+,{"stream_name":"stderr","time":11896.805179008,"data":"\n"}
+,{"stream_name":"stderr","time":11896.805182356,"data":"On instance['cells'][0]:\n"}
+,{"stream_name":"stderr","time":11896.805185643,"data":"{'cell_type': 'markdown',\n"}
+,{"stream_name":"stderr","time":11896.805189025,"data":" 'id': '55191d27',\n"}
+,{"stream_name":"stderr","time":11896.805225116,"data":" 'metadata': {'papermill': {'duration': 0.007716,\n"}
+,{"stream_name":"stderr","time":11896.805230043,"data":"                            'end_time': '2026-09-28T10:00:18.752494+00:00',\n"}
+,{"stream_name":"stderr","time":11896.805234511,"data":"                            'exception': False,\n"}
+,{"stream_name":"stderr","time":11896.805238934,"data":"                            'start_time': '2026-09-28T10:00:18.744778+00:00',\n"}
+,{"stream_name":"stderr","time":11896.805242893,"data":"                            'status': 'completed'},\n"}
+,{"stream_name":"stderr","time":11896.805246483,"data":"              'tags': []},\n"}
+,{"stream_name":"stderr","time":11896.805250248,"data":" 'outputs': ['...0 outputs...'],\n"}
+,{"stream_name":"stderr","time":11896.805254237,"data":" 'source': '# Profile proximity vs physical proximity (Jackson 2020 IMC): '\n"}
+,{"stream_name":"stderr","time":11896.805257898,"data":"           're...'}\n"}
+,{"stream_name":"stderr","time":11898.371549535,"data":"[NbConvertApp] Writing 485740 bytes to __results__.html\n"}
+]

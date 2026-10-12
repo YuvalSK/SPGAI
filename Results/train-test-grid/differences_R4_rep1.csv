@@ -1,0 +1,1189 @@
+rep,kind,test,truth,marker,train_a,model_a,train_b,model_b,diff,lo,hi,call
+1,own − other,Jackson,table,c_erb_b_2_her2,Jackson,Table,Danenberg,Table,0.13677193452598824,0.1092037114053121,0.16232876299526058,better
+1,both − own,Jackson,table,c_erb_b_2_her2,Both,Table,Jackson,Table,-0.0007209460439056015,-0.0068747362983901964,0.0063444926349321955,n.s.
+1,both − other,Jackson,table,c_erb_b_2_her2,Both,Table,Danenberg,Table,0.13605098848208264,0.1122016920866124,0.15922711083841645,better
+1,own − other,Jackson,table,c_erb_b_2_her2,Jackson,MLP,Danenberg,MLP,0.21970991637383536,0.1825562779273736,0.2575416113131616,better
+1,both − own,Jackson,table,c_erb_b_2_her2,Both,MLP,Jackson,MLP,-0.004914252663844931,-0.010993444262003212,0.0019185372687527446,n.s.
+1,both − other,Jackson,table,c_erb_b_2_her2,Both,MLP,Danenberg,MLP,0.21479566370999043,0.17869804908897985,0.2522026672096636,better
+1,own − other,Jackson,table,c_erb_b_2_her2,Jackson,GCN,Danenberg,GCN,0.0633208790859825,0.029627456772681793,0.09746536698735965,better
+1,both − own,Jackson,table,c_erb_b_2_her2,Both,GCN,Jackson,GCN,-0.0015215085809378026,-0.015334398438240313,0.014998158943583742,n.s.
+1,both − other,Jackson,table,c_erb_b_2_her2,Both,GCN,Danenberg,GCN,0.06179937050504469,0.02988361236604054,0.09350939869017137,better
+1,own − other,Jackson,table,c_erb_b_2_her2,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.30297200396717877,0.23915321025277503,0.3710242142517487,better
+1,both − own,Jackson,table,c_erb_b_2_her2,Both,GraphSAGE,Jackson,GraphSAGE,-0.029304579122856778,-0.052030797012982466,-0.006639401524333842,worse
+1,both − other,Jackson,table,c_erb_b_2_her2,Both,GraphSAGE,Danenberg,GraphSAGE,0.273667424844322,0.2128654909546738,0.3387803146897361,better
+1,model,Jackson,table,c_erb_b_2_her2,Jackson,Table,Jackson,MLP,-0.012858094799375386,-0.023581252207846723,-0.0030461504504500944,worse
+1,model,Jackson,table,c_erb_b_2_her2,Jackson,MLP,Jackson,Table,0.012858094799375386,0.003046150450450094,0.023581252207846723,better
+1,model,Jackson,table,c_erb_b_2_her2,Jackson,GCN,Jackson,Table,-0.13285458462555022,-0.16056098520171316,-0.10348850997877075,worse
+1,model,Jackson,table,c_erb_b_2_her2,Jackson,GCN,Jackson,MLP,-0.1457126794249256,-0.17193847689959296,-0.11600851403436309,worse
+1,model,Jackson,table,c_erb_b_2_her2,Jackson,GraphSAGE,Jackson,Table,0.008466544026656253,-0.004477950070289984,0.021200542421586144,n.s.
+1,model,Jackson,table,c_erb_b_2_her2,Jackson,GraphSAGE,Jackson,MLP,-0.004391550772719133,-0.01270460059861138,0.004070161111284887,n.s.
+1,model,Jackson,table,c_erb_b_2_her2,Danenberg,Table,Danenberg,MLP,0.07007988704847173,0.04370626602868767,0.10467408861167586,better
+1,model,Jackson,table,c_erb_b_2_her2,Danenberg,MLP,Danenberg,Table,-0.07007988704847173,-0.10467408861167586,-0.04370626602868767,worse
+1,model,Jackson,table,c_erb_b_2_her2,Danenberg,GCN,Danenberg,Table,-0.05940352918554448,-0.09541263162607898,-0.018812022801831068,worse
+1,model,Jackson,table,c_erb_b_2_her2,Danenberg,GCN,Danenberg,MLP,0.010676357862927255,-0.04396727020671455,0.07149703034710637,n.s.
+1,model,Jackson,table,c_erb_b_2_her2,Danenberg,GraphSAGE,Danenberg,Table,-0.15773352541453428,-0.22815620621914343,-0.1007646511492171,worse
+1,model,Jackson,table,c_erb_b_2_her2,Danenberg,GraphSAGE,Danenberg,MLP,-0.08765363836606255,-0.12859214533024302,-0.05217119024972359,worse
+1,model,Jackson,table,c_erb_b_2_her2,Both,Table,Both,MLP,-0.008664788179436056,-0.01663653748264187,0.0001371264797878162,n.s.
+1,model,Jackson,table,c_erb_b_2_her2,Both,MLP,Both,Table,0.008664788179436056,-0.00013712647978781633,0.016636537482641867,n.s.
+1,model,Jackson,table,c_erb_b_2_her2,Both,GCN,Both,Table,-0.13365514716258242,-0.16028673917875388,-0.10591861866862615,worse
+1,model,Jackson,table,c_erb_b_2_her2,Both,GCN,Both,MLP,-0.14231993534201848,-0.16727027318203028,-0.11402578341953618,worse
+1,model,Jackson,table,c_erb_b_2_her2,Both,GraphSAGE,Both,Table,-0.020117089052294923,-0.03658308843139397,-0.0023635930117062373,worse
+1,model,Jackson,table,c_erb_b_2_her2,Both,GraphSAGE,Both,MLP,-0.02878187723173098,-0.0485200324569736,-0.008320033185101773,worse
+1,own − other,Jackson,table,cd20,Jackson,Table,Danenberg,Table,0.23897431377448536,0.14734896902800293,0.29483370900002187,better
+1,both − own,Jackson,table,cd20,Both,Table,Jackson,Table,-0.000783874949027874,-0.019694684374045722,0.022827600848669617,n.s.
+1,both − other,Jackson,table,cd20,Both,Table,Danenberg,Table,0.23819043882545748,0.152706533152275,0.30080874639434624,better
+1,own − other,Jackson,table,cd20,Jackson,MLP,Danenberg,MLP,0.26803277559724187,0.1831789638788439,0.3360999316677291,better
+1,both − own,Jackson,table,cd20,Both,MLP,Jackson,MLP,-0.028998084171818372,-0.09976012266099969,0.03295841480527358,n.s.
+1,both − other,Jackson,table,cd20,Both,MLP,Danenberg,MLP,0.2390346914254235,0.1651658341216117,0.3012529413162105,better
+1,own − other,Jackson,table,cd20,Jackson,GCN,Danenberg,GCN,0.009677399455086888,-0.018893772992757036,0.03167602172605901,n.s.
+1,both − own,Jackson,table,cd20,Both,GCN,Jackson,GCN,0.2533622932457111,-0.015242982702073164,0.3841688905450897,n.s.
+1,both − other,Jackson,table,cd20,Both,GCN,Danenberg,GCN,0.26303969270079797,-0.013655840295156338,0.407826156160093,n.s.
+1,own − other,Jackson,table,cd20,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.37106200671155254,0.14288196154376764,0.48416455009338727,better
+1,both − own,Jackson,table,cd20,Both,GraphSAGE,Jackson,GraphSAGE,-0.057961075949518714,-0.07266764511250004,0.02265459467751091,n.s.
+1,both − other,Jackson,table,cd20,Both,GraphSAGE,Danenberg,GraphSAGE,0.3131009307620338,0.15627242962785012,0.4443719579098348,better
+1,model,Jackson,table,cd20,Jackson,Table,Jackson,MLP,-0.03530714068217794,-0.0657980492529329,-0.002307096163790629,worse
+1,model,Jackson,table,cd20,Jackson,MLP,Jackson,Table,0.03530714068217794,0.002307096163790627,0.0657980492529329,better
+1,model,Jackson,table,cd20,Jackson,GCN,Jackson,Table,-0.24684974861267084,-0.3498121460579838,-0.030048509955291774,worse
+1,model,Jackson,table,cd20,Jackson,GCN,Jackson,MLP,-0.2821568892948488,-0.3743327040605141,-0.050256486537878016,worse
+1,model,Jackson,table,cd20,Jackson,GraphSAGE,Jackson,Table,0.12228600807897022,0.06311605896087472,0.16567235897762783,better
+1,model,Jackson,table,cd20,Jackson,GraphSAGE,Jackson,MLP,0.08697886739679228,0.02509996432387368,0.13194355554842205,better
+1,model,Jackson,table,cd20,Danenberg,Table,Danenberg,MLP,-0.00624867885942143,-0.058246338656885596,0.045029072460648877,n.s.
+1,model,Jackson,table,cd20,Danenberg,MLP,Danenberg,Table,0.00624867885942143,-0.045029072460648877,0.058246338656885575,n.s.
+1,model,Jackson,table,cd20,Danenberg,GCN,Danenberg,Table,-0.017552834293272368,-0.1292206458869773,0.13209676592404496,n.s.
+1,model,Jackson,table,cd20,Danenberg,GCN,Danenberg,MLP,-0.0238015131526938,-0.16313118327399637,0.16480426662577868,n.s.
+1,model,Jackson,table,cd20,Danenberg,GraphSAGE,Danenberg,Table,-0.009801684858096987,-0.10884998943645187,0.12250210041819956,n.s.
+1,model,Jackson,table,cd20,Danenberg,GraphSAGE,Danenberg,MLP,-0.016050363717518418,-0.14197973521145935,0.15704768022460563,n.s.
+1,model,Jackson,table,cd20,Both,Table,Both,MLP,-0.0070929314593874415,-0.048534744611663155,0.047828663543729166,n.s.
+1,model,Jackson,table,cd20,Both,MLP,Both,Table,0.0070929314593874415,-0.047828663543729166,0.048534744611663155,n.s.
+1,model,Jackson,table,cd20,Both,GCN,Both,Table,0.007296419582068114,-0.08539013635474202,0.06354254723070545,n.s.
+1,model,Jackson,table,cd20,Both,GCN,Both,MLP,0.00020348812268067284,-0.07296100122803516,0.048114051081270884,n.s.
+1,model,Jackson,table,cd20,Both,GraphSAGE,Both,Table,0.06510880707847938,0.028718737172998356,0.13294532993646888,better
+1,model,Jackson,table,cd20,Both,GraphSAGE,Both,MLP,0.05801587561909194,0.0058384687952548675,0.1438678076780767,better
+1,own − other,Jackson,table,cd3,Jackson,Table,Danenberg,Table,0.20464866371543378,0.11449171361792772,0.2579473171471959,better
+1,both − own,Jackson,table,cd3,Both,Table,Jackson,Table,-0.009012127040669893,-0.01726894891834319,0.0006803323746330598,n.s.
+1,both − other,Jackson,table,cd3,Both,Table,Danenberg,Table,0.19563653667476388,0.10894132942444143,0.24507451825845475,better
+1,own − other,Jackson,table,cd3,Jackson,MLP,Danenberg,MLP,0.4010890013919606,0.22026036243144745,0.5019359525445477,better
+1,both − own,Jackson,table,cd3,Both,MLP,Jackson,MLP,-0.007889142034733898,-0.014625718446294192,0.004395636058981261,n.s.
+1,both − other,Jackson,table,cd3,Both,MLP,Danenberg,MLP,0.3931998593572267,0.2208349732975571,0.49085564704290047,better
+1,own − other,Jackson,table,cd3,Jackson,GCN,Danenberg,GCN,0.05042711233154623,0.018908073297952455,0.08509009600872613,better
+1,both − own,Jackson,table,cd3,Both,GCN,Jackson,GCN,0.007733019948538256,-0.015339597810555284,0.018853366477686342,n.s.
+1,both − other,Jackson,table,cd3,Both,GCN,Danenberg,GCN,0.05816013228008449,0.025075228649596933,0.08580384220986555,better
+1,own − other,Jackson,table,cd3,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.30654960302284745,0.2022290096899743,0.3835687439105266,better
+1,both − own,Jackson,table,cd3,Both,GraphSAGE,Jackson,GraphSAGE,-0.0011818781085770613,-0.007351984807209463,0.007273482490867447,n.s.
+1,both − other,Jackson,table,cd3,Both,GraphSAGE,Danenberg,GraphSAGE,0.3053677249142704,0.20317701304739513,0.3825473863080293,better
+1,model,Jackson,table,cd3,Jackson,Table,Jackson,MLP,-0.028237742772708407,-0.04632998544459689,-0.0041248138109815655,worse
+1,model,Jackson,table,cd3,Jackson,MLP,Jackson,Table,0.028237742772708407,0.004124813810981562,0.046329985444596884,better
+1,model,Jackson,table,cd3,Jackson,GCN,Jackson,Table,-0.10696909988448888,-0.1742049185075964,-0.06191984043318278,worse
+1,model,Jackson,table,cd3,Jackson,GCN,Jackson,MLP,-0.1352068426571973,-0.18552969372619274,-0.10211763370378928,worse
+1,model,Jackson,table,cd3,Jackson,GraphSAGE,Jackson,Table,0.03304576385243363,0.006742091554612431,0.05157795874297911,better
+1,model,Jackson,table,cd3,Jackson,GraphSAGE,Jackson,MLP,0.004808021079725222,-0.0004357698999075607,0.011366415271780084,n.s.
+1,model,Jackson,table,cd3,Danenberg,Table,Danenberg,MLP,0.1682025949038184,0.0934755515077219,0.22941488884952477,better
+1,model,Jackson,table,cd3,Danenberg,MLP,Danenberg,Table,-0.1682025949038184,-0.22941488884952477,-0.0934755515077219,worse
+1,model,Jackson,table,cd3,Danenberg,GCN,Danenberg,Table,0.04725245149939866,-0.08625589472710564,0.13808490053116657,n.s.
+1,model,Jackson,table,cd3,Danenberg,GCN,Danenberg,MLP,0.21545504640321705,0.027665415401735786,0.34463702091504744,better
+1,model,Jackson,table,cd3,Danenberg,GraphSAGE,Danenberg,Table,-0.06885517545498004,-0.18003697051759213,0.04672088680476371,n.s.
+1,model,Jackson,table,cd3,Danenberg,GraphSAGE,Danenberg,MLP,0.09934741944883835,-0.028187676550048304,0.24116353482787056,n.s.
+1,model,Jackson,table,cd3,Both,Table,Both,MLP,-0.029360727778644402,-0.04608527793804207,-0.0064189253549369225,worse
+1,model,Jackson,table,cd3,Both,MLP,Both,Table,0.029360727778644402,0.006418925354936922,0.04608527793804206,better
+1,model,Jackson,table,cd3,Both,GCN,Both,Table,-0.09022395289528073,-0.17207550088274517,-0.03940992540237238,worse
+1,model,Jackson,table,cd3,Both,GCN,Both,MLP,-0.11958468067392514,-0.18676755764788833,-0.07976903223417112,worse
+1,model,Jackson,table,cd3,Both,GraphSAGE,Both,Table,0.04087601278452646,0.011613984711622047,0.06144647766516753,better
+1,model,Jackson,table,cd3,Both,GraphSAGE,Both,MLP,0.011515285005882059,0.0015902846774649177,0.017143789158116176,better
+1,own − other,Jackson,table,cd45,Jackson,Table,Danenberg,Table,0.11951950109259346,0.07118490958128075,0.17008939779764837,better
+1,both − own,Jackson,table,cd45,Both,Table,Jackson,Table,-0.00777879647256674,-0.015671321687785438,-0.00295134273114642,worse
+1,both − other,Jackson,table,cd45,Both,Table,Danenberg,Table,0.11174070462002672,0.06694545394321395,0.1599544691152141,better
+1,own − other,Jackson,table,cd45,Jackson,MLP,Danenberg,MLP,0.0992859312757648,0.06413262671736346,0.14207113002624688,better
+1,both − own,Jackson,table,cd45,Both,MLP,Jackson,MLP,-0.004576988620270006,-0.011347889605314462,-0.0013636381118550978,worse
+1,both − other,Jackson,table,cd45,Both,MLP,Danenberg,MLP,0.09470894265549479,0.058570766667146903,0.13679071059023631,better
+1,own − other,Jackson,table,cd45,Jackson,GCN,Danenberg,GCN,0.0466620129039661,0.01749275114118994,0.10952276433291885,better
+1,both − own,Jackson,table,cd45,Both,GCN,Jackson,GCN,-0.0056809457548789855,-0.011061279617022093,0.00022391327664321152,n.s.
+1,both − other,Jackson,table,cd45,Both,GCN,Danenberg,GCN,0.040981067149087114,0.012841069809234556,0.10150963225889717,better
+1,own − other,Jackson,table,cd45,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.07782271802374208,0.049403466016191715,0.1366446146954616,better
+1,both − own,Jackson,table,cd45,Both,GraphSAGE,Jackson,GraphSAGE,-0.007429117448799483,-0.013839044771607675,-0.0026829947060721115,worse
+1,both − other,Jackson,table,cd45,Both,GraphSAGE,Danenberg,GraphSAGE,0.0703936005749426,0.04336931131950075,0.12578988056770218,better
+1,model,Jackson,table,cd45,Jackson,Table,Jackson,MLP,-0.014030596815748586,-0.022007430624488903,-0.005895841887266074,worse
+1,model,Jackson,table,cd45,Jackson,MLP,Jackson,Table,0.014030596815748586,0.005895841887266074,0.022007430624488903,better
+1,model,Jackson,table,cd45,Jackson,GCN,Jackson,Table,-0.10834985256244245,-0.15560881804967786,-0.06866920830689352,worse
+1,model,Jackson,table,cd45,Jackson,GCN,Jackson,MLP,-0.12238044937819104,-0.1649157091323933,-0.08577871356541196,worse
+1,model,Jackson,table,cd45,Jackson,GraphSAGE,Jackson,Table,0.03536784362764478,0.0174830523070579,0.04999479963561987,better
+1,model,Jackson,table,cd45,Jackson,GraphSAGE,Jackson,MLP,0.021337246811896193,0.010624545780202785,0.030671494054516833,better
+1,model,Jackson,table,cd45,Danenberg,Table,Danenberg,MLP,-0.03426416663257725,-0.0658008387049325,-0.005203984868195882,worse
+1,model,Jackson,table,cd45,Danenberg,MLP,Danenberg,Table,0.03426416663257725,0.005203984868195875,0.06580083870493249,better
+1,model,Jackson,table,cd45,Danenberg,GCN,Danenberg,Table,-0.03549236437381509,-0.14269539447654986,0.057118662215644704,n.s.
+1,model,Jackson,table,cd45,Danenberg,GCN,Danenberg,MLP,-0.06975653100639234,-0.15776815566797164,-0.005355670319715077,worse
+1,model,Jackson,table,cd45,Danenberg,GraphSAGE,Danenberg,Table,0.07706462669649616,0.01296273146233599,0.1380920235430895,better
+1,model,Jackson,table,cd45,Danenberg,GraphSAGE,Danenberg,MLP,0.04280046006391891,0.0029903925699285576,0.07555110945910876,better
+1,model,Jackson,table,cd45,Both,Table,Both,MLP,-0.01723240466804532,-0.031717200851251945,-0.0038493073279147363,worse
+1,model,Jackson,table,cd45,Both,MLP,Both,Table,0.01723240466804532,0.003849307327914736,0.031717200851251945,better
+1,model,Jackson,table,cd45,Both,GCN,Both,Table,-0.1062520018447547,-0.1513363717989548,-0.06861303821894763,worse
+1,model,Jackson,table,cd45,Both,GCN,Both,MLP,-0.12348440651280002,-0.1635294866898109,-0.08852418644043483,worse
+1,model,Jackson,table,cd45,Both,GraphSAGE,Both,Table,0.03571752265141204,0.014746103964253795,0.053938942373415295,better
+1,model,Jackson,table,cd45,Both,GraphSAGE,Both,MLP,0.018485117983366717,0.00618182210061371,0.03097336896528931,better
+1,own − other,Jackson,table,cd68,Jackson,Table,Danenberg,Table,0.19177823536813177,0.16408349032949068,0.22146133136386387,better
+1,both − own,Jackson,table,cd68,Both,Table,Jackson,Table,-0.026507244778808947,-0.03579971627791055,-0.01820109379469733,worse
+1,both − other,Jackson,table,cd68,Both,Table,Danenberg,Table,0.16527099058932282,0.14402792683718232,0.1904419599585742,better
+1,own − other,Jackson,table,cd68,Jackson,MLP,Danenberg,MLP,0.1665849521409442,0.1323571880897681,0.20805712091203088,better
+1,both − own,Jackson,table,cd68,Both,MLP,Jackson,MLP,-0.02770583158091544,-0.03840084607176934,-0.017963548400851778,worse
+1,both − other,Jackson,table,cd68,Both,MLP,Danenberg,MLP,0.13887912056002877,0.1085957612738876,0.1741406760222794,better
+1,own − other,Jackson,table,cd68,Jackson,GCN,Danenberg,GCN,0.2052130050048563,0.11837374748512138,0.2683551189461475,better
+1,both − own,Jackson,table,cd68,Both,GCN,Jackson,GCN,-0.014970073904421899,-0.03602828434554282,0.003481708286349336,n.s.
+1,both − other,Jackson,table,cd68,Both,GCN,Danenberg,GCN,0.19024293110043441,0.09357332741047777,0.26711460832737194,better
+1,own − other,Jackson,table,cd68,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.151000996210773,0.11672854685598692,0.1847552659691017,better
+1,both − own,Jackson,table,cd68,Both,GraphSAGE,Jackson,GraphSAGE,-0.029665598843999108,-0.043957515329031145,-0.014275303140949738,worse
+1,both − other,Jackson,table,cd68,Both,GraphSAGE,Danenberg,GraphSAGE,0.1213353973667739,0.09116710337759708,0.15119665746649005,better
+1,model,Jackson,table,cd68,Jackson,Table,Jackson,MLP,-0.00031457433538301105,-0.016998127984416626,0.015933869674035667,n.s.
+1,model,Jackson,table,cd68,Jackson,MLP,Jackson,Table,0.00031457433538301105,-0.01593386967403567,0.016998127984416623,n.s.
+1,model,Jackson,table,cd68,Jackson,GCN,Jackson,Table,-0.20300581565913756,-0.24089908841539165,-0.16453138028489958,worse
+1,model,Jackson,table,cd68,Jackson,GCN,Jackson,MLP,-0.20332038999452057,-0.23671468327846368,-0.16947992307068577,worse
+1,model,Jackson,table,cd68,Jackson,GraphSAGE,Jackson,Table,0.004769432185318445,-0.03208524769077433,0.04226985820009161,n.s.
+1,model,Jackson,table,cd68,Jackson,GraphSAGE,Jackson,MLP,0.004454857849935434,-0.018018877545205356,0.027301188755119443,n.s.
+1,model,Jackson,table,cd68,Danenberg,Table,Danenberg,MLP,-0.02550785756257057,-0.05509699790648179,0.003443787815061795,n.s.
+1,model,Jackson,table,cd68,Danenberg,MLP,Danenberg,Table,0.02550785756257057,-0.003443787815061795,0.05509699790648178,n.s.
+1,model,Jackson,table,cd68,Danenberg,GCN,Danenberg,Table,-0.2164405852958621,-0.2634404446795109,-0.14534141274879286,worse
+1,model,Jackson,table,cd68,Danenberg,GCN,Danenberg,MLP,-0.24194844285843267,-0.29564166237845063,-0.17413963009488814,worse
+1,model,Jackson,table,cd68,Danenberg,GraphSAGE,Danenberg,Table,0.0455466713426772,0.010268033273930147,0.08727003386167781,better
+1,model,Jackson,table,cd68,Danenberg,GraphSAGE,Danenberg,MLP,0.020038813780106635,-0.008707906228890856,0.056857741394544165,n.s.
+1,model,Jackson,table,cd68,Both,Table,Both,MLP,0.0008840124667234828,-0.012752422325620748,0.014946743407794739,n.s.
+1,model,Jackson,table,cd68,Both,MLP,Both,Table,-0.0008840124667234828,-0.01494674340779474,0.012752422325620747,n.s.
+1,model,Jackson,table,cd68,Both,GCN,Both,Table,-0.1914686447847505,-0.2333961460640063,-0.1514899920747181,worse
+1,model,Jackson,table,cd68,Both,GCN,Both,MLP,-0.19058463231802703,-0.22770747973913266,-0.1554399117371345,worse
+1,model,Jackson,table,cd68,Both,GraphSAGE,Both,Table,0.0016110781201282842,-0.027628166461510673,0.034236267697842084,n.s.
+1,model,Jackson,table,cd68,Both,GraphSAGE,Both,MLP,0.002495090586851767,-0.018773205393471784,0.024149498254579717,n.s.
+1,own − other,Jackson,table,cytokeratin_5,Jackson,Table,Danenberg,Table,0.11218120470863635,0.0555916971423268,0.17150965151446826,better
+1,both − own,Jackson,table,cytokeratin_5,Both,Table,Jackson,Table,-0.0026866134014958964,-0.030145291594077892,0.03031503327029029,n.s.
+1,both − other,Jackson,table,cytokeratin_5,Both,Table,Danenberg,Table,0.10949459130714045,0.06329509787871032,0.15669705237635492,better
+1,own − other,Jackson,table,cytokeratin_5,Jackson,MLP,Danenberg,MLP,0.1722479036918522,0.09967190998482407,0.2418247751767471,better
+1,both − own,Jackson,table,cytokeratin_5,Both,MLP,Jackson,MLP,-0.07610401747905615,-0.13442309866537525,-0.024191614782870796,worse
+1,both − other,Jackson,table,cytokeratin_5,Both,MLP,Danenberg,MLP,0.09614388621279604,0.06267382206582046,0.13145153377646426,better
+1,own − other,Jackson,table,cytokeratin_5,Jackson,GCN,Danenberg,GCN,0.16258324582235828,0.0997978021748762,0.21263907440287713,better
+1,both − own,Jackson,table,cytokeratin_5,Both,GCN,Jackson,GCN,-0.05375020741699396,-0.08670107827000101,-0.00945764516635148,worse
+1,both − other,Jackson,table,cytokeratin_5,Both,GCN,Danenberg,GCN,0.10883303840536433,0.0621344457192907,0.15611037211156856,better
+1,own − other,Jackson,table,cytokeratin_5,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.1785689495480932,0.10623384802033257,0.24880144137581894,better
+1,both − own,Jackson,table,cytokeratin_5,Both,GraphSAGE,Jackson,GraphSAGE,-0.0724657860631,-0.10721393677816829,-0.018952310007426813,worse
+1,both − other,Jackson,table,cytokeratin_5,Both,GraphSAGE,Danenberg,GraphSAGE,0.10610316348499318,0.05590731505151029,0.16624826372820692,better
+1,model,Jackson,table,cytokeratin_5,Jackson,Table,Jackson,MLP,0.029781832530330732,-0.006703768214412501,0.07257583889255552,n.s.
+1,model,Jackson,table,cytokeratin_5,Jackson,MLP,Jackson,Table,-0.029781832530330732,-0.07257583889255552,0.006703768214412495,n.s.
+1,model,Jackson,table,cytokeratin_5,Jackson,GCN,Jackson,Table,-0.09965290319749054,-0.16557653041669884,-0.05014601572891154,worse
+1,model,Jackson,table,cytokeratin_5,Jackson,GCN,Jackson,MLP,-0.06987107066715981,-0.1412426172085943,-0.00964273426177051,worse
+1,model,Jackson,table,cytokeratin_5,Jackson,GraphSAGE,Jackson,Table,-0.02711075309655564,-0.057669269779289205,0.003972841402116193,n.s.
+1,model,Jackson,table,cytokeratin_5,Jackson,GraphSAGE,Jackson,MLP,0.002671079433775092,-0.034263313821467606,0.04134784208070504,n.s.
+1,model,Jackson,table,cytokeratin_5,Danenberg,Table,Danenberg,MLP,0.08984853151354658,0.04196214787235473,0.13435653611203613,better
+1,model,Jackson,table,cytokeratin_5,Danenberg,MLP,Danenberg,Table,-0.08984853151354658,-0.13435653611203616,-0.04196214787235473,worse
+1,model,Jackson,table,cytokeratin_5,Danenberg,GCN,Danenberg,Table,-0.15005494431121247,-0.19910057821459254,-0.10190141831801178,worse
+1,model,Jackson,table,cytokeratin_5,Danenberg,GCN,Danenberg,MLP,-0.060206412797665906,-0.10565239370895614,-0.013054762037037666,worse
+1,model,Jackson,table,cytokeratin_5,Danenberg,GraphSAGE,Danenberg,Table,-0.09349849793601248,-0.1360073456872421,-0.050299791051165735,worse
+1,model,Jackson,table,cytokeratin_5,Danenberg,GraphSAGE,Danenberg,MLP,-0.0036499664224659,-0.03676682647254474,0.03209350811245208,n.s.
+1,model,Jackson,table,cytokeratin_5,Both,Table,Both,MLP,0.10319923660789099,0.06359921655633985,0.15313928792827444,better
+1,model,Jackson,table,cytokeratin_5,Both,MLP,Both,Table,-0.10319923660789099,-0.15313928792827444,-0.06359921655633985,worse
+1,model,Jackson,table,cytokeratin_5,Both,GCN,Both,Table,-0.1507164972129886,-0.19708055261658305,-0.10972707255134254,worse
+1,model,Jackson,table,cytokeratin_5,Both,GCN,Both,MLP,-0.047517260605097617,-0.08447166058706256,-0.006999393927516897,worse
+1,model,Jackson,table,cytokeratin_5,Both,GraphSAGE,Both,Table,-0.09688992575815975,-0.13187718658259706,-0.05955775317808392,worse
+1,model,Jackson,table,cytokeratin_5,Both,GraphSAGE,Both,MLP,0.006309310849731242,-0.028263486832197517,0.05225352816712481,n.s.
+1,own − other,Jackson,table,cytokeratin_8_18,Jackson,Table,Danenberg,Table,0.04728440688236568,0.029645118394227808,0.0652657360925257,better
+1,both − own,Jackson,table,cytokeratin_8_18,Both,Table,Jackson,Table,-0.0006324880412885703,-0.004860401911422016,0.003977549266570201,n.s.
+1,both − other,Jackson,table,cytokeratin_8_18,Both,Table,Danenberg,Table,0.04665191884107711,0.032356401247925846,0.06266398538474477,better
+1,own − other,Jackson,table,cytokeratin_8_18,Jackson,MLP,Danenberg,MLP,0.06442474393879216,0.04077970697311012,0.08988204760483626,better
+1,both − own,Jackson,table,cytokeratin_8_18,Both,MLP,Jackson,MLP,-0.005513746375459427,-0.012559115013155634,0.0025583624456375687,n.s.
+1,both − other,Jackson,table,cytokeratin_8_18,Both,MLP,Danenberg,MLP,0.058910997563332734,0.04106562084586903,0.08282771877004531,better
+1,own − other,Jackson,table,cytokeratin_8_18,Jackson,GCN,Danenberg,GCN,0.02887668542603461,-0.011273454211708544,0.0737557661852403,n.s.
+1,both − own,Jackson,table,cytokeratin_8_18,Both,GCN,Jackson,GCN,5.472473743139972e-05,-0.013364329203855862,0.0117152117797282,n.s.
+1,both − other,Jackson,table,cytokeratin_8_18,Both,GCN,Danenberg,GCN,0.02893141016346601,-0.004289467568272804,0.0660102744365369,n.s.
+1,own − other,Jackson,table,cytokeratin_8_18,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.029191641866297635,-0.0014766978270319524,0.05908263726918975,n.s.
+1,both − own,Jackson,table,cytokeratin_8_18,Both,GraphSAGE,Jackson,GraphSAGE,-0.013304346803355793,-0.02447139617415156,-0.0003804012124065969,worse
+1,both − other,Jackson,table,cytokeratin_8_18,Both,GraphSAGE,Danenberg,GraphSAGE,0.015887295062941842,-0.008440932758326464,0.040168011953139106,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Jackson,Table,Jackson,MLP,0.004950421287332696,-0.0014975648732251379,0.011618480912269196,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Jackson,MLP,Jackson,Table,-0.004950421287332696,-0.011618480912269196,0.0014975648732251372,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Jackson,GCN,Jackson,Table,-0.1971004455448312,-0.2329164916423857,-0.16401209496307095,worse
+1,model,Jackson,table,cytokeratin_8_18,Jackson,GCN,Jackson,MLP,-0.1921500242574985,-0.2277880899479662,-0.15880634221336473,worse
+1,model,Jackson,table,cytokeratin_8_18,Jackson,GraphSAGE,Jackson,Table,-0.005278995936852993,-0.020866177582683672,0.00924354690064247,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Jackson,GraphSAGE,Jackson,MLP,-0.0003285746495202968,-0.012379391315640193,0.011731817933751727,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Danenberg,Table,Danenberg,MLP,0.022090758343759176,0.012772542912871495,0.033642389546701824,better
+1,model,Jackson,table,cytokeratin_8_18,Danenberg,MLP,Danenberg,Table,-0.022090758343759176,-0.033642389546701824,-0.012772542912871497,worse
+1,model,Jackson,table,cytokeratin_8_18,Danenberg,GCN,Danenberg,Table,-0.17869272408850012,-0.22178708940590666,-0.14174621298856496,worse
+1,model,Jackson,table,cytokeratin_8_18,Danenberg,GCN,Danenberg,MLP,-0.15660196574474095,-0.19849736100746712,-0.11818728510888023,worse
+1,model,Jackson,table,cytokeratin_8_18,Danenberg,GraphSAGE,Danenberg,Table,0.012813769079215054,-0.0044347723258063715,0.027334045494666597,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Danenberg,GraphSAGE,Danenberg,MLP,0.03490452742297423,0.019686827187414917,0.05105544359043446,better
+1,model,Jackson,table,cytokeratin_8_18,Both,Table,Both,MLP,0.009831679621503553,0.00346685335279511,0.01540024720408703,better
+1,model,Jackson,table,cytokeratin_8_18,Both,MLP,Both,Table,-0.009831679621503553,-0.01540024720408703,-0.0034668533527951106,worse
+1,model,Jackson,table,cytokeratin_8_18,Both,GCN,Both,Table,-0.19641323276611122,-0.23201790364793448,-0.16595735956986643,worse
+1,model,Jackson,table,cytokeratin_8_18,Both,GCN,Both,MLP,-0.18658155314460767,-0.22130379003979572,-0.15802999800547787,worse
+1,model,Jackson,table,cytokeratin_8_18,Both,GraphSAGE,Both,Table,-0.017950854698920216,-0.03648553684515229,0.0014733106864892672,n.s.
+1,model,Jackson,table,cytokeratin_8_18,Both,GraphSAGE,Both,MLP,-0.008119175077416663,-0.022911439369871313,0.0063932655914785775,n.s.
+1,own − other,Jackson,table,estrogen_receptor_alpha,Jackson,Table,Danenberg,Table,0.0766500093018645,0.05003639471553925,0.10253904539040294,better
+1,both − own,Jackson,table,estrogen_receptor_alpha,Both,Table,Jackson,Table,-0.007236926721488013,-0.01747698153502489,0.00440242222991666,n.s.
+1,both − other,Jackson,table,estrogen_receptor_alpha,Both,Table,Danenberg,Table,0.06941308258037648,0.04832510268074557,0.08926562142391854,better
+1,own − other,Jackson,table,estrogen_receptor_alpha,Jackson,MLP,Danenberg,MLP,0.07257500343828627,0.042831167290832084,0.09977670624544133,better
+1,both − own,Jackson,table,estrogen_receptor_alpha,Both,MLP,Jackson,MLP,-0.004600557388463322,-0.017732115832397994,0.010292825554502933,n.s.
+1,both − other,Jackson,table,estrogen_receptor_alpha,Both,MLP,Danenberg,MLP,0.06797444604982295,0.04559294836284883,0.08612689493743146,better
+1,own − other,Jackson,table,estrogen_receptor_alpha,Jackson,GCN,Danenberg,GCN,0.08123024448583116,0.04087694379094939,0.12024232633729752,better
+1,both − own,Jackson,table,estrogen_receptor_alpha,Both,GCN,Jackson,GCN,-0.008381534878914798,-0.022113123133559738,0.005417393169623512,n.s.
+1,both − other,Jackson,table,estrogen_receptor_alpha,Both,GCN,Danenberg,GCN,0.07284870960691636,0.03450403548572459,0.11175957353575032,better
+1,own − other,Jackson,table,estrogen_receptor_alpha,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.11280110398332022,0.07998202213379377,0.15032983461409796,better
+1,both − own,Jackson,table,estrogen_receptor_alpha,Both,GraphSAGE,Jackson,GraphSAGE,0.004366971151839927,-0.010408744512689241,0.02038615321055326,n.s.
+1,both − other,Jackson,table,estrogen_receptor_alpha,Both,GraphSAGE,Danenberg,GraphSAGE,0.11716807513516014,0.09417522095429876,0.14507731909948832,better
+1,model,Jackson,table,estrogen_receptor_alpha,Jackson,Table,Jackson,MLP,0.008021111323634034,-0.004855970964903558,0.019852594765802423,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Jackson,MLP,Jackson,Table,-0.008021111323634034,-0.019852594765802423,0.004855970964903557,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Jackson,GCN,Jackson,Table,-0.13693914219494163,-0.16516544364149652,-0.11400321860168518,worse
+1,model,Jackson,table,estrogen_receptor_alpha,Jackson,GCN,Jackson,MLP,-0.1289180308713076,-0.1579604225729372,-0.10318077995108393,worse
+1,model,Jackson,table,estrogen_receptor_alpha,Jackson,GraphSAGE,Jackson,Table,0.02127381506853976,0.004868851835580554,0.03979598498574937,better
+1,model,Jackson,table,estrogen_receptor_alpha,Jackson,GraphSAGE,Jackson,MLP,0.029294926392173792,0.012828316247616888,0.04632397500845332,better
+1,model,Jackson,table,estrogen_receptor_alpha,Danenberg,Table,Danenberg,MLP,0.003946105460055804,-0.007986809793626785,0.014642881259283065,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Danenberg,MLP,Danenberg,Table,-0.003946105460055804,-0.014642881259283067,0.007986809793626785,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Danenberg,GCN,Danenberg,Table,-0.1415193773789083,-0.18539214310555524,-0.09926524055327872,worse
+1,model,Jackson,table,estrogen_receptor_alpha,Danenberg,GCN,Danenberg,MLP,-0.1375732719188525,-0.18290191266726408,-0.09231814138976133,worse
+1,model,Jackson,table,estrogen_receptor_alpha,Danenberg,GraphSAGE,Danenberg,Table,-0.014877279612915961,-0.0426388018653009,0.008393452922501021,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Danenberg,GraphSAGE,Danenberg,MLP,-0.010931174152860157,-0.034401383979450924,0.010179328301110428,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Both,Table,Both,MLP,0.005384741990609343,-0.006650237055479039,0.0165654946640256,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Both,MLP,Both,Table,-0.005384741990609343,-0.0165654946640256,0.006650237055479036,n.s.
+1,model,Jackson,table,estrogen_receptor_alpha,Both,GCN,Both,Table,-0.13808375035236842,-0.17066127500877065,-0.11096001520217352,worse
+1,model,Jackson,table,estrogen_receptor_alpha,Both,GCN,Both,MLP,-0.13269900836175907,-0.1659159242865787,-0.10579535935959355,worse
+1,model,Jackson,table,estrogen_receptor_alpha,Both,GraphSAGE,Both,Table,0.0328777129418677,0.015093010093838564,0.04993882683948485,better
+1,model,Jackson,table,estrogen_receptor_alpha,Both,GraphSAGE,Both,MLP,0.03826245493247704,0.018363908481558392,0.0567590033219169,better
+1,own − other,Jackson,table,ki_67,Jackson,Table,Danenberg,Table,0.07236348727900821,0.01845947626365795,0.1347676944402367,better
+1,both − own,Jackson,table,ki_67,Both,Table,Jackson,Table,-0.1074415089929263,-0.16422452600461798,-0.023146309369127854,worse
+1,both − other,Jackson,table,ki_67,Both,Table,Danenberg,Table,-0.03507802171391809,-0.11258685555511246,0.08403330190427845,n.s.
+1,own − other,Jackson,table,ki_67,Jackson,MLP,Danenberg,MLP,0.1366888687358522,0.09429931273788998,0.18387717223468453,better
+1,both − own,Jackson,table,ki_67,Both,MLP,Jackson,MLP,-0.025400678339865312,-0.0658892812676149,0.008211062179511551,n.s.
+1,both − other,Jackson,table,ki_67,Both,MLP,Danenberg,MLP,0.1112881903959869,0.0885700868537907,0.13437667178372567,better
+1,own − other,Jackson,table,ki_67,Jackson,GCN,Danenberg,GCN,0.01540852726650713,-0.003535204040965132,0.03532799031701528,n.s.
+1,both − own,Jackson,table,ki_67,Both,GCN,Jackson,GCN,0.008218916780233738,-0.002570839782730916,0.021243440632526266,n.s.
+1,both − other,Jackson,table,ki_67,Both,GCN,Danenberg,GCN,0.02362744404674087,0.012714188672627195,0.03648389473642986,better
+1,own − other,Jackson,table,ki_67,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.11774269996690671,0.06819731962475696,0.1658528187498938,better
+1,both − own,Jackson,table,ki_67,Both,GraphSAGE,Jackson,GraphSAGE,-0.07991720788849359,-0.12456646584751296,-0.0340905870648445,worse
+1,both − other,Jackson,table,ki_67,Both,GraphSAGE,Danenberg,GraphSAGE,0.037825492078413125,0.025027944569518797,0.05074717094599864,better
+1,model,Jackson,table,ki_67,Jackson,Table,Jackson,MLP,0.027594194220250667,0.0057998478343223555,0.05780815647274017,better
+1,model,Jackson,table,ki_67,Jackson,MLP,Jackson,Table,-0.027594194220250667,-0.05780815647274017,-0.005799847834322364,worse
+1,model,Jackson,table,ki_67,Jackson,GCN,Jackson,Table,-0.1380271647490395,-0.18402144742633011,-0.09424864856398855,worse
+1,model,Jackson,table,ki_67,Jackson,GCN,Jackson,MLP,-0.11043297052878884,-0.16183966013340123,-0.06715007901930897,worse
+1,model,Jackson,table,ki_67,Jackson,GraphSAGE,Jackson,Table,0.022535606259993235,-0.021361866087096427,0.06026827203237436,n.s.
+1,model,Jackson,table,ki_67,Jackson,GraphSAGE,Jackson,MLP,0.0501298004802439,0.025704816463659175,0.07683209488853227,better
+1,model,Jackson,table,ki_67,Danenberg,Table,Danenberg,MLP,0.09191957567709468,0.041518490241249734,0.13465459514672992,better
+1,model,Jackson,table,ki_67,Danenberg,MLP,Danenberg,Table,-0.09191957567709468,-0.13465459514672995,-0.04151849024124974,worse
+1,model,Jackson,table,ki_67,Danenberg,GCN,Danenberg,Table,-0.08107220473653842,-0.13536070714491316,-0.026145602132072683,worse
+1,model,Jackson,table,ki_67,Danenberg,GCN,Danenberg,MLP,0.010847370940556253,-0.01138912883344443,0.03252410313181462,n.s.
+1,model,Jackson,table,ki_67,Danenberg,GraphSAGE,Danenberg,Table,-0.02284360642790527,-0.06610086541849515,0.028257918199805776,n.s.
+1,model,Jackson,table,ki_67,Danenberg,GraphSAGE,Danenberg,MLP,0.0690759692491894,0.05288128124210201,0.08624481006020257,better
+1,model,Jackson,table,ki_67,Both,Table,Both,MLP,-0.05444663643281032,-0.10680910559859376,0.03764847925906308,n.s.
+1,model,Jackson,table,ki_67,Both,MLP,Both,Table,0.05444663643281032,-0.03764847925906308,0.10680910559859376,n.s.
+1,model,Jackson,table,ki_67,Both,GCN,Both,Table,-0.022366738975879458,-0.1254208224749086,0.035420559865455996,n.s.
+1,model,Jackson,table,ki_67,Both,GCN,Both,MLP,-0.07681337540868978,-0.09749726348670473,-0.05802669039206721,worse
+1,model,Jackson,table,ki_67,Both,GraphSAGE,Both,Table,0.05005990736442595,-0.04240835332273364,0.10153179979824727,n.s.
+1,model,Jackson,table,ki_67,Both,GraphSAGE,Both,MLP,-0.0043867290683843735,-0.012321597533717584,0.003442277803475342,n.s.
+1,own − other,Jackson,table,pan_cytokeratin,Jackson,Table,Danenberg,Table,0.033889476875755276,0.020059908002445413,0.04806319093275951,better
+1,both − own,Jackson,table,pan_cytokeratin,Both,Table,Jackson,Table,0.00025352621152119337,-0.00234464935942518,0.0028868880642812394,n.s.
+1,both − other,Jackson,table,pan_cytokeratin,Both,Table,Danenberg,Table,0.03414300308727647,0.022442385449263864,0.04630391989226127,better
+1,own − other,Jackson,table,pan_cytokeratin,Jackson,MLP,Danenberg,MLP,0.036312664264657846,0.01948669131126974,0.055888472836204295,better
+1,both − own,Jackson,table,pan_cytokeratin,Both,MLP,Jackson,MLP,-0.00013699248551479748,-0.002962227304446255,0.0035209296475498973,n.s.
+1,both − other,Jackson,table,pan_cytokeratin,Both,MLP,Danenberg,MLP,0.03617567177914305,0.021658566138344253,0.05415324792160578,better
+1,own − other,Jackson,table,pan_cytokeratin,Jackson,GCN,Danenberg,GCN,0.06156145409146774,0.039915760496088595,0.08548049433353941,better
+1,both − own,Jackson,table,pan_cytokeratin,Both,GCN,Jackson,GCN,0.0007306937905172672,-0.003371544986789493,0.005078485933682439,n.s.
+1,both − other,Jackson,table,pan_cytokeratin,Both,GCN,Danenberg,GCN,0.062292147881985005,0.04268308501972297,0.08491145003986555,better
+1,own − other,Jackson,table,pan_cytokeratin,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.07053931124659796,0.04462154330157825,0.09882928789593035,better
+1,both − own,Jackson,table,pan_cytokeratin,Both,GraphSAGE,Jackson,GraphSAGE,-0.0011755529579556834,-0.004886339404276424,0.0029972940662134884,n.s.
+1,both − other,Jackson,table,pan_cytokeratin,Both,GraphSAGE,Danenberg,GraphSAGE,0.06936375828864227,0.04523507045519089,0.09621336825371997,better
+1,model,Jackson,table,pan_cytokeratin,Jackson,Table,Jackson,MLP,0.0018658486281453168,-0.0006597593228949483,0.004954136591575875,n.s.
+1,model,Jackson,table,pan_cytokeratin,Jackson,MLP,Jackson,Table,-0.0018658486281453168,-0.004954136591575875,0.0006597593228949474,n.s.
+1,model,Jackson,table,pan_cytokeratin,Jackson,GCN,Jackson,Table,-0.18511093129021516,-0.2090658778830434,-0.1611879998300603,worse
+1,model,Jackson,table,pan_cytokeratin,Jackson,GCN,Jackson,MLP,-0.18324508266206985,-0.2070647066637843,-0.15922961853185777,worse
+1,model,Jackson,table,pan_cytokeratin,Jackson,GraphSAGE,Jackson,Table,0.0024208313838237627,-0.0028291322569915984,0.0069615687437950624,n.s.
+1,model,Jackson,table,pan_cytokeratin,Jackson,GraphSAGE,Jackson,MLP,0.0042866800119690796,-0.0008460177964758342,0.009449128099475321,n.s.
+1,model,Jackson,table,pan_cytokeratin,Danenberg,Table,Danenberg,MLP,0.004289036017047887,-0.003106030169203533,0.013501502594589276,n.s.
+1,model,Jackson,table,pan_cytokeratin,Danenberg,MLP,Danenberg,Table,-0.004289036017047887,-0.013501502594589276,0.0031060301692035323,n.s.
+1,model,Jackson,table,pan_cytokeratin,Danenberg,GCN,Danenberg,Table,-0.21278290850592763,-0.24648255191527468,-0.18299072563954924,worse
+1,model,Jackson,table,pan_cytokeratin,Danenberg,GCN,Danenberg,MLP,-0.20849387248887974,-0.23828934459848364,-0.17976563197592949,worse
+1,model,Jackson,table,pan_cytokeratin,Danenberg,GraphSAGE,Danenberg,Table,-0.03422900298701892,-0.05273969843877355,-0.015646330089366174,worse
+1,model,Jackson,table,pan_cytokeratin,Danenberg,GraphSAGE,Danenberg,MLP,-0.029939966969971032,-0.04472974181424887,-0.015435148323784835,worse
+1,model,Jackson,table,pan_cytokeratin,Both,Table,Both,MLP,0.0022563673251813077,-0.00038964254508373194,0.0051238593346265805,n.s.
+1,model,Jackson,table,pan_cytokeratin,Both,MLP,Both,Table,-0.0022563673251813077,-0.005123859334626582,0.0003896425450837302,n.s.
+1,model,Jackson,table,pan_cytokeratin,Both,GCN,Both,Table,-0.1846337637112191,-0.20787501027238162,-0.16097216761618563,worse
+1,model,Jackson,table,pan_cytokeratin,Both,GCN,Both,MLP,-0.18237739638603778,-0.2052077039530528,-0.15930223942621005,worse
+1,model,Jackson,table,pan_cytokeratin,Both,GraphSAGE,Both,Table,0.000991752214346886,-0.003036852625399633,0.005120803231796467,n.s.
+1,model,Jackson,table,pan_cytokeratin,Both,GraphSAGE,Both,MLP,0.0032481195395281937,-0.0008963000876774901,0.007758969695429773,n.s.
+1,own − other,Jackson,table,sma,Jackson,Table,Danenberg,Table,0.9527753000685576,0.8683566163359943,1.0273077674905375,better
+1,both − own,Jackson,table,sma,Both,Table,Jackson,Table,-0.04711876524283898,-0.0696434174533729,-0.029396831503499816,worse
+1,both − other,Jackson,table,sma,Both,Table,Danenberg,Table,0.9056565348257186,0.8291950640030925,0.9721960979686038,better
+1,own − other,Jackson,table,sma,Jackson,MLP,Danenberg,MLP,0.9182264127129135,0.8348548359156441,0.9875075869933359,better
+1,both − own,Jackson,table,sma,Both,MLP,Jackson,MLP,-0.045137804302602835,-0.06842310744030372,-0.026908811829388316,worse
+1,both − other,Jackson,table,sma,Both,MLP,Danenberg,MLP,0.8730886084103107,0.8026595033783475,0.9320791486757947,better
+1,own − other,Jackson,table,sma,Jackson,GCN,Danenberg,GCN,0.5573529708321332,0.452872288748485,0.660896592046972,better
+1,both − own,Jackson,table,sma,Both,GCN,Jackson,GCN,-0.03809803793723365,-0.05895037222969279,-0.022156599345943037,worse
+1,both − other,Jackson,table,sma,Both,GCN,Danenberg,GCN,0.5192549328948995,0.42291396370682843,0.6168174967406367,better
+1,own − other,Jackson,table,sma,Jackson,GraphSAGE,Danenberg,GraphSAGE,0.9174477572641561,0.8320502237155045,0.9905205992343865,better
+1,both − own,Jackson,table,sma,Both,GraphSAGE,Jackson,GraphSAGE,-0.039533938001551805,-0.05754131909073121,-0.025321386438116437,worse
+1,both − other,Jackson,table,sma,Both,GraphSAGE,Danenberg,GraphSAGE,0.8779138192626043,0.8019578057010676,0.9415153167936429,better
+1,model,Jackson,table,sma,Jackson,Table,Jackson,MLP,0.004013770333560207,-0.0023084741068756074,0.011748289241642769,n.s.
+1,model,Jackson,table,sma,Jackson,MLP,Jackson,Table,-0.004013770333560207,-0.01174828924164277,0.0023084741068756056,n.s.
+1,model,Jackson,table,sma,Jackson,GCN,Jackson,Table,-0.2335574525833064,-0.25699006847580874,-0.20751418837726843,worse
+1,model,Jackson,table,sma,Jackson,GCN,Jackson,MLP,-0.2295436822497462,-0.2542292270518421,-0.20476761672670782,worse
+1,model,Jackson,table,sma,Jackson,GraphSAGE,Jackson,Table,0.021879615630611804,0.01385400446525746,0.0325631501575058,better
+1,model,Jackson,table,sma,Jackson,GraphSAGE,Jackson,MLP,0.02589338596417201,0.017522295413055795,0.03671827333824926,better
+1,model,Jackson,table,sma,Danenberg,Table,Danenberg,MLP,-0.03053511702208385,-0.04120830188173147,-0.019181411919225556,worse
+1,model,Jackson,table,sma,Danenberg,MLP,Danenberg,Table,0.03053511702208385,0.019181411919225552,0.04120830188173147,better
+1,model,Jackson,table,sma,Danenberg,GCN,Danenberg,Table,0.16186487665311794,0.11395957721307078,0.20954694131730542,better
+1,model,Jackson,table,sma,Danenberg,GCN,Danenberg,MLP,0.1313297596310341,0.08230774620973678,0.1797281310988924,better
+1,model,Jackson,table,sma,Danenberg,GraphSAGE,Danenberg,Table,0.05720715843501331,0.03745198323020293,0.0785425037725979,better
+1,model,Jackson,table,sma,Danenberg,GraphSAGE,Danenberg,MLP,0.026672041412929462,0.01276548965289528,0.04200924941052183,better
+1,model,Jackson,table,sma,Both,Table,Both,MLP,0.0020328093933240643,-0.009058741616451062,0.014193960142861037,n.s.
+1,model,Jackson,table,sma,Both,MLP,Both,Table,-0.0020328093933240643,-0.01419396014286104,0.009058741616451054,n.s.
+1,model,Jackson,table,sma,Both,GCN,Both,Table,-0.22453672527770108,-0.253740130861518,-0.19531327793484288,worse
+1,model,Jackson,table,sma,Both,GCN,Both,MLP,-0.222503915884377,-0.2527743177591287,-0.1933910088461595,worse
+1,model,Jackson,table,sma,Both,GraphSAGE,Both,Table,0.029464442871898977,0.01063080342030007,0.050783016956984124,better
+1,model,Jackson,table,sma,Both,GraphSAGE,Both,MLP,0.03149725226522304,0.018716976126854152,0.04784974829443948,better
+1,own − other,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,Table,Jackson,Table,0.07699019393760786,0.025140408284329875,0.11971301110856912,better
+1,both − own,Danenberg,cell mean,c_erb_b_2_her2,Both,Table,Danenberg,Table,0.0001883139207365936,-0.014902852367404263,0.018482260333995224,n.s.
+1,both − other,Danenberg,cell mean,c_erb_b_2_her2,Both,Table,Jackson,Table,0.07717850785834446,0.04293110268536325,0.10538129050621148,better
+1,own − other,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,MLP,Jackson,MLP,0.0486826835452262,-0.0038565027345837215,0.08781448864918244,n.s.
+1,both − own,Danenberg,cell mean,c_erb_b_2_her2,Both,MLP,Danenberg,MLP,-0.02453255256689657,-0.060838048131322604,0.023097449368029713,n.s.
+1,both − other,Danenberg,cell mean,c_erb_b_2_her2,Both,MLP,Jackson,MLP,0.02415013097832963,0.01574253155289301,0.0324389295328367,better
+1,own − other,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,GCN,Jackson,GCN,-0.0034520528176910092,-0.019549451340339242,0.009809331350496003,n.s.
+1,both − own,Danenberg,cell mean,c_erb_b_2_her2,Both,GCN,Danenberg,GCN,0.016640862732094086,0.002096781851451693,0.037330172743254245,better
+1,both − other,Danenberg,cell mean,c_erb_b_2_her2,Both,GCN,Jackson,GCN,0.013188809914403077,0.0037633058619856137,0.025246871998326495,better
+1,own − other,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.07570265872496695,-0.004181912138085535,0.13594937770257642,n.s.
+1,both − own,Danenberg,cell mean,c_erb_b_2_her2,Both,GraphSAGE,Danenberg,GraphSAGE,-0.02721124077201109,-0.05764809893579416,0.01951147529543238,n.s.
+1,both − other,Danenberg,cell mean,c_erb_b_2_her2,Both,GraphSAGE,Jackson,GraphSAGE,0.04849141795295586,0.0067880646847739675,0.08176269883333298,better
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Jackson,Table,Jackson,MLP,-0.032262739344166236,-0.04771350866537987,-0.014837508500893144,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Jackson,MLP,Jackson,Table,0.032262739344166236,0.01483750850089314,0.04771350866537987,better
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Jackson,GCN,Jackson,Table,-0.06808436360910564,-0.15148953147400074,-0.004156061644566751,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Jackson,GCN,Jackson,MLP,-0.10034710295327187,-0.173902746751611,-0.05026041869367691,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Jackson,GraphSAGE,Jackson,Table,0.031686989616353856,0.005884423948657297,0.053644209379897445,better
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Jackson,GraphSAGE,Jackson,MLP,-0.0005757497278123802,-0.01309272506268422,0.008765518329231595,n.s.
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,Table,Danenberg,MLP,-0.003955228951784573,-0.013516104804220792,0.010598544723432692,n.s.
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,MLP,Danenberg,Table,0.003955228951784573,-0.010598544723432694,0.01351610480422079,n.s.
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,GCN,Danenberg,Table,-0.1485266103644045,-0.19899379513469262,-0.11003563896884838,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,GCN,Danenberg,MLP,-0.15248183931618908,-0.1935324266185993,-0.11654475539448025,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,GraphSAGE,Danenberg,Table,0.030399454403712944,-0.022613124703953782,0.06444338531990493,n.s.
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Danenberg,GraphSAGE,Danenberg,MLP,0.02644422545192837,-0.01334969326761288,0.05194409918939177,n.s.
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Both,Table,Both,MLP,0.02076563753584859,0.0018898959854183634,0.03551181731553866,better
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Both,MLP,Both,Table,-0.02076563753584859,-0.03551181731553866,-0.001889895985418364,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Both,GCN,Both,Table,-0.13207406155304702,-0.18412209109258693,-0.09494498601244851,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Both,GCN,Both,MLP,-0.11130842401719843,-0.17764293192879624,-0.06547585442312792,worse
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Both,GraphSAGE,Both,Table,0.002999899710965259,-0.02578273385776305,0.026630600677663676,n.s.
+1,model,Danenberg,cell mean,c_erb_b_2_her2,Both,GraphSAGE,Both,MLP,0.02376553724681385,-0.01882199300572401,0.06054081921519922,n.s.
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.2362772205394803,-0.3136931523432075,-0.17716809521593885,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.31326741447708817,-0.3602146601056471,-0.27963835734685977,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet residual,Both,Table,-0.31345572839782476,-0.3712970546889401,-0.2749668717036969,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.25702177520333747,-0.33023186685081973,-0.20713364020056682,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.33401196914094533,-0.3796778997592374,-0.29061564518091365,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet gamma,Both,Table,-0.3342002830616819,-0.3883983824924271,-0.2952528458041489,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.36334119023075595,-0.44639731943264577,-0.29634369113089876,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.4403313841683638,-0.5209401333172462,-0.33943876094440056,worse
+1,image,Danenberg,cell mean,c_erb_b_2_her2,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.4405196980891004,-0.5221156290918914,-0.3569340681361404,worse
+1,own − other,Danenberg,cell mean,cd20,Danenberg,Table,Jackson,Table,0.2074634843102266,0.14060835879538142,0.27543273637145527,better
+1,both − own,Danenberg,cell mean,cd20,Both,Table,Danenberg,Table,-0.048622929198724685,-0.07235429436085367,-0.02383091625188893,worse
+1,both − other,Danenberg,cell mean,cd20,Both,Table,Jackson,Table,0.1588405551115019,0.11498361086112055,0.2050851803306248,better
+1,own − other,Danenberg,cell mean,cd20,Danenberg,MLP,Jackson,MLP,0.18617834824215485,0.11077612547591228,0.2652386453701491,better
+1,both − own,Danenberg,cell mean,cd20,Both,MLP,Danenberg,MLP,-0.1719252648608245,-0.23644534191739414,-0.09383022090225743,worse
+1,both − other,Danenberg,cell mean,cd20,Both,MLP,Jackson,MLP,0.014253083381330356,-0.01820529677348491,0.05807892008967652,n.s.
+1,own − other,Danenberg,cell mean,cd20,Danenberg,GCN,Jackson,GCN,0.061191258241220736,0.030523238253963216,0.09195247507414298,better
+1,both − own,Danenberg,cell mean,cd20,Both,GCN,Danenberg,GCN,0.10153037603012788,0.010016154040135112,0.17473460733452645,better
+1,both − other,Danenberg,cell mean,cd20,Both,GCN,Jackson,GCN,0.16272163427134861,0.06267802956486056,0.2464484787616786,better
+1,own − other,Danenberg,cell mean,cd20,Danenberg,GraphSAGE,Jackson,GraphSAGE,-0.05958272638397388,-0.13721643717173593,0.025221349579189072,n.s.
+1,both − own,Danenberg,cell mean,cd20,Both,GraphSAGE,Danenberg,GraphSAGE,0.1809404940638631,0.10618997800588359,0.23114259985620456,better
+1,both − other,Danenberg,cell mean,cd20,Both,GraphSAGE,Jackson,GraphSAGE,0.1213577676798892,0.06371899373774059,0.1790434297378446,better
+1,model,Danenberg,cell mean,cd20,Jackson,Table,Jackson,MLP,-0.051988221246072996,-0.07845283928411077,-0.01350452563825789,worse
+1,model,Danenberg,cell mean,cd20,Jackson,MLP,Jackson,Table,0.051988221246072996,0.013504525638257884,0.07845283928411077,better
+1,model,Danenberg,cell mean,cd20,Jackson,GCN,Jackson,Table,0.018135915819654458,-0.015601646598988814,0.05466964523590029,n.s.
+1,model,Danenberg,cell mean,cd20,Jackson,GCN,Jackson,MLP,-0.03385230542641854,-0.08309682552805743,0.02507768307297924,n.s.
+1,model,Danenberg,cell mean,cd20,Jackson,GraphSAGE,Jackson,Table,0.14980333019268088,0.08689378529056481,0.20876887757596163,better
+1,model,Danenberg,cell mean,cd20,Jackson,GraphSAGE,Jackson,MLP,0.09781510894660789,0.06005037791068407,0.14190202285679804,better
+1,model,Danenberg,cell mean,cd20,Danenberg,Table,Danenberg,MLP,-0.030703085178001244,-0.06310008371995762,0.002125646251328191,n.s.
+1,model,Danenberg,cell mean,cd20,Danenberg,MLP,Danenberg,Table,0.030703085178001244,-0.002125646251328201,0.06310008371995761,n.s.
+1,model,Danenberg,cell mean,cd20,Danenberg,GCN,Danenberg,Table,-0.1281363102493514,-0.18276739503073386,-0.06694927080023173,worse
+1,model,Danenberg,cell mean,cd20,Danenberg,GCN,Danenberg,MLP,-0.15883939542735265,-0.20350322132814247,-0.09652462782263463,worse
+1,model,Danenberg,cell mean,cd20,Danenberg,GraphSAGE,Danenberg,Table,-0.1172428805015196,-0.1629562511795164,-0.05888561582817813,worse
+1,model,Danenberg,cell mean,cd20,Danenberg,GraphSAGE,Danenberg,MLP,-0.14794596567952084,-0.18867845848292436,-0.08508531336867929,worse
+1,model,Danenberg,cell mean,cd20,Both,Table,Both,MLP,0.09259925048409856,0.05183188366016559,0.12932287839234485,better
+1,model,Danenberg,cell mean,cd20,Both,MLP,Both,Table,-0.09259925048409856,-0.12932287839234488,-0.05183188366016559,worse
+1,model,Danenberg,cell mean,cd20,Both,GCN,Both,Table,0.02201699497950116,-0.03745413656403308,0.07458936988097233,n.s.
+1,model,Danenberg,cell mean,cd20,Both,GCN,Both,MLP,0.11461624546359972,0.023384952205466658,0.18619400217892193,better
+1,model,Danenberg,cell mean,cd20,Both,GraphSAGE,Both,Table,0.11232054276106818,0.06750372530432651,0.1418446430924593,better
+1,model,Danenberg,cell mean,cd20,Both,GraphSAGE,Both,MLP,0.20491979324516674,0.11832895744368947,0.2639386774321698,better
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.16249032906736943,-0.21225285014350476,-0.10400442204899926,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.36995381337759603,-0.42792444122863404,-0.2810625175020707,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet residual,Both,Table,-0.32133088417887135,-0.3698262858603524,-0.24050118218729052,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.09348154052075663,-0.1379032668720771,-0.053486982895572896,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.30094502483098323,-0.38117968505876487,-0.22756755846872112,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet gamma,Both,Table,-0.25232209563225855,-0.31666174336750685,-0.19727283144738136,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.11419183017125398,-0.16760254704811853,-0.059433509179528,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.32165531448148055,-0.37807005848400316,-0.2707833999184834,worse
+1,image,Danenberg,cell mean,cd20,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.27303238528275586,-0.3179032543454715,-0.22246540650966498,worse
+1,own − other,Danenberg,cell mean,cd3,Danenberg,Table,Jackson,Table,0.08469515866620103,0.06226018750061471,0.11583345340627096,better
+1,both − own,Danenberg,cell mean,cd3,Both,Table,Danenberg,Table,0.00011530016223038064,-0.007338676266908095,0.00548853720331566,n.s.
+1,both − other,Danenberg,cell mean,cd3,Both,Table,Jackson,Table,0.08481045882843141,0.06659292154284187,0.10940972439125955,better
+1,own − other,Danenberg,cell mean,cd3,Danenberg,MLP,Jackson,MLP,0.10912106374626329,0.08473308349438931,0.1387934631676071,better
+1,both − own,Danenberg,cell mean,cd3,Both,MLP,Danenberg,MLP,-0.015684318521722473,-0.02319197158675549,-0.009294977273531239,worse
+1,both − other,Danenberg,cell mean,cd3,Both,MLP,Jackson,MLP,0.09343674522454082,0.07241559242613915,0.11937668143388153,better
+1,own − other,Danenberg,cell mean,cd3,Danenberg,GCN,Jackson,GCN,0.033289367815486415,0.01556159910104393,0.05488915900173361,better
+1,both − own,Danenberg,cell mean,cd3,Both,GCN,Danenberg,GCN,-0.0008047699289894794,-0.0091231332569616,0.006959952539178264,n.s.
+1,both − other,Danenberg,cell mean,cd3,Both,GCN,Jackson,GCN,0.032484597886496935,0.014997127653682715,0.05377139303321879,better
+1,own − other,Danenberg,cell mean,cd3,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.11547926873576753,0.08678329159157798,0.15140839002658846,better
+1,both − own,Danenberg,cell mean,cd3,Both,GraphSAGE,Danenberg,GraphSAGE,-0.01165828606505015,-0.020408107541702795,-0.0034591540860755923,worse
+1,both − other,Danenberg,cell mean,cd3,Both,GraphSAGE,Jackson,GraphSAGE,0.10382098267071738,0.07977978745220957,0.1348994108791613,better
+1,model,Danenberg,cell mean,cd3,Jackson,Table,Jackson,MLP,0.008704388632095328,-0.003836495577732415,0.020123721793402452,n.s.
+1,model,Danenberg,cell mean,cd3,Jackson,MLP,Jackson,Table,-0.008704388632095328,-0.020123721793402456,0.003836495577732409,n.s.
+1,model,Danenberg,cell mean,cd3,Jackson,GCN,Jackson,Table,-0.14390082226140843,-0.18583348173386255,-0.09619683646674244,worse
+1,model,Danenberg,cell mean,cd3,Jackson,GCN,Jackson,MLP,-0.1351964336293131,-0.178557289816557,-0.08626551416246091,worse
+1,model,Danenberg,cell mean,cd3,Jackson,GraphSAGE,Jackson,Table,-0.006047776256784321,-0.02395412681761009,0.01203177453562617,n.s.
+1,model,Danenberg,cell mean,cd3,Jackson,GraphSAGE,Jackson,MLP,0.002656612375311007,-0.013860624232703506,0.017401237322161887,n.s.
+1,model,Danenberg,cell mean,cd3,Danenberg,Table,Danenberg,MLP,-0.015721516447966932,-0.021075044348381332,-0.010492293142646386,worse
+1,model,Danenberg,cell mean,cd3,Danenberg,MLP,Danenberg,Table,0.015721516447966932,0.010492293142646386,0.021075044348381332,better
+1,model,Danenberg,cell mean,cd3,Danenberg,GCN,Danenberg,Table,-0.19530661311212305,-0.23510664181190952,-0.1453313124655882,worse
+1,model,Danenberg,cell mean,cd3,Danenberg,GCN,Danenberg,MLP,-0.21102812956008998,-0.24815657555234083,-0.16456562278324519,worse
+1,model,Danenberg,cell mean,cd3,Danenberg,GraphSAGE,Danenberg,Table,0.024736333812782174,0.017765501383412454,0.03282040838805686,better
+1,model,Danenberg,cell mean,cd3,Danenberg,GraphSAGE,Danenberg,MLP,0.009014817364815242,0.005306004314037582,0.013562720299664262,better
+1,model,Danenberg,cell mean,cd3,Both,Table,Both,MLP,7.810223598592181e-05,-0.003926011654295939,0.0037331467049358078,n.s.
+1,model,Danenberg,cell mean,cd3,Both,MLP,Both,Table,-7.810223598592181e-05,-0.003733146704935808,0.003926011654295938,n.s.
+1,model,Danenberg,cell mean,cd3,Both,GCN,Both,Table,-0.1962266832033429,-0.23603756273932,-0.14150231184824688,worse
+1,model,Danenberg,cell mean,cd3,Both,GCN,Both,MLP,-0.196148580967357,-0.23378390056259882,-0.14525423945635896,worse
+1,model,Danenberg,cell mean,cd3,Both,GraphSAGE,Both,Table,0.012962747585501644,0.005526352659142345,0.02343417666826516,better
+1,model,Danenberg,cell mean,cd3,Both,GraphSAGE,Both,MLP,0.013040849821487566,0.006270156646098829,0.021144179881873885,better
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.6622565000496521,-0.7413026963258262,-0.5722568226757314,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.7469516587158531,-0.8147145082672449,-0.6748350914705801,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet residual,Both,Table,-0.7470669588780835,-0.8175667825548143,-0.6695863836906577,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.48584314765461256,-0.5395152835820535,-0.4189391821826793,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5705383063208136,-0.6131120604711384,-0.5224101373041526,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet gamma,Both,Table,-0.570653606483044,-0.6134945841069277,-0.5195822704737248,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.4222209983592091,-0.47280405295051603,-0.3636124068607622,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.5069161570254102,-0.550711375907734,-0.4541478303411366,worse
+1,image,Danenberg,cell mean,cd3,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.5070314571876405,-0.5511682023341855,-0.45496320404091695,worse
+1,own − other,Danenberg,cell mean,cd45,Danenberg,Table,Jackson,Table,0.11630892513350666,0.09090973986582573,0.1558016178116584,better
+1,both − own,Danenberg,cell mean,cd45,Both,Table,Danenberg,Table,-0.009667535801953231,-0.013881150937171474,-0.005626093521953547,worse
+1,both − other,Danenberg,cell mean,cd45,Both,Table,Jackson,Table,0.10664138933155343,0.08299094772024793,0.14463248863071035,better
+1,own − other,Danenberg,cell mean,cd45,Danenberg,MLP,Jackson,MLP,0.09658570109689735,0.07463718623785719,0.13097524952277542,better
+1,both − own,Danenberg,cell mean,cd45,Both,MLP,Danenberg,MLP,-0.015504394434699975,-0.02164798090682791,-0.009398365316808172,worse
+1,both − other,Danenberg,cell mean,cd45,Both,MLP,Jackson,MLP,0.08108130666219737,0.06011878568480126,0.11253849838335128,better
+1,own − other,Danenberg,cell mean,cd45,Danenberg,GCN,Jackson,GCN,0.06313662159072597,0.04424662224315795,0.08053679733425156,better
+1,both − own,Danenberg,cell mean,cd45,Both,GCN,Danenberg,GCN,-0.014426839924483903,-0.022221138902768365,-0.0020880991920394112,worse
+1,both − other,Danenberg,cell mean,cd45,Both,GCN,Jackson,GCN,0.04870978166624207,0.032682504025531856,0.06773330976341291,better
+1,own − other,Danenberg,cell mean,cd45,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.1361627454989195,0.10895795434088194,0.17128636819472617,better
+1,both − own,Danenberg,cell mean,cd45,Both,GraphSAGE,Danenberg,GraphSAGE,-0.018580403473302032,-0.029246679329465765,-0.0068583166312347855,worse
+1,both − other,Danenberg,cell mean,cd45,Both,GraphSAGE,Jackson,GraphSAGE,0.11758234202561746,0.09097400214931396,0.1526928068787413,better
+1,model,Danenberg,cell mean,cd45,Jackson,Table,Jackson,MLP,-0.02364138034823704,-0.032450055108705377,-0.016391268335466946,worse
+1,model,Danenberg,cell mean,cd45,Jackson,MLP,Jackson,Table,0.02364138034823704,0.016391268335466943,0.032450055108705377,better
+1,model,Danenberg,cell mean,cd45,Jackson,GCN,Jackson,Table,-0.1336481189407167,-0.15649958071571196,-0.10300908178494397,worse
+1,model,Danenberg,cell mean,cd45,Jackson,GCN,Jackson,MLP,-0.15728949928895375,-0.17828414687091068,-0.12970300767705126,worse
+1,model,Danenberg,cell mean,cd45,Jackson,GraphSAGE,Jackson,Table,-0.016936632456939105,-0.026906191298803422,0.0009900624912155816,n.s.
+1,model,Danenberg,cell mean,cd45,Jackson,GraphSAGE,Jackson,MLP,-0.040578012805176145,-0.05147953175181094,-0.0229597429166197,worse
+1,model,Danenberg,cell mean,cd45,Danenberg,Table,Danenberg,MLP,-0.00391815631162773,-0.006670310508758559,-0.0007559487036777706,worse
+1,model,Danenberg,cell mean,cd45,Danenberg,MLP,Danenberg,Table,0.00391815631162773,0.0007559487036777696,0.006670310508758559,better
+1,model,Danenberg,cell mean,cd45,Danenberg,GCN,Danenberg,Table,-0.1868204224834974,-0.20496642335578252,-0.16805806649655897,worse
+1,model,Danenberg,cell mean,cd45,Danenberg,GCN,Danenberg,MLP,-0.19073857879512512,-0.20862422687550639,-0.17172435501843528,worse
+1,model,Danenberg,cell mean,cd45,Danenberg,GraphSAGE,Danenberg,Table,0.0029171879084737284,-0.002216796067328322,0.009239115101871084,n.s.
+1,model,Danenberg,cell mean,cd45,Danenberg,GraphSAGE,Danenberg,MLP,-0.0010009684031540012,-0.007080849139729483,0.006698575232432627,n.s.
+1,model,Danenberg,cell mean,cd45,Both,Table,Both,MLP,0.0019187023211190146,-0.001544224779043543,0.00491655056471155,n.s.
+1,model,Danenberg,cell mean,cd45,Both,MLP,Both,Table,-0.0019187023211190146,-0.00491655056471155,0.0015442247790435418,n.s.
+1,model,Danenberg,cell mean,cd45,Both,GCN,Both,Table,-0.19157972660602807,-0.20731317912606995,-0.17249602441390058,worse
+1,model,Danenberg,cell mean,cd45,Both,GCN,Both,MLP,-0.18966102428490905,-0.20477550437817654,-0.1722188392261237,worse
+1,model,Danenberg,cell mean,cd45,Both,GraphSAGE,Both,Table,-0.005995679762875072,-0.01626750181907776,0.008027177397761256,n.s.
+1,model,Danenberg,cell mean,cd45,Both,GraphSAGE,Both,MLP,-0.004076977441756058,-0.013157769846745446,0.008131489855523347,n.s.
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.4593710439110428,-0.5325159787276774,-0.36767564288059307,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.5756799690445494,-0.6402122184829354,-0.504421199332355,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet residual,Both,Table,-0.5660124332425962,-0.6299614024540601,-0.49294286841812884,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.4263195307576846,-0.49943223183801744,-0.33324162322471396,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5426284558911912,-0.6001276020181558,-0.4792809299209722,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet gamma,Both,Table,-0.532960920089238,-0.5910581049948161,-0.4694833952409557,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.3983632530234881,-0.45176673888724567,-0.3345833316624928,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.5146721781569947,-0.5538342947868363,-0.4764372491839152,worse
+1,image,Danenberg,cell mean,cd45,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.5050046423550415,-0.5451234136260807,-0.46428062195403774,worse
+1,own − other,Danenberg,cell mean,cd68,Danenberg,Table,Jackson,Table,0.299571881459506,0.25798599982905634,0.33400681956778616,better
+1,both − own,Danenberg,cell mean,cd68,Both,Table,Danenberg,Table,-0.00823558869292651,-0.022698786648368777,0.007421192371093327,n.s.
+1,both − other,Danenberg,cell mean,cd68,Both,Table,Jackson,Table,0.29133629276657946,0.24471182014282852,0.3287557253528163,better
+1,own − other,Danenberg,cell mean,cd68,Danenberg,MLP,Jackson,MLP,0.21842770349746032,0.17630919578192283,0.25504603812335,better
+1,both − own,Danenberg,cell mean,cd68,Both,MLP,Danenberg,MLP,0.007355165733569313,-0.008534111909586226,0.026594099148162485,n.s.
+1,both − other,Danenberg,cell mean,cd68,Both,MLP,Jackson,MLP,0.22578286923102964,0.19481491374287152,0.2528598995236738,better
+1,own − other,Danenberg,cell mean,cd68,Danenberg,GCN,Jackson,GCN,-0.1428051067786072,-0.1999075494643215,-0.07331710629856403,worse
+1,both − own,Danenberg,cell mean,cd68,Both,GCN,Danenberg,GCN,0.284153902523115,0.19543954911576034,0.3343514148558122,better
+1,both − other,Danenberg,cell mean,cd68,Both,GCN,Jackson,GCN,0.14134879574450782,0.10407634313930006,0.16699759248711515,better
+1,own − other,Danenberg,cell mean,cd68,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.2609284393006959,0.23131693436938255,0.284772500659494,better
+1,both − own,Danenberg,cell mean,cd68,Both,GraphSAGE,Danenberg,GraphSAGE,-0.0023491944728716296,-0.012309283696514853,0.014040606254288511,n.s.
+1,both − other,Danenberg,cell mean,cd68,Both,GraphSAGE,Jackson,GraphSAGE,0.2585792448278243,0.2343235336802371,0.2821973575215919,better
+1,model,Danenberg,cell mean,cd68,Jackson,Table,Jackson,MLP,-0.07155593465488952,-0.09114998697538673,-0.04708222520509823,worse
+1,model,Danenberg,cell mean,cd68,Jackson,MLP,Jackson,Table,0.07155593465488952,0.04708222520509822,0.09114998697538673,better
+1,model,Danenberg,cell mean,cd68,Jackson,GCN,Jackson,Table,-0.012077054800839704,-0.04966958953530069,0.021779537406737104,n.s.
+1,model,Danenberg,cell mean,cd68,Jackson,GCN,Jackson,MLP,-0.08363298945572922,-0.11832493497106418,-0.05058717556290038,worse
+1,model,Danenberg,cell mean,cd68,Jackson,GraphSAGE,Jackson,Table,0.061320059839962415,0.03557603460828042,0.08406850789756372,better
+1,model,Danenberg,cell mean,cd68,Jackson,GraphSAGE,Jackson,MLP,-0.010235874814927104,-0.02534560790442985,0.004548833810465823,n.s.
+1,model,Danenberg,cell mean,cd68,Danenberg,Table,Danenberg,MLP,0.00958824330715613,-0.005464379912984982,0.0258567044966902,n.s.
+1,model,Danenberg,cell mean,cd68,Danenberg,MLP,Danenberg,Table,-0.00958824330715613,-0.025856704496690204,0.005464379912984981,n.s.
+1,model,Danenberg,cell mean,cd68,Danenberg,GCN,Danenberg,Table,-0.45445404303895287,-0.5158817250568025,-0.3697430530407395,worse
+1,model,Danenberg,cell mean,cd68,Danenberg,GCN,Danenberg,MLP,-0.44486579973179674,-0.5144781444499817,-0.3489430758309416,worse
+1,model,Danenberg,cell mean,cd68,Danenberg,GraphSAGE,Danenberg,Table,0.022676617681152367,0.005191805955056317,0.04153117345973986,better
+1,model,Danenberg,cell mean,cd68,Danenberg,GraphSAGE,Danenberg,MLP,0.0322648609883085,0.009621764271724934,0.05858642200496592,better
+1,model,Danenberg,cell mean,cd68,Both,Table,Both,MLP,-0.006002511119339693,-0.020443059187604345,0.007678005484009561,n.s.
+1,model,Danenberg,cell mean,cd68,Both,MLP,Both,Table,0.006002511119339693,-0.007678005484009564,0.02044305918760434,n.s.
+1,model,Danenberg,cell mean,cd68,Both,GCN,Both,Table,-0.16206455182291135,-0.1988367968525876,-0.129807221463431,worse
+1,model,Danenberg,cell mean,cd68,Both,GCN,Both,MLP,-0.16806706294225104,-0.20533184626206188,-0.1357143787255915,worse
+1,model,Danenberg,cell mean,cd68,Both,GraphSAGE,Both,Table,0.028563011901207247,0.004282430363262827,0.0535882827222588,better
+1,model,Danenberg,cell mean,cd68,Both,GraphSAGE,Both,MLP,0.022560500781867554,0.0019255561831956823,0.044722284192061625,better
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.26088051395308653,-0.354960393488177,-0.16924656557450138,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.5604523954125925,-0.6559462201695997,-0.4459817504929329,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet residual,Both,Table,-0.552216806719666,-0.6514609640173148,-0.4335511628190134,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.2292764009528646,-0.31060505344855865,-0.1503621931876831,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5288482824123706,-0.6142313334843317,-0.4271897543605271,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet gamma,Both,Table,-0.5206126937194441,-0.6125267074505859,-0.4132264100236287,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.23896293180262304,-0.34540248527468304,-0.14230560907620346,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.538534813262129,-0.6505719577981541,-0.4204171342371306,worse
+1,image,Danenberg,cell mean,cd68,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.5302992245692025,-0.6490432130107355,-0.4093466105797651,worse
+1,own − other,Danenberg,cell mean,cytokeratin_5,Danenberg,Table,Jackson,Table,0.081332243360767,0.020618469908888538,0.16092378999970108,better
+1,both − own,Danenberg,cell mean,cytokeratin_5,Both,Table,Danenberg,Table,-0.0031413162021959873,-0.015601240349015676,0.01103822047052481,n.s.
+1,both − other,Danenberg,cell mean,cytokeratin_5,Both,Table,Jackson,Table,0.07819092715857101,0.019371294123610962,0.16086994185510095,better
+1,own − other,Danenberg,cell mean,cytokeratin_5,Danenberg,MLP,Jackson,MLP,0.11665066122798745,0.07702087992657065,0.1551971702141307,better
+1,both − own,Danenberg,cell mean,cytokeratin_5,Both,MLP,Danenberg,MLP,-0.011703603418379505,-0.030026784543283083,0.006583411106686368,n.s.
+1,both − other,Danenberg,cell mean,cytokeratin_5,Both,MLP,Jackson,MLP,0.10494705780960795,0.0607921829617453,0.1489250946283492,better
+1,own − other,Danenberg,cell mean,cytokeratin_5,Danenberg,GCN,Jackson,GCN,0.08658194700977709,0.008686884438283868,0.1557997931323451,better
+1,both − own,Danenberg,cell mean,cytokeratin_5,Both,GCN,Danenberg,GCN,-0.010381068624025075,-0.043520862706938716,0.02181287788409957,n.s.
+1,both − other,Danenberg,cell mean,cytokeratin_5,Both,GCN,Jackson,GCN,0.07620087838575201,0.014013195061954562,0.13559389049220497,better
+1,own − other,Danenberg,cell mean,cytokeratin_5,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.12056159095290164,0.05094596191946154,0.17650224034404252,better
+1,both − own,Danenberg,cell mean,cytokeratin_5,Both,GraphSAGE,Danenberg,GraphSAGE,0.011588965822468433,-0.02164445706212607,0.04464116834638294,n.s.
+1,both − other,Danenberg,cell mean,cytokeratin_5,Both,GraphSAGE,Jackson,GraphSAGE,0.13215055677537008,0.05888917007336447,0.19659712622213377,better
+1,model,Danenberg,cell mean,cytokeratin_5,Jackson,Table,Jackson,MLP,0.013604280249440714,-0.0079971305663123,0.0372527878318181,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Jackson,MLP,Jackson,Table,-0.013604280249440714,-0.0372527878318181,0.007997130566312297,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Jackson,GCN,Jackson,Table,-0.032898695105993164,-0.08225027560333623,0.01760524353588831,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Jackson,GCN,Jackson,MLP,-0.01929441485655245,-0.07030331791172241,0.027107360992863865,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Jackson,GraphSAGE,Jackson,Table,0.0009272472307021995,-0.025688627747527615,0.02581147783085919,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Jackson,GraphSAGE,Jackson,MLP,0.014531527480142914,-0.009844036849230277,0.03596549146952558,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Danenberg,Table,Danenberg,MLP,-0.02171413761777974,-0.0665341741053319,0.04270683336119439,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Danenberg,MLP,Danenberg,Table,0.02171413761777974,-0.04270683336119441,0.06653417410533188,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Danenberg,GCN,Danenberg,Table,-0.027648991456983074,-0.10813028091625022,0.034832170415510164,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Danenberg,GCN,Danenberg,MLP,-0.04936312907476281,-0.09891815274547297,-0.00942055576058447,worse
+1,model,Danenberg,cell mean,cytokeratin_5,Danenberg,GraphSAGE,Danenberg,Table,0.040156594822836844,-0.049084278421574805,0.11593056315822545,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Danenberg,GraphSAGE,Danenberg,MLP,0.018442457205057106,-0.03561496725581179,0.06949718625878594,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Both,Table,Both,MLP,-0.013151850401596221,-0.061525788995808614,0.05242590452351678,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Both,MLP,Both,Table,0.013151850401596221,-0.052425904523516795,0.06152578899580861,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Both,GCN,Both,Table,-0.03488874387881216,-0.10226146840217933,0.022041800867909887,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Both,GCN,Both,MLP,-0.04804059428040838,-0.08924817605691289,-0.007465750205170653,worse
+1,model,Danenberg,cell mean,cytokeratin_5,Both,GraphSAGE,Both,Table,0.054886876847501265,-0.02860410643514124,0.13002262800709494,n.s.
+1,model,Danenberg,cell mean,cytokeratin_5,Both,GraphSAGE,Both,MLP,0.041735026445905044,-0.020978686670343735,0.10157408805950022,n.s.
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.09262800218942219,-0.1730922988029865,-0.018730814079316375,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.17396024555018919,-0.25790545267708415,-0.0987481719825084,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet residual,Both,Table,-0.1708189293479932,-0.26084817083364403,-0.09301168602876925,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.12294595580647888,-0.22152386481909192,-0.03232057350750429,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.20427819916724588,-0.293005750555158,-0.11770840643120313,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet gamma,Both,Table,-0.2011368829650499,-0.2975014864108441,-0.10921767931379026,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.0660300452659817,-0.11552660720214644,-0.016346067393485847,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.14736228862674872,-0.22483986522955435,-0.08715755580230565,worse
+1,image,Danenberg,cell mean,cytokeratin_5,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.14422097242455273,-0.2247541066489647,-0.08204638592076793,worse
+1,own − other,Danenberg,cell mean,cytokeratin_8_18,Danenberg,Table,Jackson,Table,-0.01090558809344655,-0.040626540110119666,0.018387300774238342,n.s.
+1,both − own,Danenberg,cell mean,cytokeratin_8_18,Both,Table,Danenberg,Table,0.01177647801990922,0.0013789783718953926,0.02222562187942795,better
+1,both − other,Danenberg,cell mean,cytokeratin_8_18,Both,Table,Jackson,Table,0.0008708899264626702,-0.02074878297799623,0.021735748108278875,n.s.
+1,own − other,Danenberg,cell mean,cytokeratin_8_18,Danenberg,MLP,Jackson,MLP,0.0019235904635904744,-0.04349795136008737,0.04769233869726452,n.s.
+1,both − own,Danenberg,cell mean,cytokeratin_8_18,Both,MLP,Danenberg,MLP,0.009734620887942302,-0.0025020210637466565,0.023743333899750446,n.s.
+1,both − other,Danenberg,cell mean,cytokeratin_8_18,Both,MLP,Jackson,MLP,0.011658211351532777,-0.02063829275655853,0.04645624873772708,n.s.
+1,own − other,Danenberg,cell mean,cytokeratin_8_18,Danenberg,GCN,Jackson,GCN,-0.028643965997149967,-0.08725310789220292,0.03408384991547269,n.s.
+1,both − own,Danenberg,cell mean,cytokeratin_8_18,Both,GCN,Danenberg,GCN,0.03718531316711743,0.017044066311133633,0.0615944372674184,better
+1,both − other,Danenberg,cell mean,cytokeratin_8_18,Both,GCN,Jackson,GCN,0.008541347169967461,-0.031448353622563534,0.05679856070640432,n.s.
+1,own − other,Danenberg,cell mean,cytokeratin_8_18,Danenberg,GraphSAGE,Jackson,GraphSAGE,-0.02647929551779926,-0.09992484495189621,0.04227949168882937,n.s.
+1,both − own,Danenberg,cell mean,cytokeratin_8_18,Both,GraphSAGE,Danenberg,GraphSAGE,0.02065045605011606,-0.0005492657227683714,0.0473850912030691,n.s.
+1,both − other,Danenberg,cell mean,cytokeratin_8_18,Both,GraphSAGE,Jackson,GraphSAGE,-0.0058288394676832,-0.0543698589544086,0.04735133177636067,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Jackson,Table,Jackson,MLP,0.006627604159889389,-0.009905383385473837,0.02484498477355995,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Jackson,MLP,Jackson,Table,-0.006627604159889389,-0.024844984773559953,0.009905383385473827,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Jackson,GCN,Jackson,Table,-0.22241075595461246,-0.2689330686100595,-0.18016627431415852,worse
+1,model,Danenberg,cell mean,cytokeratin_8_18,Jackson,GCN,Jackson,MLP,-0.21578315179472307,-0.24867890175656057,-0.1866110949817399,worse
+1,model,Danenberg,cell mean,cytokeratin_8_18,Jackson,GraphSAGE,Jackson,Table,0.00748554167645199,-0.031715475177482515,0.04324186354790888,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Jackson,GraphSAGE,Jackson,MLP,0.014113145836341379,-0.010760584286220523,0.035222548418694925,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Danenberg,Table,Danenberg,MLP,-0.006201574397147636,-0.013865676715828617,0.0009577935406954113,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Danenberg,MLP,Danenberg,Table,0.006201574397147636,-0.0009577935406954118,0.013865676715828617,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Danenberg,GCN,Danenberg,Table,-0.24014913385831588,-0.28313102790270067,-0.20400233377637078,worse
+1,model,Danenberg,cell mean,cytokeratin_8_18,Danenberg,GCN,Danenberg,MLP,-0.2463507082554635,-0.2859040692426308,-0.21504167236499908,worse
+1,model,Danenberg,cell mean,cytokeratin_8_18,Danenberg,GraphSAGE,Danenberg,Table,-0.008088165747900722,-0.025253727792194234,0.00921865750664828,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Danenberg,GraphSAGE,Danenberg,MLP,-0.014289740145048357,-0.03081099633142684,0.0007207412426519377,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Both,Table,Both,MLP,-0.004159717265180718,-0.013541488781121606,0.004913567025929187,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Both,MLP,Both,Table,0.004159717265180718,-0.004913567025929188,0.013541488781121606,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Both,GCN,Both,Table,-0.21474029871110767,-0.2539148191953702,-0.18134152844770646,worse
+1,model,Danenberg,cell mean,cytokeratin_8_18,Both,GCN,Both,MLP,-0.2189000159762884,-0.25323843435345833,-0.19199770707754413,worse
+1,model,Danenberg,cell mean,cytokeratin_8_18,Both,GraphSAGE,Both,Table,0.0007858122823061198,-0.01612441654511112,0.01635747269238095,n.s.
+1,model,Danenberg,cell mean,cytokeratin_8_18,Both,GraphSAGE,Both,MLP,-0.003373904982874598,-0.014595419805324533,0.0074316104050125,n.s.
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.5472132483429382,-0.6253916634552943,-0.4761849964764312,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.5363076602494916,-0.6261319991122606,-0.448741168797305,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet residual,Both,Table,-0.5480841382694008,-0.6330569111867163,-0.4664215396844606,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.5194161062403668,-0.5891016895003466,-0.4571062206340704,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5085105181469203,-0.5882041728694949,-0.43192755390830484,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet gamma,Both,Table,-0.5202869961668295,-0.5970135413475408,-0.44988576613614295,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.30422080252778794,-0.36455341869826463,-0.25344917020548524,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.2933152144343414,-0.36390584108499424,-0.22617833880360091,worse
+1,image,Danenberg,cell mean,cytokeratin_8_18,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.3050916924542506,-0.37091497261867756,-0.2435815331680335,worse
+1,own − other,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,Table,Jackson,Table,0.15096475561972145,0.12554970581810143,0.1827228941597211,better
+1,both − own,Danenberg,cell mean,estrogen_receptor_alpha,Both,Table,Danenberg,Table,-0.01666675883243829,-0.02509033787031725,-0.009312318665353992,worse
+1,both − other,Danenberg,cell mean,estrogen_receptor_alpha,Both,Table,Jackson,Table,0.13429799678728316,0.11491955112407735,0.159006956283346,better
+1,own − other,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,MLP,Jackson,MLP,0.13753340482355558,0.11163146505294431,0.17168978886444058,better
+1,both − own,Danenberg,cell mean,estrogen_receptor_alpha,Both,MLP,Danenberg,MLP,-0.02051398018138162,-0.028658216362729645,-0.01306840402453275,worse
+1,both − other,Danenberg,cell mean,estrogen_receptor_alpha,Both,MLP,Jackson,MLP,0.11701942464217396,0.09523297076141103,0.14582972093122357,better
+1,own − other,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,GCN,Jackson,GCN,0.11094324377546416,0.08153080916975591,0.14802776415757155,better
+1,both − own,Danenberg,cell mean,estrogen_receptor_alpha,Both,GCN,Danenberg,GCN,-0.02313285962113898,-0.03641303784195114,-0.00982460665693821,worse
+1,both − other,Danenberg,cell mean,estrogen_receptor_alpha,Both,GCN,Jackson,GCN,0.08781038415432518,0.06365385423198,0.11867304851910554,better
+1,own − other,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.1739449940410891,0.14619346493507085,0.21086453972454025,better
+1,both − own,Danenberg,cell mean,estrogen_receptor_alpha,Both,GraphSAGE,Danenberg,GraphSAGE,-0.030119218725331187,-0.0417828787736428,-0.01975969643738553,worse
+1,both − other,Danenberg,cell mean,estrogen_receptor_alpha,Both,GraphSAGE,Jackson,GraphSAGE,0.1438257753157579,0.12389804329348983,0.16965092709104757,better
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Jackson,Table,Jackson,MLP,-0.010551621525553667,-0.02012628255966267,-0.001472525643549604,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Jackson,MLP,Jackson,Table,0.010551621525553667,0.0014725256435496022,0.02012628255966267,better
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Jackson,GCN,Jackson,Table,-0.16719371263637905,-0.18841707202136215,-0.14484030214902993,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Jackson,GCN,Jackson,MLP,-0.17774533416193272,-0.19757372348580782,-0.15709140915793657,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Jackson,GraphSAGE,Jackson,Table,-0.01758494900086216,-0.029840814656304126,-0.005250254327563336,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Jackson,GraphSAGE,Jackson,MLP,-0.028136570526415827,-0.03936014464241226,-0.017266831012008665,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,Table,Danenberg,MLP,0.002879729270612197,-0.0007767303176919232,0.006761765155670984,n.s.
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,MLP,Danenberg,Table,-0.002879729270612197,-0.006761765155670984,0.0007767303176919228,n.s.
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,GCN,Danenberg,Table,-0.20721522448063634,-0.2294188699797375,-0.18524302717727603,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,GCN,Danenberg,MLP,-0.20433549521002414,-0.2253672830472138,-0.1833365586205523,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,GraphSAGE,Danenberg,Table,0.005395289420505489,-0.0018948189372285846,0.012303585639616258,n.s.
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Danenberg,GraphSAGE,Danenberg,MLP,0.008275018691117686,0.001942773852482388,0.014618077149467371,better
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Both,Table,Both,MLP,0.006726950619555527,0.0021655390442517296,0.010904940458735753,better
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Both,MLP,Both,Table,-0.006726950619555527,-0.010904940458735754,-0.002165539044251731,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Both,GCN,Both,Table,-0.21368132526933703,-0.23593420804247248,-0.1904335904965204,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Both,GCN,Both,MLP,-0.2069543746497815,-0.2281486894031064,-0.1850561522202036,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Both,GraphSAGE,Both,Table,-0.00805717047238741,-0.014303666630914109,-0.0022482475913636955,worse
+1,model,Danenberg,cell mean,estrogen_receptor_alpha,Both,GraphSAGE,Both,MLP,-0.001330219852831882,-0.0068351406804732645,0.004006150188482093,n.s.
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.3334401072716476,-0.3862289009369387,-0.27195943698664,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.484404862891369,-0.5557598752757037,-0.41465136567466265,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet residual,Both,Table,-0.46773810405893074,-0.5335356085642781,-0.40054509919083786,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.4675943759841832,-0.5219211305030629,-0.4069408082096491,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.6185591316039046,-0.6689496105069639,-0.5619649661726688,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet gamma,Both,Table,-0.6018923727714663,-0.651025388645865,-0.5476672955534126,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.5000475797480648,-0.5651512828752484,-0.43636854329489155,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.6510123353677862,-0.7175613902200904,-0.5863118363022735,worse
+1,image,Danenberg,cell mean,estrogen_receptor_alpha,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.634345576535348,-0.6969087394287121,-0.5725108693451534,worse
+1,own − other,Danenberg,cell mean,ki_67,Danenberg,Table,Jackson,Table,0.04023124043294865,0.0023309122552644655,0.0756181339191256,better
+1,both − own,Danenberg,cell mean,ki_67,Both,Table,Danenberg,Table,0.011096175064012281,-0.006072175290718127,0.025383633253297552,n.s.
+1,both − other,Danenberg,cell mean,ki_67,Both,Table,Jackson,Table,0.05132741549696093,0.02324617527639918,0.07784089359770412,better
+1,own − other,Danenberg,cell mean,ki_67,Danenberg,MLP,Jackson,MLP,0.029254397420520217,-0.004861000566261195,0.056931435847130146,n.s.
+1,both − own,Danenberg,cell mean,ki_67,Both,MLP,Danenberg,MLP,0.0008829231982772079,-0.011832760862529768,0.016873710463418862,n.s.
+1,both − other,Danenberg,cell mean,ki_67,Both,MLP,Jackson,MLP,0.030137320618797425,-0.0034112795690800037,0.05990197526725378,n.s.
+1,own − other,Danenberg,cell mean,ki_67,Danenberg,GCN,Jackson,GCN,0.06856710725272244,0.04614664082535129,0.09532367449640439,better
+1,both − own,Danenberg,cell mean,ki_67,Both,GCN,Danenberg,GCN,-0.009791181243005403,-0.01885482668272218,-0.0007100789038334102,worse
+1,both − other,Danenberg,cell mean,ki_67,Both,GCN,Jackson,GCN,0.05877592600971704,0.04298436052840527,0.07972153590046645,better
+1,own − other,Danenberg,cell mean,ki_67,Danenberg,GraphSAGE,Jackson,GraphSAGE,-0.020834127721975043,-0.07578129000139278,0.0358699658023654,n.s.
+1,both − own,Danenberg,cell mean,ki_67,Both,GraphSAGE,Danenberg,GraphSAGE,0.0017802255970541248,-0.0053226512379344875,0.008325293453354747,n.s.
+1,both − other,Danenberg,cell mean,ki_67,Both,GraphSAGE,Jackson,GraphSAGE,-0.01905390212492092,-0.0731807511862394,0.038886022994116795,n.s.
+1,model,Danenberg,cell mean,ki_67,Jackson,Table,Jackson,MLP,0.013967452025677424,0.0006441020123368822,0.029000170468851522,better
+1,model,Danenberg,cell mean,ki_67,Jackson,MLP,Jackson,Table,-0.013967452025677424,-0.029000170468851522,-0.0006441020123368834,worse
+1,model,Danenberg,cell mean,ki_67,Jackson,GCN,Jackson,Table,-0.14356667791065497,-0.18621944350780587,-0.10184687217198844,worse
+1,model,Danenberg,cell mean,ki_67,Jackson,GCN,Jackson,MLP,-0.12959922588497755,-0.16748578023119834,-0.0878722312574176,worse
+1,model,Danenberg,cell mean,ki_67,Jackson,GraphSAGE,Jackson,Table,0.030543238272652345,-0.0020181056400581953,0.06203920632547214,n.s.
+1,model,Danenberg,cell mean,ki_67,Jackson,GraphSAGE,Jackson,MLP,0.04451069029832977,0.010003772334084941,0.07749312517359341,better
+1,model,Danenberg,cell mean,ki_67,Danenberg,Table,Danenberg,MLP,0.024944295038105857,0.0010279456629663341,0.05287663032308863,better
+1,model,Danenberg,cell mean,ki_67,Danenberg,MLP,Danenberg,Table,-0.024944295038105857,-0.05287663032308863,-0.0010279456629663346,worse
+1,model,Danenberg,cell mean,ki_67,Danenberg,GCN,Danenberg,Table,-0.11523081109088118,-0.14461754249704797,-0.08094192360772598,worse
+1,model,Danenberg,cell mean,ki_67,Danenberg,GCN,Danenberg,MLP,-0.09028651605277532,-0.11421056110553865,-0.058590437529282655,worse
+1,model,Danenberg,cell mean,ki_67,Danenberg,GraphSAGE,Danenberg,Table,-0.03052212988227135,-0.05381657281742963,-0.008535302541776701,worse
+1,model,Danenberg,cell mean,ki_67,Danenberg,GraphSAGE,Danenberg,MLP,-0.005577834844165491,-0.017699579161081686,0.012552138206312699,n.s.
+1,model,Danenberg,cell mean,ki_67,Both,Table,Both,MLP,0.03515754690384093,0.013265499639064848,0.05812725740244617,better
+1,model,Danenberg,cell mean,ki_67,Both,MLP,Both,Table,-0.03515754690384093,-0.05812725740244617,-0.01326549963906485,worse
+1,model,Danenberg,cell mean,ki_67,Both,GCN,Both,Table,-0.13611816739789886,-0.16340441144492124,-0.10365565484349244,worse
+1,model,Danenberg,cell mean,ki_67,Both,GCN,Both,MLP,-0.10096062049405793,-0.1202522000936758,-0.076726731604544,worse
+1,model,Danenberg,cell mean,ki_67,Both,GraphSAGE,Both,Table,-0.039838079349229505,-0.06305377022503048,-0.01827187759685734,worse
+1,model,Danenberg,cell mean,ki_67,Both,GraphSAGE,Both,MLP,-0.004680532445388574,-0.01290679119823682,0.0037629069453872987,n.s.
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.11804425002602131,-0.16177671126457183,-0.07840784319289361,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.15827549045896996,-0.1942269735754465,-0.13102370028624233,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet residual,Both,Table,-0.16937166552298225,-0.20239114972968525,-0.14075406038242694,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.08924744733874576,-0.1251902775417464,-0.06417556858428138,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.1294786877716944,-0.17663199531899834,-0.09130760857440015,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet gamma,Both,Table,-0.1405748628357067,-0.18212953748836733,-0.11066733322437292,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.20406488879448337,-0.2519682397470486,-0.16269299637955018,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.24429612922743202,-0.27929865422883043,-0.20698648266163452,worse
+1,image,Danenberg,cell mean,ki_67,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.2553923042914443,-0.2960439930881447,-0.21658455728574016,worse
+1,own − other,Danenberg,cell mean,pan_cytokeratin,Danenberg,Table,Jackson,Table,0.026140061754872157,0.01835610897178467,0.03466528719157639,better
+1,both − own,Danenberg,cell mean,pan_cytokeratin,Both,Table,Danenberg,Table,0.0042150059483346825,0.0018020616959858182,0.006684882789028837,better
+1,both − other,Danenberg,cell mean,pan_cytokeratin,Both,Table,Jackson,Table,0.03035506770320684,0.023933367994339583,0.03721543580468976,better
+1,own − other,Danenberg,cell mean,pan_cytokeratin,Danenberg,MLP,Jackson,MLP,0.04124762924532466,0.028655583274673754,0.054597491551083066,better
+1,both − own,Danenberg,cell mean,pan_cytokeratin,Both,MLP,Danenberg,MLP,0.006985290368071495,0.003081292871809538,0.011800573876294093,better
+1,both − other,Danenberg,cell mean,pan_cytokeratin,Both,MLP,Jackson,MLP,0.04823291961339615,0.037372227276558104,0.059853622044788495,better
+1,own − other,Danenberg,cell mean,pan_cytokeratin,Danenberg,GCN,Jackson,GCN,0.1255380723814774,0.09990885829295872,0.15006603692083217,better
+1,both − own,Danenberg,cell mean,pan_cytokeratin,Both,GCN,Danenberg,GCN,0.006203150418160441,-0.003970179930173398,0.017617054550049357,n.s.
+1,both − other,Danenberg,cell mean,pan_cytokeratin,Both,GCN,Jackson,GCN,0.13174122279963785,0.107475816731524,0.15707176072656687,better
+1,own − other,Danenberg,cell mean,pan_cytokeratin,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.04480604953695955,0.02921032959398274,0.062160375803475665,better
+1,both − own,Danenberg,cell mean,pan_cytokeratin,Both,GraphSAGE,Danenberg,GraphSAGE,0.0015094007568350332,-0.006753732730953077,0.00918699949333808,n.s.
+1,both − other,Danenberg,cell mean,pan_cytokeratin,Both,GraphSAGE,Jackson,GraphSAGE,0.04631545029379458,0.03469634779457492,0.05910306570907107,better
+1,model,Danenberg,cell mean,pan_cytokeratin,Jackson,Table,Jackson,MLP,0.01738133687873178,0.00948380782091934,0.02583489873652939,better
+1,model,Danenberg,cell mean,pan_cytokeratin,Jackson,MLP,Jackson,Table,-0.01738133687873178,-0.025834898736529395,-0.009483807820919342,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Jackson,GCN,Jackson,Table,-0.31858863447348407,-0.359272725278964,-0.27690742050650885,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Jackson,GCN,Jackson,MLP,-0.3012072975947523,-0.33829332380981114,-0.2634445299198081,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Jackson,GraphSAGE,Jackson,Table,-0.013628163042063268,-0.02841812341674439,-0.0011593752927269174,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Jackson,GraphSAGE,Jackson,MLP,0.003753173836668511,-0.007153667391822413,0.01465962016210574,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Danenberg,Table,Danenberg,MLP,0.0022737693882792787,-0.000666971474717104,0.005670007925413347,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Danenberg,MLP,Danenberg,Table,-0.0022737693882792787,-0.005670007925413348,0.0006669714747171038,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Danenberg,GCN,Danenberg,Table,-0.21919062384687882,-0.24623015741089427,-0.19410422002040942,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Danenberg,GCN,Danenberg,MLP,-0.21691685445859954,-0.2427577047848096,-0.1922204141279276,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Danenberg,GraphSAGE,Danenberg,Table,0.005037824740024122,-0.0012240416776349793,0.011451388578265243,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Danenberg,GraphSAGE,Danenberg,MLP,0.0073115941283034,0.0008759209967121235,0.013999073631487868,better
+1,model,Danenberg,cell mean,pan_cytokeratin,Both,Table,Both,MLP,-0.000496515031457534,-0.003009599990232717,0.0020977442224846873,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Both,MLP,Both,Table,0.000496515031457534,-0.0020977442224846877,0.0030095999902327165,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Both,GCN,Both,Table,-0.21720247937705306,-0.24447378839459954,-0.19204121470322053,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Both,GCN,Both,MLP,-0.2176989944085106,-0.24362149453913,-0.1923738794500481,worse
+1,model,Danenberg,cell mean,pan_cytokeratin,Both,GraphSAGE,Both,Table,0.0023322195485244723,-0.004944671391430131,0.009048505957532631,n.s.
+1,model,Danenberg,cell mean,pan_cytokeratin,Both,GraphSAGE,Both,MLP,0.0018357045170669384,-0.00395431032809247,0.00782050157615334,n.s.
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.6077827713073065,-0.6911089463004673,-0.5324636645221035,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.6339228330621787,-0.7161319184126438,-0.5590045663887974,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet residual,Both,Table,-0.6381378390105134,-0.7196118980049968,-0.5632720607350649,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.338597524917969,-0.40516438126729876,-0.2783683434752734,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.3647375866728412,-0.43221323480355384,-0.30341843240990424,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet gamma,Both,Table,-0.36895259262117586,-0.43695522061042796,-0.308253929037125,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.2905135788863724,-0.32946731161864556,-0.25543000523702825,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.31665364064124457,-0.35682377060358506,-0.2822001306179711,worse
+1,image,Danenberg,cell mean,pan_cytokeratin,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.32086864658957925,-0.3604487134234052,-0.28605498569432364,worse
+1,own − other,Danenberg,cell mean,sma,Danenberg,Table,Jackson,Table,0.9736653076177213,0.92070513184516,1.028182351642162,better
+1,both − own,Danenberg,cell mean,sma,Both,Table,Danenberg,Table,-0.06207779777688238,-0.07379740477817501,-0.051825659962694885,worse
+1,both − other,Danenberg,cell mean,sma,Both,Table,Jackson,Table,0.9115875098408388,0.8599489601358815,0.9654933441527589,better
+1,own − other,Danenberg,cell mean,sma,Danenberg,MLP,Jackson,MLP,0.9424601732186809,0.8909593196877507,0.9946000183320325,better
+1,both − own,Danenberg,cell mean,sma,Both,MLP,Danenberg,MLP,-0.0859393370400714,-0.1056038247771496,-0.0661285536108745,worse
+1,both − other,Danenberg,cell mean,sma,Both,MLP,Jackson,MLP,0.8565208361786095,0.8024420001622904,0.915922398758866,better
+1,own − other,Danenberg,cell mean,sma,Danenberg,GCN,Jackson,GCN,0.630627041349688,0.5831061022445473,0.6789759105343859,better
+1,both − own,Danenberg,cell mean,sma,Both,GCN,Danenberg,GCN,-0.06078194506901269,-0.08696735357169781,-0.03836305362298994,worse
+1,both − other,Danenberg,cell mean,sma,Both,GCN,Jackson,GCN,0.5698450962806751,0.5172007486053786,0.6257445149720707,better
+1,own − other,Danenberg,cell mean,sma,Danenberg,GraphSAGE,Jackson,GraphSAGE,1.0114848490997708,0.9553208420556107,1.0652218993721785,better
+1,both − own,Danenberg,cell mean,sma,Both,GraphSAGE,Danenberg,GraphSAGE,-0.04665428579725295,-0.0650030274026996,-0.03075402911375025,worse
+1,both − other,Danenberg,cell mean,sma,Both,GraphSAGE,Jackson,GraphSAGE,0.9648305633025178,0.9044154767275316,1.0229127734221082,better
+1,model,Danenberg,cell mean,sma,Jackson,Table,Jackson,MLP,-0.02513074541028784,-0.039194534680996686,-0.011632991158999514,worse
+1,model,Danenberg,cell mean,sma,Jackson,MLP,Jackson,Table,0.02513074541028784,0.011632991158999512,0.03919453468099668,better
+1,model,Danenberg,cell mean,sma,Jackson,GCN,Jackson,Table,0.04715124931160769,0.024881681813662605,0.070061333907143,better
+1,model,Danenberg,cell mean,sma,Jackson,GCN,Jackson,MLP,0.02202050390131985,0.0050595975270640295,0.03963670247724929,better
+1,model,Danenberg,cell mean,sma,Jackson,GraphSAGE,Jackson,Table,-0.027863141890569848,-0.04711642543970781,-0.007944418344320999,worse
+1,model,Danenberg,cell mean,sma,Jackson,GraphSAGE,Jackson,MLP,-0.05299388730085769,-0.06754885924217528,-0.03828655985991662,worse
+1,model,Danenberg,cell mean,sma,Danenberg,Table,Danenberg,MLP,0.006074388988752455,0.0006005818140543573,0.011445666122427292,better
+1,model,Danenberg,cell mean,sma,Danenberg,MLP,Danenberg,Table,-0.006074388988752455,-0.011445666122427292,-0.000600581814054358,worse
+1,model,Danenberg,cell mean,sma,Danenberg,GCN,Danenberg,Table,-0.29588701695642566,-0.32392781019699546,-0.26145428679592897,worse
+1,model,Danenberg,cell mean,sma,Danenberg,GCN,Danenberg,MLP,-0.2898126279676732,-0.31674002019258307,-0.2569315560277713,worse
+1,model,Danenberg,cell mean,sma,Danenberg,GraphSAGE,Danenberg,Table,0.009956399591479648,-0.0023088325640967214,0.02550643674609577,n.s.
+1,model,Danenberg,cell mean,sma,Danenberg,GraphSAGE,Danenberg,MLP,0.016030788580232103,0.004365507443801028,0.028802358464072236,better
+1,model,Danenberg,cell mean,sma,Both,Table,Both,MLP,0.029935928251941468,0.014327847229240432,0.04447741327279865,better
+1,model,Danenberg,cell mean,sma,Both,MLP,Both,Table,-0.029935928251941468,-0.04447741327279866,-0.014327847229240432,worse
+1,model,Danenberg,cell mean,sma,Both,GCN,Both,Table,-0.29459116424855597,-0.32485355839848334,-0.2623466781426173,worse
+1,model,Danenberg,cell mean,sma,Both,GCN,Both,MLP,-0.2646552359966145,-0.2922013207171703,-0.2358097364952221,worse
+1,model,Danenberg,cell mean,sma,Both,GraphSAGE,Both,Table,0.02537991157110908,0.009975237292564032,0.04098587490328199,better
+1,model,Danenberg,cell mean,sma,Both,GraphSAGE,Both,MLP,0.05531583982305055,0.0414097351893271,0.07089761735288776,better
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet residual,Jackson,Table,0.35885473066893214,0.29207656875941757,0.4283499232610944,better
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.6148105769487892,-0.6654213640866155,-0.5607453235968748,worse
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet residual,Both,Table,-0.5527327791719068,-0.6031843972230625,-0.5037002620017957,worse
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet gamma,Jackson,Table,0.44012334856594004,0.3700539771534743,0.5163955099402926,better
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5335419590517811,-0.5820689121029996,-0.4832907181497012,worse
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet gamma,Both,Table,-0.4714641612748988,-0.5207849878809055,-0.41999842181053226,worse
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet immuvis,Jackson,Table,0.43550004055331015,0.3775499231979861,0.5042526151615211,better
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.538165267064411,-0.5898868799672455,-0.48485297629919916,worse
+1,image,Danenberg,cell mean,sma,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.4760874692875287,-0.5263921952741211,-0.4249524765375223,worse
+1,own − other,Danenberg,target map,c_erb_b_2_her2,Danenberg,Table,Jackson,Table,0.06025633480222492,0.023566050356479323,0.09251977204619563,better
+1,both − own,Danenberg,target map,c_erb_b_2_her2,Both,Table,Danenberg,Table,0.008042820728953903,-0.0024667869139362196,0.019350266545457177,n.s.
+1,both − other,Danenberg,target map,c_erb_b_2_her2,Both,Table,Jackson,Table,0.06829915553117882,0.04246541780803563,0.0900808078642223,better
+1,own − other,Danenberg,target map,c_erb_b_2_her2,Danenberg,MLP,Jackson,MLP,0.02546607904715259,-0.009040168850304604,0.05386081168683592,n.s.
+1,both − own,Danenberg,target map,c_erb_b_2_her2,Both,MLP,Danenberg,MLP,-0.001925261195002137,-0.027821555931310266,0.027710671230311755,n.s.
+1,both − other,Danenberg,target map,c_erb_b_2_her2,Both,MLP,Jackson,MLP,0.023540817852150453,0.014713226138808285,0.0318336236564065,better
+1,own − other,Danenberg,target map,c_erb_b_2_her2,Danenberg,GCN,Jackson,GCN,-0.005773159444327658,-0.023513020332133823,0.00845582759787466,n.s.
+1,both − own,Danenberg,target map,c_erb_b_2_her2,Both,GCN,Danenberg,GCN,0.020573041437539463,0.0053677968898891955,0.041018798789869415,better
+1,both − other,Danenberg,target map,c_erb_b_2_her2,Both,GCN,Jackson,GCN,0.014799881993211805,0.005114920397701286,0.02570057971940567,better
+1,own − other,Danenberg,target map,c_erb_b_2_her2,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.0370432788117806,-0.014032985636378706,0.07895339116469258,n.s.
+1,both − own,Danenberg,target map,c_erb_b_2_her2,Both,GraphSAGE,Danenberg,GraphSAGE,-0.007260334356158471,-0.026806745257252487,0.020769160660227153,n.s.
+1,both − other,Danenberg,target map,c_erb_b_2_her2,Both,GraphSAGE,Jackson,GraphSAGE,0.02978294445562213,-0.000500767334415017,0.056618448097869034,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Jackson,Table,Jackson,MLP,-0.031343912260688,-0.04487146532895375,-0.017498963092020408,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Jackson,MLP,Jackson,Table,0.031343912260688,0.017498963092020405,0.044871465328953745,better
+1,model,Danenberg,target map,c_erb_b_2_her2,Jackson,GCN,Jackson,Table,-0.09849189549415704,-0.15743879145860895,-0.04610549812323833,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Jackson,GCN,Jackson,MLP,-0.12983580775484505,-0.1821455469809968,-0.08635630790783763,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Jackson,GraphSAGE,Jackson,Table,0.028281581591157567,0.007798232624545071,0.04610576760943029,better
+1,model,Danenberg,target map,c_erb_b_2_her2,Jackson,GraphSAGE,Jackson,MLP,-0.003062330669530433,-0.014129914103146818,0.005263652548386088,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Danenberg,Table,Danenberg,MLP,0.0034463434943843296,-0.0034435729209339487,0.01268883246956369,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Danenberg,MLP,Danenberg,Table,-0.0034463434943843296,-0.01268883246956369,0.0034435729209339482,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Danenberg,GCN,Danenberg,Table,-0.16452138974070962,-0.20597738737677093,-0.1268290190196723,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Danenberg,GCN,Danenberg,MLP,-0.1610750462463253,-0.1990358866952501,-0.12465805244367706,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Danenberg,GraphSAGE,Danenberg,Table,0.005068525600713247,-0.026792136751273465,0.029165884117917894,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Danenberg,GraphSAGE,Danenberg,MLP,0.008514869095097577,-0.016838386200711906,0.02658931845184394,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Both,Table,Both,MLP,0.01341442541834037,-0.0002777628762910819,0.025844338469836046,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Both,MLP,Both,Table,-0.01341442541834037,-0.02584433846983605,0.0002777628762910769,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Both,GCN,Both,Table,-0.15199116903212406,-0.19029989913920312,-0.11729701952129494,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Both,GCN,Both,MLP,-0.1385767436137837,-0.18417962187770132,-0.10022101589504195,worse
+1,model,Danenberg,target map,c_erb_b_2_her2,Both,GraphSAGE,Both,Table,-0.010234629484399127,-0.029710770846799257,0.008323673936984011,n.s.
+1,model,Danenberg,target map,c_erb_b_2_her2,Both,GraphSAGE,Both,MLP,0.003179795933941243,-0.023355072203081435,0.029801881531318727,n.s.
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.2647973738078196,-0.3184186722760362,-0.21438302942659174,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.3250537086100445,-0.36447264721699185,-0.28849341125804917,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet residual,Both,Table,-0.3330965293389984,-0.37644977446557243,-0.29416184120465094,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.28470737200187346,-0.34030433233898355,-0.23446837578332205,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.3449637068040984,-0.3933877938129912,-0.2971080351502822,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet gamma,Both,Table,-0.3530065275330523,-0.4014543710903746,-0.30749719309860507,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.3878372387724827,-0.46785884073582545,-0.31629770976105986,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.44809357357470764,-0.5313450820448213,-0.3536869591513059,worse
+1,image,Danenberg,target map,c_erb_b_2_her2,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.45613639430366154,-0.5353871560890217,-0.37033597575952293,worse
+1,own − other,Danenberg,target map,cd20,Danenberg,Table,Jackson,Table,0.14420379684254397,0.10138151872636507,0.19078375233356323,better
+1,both − own,Danenberg,target map,cd20,Both,Table,Danenberg,Table,-0.014148093882117019,-0.03179677733966882,0.002743590605623277,n.s.
+1,both − other,Danenberg,target map,cd20,Both,Table,Jackson,Table,0.13005570296042696,0.1004964685127834,0.16238467528604145,better
+1,own − other,Danenberg,target map,cd20,Danenberg,MLP,Jackson,MLP,0.13912660885952705,0.10365076776994307,0.17861324741843027,better
+1,both − own,Danenberg,target map,cd20,Both,MLP,Danenberg,MLP,-0.0636656618011876,-0.10422270944901875,-0.025387055418885522,worse
+1,both − other,Danenberg,target map,cd20,Both,MLP,Jackson,MLP,0.07546094705833944,0.0508827664582896,0.10387801742244807,better
+1,own − other,Danenberg,target map,cd20,Danenberg,GCN,Jackson,GCN,0.014598538982019238,-0.015257675784946566,0.043899796905977166,n.s.
+1,both − own,Danenberg,target map,cd20,Both,GCN,Danenberg,GCN,0.03876521733249272,-0.03216548408633532,0.10348395638881472,n.s.
+1,both − other,Danenberg,target map,cd20,Both,GCN,Jackson,GCN,0.053363756314511956,-0.029062089539975296,0.1312763133247886,n.s.
+1,own − other,Danenberg,target map,cd20,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.03244719651551725,-0.018474645743942253,0.08700816365766015,n.s.
+1,both − own,Danenberg,target map,cd20,Both,GraphSAGE,Danenberg,GraphSAGE,0.07478421871458041,0.025044380720506396,0.11688356642930926,better
+1,both − other,Danenberg,target map,cd20,Both,GraphSAGE,Jackson,GraphSAGE,0.10723141523009766,0.07421841901433938,0.14782656751751436,better
+1,model,Danenberg,target map,cd20,Jackson,Table,Jackson,MLP,-0.008499171469453226,-0.03035176521767592,0.01997834273559969,n.s.
+1,model,Danenberg,target map,cd20,Jackson,MLP,Jackson,Table,0.008499171469453226,-0.019978342735599692,0.030351765217675918,n.s.
+1,model,Danenberg,target map,cd20,Jackson,GCN,Jackson,Table,0.03125993050273873,-0.006846900918821956,0.06415230869193402,n.s.
+1,model,Danenberg,target map,cd20,Jackson,GCN,Jackson,MLP,0.022760759033285505,-0.017216804930420486,0.06511750065866785,n.s.
+1,model,Danenberg,target map,cd20,Jackson,GraphSAGE,Jackson,Table,0.05855632431919733,0.0022226175920515103,0.10232196116630767,better
+1,model,Danenberg,target map,cd20,Jackson,GraphSAGE,Jackson,MLP,0.0500571528497441,0.010107425158713438,0.08378482588603646,better
+1,model,Danenberg,target map,cd20,Danenberg,Table,Danenberg,MLP,-0.0034219834864362975,-0.012964517535428096,0.008120729810678193,n.s.
+1,model,Danenberg,target map,cd20,Danenberg,MLP,Danenberg,Table,0.0034219834864362975,-0.008120729810678195,0.012964517535428096,n.s.
+1,model,Danenberg,target map,cd20,Danenberg,GCN,Danenberg,Table,-0.098345327357786,-0.15046898741500825,-0.05182753332037552,worse
+1,model,Danenberg,target map,cd20,Danenberg,GCN,Danenberg,MLP,-0.1017673108442223,-0.15252104969382144,-0.05354594638320622,worse
+1,model,Danenberg,target map,cd20,Danenberg,GraphSAGE,Danenberg,Table,-0.053200276007829395,-0.08817589481592147,-0.01592082833705824,worse
+1,model,Danenberg,target map,cd20,Danenberg,GraphSAGE,Danenberg,MLP,-0.05662225949426569,-0.0924889710923514,-0.018189561085940196,worse
+1,model,Danenberg,target map,cd20,Both,Table,Both,MLP,0.046095584432634285,0.01942095737671513,0.07250824277044511,better
+1,model,Danenberg,target map,cd20,Both,MLP,Both,Table,-0.046095584432634285,-0.07250824277044511,-0.01942095737671514,worse
+1,model,Danenberg,target map,cd20,Both,GCN,Both,Table,-0.04543201614317627,-0.12513281989250716,0.013627357560791212,n.s.
+1,model,Danenberg,target map,cd20,Both,GCN,Both,MLP,0.0006635682894580164,-0.08726732747494435,0.07104705016007917,n.s.
+1,model,Danenberg,target map,cd20,Both,GraphSAGE,Both,Table,0.03573203658886803,0.0009403372357850576,0.06387222279445844,better
+1,model,Danenberg,target map,cd20,Both,GraphSAGE,Both,MLP,0.08182762102150232,0.0314814923702812,0.12676005344537483,better
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.18343664957195538,-0.24435964657924492,-0.11702076454599512,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.32764044641449935,-0.3813769936762873,-0.2566771494624019,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet residual,Both,Table,-0.31349235253238233,-0.36577731768021354,-0.24800825313104874,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.12537144305722253,-0.1871339333625393,-0.06610017797483461,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.2695752398997665,-0.33152429390325827,-0.20294491803694553,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet gamma,Both,Table,-0.2554271460176495,-0.313875338398254,-0.1941362525892625,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.241179381078711,-0.33246388686096356,-0.16855355546112083,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.385383177921255,-0.46267127625946375,-0.3250897436599607,worse
+1,image,Danenberg,target map,cd20,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.37123508403913796,-0.44893533681973163,-0.30547187705771217,worse
+1,own − other,Danenberg,target map,cd3,Danenberg,Table,Jackson,Table,0.08365905805969953,0.06174008459930674,0.11546243184669404,better
+1,both − own,Danenberg,target map,cd3,Both,Table,Danenberg,Table,0.0017075539912496662,-0.004999499272043806,0.006582408172062153,n.s.
+1,both − other,Danenberg,target map,cd3,Both,Table,Jackson,Table,0.0853666120509492,0.06687484823683679,0.11102888393186905,better
+1,own − other,Danenberg,target map,cd3,Danenberg,MLP,Jackson,MLP,0.0995185909855355,0.07699089904925602,0.1279113069572488,better
+1,both − own,Danenberg,target map,cd3,Both,MLP,Danenberg,MLP,-0.008069821170907154,-0.014939207107096206,-0.002834359429127467,worse
+1,both − other,Danenberg,target map,cd3,Both,MLP,Jackson,MLP,0.09144876981462835,0.07130479151375374,0.11683127688653319,better
+1,own − other,Danenberg,target map,cd3,Danenberg,GCN,Jackson,GCN,0.033825617063609426,0.016745488278378934,0.056794645306551074,better
+1,both − own,Danenberg,target map,cd3,Both,GCN,Danenberg,GCN,0.00044757945180784464,-0.005921896419382453,0.00640268649172169,n.s.
+1,both − other,Danenberg,target map,cd3,Both,GCN,Jackson,GCN,0.03427319651541727,0.017457642597517458,0.055565707221729224,better
+1,own − other,Danenberg,target map,cd3,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.1107001765927711,0.08301689738074197,0.1463374388278242,better
+1,both − own,Danenberg,target map,cd3,Both,GraphSAGE,Danenberg,GraphSAGE,-0.004652800290335102,-0.012873555309628715,0.001460830363574662,n.s.
+1,both − other,Danenberg,target map,cd3,Both,GraphSAGE,Jackson,GraphSAGE,0.10604737630243599,0.08172400891368455,0.13704767417211686,better
+1,model,Danenberg,target map,cd3,Jackson,Table,Jackson,MLP,0.004478583050444795,-0.008037486754236661,0.015218046268178869,n.s.
+1,model,Danenberg,target map,cd3,Jackson,MLP,Jackson,Table,-0.004478583050444795,-0.01521804626817887,0.008037486754236656,n.s.
+1,model,Danenberg,target map,cd3,Jackson,GCN,Jackson,Table,-0.14227915822271808,-0.1828914812571026,-0.09722717995194018,worse
+1,model,Danenberg,target map,cd3,Jackson,GCN,Jackson,MLP,-0.1378005751722733,-0.18015786887440113,-0.09300676600445487,worse
+1,model,Danenberg,target map,cd3,Jackson,GraphSAGE,Jackson,Table,-0.007984533329646992,-0.024696747084316226,0.00812342481751696,n.s.
+1,model,Danenberg,target map,cd3,Jackson,GraphSAGE,Jackson,MLP,-0.003505950279202197,-0.019159722959149843,0.010607169637585916,n.s.
+1,model,Danenberg,target map,cd3,Danenberg,Table,Danenberg,MLP,-0.011380949875391178,-0.016205251514275675,-0.006862351413507232,worse
+1,model,Danenberg,target map,cd3,Danenberg,MLP,Danenberg,Table,0.011380949875391178,0.006862351413507231,0.01620525151427567,better
+1,model,Danenberg,target map,cd3,Danenberg,GCN,Danenberg,Table,-0.1921125992188082,-0.22799801717114007,-0.14740115743990062,worse
+1,model,Danenberg,target map,cd3,Danenberg,GCN,Danenberg,MLP,-0.20349354909419937,-0.23777532674440813,-0.16247087162135962,worse
+1,model,Danenberg,target map,cd3,Danenberg,GraphSAGE,Danenberg,Table,0.01905658520342457,0.013104774487319785,0.026580752325159444,better
+1,model,Danenberg,target map,cd3,Danenberg,GraphSAGE,Danenberg,MLP,0.007675635328033392,0.004291074269852421,0.012481035823267516,better
+1,model,Danenberg,target map,cd3,Both,Table,Both,MLP,-0.001603574713234357,-0.00448146260596412,0.0018147236309433228,n.s.
+1,model,Danenberg,target map,cd3,Both,MLP,Both,Table,0.001603574713234357,-0.001814723630943324,0.00448146260596412,n.s.
+1,model,Danenberg,target map,cd3,Both,GCN,Both,Table,-0.19337257375825,-0.23008447854230016,-0.14572740500964296,worse
+1,model,Danenberg,target map,cd3,Both,GCN,Both,MLP,-0.19497614847148437,-0.229818725445075,-0.14897566715670071,worse
+1,model,Danenberg,target map,cd3,Both,GraphSAGE,Both,Table,0.012696230921839802,0.005890447186044073,0.021310940480347748,better
+1,model,Danenberg,target map,cd3,Both,GraphSAGE,Both,MLP,0.011092656208605445,0.00504822386905387,0.018801795912654025,better
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.6578491405471775,-0.7398904357266411,-0.5633687586823735,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.741508198606877,-0.8107920677195312,-0.6671999745575856,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet residual,Both,Table,-0.7432157525981267,-0.8150394640702563,-0.6634727562933379,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.47089098045485894,-0.5276785689058696,-0.4002608293104535,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5545500385145585,-0.6014638748414364,-0.5016930536506203,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet gamma,Both,Table,-0.5562575925058082,-0.6028806920487475,-0.5027070537291808,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.40736823459752786,-0.4561871481564064,-0.350097778807043,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.4910272926572274,-0.5349074571054633,-0.4385473143516099,worse
+1,image,Danenberg,target map,cd3,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.49273484664847705,-0.5356318836141657,-0.44210672133896883,worse
+1,own − other,Danenberg,target map,cd45,Danenberg,Table,Jackson,Table,0.20932306625384967,0.17382429408427727,0.2542010016200115,better
+1,both − own,Danenberg,target map,cd45,Both,Table,Danenberg,Table,-0.023330153979377544,-0.028673150764898372,-0.016409141778833125,worse
+1,both − other,Danenberg,target map,cd45,Both,Table,Jackson,Table,0.18599291227447212,0.15088369117623385,0.23308048681426433,better
+1,own − other,Danenberg,target map,cd45,Danenberg,MLP,Jackson,MLP,0.17760560452076046,0.1466376750714286,0.2163828822288746,better
+1,both − own,Danenberg,target map,cd45,Both,MLP,Danenberg,MLP,-0.032992844742498084,-0.03943239492738643,-0.02403890422648041,worse
+1,both − other,Danenberg,target map,cd45,Both,MLP,Jackson,MLP,0.14461275977826238,0.11444104577909163,0.18438513215440183,better
+1,own − other,Danenberg,target map,cd45,Danenberg,GCN,Jackson,GCN,0.10871362775547211,0.08138365088829905,0.13430094437294787,better
+1,both − own,Danenberg,target map,cd45,Both,GCN,Danenberg,GCN,-0.02314610442832843,-0.030094907398740343,-0.008879913631803517,worse
+1,both − other,Danenberg,target map,cd45,Both,GCN,Jackson,GCN,0.08556752332714368,0.061710583058499524,0.11299600204017875,better
+1,own − other,Danenberg,target map,cd45,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.22518350441842894,0.1862482274599158,0.26899060719315343,better
+1,both − own,Danenberg,target map,cd45,Both,GraphSAGE,Danenberg,GraphSAGE,-0.02930906421603363,-0.038265841918618336,-0.016326845454252926,worse
+1,both − other,Danenberg,target map,cd45,Both,GraphSAGE,Jackson,GraphSAGE,0.1958744402023953,0.15617388177502842,0.2403751779690301,better
+1,model,Danenberg,target map,cd45,Jackson,Table,Jackson,MLP,-0.02995667721580786,-0.040134023357915785,-0.021699324061705327,worse
+1,model,Danenberg,target map,cd45,Jackson,MLP,Jackson,Table,0.02995667721580786,0.021699324061705327,0.040134023357915785,better
+1,model,Danenberg,target map,cd45,Jackson,GCN,Jackson,Table,-0.07674460993816967,-0.09641523430884444,-0.04976945740230774,worse
+1,model,Danenberg,target map,cd45,Jackson,GCN,Jackson,MLP,-0.10670128715397753,-0.12386812939705505,-0.08156190197280223,worse
+1,model,Danenberg,target map,cd45,Jackson,GraphSAGE,Jackson,Table,-0.011706665567535746,-0.022400528600746105,0.005379864231485288,n.s.
+1,model,Danenberg,target map,cd45,Jackson,GraphSAGE,Jackson,MLP,-0.041663342783343604,-0.05437235560046974,-0.023501215107492465,worse
+1,model,Danenberg,target map,cd45,Danenberg,Table,Danenberg,MLP,0.001760784517281344,-0.0010133257011425145,0.0046929734624793825,n.s.
+1,model,Danenberg,target map,cd45,Danenberg,MLP,Danenberg,Table,-0.001760784517281344,-0.0046929734624793825,0.0010133257011425134,n.s.
+1,model,Danenberg,target map,cd45,Danenberg,GCN,Danenberg,Table,-0.17735404843654723,-0.19852409452678996,-0.15726111834999656,worse
+1,model,Danenberg,target map,cd45,Danenberg,GCN,Danenberg,MLP,-0.17559326391926589,-0.1954685715546061,-0.15631577120102472,worse
+1,model,Danenberg,target map,cd45,Danenberg,GraphSAGE,Danenberg,Table,0.004153772597043526,-0.004441894367961561,0.0134464812598929,n.s.
+1,model,Danenberg,target map,cd45,Danenberg,GraphSAGE,Danenberg,MLP,0.00591455711432487,-0.002456122424086796,0.01597800067811169,n.s.
+1,model,Danenberg,target map,cd45,Both,Table,Both,MLP,0.011423475280401885,0.007659100731251758,0.015125016228190569,better
+1,model,Danenberg,target map,cd45,Both,MLP,Both,Table,-0.011423475280401885,-0.015125016228190569,-0.007659100731251758,worse
+1,model,Danenberg,target map,cd45,Both,GCN,Both,Table,-0.17716999888549811,-0.19824623838125344,-0.1550266595072801,worse
+1,model,Danenberg,target map,cd45,Both,GCN,Both,MLP,-0.16574652360509623,-0.18486304377094806,-0.14530635946431836,worse
+1,model,Danenberg,target map,cd45,Both,GraphSAGE,Both,Table,-0.0018251376396125618,-0.01291826096071014,0.012666109787488557,n.s.
+1,model,Danenberg,target map,cd45,Both,GraphSAGE,Both,MLP,0.009598337640789323,-0.0010232597149006815,0.023087000995200325,n.s.
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.24920842900061424,-0.3315896474343012,-0.15713702737689245,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.4585314952544639,-0.5277691323277997,-0.3895284764587254,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet residual,Both,Table,-0.43520134127508636,-0.5056093059327639,-0.3652719004621643,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.23746973261696946,-0.31589121986567725,-0.1503116408274139,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.44679279887081913,-0.5002521088204275,-0.3913903944752558,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet gamma,Both,Table,-0.4234626448914416,-0.47665078710257247,-0.3669189424234058,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.25053939792206836,-0.2985560045351524,-0.19839565927875435,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.45986246417591803,-0.4963300067280544,-0.42312598888971586,worse
+1,image,Danenberg,target map,cd45,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.4365323101965405,-0.4740914674383576,-0.398578672406937,worse
+1,own − other,Danenberg,target map,cd68,Danenberg,Table,Jackson,Table,0.31799937738134476,0.2766777859183094,0.35466949161984124,better
+1,both − own,Danenberg,target map,cd68,Both,Table,Danenberg,Table,-0.007382105170241626,-0.022590173802523383,0.009397918473822637,n.s.
+1,both − other,Danenberg,target map,cd68,Both,Table,Jackson,Table,0.31061727221110313,0.2615498304970844,0.35006035891379145,better
+1,own − other,Danenberg,target map,cd68,Danenberg,MLP,Jackson,MLP,0.22734385268161889,0.18654899207252004,0.264301044511461,better
+1,both − own,Danenberg,target map,cd68,Both,MLP,Danenberg,MLP,0.01198770899862378,-0.004538289887932156,0.03158973842278958,n.s.
+1,both − other,Danenberg,target map,cd68,Both,MLP,Jackson,MLP,0.23933156168024267,0.20850030938579023,0.2673851060628118,better
+1,own − other,Danenberg,target map,cd68,Danenberg,GCN,Jackson,GCN,-0.15530424451660602,-0.21789555565365998,-0.07910305991871833,worse
+1,both − own,Danenberg,target map,cd68,Both,GCN,Danenberg,GCN,0.3050332536097032,0.21055675413214514,0.3645973156396055,better
+1,both − other,Danenberg,target map,cd68,Both,GCN,Jackson,GCN,0.14972900909309717,0.11037028764799556,0.17685632763733225,better
+1,own − other,Danenberg,target map,cd68,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.2744509687586894,0.24700779021601696,0.3001337297043675,better
+1,both − own,Danenberg,target map,cd68,Both,GraphSAGE,Danenberg,GraphSAGE,-0.0031027576666208256,-0.013199622456552542,0.012934014520818686,n.s.
+1,both − other,Danenberg,target map,cd68,Both,GraphSAGE,Jackson,GraphSAGE,0.2713482110920686,0.24674681770149415,0.29705994997029167,better
+1,model,Danenberg,target map,cd68,Jackson,Table,Jackson,MLP,-0.08133550921328345,-0.1030037707882118,-0.05502277411028158,worse
+1,model,Danenberg,target map,cd68,Jackson,MLP,Jackson,Table,0.08133550921328345,0.05502277411028158,0.1030037707882118,better
+1,model,Danenberg,target map,cd68,Jackson,GCN,Jackson,Table,-0.003101333453415095,-0.041667622405665086,0.030961185635977863,n.s.
+1,model,Danenberg,target map,cd68,Jackson,GCN,Jackson,MLP,-0.08443684266669854,-0.12156937026630259,-0.048985350715787836,worse
+1,model,Danenberg,target map,cd68,Jackson,GraphSAGE,Jackson,Table,0.06872061541746807,0.041651862599850466,0.09383764148024724,better
+1,model,Danenberg,target map,cd68,Jackson,GraphSAGE,Jackson,MLP,-0.012614893795815374,-0.029215476292584083,0.0038562012825769216,n.s.
+1,model,Danenberg,target map,cd68,Danenberg,Table,Danenberg,MLP,0.009320015486442457,-0.005918978449806697,0.026676007508090526,n.s.
+1,model,Danenberg,target map,cd68,Danenberg,MLP,Danenberg,Table,-0.009320015486442457,-0.02667600750809053,0.005918978449806694,n.s.
+1,model,Danenberg,target map,cd68,Danenberg,GCN,Danenberg,Table,-0.4764049553513659,-0.5373343590722083,-0.393896471140026,worse
+1,model,Danenberg,target map,cd68,Danenberg,GCN,Danenberg,MLP,-0.46708493986492344,-0.5366331905815219,-0.37249702033225646,worse
+1,model,Danenberg,target map,cd68,Danenberg,GraphSAGE,Danenberg,Table,0.02517220679481269,0.007426292649491609,0.044988115099430674,better
+1,model,Danenberg,target map,cd68,Danenberg,GraphSAGE,Danenberg,MLP,0.03449222228125515,0.010904725735064926,0.06282758283244548,better
+1,model,Danenberg,target map,cd68,Both,Table,Both,MLP,-0.01004979868242295,-0.024596857561386846,0.004698295779155404,n.s.
+1,model,Danenberg,target map,cd68,Both,MLP,Both,Table,0.01004979868242295,-0.004698295779155406,0.024596857561386846,n.s.
+1,model,Danenberg,target map,cd68,Both,GCN,Both,Table,-0.1639895965714211,-0.20373139525180087,-0.131530825795418,worse
+1,model,Danenberg,target map,cd68,Both,GCN,Both,MLP,-0.17403939525384404,-0.21249339447470053,-0.14325714478936846,worse
+1,model,Danenberg,target map,cd68,Both,GraphSAGE,Both,Table,0.02945155429843349,0.006052654066452385,0.05513199053753027,better
+1,model,Danenberg,target map,cd68,Both,GraphSAGE,Both,MLP,0.01940175561601054,0.0002797449924392295,0.03985050205271525,better
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.28348030168925364,-0.38427157765863384,-0.1864809541167361,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.6014796790705984,-0.7017717582269191,-0.4870365307177432,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet residual,Both,Table,-0.5940975739003568,-0.6971503556590117,-0.47677556544617195,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.24521351094036312,-0.33283196933382303,-0.16077261277335758,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5632128883217079,-0.6535043808065228,-0.4611733025865276,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet gamma,Both,Table,-0.5558307831514663,-0.651057359844343,-0.44821268579587237,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.2543419139221104,-0.36818004879268573,-0.15000433687500592,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.5723412913034552,-0.6939054426983307,-0.4521303519412906,worse
+1,image,Danenberg,target map,cd68,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.5649591861332136,-0.6913527531770122,-0.4393609405659415,worse
+1,own − other,Danenberg,target map,cytokeratin_5,Danenberg,Table,Jackson,Table,0.06693002600689407,0.014325701181747022,0.1331044492926165,better
+1,both − own,Danenberg,target map,cytokeratin_5,Both,Table,Danenberg,Table,-0.0007458602309057261,-0.013273475990767686,0.013029776647893633,n.s.
+1,both − other,Danenberg,target map,cytokeratin_5,Both,Table,Jackson,Table,0.06618416577598835,0.017137437456637598,0.12921151970344932,better
+1,own − other,Danenberg,target map,cytokeratin_5,Danenberg,MLP,Jackson,MLP,0.11925749628695273,0.07649195218646729,0.1536526602456325,better
+1,both − own,Danenberg,target map,cytokeratin_5,Both,MLP,Danenberg,MLP,-0.003758289266320658,-0.023787248329026553,0.017431601691050354,n.s.
+1,both − other,Danenberg,target map,cytokeratin_5,Both,MLP,Jackson,MLP,0.11549920702063207,0.07346173625329992,0.15781261258066134,better
+1,own − other,Danenberg,target map,cytokeratin_5,Danenberg,GCN,Jackson,GCN,0.06879027664151263,-0.01101087058438919,0.14787820089143702,n.s.
+1,both − own,Danenberg,target map,cytokeratin_5,Both,GCN,Danenberg,GCN,-0.009812767071104234,-0.04458504745327856,0.025229670149446784,n.s.
+1,both − other,Danenberg,target map,cytokeratin_5,Both,GCN,Jackson,GCN,0.0589775095704084,-0.007726403872110962,0.12493649262003692,n.s.
+1,own − other,Danenberg,target map,cytokeratin_5,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.10483087350943629,0.028775777804305513,0.16810655201070007,better
+1,both − own,Danenberg,target map,cytokeratin_5,Both,GraphSAGE,Danenberg,GraphSAGE,0.013889834544921376,-0.020981934250248347,0.04941596055032223,n.s.
+1,both − other,Danenberg,target map,cytokeratin_5,Both,GraphSAGE,Jackson,GraphSAGE,0.11872070805435767,0.04387677222654146,0.18212234793400653,better
+1,model,Danenberg,target map,cytokeratin_5,Jackson,Table,Jackson,MLP,0.021184011013430898,-0.00037254158693654895,0.046348687818433855,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Jackson,MLP,Jackson,Table,-0.021184011013430898,-0.046348687818433855,0.0003725415869365348,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Jackson,GCN,Jackson,Table,-0.018223931981954516,-0.06983841864508382,0.03590893108935208,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Jackson,GCN,Jackson,MLP,0.0029600790314763814,-0.050605246927717354,0.05095642353079047,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Jackson,GraphSAGE,Jackson,Table,0.015456987236330572,-0.013517413215653985,0.043772587629343114,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Jackson,GraphSAGE,Jackson,MLP,0.03664099824976147,0.014138390034666586,0.05866042231245548,better
+1,model,Danenberg,target map,cytokeratin_5,Danenberg,Table,Danenberg,MLP,-0.03114345926662776,-0.07414456881837624,0.028649730260019032,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Danenberg,MLP,Danenberg,Table,0.03114345926662776,-0.028649730260019057,0.07414456881837624,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Danenberg,GCN,Danenberg,Table,-0.016363681347335957,-0.09406975176415339,0.04606672077625251,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Danenberg,GCN,Danenberg,MLP,-0.047507140613963716,-0.0999259214830014,-0.005168703633157435,worse
+1,model,Danenberg,target map,cytokeratin_5,Danenberg,GraphSAGE,Danenberg,Table,0.05335783473887279,-0.03588809072952663,0.13121910537178808,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Danenberg,GraphSAGE,Danenberg,MLP,0.02221437547224503,-0.03476546405058425,0.07623499155203864,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Both,Table,Both,MLP,-0.028131030231212828,-0.07269242369652788,0.027580528396190657,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Both,MLP,Both,Table,0.028131030231212828,-0.027580528396190664,0.07269242369652787,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Both,GCN,Both,Table,-0.025430588187534464,-0.09031332526051156,0.036236007546592376,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Both,GCN,Both,MLP,-0.05356161841874729,-0.09734775116991472,-0.010720924550048574,worse
+1,model,Danenberg,target map,cytokeratin_5,Both,GraphSAGE,Both,Table,0.06799352951469989,-0.0142942059807488,0.14595955855922765,n.s.
+1,model,Danenberg,target map,cytokeratin_5,Both,GraphSAGE,Both,MLP,0.03986249928348706,-0.023799175662153272,0.10278397709172776,n.s.
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.08981097574699887,-0.17235755486640103,-0.013465431802329559,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.15674100175389294,-0.22975138462876946,-0.08298428391945639,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet residual,Both,Table,-0.1559951415229872,-0.23095282758502975,-0.083262966886665,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.12679951709703724,-0.22759674562532473,-0.03580311291400488,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.1937295431039313,-0.28037815912850156,-0.10899543818916327,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet gamma,Both,Table,-0.19298368287302559,-0.2826072940566872,-0.10840457324694418,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.05940496591173397,-0.11132798909716694,-0.004799395254903935,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.12633499191862804,-0.18631331612729504,-0.0709102688549218,worse
+1,image,Danenberg,target map,cytokeratin_5,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.12558913168772232,-0.18625936503792273,-0.07124370384391464,worse
+1,own − other,Danenberg,target map,cytokeratin_8_18,Danenberg,Table,Jackson,Table,-0.012361640262153695,-0.04232706718523118,0.0167697202880396,n.s.
+1,both − own,Danenberg,target map,cytokeratin_8_18,Both,Table,Danenberg,Table,0.012115980556545614,0.0020614005389977597,0.022301130837680136,better
+1,both − other,Danenberg,target map,cytokeratin_8_18,Both,Table,Jackson,Table,-0.00024565970560808115,-0.021808409276553947,0.020195879175186737,n.s.
+1,own − other,Danenberg,target map,cytokeratin_8_18,Danenberg,MLP,Jackson,MLP,0.0006253829560137758,-0.04507542635852223,0.04703103707647919,n.s.
+1,both − own,Danenberg,target map,cytokeratin_8_18,Both,MLP,Danenberg,MLP,0.010052400304674802,-0.002378685108303774,0.024287493145616835,n.s.
+1,both − other,Danenberg,target map,cytokeratin_8_18,Both,MLP,Jackson,MLP,0.010677783260688578,-0.021971292176794235,0.045538958098066816,n.s.
+1,own − other,Danenberg,target map,cytokeratin_8_18,Danenberg,GCN,Jackson,GCN,-0.03028446449911215,-0.09292068172898656,0.03530155595604141,n.s.
+1,both − own,Danenberg,target map,cytokeratin_8_18,Both,GCN,Danenberg,GCN,0.03798654593119244,0.017513780272647456,0.06293149792331117,better
+1,both − other,Danenberg,target map,cytokeratin_8_18,Both,GCN,Jackson,GCN,0.007702081432080288,-0.03350793407836774,0.05856543828310619,n.s.
+1,own − other,Danenberg,target map,cytokeratin_8_18,Danenberg,GraphSAGE,Jackson,GraphSAGE,-0.030251625601226295,-0.10579053146864828,0.04092385619324104,n.s.
+1,both − own,Danenberg,target map,cytokeratin_8_18,Both,GraphSAGE,Danenberg,GraphSAGE,0.02143014137582655,-0.0005309907298273957,0.04931020161777178,n.s.
+1,both − other,Danenberg,target map,cytokeratin_8_18,Both,GraphSAGE,Jackson,GraphSAGE,-0.008821484225399745,-0.05771380260831392,0.04664332862312315,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Jackson,Table,Jackson,MLP,0.006979660696543433,-0.010323662189437583,0.02598092176367949,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Jackson,MLP,Jackson,Table,-0.006979660696543433,-0.025980921763679492,0.010323662189437578,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Jackson,GCN,Jackson,Table,-0.22170468784654174,-0.26955810348331855,-0.17873843869047842,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Jackson,GCN,Jackson,MLP,-0.2147250271499983,-0.248440564844509,-0.1856506326182718,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Jackson,GraphSAGE,Jackson,Table,0.00837173133821656,-0.033203915456471625,0.045299138294221365,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Jackson,GraphSAGE,Jackson,MLP,0.015351392034759992,-0.010641867834585764,0.036468686036154656,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Danenberg,Table,Danenberg,MLP,-0.006007362521624038,-0.013855544433983194,0.0012561067713045297,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Danenberg,MLP,Danenberg,Table,0.006007362521624038,-0.00125610677130453,0.01385554443398319,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Danenberg,GCN,Danenberg,Table,-0.2396275120835002,-0.2826706777485819,-0.20349380057427782,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Danenberg,GCN,Danenberg,MLP,-0.24563487460512423,-0.2857094184708637,-0.215115189841783,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Danenberg,GraphSAGE,Danenberg,Table,-0.009518254000856041,-0.026865582969679534,0.008256564997968218,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Danenberg,GraphSAGE,Danenberg,MLP,-0.015525616522480079,-0.03203733953340766,-0.00027425138955947955,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Both,Table,Both,MLP,-0.0039437822697532265,-0.013512160525721894,0.005577165291053071,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Both,MLP,Both,Table,0.0039437822697532265,-0.005577165291053071,0.01351216052572189,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Both,GCN,Both,Table,-0.21375694670885337,-0.2533016439657898,-0.17956573307632198,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Both,GCN,Both,MLP,-0.2177007289786066,-0.25191563639569653,-0.1903429309509628,worse
+1,model,Danenberg,target map,cytokeratin_8_18,Both,GraphSAGE,Both,Table,-0.0002040931815751046,-0.01646634947734941,0.015766116966110133,n.s.
+1,model,Danenberg,target map,cytokeratin_8_18,Both,GraphSAGE,Both,MLP,-0.004147875451328331,-0.014938629415595248,0.00666430573618635,n.s.
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.5475896367130622,-0.6335468844155034,-0.4739706287602049,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.5352279964509085,-0.633035472670829,-0.442473041923197,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet residual,Both,Table,-0.5473439770074541,-0.640496696604762,-0.4613723118411166,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.5222677598644787,-0.5927361176602354,-0.4582533299865454,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.509906119602325,-0.592331998567683,-0.4306412567761157,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet gamma,Both,Table,-0.5220221001588706,-0.6011598283968894,-0.4496777010424915,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.3002858095754024,-0.3638500249867002,-0.2472649594431404,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.2879241693132487,-0.3625408395368655,-0.21717617764611602,worse
+1,image,Danenberg,target map,cytokeratin_8_18,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.3000401498697943,-0.3704868704053403,-0.23567092610866228,worse
+1,own − other,Danenberg,target map,estrogen_receptor_alpha,Danenberg,Table,Jackson,Table,0.17956626088320238,0.16235944859481713,0.19728813211114926,better
+1,both − own,Danenberg,target map,estrogen_receptor_alpha,Both,Table,Danenberg,Table,0.00056430485692327,-0.0033508153686826413,0.004734134163233258,n.s.
+1,both − other,Danenberg,target map,estrogen_receptor_alpha,Both,Table,Jackson,Table,0.18013056574012565,0.16397590815952987,0.19669303465945848,better
+1,own − other,Danenberg,target map,estrogen_receptor_alpha,Danenberg,MLP,Jackson,MLP,0.16487596908111968,0.14870761814581374,0.1821772148640814,better
+1,both − own,Danenberg,target map,estrogen_receptor_alpha,Both,MLP,Danenberg,MLP,-0.006201478305420061,-0.011063774786666378,-0.0015141860419316594,worse
+1,both − other,Danenberg,target map,estrogen_receptor_alpha,Both,MLP,Jackson,MLP,0.15867449077569962,0.14262242008128534,0.17401700358914338,better
+1,own − other,Danenberg,target map,estrogen_receptor_alpha,Danenberg,GCN,Jackson,GCN,0.11455086376158352,0.08567429438643168,0.14129828349760606,better
+1,both − own,Danenberg,target map,estrogen_receptor_alpha,Both,GCN,Danenberg,GCN,-0.003409695243965283,-0.01477266147000889,0.008407804047512034,n.s.
+1,both − other,Danenberg,target map,estrogen_receptor_alpha,Both,GCN,Jackson,GCN,0.11114116851761824,0.08560880927484354,0.13639797344735025,better
+1,own − other,Danenberg,target map,estrogen_receptor_alpha,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.2224133494121493,0.19526929913259594,0.24597704379655633,better
+1,both − own,Danenberg,target map,estrogen_receptor_alpha,Both,GraphSAGE,Danenberg,GraphSAGE,-0.019183325854970845,-0.028448055385459907,-0.009944494101679247,worse
+1,both − other,Danenberg,target map,estrogen_receptor_alpha,Both,GraphSAGE,Jackson,GraphSAGE,0.20323002355717845,0.18151949748388374,0.2235011925418468,better
+1,model,Danenberg,target map,estrogen_receptor_alpha,Jackson,Table,Jackson,MLP,-0.007401174362776097,-0.01569968363147487,0.00020124556866844457,n.s.
+1,model,Danenberg,target map,estrogen_receptor_alpha,Jackson,MLP,Jackson,Table,0.007401174362776097,-0.0002012455686684455,0.015699683631474868,n.s.
+1,model,Danenberg,target map,estrogen_receptor_alpha,Jackson,GCN,Jackson,Table,-0.1174868588264989,-0.14088324610961983,-0.09278616649312037,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Jackson,GCN,Jackson,MLP,-0.124888033189275,-0.15022903754539974,-0.09996139061986102,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Jackson,GraphSAGE,Jackson,Table,-0.04743947643806401,-0.06275305633244216,-0.030317027976147014,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Jackson,GraphSAGE,Jackson,MLP,-0.05484065080084011,-0.06766181419064239,-0.040179141130914295,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Danenberg,Table,Danenberg,MLP,0.007289117439306603,0.0040522575831218295,0.01035575162245329,better
+1,model,Danenberg,target map,estrogen_receptor_alpha,Danenberg,MLP,Danenberg,Table,-0.007289117439306603,-0.01035575162245329,-0.0040522575831218295,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Danenberg,GCN,Danenberg,Table,-0.18250225594811775,-0.2009840958955563,-0.165863106336405,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Danenberg,GCN,Danenberg,MLP,-0.17521313850881115,-0.19457502741180435,-0.15708593515276098,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Danenberg,GraphSAGE,Danenberg,Table,-0.0045923879091170905,-0.01227392776622593,0.003112618821950818,n.s.
+1,model,Danenberg,target map,estrogen_receptor_alpha,Danenberg,GraphSAGE,Danenberg,MLP,0.0026967295301895122,-0.005300696029257731,0.010538443581401135,n.s.
+1,model,Danenberg,target map,estrogen_receptor_alpha,Both,Table,Both,MLP,0.014054900601649933,0.008806829365528393,0.019168822097908364,better
+1,model,Danenberg,target map,estrogen_receptor_alpha,Both,MLP,Both,Table,-0.014054900601649933,-0.019168822097908364,-0.008806829365528394,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Both,GCN,Both,Table,-0.1864762560490063,-0.20410436169454138,-0.16975589374470082,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Both,GCN,Both,MLP,-0.17242135544735637,-0.19121313098514348,-0.15428524491454232,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Both,GraphSAGE,Both,Table,-0.024340018621011206,-0.03131281659893417,-0.017300310492837388,worse
+1,model,Danenberg,target map,estrogen_receptor_alpha,Both,GraphSAGE,Both,MLP,-0.010285118019361272,-0.016010669061668127,-0.004007522215709708,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.1269397834380489,-0.19102119804029033,-0.06838416928308494,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.3065060443212513,-0.38076954315841915,-0.24304105963043476,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet residual,Both,Table,-0.30707034917817455,-0.37955169043337256,-0.24305983437330472,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.2776525575750748,-0.3297301561500697,-0.2278822316553394,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.45721881845827717,-0.5078150503435346,-0.4098385228498169,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet gamma,Both,Table,-0.45778312331520044,-0.5070237990212697,-0.41076983619900154,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.3106942963526543,-0.37597203443767496,-0.25238581483218125,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.49026055723585665,-0.5515295750478787,-0.4322563213470271,worse
+1,image,Danenberg,target map,estrogen_receptor_alpha,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.4908248620927799,-0.5510662620453778,-0.43398692633691044,worse
+1,own − other,Danenberg,target map,ki_67,Danenberg,Table,Jackson,Table,0.03317635633835786,-0.004091068122031002,0.07148445189294915,n.s.
+1,both − own,Danenberg,target map,ki_67,Both,Table,Danenberg,Table,0.015491994969390022,0.00075436688909519,0.027969277105227532,better
+1,both − other,Danenberg,target map,ki_67,Both,Table,Jackson,Table,0.04866835130774788,0.018728477579091525,0.07864649595814086,better
+1,own − other,Danenberg,target map,ki_67,Danenberg,MLP,Jackson,MLP,0.037571079932357976,0.0005361617374230186,0.06839370498643817,better
+1,both − own,Danenberg,target map,ki_67,Both,MLP,Danenberg,MLP,0.005843242252046965,-0.008901594677561995,0.02370698317973522,n.s.
+1,both − other,Danenberg,target map,ki_67,Both,MLP,Jackson,MLP,0.04341432218440494,0.006016690920449591,0.07772824167861436,better
+1,own − other,Danenberg,target map,ki_67,Danenberg,GCN,Jackson,GCN,0.08334375894474999,0.05774626122487408,0.10965830136446011,better
+1,both − own,Danenberg,target map,ki_67,Both,GCN,Danenberg,GCN,-0.012338441978726189,-0.022430512296926337,-0.0015006891739469202,worse
+1,both − other,Danenberg,target map,ki_67,Both,GCN,Jackson,GCN,0.0710053169660238,0.05312413315371014,0.09220085679866338,better
+1,own − other,Danenberg,target map,ki_67,Danenberg,GraphSAGE,Jackson,GraphSAGE,-0.013234043373831994,-0.0690145555421673,0.05152320823711573,n.s.
+1,both − own,Danenberg,target map,ki_67,Both,GraphSAGE,Danenberg,GraphSAGE,0.0008577323485133292,-0.007363945463685416,0.008449391006180947,n.s.
+1,both − other,Danenberg,target map,ki_67,Both,GraphSAGE,Jackson,GraphSAGE,-0.012376311025318665,-0.06893089300374342,0.05411138620481697,n.s.
+1,model,Danenberg,target map,ki_67,Jackson,Table,Jackson,MLP,0.018556282172412564,0.0034971123137125227,0.03460904199918138,better
+1,model,Danenberg,target map,ki_67,Jackson,MLP,Jackson,Table,-0.018556282172412564,-0.034609041999181384,-0.003497112313712524,worse
+1,model,Danenberg,target map,ki_67,Jackson,GCN,Jackson,Table,-0.16052630266052423,-0.20403766974699114,-0.11252212183705233,worse
+1,model,Danenberg,target map,ki_67,Jackson,GCN,Jackson,MLP,-0.14197002048811166,-0.1817380293611464,-0.0945206963000904,worse
+1,model,Danenberg,target map,ki_67,Jackson,GraphSAGE,Jackson,Table,0.03329604531916325,-0.0032092198775805,0.06445056777054736,n.s.
+1,model,Danenberg,target map,ki_67,Jackson,GraphSAGE,Jackson,MLP,0.05185232749157581,0.014709588374201298,0.08214476262441925,better
+1,model,Danenberg,target map,ki_67,Danenberg,Table,Danenberg,MLP,0.014161558578412448,-0.010737992809595637,0.04248166866074128,n.s.
+1,model,Danenberg,target map,ki_67,Danenberg,MLP,Danenberg,Table,-0.014161558578412448,-0.04248166866074129,0.010737992809595635,n.s.
+1,model,Danenberg,target map,ki_67,Danenberg,GCN,Danenberg,Table,-0.1103589000541321,-0.14113164163876804,-0.07279135533905631,worse
+1,model,Danenberg,target map,ki_67,Danenberg,GCN,Danenberg,MLP,-0.09619734147571965,-0.12268545751400603,-0.06322870844297734,worse
+1,model,Danenberg,target map,ki_67,Danenberg,GraphSAGE,Danenberg,Table,-0.013114354393026606,-0.03548990940954437,0.00951668809199192,n.s.
+1,model,Danenberg,target map,ki_67,Danenberg,GraphSAGE,Danenberg,MLP,0.0010472041853858416,-0.012761221356301438,0.019701326170228968,n.s.
+1,model,Danenberg,target map,ki_67,Both,Table,Both,MLP,0.023810311295755504,-0.002533550910814194,0.04842871336850342,n.s.
+1,model,Danenberg,target map,ki_67,Both,MLP,Both,Table,-0.023810311295755504,-0.04842871336850342,0.002533550910814187,n.s.
+1,model,Danenberg,target map,ki_67,Both,GCN,Both,Table,-0.1381893370022483,-0.16874255613416264,-0.10170782706384612,worse
+1,model,Danenberg,target map,ki_67,Both,GCN,Both,MLP,-0.1143790257064928,-0.13612146057138672,-0.08788945802321552,worse
+1,model,Danenberg,target map,ki_67,Both,GraphSAGE,Both,Table,-0.0277486170139033,-0.05179519026263572,-0.0034311570178613636,worse
+1,model,Danenberg,target map,ki_67,Both,GraphSAGE,Both,MLP,-0.003938305718147794,-0.013284522581258808,0.005430841014465842,n.s.
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.1287308904593741,-0.17523640032770582,-0.08217648909983237,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.16190724679773197,-0.2020429740913427,-0.12987889083655643,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet residual,Both,Table,-0.177399241767122,-0.21528803898831875,-0.1431763006336921,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.09554009910015274,-0.13451721138070624,-0.06592131807993529,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.1287164554385106,-0.1851499099036794,-0.08406574828317331,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet gamma,Both,Table,-0.14420845040790062,-0.19440556271977658,-0.10541255617154718,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.23151064110839975,-0.277820292136639,-0.18378270587684564,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.2646869974467576,-0.30349156134110283,-0.2192716258448992,worse
+1,image,Danenberg,target map,ki_67,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.28017899241614763,-0.3201942183565989,-0.2327347410695632,worse
+1,own − other,Danenberg,target map,pan_cytokeratin,Danenberg,Table,Jackson,Table,0.02990527055305159,0.021574470986226495,0.038954002417677144,better
+1,both − own,Danenberg,target map,pan_cytokeratin,Both,Table,Danenberg,Table,0.003048495063436518,0.0004174614534207671,0.005604757648217506,better
+1,both − other,Danenberg,target map,pan_cytokeratin,Both,Table,Jackson,Table,0.03295376561648811,0.026340036069255238,0.04000032322463318,better
+1,own − other,Danenberg,target map,pan_cytokeratin,Danenberg,MLP,Jackson,MLP,0.0429179664034981,0.030257135431965627,0.05602305152619013,better
+1,both − own,Danenberg,target map,pan_cytokeratin,Both,MLP,Danenberg,MLP,0.005519241766505534,0.001445739304741206,0.010470605120728005,better
+1,both − other,Danenberg,target map,pan_cytokeratin,Both,MLP,Jackson,MLP,0.04843720817000363,0.03792366216396348,0.06011607768182817,better
+1,own − other,Danenberg,target map,pan_cytokeratin,Danenberg,GCN,Jackson,GCN,0.13418062262548525,0.1080967451225122,0.16002607804479194,better
+1,both − own,Danenberg,target map,pan_cytokeratin,Both,GCN,Danenberg,GCN,0.004555304922259862,-0.005296554190545991,0.015717856069282707,n.s.
+1,both − other,Danenberg,target map,pan_cytokeratin,Both,GCN,Jackson,GCN,0.1387359275477451,0.11329753396136846,0.1658660041494593,better
+1,own − other,Danenberg,target map,pan_cytokeratin,Danenberg,GraphSAGE,Jackson,GraphSAGE,0.04731263642680217,0.032262194709124115,0.06324136258159278,better
+1,both − own,Danenberg,target map,pan_cytokeratin,Both,GraphSAGE,Danenberg,GraphSAGE,0.0012243373814889713,-0.006232296241046989,0.008528554934598887,n.s.
+1,both − other,Danenberg,target map,pan_cytokeratin,Both,GraphSAGE,Jackson,GraphSAGE,0.04853697380829114,0.036966033775897474,0.06071523948502728,better
+1,model,Danenberg,target map,pan_cytokeratin,Jackson,Table,Jackson,MLP,0.014907047080072178,0.007581012435679,0.02316857589483003,better
+1,model,Danenberg,target map,pan_cytokeratin,Jackson,MLP,Jackson,Table,-0.014907047080072178,-0.023168575894830033,-0.007581012435679001,worse
+1,model,Danenberg,target map,pan_cytokeratin,Jackson,GCN,Jackson,Table,-0.31360600318596177,-0.35215386457505937,-0.273715350234174,worse
+1,model,Danenberg,target map,pan_cytokeratin,Jackson,GCN,Jackson,MLP,-0.2986989561058896,-0.3334478025600789,-0.26314472699795666,worse
+1,model,Danenberg,target map,pan_cytokeratin,Jackson,GraphSAGE,Jackson,Table,-0.00874573162566128,-0.022367337497515904,0.00304447325581048,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Jackson,GraphSAGE,Jackson,MLP,0.006161315454410898,-0.004116995608938503,0.016732899544033022,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Danenberg,Table,Danenberg,MLP,0.0018943512296256682,-0.0011711367897844134,0.00529955868074003,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Danenberg,MLP,Danenberg,Table,-0.0018943512296256682,-0.00529955868074003,0.0011711367897844131,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Danenberg,GCN,Danenberg,Table,-0.2093306511135281,-0.23342069478648741,-0.1870734907088274,worse
+1,model,Danenberg,target map,pan_cytokeratin,Danenberg,GCN,Danenberg,MLP,-0.20743629988390244,-0.23112051638096356,-0.18519419200902698,worse
+1,model,Danenberg,target map,pan_cytokeratin,Danenberg,GraphSAGE,Danenberg,Table,0.0086616342480893,0.0021855110090125834,0.015328389849217552,better
+1,model,Danenberg,target map,pan_cytokeratin,Danenberg,GraphSAGE,Danenberg,MLP,0.010555985477714969,0.0038579829297087087,0.017166677163471127,better
+1,model,Danenberg,target map,pan_cytokeratin,Both,Table,Both,MLP,-0.0005763954734433474,-0.003433016075505718,0.001756652007010875,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Both,MLP,Both,Table,0.0005763954734433474,-0.0017566520070108754,0.003433016075505718,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Both,GCN,Both,Table,-0.20782384125470477,-0.231017493733236,-0.18501212354782073,worse
+1,model,Danenberg,target map,pan_cytokeratin,Both,GCN,Both,MLP,-0.2084002367281481,-0.2306793833677078,-0.18688482024045538,worse
+1,model,Danenberg,target map,pan_cytokeratin,Both,GraphSAGE,Both,Table,0.006837476566141754,-0.0001880207204472378,0.013074828308239923,n.s.
+1,model,Danenberg,target map,pan_cytokeratin,Both,GraphSAGE,Both,MLP,0.006261081092698406,-0.0001319404414920565,0.012312401311079453,n.s.
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet residual,Jackson,Table,-0.6005843998949779,-0.6919418948571814,-0.5213160004573392,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.6304896704480295,-0.7185662034479484,-0.551980710659265,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet residual,Both,Table,-0.633538165511466,-0.7222266846838545,-0.555417429661903,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet gamma,Jackson,Table,-0.32333508966255,-0.3932387444587335,-0.2596267307721601,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.35324036021560157,-0.4237821334219826,-0.29008887095968056,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet gamma,Both,Table,-0.3562888552790381,-0.428305107825639,-0.2932533405832347,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet immuvis,Jackson,Table,-0.2796441638299306,-0.32035804798329826,-0.24458911298002775,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.3095494343829822,-0.35121487909434357,-0.2748216811721515,worse
+1,image,Danenberg,target map,pan_cytokeratin,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.31259792944641873,-0.3532556850661738,-0.2771267144836788,worse
+1,own − other,Danenberg,target map,sma,Danenberg,Table,Jackson,Table,1.0067893188162205,0.9563959540699246,1.0609020850785116,better
+1,both − own,Danenberg,target map,sma,Both,Table,Danenberg,Table,-0.061581372691566716,-0.07401308676295829,-0.050710658342117396,worse
+1,both − other,Danenberg,target map,sma,Both,Table,Jackson,Table,0.9452079461246539,0.8942197345626848,0.9981278465548097,better
+1,own − other,Danenberg,target map,sma,Danenberg,MLP,Jackson,MLP,0.9747659122225798,0.9249076277484959,1.0265796057451686,better
+1,both − own,Danenberg,target map,sma,Both,MLP,Danenberg,MLP,-0.08509737210200174,-0.10497409130970096,-0.06509032409965561,worse
+1,both − other,Danenberg,target map,sma,Both,MLP,Jackson,MLP,0.8896685401205782,0.8356657809824702,0.9483296064933461,better
+1,own − other,Danenberg,target map,sma,Danenberg,GCN,Jackson,GCN,0.6688490142053514,0.6196952223674528,0.7186718832109894,better
+1,both − own,Danenberg,target map,sma,Both,GCN,Danenberg,GCN,-0.06369041362442485,-0.08975401129141193,-0.04168127595683041,worse
+1,both − other,Danenberg,target map,sma,Both,GCN,Jackson,GCN,0.6051586005809265,0.5532353120616228,0.6624370617477605,better
+1,own − other,Danenberg,target map,sma,Danenberg,GraphSAGE,Jackson,GraphSAGE,1.0477554867468406,0.9932752383995793,1.1005311589415916,better
+1,both − own,Danenberg,target map,sma,Both,GraphSAGE,Danenberg,GraphSAGE,-0.04859703537184623,-0.06701732500068283,-0.03269361401810017,worse
+1,both − other,Danenberg,target map,sma,Both,GraphSAGE,Jackson,GraphSAGE,0.9991584513749945,0.9419237598266552,1.055361693342469,better
+1,model,Danenberg,target map,sma,Jackson,Table,Jackson,MLP,-0.026985789093962542,-0.041545086699040126,-0.012717069346774159,worse
+1,model,Danenberg,target map,sma,Jackson,MLP,Jackson,Table,0.026985789093962542,0.012717069346774157,0.041545086699040126,better
+1,model,Danenberg,target map,sma,Jackson,GCN,Jackson,Table,0.044483441528512996,0.020933075988951434,0.06789042715958776,better
+1,model,Danenberg,target map,sma,Jackson,GCN,Jackson,MLP,0.017497652434550454,0.00022097509000755918,0.0358005040422161,better
+1,model,Danenberg,target map,sma,Jackson,GraphSAGE,Jackson,Table,-0.03228342167672754,-0.05178811134159506,-0.012356388886229067,worse
+1,model,Danenberg,target map,sma,Jackson,GraphSAGE,Jackson,MLP,-0.059269210770690084,-0.07437182163980946,-0.04521904537339665,worse
+1,model,Danenberg,target map,sma,Danenberg,Table,Danenberg,MLP,0.0050376174996781264,-0.00037140506304453313,0.010220384696012105,n.s.
+1,model,Danenberg,target map,sma,Danenberg,MLP,Danenberg,Table,-0.0050376174996781264,-0.010220384696012105,0.00037140506304453286,n.s.
+1,model,Danenberg,target map,sma,Danenberg,GCN,Danenberg,Table,-0.2934568630823562,-0.3196989054164727,-0.26105231996869416,worse
+1,model,Danenberg,target map,sma,Danenberg,GCN,Danenberg,MLP,-0.28841924558267806,-0.31240692625838457,-0.25921790866754957,worse
+1,model,Danenberg,target map,sma,Danenberg,GraphSAGE,Danenberg,Table,0.008682746253892648,-0.002815237997521372,0.02321454609519526,n.s.
+1,model,Danenberg,target map,sma,Danenberg,GraphSAGE,Danenberg,MLP,0.013720363753570775,0.003463594781577645,0.025035753754515295,better
+1,model,Danenberg,target map,sma,Both,Table,Both,MLP,0.028553616910113155,0.013012281740285325,0.0429067110158555,better
+1,model,Danenberg,target map,sma,Both,MLP,Both,Table,-0.028553616910113155,-0.042906711015855505,-0.013012281740285327,worse
+1,model,Danenberg,target map,sma,Both,GCN,Both,Table,-0.2955659040152143,-0.324444408005667,-0.26548108115795077,worse
+1,model,Danenberg,target map,sma,Both,GCN,Both,MLP,-0.26701228710510116,-0.29283140432173266,-0.23909454348106135,worse
+1,model,Danenberg,target map,sma,Both,GraphSAGE,Both,Table,0.021667083573613133,0.00698585094515033,0.0366157097602661,better
+1,model,Danenberg,target map,sma,Both,GraphSAGE,Both,MLP,0.05022070048372629,0.03604374267837829,0.06587175056398492,better
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet residual,Jackson,Table,0.38031410508796415,0.31145731060910925,0.45233110917086733,better
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet residual,Danenberg,Table,-0.6264752137282563,-0.6779323119700491,-0.5764405614822045,worse
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet residual,Both,Table,-0.5648938410366896,-0.6149346030703279,-0.5159317893227251,worse
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet gamma,Jackson,Table,0.4713804001404901,0.4001044169750593,0.5520335401947081,better
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet gamma,Danenberg,Table,-0.5354089186757305,-0.586024907715047,-0.485470789395998,worse
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet gamma,Both,Table,-0.4738275459841637,-0.5274777307058378,-0.42177636588012907,worse
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet immuvis,Jackson,Table,0.46552625486134586,0.4046023915840411,0.5380272743541179,better
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,-0.5412630639548747,-0.5949536731952758,-0.4872997192057695,worse
+1,image,Danenberg,target map,sma,Jackson (images),ResNet-UNet immuvis,Both,Table,-0.47968169126330795,-0.5308882891306597,-0.42728099093621436,worse

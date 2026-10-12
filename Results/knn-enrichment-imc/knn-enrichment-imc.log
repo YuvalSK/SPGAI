@@ -1,0 +1,171 @@
+[{"stream_name":"stderr","time":7.218994579,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.21922026,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.219226506,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.219230002,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.923832728,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.923867298,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.923873058,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.923878001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.392047695,"data":"marker in space: 3.19   left out (independent markers): 0.98\n"}
+,{"stream_name":"stdout","time":11.392115109,"data":"sanity checks passed\n"}
+,{"stream_name":"stdout","time":15.596188084,"data":"1,062,219 cells, 704 images, 650 patients\n"}
+,{"stream_name":"stderr","time":19.096566475,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":19.09660173,"data":"\n"}
+,{"stream_name":"stderr","time":19.096608764,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":137.063664647,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  2.0min\n"}
+,{"stream_name":"stderr","time":137.063702913,"data":"\n"}
+,{"stream_name":"stderr","time":137.063710024,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  2.0min\n"}
+,{"stream_name":"stderr","time":557.804995982,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed:  9.0min\n"}
+,{"stream_name":"stderr","time":557.805153179,"data":"\n"}
+,{"stream_name":"stderr","time":557.805163854,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed:  9.0min\n"}
+,{"stream_name":"stderr","time":2040.662957737,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 33.7min\n"}
+,{"stream_name":"stderr","time":2040.663222153,"data":"\n"}
+,{"stream_name":"stderr","time":2040.663230869,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 33.7min\n"}
+,{"stream_name":"stderr","time":3749.554412322,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 62.2min\n"}
+,{"stream_name":"stderr","time":3749.554458415,"data":"\n"}
+,{"stream_name":"stderr","time":3749.554477405,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 62.2min\n"}
+,{"stream_name":"stderr","time":6065.720722816,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 100.8min\n"}
+,{"stream_name":"stderr","time":6065.720833988,"data":"\n"}
+,{"stream_name":"stderr","time":6065.720841924,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 100.8min\n"}
+,{"stream_name":"stderr","time":7724.848273158,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed: 128.4min\n"}
+,{"stream_name":"stderr","time":7724.848317598,"data":"\n"}
+,{"stream_name":"stderr","time":7724.848324553,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed: 128.4min\n"}
+,{"stream_name":"stderr","time":8219.036947306,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed: 136.7min finished\n"}
+,{"stream_name":"stderr","time":8219.036995945,"data":"\n"}
+,{"stream_name":"stderr","time":8219.037003553,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed: 136.7min finished\n"}
+,{"stream_name":"stdout","time":8219.140084289,"data":"per-image: 136.7 min\n"}
+,{"stream_name":"stdout","time":8224.7831102,"data":"(1241674, 13)\n"}
+,{"stream_name":"stdout","time":8226.520367833,"data":" space  variant       value  intensity  intensity_lo  intensity_hi  rank  rank_lo  rank_hi   diff  diff_lo  diff_hi\n"}
+,{"stream_name":"stdout","time":8226.520422529,"data":"cytof6 standard      E_prof      3.133         3.098         3.165 2.514    2.491    2.536 -0.619   -0.638   -0.601\n"}
+,{"stream_name":"stdout","time":8226.520431068,"data":"cytof6 standard beyond_type      1.473         1.431         1.513 1.011    0.982    1.041 -0.461   -0.478   -0.445\n"}
+,{"stream_name":"stdout","time":8226.520437624,"data":"cytof6 standard      E_phys      1.439           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8226.520443356,"data":"cytof6      lto      E_prof      1.739         1.715         1.764 1.493    1.476    1.511 -0.246   -0.259   -0.232\n"}
+,{"stream_name":"stdout","time":8226.52044922,"data":"cytof6      lto beyond_type      0.247         0.232         0.263 0.154    0.143    0.166 -0.093   -0.103   -0.084\n"}
+,{"stream_name":"stdout","time":8226.520465131,"data":"cytof6      lto      E_phys      1.439           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8226.520470543,"data":"full36 standard      E_prof      2.174         2.157         2.193 2.343    2.326    2.359  0.168    0.162    0.176\n"}
+,{"stream_name":"stdout","time":8226.520476055,"data":"full36 standard beyond_type      0.655         0.641         0.670 0.813    0.796    0.830  0.158    0.152    0.165\n"}
+,{"stream_name":"stdout","time":8226.520482055,"data":"full36 standard      E_phys      1.408           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8226.520487623,"data":"full36      lto      E_prof      1.835         1.816         1.853 1.919    1.902    1.935  0.084    0.078    0.090\n"}
+,{"stream_name":"stdout","time":8226.520492628,"data":"full36      lto beyond_type      0.353         0.341         0.364 0.435    0.423    0.448  0.082    0.077    0.088\n"}
+,{"stream_name":"stdout","time":8226.520497808,"data":"full36      lto      E_phys      1.408           NaN           NaN   NaN      NaN      NaN    NaN      NaN      NaN\n"}
+,{"stream_name":"stdout","time":8226.520502948,"data":"              marker_name  E_prof_intensity  E_prof_rank  rank_minus_int  E_phys_intensity\n"}
+,{"stream_name":"stdout","time":8226.520508625,"data":"                    ki_67              2.12         1.72           -0.40              1.06\n"}
+,{"stream_name":"stdout","time":8226.520514205,"data":"               caveolin_1              2.42         2.45            0.03              1.45\n"}
+,{"stream_name":"stdout","time":8226.520519813,"data":"                   cd45ra              2.54         2.59            0.05              1.70\n"}
+,{"stream_name":"stdout","time":8226.520525492,"data":"cd140b_pdgf_receptor_beta              2.23         2.33            0.09              1.34\n"}
+,{"stream_name":"stdout","time":8226.520533181,"data":"                     cd8a              2.18         2.28            0.11              1.33\n"}
+,{"stream_name":"stdout","time":8226.520539483,"data":"                     cd68              2.27         2.38            0.11              1.26\n"}
+,{"stream_name":"stdout","time":8226.520545415,"data":"         cleaved_caspase3              2.27         2.40            0.13              1.41\n"}
+,{"stream_name":"stdout","time":8226.520551443,"data":"                     cd15              1.89         2.02            0.14              1.37\n"}
+,{"stream_name":"stdout","time":8226.520607173,"data":"                cd31_v_wf              2.19         2.33            0.14              1.36\n"}
+,{"stream_name":"stdout","time":8226.520613051,"data":"     c_erb_b_2_her2_d8f12              2.38         2.53            0.14              1.61\n"}
+,{"stream_name":"stdout","time":8226.520618111,"data":"                      sma              2.13         2.27            0.14              1.51\n"}
+,{"stream_name":"stdout","time":8226.520622424,"data":"               podoplanin              1.97         2.12            0.15              1.41\n"}
+,{"stream_name":"stdout","time":8226.520627431,"data":"                     cd20              2.15         2.30            0.15              1.46\n"}
+,{"stream_name":"stdout","time":8226.520632411,"data":"                     cd38              2.23         2.38            0.15              1.47\n"}
+,{"stream_name":"stdout","time":8226.520637049,"data":"                     fsp1              2.17         2.32            0.15              1.28\n"}
+,{"stream_name":"stdout","time":8226.520642031,"data":"                      cd4              2.21         2.37            0.16              1.47\n"}
+,{"stream_name":"stdout","time":8226.520646904,"data":"          pan_cytokeratin              2.95         3.11            0.16              1.81\n"}
+,{"stream_name":"stdout","time":8226.520651833,"data":"             cxcl12_sdf_1              2.38         2.54            0.17              1.49\n"}
+,{"stream_name":"stdout","time":8226.520656898,"data":"                   hla_dr              2.31         2.49            0.17              1.41\n"}
+,{"stream_name":"stdout","time":8226.520662121,"data":"                     cd16              2.26         2.44            0.18              1.23\n"}
+,{"stream_name":"stdout","time":8226.520667223,"data":"                    cd11c              2.09         2.28            0.19              1.32\n"}
+,{"stream_name":"stdout","time":8226.520672335,"data":"         cytokeratin_8_18              2.35         2.55            0.20              1.53\n"}
+,{"stream_name":"stdout","time":8226.520677172,"data":"               cd279_pd_1              2.08         2.28            0.20              1.31\n"}
+,{"stream_name":"stdout","time":8226.520682367,"data":"                     cd57              2.07         2.27            0.20              1.60\n"}
+,{"stream_name":"stdout","time":8226.520687484,"data":"                      cd3              2.14         2.35            0.21              1.34\n"}
+,{"stream_name":"stdout","time":8226.520692623,"data":"                    cd163              1.98         2.20            0.21              1.17\n"}
+,{"stream_name":"stdout","time":8226.52069782,"data":"               cd278_icos              1.86         2.08            0.22              1.22\n"}
+,{"stream_name":"stdout","time":8226.520703517,"data":"            gitr_tnfrsf18              1.95         2.19            0.24              1.28\n"}
+,{"stream_name":"stdout","time":8226.520708683,"data":"       c_erb_b_2_her2_3b5              2.44         2.68            0.24              1.62\n"}
+,{"stream_name":"stdout","time":8226.520713785,"data":"            cytokeratin_5              1.73         1.97            0.24              1.27\n"}
+,{"stream_name":"stdout","time":8226.520718958,"data":"  estrogen_receptor_alpha              2.70         2.96            0.26              1.51\n"}
+,{"stream_name":"stdout","time":8226.520723995,"data":"     beta_2_microglobulin              2.14         2.40            0.27              1.62\n"}
+,{"stream_name":"stdout","time":8226.520728553,"data":"                    cd134              1.54         1.81            0.27              1.11\n"}
+,{"stream_name":"stdout","time":8226.52073315,"data":"                    foxp3              1.67         1.95            0.28              1.15\n"}
+,{"stream_name":"stdout","time":8226.520766535,"data":"                  hla_abc              2.29         2.59            0.30              1.74\n"}
+,{"stream_name":"stdout","time":8226.520772375,"data":"                     cd45              2.29         2.61            0.33              1.59\n"}
+,{"stream_name":"stdout","time":8230.544492087,"data":" size       value  intensity  rank   diff  diff_lo  diff_hi\n"}
+,{"stream_name":"stdout","time":8230.544534822,"data":"    6      E_prof      3.135 2.292 -0.843   -0.857   -0.829\n"}
+,{"stream_name":"stdout","time":8230.544542363,"data":"    6 beyond_type      1.598 0.955 -0.642   -0.657   -0.627\n"}
+,{"stream_name":"stdout","time":8230.544548365,"data":"   12      E_prof      2.615 2.363 -0.252   -0.260   -0.243\n"}
+,{"stream_name":"stdout","time":8230.544556953,"data":"   12 beyond_type      1.107 0.935 -0.172   -0.178   -0.165\n"}
+,{"stream_name":"stdout","time":8230.54456258,"data":"   18      E_prof      2.435 2.400 -0.035   -0.042   -0.028\n"}
+,{"stream_name":"stdout","time":8230.544568805,"data":"   18 beyond_type      0.899 0.892 -0.006   -0.011   -0.001\n"}
+,{"stream_name":"stdout","time":8230.544574323,"data":"   24      E_prof      2.253 2.318  0.065    0.059    0.072\n"}
+,{"stream_name":"stdout","time":8230.544579613,"data":"   24 beyond_type      0.760 0.837  0.077    0.072    0.082\n"}
+,{"stream_name":"stdout","time":8230.544585303,"data":"   31      E_prof      2.211 2.347  0.136    0.130    0.144\n"}
+,{"stream_name":"stdout","time":8230.544591183,"data":"   31 beyond_type      0.688 0.821  0.132    0.127    0.139\n"}
+,{"stream_name":"stdout","time":8230.54459688,"data":"   36      E_prof      2.174 2.343  0.168    0.162    0.176\n"}
+,{"stream_name":"stdout","time":8230.544602746,"data":"   36 beyond_type      0.655 0.813  0.158    0.152    0.165\n"}
+,{"stream_name":"stdout","time":8248.209641417,"data":" space  variant  rho_rank  rho_intensity   diff  diff_lo  diff_hi\n"}
+,{"stream_name":"stdout","time":8248.209698078,"data":"cytof6 standard     0.393          0.326  0.067    0.047    0.087\n"}
+,{"stream_name":"stdout","time":8248.209706746,"data":"cytof6      lto     0.671          0.693 -0.022   -0.030   -0.013\n"}
+,{"stream_name":"stdout","time":8248.20971252,"data":"full36 standard     0.544          0.521  0.023    0.011    0.033\n"}
+,{"stream_name":"stdout","time":8248.20971844,"data":"full36      lto     0.586          0.602 -0.016   -0.023   -0.008\n"}
+,{"stream_name":"stdout","time":8248.410960295,"data":"{\n"}
+,{"stream_name":"stdout","time":8248.411011241,"data":" \"cytof6\": {\n"}
+,{"stream_name":"stdout","time":8248.411019357,"data":"  \"1_rank_beats_intensity\": false,\n"}
+,{"stream_name":"stdout","time":8248.411023669,"data":"  \"1_diff\": [\n"}
+,{"stream_name":"stdout","time":8248.411046919,"data":"   -0.6194969407535662,\n"}
+,{"stream_name":"stdout","time":8248.411054775,"data":"   -0.6384759680098081,\n"}
+,{"stream_name":"stdout","time":8248.411060306,"data":"   -0.6012419542078904\n"}
+,{"stream_name":"stdout","time":8248.411065546,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8248.411079469,"data":"  \"2_survives_leave_one_out\": false,\n"}
+,{"stream_name":"stdout","time":8248.411090876,"data":"  \"2_diff_lto\": [\n"}
+,{"stream_name":"stdout","time":8248.411096859,"data":"   -0.24567475214660361,\n"}
+,{"stream_name":"stdout","time":8248.411102663,"data":"   -0.25882698776100366,\n"}
+,{"stream_name":"stdout","time":8248.41110844,"data":"   -0.2321926268037586\n"}
+,{"stream_name":"stdout","time":8248.411113633,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8248.411136333,"data":"  \"3_rank_higher_beyond_type\": false,\n"}
+,{"stream_name":"stdout","time":8248.411141277,"data":"  \"3_diff_beyond_type\": [\n"}
+,{"stream_name":"stdout","time":8248.411145367,"data":"   -0.46133728442665706,\n"}
+,{"stream_name":"stdout","time":8248.411149906,"data":"   -0.4780276938824655,\n"}
+,{"stream_name":"stdout","time":8248.411154167,"data":"   -0.4446410066935396\n"}
+,{"stream_name":"stdout","time":8248.411265851,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8248.411295596,"data":"  \"4_rank_tracks_tissue_better\": true,\n"}
+,{"stream_name":"stdout","time":8248.411313191,"data":"  \"4_rho_rank_vs_intensity\": [\n"}
+,{"stream_name":"stdout","time":8248.41133689,"data":"   0.3933928949881211,\n"}
+,{"stream_name":"stdout","time":8248.411357647,"data":"   0.32612718861193546,\n"}
+,{"stream_name":"stdout","time":8248.411378432,"data":"   0.04690012526338084,\n"}
+,{"stream_name":"stdout","time":8248.411396272,"data":"   0.08653931985986434\n"}
+,{"stream_name":"stdout","time":8248.411414753,"data":"  ]\n"}
+,{"stream_name":"stdout","time":8248.411432644,"data":" },\n"}
+,{"stream_name":"stdout","time":8248.411457449,"data":" \"full36\": {\n"}
+,{"stream_name":"stdout","time":8248.411478913,"data":"  \"1_rank_beats_intensity\": true,\n"}
+,{"stream_name":"stdout","time":8248.411498867,"data":"  \"1_diff\": [\n"}
+,{"stream_name":"stdout","time":8248.411531879,"data":"   0.16831671691685926,\n"}
+,{"stream_name":"stdout","time":8248.411550634,"data":"   0.1615115895711494,\n"}
+,{"stream_name":"stdout","time":8248.411570157,"data":"   0.17583180847694016\n"}
+,{"stream_name":"stdout","time":8248.411593697,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8248.411650415,"data":"  \"2_survives_leave_one_out\": true,\n"}
+,{"stream_name":"stdout","time":8248.411676393,"data":"  \"2_diff_lto\": [\n"}
+,{"stream_name":"stdout","time":8248.411692007,"data":"   0.0839417086651427,\n"}
+,{"stream_name":"stdout","time":8248.41169992,"data":"   0.07802950924570287,\n"}
+,{"stream_name":"stdout","time":8248.411705016,"data":"   0.09036227478658947\n"}
+,{"stream_name":"stdout","time":8248.411709792,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8248.411714075,"data":"  \"3_rank_higher_beyond_type\": true,\n"}
+,{"stream_name":"stdout","time":8248.411718786,"data":"  \"3_diff_beyond_type\": [\n"}
+,{"stream_name":"stdout","time":8248.411723547,"data":"   0.15766338354594864,\n"}
+,{"stream_name":"stdout","time":8248.411728097,"data":"   0.15178509814197289,\n"}
+,{"stream_name":"stdout","time":8248.411732447,"data":"   0.16484864518057166\n"}
+,{"stream_name":"stdout","time":8248.411737187,"data":"  ],\n"}
+,{"stream_name":"stdout","time":8248.411741809,"data":"  \"4_rank_tracks_tissue_better\": true,\n"}
+,{"stream_name":"stdout","time":8248.411746752,"data":"  \"4_rho_rank_vs_intensity\": [\n"}
+,{"stream_name":"stdout","time":8248.411751912,"data":"   0.5442277979148824,\n"}
+,{"stream_name":"stdout","time":8248.411756464,"data":"   0.5208812396256898,\n"}
+,{"stream_name":"stdout","time":8248.411761139,"data":"   0.01123630491548606,\n"}
+,{"stream_name":"stdout","time":8248.411765936,"data":"   0.03324121603422854\n"}
+,{"stream_name":"stdout","time":8248.411770565,"data":"  ]\n"}
+,{"stream_name":"stdout","time":8248.41177526,"data":" }\n"}
+,{"stream_name":"stdout","time":8248.411780259,"data":"}\n"}
+,{"stream_name":"stdout","time":8249.41851596,"data":"done\n"}
+,{"stream_name":"stderr","time":8255.188396841,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8255.188467773,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8255.387545984,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8255.387575098,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8256.121110742,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8256.540758019,"data":"[NbConvertApp] Writing 36721 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8259.670873212,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8260.88739341,"data":"[NbConvertApp] Writing 384532 bytes to __results__.html\n"}
+]

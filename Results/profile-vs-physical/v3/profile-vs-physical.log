@@ -1,0 +1,156 @@
+[{"stream_name":"stderr","time":10.153733746,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.155717679,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.155727136,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.155730098,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.023856632,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.023896689,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.023902929,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.023907109,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.507278001,"data":"         enc    obs     n1     n2    ex1    ex2\n"}
+,{"stream_name":"stdout","time":17.507342127,"data":"1  intensity -1.664 -0.015 -0.010 -1.649 -1.654\n"}
+,{"stream_name":"stdout","time":17.507348779,"data":"8       rank -1.400 -0.012 -0.011 -1.388 -1.389\n"}
+,{"stream_name":"stdout","time":17.507353949,"data":"         enc    obs     n1     n2    ex1    ex2\n"}
+,{"stream_name":"stdout","time":17.507359387,"data":"1  intensity -0.005 -0.015 -0.010  0.010  0.005\n"}
+,{"stream_name":"stdout","time":17.507364168,"data":"8       rank -0.002 -0.011 -0.013  0.009  0.010\n"}
+,{"stream_name":"stdout","time":17.507369382,"data":"sanity checks passed\n"}
+,{"stream_name":"stdout","time":19.32160195,"data":"prep checks: {'all_table_images_on_kaggle': True, 'mask_shapes_match': True, 'mask_match_\u003e=99%': True, 'mask_one_to_one': True, 'alignment_dna1_r\u003e0.9': True, 'clinical_er_coverage\u003e=0.8': True}\n"}
+,{"stream_name":"stdout","time":21.179542798,"data":"(1123466, 54) (6530904, 3) 4 cpus\n"}
+,{"stream_name":"stdout","time":22.438064531,"data":"1,062,219 cells, 704 images, 650 patients\n"}
+,{"stream_name":"stdout","time":22.438108867,"data":"                                 broad  epi_frac       n\n"}
+,{"stream_name":"stdout","time":22.438113584,"data":"ER^{hi}CXCL12^{+}           epithelial       1.0   54811\n"}
+,{"stream_name":"stdout","time":22.438116844,"data":"Ep CD57^{+}                 epithelial       1.0   11301\n"}
+,{"stream_name":"stdout","time":22.43812003,"data":"HER2^{+}                    epithelial       1.0   32552\n"}
+,{"stream_name":"stdout","time":22.438124839,"data":"CK^{med}ER^{lo}             epithelial       1.0  117390\n"}
+,{"stream_name":"stdout","time":22.438129506,"data":"CK^{lo}ER^{med}             epithelial       1.0   17738\n"}
+,{"stream_name":"stdout","time":22.438134185,"data":"CK^{lo}ER^{lo}              epithelial       1.0   83614\n"}
+,{"stream_name":"stdout","time":22.43813865,"data":"CK^{+} CXCL12^{+}           epithelial       1.0   63674\n"}
+,{"stream_name":"stdout","time":22.438143408,"data":"CK8-18^{hi}ER^{lo}          epithelial       1.0   13024\n"}
+,{"stream_name":"stdout","time":22.438148141,"data":"Ep Ki67^{+}                 epithelial       1.0   24513\n"}
+,{"stream_name":"stdout","time":22.438152958,"data":"CK8-18^{hi}CXCL12^{hi}      epithelial       1.0   73594\n"}
+,{"stream_name":"stdout","time":22.438157796,"data":"MHC I \u0026 II^{hi}             epithelial       1.0    7373\n"}
+,{"stream_name":"stdout","time":22.438163114,"data":"MHC I^{hi}CD57^{+}          epithelial       1.0    7190\n"}
+,{"stream_name":"stdout","time":22.438189967,"data":"MHC^{hi}CD15^{+}            epithelial       1.0    4366\n"}
+,{"stream_name":"stdout","time":22.438194762,"data":"CD15^{+}                    epithelial       1.0   44864\n"}
+,{"stream_name":"stdout","time":22.438198648,"data":"Basal                       epithelial       1.0   24606\n"}
+,{"stream_name":"stdout","time":22.438202403,"data":"CK8-18^{+} ER^{hi}          epithelial       1.0   20208\n"}
+,{"stream_name":"stdout","time":22.438206082,"data":"Macrophages                     immune       0.0   40456\n"}
+,{"stream_name":"stdout","time":22.438210164,"data":"Macrophages \u0026 granulocytes      immune       0.0    3960\n"}
+,{"stream_name":"stdout","time":22.43821323,"data":"Ki67^{+}                        immune       0.0    1974\n"}
+,{"stream_name":"stdout","time":22.438215864,"data":"Granulocytes                    immune       0.0    6259\n"}
+,{"stream_name":"stdout","time":22.438218247000002,"data":"B cells                         immune       0.0   28284\n"}
+,{"stream_name":"stdout","time":22.43822063,"data":"CD8^{+} T cells                 immune       0.0   34472\n"}
+,{"stream_name":"stdout","time":22.438223195,"data":"CD57^{+}                        immune       0.0    2957\n"}
+,{"stream_name":"stdout","time":22.43822554,"data":"CD4^{+} T cells \u0026 APCs          immune       0.0   19416\n"}
+,{"stream_name":"stdout","time":22.438228063,"data":"CD4^{+} T cells                 immune       0.0   15575\n"}
+,{"stream_name":"stdout","time":22.438230402,"data":"CD38^{+} lymphocytes            immune       0.0   11238\n"}
+,{"stream_name":"stdout","time":22.438232769,"data":"T_{Reg} \u0026 T_{Ex}                immune       0.0    6317\n"}
+,{"stream_name":"stdout","time":22.438235404,"data":"Fibroblasts                    stromal       0.0  121211\n"}
+,{"stream_name":"stdout","time":22.438237849,"data":"Endothelial                    stromal       0.0   47355\n"}
+,{"stream_name":"stdout","time":22.438240212,"data":"Myofibroblasts PDPN^{+}        stromal       0.0   27199\n"}
+,{"stream_name":"stdout","time":22.438242621,"data":"Myofibroblasts                 stromal       0.0   90369\n"}
+,{"stream_name":"stdout","time":22.438245073,"data":"Fibroblasts FSP1^{+}           stromal       0.0    4359\n"}
+,{"stream_name":"stdout","time":30.017552255,"data":"CN sizes: [131921  98760  68492  26602  92577 147331  26712  38569 122627 308628]\n"}
+,{"stream_name":"stdout","time":31.39411801,"data":"6,198,634 contact pairs mapped\n"}
+,{"stream_name":"stderr","time":31.440477509,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":31.440516629,"data":"\n"}
+,{"stream_name":"stderr","time":31.440522448,"data":"[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.\n"}
+,{"stream_name":"stderr","time":145.368883809,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  1.9min\n"}
+,{"stream_name":"stderr","time":145.368937063,"data":"\n"}
+,{"stream_name":"stderr","time":145.369529415,"data":"[Parallel(n_jobs=4)]: Done  10 tasks      | elapsed:  1.9min\n"}
+,{"stream_name":"stderr","time":658.563896271,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed: 10.4min\n"}
+,{"stream_name":"stderr","time":658.564079654,"data":"\n"}
+,{"stream_name":"stderr","time":658.564091727,"data":"[Parallel(n_jobs=4)]: Done  64 tasks      | elapsed: 10.4min\n"}
+,{"stream_name":"stderr","time":1954.800634942,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 32.1min\n"}
+,{"stream_name":"stderr","time":1954.801020608,"data":"\n"}
+,{"stream_name":"stderr","time":1954.801034031,"data":"[Parallel(n_jobs=4)]: Done 154 tasks      | elapsed: 32.1min\n"}
+,{"stream_name":"stderr","time":3590.804494641,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 59.3min\n"}
+,{"stream_name":"stderr","time":3590.804554834,"data":"\n"}
+,{"stream_name":"stderr","time":3590.804561223,"data":"[Parallel(n_jobs=4)]: Done 280 tasks      | elapsed: 59.3min\n"}
+,{"stream_name":"stderr","time":3591.067340841,"data":"/tmp/ipykernel_16/2209657231.py:42: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":3591.274147861,"data":"/tmp/ipykernel_16/2209657231.py:42: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":3591.274189707,"data":"\n"}
+,{"stream_name":"stderr","time":3591.274259517,"data":"/tmp/ipykernel_16/2209657231.py:42: RuntimeWarning: invalid value encountered in scalar divide\n"}
+,{"stream_name":"stderr","time":5692.344069433,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 94.3min\n"}
+,{"stream_name":"stderr","time":5692.344282896,"data":"\n"}
+,{"stream_name":"stderr","time":5692.344294905,"data":"[Parallel(n_jobs=4)]: Done 442 tasks      | elapsed: 94.3min\n"}
+,{"stream_name":"stderr","time":7524.83948979,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed: 124.9min\n"}
+,{"stream_name":"stderr","time":7524.839777159,"data":"\n"}
+,{"stream_name":"stderr","time":7524.839790227,"data":"[Parallel(n_jobs=4)]: Done 640 tasks      | elapsed: 124.9min\n"}
+,{"stream_name":"stderr","time":8089.830642883,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed: 134.3min finished\n"}
+,{"stream_name":"stderr","time":8089.830713838,"data":"\n"}
+,{"stream_name":"stderr","time":8089.830721601,"data":"[Parallel(n_jobs=4)]: Done 704 out of 704 | elapsed: 134.3min finished\n"}
+,{"stream_name":"stdout","time":8089.931942253,"data":"per-image analysis: 134.3 min\n"}
+,{"stream_name":"stdout","time":8137.082924097,"data":"cytof6 intensity done\n"}
+,{"stream_name":"stdout","time":8167.952818786,"data":"cytof6 rank done\n"}
+,{"stream_name":"stdout","time":8208.395906618,"data":"full36 intensity done\n"}
+,{"stream_name":"stdout","time":8250.250591141,"data":"full36 rank done\n"}
+,{"stream_name":"stdout","time":8274.976415661,"data":"Profile neighbours carry physical context beyond cell type with the CyTOF-matched markers\n"}
+,{"stream_name":"stdout","time":8274.976464959,"data":"                                                                              A2_ex1                                                                 A2_ex2                                                             B1f_ex2 closer_than_chance closer_beyond_type context_beyond_type\n"}
+,{"stream_name":"stdout","time":8274.976471333,"data":"cytof6/intensity  (-0.12505018867188109, -0.13319774483255437, -0.11736193553743121)     (-0.05251625763550879, -0.05597872393928134, -0.04931174488914295)  (0.022382575860247014, 0.021111119867181585, 0.023724132195415082)               True               True                True\n"}
+,{"stream_name":"stdout","time":8274.976475507,"data":"cytof6/rank         (-0.093219609847352, -0.09981392424078642, -0.08659148578259061)  (-0.038448522999428976, -0.041273687925335256, -0.035832250846044654)   (0.00932863257270163, 0.008422258866349392, 0.010311088157768843)               True               True                True\n"}
+,{"stream_name":"stdout","time":8274.976479249,"data":"full36/intensity   (-0.2264288213805188, -0.23779366790987208, -0.21615561428149224)         (-0.13483602372272752, -0.141205426035637, -0.128957967613364)   (0.048064685158240486, 0.04621381730229581, 0.050029507936288915)               True               True                True\n"}
+,{"stream_name":"stdout","time":8274.976482954,"data":"full36/rank        (-0.24789530298780077, -0.25973850105070956, -0.2367632550124179)     (-0.15473480937226364, -0.16124282900017436, -0.14877452949542277)      (0.04504599991320179, 0.0433583145826452, 0.04687927655394947)               True               True                True\n"}
+,{"stream_name":"stdout","time":8274.97650099,"data":"     space  contact_excl   k metric        contrast    diff      lo      hi\n"}
+,{"stream_name":"stdout","time":8274.976504194,"data":"22  cytof6             1  30     A2  rank-intensity  0.0141  0.0123  0.0158\n"}
+,{"stream_name":"stdout","time":8274.976506673,"data":"24  cytof6             1  30    B1f  rank-intensity -0.0131 -0.0139 -0.0123\n"}
+,{"stream_name":"stdout","time":8274.976509123,"data":"50  full36             1  30     A2  rank-intensity -0.0199 -0.0221 -0.0176\n"}
+,{"stream_name":"stdout","time":8274.976511623,"data":"52  full36             1  30    B1f  rank-intensity -0.0030 -0.0041 -0.0020\n"}
+,{"stream_name":"stdout","time":8279.073613068,"data":" size metric stat  intensity  intensity_lo  intensity_hi    rank  rank_lo  rank_hi    diff  diff_lo  diff_hi  no_harm\n"}
+,{"stream_name":"stdout","time":8279.07380167,"data":"    6     A2  obs    -0.1373       -0.1444       -0.1306 -0.0962  -0.1017  -0.0912  0.0411   0.0390   0.0436     True\n"}
+,{"stream_name":"stdout","time":8279.073815644,"data":"    6     A2  ex2    -0.0629       -0.0661       -0.0601 -0.0422  -0.0444  -0.0402  0.0207   0.0194   0.0220     True\n"}
+,{"stream_name":"stdout","time":8279.073820468,"data":"    6    B1f  obs     0.1873        0.1777        0.1961  0.1092   0.1021   0.1159 -0.0781  -0.0814  -0.0747    False\n"}
+,{"stream_name":"stdout","time":8279.073824363,"data":"    6    B1f  ex2     0.0216        0.0206        0.0227  0.0096   0.0089   0.0102 -0.0121  -0.0126  -0.0116    False\n"}
+,{"stream_name":"stdout","time":8279.073828475,"data":"    6     T1  obs     0.4136        0.4041        0.4242  0.3295   0.3203   0.3399 -0.0841  -0.0862  -0.0820    False\n"}
+,{"stream_name":"stdout","time":8279.073833282,"data":"    6     T1  ex2     0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073837488,"data":"    6    T1b  obs     0.7600        0.7528        0.7677  0.6713   0.6641   0.6793 -0.0887  -0.0918  -0.0856    False\n"}
+,{"stream_name":"stdout","time":8279.073841573,"data":"    6    T1b  ex2    -0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073845833,"data":"   12     A2  obs    -0.1898       -0.1993       -0.1813 -0.1682  -0.1768  -0.1603  0.0217   0.0199   0.0237     True\n"}
+,{"stream_name":"stdout","time":8279.073860819,"data":"   12     A2  ex2    -0.1018       -0.1064       -0.0975 -0.0902  -0.0941  -0.0864  0.0116   0.0102   0.0131     True\n"}
+,{"stream_name":"stdout","time":8279.073865482,"data":"   12    B1f  obs     0.2331        0.2224        0.2433  0.1937   0.1839   0.2028 -0.0394  -0.0415  -0.0374    False\n"}
+,{"stream_name":"stdout","time":8279.073869864,"data":"   12    B1f  ex2     0.0350        0.0336        0.0365  0.0254   0.0242   0.0266 -0.0096  -0.0102  -0.0090    False\n"}
+,{"stream_name":"stdout","time":8279.073873901,"data":"   12     T1  obs     0.4596        0.4500        0.4696  0.3840   0.3753   0.3938 -0.0756  -0.0775  -0.0739    False\n"}
+,{"stream_name":"stdout","time":8279.073878511,"data":"   12     T1  ex2    -0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073882822,"data":"   12    T1b  obs     0.7998        0.7935        0.8065  0.7343   0.7281   0.7411 -0.0655  -0.0676  -0.0632    False\n"}
+,{"stream_name":"stdout","time":8279.073887255,"data":"   12    T1b  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073909355,"data":"   18     A2  obs    -0.2153       -0.2257       -0.2059 -0.2158  -0.2259  -0.2064 -0.0004  -0.0025   0.0017     True\n"}
+,{"stream_name":"stdout","time":8279.073913842,"data":"   18     A2  ex2    -0.1198       -0.1251       -0.1146 -0.1235  -0.1285  -0.1187 -0.0038  -0.0055  -0.0020     True\n"}
+,{"stream_name":"stdout","time":8279.073918046,"data":"   18    B1f  obs     0.2557        0.2445        0.2665  0.2370   0.2264   0.2473 -0.0187  -0.0203  -0.0172    False\n"}
+,{"stream_name":"stdout","time":8279.073922288,"data":"   18    B1f  ex2     0.0420        0.0404        0.0437  0.0352   0.0339   0.0367 -0.0068  -0.0075  -0.0061     True\n"}
+,{"stream_name":"stdout","time":8279.07392624,"data":"   18     T1  obs     0.4921        0.4831        0.5016  0.4229   0.4140   0.4326 -0.0692  -0.0711  -0.0673    False\n"}
+,{"stream_name":"stdout","time":8279.073930331,"data":"   18     T1  ex2     0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073934419,"data":"   18    T1b  obs     0.8187        0.8128        0.8248  0.7714   0.7655   0.7772 -0.0473  -0.0490  -0.0457    False\n"}
+,{"stream_name":"stdout","time":8279.073938396,"data":"   18    T1b  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.07394248,"data":"   24     A2  obs    -0.2215       -0.2321       -0.2119 -0.2288  -0.2396  -0.2188 -0.0073  -0.0095  -0.0050     True\n"}
+,{"stream_name":"stdout","time":8279.073946375,"data":"   24     A2  ex2    -0.1238       -0.1298       -0.1183 -0.1325  -0.1384  -0.1273 -0.0087  -0.0106  -0.0068    False\n"}
+,{"stream_name":"stdout","time":8279.07395015,"data":"   24    B1f  obs     0.2621        0.2508        0.2733  0.2476   0.2369   0.2580 -0.0145  -0.0161  -0.0130    False\n"}
+,{"stream_name":"stdout","time":8279.073953969,"data":"   24    B1f  ex2     0.0439        0.0421        0.0457  0.0385   0.0370   0.0402 -0.0053  -0.0062  -0.0045     True\n"}
+,{"stream_name":"stdout","time":8279.07395763,"data":"   24     T1  obs     0.5008        0.4914        0.5101  0.4328   0.4243   0.4422 -0.0680  -0.0701  -0.0659    False\n"}
+,{"stream_name":"stdout","time":8279.073960182,"data":"   24     T1  ex2     0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073962796,"data":"   24    T1b  obs     0.8236        0.8179        0.8294  0.7768   0.7711   0.7825 -0.0468  -0.0485  -0.0451    False\n"}
+,{"stream_name":"stdout","time":8279.073965424,"data":"   24    T1b  ex2    -0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.07396914,"data":"   31     A2  obs    -0.2297       -0.2406       -0.2196 -0.2445  -0.2559  -0.2341 -0.0149  -0.0172  -0.0125    False\n"}
+,{"stream_name":"stdout","time":8279.073973682,"data":"   31     A2  ex2    -0.1277       -0.1338       -0.1221 -0.1426  -0.1486  -0.1370 -0.0149  -0.0169  -0.0128    False\n"}
+,{"stream_name":"stdout","time":8279.073977402,"data":"   31    B1f  obs     0.2722        0.2607        0.2834  0.2615   0.2506   0.2727 -0.0107  -0.0123  -0.0090    False\n"}
+,{"stream_name":"stdout","time":8279.07398142,"data":"   31    B1f  ex2     0.0460        0.0442        0.0478  0.0421   0.0405   0.0438 -0.0039  -0.0049  -0.0030     True\n"}
+,{"stream_name":"stdout","time":8279.073985057,"data":"   31     T1  obs     0.5227        0.5138        0.5314  0.4519   0.4438   0.4610 -0.0708  -0.0729  -0.0685    False\n"}
+,{"stream_name":"stdout","time":8279.073988624,"data":"   31     T1  ex2     0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.073997826,"data":"   31    T1b  obs     0.8423        0.8370        0.8476  0.7977   0.7926   0.8029 -0.0446  -0.0462  -0.0429    False\n"}
+,{"stream_name":"stdout","time":8279.074001732,"data":"   31    T1b  ex2    -0.0000       -0.0000        0.0000  0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.074005493,"data":"   36     A2  obs    -0.2378       -0.2491       -0.2275 -0.2593  -0.2709  -0.2483 -0.0215  -0.0239  -0.0189    False\n"}
+,{"stream_name":"stdout","time":8279.074009016,"data":"   36     A2  ex2    -0.1348       -0.1412       -0.1290 -0.1547  -0.1612  -0.1488 -0.0199  -0.0221  -0.0176    False\n"}
+,{"stream_name":"stdout","time":8279.074012646,"data":"   36    B1f  obs     0.2759        0.2645        0.2875  0.2688   0.2577   0.2801 -0.0072  -0.0089  -0.0054     True\n"}
+,{"stream_name":"stdout","time":8279.074016648,"data":"   36    B1f  ex2     0.0481        0.0462        0.0500  0.0450   0.0434   0.0469 -0.0030  -0.0041  -0.0020     True\n"}
+,{"stream_name":"stdout","time":8279.074020553,"data":"   36     T1  obs     0.5262        0.5173        0.5348  0.4583   0.4502   0.4671 -0.0679  -0.0701  -0.0655    False\n"}
+,{"stream_name":"stdout","time":8279.074024132,"data":"   36     T1  ex2     0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000 -0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8279.074027768,"data":"   36    T1b  obs     0.8433        0.8381        0.8485  0.8006   0.7955   0.8056 -0.0427  -0.0444  -0.0410    False\n"}
+,{"stream_name":"stdout","time":8279.074031439,"data":"   36    T1b  ex2    -0.0000       -0.0000        0.0000 -0.0000  -0.0000   0.0000  0.0000  -0.0000   0.0000     True\n"}
+,{"stream_name":"stdout","time":8280.085076884,"data":"done\n"}
+,{"stream_name":"stderr","time":8285.954959816,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8285.955008228,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8286.191245838,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8286.191288101,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8287.011525048,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8287.408287764,"data":"[NbConvertApp] Writing 60522 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8290.396552053,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8291.718587792,"data":"[NbConvertApp] Writing 485331 bytes to __results__.html\n"}
+]

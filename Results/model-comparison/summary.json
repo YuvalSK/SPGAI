@@ -1,0 +1,211 @@
+{
+ "median_R4_excl_ER": {
+  "Danenberg (cross-cohort)": {
+   "GCN": 0.447,
+   "GraphSAGE": 0.441,
+   "MLP": 0.46,
+   "ResNet-UNet gamma": 0.252,
+   "ResNet-UNet immuvis": 0.229,
+   "ResNet-UNet residual": 0.19,
+   "Table": 0.422,
+   "Table + ring": 0.424
+  },
+  "Jackson (held-out patients)": {
+   "GCN": 0.456,
+   "GraphSAGE": 0.599,
+   "MLP": 0.597,
+   "ResNet-UNet gamma": NaN,
+   "ResNet-UNet immuvis": NaN,
+   "ResNet-UNet residual": NaN,
+   "Table": 0.596,
+   "Table + ring": 0.604
+  }
+ },
+ "calls_vs_table_and_mlp_excl_ER": [
+  {
+   "cohort": "danenberg",
+   "model": "GCN",
+   "vs": "MLP",
+   "better": 1,
+   "n.s.": 2,
+   "worse": 7
+  },
+  {
+   "cohort": "danenberg",
+   "model": "GCN",
+   "vs": "Table",
+   "better": 2,
+   "n.s.": 2,
+   "worse": 6
+  },
+  {
+   "cohort": "danenberg",
+   "model": "GraphSAGE",
+   "vs": "MLP",
+   "better": 1,
+   "n.s.": 5,
+   "worse": 4
+  },
+  {
+   "cohort": "danenberg",
+   "model": "GraphSAGE",
+   "vs": "Table",
+   "better": 4,
+   "n.s.": 3,
+   "worse": 3
+  },
+  {
+   "cohort": "danenberg",
+   "model": "MLP",
+   "vs": "Table",
+   "better": 6,
+   "n.s.": 4,
+   "worse": 0
+  },
+  {
+   "cohort": "danenberg",
+   "model": "ResNet-UNet gamma",
+   "vs": "MLP",
+   "better": 1,
+   "n.s.": 0,
+   "worse": 9
+  },
+  {
+   "cohort": "danenberg",
+   "model": "ResNet-UNet gamma",
+   "vs": "Table",
+   "better": 1,
+   "n.s.": 1,
+   "worse": 8
+  },
+  {
+   "cohort": "danenberg",
+   "model": "ResNet-UNet immuvis",
+   "vs": "MLP",
+   "better": 1,
+   "n.s.": 0,
+   "worse": 9
+  },
+  {
+   "cohort": "danenberg",
+   "model": "ResNet-UNet immuvis",
+   "vs": "Table",
+   "better": 1,
+   "n.s.": 0,
+   "worse": 9
+  },
+  {
+   "cohort": "danenberg",
+   "model": "ResNet-UNet residual",
+   "vs": "MLP",
+   "better": 1,
+   "n.s.": 0,
+   "worse": 9
+  },
+  {
+   "cohort": "danenberg",
+   "model": "ResNet-UNet residual",
+   "vs": "Table",
+   "better": 1,
+   "n.s.": 1,
+   "worse": 8
+  },
+  {
+   "cohort": "danenberg",
+   "model": "Table",
+   "vs": "MLP",
+   "better": 0,
+   "n.s.": 4,
+   "worse": 6
+  },
+  {
+   "cohort": "danenberg",
+   "model": "Table + ring",
+   "vs": "MLP",
+   "better": 1,
+   "n.s.": 3,
+   "worse": 6
+  },
+  {
+   "cohort": "danenberg",
+   "model": "Table + ring",
+   "vs": "Table",
+   "better": 1,
+   "n.s.": 6,
+   "worse": 3
+  },
+  {
+   "cohort": "jackson",
+   "model": "GCN",
+   "vs": "MLP",
+   "better": 0,
+   "n.s.": 2,
+   "worse": 8
+  },
+  {
+   "cohort": "jackson",
+   "model": "GCN",
+   "vs": "Table",
+   "better": 0,
+   "n.s.": 0,
+   "worse": 10
+  },
+  {
+   "cohort": "jackson",
+   "model": "GraphSAGE",
+   "vs": "MLP",
+   "better": 8,
+   "n.s.": 2,
+   "worse": 0
+  },
+  {
+   "cohort": "jackson",
+   "model": "GraphSAGE",
+   "vs": "Table",
+   "better": 5,
+   "n.s.": 5,
+   "worse": 0
+  },
+  {
+   "cohort": "jackson",
+   "model": "MLP",
+   "vs": "Table",
+   "better": 1,
+   "n.s.": 5,
+   "worse": 4
+  },
+  {
+   "cohort": "jackson",
+   "model": "Table",
+   "vs": "MLP",
+   "better": 4,
+   "n.s.": 5,
+   "worse": 1
+  },
+  {
+   "cohort": "jackson",
+   "model": "Table + ring",
+   "vs": "MLP",
+   "better": 5,
+   "n.s.": 5,
+   "worse": 0
+  },
+  {
+   "cohort": "jackson",
+   "model": "Table + ring",
+   "vs": "Table",
+   "better": 7,
+   "n.s.": 3,
+   "worse": 0
+  }
+ ],
+ "graph_mean_degree": {
+  "jackson": 11.366496086120605,
+  "danenberg": 11.263189315795898
+ },
+ "jackson_patients": {
+  "train": 251,
+  "val": 32,
+  "test": 66
+ }
+}

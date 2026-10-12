@@ -1,0 +1,36 @@
+{
+ "danenberg": {
+  "n_markers": 36,
+  "enrichment_rank_higher_ci": 35,
+  "enrichment_rank_lower_ci": 1,
+  "purity_rank_lower_ci": 36,
+  "purity_rank_higher_ci": 0,
+  "median_E_diff": 0.1718087973050479,
+  "median_purity_diff": -0.0624030246454953,
+  "spearman_Ediff_vs_puritydiff": 0.12792792792792793,
+  "all_cells_purity": [
+   0.5280973778863143,
+   0.46034088335688605,
+   0.233115227235905
+  ],
+  "all_cells_loss_within_broad": 0.025295165517866453,
+  "all_cells_loss_other_broad": 0.04246132901156177
+ },
+ "jackson": {
+  "n_markers": 32,
+  "enrichment_rank_higher_ci": 27,
+  "enrichment_rank_lower_ci": 2,
+  "purity_rank_lower_ci": 32,
+  "purity_rank_higher_ci": 0,
+  "median_E_diff": 0.14973779835547396,
+  "median_purity_diff": -0.05441048405881801,
+  "spearman_Ediff_vs_puritydiff": 0.6173020527859238,
+  "all_cells_purity": [
+   0.5927955346987311,
+   0.5228661252162707,
+   0.2783657704723426
+  ],
+  "all_cells_loss_within_broad": 0.02573821768110795,
+  "all_cells_loss_other_broad": 0.044191191801352454
+ }
+}

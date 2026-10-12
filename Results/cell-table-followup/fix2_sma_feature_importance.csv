@@ -1,0 +1,27 @@
+harmonisation,feature,gain_share
+median / p5-p95 (as in v1),cytokeratin_8_18,0.250406422821298
+median / p5-p95 (as in v1),cd20,0.21943456297606817
+median / p5-p95 (as in v1),cd68,0.21648905116632297
+median / p5-p95 (as in v1),pan_cytokeratin,0.11753439791621484
+median / p5-p95 (as in v1),cytokeratin_5,0.06261784949846208
+median / p5-p95 (as in v1),ki_67,0.027952297111570896
+median / p5-p95 (as in v1),c_erb_b_2_her2,0.023306527150161276
+median / p5-p95 (as in v1),cd45,0.020809207472529002
+median / p5-p95 (as in v1),cd3,0.019938958362511482
+median / p5-p95 (as in v1),estrogen_receptor_alpha,0.018054144138034432
+median / p5-p95 (as in v1),histone_h3,0.016163858108177026
+median / p5-p95 (as in v1),dna1,0.004372502547678666
+median / p5-p95 (as in v1),dna2,0.002920220730971152
+rank (quantile),cytokeratin_8_18,0.22373770041967753
+rank (quantile),cd68,0.20364667487896806
+rank (quantile),cd20,0.17079312609576638
+rank (quantile),pan_cytokeratin,0.13476332972202842
+rank (quantile),cytokeratin_5,0.06498727743214873
+rank (quantile),ki_67,0.0404618016756206
+rank (quantile),cd45,0.034447724564293646
+rank (quantile),c_erb_b_2_her2,0.032752841478236254
+rank (quantile),histone_h3,0.02619442968394796
+rank (quantile),estrogen_receptor_alpha,0.021125074243326217
+rank (quantile),dna2,0.016176925235580203
+rank (quantile),cd3,0.015789162736234267
+rank (quantile),dna1,0.015123931834171721

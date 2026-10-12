@@ -1,0 +1,208 @@
+{
+ "cytof6": [
+  "pan_cytokeratin",
+  "cytokeratin_5",
+  "cytokeratin_8_18",
+  "sma",
+  "estrogen_receptor_alpha",
+  "ki_67"
+ ],
+ "full36": [
+  "sma",
+  "cytokeratin_5",
+  "cd38",
+  "hla_dr",
+  "cytokeratin_8_18",
+  "cd15",
+  "fsp1",
+  "cd163",
+  "cd278_icos",
+  "cd134",
+  "cd68",
+  "c_erb_b_2_her2_3b5",
+  "cd3",
+  "podoplanin",
+  "cd11c",
+  "cd279_pd_1",
+  "gitr_tnfrsf18",
+  "cd16",
+  "c_erb_b_2_her2_d8f12",
+  "cd45ra",
+  "beta_2_microglobulin",
+  "cd45",
+  "foxp3",
+  "cd20",
+  "estrogen_receptor_alpha",
+  "cd8a",
+  "cd57",
+  "ki_67",
+  "cd140b_pdgf_receptor_beta",
+  "caveolin_1",
+  "cd4",
+  "cd31_v_wf",
+  "cxcl12_sdf_1",
+  "hla_abc",
+  "pan_cytokeratin",
+  "cleaved_caspase3"
+ ],
+ "rand6_00": [
+  "cytokeratin_5",
+  "hla_dr",
+  "cd278_icos",
+  "podoplanin",
+  "gitr_tnfrsf18",
+  "hla_abc"
+ ],
+ "rand6_01": [
+  "hla_dr",
+  "cd279_pd_1",
+  "cd16",
+  "cd20",
+  "estrogen_receptor_alpha",
+  "ki_67"
+ ],
+ "rand6_02": [
+  "cytokeratin_5",
+  "cd20",
+  "cd8a",
+  "cd57",
+  "cd140b_pdgf_receptor_beta",
+  "caveolin_1"
+ ],
+ "rand6_03": [
+  "sma",
+  "cd38",
+  "estrogen_receptor_alpha",
+  "cd8a",
+  "cd4",
+  "cd31_v_wf"
+ ],
+ "rand6_04": [
+  "cd38",
+  "cd134",
+  "c_erb_b_2_her2_d8f12",
+  "cd45",
+  "cd31_v_wf",
+  "cxcl12_sdf_1"
+ ],
+ "rand6_05": [
+  "sma",
+  "c_erb_b_2_her2_3b5",
+  "cd3",
+  "podoplanin",
+  "beta_2_microglobulin",
+  "cd31_v_wf"
+ ],
+ "rand6_06": [
+  "cd134",
+  "cd3",
+  "cd279_pd_1",
+  "foxp3",
+  "pan_cytokeratin",
+  "cleaved_caspase3"
+ ],
+ "rand6_07": [
+  "gitr_tnfrsf18",
+  "cd45ra",
+  "beta_2_microglobulin",
+  "ki_67",
+  "caveolin_1",
+  "pan_cytokeratin"
+ ],
+ "rand6_08": [
+  "cd15",
+  "cd3",
+  "cd11c",
+  "cd45ra",
+  "beta_2_microglobulin",
+  "cxcl12_sdf_1"
+ ],
+ "rand6_09": [
+  "cd278_icos",
+  "cd134",
+  "podoplanin",
+  "cd279_pd_1",
+  "cd57",
+  "cd140b_pdgf_receptor_beta"
+ ],
+ "rand6_10": [
+  "sma",
+  "cd38",
+  "gitr_tnfrsf18",
+  "estrogen_receptor_alpha",
+  "ki_67",
+  "cleaved_caspase3"
+ ],
+ "rand6_11": [
+  "cd15",
+  "podoplanin",
+  "cd279_pd_1",
+  "beta_2_microglobulin",
+  "cd20",
+  "ki_67"
+ ],
+ "rand6_12": [
+  "cytokeratin_5",
+  "cytokeratin_8_18",
+  "cd134",
+  "cd11c",
+  "cd16",
+  "caveolin_1"
+ ],
+ "rand6_13": [
+  "sma",
+  "cd278_icos",
+  "gitr_tnfrsf18",
+  "foxp3",
+  "cd140b_pdgf_receptor_beta",
+  "pan_cytokeratin"
+ ],
+ "rand6_14": [
+  "cytokeratin_8_18",
+  "cd163",
+  "cd3",
+  "c_erb_b_2_her2_d8f12",
+  "foxp3",
+  "estrogen_receptor_alpha"
+ ],
+ "rand6_15": [
+  "cd11c",
+  "cd279_pd_1",
+  "cd16",
+  "c_erb_b_2_her2_d8f12",
+  "cd20",
+  "cleaved_caspase3"
+ ],
+ "rand6_16": [
+  "cd38",
+  "cytokeratin_8_18",
+  "cd15",
+  "cd68",
+  "podoplanin",
+  "gitr_tnfrsf18"
+ ],
+ "rand6_17": [
+  "sma",
+  "hla_dr",
+  "estrogen_receptor_alpha",
+  "cd8a",
+  "ki_67",
+  "cleaved_caspase3"
+ ],
+ "rand6_18": [
+  "cd15",
+  "cd163",
+  "cd278_icos",
+  "cd68",
+  "foxp3",
+  "pan_cytokeratin"
+ ],
+ "rand6_19": [
+  "cytokeratin_5",
+  "cd279_pd_1",
+  "cd45",
+  "foxp3",
+  "cd20",
+  "cd4"
+ ]
+}

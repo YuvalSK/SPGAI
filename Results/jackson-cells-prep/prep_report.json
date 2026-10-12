@@ -1,0 +1,471 @@
+{
+ "n_images_meta": 735,
+ "images_by_cohort_tumour": [
+  {
+   "cohort": "basel",
+   "is_tumour": 0,
+   "n": 87
+  },
+  {
+   "cohort": "basel",
+   "is_tumour": 1,
+   "n": 289
+  },
+  {
+   "cohort": "zurich",
+   "is_tumour": 0,
+   "n": 83
+  },
+  {
+   "cohort": "zurich",
+   "is_tumour": 1,
+   "n": 276
+  }
+ ],
+ "zurich_location": {
+  "PERIPHERY": 140,
+  "CENTER": 136,
+  "[]": 71,
+  "METASTASIS": 12
+ },
+ "meta_images_not_on_kaggle": [],
+ "kaggle_images_not_in_meta": [],
+ "loc_objectnumber_renamed_equal_frac": 0.10048688891561497,
+ "n_cells_located": 1271764,
+ "frac_cells_without_metacluster": 0.03723410947314124,
+ "frac_cells_without_metacluster_tumour_images": 0.013818852544364615,
+ "sc_channels": {
+  "1021522Tm169Di EGFR": 1288795,
+  "10311239Ru96Di Rutheni": 1288795,
+  "10311240Ru98Di Rutheni": 1288795,
+  "10311241Ru99Di Rutheni": 1288795,
+  "10311242Ru100Di Rutheni": 1288795,
+  "10311243Ru101Di Rutheni": 1288795,
+  "10311244Ru102Di Rutheni": 1288795,
+  "10311245Ru104Di Rutheni": 1288795,
+  "1031747Er167Di ECadhe": 1288795,
+  "10331253Ir191Di Iridium": 1288795,
+  "10331254Ir193Di Iridium": 1288795,
+  "112475Gd156Di Estroge": 1288795,
+  "117792Dy163Di GATA3": 1288795,
+  "1441101Er168Di Ki67": 1288795,
+  "1261726In113Di Histone": 1288795,
+  "174864Nd148Di SMA": 1288795,
+  "1921755Sm149Di Vimenti": 1288795,
+  "234832Lu175Di panCyto": 1288795,
+  "198883Yb176Di cleaved": 1288795,
+  "201487Eu151Di cerbB": 1288795,
+  "207736Tb159Di p53": 1288795,
+  "312878Gd158Di Progest": 1288795,
+  "3111576Nd143Di Cytoker": 1288795,
+  "322787Nd150Di cMyc": 1288795,
+  "3281668Nd142Di Fibrone": 1288795,
+  "3521227Gd155Di Slug": 1288795,
+  "346876Sm147Di Keratin": 1288795,
+  "361077Dy164Di CD20": 1288795,
+  "378871Yb172Di vWF": 1288795,
+  "71790Dy162Di CD45": 1288795,
+  "473968La139Di Histone": 1288795,
+  "651779Pr141Di Cytoker": 1288795,
+  "6967Gd160Di CD44": 1288795,
+  "8001752Sm152Di CD3epsi": 1288795,
+  "77877Nd146Di CD68": 1288795,
+  "92964Er166Di Carboni": 1288795,
+  "971099Nd144Di Cytoker": 1288795,
+  "98922Yb174Di Cytoker": 1288795,
+  "ArAr80 80ArArArAr80Di": 1288795,
+  "Hg202 202HgHg202Di": 1288795,
+  "Pb204 204PbPb204Di": 1288795,
+  "I127 127II127Di": 1288795,
+  "In115 115InIn115Di": 1288795,
+  "Nd145Di Twist": 1288795,
+  "Pb207 207PbPb207Di": 1288795,
+  "Pb206 206PbPb206Di": 1288795,
+  "Pb208 208PbPb208Di": 1288795,
+  "Xe126 126XeXe126Di": 1288795,
+  "Xe134 134XeXe134Di": 1288795,
+  "Xe131 131XeXe131Di": 1288795,
+  "phospho Histone": 1288795,
+  "phospho S6": 1288795,
+  "Solidity": 1288795,
+  "phospho mTOR": 1288795,
+  "Area": 1288795,
+  "Eccentricity": 1288795,
+  "EulerNumber": 1288795,
+  "Extent": 1288795,
+  "Perimeter": 1288795,
+  "MajorAxisLength": 1288795,
+  "MinorAxisLength": 1288795,
+  "Percent_Touching": 1288795,
+  "Orientation": 1288795,
+  "Number_Neighbors": 1288795,
+  "1971527Ho165Di bCaten": 433127,
+  "2971330Dy161Di EpCAM": 433127,
+  "483739Yb171Di Sox9": 433127,
+  "phospho Erk12": 433127
+ },
+ "channel_map": {
+  "histone_h3": [
+   "1261726In113Di Histone"
+  ],
+  "histone_h3_trimethylate": [
+   "473968La139Di Histone"
+  ],
+  "cytokeratin_5": [
+   "651779Pr141Di Cytoker"
+  ],
+  "fibronectin": [
+   "3281668Nd142Di Fibrone"
+  ],
+  "cytokeratin_19": [
+   "3111576Nd143Di Cytoker"
+  ],
+  "cytokeratin_8_18": [
+   "971099Nd144Di Cytoker"
+  ],
+  "twist": [
+   "Nd145Di Twist"
+  ],
+  "cd68": [
+   "77877Nd146Di CD68"
+  ],
+  "keratin_14_krt14": [
+   "346876Sm147Di Keratin"
+  ],
+  "sma": [
+   "174864Nd148Di SMA"
+  ],
+  "vimentin": [
+   "1921755Sm149Di Vimenti"
+  ],
+  "c_myc": [
+   "322787Nd150Di cMyc"
+  ],
+  "c_erb_b_2_her2": [
+   "201487Eu151Di cerbB"
+  ],
+  "cd3": [
+   "8001752Sm152Di CD3epsi"
+  ],
+  "histone_h3_phospho": [
+   "phospho Histone"
+  ],
+  "slug": [
+   "3521227Gd155Di Slug"
+  ],
+  "estrogen_receptor_alpha": [
+   "112475Gd156Di Estroge"
+  ],
+  "progesterone_receptor_a_b": [
+   "312878Gd158Di Progest"
+  ],
+  "p53": [
+   "207736Tb159Di p53"
+  ],
+  "cd44": [
+   "6967Gd160Di CD44"
+  ],
+  "cd45": [
+   "71790Dy162Di CD45"
+  ],
+  "gata3": [
+   "117792Dy163Di GATA3"
+  ],
+  "cd20": [
+   "361077Dy164Di CD20"
+  ],
+  "carbonic_anhydrase_ix": [
+   "92964Er166Di Carboni"
+  ],
+  "e_cadherin_p_cadherin": [
+   "1031747Er167Di ECadhe"
+  ],
+  "ki_67": [
+   "1441101Er168Di Ki67"
+  ],
+  "egfr": [
+   "1021522Tm169Di EGFR"
+  ],
+  "s6": [
+   "phospho S6"
+  ],
+  "v_wf": [
+   "378871Yb172Di vWF"
+  ],
+  "m_tor": [
+   "phospho mTOR"
+  ],
+  "cytokeratin_7": [
+   "98922Yb174Di Cytoker"
+  ],
+  "pan_cytokeratin": [
+   "234832Lu175Di panCyto"
+  ],
+  "cleaved_parp": [
+   "198883Yb176Di cleaved"
+  ],
+  "dna1": [
+   "10331253Ir191Di Iridium"
+  ],
+  "dna2": [
+   "10331254Ir193Di Iridium"
+  ]
+ },
+ "frac_missing_values": 0.0,
+ "frac_cells_with_missing": 0.0,
+ "channel_quantiles": {
+  "histone_h3": [
+   0.482,
+   6.321,
+   38.71
+  ],
+  "histone_h3_trimethylate": [
+   0.101,
+   0.553,
+   3.209
+  ],
+  "cytokeratin_5": [
+   0.0,
+   0.113,
+   3.782
+  ],
+  "fibronectin": [
+   0.285,
+   4.521,
+   36.372
+  ],
+  "cytokeratin_19": [
+   0.0,
+   0.274,
+   11.103
+  ],
+  "cytokeratin_8_18": [
+   0.0,
+   0.302,
+   20.101
+  ],
+  "twist": [
+   0.0,
+   0.244,
+   1.729
+  ],
+  "cd68": [
+   0.0,
+   0.222,
+   6.716
+  ],
+  "keratin_14_krt14": [
+   0.0,
+   0.12,
+   4.823
+  ],
+  "sma": [
+   0.0,
+   0.431,
+   55.86
+  ],
+  "vimentin": [
+   0.0,
+   1.454,
+   32.464
+  ],
+  "c_myc": [
+   0.0,
+   0.37,
+   3.396
+  ],
+  "c_erb_b_2_her2": [
+   0.05,
+   1.024,
+   8.24
+  ],
+  "cd3": [
+   0.0,
+   0.069,
+   1.17
+  ],
+  "histone_h3_phospho": [
+   0.0,
+   0.225,
+   1.85
+  ],
+  "slug": [
+   0.0,
+   0.201,
+   5.506
+  ],
+  "estrogen_receptor_alpha": [
+   0.0,
+   0.165,
+   3.462
+  ],
+  "progesterone_receptor_a_b": [
+   0.023,
+   0.546,
+   8.534
+  ],
+  "p53": [
+   0.0,
+   0.076,
+   0.524
+  ],
+  "cd44": [
+   1.709,
+   19.776,
+   149.253
+  ],
+  "cd45": [
+   0.0,
+   0.13,
+   3.637
+  ],
+  "gata3": [
+   0.0,
+   0.292,
+   11.093
+  ],
+  "cd20": [
+   0.0,
+   0.082,
+   1.746
+  ],
+  "carbonic_anhydrase_ix": [
+   0.048,
+   0.612,
+   9.89
+  ],
+  "e_cadherin_p_cadherin": [
+   0.102,
+   1.893,
+   19.281
+  ],
+  "ki_67": [
+   0.0,
+   0.037,
+   7.21
+  ],
+  "egfr": [
+   0.045,
+   0.411,
+   2.669
+  ],
+  "s6": [
+   0.0,
+   0.518,
+   8.214
+  ],
+  "v_wf": [
+   0.0,
+   0.074,
+   0.985
+  ],
+  "m_tor": [
+   0.113,
+   0.884,
+   9.691
+  ],
+  "cytokeratin_7": [
+   0.0,
+   0.035,
+   7.942
+  ],
+  "pan_cytokeratin": [
+   0.0,
+   2.759,
+   96.809
+  ],
+  "cleaved_parp": [
+   0.0,
+   0.596,
+   3.218
+  ],
+  "dna1": [
+   0.47,
+   3.085,
+   13.133
+  ],
+  "dna2": [
+   0.808,
+   5.843,
+   24.891
+  ]
+ },
+ "images_without_mask": [],
+ "contact_mean_degree_by_r": {
+  "1": 3.7292224825012976,
+  "2": 4.050833906103155,
+  "3": 4.50699246749239,
+  "4": 5.121207445540111
+ },
+ "contact_r": 4,
+ "n_contacts": 6339338,
+ "masks_written": 708,
+ "mask_cells_matched_frac": 1.0,
+ "mask_one_to_one": true,
+ "mask_dist_max": 4.805946419797665e-05,
+ "mask_label_eq_object_frac": 0.13613984685492225,
+ "area_median": 90.0,
+ "kaggle_shape_match_frac": 1.0,
+ "alignment_r_median_by_channel": {
+  "cd45": 0.9953,
+  "dna1": 1.0,
+  "estrogen_receptor_alpha": 0.9913,
+  "histone_h3": 1.0,
+  "ki_67": 0.9714,
+  "pan_cytokeratin": 1.0,
+  "sma": 1.0
+ },
+ "alignment_r_min": 0.04292258947972526,
+ "n_cells": 1224411,
+ "n_images_table": 708,
+ "n_patients_table": 357,
+ "n_tumour_images": 553,
+ "n_tumour_patients": 352,
+ "tumour_cells_by_cohort": {
+  "basel": 767833,
+  "zurich": 359233
+ },
+ "phenotypes": {
+  "MC10 Small elongated": 120813,
+  "MC03 T cell": 120545,
+  "MC22 CK lo HR lo": 117330,
+  "MC08 Vimentin hi": 96201,
+  "MC25 CK+ HR lo": 81753,
+  "MC23 CK+ HR hi": 61595,
+  "MC11 Fibronectin hi": 55294,
+  "MC21 Epithelial low": 50215,
+  "MC20 CK7+": 50205,
+  "MC16 Proliferative": 48476,
+  "MC24 CK+ HR+": 47284,
+  "MC09 Small circular": 44633,
+  "MC19 CK7+ CK hi Ecadh hi": 41981,
+  "MC01 B cell": 38950,
+  "MC07 Endothelial": 38272,
+  "MC04 Macrophage": 36968,
+  "MC18 Basal CK": 33112,
+  "MC15 Apoptotic": 25046,
+  "MC14 Hypoxic": 24735,
+  "MC17 p53+ EGFR+": 23518,
+  "MC27 Myoepithelial": 23509,
+  "MC02 T & B cells": 18247,
+  "MC26 CK lo HR hi p53+": 10261,
+  "MC13 SMA hi Vimentin hi": 9750,
+  "MC05 T cell": 5424,
+  "MC06 Macrophage": 191,
+  "MC12 Large elongated": 103
+ },
+ "broad_classes": {
+  "epithelial": 639020,
+  "stromal": 365066,
+  "immune": 220325
+ },
+ "images_missing_on_kaggle": [],
+ "checks": {
+  "all_35_channels_mapped": true,
+  "cells_>=500k": true,
+  "tumour_images_>=400": true,
+  "mask_match_>=98%": true,
+  "mask_one_to_one": true,
+  "alignment_dna1_r>0.9": true
+ }
+}

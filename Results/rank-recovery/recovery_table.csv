@@ -1,0 +1,22 @@
+cohort,target,patients,classes,AUC intensity (per-sample z),AUC rank (per-sample z),AUC intensity (cohort z),AUC pseudo-bulk,AUC phenotypes,ΔAUC rank − intensity [95% CI],% gap closed [95% CI]
+Danenberg 2022,PAM50 + claudin-low,552,6,0.691,0.701,0.737,0.743,0.717,"+0.010 [-0.015, +0.035]","21% [-52, 67]"
+Danenberg 2022,IntClust,552,11,0.633,0.648,0.726,0.704,0.701,"+0.015 [-0.005, +0.038]","17% [-7, 38]"
+Danenberg 2022,ER status,553,2,0.806,0.835,0.893,0.895,0.891,"+0.030 [-0.008, +0.067]","34% [-16, 67]"
+Danenberg 2022,PR status,552,2,0.661,0.658,0.728,0.726,0.698,"-0.004 [-0.036, +0.031]","-5% [-88, 41]"
+Danenberg 2022,HER2 status,552,2,0.688,0.67,0.942,0.91,0.94,"-0.019 [-0.074, +0.038]","-7% [-36, 15]"
+Danenberg 2022,Grade 3 vs 1–2 †,544,2,0.772,0.739,0.802,0.815,0.781,"-0.034 [-0.071, -0.001]",n/a (not pooled)
+Danenberg 2022,"POOLED subtype + receptors, no clusters",,,,,,,,"-0.014 [-0.122, +0.091] (sum)","-2% [-23, 14]"
+Danenberg 2022,"POOLED subtype + receptors, k = 10",,,,,,,,"-0.152 [-0.284, -0.026] (sum)","-48% [-130, -7]"
+Danenberg 2022,"POOLED subtype + receptors, k = 20",,,,,,,,"+0.032 [-0.071, +0.138] (sum)","6% [-14, 23]"
+Danenberg 2022,"POOLED subtype + receptors, k = 40",,,,,,,,"+0.067 [-0.048, +0.169] (sum)","15% [-13, 36]"
+Danenberg 2022,"POOLED subtype + receptors, k = 80",,,,,,,,"+0.101 [-0.006, +0.204] (sum)","25% [-2, 46]"
+Jackson 2020,Clinical subtype,333,4,0.67,0.771,0.814,0.837,0.799,"+0.101 [+0.052, +0.152]","70% [46, 97]"
+Jackson 2020,ER status,348,2,0.792,0.886,0.885,0.866,0.875,"+0.094 [+0.033, +0.150]","102% [65, 171]"
+Jackson 2020,PR status,343,2,0.71,0.763,0.787,0.798,0.737,"+0.053 [+0.003, +0.103]","69% [6, 142]"
+Jackson 2020,HER2 status,278,2,0.505,0.506,0.612,0.776,0.662,"+0.001 [-0.099, +0.098]","1% [-231, 86]"
+Jackson 2020,Grade 3 vs 1–2 †,349,2,0.665,0.764,0.796,0.804,0.781,"+0.098 [+0.045, +0.152]",n/a (not pooled)
+Jackson 2020,"POOLED subtype + receptors, no clusters",,,,,,,,"-0.076 [-0.205, +0.042] (sum)","-18% [-66, 9]"
+Jackson 2020,"POOLED subtype + receptors, k = 10",,,,,,,,"+0.338 [+0.153, +0.516] (sum)","61% [37, 84]"
+Jackson 2020,"POOLED subtype + receptors, k = 20",,,,,,,,"+0.249 [+0.082, +0.418] (sum)","59% [25, 92]"
+Jackson 2020,"POOLED subtype + receptors, k = 40",,,,,,,,"+0.177 [+0.037, +0.321] (sum)","51% [14, 91]"
+Jackson 2020,"POOLED subtype + receptors, k = 80",,,,,,,,"+0.146 [+0.008, +0.295] (sum)","34% [2, 64]"

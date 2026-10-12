@@ -1,0 +1,32 @@
+cohort,cells,n_cells,marker,residual_of,neighbour,feature,expected_sign,r,lo,hi,ci_excludes_0,matches_expected
+danenberg,CD8 T cells,34472,cd279_pd_1,full,tumour,contacts,1,0.005734173395515347,-0.006222335701715287,0.01750992541442161,False,
+danenberg,CD8 T cells,34472,cd279_pd_1,full,tumour,ring count,1,0.0016432745922158958,-0.010038802576550215,0.015902927522163067,False,
+danenberg,CD8 T cells,32839,cd279_pd_1,full,tumour,log distance,-1,-0.0010825207814425363,-0.018609730176105246,0.01700842055254272,False,
+danenberg,CD8 T cells,34472,cd278_icos,full,tumour,contacts,1,-0.0034774992277183743,-0.015480045289791937,0.004818026404686653,False,
+danenberg,CD8 T cells,34472,cd278_icos,full,tumour,ring count,1,-0.0020561025827039317,-0.011806434741661409,0.005884551056101151,False,
+danenberg,CD8 T cells,32839,cd278_icos,full,tumour,log distance,-1,-0.0028544945260160865,-0.00987881803898243,0.008027259700965518,False,
+danenberg,CD8 T cells,34472,ki_67,full,tumour,contacts,1,0.002136153383679989,-0.008335661962677338,0.013400918515517517,False,
+danenberg,CD8 T cells,34472,ki_67,full,tumour,ring count,1,0.007708028898691182,-0.0033893302958482733,0.019673178764209216,False,
+danenberg,CD8 T cells,32839,ki_67,full,tumour,log distance,-1,-0.00040851548989758883,-0.011406153649602482,0.010671135260791921,False,
+danenberg,tumour cells,600818,hla_abc,full,T cells,contacts,1,0.0005375953189168656,-0.012584924274767942,0.0143022640447983,False,
+danenberg,tumour cells,600818,hla_abc,full,T cells,ring count,1,0.012628412780825427,0.0017095856631329596,0.02502907897220265,True,1.0
+danenberg,tumour cells,567554,hla_abc,full,T cells,log distance,-1,-0.027949043820324756,-0.04184803890696297,-0.013582212940602967,True,1.0
+danenberg,tumour cells,600818,beta_2_microglobulin,full,T cells,contacts,1,0.013087862589827545,0.0010077266853649855,0.025165880550633107,True,1.0
+danenberg,tumour cells,600818,beta_2_microglobulin,full,T cells,ring count,1,0.014704512655427262,0.0031509397094518004,0.026418552678532527,True,1.0
+danenberg,tumour cells,567554,beta_2_microglobulin,full,T cells,log distance,-1,-0.021283460806797473,-0.03431081391889611,-0.008523639455744551,True,1.0
+danenberg,tumour cells,600818,hla_dr,full,T cells,contacts,1,0.040662598117569886,0.027209466903483477,0.05531775013384492,True,1.0
+danenberg,tumour cells,600818,hla_dr,full,T cells,ring count,1,0.03669796688565644,0.023144741561823088,0.0494868251685886,True,1.0
+danenberg,tumour cells,567554,hla_dr,full,T cells,log distance,-1,-0.03833194068033939,-0.052160241586363974,-0.024168072137796696,True,1.0
+danenberg,macrophages,40456,cd163,full,tumour,contacts,1,-0.039526857218175976,-0.0530290769887231,-0.02629111155465825,True,0.0
+danenberg,macrophages,40456,cd163,full,tumour,ring count,1,-0.05564989940476425,-0.07301692634311564,-0.03886010071621943,True,0.0
+danenberg,macrophages,38056,cd163,full,tumour,log distance,-1,0.07426140213295128,0.05599434078383847,0.09381600787415466,True,0.0
+jackson,tumour cells,591813,carbonic_anhydrase_ix,full,endothelial,contacts,-1,-0.0062991777877852515,-0.011561184697374948,-0.0007374246262184298,True,1.0
+jackson,tumour cells,591813,carbonic_anhydrase_ix,full,endothelial,ring count,-1,-0.015245394101543438,-0.02299756950633013,-0.0072484460110998706,True,1.0
+jackson,tumour cells,585954,carbonic_anhydrase_ix,full,endothelial,log distance,1,0.0971120914168542,0.06935306147352047,0.12548710842812666,True,1.0
+jackson,tumour cells,591813,histone_h3_trimethylate,nuclear,own CA-IX,value,1,0.2013501381042435,0.18177727605970884,0.22369729789276266,True,1.0
+jackson,tumour cells,591813,histone_h3_trimethylate,full,endothelial,contacts,-1,-0.006970638883086327,-0.013090744403370097,-0.001544762156421689,True,1.0
+jackson,tumour cells,591813,histone_h3_trimethylate,full,endothelial,ring count,-1,-0.0056355901152953655,-0.01204345315433434,0.000635061928307373,False,
+jackson,tumour cells,585954,histone_h3_trimethylate,full,endothelial,log distance,1,0.00979531969782099,-0.002760010323437342,0.023008494503670554,False,
+jackson,tumour cells,591813,histone_h3_trimethylate,full,CA-IX-high tumour,contacts,1,0.019466415283689344,-0.00306052927815917,0.0436244190100078,False,
+jackson,tumour cells,591813,histone_h3_trimethylate,full,CA-IX-high tumour,ring count,1,0.01976840492677474,-0.005762805867541961,0.0503261240563086,False,
+jackson,tumour cells,453437,histone_h3_trimethylate,full,CA-IX-high tumour,log distance,-1,-0.01514971424803362,-0.037143768921862635,0.0037508501348917913,False,

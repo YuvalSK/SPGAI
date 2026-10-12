@@ -1,0 +1,253 @@
+[{"stream_name":"stderr","time":11.324990775,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":11.325153427,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":12.869294352,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.869337385,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.869344469,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.869349424,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":13.829506079,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":13.829546204,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":13.829552343,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":13.829562803,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":30.423061291,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.1/409.1 kB 7.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":30.477152444,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.9/118.9 kB 2.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":30.626410276,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.1/409.1 kB 7.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":30.626452557,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.9/118.9 kB 2.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":38.447385501,"data":"{\n"}
+,{"stream_name":"stdout","time":38.447432467,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":38.447458431,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":38.447463934,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":38.447468967,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":38.44747421,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":38.447479503,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":38.447484553,"data":" },\n"}
+,{"stream_name":"stdout","time":38.447489235,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":38.447493163,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":38.447497349,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":38.447526776,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":38.447531402,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/clinical.parquet\"\n"}
+,{"stream_name":"stdout","time":38.447535462,"data":" }\n"}
+,{"stream_name":"stdout","time":38.447539145,"data":"}\n"}
+,{"stream_name":"stdout","time":40.869127791,"data":"danenberg (1123466, 54) columns: ['image_number', 'object_number', 'metabric_id', 'image_name', 'cell_phenotype', 'x', 'y', 'area', 'is_epithelial', 'is_tumour', 'is_normal', 'is_dcis', 'is_interface', 'is_perivascular', 'is_hot_aggregate', 'histone_h3', 'sma', 'cytokeratin_5', 'cd38', 'hla_dr', 'cytokeratin_8_18', 'cd15', 'fsp1', 'cd163', 'cd278_icos', 'cd134', 'cd68', 'c_erb_b_2_her2_3b5', 'cd3', 'podoplanin', 'cd11c', 'cd279_pd_1', 'gitr_tnfrsf18', 'cd16', 'c_erb_b_2_her2_d8f12', 'cd45ra', 'beta_2_microglobulin', 'cd45', 'foxp3', 'cd20', 'estrogen_receptor_alpha', 'cd8a', 'cd57', 'ki_67', 'cd140b_pdgf_receptor_beta', 'caveolin_1', 'cd4', 'cd31_v_wf', 'cxcl12_sdf_1', 'hla_abc', 'pan_cytokeratin', 'cleaved_caspase3', 'dna1', 'dna2']\n"}
+,{"stream_name":"stdout","time":46.204536938,"data":"danenberg: 1,062,219 cells, 704 images, 650 patients, 0.57 epithelial, broad {'epithelial': 600818, 'stromal': 290493, 'immune': 170908}, 6,198,634 contact rows mapped, area yes\n"}
+,{"stream_name":"stdout","time":49.080617653,"data":"jackson (1224411, 48) columns: ['core', 'image_name', 'image_number', 'object_number', 'patient_id', 'cohort', 'is_tumour', 'metacluster', 'cell_phenotype', 'broad_class', 'x', 'y', 'histone_h3', 'histone_h3_trimethylate', 'cytokeratin_5', 'fibronectin', 'cytokeratin_19', 'cytokeratin_8_18', 'twist', 'cd68', 'keratin_14_krt14', 'sma', 'vimentin', 'c_myc', 'c_erb_b_2_her2', 'cd3', 'histone_h3_phospho', 'slug', 'estrogen_receptor_alpha', 'progesterone_receptor_a_b', 'p53', 'cd44', 'cd45', 'gata3', 'cd20', 'carbonic_anhydrase_ix', 'e_cadherin_p_cadherin', 'ki_67', 'egfr', 's6', 'v_wf', 'm_tor', 'cytokeratin_7', 'pan_cytokeratin', 'cleaved_parp', 'dna1', 'dna2', 'area']\n"}
+,{"stream_name":"stdout","time":54.10811416,"data":"jackson: 1,126,124 cells, 542 images, 349 patients, 0.53 epithelial, broad {'epithelial': 591813, 'stromal': 325675, 'immune': 208636}, 5,898,764 contact rows mapped, area yes\n"}
+,{"stream_name":"stdout","time":58.251383801,"data":"[   0.4 min] danenberg: class mix of neighbours\n"}
+,{"stream_name":"stdout","time":62.506646993,"data":"[   0.4 min] jackson: class mix of neighbours\n"}
+,{"stream_name":"stdout","time":145.82882769,"data":"          subset                                   inputs    r2  r2_lo  r2_hi  gain_over_nuclear  gain_lo  gain_hi\n"}
+,{"stream_name":"stdout","time":145.828888784,"data":"       all cells           nuclear (H3, DNA1, DNA2, area) 0.188  0.109  0.244              0.000    0.000    0.000\n"}
+,{"stream_name":"stdout","time":145.828899052,"data":"       all cells Danenberg channels (nuclear + 11 shared) 0.574  0.541  0.604              0.386    0.329    0.454\n"}
+,{"stream_name":"stdout","time":145.828905473,"data":"       all cells                       full Jackson panel 0.635  0.606  0.663              0.447    0.387    0.520\n"}
+,{"stream_name":"stdout","time":145.828913721,"data":"epithelial cells           nuclear (H3, DNA1, DNA2, area) 0.127  0.049  0.188              0.000    0.000    0.000\n"}
+,{"stream_name":"stdout","time":145.82892036,"data":"epithelial cells Danenberg channels (nuclear + 11 shared) 0.598  0.547  0.640              0.471    0.402    0.540\n"}
+,{"stream_name":"stdout","time":145.828926214,"data":"epithelial cells                       full Jackson panel 0.653  0.616  0.687              0.526    0.466    0.598\n"}
+,{"stream_name":"stdout","time":145.828931752,"data":"[   1.8 min] fix 1\n"}
+,{"stream_name":"stdout","time":147.067926424,"data":"Largest cohort differences in input correlations involving SMA:\n"}
+,{"stream_name":"stdout","time":147.067975449,"data":"     cells               m1  m2  danenberg  jackson   diff\n"}
+,{"stream_name":"stdout","time":147.067985843,"data":"   stromal             cd20 sma      0.198   -0.220  0.418\n"}
+,{"stream_name":"stdout","time":147.067988885,"data":"       all       histone_h3 sma      0.241   -0.146  0.388\n"}
+,{"stream_name":"stdout","time":147.067991624,"data":"   stromal       histone_h3 sma      0.343   -0.035  0.378\n"}
+,{"stream_name":"stdout","time":147.06799447,"data":"   stromal             cd45 sma      0.319   -0.019  0.338\n"}
+,{"stream_name":"stdout","time":147.067997535,"data":"    immune             dna1 sma      0.213   -0.106  0.319\n"}
+,{"stream_name":"stdout","time":147.068000094,"data":"    immune       histone_h3 sma      0.266   -0.052  0.318\n"}
+,{"stream_name":"stdout","time":147.068002641,"data":"   stromal cytokeratin_8_18 sma     -0.020    0.297 -0.317\n"}
+,{"stream_name":"stdout","time":147.068005286,"data":"    immune             dna2 sma      0.214   -0.102  0.316\n"}
+,{"stream_name":"stdout","time":147.068007909,"data":"       all             dna2 sma      0.205   -0.077  0.282\n"}
+,{"stream_name":"stdout","time":147.068010458,"data":"       all             dna1 sma      0.204   -0.078  0.282\n"}
+,{"stream_name":"stdout","time":147.068013096,"data":"       all   c_erb_b_2_her2 sma      0.127   -0.153  0.280\n"}
+,{"stream_name":"stdout","time":147.068015746,"data":"epithelial             cd68 sma     -0.009    0.264 -0.273\n"}
+,{"stream_name":"stdout","time":147.068018298,"data":"epithelial             cd45 sma      0.413    0.143  0.271\n"}
+,{"stream_name":"stdout","time":147.068020922,"data":"   stromal             cd68 sma     -0.030    0.236 -0.266\n"}
+,{"stream_name":"stdout","time":147.068023521,"data":"   stromal             dna1 sma      0.263    0.001  0.262\n"}
+,{"stream_name":"stdout","time":147.351898637,"data":"   cohort      cells       n    q5   q25   q50   q75   q95   q99\n"}
+,{"stream_name":"stdout","time":147.351938655,"data":"  jackson        all 1126124 0.042 0.146 0.405 1.571 3.325 4.335\n"}
+,{"stream_name":"stdout","time":147.351949335,"data":"  jackson epithelial  591813 0.039 0.115 0.238 0.716 2.726 3.982\n"}
+,{"stream_name":"stdout","time":147.351952288,"data":"  jackson     immune  208636 0.052 0.188 0.492 1.407 2.835 3.594\n"}
+,{"stream_name":"stdout","time":147.351961678,"data":"  jackson    stromal  325675 0.047 0.366 1.481 2.618 3.891 4.865\n"}
+,{"stream_name":"stdout","time":147.351964502,"data":"danenberg        all 1062219 0.107 0.377 0.704 1.132 1.956 2.729\n"}
+,{"stream_name":"stdout","time":147.351967132,"data":"danenberg epithelial  600818 0.124 0.415 0.720 1.094 1.805 2.444\n"}
+,{"stream_name":"stdout","time":147.351969854,"data":"danenberg     immune  170908 0.094 0.307 0.572 0.933 1.560 2.045\n"}
+,{"stream_name":"stdout","time":147.351972636,"data":"danenberg    stromal  290493 0.090 0.351 0.771 1.387 2.353 3.308\n"}
+,{"stream_name":"stdout","time":366.392743541,"data":"harmonisation            median / p5-p95 (as in v1)  rank (quantile)\n"}
+,{"stream_name":"stdout","time":366.39283808,"data":"marker                                                              \n"}
+,{"stream_name":"stdout","time":366.392846165,"data":"c_erb_b_2_her2                                0.649            0.708\n"}
+,{"stream_name":"stdout","time":366.392883713,"data":"cd20                                          0.335            0.642\n"}
+,{"stream_name":"stdout","time":366.392889095,"data":"cd3                                           0.645            0.675\n"}
+,{"stream_name":"stdout","time":366.392904613,"data":"cd45                                          0.609            0.615\n"}
+,{"stream_name":"stdout","time":366.392909444,"data":"cd68                                          0.322            0.285\n"}
+,{"stream_name":"stdout","time":366.392913158,"data":"cytokeratin_5                                 0.235            0.337\n"}
+,{"stream_name":"stdout","time":366.392916648,"data":"cytokeratin_8_18                              0.759            0.793\n"}
+,{"stream_name":"stdout","time":366.392920675,"data":"estrogen_receptor_alpha                       0.658            0.702\n"}
+,{"stream_name":"stdout","time":366.392924789,"data":"ki_67                                         0.226            0.315\n"}
+,{"stream_name":"stdout","time":366.392928547,"data":"pan_cytokeratin                               0.850            0.848\n"}
+,{"stream_name":"stdout","time":366.392932385,"data":"sma                                           0.020            0.063\n"}
+,{"stream_name":"stdout","time":366.392936227,"data":"             harmonisation          feature  gain_share\n"}
+,{"stream_name":"stdout","time":366.392972535,"data":"median / p5-p95 (as in v1) cytokeratin_8_18       0.250\n"}
+,{"stream_name":"stdout","time":366.392976577,"data":"median / p5-p95 (as in v1)             cd20       0.219\n"}
+,{"stream_name":"stdout","time":366.392980826,"data":"median / p5-p95 (as in v1)             cd68       0.216\n"}
+,{"stream_name":"stdout","time":366.392984979,"data":"median / p5-p95 (as in v1)  pan_cytokeratin       0.118\n"}
+,{"stream_name":"stdout","time":366.392989095,"data":"median / p5-p95 (as in v1)    cytokeratin_5       0.063\n"}
+,{"stream_name":"stdout","time":366.392992561,"data":"           rank (quantile) cytokeratin_8_18       0.224\n"}
+,{"stream_name":"stdout","time":366.392996461,"data":"           rank (quantile)             cd68       0.204\n"}
+,{"stream_name":"stdout","time":366.393001008,"data":"           rank (quantile)             cd20       0.171\n"}
+,{"stream_name":"stdout","time":366.393006448,"data":"           rank (quantile)  pan_cytokeratin       0.135\n"}
+,{"stream_name":"stdout","time":366.393011055,"data":"           rank (quantile)    cytokeratin_5       0.065\n"}
+,{"stream_name":"stdout","time":366.393015975,"data":"[   5.5 min] fix 2\n"}
+,{"stream_name":"stdout","time":366.916142178,"data":"                                 broad       n   cd45  cd45ra    cd3   cd20   cd68   cd8a    cd4\n"}
+,{"stream_name":"stdout","time":366.91621064,"data":"phenotype                                                                                       \n"}
+,{"stream_name":"stdout","time":366.916218509,"data":"T_{Reg} \u0026 T_{Ex}                immune    6317  2.174   1.464  0.510  0.499  0.606  1.366  1.112\n"}
+,{"stream_name":"stdout","time":366.916223712,"data":"Macrophages \u0026 granulocytes      immune    3960  2.161   1.181  0.297  0.368  1.501  0.835  1.046\n"}
+,{"stream_name":"stdout","time":366.916228472,"data":"CD4^{+} T cells \u0026 APCs          immune   19416  1.925   1.323  0.320  0.445  1.063  0.675  1.263\n"}
+,{"stream_name":"stdout","time":366.916233392,"data":"Ki67^{+}                        immune    1974  1.854   1.306  0.321  0.398  0.701  0.627  0.993\n"}
+,{"stream_name":"stdout","time":366.916238251,"data":"MHC^{hi}CD15^{+}            epithelial    4366  1.759   1.364  0.194  0.389  0.564  0.699  0.758\n"}
+,{"stream_name":"stdout","time":366.916242407,"data":"CD4^{+} T cells                 immune   15575  1.722   0.753  0.281  0.219  0.222  0.355  0.883\n"}
+,{"stream_name":"stdout","time":366.916246561,"data":"B cells                         immune   28284  1.659   2.309  0.318  1.754  0.287  0.726  0.833\n"}
+,{"stream_name":"stdout","time":366.916272599,"data":"CD8^{+} T cells                 immune   34472  1.633   0.898  0.330  0.265  0.228  1.416  0.534\n"}
+,{"stream_name":"stdout","time":366.916275829,"data":"MHC I \u0026 II^{hi}             epithelial    7373  1.622   1.344  0.242  0.475  0.523  0.741  0.880\n"}
+,{"stream_name":"stdout","time":366.916278622,"data":"MHC I^{hi}CD57^{+}          epithelial    7190  1.537   1.470  0.271  0.463  0.205  0.714  0.793\n"}
+,{"stream_name":"stdout","time":366.916281303,"data":"ER^{hi}CXCL12^{+}           epithelial   54811  1.440   1.417  0.333  0.480  0.138  0.672  0.802\n"}
+,{"stream_name":"stdout","time":366.916283941,"data":"Myofibroblasts PDPN^{+}        stromal   27199  1.381   1.113  0.212  0.308  0.200  0.456  0.658\n"}
+,{"stream_name":"stdout","time":366.916286648,"data":"CD38^{+} lymphocytes            immune   11238  1.373   1.734  0.196  0.400  0.349  0.588  0.923\n"}
+,{"stream_name":"stdout","time":366.91628937,"data":"Macrophages                     immune   40456  1.303   0.868  0.176  0.273  0.748  0.406  0.800\n"}
+,{"stream_name":"stdout","time":366.916292058,"data":"CK8-18^{+} ER^{hi}          epithelial   20208  1.247   1.213  0.259  0.381  0.106  0.609  0.644\n"}
+,{"stream_name":"stdout","time":366.916294713,"data":"HER2^{+}                    epithelial   32552  1.235   1.280  0.186  0.372  0.164  0.583  0.713\n"}
+,{"stream_name":"stdout","time":366.916297465,"data":"CK8-18^{hi}CXCL12^{hi}      epithelial   73594  1.195   1.251  0.215  0.381  0.126  0.559  0.661\n"}
+,{"stream_name":"stdout","time":366.916301424,"data":"CK^{lo}ER^{med}             epithelial   17738  1.170   1.151  0.183  0.317  0.098  0.444  0.495\n"}
+,{"stream_name":"stdout","time":366.916321653,"data":"Basal                       epithelial   24606  1.130   1.028  0.136  0.264  0.120  0.445  0.441\n"}
+,{"stream_name":"stdout","time":366.916328715,"data":"CD15^{+}                    epithelial   44864  1.108   1.135  0.175  0.344  0.155  0.532  0.681\n"}
+,{"stream_name":"stdout","time":366.916333401,"data":"CK^{med}ER^{lo}             epithelial  117390  1.080   1.045  0.164  0.311  0.178  0.497  0.572\n"}
+,{"stream_name":"stdout","time":366.916338477,"data":"CK^{+} CXCL12^{+}           epithelial   63674  1.037   1.038  0.159  0.291  0.110  0.452  0.526\n"}
+,{"stream_name":"stdout","time":366.916343283,"data":"Ep Ki67^{+}                 epithelial   24513  1.021   1.122  0.140  0.304  0.158  0.413  0.447\n"}
+,{"stream_name":"stdout","time":366.916347509,"data":"CK^{lo}ER^{lo}              epithelial   83614  1.013   0.910  0.139  0.261  0.151  0.419  0.457\n"}
+,{"stream_name":"stdout","time":366.916351614,"data":"Ep CD57^{+}                 epithelial   11301  0.958   0.944  0.137  0.261  0.119  0.377  0.408\n"}
+,{"stream_name":"stdout","time":366.916355577,"data":"CK8-18^{hi}ER^{lo}          epithelial   13024  0.953   1.128  0.154  0.357  0.146  0.525  0.601\n"}
+,{"stream_name":"stdout","time":366.916359655,"data":"Granulocytes                    immune    6259  0.886   0.673  0.119  0.220  0.350  0.384  0.481\n"}
+,{"stream_name":"stdout","time":366.916363741,"data":"Myofibroblasts                 stromal   90369  0.840   0.679  0.108  0.169  0.165  0.276  0.424\n"}
+,{"stream_name":"stdout","time":366.916367916,"data":"Endothelial                    stromal   47355  0.826   0.730  0.115  0.217  0.147  0.316  0.402\n"}
+,{"stream_name":"stdout","time":366.916378087,"data":"CD57^{+}                        immune    2957  0.686   0.861  0.104  0.192  0.076  0.289  0.299\n"}
+,{"stream_name":"stdout","time":366.916381267,"data":"Fibroblasts FSP1^{+}           stromal    4359  0.623   0.580  0.092  0.650  0.943  0.240  0.358\n"}
+,{"stream_name":"stdout","time":366.916387894,"data":"Fibroblasts                    stromal  121211  0.575   0.448  0.078  0.114  0.175  0.198  0.291\n"}
+,{"stream_name":"stdout","time":366.916390693,"data":"                           cd45    cd3   cd20   cd68\n"}
+,{"stream_name":"stdout","time":366.916393361,"data":"phenotype                                           \n"}
+,{"stream_name":"stdout","time":366.916395873,"data":"MC01 B cell               1.574  0.809  0.308  0.650\n"}
+,{"stream_name":"stdout","time":366.916398495,"data":"MC02 T \u0026 B cells          1.126  0.319  1.604  0.525\n"}
+,{"stream_name":"stdout","time":366.916401198,"data":"MC03 T cell               0.682  0.223  0.156  0.758\n"}
+,{"stream_name":"stdout","time":366.916403788,"data":"MC05 T cell               0.674  0.277  0.188  0.742\n"}
+,{"stream_name":"stdout","time":366.916406512,"data":"MC04 Macrophage           0.453  0.124  0.140  2.139\n"}
+,{"stream_name":"stdout","time":366.916424006,"data":"MC27 Myoepithelial        0.348  0.148  0.112  0.619\n"}
+,{"stream_name":"stdout","time":366.916428722,"data":"MC11 Fibronectin hi       0.241  0.105  0.078  0.491\n"}
+,{"stream_name":"stdout","time":366.916433272,"data":"MC16 Proliferative        0.235  0.133  0.198  0.437\n"}
+,{"stream_name":"stdout","time":366.916438106,"data":"MC15 Apoptotic            0.208  0.113  0.132  0.481\n"}
+,{"stream_name":"stdout","time":366.916442874,"data":"MC07 Endothelial          0.199  0.100  0.080  0.418\n"}
+,{"stream_name":"stdout","time":366.916447532,"data":"MC08 Vimentin hi          0.193  0.077  0.072  0.455\n"}
+,{"stream_name":"stdout","time":366.916451524,"data":"MC18 Basal CK             0.191  0.106  0.114  0.334\n"}
+,{"stream_name":"stdout","time":366.916455516,"data":"MC22 CK lo HR lo          0.180  0.113  0.168  0.260\n"}
+,{"stream_name":"stdout","time":366.916460024,"data":"MC17 p53+ EGFR+           0.179  0.115  0.160  0.300\n"}
+,{"stream_name":"stdout","time":366.916463941,"data":"MC19 CK7+ CK hi Ecadh hi  0.176  0.122  0.157  0.244\n"}
+,{"stream_name":"stdout","time":366.916467951,"data":"MC13 SMA hi Vimentin hi   0.168  0.125  0.035  0.879\n"}
+,{"stream_name":"stdout","time":366.916471664,"data":"MC14 Hypoxic              0.147  0.069  0.127  0.318\n"}
+,{"stream_name":"stdout","time":366.916475658,"data":"MC23 CK+ HR hi            0.130  0.085  0.125  0.191\n"}
+,{"stream_name":"stdout","time":366.916479607,"data":"MC12 Large elongated      0.126  0.046  0.037  0.325\n"}
+,{"stream_name":"stdout","time":366.916483598,"data":"MC26 CK lo HR hi p53+     0.125  0.072  0.166  0.175\n"}
+,{"stream_name":"stdout","time":366.916487516,"data":"MC24 CK+ HR+              0.119  0.065  0.096  0.207\n"}
+,{"stream_name":"stdout","time":366.916491871,"data":"MC10 Small elongated      0.111  0.042  0.045  0.274\n"}
+,{"stream_name":"stdout","time":366.916497781,"data":"MC20 CK7+                 0.104  0.073  0.098  0.180\n"}
+,{"stream_name":"stdout","time":366.916506014,"data":"MC09 Small circular       0.097  0.037  0.040  0.195\n"}
+,{"stream_name":"stdout","time":366.916508659,"data":"MC25 CK+ HR lo            0.094  0.057  0.092  0.154\n"}
+,{"stream_name":"stdout","time":366.916511645,"data":"MC06 Macrophage           0.077  0.048  0.061  1.438\n"}
+,{"stream_name":"stdout","time":366.916529592,"data":"MC21 Epithelial low       0.073  0.039  0.044  0.151\n"}
+,{"stream_name":"stdout","time":366.916534194,"data":"{\n"}
+,{"stream_name":"stdout","time":366.916538644,"data":" \"danenberg_cd45_B_cells\": 1.6589863300323486,\n"}
+,{"stream_name":"stdout","time":366.916543101,"data":" \"danenberg_cd45_CD8_T\": 1.6333061456680298,\n"}
+,{"stream_name":"stdout","time":366.916547081,"data":" \"danenberg_cd45_macrophages\": 1.7317254543304443,\n"}
+,{"stream_name":"stdout","time":366.916555961,"data":" \"danenberg_cd45_epithelial_median\": 1.098069429397583,\n"}
+,{"stream_name":"stdout","time":366.916560103,"data":" \"danenberg_r_cd45_vs_cd45ra_immune\": 0.2666603167242618,\n"}
+,{"stream_name":"stdout","time":366.91656399,"data":" \"jackson_cd45_B_cells\": 1.3499374389648438,\n"}
+,{"stream_name":"stdout","time":366.916567737,"data":" \"jackson_cd45_T_cells\": 0.6781315803527832,\n"}
+,{"stream_name":"stdout","time":366.91657168,"data":" \"jackson_cd45_macrophages\": 0.2652242183685303\n"}
+,{"stream_name":"stdout","time":366.916575724,"data":"}\n"}
+,{"stream_name":"stdout","time":366.916579315,"data":"[   5.5 min] fix 3\n"}
+,{"stream_name":"stdout","time":1230.650131361,"data":"[  19.9 min] scan danenberg epithelial: 16 markers\n"}
+,{"stream_name":"stdout","time":2237.756251472,"data":"[  36.7 min] scan danenberg immune: 24 markers\n"}
+,{"stream_name":"stdout","time":2947.701227603,"data":"[  48.5 min] scan danenberg stromal: 16 markers\n"}
+,{"stream_name":"stdout","time":4096.999265299,"data":"[  67.7 min] scan jackson epithelial: 24 markers\n"}
+,{"stream_name":"stdout","time":4781.421553231,"data":"[  79.1 min] scan jackson immune: 17 markers\n"}
+,{"stream_name":"stdout","time":5492.504321846,"data":"[  90.9 min] scan jackson stromal: 17 markers\n"}
+,{"stream_name":"stdout","time":5492.550456819,"data":"   cohort cell_class                  marker                group  n_cells  r2_own  r2_own_lo  dr2_contact  dr2_contact_lo  dr2_contact_hi  dr2_ring  dr2_ring_lo  dr2_ring_hi  contact_only\n"}
+,{"stream_name":"stdout","time":5492.550510582,"data":"  jackson     immune                    cd20       immune lineage   208636   0.496      0.319        0.031           0.018           0.044     0.051        0.010        0.076         False\n"}
+,{"stream_name":"stdout","time":5492.550516219,"data":"  jackson epithelial   carbonic_anhydrase_ix         tumour state   591813   0.434      0.368        0.013          -0.001           0.029     0.047        0.024        0.066         False\n"}
+,{"stream_name":"stdout","time":5492.550520985,"data":"danenberg epithelial           cytokeratin_5   epithelial lineage   600818   0.201      0.135        0.037           0.019           0.057     0.030        0.008        0.055         False\n"}
+,{"stream_name":"stdout","time":5492.550525266,"data":"  jackson    stromal             fibronectin   stroma and vessels   325675   0.557      0.518        0.022           0.018           0.027     0.021        0.016        0.026         False\n"}
+,{"stream_name":"stdout","time":5492.55052953,"data":"danenberg epithelial                  hla_dr antigen presentation   600818   0.425      0.309        0.011           0.003           0.022     0.017        0.003        0.038         False\n"}
+,{"stream_name":"stdout","time":5492.550533711,"data":"danenberg     immune                    cd16       immune lineage   170908   0.591      0.558        0.009           0.005           0.013     0.015        0.009        0.022         False\n"}
+,{"stream_name":"stdout","time":5492.550537891,"data":"  jackson epithelial           cytokeratin_5   epithelial lineage   591813   0.616      0.503        0.016           0.000           0.038     0.012        0.003        0.022         False\n"}
+,{"stream_name":"stdout","time":5492.55054216,"data":"danenberg epithelial    c_erb_b_2_her2_d8f12             clinical   600818   0.585      0.488        0.003          -0.001           0.007     0.011        0.002        0.021         False\n"}
+,{"stream_name":"stdout","time":5492.550546349,"data":"danenberg     immune                    cd15       immune lineage   170908   0.445      0.307        0.010          -0.004           0.028     0.011       -0.001        0.027         False\n"}
+,{"stream_name":"stdout","time":5492.550569257,"data":"danenberg     immune                   cd163       immune lineage   170908   0.471      0.427        0.007           0.002           0.012     0.009        0.003        0.016         False\n"}
+,{"stream_name":"stdout","time":5492.5505735,"data":"  jackson     immune histone_h3_trimethylate           epigenetic   208636   0.555      0.449       -0.001          -0.005           0.002     0.009       -0.003        0.020         False\n"}
+,{"stream_name":"stdout","time":5492.55057647,"data":"  jackson epithelial        keratin_14_krt14   epithelial lineage   591813   0.551      0.290        0.011          -0.007           0.040     0.009       -0.012        0.050         False\n"}
+,{"stream_name":"stdout","time":5492.550579393,"data":"  jackson     immune                    cd45       immune lineage   208636   0.746      0.701        0.006           0.004           0.010     0.009        0.004        0.016         False\n"}
+,{"stream_name":"stdout","time":5492.550582392,"data":"danenberg    stromal                     sma   stroma and vessels   290493   0.590      0.566        0.011           0.009           0.014     0.008        0.005        0.010         False\n"}
+,{"stream_name":"stdout","time":5492.550585304,"data":"  jackson    stromal                    slug         tumour state   325675   0.471      0.420        0.005           0.001           0.011     0.007        0.000        0.017         False\n"}
+,{"stream_name":"stdout","time":5492.550588217,"data":"danenberg    stromal               cd31_v_wf   stroma and vessels   290493   0.637      0.620        0.006           0.004           0.008     0.007        0.004        0.009         False\n"}
+,{"stream_name":"stdout","time":5492.550591238,"data":"  jackson    stromal                    cd44         tumour state   325675   0.569      0.536        0.007           0.005           0.009     0.006        0.003        0.009         False\n"}
+,{"stream_name":"stdout","time":5492.550620989,"data":"  jackson     immune                   ki_67        proliferation   208636   0.108      0.046        0.023           0.010           0.032     0.006       -0.002        0.012          True\n"}
+,{"stream_name":"stdout","time":5492.550626964,"data":"danenberg     immune                    cd20       immune lineage   170908   0.762      0.704        0.005           0.004           0.008     0.006        0.003        0.009         False\n"}
+,{"stream_name":"stdout","time":5492.550633139,"data":"danenberg    stromal              podoplanin   stroma and vessels   290493   0.263      0.214        0.005           0.001           0.009     0.006        0.001        0.011         False\n"}
+,{"stream_name":"stdout","time":5492.550639331,"data":"  jackson epithelial                    cd44         tumour state   591813   0.420      0.351        0.001          -0.006           0.007     0.005       -0.002        0.014         False\n"}
+,{"stream_name":"stdout","time":5492.550644943,"data":"  jackson epithelial                   ki_67        proliferation   591813   0.281      0.198        0.006          -0.002           0.012     0.005       -0.003        0.014         False\n"}
+,{"stream_name":"stdout","time":5492.550650968,"data":"  jackson     immune                    cd44         tumour state   208636   0.678      0.639        0.006           0.004           0.009     0.005        0.002        0.008         False\n"}
+,{"stream_name":"stdout","time":5492.550657012,"data":"  jackson epithelial                    slug         tumour state   591813   0.373      0.241        0.000          -0.005           0.009     0.005       -0.004        0.018         False\n"}
+,{"stream_name":"stdout","time":5492.550662337,"data":"  jackson epithelial                    egfr         tumour state   591813   0.384      0.237        0.003          -0.002           0.012     0.005       -0.002        0.018         False\n"}
+,{"stream_name":"stdout","time":5512.818709472,"data":"[  91.3 min] pre-specified danenberg CD8 T cells cd279_pd_1 vs tumour\n"}
+,{"stream_name":"stdout","time":5518.723451298,"data":"[  91.4 min] pre-specified danenberg CD8 T cells cd278_icos vs tumour\n"}
+,{"stream_name":"stdout","time":5524.509127161,"data":"[  91.5 min] pre-specified danenberg CD8 T cells ki_67 vs tumour\n"}
+,{"stream_name":"stdout","time":5541.011567541,"data":"[  91.8 min] pre-specified danenberg tumour cells hla_abc vs T cells\n"}
+,{"stream_name":"stdout","time":5557.397908713,"data":"[  92.0 min] pre-specified danenberg tumour cells beta_2_microglobulin vs T cells\n"}
+,{"stream_name":"stdout","time":5572.933468057,"data":"[  92.3 min] pre-specified danenberg tumour cells hla_dr vs T cells\n"}
+,{"stream_name":"stdout","time":5579.634550683,"data":"[  92.4 min] pre-specified danenberg macrophages cd163 vs tumour\n"}
+,{"stream_name":"stdout","time":5594.157369883,"data":"[  92.6 min] pre-specified jackson tumour cells carbonic_anhydrase_ix vs endothelial\n"}
+,{"stream_name":"stdout","time":5600.915425595,"data":"[  92.8 min] pre-specified jackson tumour cells histone_h3_trimethylate vs own CA-IX\n"}
+,{"stream_name":"stdout","time":5616.471710395,"data":"[  93.0 min] pre-specified jackson tumour cells histone_h3_trimethylate vs endothelial\n"}
+,{"stream_name":"stdout","time":5632.249600083,"data":"[  93.3 min] pre-specified jackson tumour cells histone_h3_trimethylate vs CA-IX-high tumour\n"}
+,{"stream_name":"stdout","time":5632.258910108,"data":"   cohort        cells  n_cells                  marker residual_of         neighbour      feature  expected_sign      r     lo     hi  ci_excludes_0  matches_expected\n"}
+,{"stream_name":"stdout","time":5632.258954391,"data":"danenberg  CD8 T cells    34472              cd279_pd_1        full            tumour     contacts              1  0.006 -0.006  0.018          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258963088,"data":"danenberg  CD8 T cells    34472              cd279_pd_1        full            tumour   ring count              1  0.002 -0.010  0.016          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258969197,"data":"danenberg  CD8 T cells    32839              cd279_pd_1        full            tumour log distance             -1 -0.001 -0.019  0.017          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258975302,"data":"danenberg  CD8 T cells    34472              cd278_icos        full            tumour     contacts              1 -0.003 -0.015  0.005          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258981049,"data":"danenberg  CD8 T cells    34472              cd278_icos        full            tumour   ring count              1 -0.002 -0.012  0.006          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258986844,"data":"danenberg  CD8 T cells    32839              cd278_icos        full            tumour log distance             -1 -0.003 -0.010  0.008          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258992484,"data":"danenberg  CD8 T cells    34472                   ki_67        full            tumour     contacts              1  0.002 -0.008  0.013          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.258998644,"data":"danenberg  CD8 T cells    34472                   ki_67        full            tumour   ring count              1  0.008 -0.003  0.020          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259005778,"data":"danenberg  CD8 T cells    32839                   ki_67        full            tumour log distance             -1 -0.000 -0.011  0.011          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259011367,"data":"danenberg tumour cells   600818                 hla_abc        full           T cells     contacts              1  0.001 -0.013  0.014          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259035564,"data":"danenberg tumour cells   600818                 hla_abc        full           T cells   ring count              1  0.013  0.002  0.025           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.25904313,"data":"danenberg tumour cells   567554                 hla_abc        full           T cells log distance             -1 -0.028 -0.042 -0.014           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259048308,"data":"danenberg tumour cells   600818    beta_2_microglobulin        full           T cells     contacts              1  0.013  0.001  0.025           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259053375,"data":"danenberg tumour cells   600818    beta_2_microglobulin        full           T cells   ring count              1  0.015  0.003  0.026           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259057961,"data":"danenberg tumour cells   567554    beta_2_microglobulin        full           T cells log distance             -1 -0.021 -0.034 -0.009           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259062385,"data":"danenberg tumour cells   600818                  hla_dr        full           T cells     contacts              1  0.041  0.027  0.055           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259066753,"data":"danenberg tumour cells   600818                  hla_dr        full           T cells   ring count              1  0.037  0.023  0.049           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259071145,"data":"danenberg tumour cells   567554                  hla_dr        full           T cells log distance             -1 -0.038 -0.052 -0.024           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259077281,"data":"danenberg  macrophages    40456                   cd163        full            tumour     contacts              1 -0.040 -0.053 -0.026           True               0.0\n"}
+,{"stream_name":"stdout","time":5632.259087339,"data":"danenberg  macrophages    40456                   cd163        full            tumour   ring count              1 -0.056 -0.073 -0.039           True               0.0\n"}
+,{"stream_name":"stdout","time":5632.259090246,"data":"danenberg  macrophages    38056                   cd163        full            tumour log distance             -1  0.074  0.056  0.094           True               0.0\n"}
+,{"stream_name":"stdout","time":5632.259093127,"data":"  jackson tumour cells   591813   carbonic_anhydrase_ix        full       endothelial     contacts             -1 -0.006 -0.012 -0.001           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259116119,"data":"  jackson tumour cells   591813   carbonic_anhydrase_ix        full       endothelial   ring count             -1 -0.015 -0.023 -0.007           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259121901,"data":"  jackson tumour cells   585954   carbonic_anhydrase_ix        full       endothelial log distance              1  0.097  0.069  0.125           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259158298,"data":"  jackson tumour cells   591813 histone_h3_trimethylate     nuclear         own CA-IX        value              1  0.201  0.182  0.224           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259164152,"data":"  jackson tumour cells   591813 histone_h3_trimethylate        full       endothelial     contacts             -1 -0.007 -0.013 -0.002           True               1.0\n"}
+,{"stream_name":"stdout","time":5632.259168437,"data":"  jackson tumour cells   591813 histone_h3_trimethylate        full       endothelial   ring count             -1 -0.006 -0.012  0.001          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259182317,"data":"  jackson tumour cells   585954 histone_h3_trimethylate        full       endothelial log distance              1  0.010 -0.003  0.023          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259190463,"data":"  jackson tumour cells   591813 histone_h3_trimethylate        full CA-IX-high tumour     contacts              1  0.019 -0.003  0.044          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259193268,"data":"  jackson tumour cells   591813 histone_h3_trimethylate        full CA-IX-high tumour   ring count              1  0.020 -0.006  0.050          False               NaN\n"}
+,{"stream_name":"stdout","time":5632.259196198,"data":"  jackson tumour cells   453437 histone_h3_trimethylate        full CA-IX-high tumour log distance             -1 -0.015 -0.037  0.004          False               NaN\n"}
+,{"stream_name":"stdout","time":5634.532253759,"data":"[  93.3 min] done\n"}
+,{"stream_name":"stderr","time":5639.474939137,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5639.474984403,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5639.757280484,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5639.757338917,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5640.659958958,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":5641.081975548,"data":"[NbConvertApp] Writing 75245 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":5644.644027321,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5646.131181326,"data":"[NbConvertApp] Writing 522126 bytes to __results__.html\n"}
+]

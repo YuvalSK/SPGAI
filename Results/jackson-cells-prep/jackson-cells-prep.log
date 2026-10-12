@@ -1,0 +1,125 @@
+[{"stream_name":"stderr","time":7.688529503,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.688704339,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.802627429,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.802672549,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.802682294,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.802685421,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.620109227,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.62016672,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.620171547,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.620175323,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.485268182,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/45.2 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.1/45.2 MB\u001b[0m \u001b[31m4.7 MB/s\u001b[0m eta \u001b[36m0:00:10\u001b[0m\r\u001b[2K   \u001b[91m━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.5/45.2 MB\u001b[0m \u001b[31m21.6 MB/s\u001b[0m eta \u001b[36m0:00:03\u001b[0m\r\u001b[2K   \u001b[91m━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m6.7/45.2 MB\u001b[0m \u001b[31m64.4 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m12.4/45.2 MB\u001b[0m \u001b[31m156.9 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m18.3/45.2 MB\u001b[0m \u001b[31m166.3 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m23.9/45.2 MB\u001b[0m \u001b[31m163.5 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━\u001b[0m \u001b[32m30.0/45.2 MB\u001b[0m \u001b[31m170.7 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━\u001b[0m \u001b[32m35.8/45.2 MB\u001b[0m \u001b[31m168.4 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━\u001b[0m \u001b[32m41.5/45.2 MB\u001b[0m \u001b[31m166.2 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m158.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m45.2/45.2 MB\u001b[0m \u001b[31m34.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":26.046626065,"data":"\u001b[?25h735 Kaggle images\n"}
+,{"stream_name":"stdout","time":26.246938595,"data":"free space in /tmp: 1201.5 GB\n"}
+,{"stream_name":"stdout","time":449.43073073,"data":"  Data_publication/BaselTMA/SC_dat.csv: 4.91 GB in 353s\n"}
+,{"stream_name":"stdout","time":623.658184848,"data":"  Data_publication/ZurichTMA/SC_dat.csv: 2.63 GB in 174s\n"}
+,{"stream_name":"stdout","time":701.419378712,"data":"downloads: 11.3 min\n"}
+,{"stream_name":"stdout","time":701.41942432,"data":"    Metacluster            Cell type   Class\n"}
+,{"stream_name":"stdout","time":701.419431533,"data":"0             1               B cell  Immune\n"}
+,{"stream_name":"stdout","time":701.419436781,"data":"1             2          T \u0026 B cells  Immune\n"}
+,{"stream_name":"stdout","time":701.419444546,"data":"2             3               T cell  Immune\n"}
+,{"stream_name":"stdout","time":701.419453666,"data":"3             4           Macrophage  Immune\n"}
+,{"stream_name":"stdout","time":701.419457811,"data":"4             5               T cell  Immune\n"}
+,{"stream_name":"stdout","time":701.419461406,"data":"5             6            Macrohage  Immune\n"}
+,{"stream_name":"stdout","time":701.419465684,"data":"6             7          Endothelial  Vessel\n"}
+,{"stream_name":"stdout","time":701.419484874,"data":"7             8          Vimentin hi  Stroma\n"}
+,{"stream_name":"stdout","time":701.419517498,"data":"8             9       Small circular  Stroma\n"}
+,{"stream_name":"stdout","time":701.419524727,"data":"9            10      Small elongated  Stroma\n"}
+,{"stream_name":"stdout","time":701.419528901,"data":"10           11       Fibronectin hi  Stroma\n"}
+,{"stream_name":"stdout","time":701.419534138,"data":"11           12      Large elongated  Stroma\n"}
+,{"stream_name":"stdout","time":701.419538857,"data":"12           13   SMA hi Vimentin hi  Stroma\n"}
+,{"stream_name":"stdout","time":701.419543286,"data":"13           14              Hypoxic   Tumor\n"}
+,{"stream_name":"stdout","time":701.419547947,"data":"14           15            Apoptotic   Tumor\n"}
+,{"stream_name":"stdout","time":701.419552101,"data":"15           16        Proliferative   Tumor\n"}
+,{"stream_name":"stdout","time":701.419555964,"data":"16           17           p53+ EGFR+   Tumor\n"}
+,{"stream_name":"stdout","time":701.419559975,"data":"17           18             Basal CK   Tumor\n"}
+,{"stream_name":"stdout","time":701.419563817,"data":"18           19  CK7+ CK hi Ecadh hi   Tumor\n"}
+,{"stream_name":"stdout","time":701.419567747,"data":"19           20                 CK7+   Tumor\n"}
+,{"stream_name":"stdout","time":701.419571638,"data":"20           21       Epithelial low   Tumor\n"}
+,{"stream_name":"stdout","time":701.419575649,"data":"21           22          CK lo HR lo   Tumor\n"}
+,{"stream_name":"stdout","time":701.41957969,"data":"22           23            CK+ HR hi   Tumor\n"}
+,{"stream_name":"stdout","time":701.419584409,"data":"23           24              CK+ HR+   Tumor\n"}
+,{"stream_name":"stdout","time":701.419589092,"data":"24           25            CK+ HR lo   Tumor\n"}
+,{"stream_name":"stdout","time":701.419594057,"data":"25           26     CK lo HR hi p53+   Tumor\n"}
+,{"stream_name":"stdout","time":701.419598791,"data":"26           27        Myoepithelial   Tumor\n"}
+,{"stream_name":"stdout","time":701.682870329,"data":"[{'cohort': 'basel', 'is_tumour': 0, 'n': 87}, {'cohort': 'basel', 'is_tumour': 1, 'n': 289}, {'cohort': 'zurich', 'is_tumour': 0, 'n': 83}, {'cohort': 'zurich', 'is_tumour': 1, 'n': 276}]\n"}
+,{"stream_name":"stdout","time":701.68293584,"data":"not on kaggle: 0 []\n"}
+,{"stream_name":"stdout","time":701.682941601,"data":"kaggle not in meta: 0 []\n"}
+,{"stream_name":"stdout","time":705.620302327,"data":"1,224,411 labelled cells in 708 images; 0.037 of located cells have no metacluster\n"}
+,{"stream_name":"stdout","time":724.810950455,"data":"  basel: chunk of 10,000,000 rows, 19s\n"}
+,{"stream_name":"stdout","time":743.387913114,"data":"  basel: chunk of 10,000,000 rows, 37s\n"}
+,{"stream_name":"stdout","time":760.812129132,"data":"  basel: chunk of 10,000,000 rows, 55s\n"}
+,{"stream_name":"stdout","time":777.226729121,"data":"  basel: chunk of 10,000,000 rows, 71s\n"}
+,{"stream_name":"stdout","time":792.818689211,"data":"  basel: chunk of 10,000,000 rows, 87s\n"}
+,{"stream_name":"stdout","time":800.525570174,"data":"  basel: chunk of 4,762,752 rows, 95s\n"}
+,{"stream_name":"stdout","time":820.049059842,"data":"  zurich: chunk of 10,000,000 rows, 114s\n"}
+,{"stream_name":"stdout","time":837.722675618,"data":"  zurich: chunk of 10,000,000 rows, 132s\n"}
+,{"stream_name":"stdout","time":853.998353098,"data":"  zurich: chunk of 9,452,636 rows, 148s\n"}
+,{"stream_name":"stdout","time":854.580432117,"data":"channels in SC_dat: 68 | missing values: 0.0\n"}
+,{"stream_name":"stdout","time":855.963039523,"data":"                             q01     q50      q99\n"}
+,{"stream_name":"stdout","time":855.963082523,"data":"histone_h3                 0.482   6.321   38.710\n"}
+,{"stream_name":"stdout","time":855.963120793,"data":"histone_h3_trimethylate    0.101   0.553    3.209\n"}
+,{"stream_name":"stdout","time":855.963126001,"data":"cytokeratin_5              0.000   0.113    3.782\n"}
+,{"stream_name":"stdout","time":855.963130134,"data":"fibronectin                0.285   4.521   36.372\n"}
+,{"stream_name":"stdout","time":855.963134426,"data":"cytokeratin_19             0.000   0.274   11.103\n"}
+,{"stream_name":"stdout","time":855.963139133,"data":"cytokeratin_8_18           0.000   0.302   20.101\n"}
+,{"stream_name":"stdout","time":855.963143209,"data":"twist                      0.000   0.244    1.729\n"}
+,{"stream_name":"stdout","time":855.963147172,"data":"cd68                       0.000   0.222    6.716\n"}
+,{"stream_name":"stdout","time":855.963151123,"data":"keratin_14_krt14           0.000   0.120    4.823\n"}
+,{"stream_name":"stdout","time":855.963198781,"data":"sma                        0.000   0.431   55.860\n"}
+,{"stream_name":"stdout","time":855.963203663,"data":"vimentin                   0.000   1.454   32.464\n"}
+,{"stream_name":"stdout","time":855.963208352,"data":"c_myc                      0.000   0.370    3.396\n"}
+,{"stream_name":"stdout","time":855.963213118,"data":"c_erb_b_2_her2             0.050   1.024    8.240\n"}
+,{"stream_name":"stdout","time":855.96321839,"data":"cd3                        0.000   0.069    1.170\n"}
+,{"stream_name":"stdout","time":855.963223129,"data":"histone_h3_phospho         0.000   0.225    1.850\n"}
+,{"stream_name":"stdout","time":855.963227081,"data":"slug                       0.000   0.201    5.506\n"}
+,{"stream_name":"stdout","time":855.963231069,"data":"estrogen_receptor_alpha    0.000   0.165    3.462\n"}
+,{"stream_name":"stdout","time":855.963234958,"data":"progesterone_receptor_a_b  0.023   0.546    8.534\n"}
+,{"stream_name":"stdout","time":855.963238944,"data":"p53                        0.000   0.076    0.524\n"}
+,{"stream_name":"stdout","time":855.963242868,"data":"cd44                       1.709  19.776  149.253\n"}
+,{"stream_name":"stdout","time":855.963246806,"data":"cd45                       0.000   0.130    3.637\n"}
+,{"stream_name":"stdout","time":855.963250793,"data":"gata3                      0.000   0.292   11.093\n"}
+,{"stream_name":"stdout","time":855.963254719,"data":"cd20                       0.000   0.082    1.746\n"}
+,{"stream_name":"stdout","time":855.963259074,"data":"carbonic_anhydrase_ix      0.048   0.612    9.890\n"}
+,{"stream_name":"stdout","time":855.963263055,"data":"e_cadherin_p_cadherin      0.102   1.893   19.281\n"}
+,{"stream_name":"stdout","time":855.963266899,"data":"ki_67                      0.000   0.037    7.210\n"}
+,{"stream_name":"stdout","time":855.963270946,"data":"egfr                       0.045   0.411    2.669\n"}
+,{"stream_name":"stdout","time":855.963276744,"data":"s6                         0.000   0.518    8.214\n"}
+,{"stream_name":"stdout","time":855.963296478,"data":"v_wf                       0.000   0.074    0.985\n"}
+,{"stream_name":"stdout","time":855.963301279,"data":"m_tor                      0.113   0.884    9.691\n"}
+,{"stream_name":"stdout","time":855.963306279,"data":"cytokeratin_7              0.000   0.035    7.942\n"}
+,{"stream_name":"stdout","time":855.96331124,"data":"pan_cytokeratin            0.000   2.759   96.809\n"}
+,{"stream_name":"stdout","time":855.963315989,"data":"cleaved_parp               0.000   0.596    3.218\n"}
+,{"stream_name":"stdout","time":855.963319843,"data":"dna1                       0.470   3.085   13.133\n"}
+,{"stream_name":"stdout","time":855.96332388,"data":"dna2                       0.808   5.843   24.891\n"}
+,{"stream_name":"stdout","time":856.163951801,"data":"746 masks; 0 metadata images without a mask\n"}
+,{"stream_name":"stdout","time":890.80004993,"data":"             h         w   n_table    n_mask  n_matched  n_unique  dist_max  label_eq_object\n"}
+,{"stream_name":"stdout","time":890.800093862,"data":"count  708.000   708.000   708.000   708.000    708.000   708.000     708.0          708.000\n"}
+,{"stream_name":"stdout","time":890.800101441,"data":"mean   601.609   631.383  1729.394  1729.394   1729.394  1729.394       0.0            0.136\n"}
+,{"stream_name":"stdout","time":890.800107216,"data":"std    146.305   149.924  1292.055  1292.055   1292.055  1292.055       0.0            0.216\n"}
+,{"stream_name":"stdout","time":890.800112808,"data":"min    158.000   178.000     9.000     9.000      9.000     9.000       0.0            0.000\n"}
+,{"stream_name":"stdout","time":890.800118308,"data":"25%    484.000   509.000   668.750   668.750    668.750   668.750       0.0            0.018\n"}
+,{"stream_name":"stdout","time":890.800123966,"data":"50%    555.000   617.500  1564.000  1564.000   1564.000  1564.000       0.0            0.048\n"}
+,{"stream_name":"stdout","time":890.800130615,"data":"75%    736.250   767.000  2473.000  2473.000   2473.000  2473.000       0.0            0.154\n"}
+,{"stream_name":"stdout","time":890.800136267,"data":"max    883.000  1032.000  6908.000  6908.000   6908.000  6908.000       0.0            1.000\n"}
+,{"stream_name":"stdout","time":909.722113415,"data":"mean degree by r: {1: 3.73, 2: 4.05, 3: 4.51, 4: 5.12} -\u003e r = 4\n"}
+,{"stream_name":"stdout","time":1094.226606072,"data":"6,339,338 directed contacts; matched 1.0000; label == CellId 0.136; area median 90.0\n"}
+,{"stream_name":"stdout","time":1105.260636806,"data":"{'cd45': 0.9953, 'dna1': 1.0, 'estrogen_receptor_alpha': 0.9913, 'histone_h3': 1.0, 'ki_67': 0.9714, 'pan_cytokeratin': 1.0, 'sma': 1.0} shape match: 1.0\n"}
+,{"stream_name":"stdout","time":1111.676997097,"data":"{'n_cells': 1224411, 'n_images_table': 708, 'n_patients_table': 357, 'n_tumour_images': 553, 'n_tumour_patients': 352}\n"}
+,{"stream_name":"stdout","time":1111.677048471,"data":"{\n"}
+,{"stream_name":"stdout","time":1111.677055862,"data":" \"all_35_channels_mapped\": true,\n"}
+,{"stream_name":"stdout","time":1111.677061838,"data":" \"cells_\u003e=500k\": true,\n"}
+,{"stream_name":"stdout","time":1111.677068532,"data":" \"tumour_images_\u003e=400\": true,\n"}
+,{"stream_name":"stdout","time":1111.677074426,"data":" \"mask_match_\u003e=98%\": true,\n"}
+,{"stream_name":"stdout","time":1111.677081149,"data":" \"mask_one_to_one\": true,\n"}
+,{"stream_name":"stdout","time":1111.677087828,"data":" \"alignment_dna1_r\u003e0.9\": true\n"}
+,{"stream_name":"stdout","time":1111.677092754,"data":"}\n"}
+,{"stream_name":"stderr","time":1116.604625109,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1116.604698458,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1116.835227393,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1116.835307224,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1117.605109913,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1118.017762937,"data":"[NbConvertApp] Writing 42945 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1121.164248054,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1122.369121938,"data":"[NbConvertApp] Writing 417275 bytes to __results__.html\n"}
+]

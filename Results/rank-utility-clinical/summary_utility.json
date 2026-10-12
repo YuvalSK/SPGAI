@@ -1,0 +1,66 @@
+{
+ "T1_danenberg_targets_rank_better_CI": {
+  "pam50": false,
+  "intclust": false,
+  "er": false,
+  "pr": false,
+  "her2": false,
+  "grade3": false,
+  "ln_pos": true
+ },
+ "T1_jackson_sign": {
+  "clinical_type": 1.0,
+  "grade3": 1.0,
+  "er": 1.0,
+  "pr": 1.0,
+  "her2": 1.0
+ },
+ "T1_rule_met": false,
+ "T2_dss_features+clinical_rank_better_CI": {
+  "danenberg": false,
+  "jackson": false
+ },
+ "T2_rule_met": false,
+ "utility_shown": false,
+ "T3_log_hr_rank_minus_int": {
+  "danenberg": [
+   -0.0018751164663620458,
+   -0.2005231798281201,
+   0.16279427890079848
+  ],
+  "jackson": [
+   0.10211894657441421,
+   -0.1608836451085847,
+   0.37456790716238186
+  ]
+ },
+ "T3_hr_per_sd": {
+  "danenberg": {
+   "intensity": 1.0247033389063844,
+   "rank": 1.022783701137124
+  },
+  "jackson": {
+   "intensity": 1.1226576349805166,
+   "rank": 1.2433603940508686
+  }
+ },
+ "T3_rule_met": false,
+ "M1_private_state_share": {
+  "int_coh": {
+   "danenberg": 0.0,
+   "jackson": 0.006
+  },
+  "int_img": {
+   "danenberg": 0.0,
+   "jackson": 0.0
+  },
+  "rank_coh": {
+   "danenberg": 0.0,
+   "jackson": 0.0
+  },
+  "rank_img": {
+   "danenberg": 0.0,
+   "jackson": 0.0
+  }
+ }
+}

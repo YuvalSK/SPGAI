@@ -1,0 +1,459 @@
+[{"stream_name":"stderr","time":5.808492848,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.808531895,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":6.570923878,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.57095258,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.570956416,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.570973295,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.1541654359999995,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.154206645,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.154211615,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.154215082,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":24.557429271,"data":"{\n"}
+,{"stream_name":"stdout","time":24.557465677,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":24.557470099,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":24.557486388,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":24.557490739,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":24.557494949,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":24.557499726,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":24.557503583,"data":" },\n"}
+,{"stream_name":"stdout","time":24.557506742,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":24.557510001,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":24.557513439,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":24.557517014,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":24.557520445,"data":" }\n"}
+,{"stream_name":"stdout","time":24.557527164,"data":"}\n"}
+,{"stream_name":"stdout","time":33.966194513,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":33.9662248,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":34.032562368,"data":"[   0.3 min] tables loaded\n"}
+,{"stream_name":"stdout","time":36.675587564,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 44.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":36.877893222,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 44.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":51.885049111,"data":"cache: /kaggle/input/datasets/yuvalsamoilov/your-notebook-output-files2/cv_cache | device: cuda | tasks: ['c_erb_b_2_her2', 'cd20', 'cd3', 'cd45', 'cd68', 'cytokeratin_5', 'cytokeratin_8_18', 'estrogen_receptor_alpha', 'ki_67', 'pan_cytokeratin', 'sma']\n"}
+,{"stream_name":"stdout","time":57.738436398,"data":"cells with ≥1 mask pixel: median 1.0000, min 0.9955\n"}
+,{"stream_name":"stdout","time":57.738503799,"data":"[   0.7 min] pixel maps\n"}
+,{"stream_name":"stdout","time":114.116335789,"data":"image-derived vs published table, histone_h3: r = 0.992\n"}
+,{"stream_name":"stdout","time":114.116371039,"data":"image-derived vs published table, dna1: r = 0.986\n"}
+,{"stream_name":"stdout","time":114.116377524,"data":"image-derived vs published table, pan_cytokeratin: r = 0.986\n"}
+,{"stream_name":"stdout","time":114.11638231,"data":"image-derived vs published table, estrogen_receptor_alpha: r = 0.711\n"}
+,{"stream_name":"stdout","time":114.116386838,"data":"[   1.6 min] raw per-cell means\n"}
+,{"stream_name":"stdout","time":114.531676413,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-0676ba61.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth\n"}
+,{"stream_name":"stderr","time":114.532603455,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\n"}
+,{"stream_name":"stderr","time":114.633813926,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 23%|██▎       | 22.5M/97.8M [00:00\u003c00:00, 236MB/s]\n"}
+,{"stream_name":"stderr","time":114.751744143,"data":"\r 23%|██▎       | 22.5M/97.8M [00:00\u003c00:00, 236MB/s]\r 46%|████▌     | 45.0M/97.8M [00:00\u003c00:00, 213MB/s]\n"}
+,{"stream_name":"stderr","time":114.859668979,"data":"\r 46%|████▌     | 45.0M/97.8M [00:00\u003c00:00, 213MB/s]\r 67%|██████▋   | 65.5M/97.8M [00:00\u003c00:00, 207MB/s]\n"}
+,{"stream_name":"stderr","time":114.96575218,"data":"\r 67%|██████▋   | 65.5M/97.8M [00:00\u003c00:00, 207MB/s]\r 87%|████████▋ | 85.4M/97.8M [00:00\u003c00:00, 203MB/s]\n"}
+,{"stream_name":"stderr","time":115.029835448,"data":"\r 87%|████████▋ | 85.4M/97.8M [00:00\u003c00:00, 203MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 206MB/s]\n"}
+,{"stream_name":"stderr","time":115.05981844,"data":"\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 206MB/s]\n"}
+,{"stream_name":"stderr","time":115.059846455,"data":"\n"}
+,{"stream_name":"stderr","time":115.059850307,"data":"\n"}
+,{"stream_name":"stdout","time":271.237269405,"data":"[   4.3 min] residual c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":430.180078421,"data":"[   6.9 min] residual cd20\n"}
+,{"stream_name":"stdout","time":584.482019356,"data":"[   9.5 min] residual cd3\n"}
+,{"stream_name":"stdout","time":739.427142082,"data":"[  12.1 min] residual cd45\n"}
+,{"stream_name":"stdout","time":893.954202984,"data":"[  14.6 min] residual cd68\n"}
+,{"stream_name":"stdout","time":1045.984958195,"data":"[  17.2 min] residual cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1198.915900352,"data":"[  19.7 min] residual cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1350.437657335,"data":"[  22.2 min] residual estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":1501.926503137,"data":"[  24.8 min] residual ki_67\n"}
+,{"stream_name":"stdout","time":1653.459600787,"data":"[  27.3 min] residual pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1806.789612874,"data":"[  29.8 min] residual sma\n"}
+,{"stream_name":"stdout","time":1925.647841438,"data":"[  31.8 min] gamma c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":2039.120471138,"data":"[  33.7 min] gamma cd20\n"}
+,{"stream_name":"stdout","time":2153.467670909,"data":"[  35.6 min] gamma cd3\n"}
+,{"stream_name":"stdout","time":2268.345975435,"data":"[  37.5 min] gamma cd45\n"}
+,{"stream_name":"stdout","time":2384.987121702,"data":"[  39.5 min] gamma cd68\n"}
+,{"stream_name":"stdout","time":2500.429876637,"data":"[  41.4 min] gamma cytokeratin_5\n"}
+,{"stream_name":"stdout","time":2615.655206162,"data":"[  43.3 min] gamma cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":2730.041144166,"data":"[  45.2 min] gamma estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":2843.711469669,"data":"[  47.1 min] gamma ki_67\n"}
+,{"stream_name":"stdout","time":2959.558759135,"data":"[  49.1 min] gamma pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":3073.580134015,"data":"[  51.0 min] gamma sma\n"}
+,{"stream_name":"stdout","time":3206.112595897,"data":"[  53.2 min] immuvis c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":3336.205910341,"data":"[  55.3 min] immuvis cd20\n"}
+,{"stream_name":"stdout","time":3468.164336444,"data":"[  57.5 min] immuvis cd3\n"}
+,{"stream_name":"stdout","time":3601.05887203,"data":"[  59.7 min] immuvis cd45\n"}
+,{"stream_name":"stdout","time":3729.316275202,"data":"[  61.9 min] immuvis cd68\n"}
+,{"stream_name":"stdout","time":3859.245961882,"data":"[  64.1 min] immuvis cytokeratin_5\n"}
+,{"stream_name":"stdout","time":3996.426102546,"data":"[  66.3 min] immuvis cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":4132.561074647,"data":"[  68.6 min] immuvis estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":4266.046956333,"data":"[  70.8 min] immuvis ki_67\n"}
+,{"stream_name":"stdout","time":4398.762561009,"data":"[  73.0 min] immuvis pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":4531.213662513,"data":"[  75.2 min] immuvis sma\n"}
+,{"stream_name":"stdout","time":4536.735065241,"data":"[  75.3 min] GPU pass done; per-cell table saved\n"}
+,{"stream_name":"stdout","time":4548.310117339,"data":"[  75.5 min] baseline features\n"}
+,{"stream_name":"stdout","time":4784.861346459,"data":"[  79.5 min] baselines fitted\n"}
+,{"stream_name":"stdout","time":4946.877536376,"data":"[  82.2 min] rungs c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":5098.32319429,"data":"[  84.7 min] rungs cd20\n"}
+,{"stream_name":"stdout","time":5251.60878132,"data":"[  87.3 min] rungs cd3\n"}
+,{"stream_name":"stdout","time":5408.5843733,"data":"[  89.9 min] rungs cd45\n"}
+,{"stream_name":"stdout","time":5566.146146381,"data":"[  92.5 min] rungs cd68\n"}
+,{"stream_name":"stdout","time":5712.061964697,"data":"[  94.9 min] rungs cytokeratin_5\n"}
+,{"stream_name":"stdout","time":5861.159079967,"data":"[  97.4 min] rungs cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":6016.431770248,"data":"[ 100.0 min] rungs estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":6170.298328664,"data":"[ 102.6 min] rungs ki_67\n"}
+,{"stream_name":"stdout","time":6335.997188564,"data":"[ 105.3 min] rungs pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":6502.520172918,"data":"[ 108.1 min] rungs sma\n"}
+,{"stream_name":"stdout","time":6502.703610446,"data":"rung                                                       R4  R5_input  R5_panel  pooled\n"}
+,{"stream_name":"stdout","time":6502.70364829,"data":"marker                  source                                                           \n"}
+,{"stream_name":"stdout","time":6502.703654148,"data":"c_erb_b_2_her2          B1                              0.702     0.022     0.020     NaN\n"}
+,{"stream_name":"stdout","time":6502.703686023,"data":"                        B1r                             0.704     0.021       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703690812,"data":"                        B2                              0.705     0.045     0.026     NaN\n"}
+,{"stream_name":"stdout","time":6502.703694471,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703698285,"data":"                        control: shifted true map      -0.044     0.006       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703702097,"data":"                        control: shuffled within state  0.730     0.382       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703705927,"data":"                        control: state mean             0.752    -0.393       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703709481,"data":"                        gamma                           0.433     0.052     0.032   0.349\n"}
+,{"stream_name":"stdout","time":6502.703713098,"data":"                        gamma shifted                  -0.023    -0.012       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703716452,"data":"                        gamma shifted (mean of 5)      -0.026       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703719828,"data":"                        immuvis                         0.358     0.048     0.020   0.328\n"}
+,{"stream_name":"stdout","time":6502.703723183,"data":"                        immuvis shifted                -0.025     0.006       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70372655,"data":"                        immuvis shifted (mean of 5)    -0.026       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703729879,"data":"                        residual                        0.439     0.033     0.022   0.387\n"}
+,{"stream_name":"stdout","time":6502.703733313,"data":"                        residual shifted               -0.032    -0.015       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703736612,"data":"                        residual shifted (mean of 5)   -0.032       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703740045,"data":"cd20                    B1                              0.301     0.004    -0.000     NaN\n"}
+,{"stream_name":"stdout","time":6502.703743397,"data":"                        B1r                             0.238     0.001       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70374687,"data":"                        B2                              0.324     0.089     0.029     NaN\n"}
+,{"stream_name":"stdout","time":6502.703753688,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703758907,"data":"                        control: shifted true map      -0.068    -0.011       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703761208,"data":"                        control: shuffled within state  0.403     0.102       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703763517,"data":"                        control: state mean             0.594    -0.225       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703765712,"data":"                        gamma                           0.273     0.059     0.033   0.249\n"}
+,{"stream_name":"stdout","time":6502.703768962,"data":"                        gamma shifted                  -0.031    -0.008       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703781998,"data":"                        gamma shifted (mean of 5)      -0.035       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703791068,"data":"                        immuvis                         0.089     0.030     0.006   0.189\n"}
+,{"stream_name":"stdout","time":6502.703795298,"data":"                        immuvis shifted                -0.026    -0.001       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703799276,"data":"                        immuvis shifted (mean of 5)    -0.025       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70380277,"data":"                        residual                        0.262     0.053     0.031   0.215\n"}
+,{"stream_name":"stdout","time":6502.703806137,"data":"                        residual shifted               -0.027    -0.010       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703809468,"data":"                        residual shifted (mean of 5)   -0.028       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703812878,"data":"cd3                     B1                              0.660     0.008     0.008     NaN\n"}
+,{"stream_name":"stdout","time":6502.703816297,"data":"                        B1r                             0.623     0.009       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703819706,"data":"                        B2                              0.642     0.018     0.003     NaN\n"}
+,{"stream_name":"stdout","time":6502.703823078,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703826477,"data":"                        control: shifted true map      -0.033    -0.004       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703829788,"data":"                        control: shuffled within state  0.553     0.057       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703833172,"data":"                        control: state mean             0.775    -0.204       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703836488,"data":"                        gamma                           0.223     0.001     0.004   0.121\n"}
+,{"stream_name":"stdout","time":6502.703839887,"data":"                        gamma shifted                  -0.010     0.004       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70384331,"data":"                        gamma shifted (mean of 5)      -0.013       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703846717,"data":"                        immuvis                         0.231     0.011     0.004   0.134\n"}
+,{"stream_name":"stdout","time":6502.703850467,"data":"                        immuvis shifted                -0.021    -0.007       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703853923,"data":"                        immuvis shifted (mean of 5)    -0.021       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703860962,"data":"                        residual                        0.087    -0.005    -0.004   0.088\n"}
+,{"stream_name":"stdout","time":6502.703864275,"data":"                        residual shifted               -0.006     0.004       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703876345,"data":"                        residual shifted (mean of 5)   -0.006       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703880349,"data":"cd45                    B1                              0.562     0.019     0.009     NaN\n"}
+,{"stream_name":"stdout","time":6502.703884285,"data":"                        B1r                             0.528     0.019       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703888422,"data":"                        B2                              0.552     0.091     0.039     NaN\n"}
+,{"stream_name":"stdout","time":6502.703892347,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703899206,"data":"                        control: shifted true map      -0.046     0.012       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703902675,"data":"                        control: shuffled within state  0.701     0.078       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703906077,"data":"                        control: state mean             0.844    -0.213       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70390946,"data":"                        gamma                           0.340     0.071     0.031   0.392\n"}
+,{"stream_name":"stdout","time":6502.703912718,"data":"                        gamma shifted                  -0.035    -0.004       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703915927,"data":"                        gamma shifted (mean of 5)      -0.033       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703919401,"data":"                        immuvis                         0.292     0.093     0.036   0.368\n"}
+,{"stream_name":"stdout","time":6502.703922717,"data":"                        immuvis shifted                -0.034     0.006       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70392608,"data":"                        immuvis shifted (mean of 5)    -0.030       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703929407,"data":"                        residual                        0.339     0.004     0.003   0.327\n"}
+,{"stream_name":"stdout","time":6502.703932769,"data":"                        residual shifted               -0.023    -0.022       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703936105,"data":"                        residual shifted (mean of 5)   -0.026       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703939492,"data":"cd68                    B1                              0.192     0.006     0.005     NaN\n"}
+,{"stream_name":"stdout","time":6502.703942952,"data":"                        B1r                             0.334     0.026       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703950657,"data":"                        B2                              0.201     0.027     0.013     NaN\n"}
+,{"stream_name":"stdout","time":6502.703953578,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70395615,"data":"                        control: shifted true map      -0.012     0.025       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703968064,"data":"                        control: shuffled within state  0.292     0.109       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703972767,"data":"                        control: state mean             0.511    -0.238       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703976549,"data":"                        gamma                          -0.035    -0.018    -0.011   0.063\n"}
+,{"stream_name":"stdout","time":6502.703980717,"data":"                        gamma shifted                  -0.001     0.013       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703984867,"data":"                        gamma shifted (mean of 5)       0.001       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703988326,"data":"                        immuvis                        -0.045    -0.013    -0.019   0.088\n"}
+,{"stream_name":"stdout","time":6502.703991761,"data":"                        immuvis shifted                 0.003     0.024       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.703995096,"data":"                        immuvis shifted (mean of 5)     0.003       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70399849,"data":"                        residual                       -0.051     0.009     0.012   0.061\n"}
+,{"stream_name":"stdout","time":6502.704005233,"data":"                        residual shifted                0.004     0.023       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704008752,"data":"                        residual shifted (mean of 5)    0.003       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704012102,"data":"cytokeratin_5           B1                              0.263     0.022     0.017     NaN\n"}
+,{"stream_name":"stdout","time":6502.704015492,"data":"                        B1r                             0.267     0.020       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704018834,"data":"                        B2                              0.284     0.073     0.069     NaN\n"}
+,{"stream_name":"stdout","time":6502.704022202,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70402564,"data":"                        control: shifted true map      -0.061    -0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70402899,"data":"                        control: shuffled within state  0.357     0.291       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704032322,"data":"                        control: state mean             0.341    -0.418       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704035653,"data":"                        gamma                           0.092     0.039     0.026   0.092\n"}
+,{"stream_name":"stdout","time":6502.704039177,"data":"                        gamma shifted                   0.008     0.026       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704047032,"data":"                        gamma shifted (mean of 5)       0.003       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704049918,"data":"                        immuvis                         0.134     0.001     0.009   0.082\n"}
+,{"stream_name":"stdout","time":6502.704078436,"data":"                        immuvis shifted                -0.009    -0.016       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704083223,"data":"                        immuvis shifted (mean of 5)    -0.012       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704086715,"data":"                        residual                        0.106    -0.010    -0.010   0.073\n"}
+,{"stream_name":"stdout","time":6502.704090095,"data":"                        residual shifted               -0.009    -0.010       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704093497,"data":"                        residual shifted (mean of 5)   -0.012       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704096871,"data":"cytokeratin_8_18        B1                              0.732     0.006     0.015     NaN\n"}
+,{"stream_name":"stdout","time":6502.704100265,"data":"                        B1r                             0.728     0.006       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704103653,"data":"                        B2                              0.735     0.050     0.045     NaN\n"}
+,{"stream_name":"stdout","time":6502.704107042,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704110477,"data":"                        control: shifted true map      -0.034     0.011       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704113864,"data":"                        control: shuffled within state  0.754     0.484       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70411723,"data":"                        control: state mean             0.732    -0.445       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704124355,"data":"                        gamma                           0.250     0.000     0.001   0.252\n"}
+,{"stream_name":"stdout","time":6502.704127742,"data":"                        gamma shifted                  -0.011     0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704131128,"data":"                        gamma shifted (mean of 5)      -0.009       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704134608,"data":"                        immuvis                         0.474     0.011     0.013   0.393\n"}
+,{"stream_name":"stdout","time":6502.704141454,"data":"                        immuvis shifted                -0.024    -0.005       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704144012,"data":"                        immuvis shifted (mean of 5)    -0.021       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704147235,"data":"                        residual                        0.194     0.035     0.036   0.214\n"}
+,{"stream_name":"stdout","time":6502.704179657,"data":"                        residual shifted               -0.018    -0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704184301,"data":"                        residual shifted (mean of 5)   -0.015       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704187993,"data":"estrogen_receptor_alpha B1                              0.605    -0.001    -0.002     NaN\n"}
+,{"stream_name":"stdout","time":6502.704191363,"data":"                        B1r                             0.614    -0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70419473,"data":"                        B2                              0.556     0.016    -0.000     NaN\n"}
+,{"stream_name":"stdout","time":6502.704198092,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704201539,"data":"                        control: shifted true map      -0.037     0.007       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70420505,"data":"                        control: shuffled within state  0.822     0.082       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704208501,"data":"                        control: state mean             0.909    -0.174       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704211862,"data":"                        gamma                           0.336     0.047     0.021   0.446\n"}
+,{"stream_name":"stdout","time":6502.704215302,"data":"                        gamma shifted                  -0.031    -0.015       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70421864,"data":"                        gamma shifted (mean of 5)      -0.022       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704222012,"data":"                        immuvis                         0.309     0.117     0.069   0.494\n"}
+,{"stream_name":"stdout","time":6502.704225425,"data":"                        immuvis shifted                -0.028     0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704228827,"data":"                        immuvis shifted (mean of 5)    -0.023       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704232167,"data":"                        residual                        0.531     0.095     0.068   0.577\n"}
+,{"stream_name":"stdout","time":6502.704235523,"data":"                        residual shifted               -0.037    -0.002       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704238963,"data":"                        residual shifted (mean of 5)   -0.031       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704246775,"data":"ki_67                   B1                              0.236     0.003     0.012     NaN\n"}
+,{"stream_name":"stdout","time":6502.704262733,"data":"                        B1r                             0.232     0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704267184,"data":"                        B2                              0.221     0.044     0.030     NaN\n"}
+,{"stream_name":"stdout","time":6502.704271465,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.70427562,"data":"                        control: shifted true map      -0.023     0.030       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704279559,"data":"                        control: shuffled within state  0.175     0.101       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704283477,"data":"                        control: state mean             0.322    -0.227       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704286912,"data":"                        gamma                           0.144     0.022     0.000   0.178\n"}
+,{"stream_name":"stdout","time":6502.704290298,"data":"                        gamma shifted                  -0.013     0.011       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704293656,"data":"                        gamma shifted (mean of 5)      -0.013       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.7042971,"data":"                        immuvis                         0.055    -0.006    -0.009   0.125\n"}
+,{"stream_name":"stdout","time":6502.704300432,"data":"                        immuvis shifted                -0.009     0.005       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704303819,"data":"                        immuvis shifted (mean of 5)    -0.004       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704307226,"data":"                        residual                        0.142     0.031     0.019   0.147\n"}
+,{"stream_name":"stdout","time":6502.704310677,"data":"                        residual shifted               -0.013     0.018       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704314089,"data":"                        residual shifted (mean of 5)   -0.012       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704317485,"data":"pan_cytokeratin         B1                              0.837     0.015     0.030     NaN\n"}
+,{"stream_name":"stdout","time":6502.704320906,"data":"                        B1r                             0.843     0.024       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704324229,"data":"                        B2                              0.836     0.102     0.078     NaN\n"}
+,{"stream_name":"stdout","time":6502.704327617,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704330954,"data":"                        control: shifted true map      -0.039    -0.009       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704334492,"data":"                        control: shuffled within state  0.848     0.334       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704341279,"data":"                        control: state mean             0.882    -0.370       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704344511,"data":"                        gamma                           0.523     0.059     0.047   0.494\n"}
+,{"stream_name":"stdout","time":6502.70435616,"data":"                        gamma shifted                  -0.029    -0.023       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704360269,"data":"                        gamma shifted (mean of 5)      -0.026       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704368419,"data":"                        immuvis                         0.541     0.097     0.103   0.529\n"}
+,{"stream_name":"stdout","time":6502.704372638,"data":"                        immuvis shifted                -0.025    -0.011       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704376177,"data":"                        immuvis shifted (mean of 5)    -0.023       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704380454,"data":"                        residual                        0.250     0.072     0.039   0.306\n"}
+,{"stream_name":"stdout","time":6502.704383862,"data":"                        residual shifted               -0.016    -0.005       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704387207,"data":"                        residual shifted (mean of 5)   -0.018       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704390582,"data":"sma                     B1                             -0.164     0.010     0.011     NaN\n"}
+,{"stream_name":"stdout","time":6502.704393923,"data":"                        B1r                            -0.149     0.017       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704397326,"data":"                        B2                             -0.217     0.020    -0.000     NaN\n"}
+,{"stream_name":"stdout","time":6502.704400752,"data":"                        control: identity               1.000     1.000       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704404104,"data":"                        control: shifted true map      -0.021     0.009       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704407469,"data":"                        control: shuffled within state  0.629     0.073       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704410896,"data":"                        control: state mean             0.799    -0.277       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704414863,"data":"                        gamma                           0.254    -0.014    -0.005   0.255\n"}
+,{"stream_name":"stdout","time":6502.704418628,"data":"                        gamma shifted                  -0.010    -0.011       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704422473,"data":"                        gamma shifted (mean of 5)      -0.014       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704425528,"data":"                        immuvis                         0.228    -0.038    -0.008   0.262\n"}
+,{"stream_name":"stdout","time":6502.704428677,"data":"                        immuvis shifted                -0.014    -0.002       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704432711,"data":"                        immuvis shifted (mean of 5)    -0.017       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704439807,"data":"                        residual                        0.186    -0.017    -0.013   0.241\n"}
+,{"stream_name":"stdout","time":6502.704443621,"data":"                        residual shifted               -0.011    -0.007       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6502.704447564,"data":"                        residual shifted (mean of 5)   -0.015       NaN       NaN     NaN\n"}
+,{"stream_name":"stdout","time":6504.494797351,"data":"[ 108.1 min] rungs done\n"}
+,{"stream_name":"stdout","time":6529.039876048,"data":"                 marker      status              source   n   auc  delta_vs_truth     lo     hi\n"}
+,{"stream_name":"stdout","time":6529.039912942,"data":"estrogen_receptor_alpha   ER_STATUS               truth 428 0.572           0.000  0.000  0.000\n"}
+,{"stream_name":"stdout","time":6529.039917829,"data":"estrogen_receptor_alpha   ER_STATUS            residual 428 0.336          -0.237 -0.285 -0.187\n"}
+,{"stream_name":"stdout","time":6529.039937282,"data":"estrogen_receptor_alpha   ER_STATUS               gamma 428 0.308          -0.264 -0.333 -0.192\n"}
+,{"stream_name":"stdout","time":6529.039941245,"data":"estrogen_receptor_alpha   ER_STATUS             immuvis 428 0.290          -0.283 -0.352 -0.211\n"}
+,{"stream_name":"stdout","time":6529.039944916,"data":"estrogen_receptor_alpha   ER_STATUS    residual shifted 428 0.361          -0.212 -0.276 -0.152\n"}
+,{"stream_name":"stdout","time":6529.039948739,"data":"estrogen_receptor_alpha   ER_STATUS       gamma shifted 428 0.317          -0.256 -0.330 -0.188\n"}
+,{"stream_name":"stdout","time":6529.039952486,"data":"estrogen_receptor_alpha   ER_STATUS     immuvis shifted 428 0.310          -0.262 -0.333 -0.196\n"}
+,{"stream_name":"stdout","time":6529.039956254,"data":"estrogen_receptor_alpha   ER_STATUS                  B1 428 0.673           0.100  0.053  0.158\n"}
+,{"stream_name":"stdout","time":6529.039959936,"data":"estrogen_receptor_alpha   ER_STATUS                  B2 428 0.658           0.086  0.035  0.146\n"}
+,{"stream_name":"stdout","time":6529.039963762,"data":"estrogen_receptor_alpha   ER_STATUS control: state mean 428 0.549          -0.023 -0.053  0.009\n"}
+,{"stream_name":"stdout","time":6529.039967475,"data":"         c_erb_b_2_her2 HER2_STATUS               truth 428 0.860           0.000  0.000  0.000\n"}
+,{"stream_name":"stdout","time":6529.039971171,"data":"         c_erb_b_2_her2 HER2_STATUS            residual 428 0.428          -0.432 -0.529 -0.336\n"}
+,{"stream_name":"stdout","time":6529.039974861,"data":"         c_erb_b_2_her2 HER2_STATUS               gamma 428 0.529          -0.330 -0.424 -0.238\n"}
+,{"stream_name":"stdout","time":6529.039978572,"data":"         c_erb_b_2_her2 HER2_STATUS             immuvis 428 0.584          -0.276 -0.366 -0.183\n"}
+,{"stream_name":"stdout","time":6529.03998224,"data":"         c_erb_b_2_her2 HER2_STATUS    residual shifted 428 0.451          -0.409 -0.499 -0.322\n"}
+,{"stream_name":"stdout","time":6529.039985976,"data":"         c_erb_b_2_her2 HER2_STATUS       gamma shifted 428 0.504          -0.356 -0.458 -0.265\n"}
+,{"stream_name":"stdout","time":6529.039989669,"data":"         c_erb_b_2_her2 HER2_STATUS     immuvis shifted 428 0.556          -0.303 -0.399 -0.210\n"}
+,{"stream_name":"stdout","time":6529.039993354,"data":"         c_erb_b_2_her2 HER2_STATUS                  B1 428 0.483          -0.376 -0.480 -0.271\n"}
+,{"stream_name":"stdout","time":6529.039997046,"data":"         c_erb_b_2_her2 HER2_STATUS                  B2 428 0.490          -0.369 -0.472 -0.264\n"}
+,{"stream_name":"stdout","time":6529.040000822,"data":"         c_erb_b_2_her2 HER2_STATUS control: state mean 428 0.559          -0.301 -0.393 -0.208\n"}
+,{"stream_name":"stdout","time":6879.937307088,"data":"[ 114.4 min] classifier substitution c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":7129.077116106,"data":"[ 118.5 min] classifier substitution cd20\n"}
+,{"stream_name":"stdout","time":7379.177397258,"data":"[ 122.7 min] classifier substitution cd3\n"}
+,{"stream_name":"stdout","time":7627.40984938,"data":"[ 126.9 min] classifier substitution cd45\n"}
+,{"stream_name":"stdout","time":7875.794172955,"data":"[ 131.0 min] classifier substitution cd68\n"}
+,{"stream_name":"stdout","time":8124.323888286,"data":"[ 135.1 min] classifier substitution cytokeratin_5\n"}
+,{"stream_name":"stdout","time":8371.30873443,"data":"[ 139.3 min] classifier substitution cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":8621.490354444,"data":"[ 143.4 min] classifier substitution estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":8869.908889405,"data":"[ 147.6 min] classifier substitution ki_67\n"}
+,{"stream_name":"stdout","time":9115.0477873,"data":"[ 151.6 min] classifier substitution pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":9360.935666628,"data":"[ 155.7 min] classifier substitution sma\n"}
+,{"stream_name":"stdout","time":9361.132144238,"data":"source                       B1      B2  control: state mean   gamma  gamma shifted  immuvis  immuvis shifted  residual  residual shifted   truth\n"}
+,{"stream_name":"stdout","time":9361.132167813,"data":"marker                                                                                                                                           \n"}
+,{"stream_name":"stdout","time":9361.132174084,"data":"c_erb_b_2_her2          -0.0047 -0.0032              -0.0041 -0.0082        -0.0103  -0.0217          -0.0204   -0.0123           -0.0137 -0.0001\n"}
+,{"stream_name":"stdout","time":9361.132187379,"data":"cd20                    -0.0142 -0.0127              -0.0141 -0.0122        -0.0137  -0.0133          -0.0133   -0.0122           -0.0136 -0.0005\n"}
+,{"stream_name":"stdout","time":9361.132192376,"data":"cd3                      0.0001  0.0009               0.0000 -0.0025        -0.0034  -0.0009          -0.0010   -0.0031           -0.0031 -0.0002\n"}
+,{"stream_name":"stdout","time":9361.132197071,"data":"cd45                    -0.0105 -0.0116              -0.0071 -0.0169        -0.0204  -0.0166          -0.0209   -0.0222           -0.0214 -0.0017\n"}
+,{"stream_name":"stdout","time":9361.132202183,"data":"cd68                    -0.0215 -0.0209              -0.0141 -0.0340        -0.0315  -0.0307          -0.0286   -0.0312           -0.0292  0.0003\n"}
+,{"stream_name":"stdout","time":9361.132207268,"data":"cytokeratin_5           -0.0340 -0.0352              -0.0267 -0.0781        -0.0760  -0.0434          -0.0449   -0.0477           -0.0555 -0.0009\n"}
+,{"stream_name":"stdout","time":9361.132212602,"data":"cytokeratin_8_18        -0.0409 -0.0372              -0.0457 -0.0823        -0.0881  -0.0493          -0.0614   -0.0793           -0.0857 -0.0002\n"}
+,{"stream_name":"stdout","time":9361.132217376,"data":"estrogen_receptor_alpha -0.0198 -0.0206              -0.0191 -0.0714        -0.0701  -0.0663          -0.0651   -0.0494           -0.0575 -0.0223\n"}
+,{"stream_name":"stdout","time":9361.132222437,"data":"ki_67                   -0.0344 -0.0350              -0.0269 -0.0379        -0.0397  -0.0391          -0.0392   -0.0354           -0.0379  0.0001\n"}
+,{"stream_name":"stdout","time":9361.132226536,"data":"pan_cytokeratin         -0.0623 -0.0597              -0.0447 -0.1380        -0.2079  -0.1426          -0.1931   -0.2149           -0.2387 -0.0012\n"}
+,{"stream_name":"stdout","time":9361.132231528,"data":"sma                     -0.0539 -0.0571              -0.0144 -0.0605        -0.0652  -0.0357          -0.0423   -0.0363           -0.0397 -0.0001\n"}
+,{"stream_name":"stdout","time":9377.702730019,"data":"source                      B1     B2  control: state mean  gamma  gamma shifted  immuvis  immuvis shifted  residual  residual shifted\n"}
+,{"stream_name":"stdout","time":9377.70277586,"data":"marker                                                                                                                                \n"}
+,{"stream_name":"stdout","time":9377.702781065,"data":"c_erb_b_2_her2           0.424  0.438                0.506  0.209          0.163    0.266            0.126     0.259             0.140\n"}
+,{"stream_name":"stdout","time":9377.702784364,"data":"cd20                     0.456  0.533                0.701  0.250          0.134    0.032            0.123     0.202             0.127\n"}
+,{"stream_name":"stdout","time":9377.70278747,"data":"cd3                      0.588  0.588                0.897 -0.029         -0.062    0.053            0.085     0.041            -0.017\n"}
+,{"stream_name":"stdout","time":9377.702790529,"data":"cd45                     0.669  0.688                0.842  0.233          0.271    0.377            0.425     0.040             0.116\n"}
+,{"stream_name":"stdout","time":9377.70280155,"data":"cd68                     0.415  0.445                0.770 -0.066          0.037   -0.082            0.119     0.030             0.215\n"}
+,{"stream_name":"stdout","time":9377.702803975,"data":"cytokeratin_5            0.284  0.344                0.608  0.107          0.118    0.095            0.017     0.097             0.028\n"}
+,{"stream_name":"stdout","time":9377.702806344,"data":"cytokeratin_8_18         0.572  0.600                0.564  0.035         -0.045    0.466            0.144     0.134             0.009\n"}
+,{"stream_name":"stdout","time":9377.70280924,"data":"estrogen_receptor_alpha  0.775  0.786                0.853 -0.069          0.003   -0.038            0.054     0.315             0.194\n"}
+,{"stream_name":"stdout","time":9377.702811607,"data":"ki_67                    0.458  0.466                0.558  0.361          0.316    0.037            0.078     0.180             0.118\n"}
+,{"stream_name":"stdout","time":9377.702813854,"data":"pan_cytokeratin          0.561  0.582                0.620  0.339          0.032    0.446            0.152     0.136             0.017\n"}
+,{"stream_name":"stdout","time":9377.702816175,"data":"sma                     -0.134 -0.169                0.848  0.164          0.096    0.077            0.036     0.280             0.165\n"}
+,{"stream_name":"stdout","time":9377.702818473,"data":"[ 156.0 min] readouts done\n"}
+,{"stream_name":"stdout","time":9378.40266801,"data":"                         shifted_R4  state_R4  state_R5  shuffled_R4  shuffled_R5\n"}
+,{"stream_name":"stdout","time":9378.40270277,"data":"c_erb_b_2_her2               -0.044     0.752    -0.393        0.730        0.382\n"}
+,{"stream_name":"stdout","time":9378.402708224,"data":"cd20                         -0.068     0.594    -0.225        0.403        0.102\n"}
+,{"stream_name":"stdout","time":9378.402712485,"data":"cd3                          -0.033     0.775    -0.204        0.553        0.057\n"}
+,{"stream_name":"stdout","time":9378.402716713,"data":"cd45                         -0.046     0.844    -0.213        0.701        0.078\n"}
+,{"stream_name":"stdout","time":9378.402721233,"data":"cd68                         -0.012     0.511    -0.238        0.292        0.109\n"}
+,{"stream_name":"stdout","time":9378.402725599,"data":"cytokeratin_5                -0.061     0.341    -0.418        0.357        0.291\n"}
+,{"stream_name":"stdout","time":9378.402729678,"data":"cytokeratin_8_18             -0.034     0.732    -0.445        0.754        0.484\n"}
+,{"stream_name":"stdout","time":9378.402733843,"data":"estrogen_receptor_alpha      -0.037     0.909    -0.174        0.822        0.082\n"}
+,{"stream_name":"stdout","time":9378.402738018,"data":"ki_67                        -0.023     0.322    -0.227        0.175        0.101\n"}
+,{"stream_name":"stdout","time":9378.402742123,"data":"pan_cytokeratin              -0.039     0.882    -0.370        0.848        0.334\n"}
+,{"stream_name":"stdout","time":9378.402746375,"data":"sma                          -0.021     0.799    -0.277        0.629        0.073\n"}
+,{"stream_name":"stdout","time":9379.036894835,"data":"{\n"}
+,{"stream_name":"stdout","time":9379.036920081,"data":" \"failed_blocks\": [],\n"}
+,{"stream_name":"stdout","time":9379.036924733,"data":" \"image_beats_table_R4\": {\n"}
+,{"stream_name":"stdout","time":9379.036928566,"data":"  \"residual\": {\n"}
+,{"stream_name":"stdout","time":9379.03693301,"data":"   \"B1\": [\n"}
+,{"stream_name":"stdout","time":9379.036943388,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.03694598,"data":"   ],\n"}
+,{"stream_name":"stdout","time":9379.036948289,"data":"   \"B2\": [\n"}
+,{"stream_name":"stdout","time":9379.036958516,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.03696109,"data":"   ],\n"}
+,{"stream_name":"stdout","time":9379.036963389,"data":"   \"B1r\": [\n"}
+,{"stream_name":"stdout","time":9379.036965795,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.036968112,"data":"   ]\n"}
+,{"stream_name":"stdout","time":9379.036970535,"data":"  },\n"}
+,{"stream_name":"stdout","time":9379.036972784,"data":"  \"gamma\": {\n"}
+,{"stream_name":"stdout","time":9379.036975268,"data":"   \"B1\": [\n"}
+,{"stream_name":"stdout","time":9379.036977577,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.036979871,"data":"   ],\n"}
+,{"stream_name":"stdout","time":9379.03698212,"data":"   \"B2\": [\n"}
+,{"stream_name":"stdout","time":9379.036984502,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.036986806,"data":"   ],\n"}
+,{"stream_name":"stdout","time":9379.036989064,"data":"   \"B1r\": [\n"}
+,{"stream_name":"stdout","time":9379.036991374,"data":"    \"cd20\",\n"}
+,{"stream_name":"stdout","time":9379.036993809,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.036996086,"data":"   ]\n"}
+,{"stream_name":"stdout","time":9379.036998429,"data":"  },\n"}
+,{"stream_name":"stdout","time":9379.037000679,"data":"  \"immuvis\": {\n"}
+,{"stream_name":"stdout","time":9379.037003037,"data":"   \"B1\": [\n"}
+,{"stream_name":"stdout","time":9379.037005339,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.037007613,"data":"   ],\n"}
+,{"stream_name":"stdout","time":9379.037009857,"data":"   \"B2\": [\n"}
+,{"stream_name":"stdout","time":9379.037012157,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.037014444,"data":"   ],\n"}
+,{"stream_name":"stdout","time":9379.037016666,"data":"   \"B1r\": [\n"}
+,{"stream_name":"stdout","time":9379.037018982,"data":"    \"sma\"\n"}
+,{"stream_name":"stdout","time":9379.037021268,"data":"   ]\n"}
+,{"stream_name":"stdout","time":9379.037023507,"data":"  }\n"}
+,{"stream_name":"stdout","time":9379.037025766,"data":" },\n"}
+,{"stream_name":"stdout","time":9379.03702804,"data":" \"image_beats_table\": false,\n"}
+,{"stream_name":"stdout","time":9379.037030499,"data":" \"beyond_panel_R5_vs_shift\": {\n"}
+,{"stream_name":"stdout","time":9379.037032875,"data":"  \"residual\": [\n"}
+,{"stream_name":"stdout","time":9379.03703523,"data":"   \"c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":9379.037037628,"data":"   \"cd20\",\n"}
+,{"stream_name":"stdout","time":9379.037039965,"data":"   \"cd45\",\n"}
+,{"stream_name":"stdout","time":9379.037042264,"data":"   \"cytokeratin_8_18\",\n"}
+,{"stream_name":"stdout","time":9379.037044637,"data":"   \"estrogen_receptor_alpha\",\n"}
+,{"stream_name":"stdout","time":9379.037047041,"data":"   \"ki_67\",\n"}
+,{"stream_name":"stdout","time":9379.037049351,"data":"   \"pan_cytokeratin\"\n"}
+,{"stream_name":"stdout","time":9379.037083093,"data":"  ],\n"}
+,{"stream_name":"stdout","time":9379.037087584,"data":"  \"gamma\": [\n"}
+,{"stream_name":"stdout","time":9379.037091147,"data":"   \"c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":9379.037094731,"data":"   \"cd20\",\n"}
+,{"stream_name":"stdout","time":9379.03709819,"data":"   \"cd45\",\n"}
+,{"stream_name":"stdout","time":9379.037101743,"data":"   \"estrogen_receptor_alpha\",\n"}
+,{"stream_name":"stdout","time":9379.037105375,"data":"   \"pan_cytokeratin\"\n"}
+,{"stream_name":"stdout","time":9379.037108906,"data":"  ],\n"}
+,{"stream_name":"stdout","time":9379.037112441,"data":"  \"immuvis\": [\n"}
+,{"stream_name":"stdout","time":9379.037120571,"data":"   \"c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":9379.037124232,"data":"   \"cd20\",\n"}
+,{"stream_name":"stdout","time":9379.037129604,"data":"   \"cd3\",\n"}
+,{"stream_name":"stdout","time":9379.037136977,"data":"   \"cd45\",\n"}
+,{"stream_name":"stdout","time":9379.037139657,"data":"   \"estrogen_receptor_alpha\",\n"}
+,{"stream_name":"stdout","time":9379.037142009,"data":"   \"pan_cytokeratin\"\n"}
+,{"stream_name":"stdout","time":9379.037144335,"data":"  ]\n"}
+,{"stream_name":"stdout","time":9379.037146577,"data":" },\n"}
+,{"stream_name":"stdout","time":9379.037148889,"data":" \"beyond_panel\": true,\n"}
+,{"stream_name":"stdout","time":9379.037151289,"data":" \"D1_pairs\": [\n"}
+,{"stream_name":"stdout","time":9379.037153645,"data":"  {\n"}
+,{"stream_name":"stdout","time":9379.037155879,"data":"   \"marker\": \"cd45\",\n"}
+,{"stream_name":"stdout","time":9379.037158354,"data":"   \"a\": \"residual\",\n"}
+,{"stream_name":"stdout","time":9379.037160718,"data":"   \"b\": \"immuvis\",\n"}
+,{"stream_name":"stdout","time":9379.037163136,"data":"   \"pooled_diff\": -0.040710309468272476,\n"}
+,{"stream_name":"stdout","time":9379.03716564,"data":"   \"r4_diff\": 0.04694903389438354\n"}
+,{"stream_name":"stdout","time":9379.037168166,"data":"  },\n"}
+,{"stream_name":"stdout","time":9379.037170426,"data":"  {\n"}
+,{"stream_name":"stdout","time":9379.037172845,"data":"   \"marker\": \"estrogen_receptor_alpha\",\n"}
+,{"stream_name":"stdout","time":9379.037175331,"data":"   \"a\": \"gamma\",\n"}
+,{"stream_name":"stdout","time":9379.037177694,"data":"   \"b\": \"immuvis\",\n"}
+,{"stream_name":"stdout","time":9379.037180082,"data":"   \"pooled_diff\": -0.04753097496023995,\n"}
+,{"stream_name":"stdout","time":9379.037182495,"data":"   \"r4_diff\": 0.026766770625010372\n"}
+,{"stream_name":"stdout","time":9379.037184864,"data":"  }\n"}
+,{"stream_name":"stdout","time":9379.037187095,"data":" ],\n"}
+,{"stream_name":"stdout","time":9379.037189331,"data":" \"D1\": true,\n"}
+,{"stream_name":"stdout","time":9379.037191654,"data":" \"D2_lomo_r2\": {\n"}
+,{"stream_name":"stdout","time":9379.037194002,"data":"  \"f1_delta\": {\n"}
+,{"stream_name":"stdout","time":9379.03719636,"data":"   \"pooled\": -0.2368176095589276,\n"}
+,{"stream_name":"stdout","time":9379.037198751,"data":"   \"pooled+R4+R5_input\": -0.4174971910229377,\n"}
+,{"stream_name":"stdout","time":9379.037201182,"data":"   \"gain\": -0.1806795814640101\n"}
+,{"stream_name":"stdout","time":9379.037203559,"data":"  },\n"}
+,{"stream_name":"stdout","time":9379.037205797,"data":"  \"mplus_r\": {\n"}
+,{"stream_name":"stdout","time":9379.037208131,"data":"   \"pooled\": -0.013875799298717295,\n"}
+,{"stream_name":"stdout","time":9379.037210517,"data":"   \"pooled+R4+R5_input\": -0.06747963494700171,\n"}
+,{"stream_name":"stdout","time":9379.037212929,"data":"   \"gain\": -0.053603835648284415\n"}
+,{"stream_name":"stdout","time":9379.037216285,"data":"  }\n"}
+,{"stream_name":"stdout","time":9379.037220263,"data":" },\n"}
+,{"stream_name":"stdout","time":9379.037223101,"data":" \"D2\": false,\n"}
+,{"stream_name":"stdout","time":9379.037225428,"data":" \"outcome\": \"GO\",\n"}
+,{"stream_name":"stdout","time":9379.037227813,"data":" \"controls_valid\": {\n"}
+,{"stream_name":"stdout","time":9379.037230151,"data":"  \"shifted_R4_below_0_05\": 9,\n"}
+,{"stream_name":"stdout","time":9379.03723251,"data":"  \"state_R5_below_0_05\": 0,\n"}
+,{"stream_name":"stdout","time":9379.037234875,"data":"  \"shuffled_R5_below_0_05\": 0,\n"}
+,{"stream_name":"stdout","time":9379.037240022,"data":"  \"shuffled_R4_above_0_1\": 11,\n"}
+,{"stream_name":"stdout","time":9379.037242501,"data":"  \"n_markers\": 11\n"}
+,{"stream_name":"stdout","time":9379.037244897,"data":" }\n"}
+,{"stream_name":"stdout","time":9379.037247162,"data":"}\n"}
+,{"stream_name":"stdout","time":9379.037249444,"data":"[ 156.0 min] done\n"}
+,{"stream_name":"stderr","time":9384.623033901,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9384.623062851,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9384.768491837,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9384.768530731,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9385.341601802,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":9385.646129463,"data":"[NbConvertApp] Writing 122935 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":9387.90763171,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9389.028631437,"data":"[NbConvertApp] Writing 710936 bytes to __results__.html\n"}
+]

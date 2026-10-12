@@ -1,0 +1,445 @@
+{
+ "name_mismatches_table_vs_stackorder": [
+  [
+   "c-Caspase3",
+   "c-Caspase3c-PARP"
+  ]
+ ],
+ "n_cells": 1123466,
+ "n_images_table": 794,
+ "n_patients_table": 718,
+ "n_tumour_images": 749,
+ "images_missing_on_kaggle": [],
+ "kaggle_images_not_in_table": [],
+ "channel_map": {
+  "Histone H3": "histone_h3",
+  "SMA": "sma",
+  "CK5": "cytokeratin_5",
+  "CD38": "cd38",
+  "HLA-DR": "hla_dr",
+  "CK8-18": "cytokeratin_8_18",
+  "CD15": "cd15",
+  "FSP1": "fsp1",
+  "CD163": "cd163",
+  "ICOS": "cd278_icos",
+  "OX40": "cd134",
+  "CD68": "cd68",
+  "HER2 (3B5)": "c_erb_b_2_her2_3b5",
+  "CD3": "cd3",
+  "Podoplanin": "podoplanin",
+  "CD11c": "cd11c",
+  "PD-1": "cd279_pd_1",
+  "GITR": "gitr_tnfrsf18",
+  "CD16": "cd16",
+  "HER2 (D8F12)": "c_erb_b_2_her2_d8f12",
+  "CD45RA": "cd45ra",
+  "B2M": "beta_2_microglobulin",
+  "CD45RO": "cd45",
+  "FOXP3": "foxp3",
+  "CD20": "cd20",
+  "ER": "estrogen_receptor_alpha",
+  "CD8": "cd8a",
+  "CD57": "cd57",
+  "Ki-67": "ki_67",
+  "PDGFRB": "cd140b_pdgf_receptor_beta",
+  "Caveolin-1": "caveolin_1",
+  "CD4": "cd4",
+  "CD31-vWF": "cd31_v_wf",
+  "CXCL12": "cxcl12_sdf_1",
+  "HLA-ABC": "hla_abc",
+  "panCK": "pan_cytokeratin",
+  "c-Caspase3": "cleaved_caspase3",
+  "DNA1": "dna1",
+  "DNA2": "dna2"
+ },
+ "phenotypes": {
+  "Fibroblasts": 130335,
+  "CK^{med}ER^{lo}": 119337,
+  "Myofibroblasts": 94931,
+  "CK^{lo}ER^{lo}": 86605,
+  "CK8-18^{hi}CXCL12^{hi}": 74830,
+  "CK^{+} CXCL12^{+}": 64941,
+  "ER^{hi}CXCL12^{+}": 58161,
+  "Endothelial": 54349,
+  "CD15^{+}": 46172,
+  "Macrophages": 42258,
+  "CD8^{+} T cells": 37061,
+  "HER2^{+}": 35917,
+  "B cells": 30798,
+  "Basal": 29583,
+  "Myofibroblasts PDPN^{+}": 28465,
+  "Ep Ki67^{+}": 25203,
+  "CK8-18^{+} ER^{hi}": 23491,
+  "CD4^{+} T cells & APCs": 20502,
+  "CK^{lo}ER^{med}": 17920,
+  "CD4^{+} T cells": 16473,
+  "CK8-18^{hi}ER^{lo}": 14327,
+  "Ep CD57^{+}": 13813,
+  "CD38^{+} lymphocytes": 11823,
+  "MHC I & II^{hi}": 7600,
+  "MHC I^{hi}CD57^{+}": 7224,
+  "T_{Reg} & T_{Ex}": 6631,
+  "Granulocytes": 6525,
+  "Fibroblasts FSP1^{+}": 4707,
+  "MHC^{hi}CD15^{+}": 4395,
+  "Macrophages & granulocytes": 4077,
+  "CD57^{+}": 2999,
+  "Ki67^{+}": 2013
+ },
+ "channel_quantiles": {
+  "histone_h3": [
+   0.449,
+   15.561,
+   116.97
+  ],
+  "sma": [
+   0.012,
+   0.761,
+   8.835
+  ],
+  "cytokeratin_5": [
+   0.0,
+   0.093,
+   5.297
+  ],
+  "cd38": [
+   0.019,
+   0.231,
+   1.72
+  ],
+  "hla_dr": [
+   0.028,
+   0.472,
+   14.983
+  ],
+  "cytokeratin_8_18": [
+   0.0,
+   0.107,
+   9.053
+  ],
+  "cd15": [
+   0.0,
+   0.065,
+   9.6
+  ],
+  "fsp1": [
+   0.0,
+   0.158,
+   1.989
+  ],
+  "cd163": [
+   0.0,
+   0.058,
+   0.748
+  ],
+  "cd278_icos": [
+   0.0,
+   0.06,
+   0.466
+  ],
+  "cd134": [
+   0.0,
+   0.034,
+   0.186
+  ],
+  "cd68": [
+   0.0,
+   0.108,
+   2.973
+  ],
+  "c_erb_b_2_her2_3b5": [
+   0.056,
+   0.999,
+   11.526
+  ],
+  "cd3": [
+   0.0,
+   0.141,
+   0.857
+  ],
+  "podoplanin": [
+   0.02,
+   0.244,
+   1.574
+  ],
+  "cd11c": [
+   0.0,
+   0.15,
+   0.888
+  ],
+  "cd279_pd_1": [
+   0.0,
+   0.083,
+   0.45
+  ],
+  "gitr_tnfrsf18": [
+   0.0,
+   0.103,
+   0.497
+  ],
+  "cd16": [
+   0.0,
+   0.104,
+   1.574
+  ],
+  "c_erb_b_2_her2_d8f12": [
+   0.006,
+   0.291,
+   9.722
+  ],
+  "cd45ra": [
+   0.099,
+   1.147,
+   7.48
+  ],
+  "beta_2_microglobulin": [
+   0.025,
+   0.526,
+   5.662
+  ],
+  "cd45": [
+   0.137,
+   1.235,
+   8.458
+  ],
+  "foxp3": [
+   0.0,
+   0.048,
+   0.34
+  ],
+  "cd20": [
+   0.004,
+   0.248,
+   4.453
+  ],
+  "estrogen_receptor_alpha": [
+   0.377,
+   7.645,
+   127.52
+  ],
+  "cd8a": [
+   0.026,
+   0.411,
+   3.818
+  ],
+  "cd57": [
+   0.041,
+   0.578,
+   19.025
+  ],
+  "ki_67": [
+   0.0,
+   0.037,
+   3.002
+  ],
+  "cd140b_pdgf_receptor_beta": [
+   0.017,
+   0.325,
+   2.38
+  ],
+  "caveolin_1": [
+   0.038,
+   0.468,
+   10.427
+  ],
+  "cd4": [
+   0.045,
+   0.524,
+   2.719
+  ],
+  "cd31_v_wf": [
+   0.029,
+   0.34,
+   2.132
+  ],
+  "cxcl12_sdf_1": [
+   0.0,
+   0.159,
+   5.947
+  ],
+  "hla_abc": [
+   0.065,
+   1.12,
+   14.383
+  ],
+  "pan_cytokeratin": [
+   0.029,
+   2.205,
+   92.577
+  ],
+  "cleaved_caspase3": [
+   0.0,
+   0.169,
+   1.344
+  ],
+  "dna1": [
+   3.045,
+   20.544,
+   73.095
+  ],
+  "dna2": [
+   5.817,
+   39.306,
+   139.487
+  ]
+ },
+ "n_contacts": 6530904,
+ "clinical_coverage": {
+  "ER_STATUS": 0.850974930362117,
+  "HER2_STATUS": 0.8495821727019499,
+  "CLAUDIN_SUBTYPE": 0.8495821727019499,
+  "OS_MONTHS": 0.8495821727019499
+ },
+ "patients_without_clinical": [
+  "MB-0013",
+  "MB-0018",
+  "MB-0030",
+  "MB-0040",
+  "MB-0043",
+  "MB-0073",
+  "MB-0075",
+  "MB-0077",
+  "MB-0085",
+  "MB-0089",
+  "MB-0091",
+  "MB-0103",
+  "MB-0105",
+  "MB-0118",
+  "MB-0132",
+  "MB-0137",
+  "MB-0141",
+  "MB-0161",
+  "MB-0182",
+  "MB-0183",
+  "MB-0186",
+  "MB-0190",
+  "MB-0208",
+  "MB-0212",
+  "MB-0216",
+  "MB-0237",
+  "MB-0240",
+  "MB-0246",
+  "MB-0252",
+  "MB-0254",
+  "MB-0255",
+  "MB-0271",
+  "MB-0277",
+  "MB-0296",
+  "MB-0300",
+  "MB-0334",
+  "MB-0357",
+  "MB-0387",
+  "MB-0409",
+  "MB-0415",
+  "MB-0416",
+  "MB-0433",
+  "MB-0441",
+  "MB-0456",
+  "MB-0457",
+  "MB-0461",
+  "MB-0473",
+  "MB-0498",
+  "MB-0515",
+  "MB-0518",
+  "MB-0520",
+  "MB-0523",
+  "MB-0530",
+  "MB-0555",
+  "MB-0556",
+  "MB-0557",
+  "MB-0562",
+  "MB-0563",
+  "MB-0565",
+  "MB-0595",
+  "MB-0602",
+  "MB-0604",
+  "MB-0612",
+  "MB-0622",
+  "MB-0625",
+  "MB-0629",
+  "MB-0633",
+  "MB-0645",
+  "MB-0647",
+  "MB-0648",
+  "MB-0665",
+  "MB-0668",
+  "MB-0890",
+  "MB-0910",
+  "MB-0913",
+  "MB-0914",
+  "MB-0915",
+  "MB-0921",
+  "MB-2578",
+  "MB-2622",
+  "MB-2630",
+  "MB-2640",
+  "MB-2641",
+  "MB-2810",
+  "MB-2828",
+  "MB-2862",
+  "MB-3020",
+  "MB-3082",
+  "MB-3087",
+  "MB-3089",
+  "MB-3315",
+  "MB-3370",
+  "MB-3427",
+  "MB-3475",
+  "MB-3495",
+  "MB-3509",
+  "MB-3560",
+  "MB-3637",
+  "MB-3667",
+  "MB-3674",
+  "MB-3680",
+  "MB-3685",
+  "MB-3688",
+  "MB-3692",
+  "MB-3747",
+  "MB-3804",
+  "MB-3876"
+ ],
+ "split_sizes": {
+  "train": 431,
+  "val": 144,
+  "test": 143
+ },
+ "split_by_er": {
+  "NA": {
+   "test": 22,
+   "train": 64,
+   "val": 21
+  },
+  "Negative": {
+   "test": 26,
+   "train": 79,
+   "val": 28
+  },
+  "Positive": {
+   "test": 95,
+   "train": 288,
+   "val": 95
+  }
+ },
+ "masks_written": 794,
+ "mask_shape_match_frac": 1.0,
+ "mask_cells_matched_frac": 0.9999715167170168,
+ "mask_one_to_one": true,
+ "mask_dist_max": 15.95878468742549,
+ "alignment_r_median_by_channel": {
+  "dna1": 0.9871,
+  "dna2": 0.9872,
+  "estrogen_receptor_alpha": 0.7462,
+  "histone_h3": 0.9904,
+  "pan_cytokeratin": 0.9781
+ },
+ "alignment_r_min": 0.26888087944432193,
+ "checks": {
+  "all_table_images_on_kaggle": true,
+  "mask_shapes_match": true,
+  "mask_match_>=99%": true,
+  "mask_one_to_one": true,
+  "alignment_dna1_r>0.9": true,
+  "clinical_er_coverage>=0.8": true
+ }
+}

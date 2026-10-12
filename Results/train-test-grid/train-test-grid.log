@@ -1,0 +1,354 @@
+[{"stream_name":"stderr","time":13.504519502,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":13.504581473,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":15.235853232,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":15.235886907,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":15.23589224,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":15.235896561,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":16.20318284,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":16.203210598,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":16.203214185,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":16.203217125,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":49.511501228,"data":"{\n"}
+,{"stream_name":"stdout","time":49.511534767,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":49.511539517,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":49.51154348,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":49.511547284,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":49.511550742,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":49.511554186,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":49.511557747,"data":" },\n"}
+,{"stream_name":"stdout","time":49.51156092,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":49.511564272,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":49.511567679,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":49.511571117,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":49.511574623,"data":" }\n"}
+,{"stream_name":"stdout","time":49.511577863,"data":"}\n"}
+,{"stream_name":"stdout","time":59.993268998,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":59.99331899,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":60.070899532,"data":"[   0.4 min] tables loaded\n"}
+,{"stream_name":"stdout","time":64.843512006,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 42.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":65.04584142,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 42.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":138.227693729,"data":"[   1.7 min] kill-test outputs loaded; per-cell image means recomputed\n"}
+,{"stream_name":"stdout","time":149.478974956,"data":"non-finite targets: Jackson 0, Danenberg 448\n"}
+,{"stream_name":"stdout","time":157.747425976,"data":"kNN graphs: mean degree Jackson 11.4, Danenberg 11.3; device cuda\n"}
+,{"stream_name":"stdout","time":160.518965577,"data":"[   2.1 min] features and graphs\n"}
+,{"stream_name":"stdout","time":161.150582754,"data":"Danenberg test: 228,511 cells, 130 patients\n"}
+,{"stream_name":"stdout","time":161.211625324,"data":"[   2.1 min] replicate 0\n"}
+,{"stream_name":"stdout","time":162.306465778,"data":"Jackson {'train': (806958, 251), 'val': (89348, 32), 'test': (229818, 66)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":162.306504039,"data":"Danenberg {'train': (728537, 465), 'val': (105171, 55), 'test': (228511, 130)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":212.374751802,"data":"[   2.9 min] rep 0, train on Jackson: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":277.455723799,"data":"[   4.0 min] rep 0, train on Jackson: trained cd20\n"}
+,{"stream_name":"stdout","time":361.111072871,"data":"[   5.4 min] rep 0, train on Jackson: trained cd3\n"}
+,{"stream_name":"stdout","time":548.389506158,"data":"[   8.5 min] rep 0, train on Jackson: trained cd45\n"}
+,{"stream_name":"stdout","time":663.620970302,"data":"[  10.5 min] rep 0, train on Jackson: trained cd68\n"}
+,{"stream_name":"stdout","time":743.635991421,"data":"[  11.8 min] rep 0, train on Jackson: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":798.427623663,"data":"[  12.7 min] rep 0, train on Jackson: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":856.653073623,"data":"[  13.7 min] rep 0, train on Jackson: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":906.130738217,"data":"[  14.5 min] rep 0, train on Jackson: trained ki_67\n"}
+,{"stream_name":"stdout","time":1036.036831022,"data":"[  16.7 min] rep 0, train on Jackson: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1196.964596393,"data":"[  19.4 min] rep 0, train on Jackson: trained sma\n"}
+,{"stream_name":"stdout","time":1290.827339988,"data":"[  20.9 min] rep 0, train on Danenberg: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":1398.176638295,"data":"[  22.7 min] rep 0, train on Danenberg: trained cd20\n"}
+,{"stream_name":"stdout","time":1521.272331115,"data":"[  24.8 min] rep 0, train on Danenberg: trained cd3\n"}
+,{"stream_name":"stdout","time":1630.536452287,"data":"[  26.6 min] rep 0, train on Danenberg: trained cd45\n"}
+,{"stream_name":"stdout","time":1747.152789051,"data":"[  28.5 min] rep 0, train on Danenberg: trained cd68\n"}
+,{"stream_name":"stdout","time":1772.494541064,"data":"[  28.9 min] rep 0, train on Danenberg: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1814.733128985,"data":"[  29.6 min] rep 0, train on Danenberg: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1983.079195843,"data":"[  32.5 min] rep 0, train on Danenberg: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":2012.921880901,"data":"[  33.0 min] rep 0, train on Danenberg: trained ki_67\n"}
+,{"stream_name":"stdout","time":2156.238762911,"data":"[  35.3 min] rep 0, train on Danenberg: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":2341.517387831,"data":"[  38.4 min] rep 0, train on Danenberg: trained sma\n"}
+,{"stream_name":"stdout","time":2515.494586759,"data":"[  41.3 min] rep 0, train on Both: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":2784.650067277,"data":"[  45.8 min] rep 0, train on Both: trained cd20\n"}
+,{"stream_name":"stdout","time":3198.689579354,"data":"[  52.7 min] rep 0, train on Both: trained cd3\n"}
+,{"stream_name":"stdout","time":3526.992564588,"data":"[  58.2 min] rep 0, train on Both: trained cd45\n"}
+,{"stream_name":"stdout","time":3921.432748419,"data":"[  64.8 min] rep 0, train on Both: trained cd68\n"}
+,{"stream_name":"stdout","time":3986.995902574,"data":"[  65.9 min] rep 0, train on Both: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":4107.372575814,"data":"[  67.9 min] rep 0, train on Both: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":4327.654633928,"data":"[  71.5 min] rep 0, train on Both: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":4414.793544739,"data":"[  73.0 min] rep 0, train on Both: trained ki_67\n"}
+,{"stream_name":"stdout","time":4907.383579068,"data":"[  81.2 min] rep 0, train on Both: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":5400.271877237,"data":"[  89.4 min] rep 0, train on Both: trained sma\n"}
+,{"stream_name":"stdout","time":5409.8077211,"data":"--- replicate 0: median R4 over 10 markers (ERα excluded)\n"}
+,{"stream_name":"stdout","time":5409.807760558,"data":"model                                    GCN  GraphSAGE    MLP  ResNet-UNet gamma  ResNet-UNet immuvis  ResNet-UNet residual  Table\n"}
+,{"stream_name":"stdout","time":5409.807767558,"data":"test      truth      train                                                                                                         \n"}
+,{"stream_name":"stdout","time":5409.807773284,"data":"Danenberg cell mean  Both              0.487      0.738  0.704                NaN                  NaN                   NaN  0.720\n"}
+,{"stream_name":"stdout","time":5409.80777888,"data":"                     Danenberg         0.511      0.740  0.735                NaN                  NaN                   NaN  0.723\n"}
+,{"stream_name":"stdout","time":5409.807785067,"data":"                     Jackson           0.431      0.500  0.467                NaN                  NaN                   NaN  0.432\n"}
+,{"stream_name":"stdout","time":5409.807790892,"data":"                     Jackson (images)    NaN        NaN    NaN              0.209                0.255                 0.148    NaN\n"}
+,{"stream_name":"stdout","time":5409.807796281,"data":"          target map Both              0.524      0.768  0.740                NaN                  NaN                   NaN  0.753\n"}
+,{"stream_name":"stdout","time":5409.807802004,"data":"                     Danenberg         0.530      0.760  0.763                NaN                  NaN                   NaN  0.753\n"}
+,{"stream_name":"stdout","time":5409.807807768,"data":"                     Jackson           0.486      0.506  0.488                NaN                  NaN                   NaN  0.456\n"}
+,{"stream_name":"stdout","time":5409.807813523,"data":"                     Jackson (images)    NaN        NaN    NaN              0.256                0.278                 0.198    NaN\n"}
+,{"stream_name":"stdout","time":5409.807819194,"data":"Jackson   table      Both              0.444      0.600  0.590                NaN                  NaN                   NaN  0.593\n"}
+,{"stream_name":"stdout","time":5409.807824793,"data":"                     Danenberg         0.249      0.313  0.293                NaN                  NaN                   NaN  0.366\n"}
+,{"stream_name":"stdout","time":5409.807830433,"data":"                     Jackson           0.456      0.601  0.597                NaN                  NaN                   NaN  0.596\n"}
+,{"stream_name":"stdout","time":5409.807850155,"data":"call                                         better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":5409.80785471,"data":"test      truth      kind         model_a                       \n"}
+,{"stream_name":"stdout","time":5409.807859268,"data":"Danenberg cell mean  both − other GCN             6     3      1\n"}
+,{"stream_name":"stdout","time":5409.807863822,"data":"                                  GraphSAGE       7     3      0\n"}
+,{"stream_name":"stdout","time":5409.807869845,"data":"                                  MLP             7     3      0\n"}
+,{"stream_name":"stdout","time":5409.80787432,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":5409.807883601,"data":"                     both − own   GCN             2     6      2\n"}
+,{"stream_name":"stdout","time":5409.807887552,"data":"                                  GraphSAGE       3     2      5\n"}
+,{"stream_name":"stdout","time":5409.807891515,"data":"                                  MLP             3     3      4\n"}
+,{"stream_name":"stdout","time":5409.807999522,"data":"                                  Table           2     5      3\n"}
+,{"stream_name":"stdout","time":5409.808005793,"data":"                     own − other  GCN             6     3      1\n"}
+,{"stream_name":"stdout","time":5409.808011114,"data":"                                  GraphSAGE       7     3      0\n"}
+,{"stream_name":"stdout","time":5409.808015738,"data":"                                  MLP             7     3      0\n"}
+,{"stream_name":"stdout","time":5409.808023087,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":5409.808027898,"data":"          target map both − other GCN             7     3      0\n"}
+,{"stream_name":"stdout","time":5409.808032192,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":5409.808036446,"data":"                                  MLP             8     2      0\n"}
+,{"stream_name":"stdout","time":5409.808040701,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":5409.808045012,"data":"                     both − own   GCN             3     6      1\n"}
+,{"stream_name":"stdout","time":5409.808049314,"data":"                                  GraphSAGE       3     3      4\n"}
+,{"stream_name":"stdout","time":5409.808053544,"data":"                                  MLP             4     2      4\n"}
+,{"stream_name":"stdout","time":5409.808057804,"data":"                                  Table           2     6      2\n"}
+,{"stream_name":"stdout","time":5409.808062076,"data":"                     own − other  GCN             6     3      1\n"}
+,{"stream_name":"stdout","time":5409.808066378,"data":"                                  GraphSAGE       7     3      0\n"}
+,{"stream_name":"stdout","time":5409.808072538,"data":"                                  MLP             8     2      0\n"}
+,{"stream_name":"stdout","time":5409.808081652,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":5409.808084498,"data":"Jackson   table      both − other GCN             9     1      0\n"}
+,{"stream_name":"stdout","time":5409.808087355,"data":"                                  GraphSAGE      10     0      0\n"}
+,{"stream_name":"stdout","time":5409.808124326,"data":"                                  MLP            10     0      0\n"}
+,{"stream_name":"stdout","time":5409.80813411,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":5409.808139141,"data":"                     both − own   GCN             0     8      2\n"}
+,{"stream_name":"stdout","time":5409.808152242,"data":"                                  GraphSAGE       0     4      6\n"}
+,{"stream_name":"stdout","time":5409.808157297,"data":"                                  MLP             0     4      6\n"}
+,{"stream_name":"stdout","time":5409.808162202,"data":"                                  Table           0     4      6\n"}
+,{"stream_name":"stdout","time":5409.808172537,"data":"                     own − other  GCN             8     2      0\n"}
+,{"stream_name":"stdout","time":5409.808365984,"data":"                                  GraphSAGE      10     0      0\n"}
+,{"stream_name":"stdout","time":5409.808376611,"data":"                                  MLP            10     0      0\n"}
+,{"stream_name":"stdout","time":5409.808381036,"data":"                                  Table          10     0      0\n"}
+,{"stream_name":"stdout","time":5409.808391762,"data":"[  89.6 min] replicate 0 done\n"}
+,{"stream_name":"stdout","time":5409.810163212,"data":"[  89.6 min] replicate 1\n"}
+,{"stream_name":"stdout","time":5410.861939912,"data":"Jackson {'train': (767894, 242), 'val': (90089, 31), 'test': (268141, 76)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":5410.861993682,"data":"Danenberg {'train': (723589, 455), 'val': (110119, 65), 'test': (228511, 130)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":5457.770169113,"data":"[  90.4 min] rep 1, train on Jackson: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":5541.752158785,"data":"[  91.8 min] rep 1, train on Jackson: trained cd20\n"}
+,{"stream_name":"stdout","time":5688.195842557,"data":"[  94.2 min] rep 1, train on Jackson: trained cd3\n"}
+,{"stream_name":"stdout","time":5880.287794214,"data":"[  97.4 min] rep 1, train on Jackson: trained cd45\n"}
+,{"stream_name":"stdout","time":6026.321262,"data":"[  99.8 min] rep 1, train on Jackson: trained cd68\n"}
+,{"stream_name":"stdout","time":6082.346197289,"data":"[ 100.8 min] rep 1, train on Jackson: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":6189.633465002,"data":"[ 102.6 min] rep 1, train on Jackson: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":6281.237960117,"data":"[ 104.1 min] rep 1, train on Jackson: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":6330.038418478,"data":"[ 104.9 min] rep 1, train on Jackson: trained ki_67\n"}
+,{"stream_name":"stdout","time":6447.920083965,"data":"[ 106.9 min] rep 1, train on Jackson: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":6644.369927505,"data":"[ 110.1 min] rep 1, train on Jackson: trained sma\n"}
+,{"stream_name":"stdout","time":6726.149655671,"data":"[ 111.5 min] rep 1, train on Danenberg: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":6795.646077442,"data":"[ 112.7 min] rep 1, train on Danenberg: trained cd20\n"}
+,{"stream_name":"stdout","time":6945.726864372,"data":"[ 115.2 min] rep 1, train on Danenberg: trained cd3\n"}
+,{"stream_name":"stdout","time":7092.512577899,"data":"[ 117.6 min] rep 1, train on Danenberg: trained cd45\n"}
+,{"stream_name":"stdout","time":7182.908438577,"data":"[ 119.1 min] rep 1, train on Danenberg: trained cd68\n"}
+,{"stream_name":"stdout","time":7225.343252843,"data":"[ 119.8 min] rep 1, train on Danenberg: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":7293.75299929,"data":"[ 121.0 min] rep 1, train on Danenberg: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":7395.543986939,"data":"[ 122.7 min] rep 1, train on Danenberg: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":7422.228017797,"data":"[ 123.1 min] rep 1, train on Danenberg: trained ki_67\n"}
+,{"stream_name":"stdout","time":7563.049758445,"data":"[ 125.5 min] rep 1, train on Danenberg: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":7741.484400522,"data":"[ 128.4 min] rep 1, train on Danenberg: trained sma\n"}
+,{"stream_name":"stdout","time":8032.672455836,"data":"[ 133.3 min] rep 1, train on Both: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":8372.652368969,"data":"[ 138.9 min] rep 1, train on Both: trained cd20\n"}
+,{"stream_name":"stdout","time":8860.460723227,"data":"[ 147.1 min] rep 1, train on Both: trained cd3\n"}
+,{"stream_name":"stdout","time":9350.429499113,"data":"[ 155.2 min] rep 1, train on Both: trained cd45\n"}
+,{"stream_name":"stdout","time":9735.985018391,"data":"[ 161.7 min] rep 1, train on Both: trained cd68\n"}
+,{"stream_name":"stdout","time":9849.679184186,"data":"[ 163.6 min] rep 1, train on Both: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":10130.350011739,"data":"[ 168.2 min] rep 1, train on Both: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":10432.386072708,"data":"[ 173.3 min] rep 1, train on Both: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":10496.399906896,"data":"[ 174.3 min] rep 1, train on Both: trained ki_67\n"}
+,{"stream_name":"stdout","time":10849.845535744,"data":"[ 180.2 min] rep 1, train on Both: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":11339.817952225,"data":"[ 188.4 min] rep 1, train on Both: trained sma\n"}
+,{"stream_name":"stdout","time":11349.594683008,"data":"--- replicate 1: median R4 over 10 markers (ERα excluded)\n"}
+,{"stream_name":"stdout","time":11349.59473145,"data":"model                                    GCN  GraphSAGE    MLP  ResNet-UNet gamma  ResNet-UNet immuvis  ResNet-UNet residual  Table\n"}
+,{"stream_name":"stdout","time":11349.5947399,"data":"test      truth      train                                                                                                         \n"}
+,{"stream_name":"stdout","time":11349.594746033,"data":"Danenberg cell mean  Both              0.485      0.733  0.698                NaN                  NaN                   NaN  0.723\n"}
+,{"stream_name":"stdout","time":11349.594752704,"data":"                     Danenberg         0.494      0.737  0.731                NaN                  NaN                   NaN  0.725\n"}
+,{"stream_name":"stdout","time":11349.594758414,"data":"                     Jackson           0.400      0.535  0.491                NaN                  NaN                   NaN  0.450\n"}
+,{"stream_name":"stdout","time":11349.594764074,"data":"                     Jackson (images)    NaN        NaN    NaN              0.209                0.255                 0.148    NaN\n"}
+,{"stream_name":"stdout","time":11349.594769632,"data":"          target map Both              0.522      0.760  0.740                NaN                  NaN                   NaN  0.754\n"}
+,{"stream_name":"stdout","time":11349.594774933,"data":"                     Danenberg         0.512      0.754  0.757                NaN                  NaN                   NaN  0.756\n"}
+,{"stream_name":"stdout","time":11349.594780549,"data":"                     Jackson           0.477      0.523  0.519                NaN                  NaN                   NaN  0.500\n"}
+,{"stream_name":"stdout","time":11349.5947865,"data":"                     Jackson (images)    NaN        NaN    NaN              0.256                0.278                 0.198    NaN\n"}
+,{"stream_name":"stdout","time":11349.594792594,"data":"Jackson   table      Both              0.545      0.668  0.676                NaN                  NaN                   NaN  0.657\n"}
+,{"stream_name":"stdout","time":11349.594799172,"data":"                     Danenberg         0.362      0.353  0.293                NaN                  NaN                   NaN  0.365\n"}
+,{"stream_name":"stdout","time":11349.594822747,"data":"                     Jackson           0.542      0.683  0.683                NaN                  NaN                   NaN  0.662\n"}
+,{"stream_name":"stdout","time":11349.594827508,"data":"call                                         better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":11349.594831412,"data":"test      truth      kind         model_a                       \n"}
+,{"stream_name":"stdout","time":11349.594835348,"data":"Danenberg cell mean  both − other GCN             9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594839241,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":11349.594845037,"data":"                                  MLP             7     3      0\n"}
+,{"stream_name":"stdout","time":11349.594849272,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594853113,"data":"                     both − own   GCN             4     3      3\n"}
+,{"stream_name":"stdout","time":11349.594857081,"data":"                                  GraphSAGE       1     6      3\n"}
+,{"stream_name":"stdout","time":11349.594861189,"data":"                                  MLP             1     5      4\n"}
+,{"stream_name":"stdout","time":11349.594865203,"data":"                                  Table           2     5      3\n"}
+,{"stream_name":"stdout","time":11349.594869184,"data":"                     own − other  GCN             7     2      1\n"}
+,{"stream_name":"stdout","time":11349.594873187,"data":"                                  GraphSAGE       6     4      0\n"}
+,{"stream_name":"stdout","time":11349.594880089,"data":"                                  MLP             7     3      0\n"}
+,{"stream_name":"stdout","time":11349.594883841,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594887626,"data":"          target map both − other GCN             7     3      0\n"}
+,{"stream_name":"stdout","time":11349.59489167,"data":"                                  GraphSAGE       7     3      0\n"}
+,{"stream_name":"stdout","time":11349.594895647,"data":"                                  MLP             9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594899831,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594903689,"data":"                     both − own   GCN             3     4      3\n"}
+,{"stream_name":"stdout","time":11349.594907841,"data":"                                  GraphSAGE       1     7      2\n"}
+,{"stream_name":"stdout","time":11349.594911679,"data":"                                  MLP             1     5      4\n"}
+,{"stream_name":"stdout","time":11349.594915345,"data":"                                  Table           3     5      2\n"}
+,{"stream_name":"stdout","time":11349.594919327,"data":"                     own − other  GCN             5     4      1\n"}
+,{"stream_name":"stdout","time":11349.594923271,"data":"                                  GraphSAGE       6     4      0\n"}
+,{"stream_name":"stdout","time":11349.594927209,"data":"                                  MLP             8     2      0\n"}
+,{"stream_name":"stdout","time":11349.594931132,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":11349.594936597,"data":"Jackson   table      both − other GCN             8     2      0\n"}
+,{"stream_name":"stdout","time":11349.594940598,"data":"                                  GraphSAGE       9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594944411,"data":"                                  MLP            10     0      0\n"}
+,{"stream_name":"stdout","time":11349.594954982,"data":"                                  Table           9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594959005,"data":"                     both − own   GCN             0     8      2\n"}
+,{"stream_name":"stdout","time":11349.59496313,"data":"                                  GraphSAGE       0     3      7\n"}
+,{"stream_name":"stdout","time":11349.594967299,"data":"                                  MLP             0     6      4\n"}
+,{"stream_name":"stdout","time":11349.594971552,"data":"                                  Table           0     6      4\n"}
+,{"stream_name":"stdout","time":11349.594975701,"data":"                     own − other  GCN             7     3      0\n"}
+,{"stream_name":"stdout","time":11349.594980883,"data":"                                  GraphSAGE       9     1      0\n"}
+,{"stream_name":"stdout","time":11349.594985392,"data":"                                  MLP            10     0      0\n"}
+,{"stream_name":"stdout","time":11349.594989514,"data":"                                  Table          10     0      0\n"}
+,{"stream_name":"stdout","time":11349.594993781,"data":"[ 188.6 min] replicate 1 done\n"}
+,{"stream_name":"stdout","time":11349.595780121,"data":"[ 188.6 min] replicate 2\n"}
+,{"stream_name":"stdout","time":11350.657761667,"data":"Jackson {'train': (833169, 254), 'val': (118301, 40), 'test': (174654, 55)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":11350.657799682,"data":"Danenberg {'train': (740012, 452), 'val': (93696, 68), 'test': (228511, 130)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":11470.545138179,"data":"[ 190.6 min] rep 2, train on Jackson: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":11519.672957546,"data":"[ 191.4 min] rep 2, train on Jackson: trained cd20\n"}
+,{"stream_name":"stdout","time":11616.568717612,"data":"[ 193.0 min] rep 2, train on Jackson: trained cd3\n"}
+,{"stream_name":"stdout","time":11670.832123895,"data":"[ 193.9 min] rep 2, train on Jackson: trained cd45\n"}
+,{"stream_name":"stdout","time":11812.236119651,"data":"[ 196.3 min] rep 2, train on Jackson: trained cd68\n"}
+,{"stream_name":"stdout","time":11886.752025689,"data":"[ 197.5 min] rep 2, train on Jackson: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":11933.545772665,"data":"[ 198.3 min] rep 2, train on Jackson: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":12043.18132795,"data":"[ 200.1 min] rep 2, train on Jackson: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":12136.488364639,"data":"[ 201.7 min] rep 2, train on Jackson: trained ki_67\n"}
+,{"stream_name":"stdout","time":12335.047427112,"data":"[ 205.0 min] rep 2, train on Jackson: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":12532.805868656,"data":"[ 208.3 min] rep 2, train on Jackson: trained sma\n"}
+,{"stream_name":"stdout","time":12625.860676755,"data":"[ 209.8 min] rep 2, train on Danenberg: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":12743.331055006,"data":"[ 211.8 min] rep 2, train on Danenberg: trained cd20\n"}
+,{"stream_name":"stdout","time":12876.572128269,"data":"[ 214.0 min] rep 2, train on Danenberg: trained cd3\n"}
+,{"stream_name":"stdout","time":13027.008616398,"data":"[ 216.5 min] rep 2, train on Danenberg: trained cd45\n"}
+,{"stream_name":"stdout","time":13172.48148392,"data":"[ 218.9 min] rep 2, train on Danenberg: trained cd68\n"}
+,{"stream_name":"stdout","time":13312.935657189,"data":"[ 221.3 min] rep 2, train on Danenberg: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":13365.237996797,"data":"[ 222.2 min] rep 2, train on Danenberg: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":13542.157359775,"data":"[ 225.1 min] rep 2, train on Danenberg: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":13580.831286779,"data":"[ 225.8 min] rep 2, train on Danenberg: trained ki_67\n"}
+,{"stream_name":"stdout","time":13626.23027089,"data":"[ 226.5 min] rep 2, train on Danenberg: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":13811.844995713,"data":"[ 229.6 min] rep 2, train on Danenberg: trained sma\n"}
+,{"stream_name":"stdout","time":14130.92601187,"data":"[ 234.9 min] rep 2, train on Both: trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":14259.867104583,"data":"[ 237.1 min] rep 2, train on Both: trained cd20\n"}
+,{"stream_name":"stdout","time":14642.363934499,"data":"[ 243.4 min] rep 2, train on Both: trained cd3\n"}
+,{"stream_name":"stdout","time":14803.24649594,"data":"[ 246.1 min] rep 2, train on Both: trained cd45\n"}
+,{"stream_name":"stdout","time":15292.402076829,"data":"[ 254.3 min] rep 2, train on Both: trained cd68\n"}
+,{"stream_name":"stdout","time":15527.510976561,"data":"[ 258.2 min] rep 2, train on Both: trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":15650.864723239,"data":"[ 260.3 min] rep 2, train on Both: trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":16142.253241109,"data":"[ 268.4 min] rep 2, train on Both: trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":16203.767936514,"data":"[ 269.5 min] rep 2, train on Both: trained ki_67\n"}
+,{"stream_name":"stdout","time":16491.605351396,"data":"[ 274.3 min] rep 2, train on Both: trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":16981.561326049,"data":"[ 282.4 min] rep 2, train on Both: trained sma\n"}
+,{"stream_name":"stdout","time":16988.62379257,"data":"--- replicate 2: median R4 over 10 markers (ERα excluded)\n"}
+,{"stream_name":"stdout","time":16988.623826278,"data":"model                                    GCN  GraphSAGE    MLP  ResNet-UNet gamma  ResNet-UNet immuvis  ResNet-UNet residual  Table\n"}
+,{"stream_name":"stdout","time":16988.623832405,"data":"test      truth      train                                                                                                         \n"}
+,{"stream_name":"stdout","time":16988.623837215,"data":"Danenberg cell mean  Both              0.492      0.740  0.701                NaN                  NaN                   NaN  0.716\n"}
+,{"stream_name":"stdout","time":16988.623841721,"data":"                     Danenberg         0.483      0.747  0.732                NaN                  NaN                   NaN  0.721\n"}
+,{"stream_name":"stdout","time":16988.62384609,"data":"                     Jackson           0.422      0.450  0.450                NaN                  NaN                   NaN  0.429\n"}
+,{"stream_name":"stdout","time":16988.623852355,"data":"                     Jackson (images)    NaN        NaN    NaN              0.209                0.255                 0.148    NaN\n"}
+,{"stream_name":"stdout","time":16988.623859462,"data":"          target map Both              0.518      0.750  0.740                NaN                  NaN                   NaN  0.749\n"}
+,{"stream_name":"stdout","time":16988.623862375,"data":"                     Danenberg         0.505      0.761  0.759                NaN                  NaN                   NaN  0.752\n"}
+,{"stream_name":"stdout","time":16988.623865283,"data":"                     Jackson           0.470      0.527  0.486                NaN                  NaN                   NaN  0.472\n"}
+,{"stream_name":"stdout","time":16988.623868338,"data":"                     Jackson (images)    NaN        NaN    NaN              0.256                0.278                 0.198    NaN\n"}
+,{"stream_name":"stdout","time":16988.623871469,"data":"Jackson   table      Both              0.505      0.640  0.639                NaN                  NaN                   NaN  0.623\n"}
+,{"stream_name":"stdout","time":16988.623883685,"data":"                     Danenberg         0.273      0.367  0.306                NaN                  NaN                   NaN  0.383\n"}
+,{"stream_name":"stdout","time":16988.623886202,"data":"                     Jackson           0.527      0.651  0.638                NaN                  NaN                   NaN  0.632\n"}
+,{"stream_name":"stdout","time":16988.623888575,"data":"call                                         better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":16988.623891588,"data":"test      truth      kind         model_a                       \n"}
+,{"stream_name":"stdout","time":16988.62390812,"data":"Danenberg cell mean  both − other GCN             8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623912961,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623918367,"data":"                                  MLP             9     1      0\n"}
+,{"stream_name":"stdout","time":16988.623922804,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623926705,"data":"                     both − own   GCN             1     6      3\n"}
+,{"stream_name":"stdout","time":16988.623930074,"data":"                                  GraphSAGE       1     5      4\n"}
+,{"stream_name":"stdout","time":16988.6239334,"data":"                                  MLP             1     4      5\n"}
+,{"stream_name":"stdout","time":16988.623936705,"data":"                                  Table           2     5      3\n"}
+,{"stream_name":"stdout","time":16988.623940035,"data":"                     own − other  GCN             7     2      1\n"}
+,{"stream_name":"stdout","time":16988.623943422,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":16988.62394678,"data":"                                  MLP             9     1      0\n"}
+,{"stream_name":"stdout","time":16988.623950102,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623953417,"data":"          target map both − other GCN             9     1      0\n"}
+,{"stream_name":"stdout","time":16988.623956842,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623960222,"data":"                                  MLP             9     1      0\n"}
+,{"stream_name":"stdout","time":16988.623963501,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623966912,"data":"                     both − own   GCN             1     6      3\n"}
+,{"stream_name":"stdout","time":16988.623971992,"data":"                                  GraphSAGE       1     5      4\n"}
+,{"stream_name":"stdout","time":16988.623978234,"data":"                                  MLP             0     5      5\n"}
+,{"stream_name":"stdout","time":16988.623980443,"data":"                                  Table           2     6      2\n"}
+,{"stream_name":"stdout","time":16988.623982622,"data":"                     own − other  GCN             7     3      0\n"}
+,{"stream_name":"stdout","time":16988.623984844,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":16988.623987022,"data":"                                  MLP             9     1      0\n"}
+,{"stream_name":"stdout","time":16988.623989668,"data":"                                  Table           8     2      0\n"}
+,{"stream_name":"stdout","time":16988.624009233,"data":"Jackson   table      both − other GCN             7     3      0\n"}
+,{"stream_name":"stdout","time":16988.624013635,"data":"                                  GraphSAGE       8     2      0\n"}
+,{"stream_name":"stdout","time":16988.624017675,"data":"                                  MLP            10     0      0\n"}
+,{"stream_name":"stdout","time":16988.624021502,"data":"                                  Table          10     0      0\n"}
+,{"stream_name":"stdout","time":16988.624024846,"data":"                     both − own   GCN             1     8      1\n"}
+,{"stream_name":"stdout","time":16988.624028135,"data":"                                  GraphSAGE       0     5      5\n"}
+,{"stream_name":"stdout","time":16988.624031452,"data":"                                  MLP             1     8      1\n"}
+,{"stream_name":"stdout","time":16988.624034693,"data":"                                  Table           0     6      4\n"}
+,{"stream_name":"stdout","time":16988.624038055,"data":"                     own − other  GCN             8     2      0\n"}
+,{"stream_name":"stdout","time":16988.624041854,"data":"                                  GraphSAGE       9     1      0\n"}
+,{"stream_name":"stdout","time":16988.624045157,"data":"                                  MLP             9     1      0\n"}
+,{"stream_name":"stdout","time":16988.624048538,"data":"                                  Table          10     0      0\n"}
+,{"stream_name":"stdout","time":16988.624051868,"data":"[ 282.5 min] replicate 2 done\n"}
+,{"stream_name":"stdout","time":16988.62472497,"data":"skipped units: none\n"}
+,{"stream_name":"stdout","time":16988.685915564,"data":"     test      truth            train                model  mean   std  count\n"}
+,{"stream_name":"stdout","time":16988.685943432,"data":"Danenberg  cell mean             Both                  GCN 0.488 0.004      3\n"}
+,{"stream_name":"stdout","time":16988.685947701,"data":"Danenberg  cell mean             Both            GraphSAGE 0.737 0.004      3\n"}
+,{"stream_name":"stdout","time":16988.685950638,"data":"Danenberg  cell mean             Both                  MLP 0.701 0.003      3\n"}
+,{"stream_name":"stdout","time":16988.685954575,"data":"Danenberg  cell mean             Both                Table 0.720 0.004      3\n"}
+,{"stream_name":"stdout","time":16988.685973036,"data":"Danenberg  cell mean        Danenberg                  GCN 0.496 0.014      3\n"}
+,{"stream_name":"stdout","time":16988.685977852,"data":"Danenberg  cell mean        Danenberg            GraphSAGE 0.741 0.005      3\n"}
+,{"stream_name":"stdout","time":16988.685982287,"data":"Danenberg  cell mean        Danenberg                  MLP 0.733 0.002      3\n"}
+,{"stream_name":"stdout","time":16988.68598744,"data":"Danenberg  cell mean        Danenberg                Table 0.723 0.002      3\n"}
+,{"stream_name":"stdout","time":16988.685992185,"data":"Danenberg  cell mean          Jackson                  GCN 0.418 0.016      3\n"}
+,{"stream_name":"stdout","time":16988.68599628,"data":"Danenberg  cell mean          Jackson            GraphSAGE 0.495 0.043      3\n"}
+,{"stream_name":"stdout","time":16988.686000443,"data":"Danenberg  cell mean          Jackson                  MLP 0.469 0.021      3\n"}
+,{"stream_name":"stdout","time":16988.686004433,"data":"Danenberg  cell mean          Jackson                Table 0.437 0.011      3\n"}
+,{"stream_name":"stdout","time":16988.686008453,"data":"Danenberg  cell mean Jackson (images)    ResNet-UNet gamma 0.209 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686012476,"data":"Danenberg  cell mean Jackson (images)  ResNet-UNet immuvis 0.255 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686016629,"data":"Danenberg  cell mean Jackson (images) ResNet-UNet residual 0.148 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686035491,"data":"Danenberg target map             Both                  GCN 0.521 0.003      3\n"}
+,{"stream_name":"stdout","time":16988.686038513,"data":"Danenberg target map             Both            GraphSAGE 0.759 0.009      3\n"}
+,{"stream_name":"stdout","time":16988.686041114,"data":"Danenberg target map             Both                  MLP 0.740 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686043713,"data":"Danenberg target map             Both                Table 0.752 0.003      3\n"}
+,{"stream_name":"stdout","time":16988.686046382,"data":"Danenberg target map        Danenberg                  GCN 0.515 0.013      3\n"}
+,{"stream_name":"stdout","time":16988.686048976,"data":"Danenberg target map        Danenberg            GraphSAGE 0.758 0.004      3\n"}
+,{"stream_name":"stdout","time":16988.686051572,"data":"Danenberg target map        Danenberg                  MLP 0.760 0.003      3\n"}
+,{"stream_name":"stdout","time":16988.686054163,"data":"Danenberg target map        Danenberg                Table 0.754 0.002      3\n"}
+,{"stream_name":"stdout","time":16988.686057673,"data":"Danenberg target map          Jackson                  GCN 0.478 0.008      3\n"}
+,{"stream_name":"stdout","time":16988.686075067,"data":"Danenberg target map          Jackson            GraphSAGE 0.519 0.011      3\n"}
+,{"stream_name":"stdout","time":16988.686081136,"data":"Danenberg target map          Jackson                  MLP 0.498 0.018      3\n"}
+,{"stream_name":"stdout","time":16988.686085788,"data":"Danenberg target map          Jackson                Table 0.476 0.022      3\n"}
+,{"stream_name":"stdout","time":16988.686090393,"data":"Danenberg target map Jackson (images)    ResNet-UNet gamma 0.256 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686095368,"data":"Danenberg target map Jackson (images)  ResNet-UNet immuvis 0.278 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686115553,"data":"Danenberg target map Jackson (images) ResNet-UNet residual 0.198 0.000      3\n"}
+,{"stream_name":"stdout","time":16988.686122755,"data":"  Jackson      table             Both                  GCN 0.498 0.051      3\n"}
+,{"stream_name":"stdout","time":16988.68612678,"data":"  Jackson      table             Both            GraphSAGE 0.636 0.034      3\n"}
+,{"stream_name":"stdout","time":16988.686130743,"data":"  Jackson      table             Both                  MLP 0.635 0.043      3\n"}
+,{"stream_name":"stdout","time":16988.68613479,"data":"  Jackson      table             Both                Table 0.624 0.032      3\n"}
+,{"stream_name":"stdout","time":16988.686138787,"data":"  Jackson      table        Danenberg                  GCN 0.295 0.059      3\n"}
+,{"stream_name":"stdout","time":16988.686142811,"data":"  Jackson      table        Danenberg            GraphSAGE 0.344 0.028      3\n"}
+,{"stream_name":"stdout","time":16988.686146843,"data":"  Jackson      table        Danenberg                  MLP 0.297 0.007      3\n"}
+,{"stream_name":"stdout","time":16988.686150935,"data":"  Jackson      table        Danenberg                Table 0.371 0.010      3\n"}
+,{"stream_name":"stdout","time":16988.686171766,"data":"  Jackson      table          Jackson                  GCN 0.509 0.046      3\n"}
+,{"stream_name":"stdout","time":16988.686176864,"data":"  Jackson      table          Jackson            GraphSAGE 0.645 0.041      3\n"}
+,{"stream_name":"stdout","time":16988.686182097,"data":"  Jackson      table          Jackson                  MLP 0.639 0.043      3\n"}
+,{"stream_name":"stdout","time":16988.686187121,"data":"  Jackson      table          Jackson                Table 0.630 0.033      3\n"}
+,{"stream_name":"stderr","time":16994.180279179,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":16994.18033663,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":16994.413314374,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":16994.413343334,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":16995.15109618,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":16995.472938955,"data":"[NbConvertApp] Writing 72993 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":16997.884376332,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":16998.950791396,"data":"[NbConvertApp] Writing 506504 bytes to __results__.html\n"}
+]

@@ -1,0 +1,316 @@
+[{"stream_name":"stderr","time":7.144362186,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.144408723,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.089041237,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.08908396,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.089088326,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.089091159,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.742344284,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.742375943,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.742381319,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.742385426,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":24.418473139,"data":"{\n"}
+,{"stream_name":"stdout","time":24.418509983,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":24.418526368,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":24.418531265,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":24.418535426,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":24.418539377,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":24.418543623,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":24.418547248,"data":" },\n"}
+,{"stream_name":"stdout","time":24.418550579,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":24.418553949,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":24.418557519,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":24.418561096,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":24.41856473,"data":" }\n"}
+,{"stream_name":"stdout","time":24.418572661,"data":"}\n"}
+,{"stream_name":"stdout","time":33.18339943,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":33.183449265,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":33.250229744,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stdout","time":46.987741486,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 5.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":47.189712931,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 5.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":108.516196398,"data":"[   1.5 min] kill-test outputs loaded; per-cell image means recomputed\n"}
+,{"stream_name":"stdout","time":137.233193136,"data":"kNN graphs: mean degree Jackson 11.4, Danenberg 11.3; device cuda\n"}
+,{"stream_name":"stdout","time":137.388278163,"data":"{'train': 806958, 'val': 89348, 'test': 229818} Jackson cells; {'train': 251, 'val': 32, 'test': 66} patients\n"}
+,{"stream_name":"stdout","time":137.388355907,"data":"[   2.0 min] features and graphs\n"}
+,{"stream_name":"stdout","time":378.503394413,"data":"[   6.0 min] trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":758.63852656,"data":"[  12.3 min] trained cd20\n"}
+,{"stream_name":"stdout","time":1116.694720732,"data":"[  18.3 min] trained cd3\n"}
+,{"stream_name":"stdout","time":1779.165149734,"data":"[  29.3 min] trained cd45\n"}
+,{"stream_name":"stdout","time":2262.104401111,"data":"[  37.4 min] trained cd68\n"}
+,{"stream_name":"stdout","time":2588.194692311,"data":"[  42.8 min] trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":2852.894068778,"data":"[  47.2 min] trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":3111.444036627,"data":"[  51.5 min] trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":3349.255494335,"data":"[  55.5 min] trained ki_67\n"}
+,{"stream_name":"stdout","time":3994.844572489,"data":"[  66.2 min] trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":4788.878664686,"data":"[  79.5 min] trained sma\n"}
+,{"stream_name":"stdout","time":4799.549098661,"data":"--- Jackson (held-out patients): R4\n"}
+,{"stream_name":"stdout","time":4799.549146435,"data":"model                    Table  Table + ring    MLP    GCN  GraphSAGE\n"}
+,{"stream_name":"stdout","time":4799.549155867,"data":"marker                                                               \n"}
+,{"stream_name":"stdout","time":4799.54916126,"data":"c_erb_b_2_her2           0.669         0.673  0.675  0.548      0.666\n"}
+,{"stream_name":"stdout","time":4799.549165912,"data":"cd20                     0.355         0.405  0.394  0.259      0.488\n"}
+,{"stream_name":"stdout","time":4799.549170429,"data":"cd3                      0.523         0.535  0.520  0.365      0.533\n"}
+,{"stream_name":"stdout","time":4799.549174819,"data":"cd45                     0.782         0.793  0.789  0.610      0.798\n"}
+,{"stream_name":"stdout","time":4799.5491793,"data":"cd68                     0.509         0.508  0.495  0.287      0.510\n"}
+,{"stream_name":"stdout","time":4799.549183811,"data":"cytokeratin_5            0.433         0.516  0.346  0.289      0.424\n"}
+,{"stream_name":"stdout","time":4799.54918833,"data":"cytokeratin_8_18         0.831         0.829  0.835  0.667      0.849\n"}
+,{"stream_name":"stdout","time":4799.549193754,"data":"estrogen_receptor_alpha  0.503         0.528  0.540  0.456      0.555\n"}
+,{"stream_name":"stdout","time":4799.549198547,"data":"ki_67                    0.351         0.396  0.317  0.298      0.355\n"}
+,{"stream_name":"stdout","time":4799.549203259,"data":"pan_cytokeratin          0.913         0.917  0.907  0.752      0.919\n"}
+,{"stream_name":"stdout","time":4799.549207885,"data":"sma                      0.803         0.813  0.777  0.560      0.824\n"}
+,{"stream_name":"stdout","time":4799.549212211,"data":"--- Danenberg (cross-cohort): R4\n"}
+,{"stream_name":"stdout","time":4799.549216693,"data":"model                    Table  Table + ring    MLP    GCN  GraphSAGE  ResNet-UNet residual  ResNet-UNet gamma  ResNet-UNet immuvis\n"}
+,{"stream_name":"stdout","time":4799.549234083,"data":"marker                                                                                                                             \n"}
+,{"stream_name":"stdout","time":4799.549238525,"data":"c_erb_b_2_her2           0.703         0.701  0.727  0.597      0.719                 0.439              0.433                0.358\n"}
+,{"stream_name":"stdout","time":4799.549242351,"data":"cd20                     0.286         0.304  0.325  0.423      0.330                 0.262              0.273                0.089\n"}
+,{"stream_name":"stdout","time":4799.549246191,"data":"cd3                      0.671         0.653  0.673  0.506      0.652                 0.087              0.223                0.231\n"}
+,{"stream_name":"stdout","time":4799.549249987,"data":"cd45                     0.558         0.544  0.595  0.472      0.553                 0.339              0.340                0.292\n"}
+,{"stream_name":"stdout","time":4799.549253947,"data":"cd68                     0.171         0.170  0.247  0.221      0.279                -0.051             -0.035               -0.045\n"}
+,{"stream_name":"stdout","time":4799.549259258,"data":"cytokeratin_5            0.222         0.247  0.206  0.215      0.181                 0.106              0.092                0.134\n"}
+,{"stream_name":"stdout","time":4799.549270189,"data":"cytokeratin_8_18         0.728         0.728  0.741  0.541      0.738                 0.194              0.250                0.474\n"}
+,{"stream_name":"stdout","time":4799.549273087,"data":"estrogen_receptor_alpha  0.593         0.550  0.656  0.558      0.547                 0.531              0.336                0.309\n"}
+,{"stream_name":"stdout","time":4799.549275609,"data":"ki_67                    0.228         0.222  0.235  0.125      0.232                 0.142              0.144                0.055\n"}
+,{"stream_name":"stdout","time":4799.54927813,"data":"pan_cytokeratin          0.834         0.832  0.830  0.517      0.787                 0.250              0.523                0.541\n"}
+,{"stream_name":"stdout","time":4799.549280695,"data":"sma                     -0.158        -0.209 -0.127 -0.155     -0.244                 0.186              0.254                0.228\n"}
+,{"stream_name":"stdout","time":4799.549283198,"data":"   cohort                model    vs  better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":4799.549285594,"data":"danenberg                  GCN   MLP       1     2      7\n"}
+,{"stream_name":"stdout","time":4799.549287949,"data":"danenberg                  GCN Table       2     2      6\n"}
+,{"stream_name":"stdout","time":4799.549290386,"data":"danenberg            GraphSAGE   MLP       1     5      4\n"}
+,{"stream_name":"stdout","time":4799.549292709,"data":"danenberg            GraphSAGE Table       4     3      3\n"}
+,{"stream_name":"stdout","time":4799.549295042,"data":"danenberg                  MLP Table       6     4      0\n"}
+,{"stream_name":"stdout","time":4799.549297397,"data":"danenberg    ResNet-UNet gamma   MLP       1     0      9\n"}
+,{"stream_name":"stdout","time":4799.54929983,"data":"danenberg    ResNet-UNet gamma Table       1     1      8\n"}
+,{"stream_name":"stdout","time":4799.54931219,"data":"danenberg  ResNet-UNet immuvis   MLP       1     0      9\n"}
+,{"stream_name":"stdout","time":4799.549314689,"data":"danenberg  ResNet-UNet immuvis Table       1     0      9\n"}
+,{"stream_name":"stdout","time":4799.549317023,"data":"danenberg ResNet-UNet residual   MLP       1     0      9\n"}
+,{"stream_name":"stdout","time":4799.54933702,"data":"danenberg ResNet-UNet residual Table       1     1      8\n"}
+,{"stream_name":"stdout","time":4799.549339859,"data":"danenberg                Table   MLP       0     4      6\n"}
+,{"stream_name":"stdout","time":4799.549347491,"data":"danenberg         Table + ring   MLP       1     3      6\n"}
+,{"stream_name":"stdout","time":4799.549351557,"data":"danenberg         Table + ring Table       1     6      3\n"}
+,{"stream_name":"stdout","time":4799.549354612,"data":"  jackson                  GCN   MLP       0     2      8\n"}
+,{"stream_name":"stdout","time":4799.549357174,"data":"  jackson                  GCN Table       0     0     10\n"}
+,{"stream_name":"stdout","time":4799.549359817,"data":"  jackson            GraphSAGE   MLP       8     2      0\n"}
+,{"stream_name":"stdout","time":4799.549362316,"data":"  jackson            GraphSAGE Table       5     5      0\n"}
+,{"stream_name":"stdout","time":4799.549364825,"data":"  jackson                  MLP Table       1     5      4\n"}
+,{"stream_name":"stdout","time":4799.549367928,"data":"  jackson                Table   MLP       4     5      1\n"}
+,{"stream_name":"stdout","time":4799.549396229,"data":"  jackson         Table + ring   MLP       5     5      0\n"}
+,{"stream_name":"stdout","time":4799.549398918,"data":"  jackson         Table + ring Table       7     3      0\n"}
+,{"stream_name":"stdout","time":4800.364954299,"data":"{\n"}
+,{"stream_name":"stdout","time":4800.364978635,"data":" \"median_R4_excl_ER\": {\n"}
+,{"stream_name":"stdout","time":4800.3650026,"data":"  \"Danenberg (cross-cohort)\": {\n"}
+,{"stream_name":"stdout","time":4800.365007078,"data":"   \"GCN\": 0.447,\n"}
+,{"stream_name":"stdout","time":4800.365011231,"data":"   \"GraphSAGE\": 0.441,\n"}
+,{"stream_name":"stdout","time":4800.365014785,"data":"   \"MLP\": 0.46,\n"}
+,{"stream_name":"stdout","time":4800.365038788,"data":"   \"ResNet-UNet gamma\": 0.252,\n"}
+,{"stream_name":"stdout","time":4800.365042941,"data":"   \"ResNet-UNet immuvis\": 0.229,\n"}
+,{"stream_name":"stdout","time":4800.365047096,"data":"   \"ResNet-UNet residual\": 0.19,\n"}
+,{"stream_name":"stdout","time":4800.365050837,"data":"   \"Table\": 0.422,\n"}
+,{"stream_name":"stdout","time":4800.365054413,"data":"   \"Table + ring\": 0.424\n"}
+,{"stream_name":"stdout","time":4800.365058108,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365061601,"data":"  \"Jackson (held-out patients)\": {\n"}
+,{"stream_name":"stdout","time":4800.365065269,"data":"   \"GCN\": 0.456,\n"}
+,{"stream_name":"stdout","time":4800.365068809,"data":"   \"GraphSAGE\": 0.599,\n"}
+,{"stream_name":"stdout","time":4800.365074153,"data":"   \"MLP\": 0.597,\n"}
+,{"stream_name":"stdout","time":4800.365082217,"data":"   \"ResNet-UNet gamma\": NaN,\n"}
+,{"stream_name":"stdout","time":4800.365084961,"data":"   \"ResNet-UNet immuvis\": NaN,\n"}
+,{"stream_name":"stdout","time":4800.365087515,"data":"   \"ResNet-UNet residual\": NaN,\n"}
+,{"stream_name":"stdout","time":4800.365089979,"data":"   \"Table\": 0.596,\n"}
+,{"stream_name":"stdout","time":4800.36509232,"data":"   \"Table + ring\": 0.604\n"}
+,{"stream_name":"stdout","time":4800.365094806,"data":"  }\n"}
+,{"stream_name":"stdout","time":4800.365097089,"data":" },\n"}
+,{"stream_name":"stdout","time":4800.365099369,"data":" \"calls_vs_table_and_mlp_excl_ER\": [\n"}
+,{"stream_name":"stdout","time":4800.365101743,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365104057,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365107119,"data":"   \"model\": \"GCN\",\n"}
+,{"stream_name":"stdout","time":4800.365123842,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365128204,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365132313,"data":"   \"n.s.\": 2,\n"}
+,{"stream_name":"stdout","time":4800.365148133,"data":"   \"worse\": 7\n"}
+,{"stream_name":"stdout","time":4800.365152153,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365155601,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365158947,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365162483,"data":"   \"model\": \"GCN\",\n"}
+,{"stream_name":"stdout","time":4800.365166042,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365169616,"data":"   \"better\": 2,\n"}
+,{"stream_name":"stdout","time":4800.365173303,"data":"   \"n.s.\": 2,\n"}
+,{"stream_name":"stdout","time":4800.365176793,"data":"   \"worse\": 6\n"}
+,{"stream_name":"stdout","time":4800.365180273,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365183625,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365187117,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365197539,"data":"   \"model\": \"GraphSAGE\",\n"}
+,{"stream_name":"stdout","time":4800.36520023,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365202605,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365204937,"data":"   \"n.s.\": 5,\n"}
+,{"stream_name":"stdout","time":4800.365207353,"data":"   \"worse\": 4\n"}
+,{"stream_name":"stdout","time":4800.365222481,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365226444,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365230432,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365234523,"data":"   \"model\": \"GraphSAGE\",\n"}
+,{"stream_name":"stdout","time":4800.365238869,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365242913,"data":"   \"better\": 4,\n"}
+,{"stream_name":"stdout","time":4800.365246393,"data":"   \"n.s.\": 3,\n"}
+,{"stream_name":"stdout","time":4800.365249818,"data":"   \"worse\": 3\n"}
+,{"stream_name":"stdout","time":4800.365253245,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365256555,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.36525992,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365263953,"data":"   \"model\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.36526752,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365271029,"data":"   \"better\": 6,\n"}
+,{"stream_name":"stdout","time":4800.365274527,"data":"   \"n.s.\": 4,\n"}
+,{"stream_name":"stdout","time":4800.365278017,"data":"   \"worse\": 0\n"}
+,{"stream_name":"stdout","time":4800.365281497,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365284837,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365288241,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365291882,"data":"   \"model\": \"ResNet-UNet gamma\",\n"}
+,{"stream_name":"stdout","time":4800.365295649,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365304797,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365319387,"data":"   \"n.s.\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365323434,"data":"   \"worse\": 9\n"}
+,{"stream_name":"stdout","time":4800.365327409,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365331639,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365335573,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365339974,"data":"   \"model\": \"ResNet-UNet gamma\",\n"}
+,{"stream_name":"stdout","time":4800.365344321,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365347914,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365355841,"data":"   \"n.s.\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365359347,"data":"   \"worse\": 8\n"}
+,{"stream_name":"stdout","time":4800.365362795,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365366128,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365369581,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365389933,"data":"   \"model\": \"ResNet-UNet immuvis\",\n"}
+,{"stream_name":"stdout","time":4800.365393867,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365397654,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365403208,"data":"   \"n.s.\": 0,\n"}
+,{"stream_name":"stdout","time":4800.36541136,"data":"   \"worse\": 9\n"}
+,{"stream_name":"stdout","time":4800.365427076,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365435562,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365453406,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365457699,"data":"   \"model\": \"ResNet-UNet immuvis\",\n"}
+,{"stream_name":"stdout","time":4800.365461598,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365465375,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365469165,"data":"   \"n.s.\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365472904,"data":"   \"worse\": 9\n"}
+,{"stream_name":"stdout","time":4800.365476676,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365480326,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365483964,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365487776,"data":"   \"model\": \"ResNet-UNet residual\",\n"}
+,{"stream_name":"stdout","time":4800.365491713,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365495474,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.36549922,"data":"   \"n.s.\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365504781,"data":"   \"worse\": 9\n"}
+,{"stream_name":"stdout","time":4800.365512412,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365528599,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365532954,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365537584,"data":"   \"model\": \"ResNet-UNet residual\",\n"}
+,{"stream_name":"stdout","time":4800.365541865,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365546466,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365550784,"data":"   \"n.s.\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365554528,"data":"   \"worse\": 8\n"}
+,{"stream_name":"stdout","time":4800.365558236,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365561789,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365565355,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365569151,"data":"   \"model\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365572921,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365576731,"data":"   \"better\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365580494,"data":"   \"n.s.\": 4,\n"}
+,{"stream_name":"stdout","time":4800.365584182,"data":"   \"worse\": 6\n"}
+,{"stream_name":"stdout","time":4800.365591941,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365595711,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365601226,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365607176,"data":"   \"model\": \"Table + ring\",\n"}
+,{"stream_name":"stdout","time":4800.365615159,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365637743,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.36564261,"data":"   \"n.s.\": 3,\n"}
+,{"stream_name":"stdout","time":4800.365646956,"data":"   \"worse\": 6\n"}
+,{"stream_name":"stdout","time":4800.36565148,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365655153,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365659042,"data":"   \"cohort\": \"danenberg\",\n"}
+,{"stream_name":"stdout","time":4800.365662824,"data":"   \"model\": \"Table + ring\",\n"}
+,{"stream_name":"stdout","time":4800.365666704,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365682659,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365686154,"data":"   \"n.s.\": 6,\n"}
+,{"stream_name":"stdout","time":4800.365689645,"data":"   \"worse\": 3\n"}
+,{"stream_name":"stdout","time":4800.365693116,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365696531,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365699892,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365703531,"data":"   \"model\": \"GCN\",\n"}
+,{"stream_name":"stdout","time":4800.365713282,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365747365,"data":"   \"better\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365752244,"data":"   \"n.s.\": 2,\n"}
+,{"stream_name":"stdout","time":4800.36575677,"data":"   \"worse\": 8\n"}
+,{"stream_name":"stdout","time":4800.365761526,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365765842,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365769419,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365773273,"data":"   \"model\": \"GCN\",\n"}
+,{"stream_name":"stdout","time":4800.365777066,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365780912,"data":"   \"better\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365784624,"data":"   \"n.s.\": 0,\n"}
+,{"stream_name":"stdout","time":4800.365788369,"data":"   \"worse\": 10\n"}
+,{"stream_name":"stdout","time":4800.36579225,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365795815,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365799463,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365803358,"data":"   \"model\": \"GraphSAGE\",\n"}
+,{"stream_name":"stdout","time":4800.365807224,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365810966,"data":"   \"better\": 8,\n"}
+,{"stream_name":"stdout","time":4800.365814782,"data":"   \"n.s.\": 2,\n"}
+,{"stream_name":"stdout","time":4800.365818565,"data":"   \"worse\": 0\n"}
+,{"stream_name":"stdout","time":4800.365842412,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365846807,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365851036,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365855539,"data":"   \"model\": \"GraphSAGE\",\n"}
+,{"stream_name":"stdout","time":4800.365860256,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365864695,"data":"   \"better\": 5,\n"}
+,{"stream_name":"stdout","time":4800.365868468,"data":"   \"n.s.\": 5,\n"}
+,{"stream_name":"stdout","time":4800.36587223,"data":"   \"worse\": 0\n"}
+,{"stream_name":"stdout","time":4800.365875957,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365879585,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365883221,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365887219,"data":"   \"model\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365895226,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365899086,"data":"   \"better\": 1,\n"}
+,{"stream_name":"stdout","time":4800.365902824,"data":"   \"n.s.\": 5,\n"}
+,{"stream_name":"stdout","time":4800.365906502,"data":"   \"worse\": 4\n"}
+,{"stream_name":"stdout","time":4800.365910196,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365913814,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365917484,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365928089,"data":"   \"model\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.365944287,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365948839,"data":"   \"better\": 4,\n"}
+,{"stream_name":"stdout","time":4800.365953241,"data":"   \"n.s.\": 5,\n"}
+,{"stream_name":"stdout","time":4800.365957761,"data":"   \"worse\": 1\n"}
+,{"stream_name":"stdout","time":4800.365962198,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365965774,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.365969349,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.365973239,"data":"   \"model\": \"Table + ring\",\n"}
+,{"stream_name":"stdout","time":4800.365977041,"data":"   \"vs\": \"MLP\",\n"}
+,{"stream_name":"stdout","time":4800.365980809,"data":"   \"better\": 5,\n"}
+,{"stream_name":"stdout","time":4800.365984471,"data":"   \"n.s.\": 5,\n"}
+,{"stream_name":"stdout","time":4800.365988178,"data":"   \"worse\": 0\n"}
+,{"stream_name":"stdout","time":4800.365993165,"data":"  },\n"}
+,{"stream_name":"stdout","time":4800.365996899,"data":"  {\n"}
+,{"stream_name":"stdout","time":4800.366000477,"data":"   \"cohort\": \"jackson\",\n"}
+,{"stream_name":"stdout","time":4800.366004366,"data":"   \"model\": \"Table + ring\",\n"}
+,{"stream_name":"stdout","time":4800.36600823,"data":"   \"vs\": \"Table\",\n"}
+,{"stream_name":"stdout","time":4800.366012008,"data":"   \"better\": 7,\n"}
+,{"stream_name":"stdout","time":4800.366015831,"data":"   \"n.s.\": 3,\n"}
+,{"stream_name":"stdout","time":4800.366025646,"data":"   \"worse\": 0\n"}
+,{"stream_name":"stdout","time":4800.366041241,"data":"  }\n"}
+,{"stream_name":"stdout","time":4800.366045965,"data":" ],\n"}
+,{"stream_name":"stdout","time":4800.366050202,"data":" \"graph_mean_degree\": {\n"}
+,{"stream_name":"stdout","time":4800.366054976,"data":"  \"jackson\": 11.366496086120605,\n"}
+,{"stream_name":"stdout","time":4800.366059625,"data":"  \"danenberg\": 11.263189315795898\n"}
+,{"stream_name":"stdout","time":4800.366063618,"data":" },\n"}
+,{"stream_name":"stdout","time":4800.366067364,"data":" \"jackson_patients\": {\n"}
+,{"stream_name":"stdout","time":4800.366071203,"data":"  \"train\": 251,\n"}
+,{"stream_name":"stdout","time":4800.366075021,"data":"  \"val\": 32,\n"}
+,{"stream_name":"stdout","time":4800.366078826,"data":"  \"test\": 66\n"}
+,{"stream_name":"stdout","time":4800.366082617,"data":" }\n"}
+,{"stream_name":"stdout","time":4800.366086254,"data":"}\n"}
+,{"stream_name":"stdout","time":4800.366090066,"data":"[  79.7 min] done\n"}
+,{"stream_name":"stderr","time":4805.633907445,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4805.633938506,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4805.81684314,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4805.816866502,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4806.453091536,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4806.76384444,"data":"[NbConvertApp] Writing 51790 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4809.215809962,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4810.223689013,"data":"[NbConvertApp] Writing 459912 bytes to __results__.html\n"}
+]

@@ -1,0 +1,105 @@
+{
+ "failed_blocks": [],
+ "image_beats_table_R4": {
+  "residual": {
+   "B1": [
+    "sma"
+   ],
+   "B2": [
+    "sma"
+   ],
+   "B1r": [
+    "sma"
+   ]
+  },
+  "gamma": {
+   "B1": [
+    "sma"
+   ],
+   "B2": [
+    "sma"
+   ],
+   "B1r": [
+    "cd20",
+    "sma"
+   ]
+  },
+  "immuvis": {
+   "B1": [
+    "sma"
+   ],
+   "B2": [
+    "sma"
+   ],
+   "B1r": [
+    "sma"
+   ]
+  }
+ },
+ "image_beats_table": false,
+ "beyond_panel_R5_vs_shift": {
+  "residual": [
+   "c_erb_b_2_her2",
+   "cd20",
+   "cd45",
+   "cytokeratin_8_18",
+   "estrogen_receptor_alpha",
+   "ki_67",
+   "pan_cytokeratin"
+  ],
+  "gamma": [
+   "c_erb_b_2_her2",
+   "cd20",
+   "cd45",
+   "estrogen_receptor_alpha",
+   "pan_cytokeratin"
+  ],
+  "immuvis": [
+   "c_erb_b_2_her2",
+   "cd20",
+   "cd3",
+   "cd45",
+   "estrogen_receptor_alpha",
+   "pan_cytokeratin"
+  ]
+ },
+ "beyond_panel": true,
+ "D1_pairs": [
+  {
+   "marker": "cd45",
+   "a": "residual",
+   "b": "immuvis",
+   "pooled_diff": -0.040710309468272476,
+   "r4_diff": 0.04694903389438354
+  },
+  {
+   "marker": "estrogen_receptor_alpha",
+   "a": "gamma",
+   "b": "immuvis",
+   "pooled_diff": -0.04753097496023995,
+   "r4_diff": 0.026766770625010372
+  }
+ ],
+ "D1": true,
+ "D2_lomo_r2": {
+  "f1_delta": {
+   "pooled": -0.2368176095589276,
+   "pooled+R4+R5_input": -0.4174971910229377,
+   "gain": -0.1806795814640101
+  },
+  "mplus_r": {
+   "pooled": -0.013875799298717295,
+   "pooled+R4+R5_input": -0.06747963494700171,
+   "gain": -0.053603835648284415
+  }
+ },
+ "D2": false,
+ "outcome": "GO",
+ "controls_valid": {
+  "shifted_R4_below_0_05": 9,
+  "state_R5_below_0_05": 0,
+  "shuffled_R5_below_0_05": 0,
+  "shuffled_R4_above_0_1": 11,
+  "n_markers": 11
+ }
+}

@@ -1,0 +1,21 @@
+cohort,marker,0,1,2
+Danenberg (cross-cohort),c_erb_b_2_her2,MLP,MLP,MLP
+Danenberg (cross-cohort),cd20,GCN,GraphSAGE,GraphSAGE
+Danenberg (cross-cohort),cd3,MLP,MLP,MLP
+Danenberg (cross-cohort),cd45,MLP,MLP,GraphSAGE
+Danenberg (cross-cohort),cd68,GraphSAGE,MLP,GCN
+Danenberg (cross-cohort),cytokeratin_5,Table + ring,Table + ring,Table + ring
+Danenberg (cross-cohort),cytokeratin_8_18,MLP,Table + ring,MLP
+Danenberg (cross-cohort),ki_67,MLP,GraphSAGE,Table
+Danenberg (cross-cohort),pan_cytokeratin,Table,Table + ring,Table + ring
+Danenberg (cross-cohort),sma,MLP,GCN,GCN
+Jackson (held-out patients),c_erb_b_2_her2,MLP,MLP,Table + ring
+Jackson (held-out patients),cd20,GraphSAGE,GraphSAGE,GraphSAGE
+Jackson (held-out patients),cd3,Table + ring,GraphSAGE,GraphSAGE
+Jackson (held-out patients),cd45,GraphSAGE,GraphSAGE,GraphSAGE
+Jackson (held-out patients),cd68,GraphSAGE,GraphSAGE,MLP
+Jackson (held-out patients),cytokeratin_5,Table + ring,Table + ring,GraphSAGE
+Jackson (held-out patients),cytokeratin_8_18,GraphSAGE,Table,MLP
+Jackson (held-out patients),ki_67,Table + ring,GraphSAGE,GraphSAGE
+Jackson (held-out patients),pan_cytokeratin,GraphSAGE,Table + ring,GraphSAGE
+Jackson (held-out patients),sma,GraphSAGE,GraphSAGE,GraphSAGE
