@@ -1,0 +1,206 @@
+[{"stream_name":"stderr","time":9.136216249,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":9.136268668,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":10.664305232,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.664343969,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.664349525,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.664353727,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.566731048,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.566771468,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.566777343,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.566781792,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":30.72772694,"data":"[   0.2 min] tables: Danenberg 1,062,219 cells, Jackson 1,126,124 cells\n"}
+,{"stream_name":"stderr","time":32.634271852,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":32.634611443,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":32.837559801,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":32.83759822,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":32.837603977,"data":"\n"}
+,{"stream_name":"stderr","time":32.837607837,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":32.837612706,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":705.022458824,"data":"[  11.4 min] per-cell image means\n"}
+,{"stream_name":"stdout","time":706.95245919,"data":"Jackson {'train': (806958, 251), 'val': (89348, 32), 'test': (229818, 66)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":706.952501235,"data":"Danenberg {'train': (728537, 465), 'val': (105171, 55), 'test': (228511, 130)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":708.973571238,"data":"[  11.5 min] splits and harmonisation\n"}
+,{"stream_name":"stdout","time":781.76134963,"data":"   cohort                  marker      n  frac_at_min  frac_below_0p1        bic1        bic2        bic3  best_k  low_comp_weight  low_comp_mean  high_comp_mean   q01   q50   q99\n"}
+,{"stream_name":"stdout","time":781.761384176,"data":"  Jackson          c_erb_b_2_her2 806958        0.004           0.262   13458.577  -12761.769  -18926.312       3            0.666          0.155           0.567 0.011 0.203 1.316\n"}
+,{"stream_name":"stdout","time":781.761397528,"data":"Danenberg          c_erb_b_2_her2 728520        0.000           0.271   26809.473   -1870.215  -13440.554       3            0.777          0.191           0.709 0.013 0.208 1.616\n"}
+,{"stream_name":"stdout","time":781.761400891,"data":"  Jackson                    cd20 806958        0.099           0.961  -92487.696 -227136.290 -240174.150       3            0.937          0.020           0.249 0.000 0.017 0.432\n"}
+,{"stream_name":"stdout","time":781.761404196,"data":"Danenberg                    cd20 728520        0.002           0.827  -85653.817 -163645.346 -172070.510       3            0.958          0.057           0.389 0.004 0.052 0.512\n"}
+,{"stream_name":"stdout","time":781.761408697,"data":"  Jackson                     cd3 806958        0.070           0.952 -150296.460 -238046.511 -251930.507       3            0.875          0.016           0.115 0.000 0.014 0.248\n"}
+,{"stream_name":"stdout","time":781.761412685,"data":"Danenberg                     cd3 728520        0.003           0.973 -216913.688 -240924.514 -246584.201       3            0.813          0.027           0.070 0.003 0.028 0.135\n"}
+,{"stream_name":"stdout","time":781.76141666,"data":"  Jackson                    cd45 806958        0.035           0.843  -58257.122 -163348.716 -174687.397       3            0.792          0.025           0.238 0.000 0.026 0.711\n"}
+,{"stream_name":"stdout","time":781.76142079,"data":"Danenberg                    cd45 728520        0.000           0.162   -1874.149  -27890.689  -32626.721       3            0.833          0.215           0.643 0.026 0.226 1.208\n"}
+,{"stream_name":"stdout","time":781.761425404,"data":"  Jackson                    cd68 806958        0.015           0.760  -13329.791 -116157.618 -132824.215       3            0.797          0.043           0.355 0.000 0.044 1.069\n"}
+,{"stream_name":"stdout","time":781.76142988,"data":"Danenberg                    cd68 728520        0.006           0.898  -82224.347 -199962.381 -215289.755       3            0.829          0.022           0.187 0.002 0.023 0.549\n"}
+,{"stream_name":"stdout","time":781.761436555,"data":"  Jackson           cytokeratin_5 806958        0.020           0.962  -76570.870 -254742.913 -258780.853       3            0.948          0.024           0.320 0.000 0.022 0.494\n"}
+,{"stream_name":"stdout","time":781.76144106,"data":"Danenberg           cytokeratin_5 728520        0.003           0.945  -43177.013 -288768.103 -292038.509       3            0.923          0.019           0.390 0.004 0.018 0.871\n"}
+,{"stream_name":"stdout","time":781.761445336,"data":"  Jackson        cytokeratin_8_18 806958        0.032           0.558   64231.489  -29315.453  -41845.016       3            0.521          0.025           0.598 0.000 0.066 2.013\n"}
+,{"stream_name":"stdout","time":781.761449615,"data":"Danenberg        cytokeratin_8_18 728520        0.007           0.668   17087.936  -81402.247 -102199.783       3            0.602          0.024           0.370 0.002 0.039 1.414\n"}
+,{"stream_name":"stdout","time":781.761453875,"data":"  Jackson estrogen_receptor_alpha 806958        0.045           0.776  -59903.273 -131070.019 -147135.981       3            0.732          0.029           0.223 0.000 0.034 0.673\n"}
+,{"stream_name":"stdout","time":781.761458103,"data":"Danenberg estrogen_receptor_alpha 728520        0.000           0.007  109723.807  102350.427   99917.865       3            0.629          0.779           1.827 0.116 1.039 3.279\n"}
+,{"stream_name":"stdout","time":781.761462173,"data":"  Jackson                   ki_67 806958        0.238           0.903   -8361.202 -220107.732 -241605.135       3            0.834          0.008           0.334 0.000 0.007 1.223\n"}
+,{"stream_name":"stdout","time":781.761470157,"data":"Danenberg                   ki_67 728520        0.019           0.942 -110417.493 -228343.536 -242159.464       3            0.882          0.019           0.156 0.000 0.017 0.332\n"}
+,{"stream_name":"stdout","time":781.76147464,"data":"  Jackson         pan_cytokeratin 806958        0.012           0.339  150627.778   78745.831   68216.289       3            0.353          0.037           1.577 0.000 0.595 3.660\n"}
+,{"stream_name":"stdout","time":781.761486928,"data":"Danenberg         pan_cytokeratin 728520        0.000           0.328  147468.930   78463.390   70247.826       3            0.354          0.050           1.520 0.009 0.552 3.649\n"}
+,{"stream_name":"stdout","time":781.761489831,"data":"  Jackson                     sma 806958        0.013           0.546   93373.423  -10209.761  -25551.432       3            0.574          0.042           0.819 0.000 0.077 2.772\n"}
+,{"stream_name":"stdout","time":781.761492888,"data":"Danenberg                     sma 728520        0.000           0.090   33130.273   18569.046   14773.070       3            0.689          0.296           0.781 0.029 0.366 1.555\n"}
+,{"stream_name":"stdout","time":781.761495676,"data":"[  12.7 min] histograms\n"}
+,{"stream_name":"stdout","time":782.341719414,"data":"[  12.7 min] train on Jackson\n"}
+,{"stream_name":"stdout","time":830.457800893,"data":"[  13.5 min]   Jackson: c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":878.230104313,"data":"[  14.3 min]   Jackson: cd20\n"}
+,{"stream_name":"stdout","time":926.283451206,"data":"[  15.1 min]   Jackson: cd3\n"}
+,{"stream_name":"stdout","time":975.845084475,"data":"[  15.9 min]   Jackson: cd45\n"}
+,{"stream_name":"stdout","time":1025.19920821,"data":"[  16.7 min]   Jackson: cd68\n"}
+,{"stream_name":"stdout","time":1077.343039107,"data":"[  17.6 min]   Jackson: cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1125.11672744,"data":"[  18.4 min]   Jackson: cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1175.965972379,"data":"[  19.2 min]   Jackson: estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":1224.467610904,"data":"[  20.0 min]   Jackson: ki_67\n"}
+,{"stream_name":"stdout","time":1276.163713348,"data":"[  20.9 min]   Jackson: pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1330.000533827,"data":"[  21.8 min]   Jackson: sma\n"}
+,{"stream_name":"stdout","time":1330.005343376,"data":"[  21.8 min] train on Danenberg\n"}
+,{"stream_name":"stdout","time":1385.287019687,"data":"[  22.7 min]   Danenberg: c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":1439.301634474,"data":"[  23.6 min]   Danenberg: cd20\n"}
+,{"stream_name":"stdout","time":1490.330877308,"data":"[  24.5 min]   Danenberg: cd3\n"}
+,{"stream_name":"stdout","time":1541.208784189,"data":"[  25.3 min]   Danenberg: cd45\n"}
+,{"stream_name":"stdout","time":1594.143084632,"data":"[  26.2 min]   Danenberg: cd68\n"}
+,{"stream_name":"stdout","time":1644.606580425,"data":"[  27.1 min]   Danenberg: cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1693.387378594,"data":"[  27.9 min]   Danenberg: cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1748.342927205,"data":"[  28.8 min]   Danenberg: estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":1795.932171361,"data":"[  29.6 min]   Danenberg: ki_67\n"}
+,{"stream_name":"stdout","time":1846.422015931,"data":"[  30.4 min]   Danenberg: pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1898.485136728,"data":"[  31.3 min]   Danenberg: sma\n"}
+,{"stream_name":"stdout","time":1898.492012676,"data":"[  31.3 min] train on Both\n"}
+,{"stream_name":"stdout","time":1960.113755612,"data":"[  32.3 min]   Both: c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":2020.033505522,"data":"[  33.3 min]   Both: cd20\n"}
+,{"stream_name":"stdout","time":2088.688743962,"data":"[  34.5 min]   Both: cd3\n"}
+,{"stream_name":"stdout","time":2150.356413347,"data":"[  35.5 min]   Both: cd45\n"}
+,{"stream_name":"stdout","time":2213.808200639,"data":"[  36.5 min]   Both: cd68\n"}
+,{"stream_name":"stdout","time":2275.274831688,"data":"[  37.6 min]   Both: cytokeratin_5\n"}
+,{"stream_name":"stdout","time":2335.035222347,"data":"[  38.6 min]   Both: cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":2399.012174785,"data":"[  39.6 min]   Both: estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":2462.944030893,"data":"[  40.7 min]   Both: ki_67\n"}
+,{"stream_name":"stdout","time":2525.080131472,"data":"[  41.7 min]   Both: pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":2587.83439455,"data":"[  42.8 min]   Both: sma\n"}
+,{"stream_name":"stdout","time":2588.029988587,"data":"     test  setting     train                    model  crps  cov50  cov80  cov95  width80  pit_ks  W2_draw  sd_ratio_draw  R4_median\n"}
+,{"stream_name":"stdout","time":2588.030021592,"data":"Danenberg     both      Both              Climatology 0.126  0.430  0.738  0.902    0.512   0.076    0.052          1.054      0.001\n"}
+,{"stream_name":"stdout","time":2588.030028784,"data":"Danenberg     both      Both Constant (training mean) 0.193    NaN    NaN    NaN      NaN     NaN    0.271          0.000      0.000\n"}
+,{"stream_name":"stdout","time":2588.030034514,"data":"Danenberg     both      Both           Point LightGBM 0.102    NaN    NaN    NaN      NaN     NaN    0.091          0.661      0.607\n"}
+,{"stream_name":"stdout","time":2588.030040181,"data":"Danenberg     both      Both        Quantile LightGBM 0.071  0.473  0.753  0.888    0.267   0.045    0.058          0.817      0.558\n"}
+,{"stream_name":"stdout","time":2588.03004551,"data":"Danenberg     both      Both        Residual sampling 0.074  0.451  0.737  0.894    0.253   0.049    0.054          0.950      0.587\n"}
+,{"stream_name":"stdout","time":2588.030050592,"data":"Danenberg      own Danenberg              Climatology 0.125  0.483  0.767  0.912    0.513   0.034    0.050          1.006     -0.001\n"}
+,{"stream_name":"stdout","time":2588.030055525,"data":"Danenberg      own Danenberg Constant (training mean) 0.192    NaN    NaN    NaN      NaN     NaN    0.272          0.000     -0.000\n"}
+,{"stream_name":"stdout","time":2588.030060622,"data":"Danenberg      own Danenberg           Point LightGBM 0.101    NaN    NaN    NaN      NaN     NaN    0.085          0.700      0.616\n"}
+,{"stream_name":"stdout","time":2588.030065598,"data":"Danenberg      own Danenberg        Quantile LightGBM 0.070  0.463  0.742  0.882    0.251   0.054    0.059          0.810      0.570\n"}
+,{"stream_name":"stdout","time":2588.030070349,"data":"Danenberg      own Danenberg        Residual sampling 0.072  0.450  0.736  0.893    0.244   0.060    0.050          0.927      0.599\n"}
+,{"stream_name":"stdout","time":2588.030073598,"data":"Danenberg transfer   Jackson              Climatology 0.146  0.437  0.743  0.912    0.589   0.292    0.159          1.460     -0.001\n"}
+,{"stream_name":"stdout","time":2588.03007703,"data":"Danenberg transfer   Jackson Constant (training mean) 0.212    NaN    NaN    NaN      NaN     NaN    0.288          0.000     -0.000\n"}
+,{"stream_name":"stdout","time":2588.030080806,"data":"Danenberg transfer   Jackson           Point LightGBM 0.189    NaN    NaN    NaN      NaN     NaN    0.182          0.912      0.406\n"}
+,{"stream_name":"stdout","time":2588.030084123,"data":"Danenberg transfer   Jackson        Quantile LightGBM 0.129  0.337  0.570  0.722    0.327   0.374    0.169          1.310      0.402\n"}
+,{"stream_name":"stdout","time":2588.030102819,"data":"Danenberg transfer   Jackson        Residual sampling 0.133  0.305  0.566  0.771    0.325   0.340    0.181          1.645      0.395\n"}
+,{"stream_name":"stdout","time":2588.030105858,"data":"  Jackson     both      Both              Climatology 0.148  0.538  0.799  0.926    0.602   0.107    0.061          1.049     -0.001\n"}
+,{"stream_name":"stdout","time":2588.030109749,"data":"  Jackson     both      Both Constant (training mean) 0.227    NaN    NaN    NaN      NaN     NaN    0.329          0.000     -0.000\n"}
+,{"stream_name":"stdout","time":2588.030113731,"data":"  Jackson     both      Both           Point LightGBM 0.122    NaN    NaN    NaN      NaN     NaN    0.100          0.675      0.589\n"}
+,{"stream_name":"stdout","time":2588.03011754,"data":"  Jackson     both      Both        Quantile LightGBM 0.084  0.472  0.759  0.900    0.322   0.044    0.064          0.835      0.544\n"}
+,{"stream_name":"stdout","time":2588.030121619,"data":"  Jackson     both      Both        Residual sampling 0.085  0.469  0.760  0.911    0.309   0.069    0.061          0.989      0.568\n"}
+,{"stream_name":"stdout","time":2588.030125752,"data":"  Jackson      own   Jackson              Climatology 0.146  0.485  0.780  0.921    0.589   0.057    0.051          1.077     -0.002\n"}
+,{"stream_name":"stdout","time":2588.030130041,"data":"  Jackson      own   Jackson Constant (training mean) 0.230    NaN    NaN    NaN      NaN     NaN    0.328          0.000      0.000\n"}
+,{"stream_name":"stdout","time":2588.030134001,"data":"  Jackson      own   Jackson           Point LightGBM 0.115    NaN    NaN    NaN      NaN     NaN    0.096          0.684      0.617\n"}
+,{"stream_name":"stdout","time":2588.030138297,"data":"  Jackson      own   Jackson        Quantile LightGBM 0.080  0.461  0.743  0.887    0.293   0.042    0.062          0.816      0.581\n"}
+,{"stream_name":"stdout","time":2588.030142492,"data":"  Jackson      own   Jackson        Residual sampling 0.083  0.458  0.744  0.898    0.291   0.054    0.066          1.000      0.600\n"}
+,{"stream_name":"stdout","time":2588.030146483,"data":"  Jackson transfer Danenberg              Climatology 0.163  0.313  0.538  0.714    0.513   0.289    0.146          0.976      0.000\n"}
+,{"stream_name":"stdout","time":2588.030150721,"data":"  Jackson transfer Danenberg Constant (training mean) 0.244    NaN    NaN    NaN      NaN     NaN    0.347          0.000     -0.000\n"}
+,{"stream_name":"stdout","time":2588.030168676,"data":"  Jackson transfer Danenberg           Point LightGBM 0.161    NaN    NaN    NaN      NaN     NaN    0.215          0.454      0.375\n"}
+,{"stream_name":"stdout","time":2588.030175908,"data":"  Jackson transfer Danenberg        Quantile LightGBM 0.135  0.239  0.435  0.592    0.210   0.367    0.208          0.598      0.366\n"}
+,{"stream_name":"stdout","time":2588.030180686,"data":"  Jackson transfer Danenberg        Residual sampling 0.131  0.226  0.426  0.611    0.197   0.355    0.196          0.658      0.352\n"}
+,{"stream_name":"stdout","time":2588.094832665,"data":"metric                                        cov80  cov95   crps\n"}
+,{"stream_name":"stdout","time":2588.094876601,"data":"test      train     model                                        \n"}
+,{"stream_name":"stdout","time":2588.094882843,"data":"Danenberg Both      Climatology               0.738  0.902  0.126\n"}
+,{"stream_name":"stdout","time":2588.09488713,"data":"                    Constant (training mean)    NaN    NaN  0.193\n"}
+,{"stream_name":"stdout","time":2588.094891515,"data":"                    Point LightGBM              NaN    NaN  0.102\n"}
+,{"stream_name":"stdout","time":2588.09489512,"data":"                    Quantile LightGBM         0.753  0.888  0.071\n"}
+,{"stream_name":"stdout","time":2588.094914031,"data":"                    Residual sampling         0.737  0.894  0.074\n"}
+,{"stream_name":"stdout","time":2588.094917604,"data":"          Danenberg Climatology               0.767  0.912  0.125\n"}
+,{"stream_name":"stdout","time":2588.094921206,"data":"                    Constant (training mean)    NaN    NaN  0.192\n"}
+,{"stream_name":"stdout","time":2588.094924594,"data":"                    Point LightGBM              NaN    NaN  0.101\n"}
+,{"stream_name":"stdout","time":2588.094928002,"data":"                    Quantile LightGBM         0.742  0.882  0.070\n"}
+,{"stream_name":"stdout","time":2588.094931715,"data":"                    Residual sampling         0.736  0.893  0.072\n"}
+,{"stream_name":"stdout","time":2588.094935673,"data":"          Jackson   Climatology               0.743  0.912  0.146\n"}
+,{"stream_name":"stdout","time":2588.094947777,"data":"                    Constant (training mean)    NaN    NaN  0.212\n"}
+,{"stream_name":"stdout","time":2588.094951672,"data":"                    Point LightGBM              NaN    NaN  0.189\n"}
+,{"stream_name":"stdout","time":2588.094955368,"data":"                    Quantile LightGBM         0.570  0.722  0.129\n"}
+,{"stream_name":"stdout","time":2588.094958949,"data":"                    Residual sampling         0.566  0.771  0.133\n"}
+,{"stream_name":"stdout","time":2588.094966823,"data":"Jackson   Both      Climatology               0.799  0.926  0.148\n"}
+,{"stream_name":"stdout","time":2588.094971068,"data":"                    Constant (training mean)    NaN    NaN  0.227\n"}
+,{"stream_name":"stdout","time":2588.094974742,"data":"                    Point LightGBM              NaN    NaN  0.122\n"}
+,{"stream_name":"stdout","time":2588.094978263,"data":"                    Quantile LightGBM         0.759  0.900  0.084\n"}
+,{"stream_name":"stdout","time":2588.094981572,"data":"                    Residual sampling         0.760  0.911  0.085\n"}
+,{"stream_name":"stdout","time":2588.094984936,"data":"          Danenberg Climatology               0.538  0.714  0.163\n"}
+,{"stream_name":"stdout","time":2588.094988424,"data":"                    Constant (training mean)    NaN    NaN  0.244\n"}
+,{"stream_name":"stdout","time":2588.094992208,"data":"                    Point LightGBM              NaN    NaN  0.161\n"}
+,{"stream_name":"stdout","time":2588.094995832,"data":"                    Quantile LightGBM         0.435  0.592  0.135\n"}
+,{"stream_name":"stdout","time":2588.094999705,"data":"                    Residual sampling         0.426  0.611  0.131\n"}
+,{"stream_name":"stdout","time":2588.095003343,"data":"          Jackson   Climatology               0.780  0.921  0.146\n"}
+,{"stream_name":"stdout","time":2588.095006993,"data":"                    Constant (training mean)    NaN    NaN  0.230\n"}
+,{"stream_name":"stdout","time":2588.095010564,"data":"                    Point LightGBM              NaN    NaN  0.115\n"}
+,{"stream_name":"stdout","time":2588.095013843,"data":"                    Quantile LightGBM         0.743  0.887  0.080\n"}
+,{"stream_name":"stdout","time":2588.0950196,"data":"                    Residual sampling         0.744  0.898  0.083\n"}
+,{"stream_name":"stdout","time":2588.095023217,"data":"call                                                         better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":2588.095026779,"data":"test      train     model                    vs                                 \n"}
+,{"stream_name":"stdout","time":2588.095031184,"data":"Danenberg Both      Climatology              Point LightGBM       3     1      6\n"}
+,{"stream_name":"stdout","time":2588.095034766,"data":"                    Constant (training mean) Climatology          0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095044767,"data":"                                             Point LightGBM       0     1      9\n"}
+,{"stream_name":"stdout","time":2588.095048825,"data":"                    Point LightGBM           Climatology          6     1      3\n"}
+,{"stream_name":"stdout","time":2588.095052501,"data":"                    Quantile LightGBM        Climatology          9     1      0\n"}
+,{"stream_name":"stdout","time":2588.095056391,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095061421,"data":"                    Residual sampling        Climatology          9     0      1\n"}
+,{"stream_name":"stdout","time":2588.095065312,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095068874,"data":"          Danenberg Climatology              Point LightGBM       3     0      7\n"}
+,{"stream_name":"stdout","time":2588.095074205,"data":"                    Constant (training mean) Climatology          0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095077215,"data":"                                             Point LightGBM       0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095079714,"data":"                    Point LightGBM           Climatology          7     0      3\n"}
+,{"stream_name":"stdout","time":2588.095082129,"data":"                    Quantile LightGBM        Climatology          9     1      0\n"}
+,{"stream_name":"stdout","time":2588.095084633,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095087114,"data":"                    Residual sampling        Climatology          9     0      1\n"}
+,{"stream_name":"stdout","time":2588.095090442,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095094369,"data":"          Jackson   Climatology              Point LightGBM       8     0      2\n"}
+,{"stream_name":"stdout","time":2588.095098141,"data":"                    Constant (training mean) Climatology          0     1      9\n"}
+,{"stream_name":"stdout","time":2588.095101321,"data":"                                             Point LightGBM       7     0      3\n"}
+,{"stream_name":"stdout","time":2588.095104959,"data":"                    Point LightGBM           Climatology          2     0      8\n"}
+,{"stream_name":"stdout","time":2588.095108533,"data":"                    Quantile LightGBM        Climatology          4     2      4\n"}
+,{"stream_name":"stdout","time":2588.095112249,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095116951,"data":"                    Residual sampling        Climatology          3     1      6\n"}
+,{"stream_name":"stdout","time":2588.09512067,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095124468,"data":"Jackson   Both      Climatology              Point LightGBM       2     5      3\n"}
+,{"stream_name":"stdout","time":2588.095128273,"data":"                    Constant (training mean) Climatology          0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095132256,"data":"                                             Point LightGBM       0     1      9\n"}
+,{"stream_name":"stdout","time":2588.095136204,"data":"                    Point LightGBM           Climatology          3     5      2\n"}
+,{"stream_name":"stdout","time":2588.095140094,"data":"                    Quantile LightGBM        Climatology          9     1      0\n"}
+,{"stream_name":"stdout","time":2588.095148801,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095168591,"data":"                    Residual sampling        Climatology          9     1      0\n"}
+,{"stream_name":"stdout","time":2588.09517952,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095183646,"data":"          Danenberg Climatology              Point LightGBM       4     4      2\n"}
+,{"stream_name":"stdout","time":2588.095187486,"data":"                    Constant (training mean) Climatology          0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095191164,"data":"                                             Point LightGBM       0     1      9\n"}
+,{"stream_name":"stdout","time":2588.095194961,"data":"                    Point LightGBM           Climatology          2     4      4\n"}
+,{"stream_name":"stdout","time":2588.09519886,"data":"                    Quantile LightGBM        Climatology          7     1      2\n"}
+,{"stream_name":"stdout","time":2588.095202699,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095206466,"data":"                    Residual sampling        Climatology          6     3      1\n"}
+,{"stream_name":"stdout","time":2588.0952105,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095214341,"data":"          Jackson   Climatology              Point LightGBM       2     4      4\n"}
+,{"stream_name":"stdout","time":2588.09521818,"data":"                    Constant (training mean) Climatology          0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095221928,"data":"                                             Point LightGBM       0     0     10\n"}
+,{"stream_name":"stdout","time":2588.095225725,"data":"                    Point LightGBM           Climatology          4     4      2\n"}
+,{"stream_name":"stdout","time":2588.095228642,"data":"                    Quantile LightGBM        Climatology         10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095231074,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095233599,"data":"                    Residual sampling        Climatology          8     2      0\n"}
+,{"stream_name":"stdout","time":2588.095237066,"data":"                                             Point LightGBM      10     0      0\n"}
+,{"stream_name":"stdout","time":2588.095239589,"data":"{'n_markers_calibrated_80': {'Danenberg': 0, 'Jackson': 0}, 'quantile_calibrated_under_transfer': False, 'rule': '|cov80 - 0.80| \u003c 0.03 for \u003e= 8/10 markers in both directions'}\n"}
+,{"stream_name":"stdout","time":2588.956482181,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":2594.833853349,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2594.83389407,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2595.119900822,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2595.119933319,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2596.127889956,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2596.233710468,"data":"[NbConvertApp] Writing 57407 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2599.495093741,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2600.388064953,"data":"[NbConvertApp] Writing 458945 bytes to __results__.html\n"}
+]

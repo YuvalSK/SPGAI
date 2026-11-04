@@ -1,0 +1,9 @@
+mark,model,partial_beyond_nuclear,A_accuracy,B_jackson_test_reproduced,B_jackson_test_of,B_jackson_test,B_jackson_test_full_inputs_reproduced,C_danenberg_reproduced,C_danenberg_of,C_danenberg,C_danenberg_full_inputs_reproduced,jackson_oof_reproduced,jackson_oof_of,jackson_oof,jackson_oof_full_inputs_reproduced,verdict,C2_danenberg_transferable_reproduced,C2_danenberg_transferable_of,C2_danenberg_transferable,verdict_amended
+h3k27me3,nuclear,0.17265197427416612,False,7,33,False,7/33,0,33,False,0/33,3,33,False,3/33,no,0,23,False,no
+h3k27me3,lgbm,0.6018873196306682,True,29,33,True,27/33,19,33,False,27/33,32,33,True,29/33,only within Jackson,17,23,True,infers
+h3k27me3,immuvis,0.588672484295639,True,25,33,True,28/33,15,33,False,20/33,0,0,False,0/0,only within Jackson,12,23,False,only within Jackson
+h3k27me3,eva,0.22855810190887924,False,14,21,True,14/21,0,0,False,0/0,0,0,False,0/0,no,0,0,False,no
+phh3,nuclear,0.1204194446648818,False,4,16,False,4/16,0,16,False,0/16,6,16,False,6/16,no,0,10,False,no
+phh3,lgbm,0.2931447108953935,False,9,16,False,3/16,13,16,True,10/16,16,16,True,11/16,no,7,10,True,no
+phh3,immuvis,0.2987024053409725,False,9,16,False,4/16,7,16,False,10/16,0,0,False,0/0,no,4,10,False,no
+phh3,eva,0.07877291377154964,False,4,7,False,4/7,0,0,False,0/0,0,0,False,0/0,no,0,0,False,no

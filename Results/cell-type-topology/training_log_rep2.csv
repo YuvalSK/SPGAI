@@ -1,0 +1,26 @@
+rep,task,train,model,epochs,best_val_loss,n_train,seconds
+2,fine,Danenberg,Table,,,300000,185.5591938495636
+2,fine,Danenberg,Table + nbr,,,300000,446.94060015678406
+2,fine,Danenberg,Topology,,,300000,167.981055021286
+2,fine,Danenberg,Table + topo,,,300000,238.13491225242615
+2,fine,Danenberg,Table + nbr + topo,,,300000,502.99348425865173
+2,fine,Jackson,Table,,,300000,142.25255179405212
+2,fine,Jackson,Table + nbr,,,300000,360.25584864616394
+2,fine,Jackson,Topology,,,300000,133.42063426971436
+2,fine,Jackson,Table + topo,,,300000,188.8556571006775
+2,fine,Jackson,Table + nbr + topo,,,300000,402.7713258266449
+2,coarse,Jackson,Table,,,300000,40.397156953811646
+2,coarse,Jackson,Table + nbr,,,300000,89.08146071434021
+2,coarse,Jackson,Topology,,,300000,38.37786245346069
+2,coarse,Jackson,Table + topo,,,300000,50.80103945732117
+2,coarse,Jackson,Table + nbr + topo,,,300000,99.37701368331909
+2,coarse,Danenberg,Table,,,300000,41.910011291503906
+2,coarse,Danenberg,Table + nbr,,,300000,94.9136176109314
+2,coarse,Danenberg,Topology,,,300000,36.29916429519653
+2,coarse,Danenberg,Table + topo,,,300000,51.85149931907654
+2,coarse,Danenberg,Table + nbr + topo,,,300000,104.83288621902466
+2,coarse,Both,Table,,,600000,63.88757848739624
+2,coarse,Both,Table + nbr,,,600000,161.90046381950378
+2,coarse,Both,Topology,,,600000,56.83968710899353
+2,coarse,Both,Table + topo,,,600000,84.42671513557434
+2,coarse,Both,Table + nbr + topo,,,600000,183.66644096374512

@@ -1,0 +1,489 @@
+[{"stream_name":"stderr","time":6.963053586,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.963102455,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.964351395,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.964391254,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.9643953530000005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.964398243,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.63291463,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.632952088,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.632955937,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.632958648,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":21.553114509,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":21.553506628,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":21.756382638,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":21.75641703,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":21.756428217,"data":"\n"}
+,{"stream_name":"stderr","time":21.756430872,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":21.756433651000002,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":45.087527346,"data":"SMOKE | device cuda | GPUs 2 | torch 2.11.0+cu128 | transformers 5.16.1 | reps [0, 1, 2]\n"}
+,{"stream_name":"stderr","time":128.784895917,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":128.784935112,"data":"\n"}
+,{"stream_name":"stderr","time":128.784940837,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":151.966362736,"data":"        channel  vocab_index  in_pretraining  kronos2_mean  kronos2_sd\n"}
+,{"stream_name":"stdout","time":151.966403247,"data":"0          DAPI            0            True      0.083207    0.095882\n"}
+,{"stream_name":"stdout","time":151.966410624,"data":"1     HISTONEH3           15            True      0.017520    0.032944\n"}
+,{"stream_name":"stdout","time":151.966434791,"data":"2          HER2          123            True      0.002635    0.002680\n"}
+,{"stream_name":"stdout","time":151.96643916,"data":"3          CD20           65            True      0.045192    0.057727\n"}
+,{"stream_name":"stdout","time":151.966442794,"data":"4           CD3           73            True      0.031814    0.066670\n"}
+,{"stream_name":"stdout","time":151.966446518,"data":"5          CD45           84            True      0.064862    0.112588\n"}
+,{"stream_name":"stdout","time":151.966454422,"data":"6          CD68           94            True      0.013593    0.033644\n"}
+,{"stream_name":"stdout","time":151.966457748,"data":"7           CK5          288           False           NaN         NaN\n"}
+,{"stream_name":"stdout","time":151.966460216,"data":"8        CK8_18          289           False           NaN         NaN\n"}
+,{"stream_name":"stdout","time":151.966462871,"data":"9           ERA          202            True      0.009006    0.029332\n"}
+,{"stream_name":"stdout","time":151.966465223,"data":"10         KI67           17            True      0.029532    0.076519\n"}
+,{"stream_name":"stdout","time":151.966467665,"data":"11  CYTOKERATIN          107            True      0.017070    0.040264\n"}
+,{"stream_name":"stdout","time":151.966470162,"data":"12        A-SMA           29            True      0.029575    0.041247\n"}
+,{"stream_name":"stdout","time":152.222976754,"data":"CK5: nearest vocabulary markers by text embedding ['ck20', 'ck17', 'panck', 'cytokeratin', 'ck8_18']\n"}
+,{"stream_name":"stdout","time":152.223020224,"data":"CK8_18: nearest vocabulary markers by text embedding ['ck20', 'ck5', 'ck17', 'panck', 'pancytokeratin']\n"}
+,{"stream_name":"stdout","time":152.297889615,"data":"[   1.8 min] KRONOS2 loaded, embedding dim 768\n"}
+,{"stream_name":"stdout","time":157.918425572,"data":"{\n"}
+,{"stream_name":"stdout","time":157.918459943,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":157.91846472,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":157.918472401,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":157.918475162,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":157.918477849,"data":" },\n"}
+,{"stream_name":"stdout","time":157.918480048,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":157.918482303,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":157.918484618,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":157.918487076,"data":" }\n"}
+,{"stream_name":"stdout","time":157.918489217,"data":"}\n"}
+,{"stream_name":"stdout","time":157.918491456,"data":"{'Danenberg': (794, 794), 'Jackson': (735, 708)}\n"}
+,{"stream_name":"stdout","time":166.775754444,"data":"Jackson: 44,891 cells, 24 images, 21 patients, 26 fine labels\n"}
+,{"stream_name":"stdout","time":166.866674259,"data":"Danenberg: 36,371 cells, 24 images, 24 patients, 32 fine labels\n"}
+,{"stream_name":"stdout","time":166.866723973,"data":"[   2.0 min] tables, labels and neighbour features\n"}
+,{"stream_name":"stdout","time":166.92527325,"data":"Jackson {'train': 18, 'val': 4, 'test': 2} images\n"}
+,{"stream_name":"stdout","time":166.925306373,"data":"Danenberg {'train': 15, 'val': 3, 'test': 6} images\n"}
+,{"stream_name":"stdout","time":196.536902151,"data":"Jackson        DAPI   HISTONEH3     HER2    CD20     CD3    CD45       CD68     CK5     CK8_18        ERA       KI67  CYTOKERATIN       A-SMA\n"}
+,{"stream_name":"stdout","time":196.536965805,"data":"q   57.4268  115.842201  26.6392  3.5398  5.5590  7.7195  34.902401  5.3350  36.522202  17.295799  33.143799    281.46759  110.053101\n"}
+,{"stream_name":"stdout","time":196.536972305,"data":"mu   0.0907    0.087200   0.0677  0.0435  0.0284  0.0339   0.020500  0.0291   0.051200   0.040100   0.018400      0.05670    0.033900\n"}
+,{"stream_name":"stdout","time":196.536977131,"data":"sd   0.1408    0.131200   0.1172  0.1296  0.0942  0.1035   0.072200  0.0947   0.115700   0.106900   0.078400      0.11380    0.099500\n"}
+,{"stream_name":"stdout","time":218.64345829,"data":"Danenberg           DAPI   HISTONEH3       HER2     CD20     CD3       CD45    CD68        CK5   CK8_18         ERA    KI67  CYTOKERATIN      A-SMA\n"}
+,{"stream_name":"stdout","time":218.643497495,"data":"q   225.607498  235.720596  30.942499  11.0730  3.4040  17.639299  7.4332  48.228901  14.3373  183.443207  5.0000   262.255188  44.429501\n"}
+,{"stream_name":"stdout","time":218.643504603,"data":"mu    0.117100    0.078200   0.051000   0.0306  0.0463   0.073100  0.0241   0.016600   0.0363    0.052900  0.0308     0.035200   0.066000\n"}
+,{"stream_name":"stdout","time":218.64351012,"data":"sd    0.164300    0.140000   0.102900   0.0800  0.1362   0.116900  0.0855   0.081000   0.1047    0.082200  0.1022     0.095100   0.105200\n"}
+,{"stream_name":"stdout","time":218.64351561,"data":"[   2.9 min] embedding helpers ready\n"}
+,{"stream_name":"stdout","time":273.961932498,"data":"kronos2 {'macro_f1_val': 0.5670966287685597, 'weight_decay': 0.0001, 'n_fit': 13442, 'n_val': 10388}\n"}
+,{"stream_name":"stdout","time":332.78156638,"data":"own {'macro_f1_val': 0.5732786319100603, 'weight_decay': 0.001, 'n_fit': 13442, 'n_val': 10388}\n"}
+,{"stream_name":"stdout","time":332.781612131,"data":"normalisation used: own\n"}
+,{"stream_name":"stdout","time":367.321282452,"data":"PCA: 256 components explain 0.988 of the variance\n"}
+,{"stream_name":"stdout","time":367.321330039,"data":"[   5.4 min] calibration\n"}
+,{"stream_name":"stdout","time":481.575241789,"data":"[   7.3 min] Jackson: embedded 24 / 24 images\n"}
+,{"stream_name":"stdout","time":482.072709078,"data":"Jackson: cells with an embedding 1.0000\n"}
+,{"stream_name":"stdout","time":573.963501344,"data":"[   8.8 min] Danenberg: embedded 24 / 24 images\n"}
+,{"stream_name":"stdout","time":574.409962908,"data":"Danenberg: cells with an embedding 0.9999\n"}
+,{"stream_name":"stdout","time":574.411129335,"data":"[   8.8 min] KRONOS2 embeddings saved\n"}
+,{"stream_name":"stdout","time":585.766590285,"data":"Jackson: v1 embedding (44891, 640), finite rows 1.0000\n"}
+,{"stream_name":"stdout","time":595.88220341,"data":"Danenberg: v1 embedding (36371, 640), finite rows 0.9999\n"}
+,{"stream_name":"stdout","time":595.882261938,"data":"[   9.2 min] KRONOS (v1) embeddings aligned\n"}
+,{"stream_name":"stdout","time":604.519120346,"data":"[   9.3 min] rep 0 coarse / train Jackson: Table@J 0.694, Table@D 0.513, Table + nbr@J 0.720, Table + nbr@D 0.513, Table + K32@J 0.709, Table + K32@D 0.502, Table + nbr + K32@J 0.718, Table + nbr + K32@D 0.510, Table + K2-32@J 0.707, Table + K2-32@D 0.510, Table + nbr + K2-32@J 0.728, Table + nbr + K2-32@D 0.517, KRONOS linear@J 0.658, KRONOS linear@D 0.462, KRONOS2 linear@J 0.611, KRONOS2 linear@D 0.444\n"}
+,{"stream_name":"stdout","time":613.148500834,"data":"[   9.5 min] rep 0 coarse / train Danenberg: Table@J 0.499, Table@D 0.579, Table + nbr@J 0.477, Table + nbr@D 0.581, Table + K32@J 0.529, Table + K32@D 0.563, Table + nbr + K32@J 0.535, Table + nbr + K32@D 0.570, Table + K2-32@J 0.496, Table + K2-32@D 0.591, Table + nbr + K2-32@J 0.488, Table + nbr + K2-32@D 0.589, KRONOS linear@J 0.367, KRONOS linear@D 0.512, KRONOS2 linear@J 0.454, KRONOS2 linear@D 0.518\n"}
+,{"stream_name":"stdout","time":626.971877882,"data":"[   9.7 min] rep 0 coarse / train Both: Table@J 0.695, Table@D 0.567, Table + nbr@J 0.715, Table + nbr@D 0.585, Table + K32@J 0.687, Table + K32@D 0.568, Table + nbr + K32@J 0.719, Table + nbr + K32@D 0.579, Table + K2-32@J 0.690, Table + K2-32@D 0.581, Table + nbr + K2-32@J 0.707, Table + nbr + K2-32@D 0.597, KRONOS linear@J 0.634, KRONOS linear@D 0.524, KRONOS2 linear@J 0.581, KRONOS2 linear@D 0.524\n"}
+,{"stream_name":"stdout","time":641.035227242,"data":"[   9.9 min] rep 0 fine / train Jackson: Table + nbr@J 0.291, Table + nbr + K32@J 0.290, Table + nbr + K2-32@J 0.300, KRONOS linear@J 0.311, KRONOS2 linear@J 0.297\n"}
+,{"stream_name":"stdout","time":659.539638133,"data":"[  10.2 min] rep 0 fine / train Danenberg: Table + nbr@D 0.263, Table + nbr + K32@D 0.240, Table + nbr + K2-32@D 0.268, KRONOS linear@D 0.201, KRONOS2 linear@D 0.203\n"}
+,{"stream_name":"stdout","time":668.076771134,"data":"[  10.4 min] rep 1 coarse / train Jackson: Table@J 0.765, Table@D 0.513, Table + nbr@J 0.755, Table + nbr@D 0.535, Table + K32@J 0.772, Table + K32@D 0.517, Table + nbr + K32@J 0.745, Table + nbr + K32@D 0.520, Table + K2-32@J 0.762, Table + K2-32@D 0.521, Table + nbr + K2-32@J 0.749, Table + nbr + K2-32@D 0.535, KRONOS linear@J 0.736, KRONOS linear@D 0.425, KRONOS2 linear@J 0.709, KRONOS2 linear@D 0.419\n"}
+,{"stream_name":"stdout","time":677.0906815,"data":"[  10.5 min] rep 1 coarse / train Danenberg: Table@J 0.578, Table@D 0.578, Table + nbr@J 0.612, Table + nbr@D 0.578, Table + K32@J 0.612, Table + K32@D 0.563, Table + nbr + K32@J 0.645, Table + nbr + K32@D 0.578, Table + K2-32@J 0.618, Table + K2-32@D 0.588, Table + nbr + K2-32@J 0.639, Table + nbr + K2-32@D 0.587, KRONOS linear@J 0.468, KRONOS linear@D 0.502, KRONOS2 linear@J 0.559, KRONOS2 linear@D 0.508\n"}
+,{"stream_name":"stdout","time":691.175513086,"data":"[  10.8 min] rep 1 coarse / train Both: Table@J 0.756, Table@D 0.558, Table + nbr@J 0.755, Table + nbr@D 0.571, Table + K32@J 0.757, Table + K32@D 0.557, Table + nbr + K32@J 0.753, Table + nbr + K32@D 0.578, Table + K2-32@J 0.762, Table + K2-32@D 0.576, Table + nbr + K2-32@J 0.765, Table + nbr + K2-32@D 0.583, KRONOS linear@J 0.734, KRONOS linear@D 0.525, KRONOS2 linear@J 0.700, KRONOS2 linear@D 0.521\n"}
+,{"stream_name":"stdout","time":705.439052059,"data":"[  11.0 min] rep 1 fine / train Jackson: Table + nbr@J 0.277, Table + nbr + K32@J 0.277, Table + nbr + K2-32@J 0.282, KRONOS linear@J 0.266, KRONOS2 linear@J 0.273\n"}
+,{"stream_name":"stdout","time":722.347438492,"data":"[  11.3 min] rep 1 fine / train Danenberg: Table + nbr@D 0.265, Table + nbr + K32@D 0.249, Table + nbr + K2-32@D 0.255, KRONOS linear@D 0.193, KRONOS2 linear@D 0.200\n"}
+,{"stream_name":"stdout","time":730.708972014,"data":"[  11.4 min] rep 2 coarse / train Jackson: Table@J 0.547, Table@D 0.512, Table + nbr@J 0.547, Table + nbr@D 0.522, Table + K32@J 0.518, Table + K32@D 0.526, Table + nbr + K32@J 0.507, Table + nbr + K32@D 0.519, Table + K2-32@J 0.536, Table + K2-32@D 0.525, Table + nbr + K2-32@J 0.544, Table + nbr + K2-32@D 0.523, KRONOS linear@J 0.482, KRONOS linear@D 0.449, KRONOS2 linear@J 0.500, KRONOS2 linear@D 0.499\n"}
+,{"stream_name":"stdout","time":739.896527736,"data":"[  11.6 min] rep 2 coarse / train Danenberg: Table@J 0.418, Table@D 0.575, Table + nbr@J 0.372, Table + nbr@D 0.586, Table + K32@J 0.431, Table + K32@D 0.581, Table + nbr + K32@J 0.412, Table + nbr + K32@D 0.596, Table + K2-32@J 0.435, Table + K2-32@D 0.589, Table + nbr + K2-32@J 0.399, Table + nbr + K2-32@D 0.591, KRONOS linear@J 0.317, KRONOS linear@D 0.506, KRONOS2 linear@J 0.280, KRONOS2 linear@D 0.514\n"}
+,{"stream_name":"stdout","time":754.399891481,"data":"[  11.8 min] rep 2 coarse / train Both: Table@J 0.519, Table@D 0.573, Table + nbr@J 0.564, Table + nbr@D 0.588, Table + K32@J 0.533, Table + K32@D 0.572, Table + nbr + K32@J 0.581, Table + nbr + K32@D 0.576, Table + K2-32@J 0.551, Table + K2-32@D 0.582, Table + nbr + K2-32@J 0.575, Table + nbr + K2-32@D 0.586, KRONOS linear@J 0.439, KRONOS linear@D 0.530, KRONOS2 linear@J 0.476, KRONOS2 linear@D 0.540\n"}
+,{"stream_name":"stdout","time":768.690504675,"data":"[  12.1 min] rep 2 fine / train Jackson: Table + nbr@J 0.216, Table + nbr + K32@J 0.204, Table + nbr + K2-32@J 0.216, KRONOS linear@J 0.192, KRONOS2 linear@J 0.197\n"}
+,{"stream_name":"stdout","time":786.235950329,"data":"[  12.4 min] rep 2 fine / train Danenberg: Table + nbr@D 0.251, Table + nbr + K32@D 0.249, Table + nbr + K2-32@D 0.243, KRONOS linear@D 0.195, KRONOS2 linear@D 0.213\n"}
+,{"stream_name":"stdout","time":786.440756712,"data":"model                           KRONOS linear  KRONOS2 linear  Table  Table + K2-32  Table + K32  Table + nbr  Table + nbr + K2-32  Table + nbr + K32\n"}
+,{"stream_name":"stdout","time":786.44078696,"data":"rep task   train     test                                                                                                                            \n"}
+,{"stream_name":"stdout","time":786.440792847,"data":"0   coarse Both      Danenberg          0.524           0.524  0.567          0.581        0.568        0.585                0.597              0.579\n"}
+,{"stream_name":"stdout","time":786.440797666,"data":"                     Jackson            0.634           0.581  0.695          0.690        0.687        0.715                0.707              0.719\n"}
+,{"stream_name":"stdout","time":786.440802118,"data":"           Danenberg Danenberg          0.512           0.518  0.579          0.591        0.563        0.581                0.589              0.570\n"}
+,{"stream_name":"stdout","time":786.440812965,"data":"                     Jackson            0.367           0.454  0.499          0.496        0.529        0.477                0.488              0.535\n"}
+,{"stream_name":"stdout","time":786.440816926,"data":"           Jackson   Danenberg          0.462           0.444  0.513          0.510        0.502        0.513                0.517              0.510\n"}
+,{"stream_name":"stdout","time":786.440820112,"data":"                     Jackson            0.658           0.611  0.694          0.707        0.709        0.720                0.728              0.718\n"}
+,{"stream_name":"stdout","time":786.440823337,"data":"    fine   Danenberg Danenberg          0.201           0.203    NaN            NaN          NaN        0.263                0.268              0.240\n"}
+,{"stream_name":"stdout","time":786.440826492,"data":"           Jackson   Jackson            0.311           0.297    NaN            NaN          NaN        0.291                0.300              0.290\n"}
+,{"stream_name":"stdout","time":786.440829635,"data":"1   coarse Both      Danenberg          0.525           0.521  0.558          0.576        0.557        0.571                0.583              0.578\n"}
+,{"stream_name":"stdout","time":786.440832636,"data":"                     Jackson            0.734           0.700  0.756          0.762        0.757        0.755                0.765              0.753\n"}
+,{"stream_name":"stdout","time":786.440835697,"data":"           Danenberg Danenberg          0.502           0.508  0.578          0.588        0.563        0.578                0.587              0.578\n"}
+,{"stream_name":"stdout","time":786.440839795,"data":"                     Jackson            0.468           0.559  0.578          0.618        0.612        0.612                0.639              0.645\n"}
+,{"stream_name":"stdout","time":786.440842941,"data":"           Jackson   Danenberg          0.425           0.419  0.513          0.521        0.517        0.535                0.535              0.520\n"}
+,{"stream_name":"stdout","time":786.440856515,"data":"                     Jackson            0.736           0.709  0.765          0.762        0.772        0.755                0.749              0.745\n"}
+,{"stream_name":"stdout","time":786.440859224,"data":"    fine   Danenberg Danenberg          0.193           0.200    NaN            NaN          NaN        0.265                0.255              0.249\n"}
+,{"stream_name":"stdout","time":786.440861623,"data":"           Jackson   Jackson            0.266           0.273    NaN            NaN          NaN        0.277                0.282              0.277\n"}
+,{"stream_name":"stdout","time":786.440863995,"data":"2   coarse Both      Danenberg          0.530           0.540  0.573          0.582        0.572        0.588                0.586              0.576\n"}
+,{"stream_name":"stdout","time":786.440866397,"data":"                     Jackson            0.439           0.476  0.519          0.551        0.533        0.564                0.575              0.581\n"}
+,{"stream_name":"stdout","time":786.440868861,"data":"           Danenberg Danenberg          0.506           0.514  0.575          0.589        0.581        0.586                0.591              0.596\n"}
+,{"stream_name":"stdout","time":786.440871248,"data":"                     Jackson            0.317           0.280  0.418          0.435        0.431        0.372                0.399              0.412\n"}
+,{"stream_name":"stdout","time":786.440873628,"data":"           Jackson   Danenberg          0.449           0.499  0.512          0.525        0.526        0.522                0.523              0.519\n"}
+,{"stream_name":"stdout","time":786.440876009,"data":"                     Jackson            0.482           0.500  0.547          0.536        0.518        0.547                0.544              0.507\n"}
+,{"stream_name":"stdout","time":786.440878461,"data":"    fine   Danenberg Danenberg          0.195           0.213    NaN            NaN          NaN        0.251                0.243              0.249\n"}
+,{"stream_name":"stdout","time":786.440880846,"data":"           Jackson   Jackson            0.192           0.197    NaN            NaN          NaN        0.216                0.216              0.204\n"}
+,{"stream_name":"stdout","time":786.440883297,"data":"\n"}
+,{"stream_name":"stdout","time":786.440885527,"data":"mean (SD) over replicates\n"}
+,{"stream_name":"stdout","time":786.466140456,"data":"                                    mean                                                                                                             std                                                                                                  \n"}
+,{"stream_name":"stdout","time":786.466167751,"data":"model                      KRONOS linear KRONOS2 linear  Table Table + K2-32 Table + K32 Table + nbr Table + nbr + K2-32 Table + nbr + K32 KRONOS linear KRONOS2 linear  Table Table + K2-32 Table + K32 Table + nbr Table + nbr + K2-32 Table + nbr + K32\n"}
+,{"stream_name":"stdout","time":786.466173069,"data":"task   train     test                                                                                                                                                                                                                                     \n"}
+,{"stream_name":"stdout","time":786.466177244,"data":"coarse Both      Danenberg         0.526          0.529  0.566         0.579       0.565       0.581               0.589             0.578         0.003          0.010  0.008         0.003       0.008       0.009               0.007             0.002\n"}
+,{"stream_name":"stdout","time":786.466181756,"data":"                 Jackson           0.603          0.586  0.657         0.668       0.659       0.678               0.682             0.684         0.150          0.112  0.123         0.107       0.115       0.101               0.097             0.091\n"}
+,{"stream_name":"stdout","time":786.466197667,"data":"       Danenberg Danenberg         0.507          0.513  0.577         0.589       0.569       0.582               0.589             0.582         0.005          0.005  0.002         0.002       0.010       0.004               0.002             0.013\n"}
+,{"stream_name":"stdout","time":786.466201941,"data":"                 Jackson           0.384          0.431  0.498         0.517       0.524       0.487               0.509             0.531         0.077          0.141  0.080         0.093       0.091       0.121               0.121             0.116\n"}
+,{"stream_name":"stdout","time":786.466225332,"data":"       Jackson   Danenberg         0.445          0.454  0.513         0.519       0.515       0.523               0.525             0.516         0.019          0.041  0.001         0.008       0.012       0.011               0.009             0.005\n"}
+,{"stream_name":"stdout","time":786.466232359,"data":"                 Jackson           0.625          0.606  0.669         0.668       0.666       0.674               0.674             0.657         0.130          0.105  0.111         0.118       0.132       0.112               0.112             0.130\n"}
+,{"stream_name":"stdout","time":786.466236143,"data":"fine   Danenberg Danenberg         0.196          0.205    NaN           NaN         NaN       0.260               0.256             0.246         0.004          0.007    NaN           NaN         NaN       0.008               0.013             0.005\n"}
+,{"stream_name":"stdout","time":786.466240002,"data":"       Jackson   Jackson           0.256          0.255    NaN           NaN         NaN       0.261               0.266             0.257         0.060          0.052    NaN           NaN         NaN       0.040               0.044             0.047\n"}
+,{"stream_name":"stdout","time":786.466244831,"data":" rep   task     train      test               model              base   diff     lo     hi   call\n"}
+,{"stream_name":"stdout","time":786.466248479,"data":"   0 coarse   Jackson   Jackson               Table       Table + nbr -0.026 -0.054  0.009   n.s.\n"}
+,{"stream_name":"stdout","time":786.466252123,"data":"   0 coarse   Jackson Danenberg               Table       Table + nbr  0.001 -0.006  0.019   n.s.\n"}
+,{"stream_name":"stdout","time":786.466256285,"data":"   0 coarse   Jackson   Jackson         Table + K32       Table + nbr -0.011 -0.026  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.4662602,"data":"   0 coarse   Jackson Danenberg         Table + K32       Table + nbr -0.011 -0.028  0.029   n.s.\n"}
+,{"stream_name":"stdout","time":786.466263973,"data":"   0 coarse   Jackson   Jackson   Table + nbr + K32       Table + nbr -0.002 -0.005  0.007   n.s.\n"}
+,{"stream_name":"stdout","time":786.46626749,"data":"   0 coarse   Jackson Danenberg   Table + nbr + K32       Table + nbr -0.002 -0.016  0.016   n.s.\n"}
+,{"stream_name":"stdout","time":786.466271018,"data":"   0 coarse   Jackson   Jackson       Table + K2-32       Table + nbr -0.013 -0.023  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.466281221,"data":"   0 coarse   Jackson   Jackson       Table + K2-32       Table + K32 -0.002 -0.002  0.003   n.s.\n"}
+,{"stream_name":"stdout","time":786.466285102,"data":"   0 coarse   Jackson Danenberg       Table + K2-32       Table + nbr -0.003 -0.015  0.027   n.s.\n"}
+,{"stream_name":"stdout","time":786.46628874,"data":"   0 coarse   Jackson Danenberg       Table + K2-32       Table + K32  0.008 -0.004  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466292619,"data":"   0 coarse   Jackson   Jackson Table + nbr + K2-32       Table + nbr  0.008 -0.006  0.021   n.s.\n"}
+,{"stream_name":"stdout","time":786.466301299,"data":"   0 coarse   Jackson   Jackson Table + nbr + K2-32 Table + nbr + K32  0.010 -0.012  0.026   n.s.\n"}
+,{"stream_name":"stdout","time":786.466305517,"data":"   0 coarse   Jackson Danenberg Table + nbr + K2-32       Table + nbr  0.005 -0.003  0.016   n.s.\n"}
+,{"stream_name":"stdout","time":786.466308739,"data":"   0 coarse   Jackson Danenberg Table + nbr + K2-32 Table + nbr + K32  0.007 -0.004  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466312166,"data":"   0 coarse   Jackson   Jackson       KRONOS linear       Table + nbr -0.062 -0.062 -0.050  worse\n"}
+,{"stream_name":"stdout","time":786.466315632,"data":"   0 coarse   Jackson Danenberg       KRONOS linear       Table + nbr -0.051 -0.080 -0.000  worse\n"}
+,{"stream_name":"stdout","time":786.466319257,"data":"   0 coarse   Jackson   Jackson      KRONOS2 linear       Table + nbr -0.110 -0.110 -0.050  worse\n"}
+,{"stream_name":"stdout","time":786.466322766,"data":"   0 coarse   Jackson   Jackson      KRONOS2 linear     KRONOS linear -0.047 -0.047  0.003   n.s.\n"}
+,{"stream_name":"stdout","time":786.466326164,"data":"   0 coarse   Jackson Danenberg      KRONOS2 linear       Table + nbr -0.069 -0.101 -0.007  worse\n"}
+,{"stream_name":"stdout","time":786.466329332,"data":"   0 coarse   Jackson Danenberg      KRONOS2 linear     KRONOS linear -0.018 -0.037  0.011   n.s.\n"}
+,{"stream_name":"stdout","time":786.46633288,"data":"   0 coarse Danenberg   Jackson               Table       Table + nbr  0.023  0.012  0.037 better\n"}
+,{"stream_name":"stdout","time":786.466336319,"data":"   0 coarse Danenberg Danenberg               Table       Table + nbr -0.002 -0.021  0.032   n.s.\n"}
+,{"stream_name":"stdout","time":786.466339553,"data":"   0 coarse Danenberg   Jackson         Table + K32       Table + nbr  0.053  0.048  0.053 better\n"}
+,{"stream_name":"stdout","time":786.466342754,"data":"   0 coarse Danenberg Danenberg         Table + K32       Table + nbr -0.019 -0.036  0.022   n.s.\n"}
+,{"stream_name":"stdout","time":786.466346264,"data":"   0 coarse Danenberg   Jackson   Table + nbr + K32       Table + nbr  0.058  0.041  0.058 better\n"}
+,{"stream_name":"stdout","time":786.466349986,"data":"   0 coarse Danenberg Danenberg   Table + nbr + K32       Table + nbr -0.011 -0.019  0.002   n.s.\n"}
+,{"stream_name":"stdout","time":786.466353399,"data":"   0 coarse Danenberg   Jackson       Table + K2-32       Table + nbr  0.020  0.020  0.036 better\n"}
+,{"stream_name":"stdout","time":786.466356768,"data":"   0 coarse Danenberg   Jackson       Table + K2-32       Table + K32 -0.033 -0.033 -0.013  worse\n"}
+,{"stream_name":"stdout","time":786.466360095,"data":"   0 coarse Danenberg Danenberg       Table + K2-32       Table + nbr  0.010 -0.002  0.047   n.s.\n"}
+,{"stream_name":"stdout","time":786.46636342,"data":"   0 coarse Danenberg Danenberg       Table + K2-32       Table + K32  0.029 -0.012  0.045   n.s.\n"}
+,{"stream_name":"stdout","time":786.466366732,"data":"   0 coarse Danenberg   Jackson Table + nbr + K2-32       Table + nbr  0.011  0.008  0.038 better\n"}
+,{"stream_name":"stdout","time":786.466369992,"data":"   0 coarse Danenberg   Jackson Table + nbr + K2-32 Table + nbr + K32 -0.047 -0.047 -0.003  worse\n"}
+,{"stream_name":"stdout","time":786.466373131,"data":"   0 coarse Danenberg Danenberg Table + nbr + K2-32       Table + nbr  0.008 -0.003  0.030   n.s.\n"}
+,{"stream_name":"stdout","time":786.466377646,"data":"   0 coarse Danenberg Danenberg Table + nbr + K2-32 Table + nbr + K32  0.019 -0.003  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.466381569,"data":"   0 coarse Danenberg   Jackson       KRONOS linear       Table + nbr -0.110 -0.131  0.062   n.s.\n"}
+,{"stream_name":"stdout","time":786.466389041,"data":"   0 coarse Danenberg Danenberg       KRONOS linear       Table + nbr -0.069 -0.097  0.013   n.s.\n"}
+,{"stream_name":"stdout","time":786.466392744,"data":"   0 coarse Danenberg   Jackson      KRONOS2 linear       Table + nbr -0.023 -0.023  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.466396123,"data":"   0 coarse Danenberg   Jackson      KRONOS2 linear     KRONOS linear  0.087 -0.031  0.144   n.s.\n"}
+,{"stream_name":"stdout","time":786.466399277,"data":"   0 coarse Danenberg Danenberg      KRONOS2 linear       Table + nbr -0.063 -0.080  0.005   n.s.\n"}
+,{"stream_name":"stdout","time":786.466402629,"data":"   0 coarse Danenberg Danenberg      KRONOS2 linear     KRONOS linear  0.006 -0.025  0.034   n.s.\n"}
+,{"stream_name":"stdout","time":786.466405846,"data":"   0 coarse      Both   Jackson               Table       Table + nbr -0.019 -0.019  0.005   n.s.\n"}
+,{"stream_name":"stdout","time":786.466409114,"data":"   0 coarse      Both Danenberg               Table       Table + nbr -0.018 -0.042  0.027   n.s.\n"}
+,{"stream_name":"stdout","time":786.466412265,"data":"   0 coarse      Both   Jackson         Table + K32       Table + nbr -0.028 -0.028 -0.004  worse\n"}
+,{"stream_name":"stdout","time":786.466415847,"data":"   0 coarse      Both Danenberg         Table + K32       Table + nbr -0.017 -0.040  0.022   n.s.\n"}
+,{"stream_name":"stdout","time":786.466419329,"data":"   0 coarse      Both   Jackson   Table + nbr + K32       Table + nbr  0.004 -0.017  0.005   n.s.\n"}
+,{"stream_name":"stdout","time":786.466422844,"data":"   0 coarse      Both Danenberg   Table + nbr + K32       Table + nbr -0.006 -0.018  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.466426726,"data":"   0 coarse      Both   Jackson       Table + K2-32       Table + nbr -0.025 -0.031 -0.004  worse\n"}
+,{"stream_name":"stdout","time":786.466430324,"data":"   0 coarse      Both   Jackson       Table + K2-32       Table + K32  0.003 -0.027  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466433936,"data":"   0 coarse      Both Danenberg       Table + K2-32       Table + nbr -0.004 -0.023  0.030   n.s.\n"}
+,{"stream_name":"stdout","time":786.466437672,"data":"   0 coarse      Both Danenberg       Table + K2-32       Table + K32  0.013  0.003  0.019 better\n"}
+,{"stream_name":"stdout","time":786.466441365,"data":"   0 coarse      Both   Jackson Table + nbr + K2-32       Table + nbr -0.008 -0.029 -0.006  worse\n"}
+,{"stream_name":"stdout","time":786.466444999,"data":"   0 coarse      Both   Jackson Table + nbr + K2-32 Table + nbr + K32 -0.012 -0.012 -0.012  worse\n"}
+,{"stream_name":"stdout","time":786.466448607,"data":"   0 coarse      Both Danenberg Table + nbr + K2-32       Table + nbr  0.012  0.002  0.026 better\n"}
+,{"stream_name":"stdout","time":786.466452285,"data":"   0 coarse      Both Danenberg Table + nbr + K2-32 Table + nbr + K32  0.018  0.008  0.030 better\n"}
+,{"stream_name":"stdout","time":786.466456245,"data":"   0 coarse      Both   Jackson       KRONOS linear       Table + nbr -0.081 -0.081 -0.026  worse\n"}
+,{"stream_name":"stdout","time":786.466459906,"data":"   0 coarse      Both Danenberg       KRONOS linear       Table + nbr -0.061 -0.093  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.466463942,"data":"   0 coarse      Both   Jackson      KRONOS2 linear       Table + nbr -0.134 -0.134 -0.041  worse\n"}
+,{"stream_name":"stdout","time":786.466467362,"data":"   0 coarse      Both   Jackson      KRONOS2 linear     KRONOS linear -0.053 -0.053 -0.015  worse\n"}
+,{"stream_name":"stdout","time":786.466470669,"data":"   0 coarse      Both Danenberg      KRONOS2 linear       Table + nbr -0.061 -0.081 -0.025  worse\n"}
+,{"stream_name":"stdout","time":786.4664744,"data":"   0 coarse      Both Danenberg      KRONOS2 linear     KRONOS linear  0.000 -0.035  0.022   n.s.\n"}
+,{"stream_name":"stdout","time":786.466480966,"data":"   0   fine   Jackson   Jackson   Table + nbr + K32       Table + nbr -0.001 -0.004  0.011   n.s.\n"}
+,{"stream_name":"stdout","time":786.466484625,"data":"   0   fine   Jackson   Jackson Table + nbr + K2-32       Table + nbr  0.009  0.004  0.013 better\n"}
+,{"stream_name":"stdout","time":786.466488109,"data":"   0   fine   Jackson   Jackson Table + nbr + K2-32 Table + nbr + K32  0.010  0.002  0.010 better\n"}
+,{"stream_name":"stdout","time":786.466491559,"data":"   0   fine   Jackson   Jackson       KRONOS linear       Table + nbr  0.021 -0.049  0.021   n.s.\n"}
+,{"stream_name":"stdout","time":786.466495039,"data":"   0   fine   Jackson   Jackson      KRONOS2 linear       Table + nbr  0.006 -0.029  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466498454,"data":"   0   fine   Jackson   Jackson      KRONOS2 linear     KRONOS linear -0.015 -0.015  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466501812,"data":"   0   fine Danenberg Danenberg   Table + nbr + K32       Table + nbr -0.023 -0.043  0.005   n.s.\n"}
+,{"stream_name":"stdout","time":786.466505288,"data":"   0   fine Danenberg Danenberg Table + nbr + K2-32       Table + nbr  0.005 -0.025  0.030   n.s.\n"}
+,{"stream_name":"stdout","time":786.466508889,"data":"   0   fine Danenberg Danenberg Table + nbr + K2-32 Table + nbr + K32  0.028  0.000  0.048 better\n"}
+,{"stream_name":"stdout","time":786.466512644,"data":"   0   fine Danenberg Danenberg       KRONOS linear       Table + nbr -0.063 -0.095 -0.016  worse\n"}
+,{"stream_name":"stdout","time":786.466516065,"data":"   0   fine Danenberg Danenberg      KRONOS2 linear       Table + nbr -0.060 -0.097 -0.027  worse\n"}
+,{"stream_name":"stdout","time":786.466519473,"data":"   0   fine Danenberg Danenberg      KRONOS2 linear     KRONOS linear  0.003 -0.016  0.019   n.s.\n"}
+,{"stream_name":"stdout","time":786.466522945,"data":"   1 coarse   Jackson   Jackson               Table       Table + nbr  0.009 -0.024  0.026   n.s.\n"}
+,{"stream_name":"stdout","time":786.466526641,"data":"   1 coarse   Jackson Danenberg               Table       Table + nbr -0.022 -0.032 -0.012  worse\n"}
+,{"stream_name":"stdout","time":786.466529836,"data":"   1 coarse   Jackson   Jackson         Table + K32       Table + nbr  0.017 -0.001  0.033   n.s.\n"}
+,{"stream_name":"stdout","time":786.466533646,"data":"   1 coarse   Jackson Danenberg         Table + K32       Table + nbr -0.018 -0.024  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.466537229,"data":"   1 coarse   Jackson   Jackson   Table + nbr + K32       Table + nbr -0.010 -0.025 -0.004  worse\n"}
+,{"stream_name":"stdout","time":786.466540634,"data":"   1 coarse   Jackson Danenberg   Table + nbr + K32       Table + nbr -0.015 -0.022 -0.004  worse\n"}
+,{"stream_name":"stdout","time":786.466543893,"data":"   1 coarse   Jackson   Jackson       Table + K2-32       Table + nbr  0.007 -0.030  0.021   n.s.\n"}
+,{"stream_name":"stdout","time":786.466547477,"data":"   1 coarse   Jackson   Jackson       Table + K2-32       Table + K32 -0.010 -0.032  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.46655084,"data":"   1 coarse   Jackson Danenberg       Table + K2-32       Table + nbr -0.014 -0.023  0.009   n.s.\n"}
+,{"stream_name":"stdout","time":786.466554279,"data":"   1 coarse   Jackson Danenberg       Table + K2-32       Table + K32  0.004 -0.011  0.012   n.s.\n"}
+,{"stream_name":"stdout","time":786.466557682,"data":"   1 coarse   Jackson   Jackson Table + nbr + K2-32       Table + nbr -0.007 -0.047  0.002   n.s.\n"}
+,{"stream_name":"stdout","time":786.466560904,"data":"   1 coarse   Jackson   Jackson Table + nbr + K2-32 Table + nbr + K32  0.004 -0.022  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466567678,"data":"   1 coarse   Jackson Danenberg Table + nbr + K2-32       Table + nbr -0.001 -0.011  0.019   n.s.\n"}
+,{"stream_name":"stdout","time":786.466571359,"data":"   1 coarse   Jackson Danenberg Table + nbr + K2-32 Table + nbr + K32  0.015 -0.001  0.029   n.s.\n"}
+,{"stream_name":"stdout","time":786.466574907,"data":"   1 coarse   Jackson   Jackson       KRONOS linear       Table + nbr -0.019 -0.062 -0.005  worse\n"}
+,{"stream_name":"stdout","time":786.466578408,"data":"   1 coarse   Jackson Danenberg       KRONOS linear       Table + nbr -0.111 -0.152 -0.053  worse\n"}
+,{"stream_name":"stdout","time":786.466581761,"data":"   1 coarse   Jackson   Jackson      KRONOS2 linear       Table + nbr -0.046 -0.094 -0.021  worse\n"}
+,{"stream_name":"stdout","time":786.466585334,"data":"   1 coarse   Jackson   Jackson      KRONOS2 linear     KRONOS linear -0.027 -0.048 -0.009  worse\n"}
+,{"stream_name":"stdout","time":786.466588818,"data":"   1 coarse   Jackson Danenberg      KRONOS2 linear       Table + nbr -0.116 -0.156 -0.043  worse\n"}
+,{"stream_name":"stdout","time":786.466592334,"data":"   1 coarse   Jackson Danenberg      KRONOS2 linear     KRONOS linear -0.006 -0.028  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466595935,"data":"   1 coarse Danenberg   Jackson               Table       Table + nbr -0.034 -0.080  0.012   n.s.\n"}
+,{"stream_name":"stdout","time":786.466599624,"data":"   1 coarse Danenberg Danenberg               Table       Table + nbr  0.000 -0.025  0.040   n.s.\n"}
+,{"stream_name":"stdout","time":786.466603089,"data":"   1 coarse Danenberg   Jackson         Table + K32       Table + nbr -0.000 -0.024  0.040   n.s.\n"}
+,{"stream_name":"stdout","time":786.466606591,"data":"   1 coarse Danenberg Danenberg         Table + K32       Table + nbr -0.015 -0.030  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466610601,"data":"   1 coarse Danenberg   Jackson   Table + nbr + K32       Table + nbr  0.032  0.008  0.045 better\n"}
+,{"stream_name":"stdout","time":786.466614107,"data":"   1 coarse Danenberg Danenberg   Table + nbr + K32       Table + nbr  0.000 -0.010  0.013   n.s.\n"}
+,{"stream_name":"stdout","time":786.466617692,"data":"   1 coarse Danenberg   Jackson       Table + K2-32       Table + nbr  0.006 -0.009  0.018   n.s.\n"}
+,{"stream_name":"stdout","time":786.466621305,"data":"   1 coarse Danenberg   Jackson       Table + K2-32       Table + K32  0.007 -0.027  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.466624939,"data":"   1 coarse Danenberg Danenberg       Table + K2-32       Table + nbr  0.010 -0.002  0.042   n.s.\n"}
+,{"stream_name":"stdout","time":786.466628547,"data":"   1 coarse Danenberg Danenberg       Table + K2-32       Table + K32  0.025  0.003  0.034 better\n"}
+,{"stream_name":"stdout","time":786.466632114,"data":"   1 coarse Danenberg   Jackson Table + nbr + K2-32       Table + nbr  0.027  0.002  0.037 better\n"}
+,{"stream_name":"stdout","time":786.466635739,"data":"   1 coarse Danenberg   Jackson Table + nbr + K2-32 Table + nbr + K32 -0.006 -0.029  0.016   n.s.\n"}
+,{"stream_name":"stdout","time":786.466639344,"data":"   1 coarse Danenberg Danenberg Table + nbr + K2-32       Table + nbr  0.009  0.001  0.023 better\n"}
+,{"stream_name":"stdout","time":786.466642992,"data":"   1 coarse Danenberg Danenberg Table + nbr + K2-32 Table + nbr + K32  0.009  0.001  0.021 better\n"}
+,{"stream_name":"stdout","time":786.466646627,"data":"   1 coarse Danenberg   Jackson       KRONOS linear       Table + nbr -0.144 -0.200 -0.033  worse\n"}
+,{"stream_name":"stdout","time":786.466654517,"data":"   1 coarse Danenberg Danenberg       KRONOS linear       Table + nbr -0.076 -0.093 -0.012  worse\n"}
+,{"stream_name":"stdout","time":786.466658204,"data":"   1 coarse Danenberg   Jackson      KRONOS2 linear       Table + nbr -0.053 -0.085 -0.018  worse\n"}
+,{"stream_name":"stdout","time":786.466665006,"data":"   1 coarse Danenberg   Jackson      KRONOS2 linear     KRONOS linear  0.091  0.015  0.125 better\n"}
+,{"stream_name":"stdout","time":786.466668893,"data":"   1 coarse Danenberg Danenberg      KRONOS2 linear       Table + nbr -0.070 -0.083 -0.027  worse\n"}
+,{"stream_name":"stdout","time":786.466672464,"data":"   1 coarse Danenberg Danenberg      KRONOS2 linear     KRONOS linear  0.006 -0.018  0.025   n.s.\n"}
+,{"stream_name":"stdout","time":786.466676227,"data":"   1 coarse      Both   Jackson               Table       Table + nbr  0.001 -0.016  0.007   n.s.\n"}
+,{"stream_name":"stdout","time":786.466679801,"data":"   1 coarse      Both Danenberg               Table       Table + nbr -0.013 -0.042  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.466683551,"data":"   1 coarse      Both   Jackson         Table + K32       Table + nbr  0.003 -0.008  0.016   n.s.\n"}
+,{"stream_name":"stdout","time":786.466687086,"data":"   1 coarse      Both Danenberg         Table + K32       Table + nbr -0.014 -0.037  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.466690675,"data":"   1 coarse      Both   Jackson   Table + nbr + K32       Table + nbr -0.002 -0.011  0.006   n.s.\n"}
+,{"stream_name":"stdout","time":786.466695534,"data":"   1 coarse      Both Danenberg   Table + nbr + K32       Table + nbr  0.007  0.004  0.014 better\n"}
+,{"stream_name":"stdout","time":786.466699214,"data":"   1 coarse      Both   Jackson       Table + K2-32       Table + nbr  0.007 -0.010  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466702722,"data":"   1 coarse      Both   Jackson       Table + K2-32       Table + K32  0.005 -0.010  0.016   n.s.\n"}
+,{"stream_name":"stdout","time":786.466706341,"data":"   1 coarse      Both Danenberg       Table + K2-32       Table + nbr  0.005 -0.019  0.049   n.s.\n"}
+,{"stream_name":"stdout","time":786.466709943,"data":"   1 coarse      Both Danenberg       Table + K2-32       Table + K32  0.019  0.004  0.024 better\n"}
+,{"stream_name":"stdout","time":786.466713472,"data":"   1 coarse      Both   Jackson Table + nbr + K2-32       Table + nbr  0.011 -0.006  0.019   n.s.\n"}
+,{"stream_name":"stdout","time":786.466716979,"data":"   1 coarse      Both   Jackson Table + nbr + K2-32 Table + nbr + K32  0.013  0.004  0.019 better\n"}
+,{"stream_name":"stdout","time":786.466720564,"data":"   1 coarse      Both Danenberg Table + nbr + K2-32       Table + nbr  0.012  0.008  0.021 better\n"}
+,{"stream_name":"stdout","time":786.466724167,"data":"   1 coarse      Both Danenberg Table + nbr + K2-32 Table + nbr + K32  0.005 -0.002  0.013   n.s.\n"}
+,{"stream_name":"stdout","time":786.466727637,"data":"   1 coarse      Both   Jackson       KRONOS linear       Table + nbr -0.020 -0.082 -0.008  worse\n"}
+,{"stream_name":"stdout","time":786.46673121,"data":"   1 coarse      Both Danenberg       KRONOS linear       Table + nbr -0.046 -0.078  0.023   n.s.\n"}
+,{"stream_name":"stdout","time":786.466734602,"data":"   1 coarse      Both   Jackson      KRONOS2 linear       Table + nbr -0.054 -0.112 -0.035  worse\n"}
+,{"stream_name":"stdout","time":786.466738187,"data":"   1 coarse      Both   Jackson      KRONOS2 linear     KRONOS linear -0.034 -0.050 -0.009  worse\n"}
+,{"stream_name":"stdout","time":786.466741744,"data":"   1 coarse      Both Danenberg      KRONOS2 linear       Table + nbr -0.050 -0.077  0.013   n.s.\n"}
+,{"stream_name":"stdout","time":786.466746196,"data":"   1 coarse      Both Danenberg      KRONOS2 linear     KRONOS linear -0.004 -0.027  0.021   n.s.\n"}
+,{"stream_name":"stdout","time":786.466749669,"data":"   1   fine   Jackson   Jackson   Table + nbr + K32       Table + nbr -0.000 -0.011  0.009   n.s.\n"}
+,{"stream_name":"stdout","time":786.466756492,"data":"   1   fine   Jackson   Jackson Table + nbr + K2-32       Table + nbr  0.005  0.001  0.010 better\n"}
+,{"stream_name":"stdout","time":786.466760022,"data":"   1   fine   Jackson   Jackson Table + nbr + K2-32 Table + nbr + K32  0.005 -0.004  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466763594,"data":"   1   fine   Jackson   Jackson       KRONOS linear       Table + nbr -0.012 -0.036  0.009   n.s.\n"}
+,{"stream_name":"stdout","time":786.466766933,"data":"   1   fine   Jackson   Jackson      KRONOS2 linear       Table + nbr -0.005 -0.027  0.005   n.s.\n"}
+,{"stream_name":"stdout","time":786.466770279,"data":"   1   fine   Jackson   Jackson      KRONOS2 linear     KRONOS linear  0.007 -0.021  0.022   n.s.\n"}
+,{"stream_name":"stdout","time":786.466774597,"data":"   1   fine Danenberg Danenberg   Table + nbr + K32       Table + nbr -0.016 -0.032  0.006   n.s.\n"}
+,{"stream_name":"stdout","time":786.466777966,"data":"   1   fine Danenberg Danenberg Table + nbr + K2-32       Table + nbr -0.010 -0.024  0.012   n.s.\n"}
+,{"stream_name":"stdout","time":786.466781435,"data":"   1   fine Danenberg Danenberg Table + nbr + K2-32 Table + nbr + K32  0.005 -0.006  0.019   n.s.\n"}
+,{"stream_name":"stdout","time":786.466784944,"data":"   1   fine Danenberg Danenberg       KRONOS linear       Table + nbr -0.072 -0.097 -0.017  worse\n"}
+,{"stream_name":"stdout","time":786.466789163,"data":"   1   fine Danenberg Danenberg      KRONOS2 linear       Table + nbr -0.065 -0.083 -0.007  worse\n"}
+,{"stream_name":"stdout","time":786.466792325,"data":"   1   fine Danenberg Danenberg      KRONOS2 linear     KRONOS linear  0.007 -0.006  0.050   n.s.\n"}
+,{"stream_name":"stdout","time":786.466795431,"data":"   2 coarse   Jackson   Jackson               Table       Table + nbr -0.000 -0.079  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466798939,"data":"   2 coarse   Jackson Danenberg               Table       Table + nbr -0.010 -0.025  0.010   n.s.\n"}
+,{"stream_name":"stdout","time":786.46680276,"data":"   2 coarse   Jackson   Jackson         Table + K32       Table + nbr -0.029 -0.043 -0.001  worse\n"}
+,{"stream_name":"stdout","time":786.466806098,"data":"   2 coarse   Jackson Danenberg         Table + K32       Table + nbr  0.005 -0.004  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466809173,"data":"   2 coarse   Jackson   Jackson   Table + nbr + K32       Table + nbr -0.040 -0.050  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.466812315,"data":"   2 coarse   Jackson Danenberg   Table + nbr + K32       Table + nbr -0.003 -0.012  0.008   n.s.\n"}
+,{"stream_name":"stdout","time":786.466816068,"data":"   2 coarse   Jackson   Jackson       Table + K2-32       Table + nbr -0.011 -0.072  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.466819584,"data":"   2 coarse   Jackson   Jackson       Table + K2-32       Table + K32  0.018 -0.037  0.028   n.s.\n"}
+,{"stream_name":"stdout","time":786.466823452,"data":"   2 coarse   Jackson Danenberg       Table + K2-32       Table + nbr  0.003 -0.005  0.018   n.s.\n"}
+,{"stream_name":"stdout","time":786.466826491,"data":"   2 coarse   Jackson Danenberg       Table + K2-32       Table + K32 -0.002 -0.020  0.005   n.s.\n"}
+,{"stream_name":"stdout","time":786.46682992,"data":"   2 coarse   Jackson   Jackson Table + nbr + K2-32       Table + nbr -0.002 -0.017  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466833428,"data":"   2 coarse   Jackson   Jackson Table + nbr + K2-32 Table + nbr + K32  0.037 -0.014  0.049   n.s.\n"}
+,{"stream_name":"stdout","time":786.466836736,"data":"   2 coarse   Jackson Danenberg Table + nbr + K2-32       Table + nbr  0.002 -0.006  0.011   n.s.\n"}
+,{"stream_name":"stdout","time":786.466843839,"data":"   2 coarse   Jackson Danenberg Table + nbr + K2-32 Table + nbr + K32  0.005 -0.003  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466847611,"data":"   2 coarse   Jackson   Jackson       KRONOS linear       Table + nbr -0.065 -0.113 -0.043  worse\n"}
+,{"stream_name":"stdout","time":786.466851413,"data":"   2 coarse   Jackson Danenberg       KRONOS linear       Table + nbr -0.073 -0.104 -0.024  worse\n"}
+,{"stream_name":"stdout","time":786.466854653,"data":"   2 coarse   Jackson   Jackson      KRONOS2 linear       Table + nbr -0.047 -0.124 -0.019  worse\n"}
+,{"stream_name":"stdout","time":786.466857821,"data":"   2 coarse   Jackson   Jackson      KRONOS2 linear     KRONOS linear  0.018 -0.013  0.040   n.s.\n"}
+,{"stream_name":"stdout","time":786.466861316,"data":"   2 coarse   Jackson Danenberg      KRONOS2 linear       Table + nbr -0.023 -0.052  0.030   n.s.\n"}
+,{"stream_name":"stdout","time":786.466864813,"data":"   2 coarse   Jackson Danenberg      KRONOS2 linear     KRONOS linear  0.050  0.023  0.071 better\n"}
+,{"stream_name":"stdout","time":786.466868305,"data":"   2 coarse Danenberg   Jackson               Table       Table + nbr  0.046  0.013  0.120 better\n"}
+,{"stream_name":"stdout","time":786.466871737,"data":"   2 coarse Danenberg Danenberg               Table       Table + nbr -0.011 -0.037  0.014   n.s.\n"}
+,{"stream_name":"stdout","time":786.466875172,"data":"   2 coarse Danenberg   Jackson         Table + K32       Table + nbr  0.059  0.018  0.136 better\n"}
+,{"stream_name":"stdout","time":786.466878694,"data":"   2 coarse Danenberg Danenberg         Table + K32       Table + nbr -0.005 -0.024  0.020   n.s.\n"}
+,{"stream_name":"stdout","time":786.466882457,"data":"   2 coarse Danenberg   Jackson   Table + nbr + K32       Table + nbr  0.041 -0.000  0.100   n.s.\n"}
+,{"stream_name":"stdout","time":786.466885831,"data":"   2 coarse Danenberg Danenberg   Table + nbr + K32       Table + nbr  0.010 -0.010  0.026   n.s.\n"}
+,{"stream_name":"stdout","time":786.466889161,"data":"   2 coarse Danenberg   Jackson       Table + K2-32       Table + nbr  0.063  0.012  0.133 better\n"}
+,{"stream_name":"stdout","time":786.466892428,"data":"   2 coarse Danenberg   Jackson       Table + K2-32       Table + K32  0.004 -0.015  0.011   n.s.\n"}
+,{"stream_name":"stdout","time":786.466895989,"data":"   2 coarse Danenberg Danenberg       Table + K2-32       Table + nbr  0.003 -0.023  0.022   n.s.\n"}
+,{"stream_name":"stdout","time":786.466899916,"data":"   2 coarse Danenberg Danenberg       Table + K2-32       Table + K32  0.008 -0.016  0.019   n.s.\n"}
+,{"stream_name":"stdout","time":786.466903942,"data":"   2 coarse Danenberg   Jackson Table + nbr + K2-32       Table + nbr  0.027  0.005  0.082 better\n"}
+,{"stream_name":"stdout","time":786.466907376,"data":"   2 coarse Danenberg   Jackson Table + nbr + K2-32 Table + nbr + K32 -0.013 -0.025  0.007   n.s.\n"}
+,{"stream_name":"stdout","time":786.466911069,"data":"   2 coarse Danenberg Danenberg Table + nbr + K2-32       Table + nbr  0.005 -0.011  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466915257,"data":"   2 coarse Danenberg Danenberg Table + nbr + K2-32 Table + nbr + K32 -0.005 -0.016  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466918971,"data":"   2 coarse Danenberg   Jackson       KRONOS linear       Table + nbr -0.055 -0.083  0.053   n.s.\n"}
+,{"stream_name":"stdout","time":786.466923027,"data":"   2 coarse Danenberg Danenberg       KRONOS linear       Table + nbr -0.080 -0.099 -0.009  worse\n"}
+,{"stream_name":"stdout","time":786.466926658,"data":"   2 coarse Danenberg   Jackson      KRONOS2 linear       Table + nbr -0.092 -0.163  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.466930356,"data":"   2 coarse Danenberg   Jackson      KRONOS2 linear     KRONOS linear -0.037 -0.096  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466937172,"data":"   2 coarse Danenberg Danenberg      KRONOS2 linear       Table + nbr -0.072 -0.078 -0.026  worse\n"}
+,{"stream_name":"stdout","time":786.466940719,"data":"   2 coarse Danenberg Danenberg      KRONOS2 linear     KRONOS linear  0.008 -0.019  0.032   n.s.\n"}
+,{"stream_name":"stdout","time":786.466944557,"data":"   2 coarse      Both   Jackson               Table       Table + nbr -0.045 -0.054 -0.005  worse\n"}
+,{"stream_name":"stdout","time":786.466948297,"data":"   2 coarse      Both Danenberg               Table       Table + nbr -0.015 -0.047  0.033   n.s.\n"}
+,{"stream_name":"stdout","time":786.466951883,"data":"   2 coarse      Both   Jackson         Table + K32       Table + nbr -0.031 -0.056 -0.004  worse\n"}
+,{"stream_name":"stdout","time":786.466955547,"data":"   2 coarse      Both Danenberg         Table + K32       Table + nbr -0.016 -0.041  0.032   n.s.\n"}
+,{"stream_name":"stdout","time":786.466959186,"data":"   2 coarse      Both   Jackson   Table + nbr + K32       Table + nbr  0.017 -0.009  0.026   n.s.\n"}
+,{"stream_name":"stdout","time":786.466962614,"data":"   2 coarse      Both Danenberg   Table + nbr + K32       Table + nbr -0.012 -0.020  0.009   n.s.\n"}
+,{"stream_name":"stdout","time":786.466965999,"data":"   2 coarse      Both   Jackson       Table + K2-32       Table + nbr -0.013 -0.041  0.009   n.s.\n"}
+,{"stream_name":"stdout","time":786.466969396,"data":"   2 coarse      Both   Jackson       Table + K2-32       Table + K32  0.018 -0.013  0.023   n.s.\n"}
+,{"stream_name":"stdout","time":786.466972871,"data":"   2 coarse      Both Danenberg       Table + K2-32       Table + nbr -0.006 -0.029  0.038   n.s.\n"}
+,{"stream_name":"stdout","time":786.466978126,"data":"   2 coarse      Both Danenberg       Table + K2-32       Table + K32  0.010 -0.001  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466981647,"data":"   2 coarse      Both   Jackson Table + nbr + K2-32       Table + nbr  0.011 -0.009  0.017   n.s.\n"}
+,{"stream_name":"stdout","time":786.466985071,"data":"   2 coarse      Both   Jackson Table + nbr + K2-32 Table + nbr + K32 -0.006 -0.022  0.007   n.s.\n"}
+,{"stream_name":"stdout","time":786.466988442,"data":"   2 coarse      Both Danenberg Table + nbr + K2-32       Table + nbr -0.002 -0.010  0.006   n.s.\n"}
+,{"stream_name":"stdout","time":786.466991911,"data":"   2 coarse      Both Danenberg Table + nbr + K2-32 Table + nbr + K32  0.010 -0.004  0.015   n.s.\n"}
+,{"stream_name":"stdout","time":786.466995166,"data":"   2 coarse      Both   Jackson       KRONOS linear       Table + nbr -0.124 -0.144 -0.092  worse\n"}
+,{"stream_name":"stdout","time":786.466998518,"data":"   2 coarse      Both Danenberg       KRONOS linear       Table + nbr -0.058 -0.083  0.018   n.s.\n"}
+,{"stream_name":"stdout","time":786.467003449,"data":"   2 coarse      Both   Jackson      KRONOS2 linear       Table + nbr -0.088 -0.135 -0.027  worse\n"}
+,{"stream_name":"stdout","time":786.467006847,"data":"   2 coarse      Both   Jackson      KRONOS2 linear     KRONOS linear  0.037 -0.003  0.080   n.s.\n"}
+,{"stream_name":"stdout","time":786.467010372,"data":"   2 coarse      Both Danenberg      KRONOS2 linear       Table + nbr -0.048 -0.067  0.004   n.s.\n"}
+,{"stream_name":"stdout","time":786.46701391,"data":"   2 coarse      Both Danenberg      KRONOS2 linear     KRONOS linear  0.010 -0.018  0.030   n.s.\n"}
+,{"stream_name":"stdout","time":786.467017454,"data":"   2   fine   Jackson   Jackson   Table + nbr + K32       Table + nbr -0.012 -0.015  0.004   n.s.\n"}
+,{"stream_name":"stdout","time":786.467021061,"data":"   2   fine   Jackson   Jackson Table + nbr + K2-32       Table + nbr  0.000 -0.018  0.008   n.s.\n"}
+,{"stream_name":"stdout","time":786.467028084,"data":"   2   fine   Jackson   Jackson Table + nbr + K2-32 Table + nbr + K32  0.013 -0.008  0.021   n.s.\n"}
+,{"stream_name":"stdout","time":786.46703179,"data":"   2   fine   Jackson   Jackson       KRONOS linear       Table + nbr -0.024 -0.056 -0.016  worse\n"}
+,{"stream_name":"stdout","time":786.467035743,"data":"   2   fine   Jackson   Jackson      KRONOS2 linear       Table + nbr -0.019 -0.040  0.001   n.s.\n"}
+,{"stream_name":"stdout","time":786.467038992,"data":"   2   fine   Jackson   Jackson      KRONOS2 linear     KRONOS linear  0.005 -0.001  0.024   n.s.\n"}
+,{"stream_name":"stdout","time":786.467042414,"data":"   2   fine Danenberg Danenberg   Table + nbr + K32       Table + nbr -0.003 -0.026  0.004   n.s.\n"}
+,{"stream_name":"stdout","time":786.467046214,"data":"   2   fine Danenberg Danenberg Table + nbr + K2-32       Table + nbr -0.008 -0.027  0.000   n.s.\n"}
+,{"stream_name":"stdout","time":786.467049909,"data":"   2   fine Danenberg Danenberg Table + nbr + K2-32 Table + nbr + K32 -0.005 -0.014  0.004   n.s.\n"}
+,{"stream_name":"stdout","time":786.467053466,"data":"   2   fine Danenberg Danenberg       KRONOS linear       Table + nbr -0.056 -0.082 -0.022  worse\n"}
+,{"stream_name":"stdout","time":786.467057084,"data":"   2   fine Danenberg Danenberg      KRONOS2 linear       Table + nbr -0.038 -0.072 -0.005  worse\n"}
+,{"stream_name":"stdout","time":786.467060711,"data":"   2   fine Danenberg Danenberg      KRONOS2 linear     KRONOS linear  0.018 -0.005  0.031   n.s.\n"}
+,{"stream_name":"stdout","time":786.55335751,"data":"                                         mean_diff  min_diff  max_diff  n_better  n_worse  n\n"}
+,{"stream_name":"stdout","time":786.553383218,"data":"model               train     test                                                          \n"}
+,{"stream_name":"stdout","time":786.553393053,"data":"KRONOS2 linear      Both      Danenberg     0.0022   -0.0041    0.0103         0        0  3\n"}
+,{"stream_name":"stdout","time":786.553395962,"data":"                              Jackson      -0.0166   -0.0527    0.0367         0        2  3\n"}
+,{"stream_name":"stdout","time":786.553398446,"data":"                    Danenberg Danenberg     0.0066    0.0061    0.0076         0        0  3\n"}
+,{"stream_name":"stdout","time":786.553400811,"data":"                              Jackson       0.0470   -0.0371    0.0912         1        0  3\n"}
+,{"stream_name":"stdout","time":786.553403129,"data":"                    Jackson   Danenberg     0.0088   -0.0180    0.0500         1        0  3\n"}
+,{"stream_name":"stdout","time":786.553405441,"data":"                              Jackson      -0.0189   -0.0471    0.0175         0        1  3\n"}
+,{"stream_name":"stdout","time":786.553407809,"data":"Table + nbr + K2-32 Both      Danenberg     0.0109    0.0053    0.0178         1        0  3\n"}
+,{"stream_name":"stdout","time":786.553410097,"data":"                              Jackson      -0.0016   -0.0117    0.0126         1        1  3\n"}
+,{"stream_name":"stdout","time":786.553412392,"data":"                    Danenberg Danenberg     0.0077   -0.0048    0.0189         1        0  3\n"}
+,{"stream_name":"stdout","time":786.553414682,"data":"                              Jackson      -0.0221   -0.0472   -0.0058         0        1  3\n"}
+,{"stream_name":"stdout","time":786.553417048,"data":"                    Jackson   Danenberg     0.0088    0.0046    0.0147         0        0  3\n"}
+,{"stream_name":"stdout","time":786.553419359,"data":"                              Jackson       0.0171    0.0038    0.0373         0        0  3\n"}
+,{"stream_name":"stdout","time":786.553421662,"data":"{\n"}
+,{"stream_name":"stdout","time":786.553432724,"data":" \"KRONOS\": {\n"}
+,{"stream_name":"stdout","time":786.553435212,"data":"  \"per_replicate\": {\n"}
+,{"stream_name":"stdout","time":786.553437494,"data":"   \"0\": {\n"}
+,{"stream_name":"stdout","time":786.55343986,"data":"    \"a\": false,\n"}
+,{"stream_name":"stdout","time":786.55344212,"data":"    \"b\": true,\n"}
+,{"stream_name":"stdout","time":786.553444325,"data":"    \"passed\": true,\n"}
+,{"stream_name":"stdout","time":786.553446651,"data":"    \"details\": [\n"}
+,{"stream_name":"stdout","time":786.553449013,"data":"     \"(a) J-\u003eJ: KRONOS linear 0.658 vs Table + nbr 0.720 (-0.062)\",\n"}
+,{"stream_name":"stdout","time":786.553451784,"data":"     \"(a) D-\u003eD: KRONOS linear 0.512 vs Table + nbr 0.581 (-0.069)\",\n"}
+,{"stream_name":"stdout","time":786.553454129,"data":"     \"(b) J-\u003eJ: Table + nbr + K32 -0.002 [-0.005, +0.007]\",\n"}
+,{"stream_name":"stdout","time":786.553456477,"data":"     \"(b) J-\u003eD: Table + nbr + K32 -0.002 [-0.016, +0.016]\",\n"}
+,{"stream_name":"stdout","time":786.553458897,"data":"     \"(b) D-\u003eJ: Table + nbr + K32 +0.058 [+0.041, +0.058]\",\n"}
+,{"stream_name":"stdout","time":786.553461603,"data":"     \"(b) D-\u003eD: Table + nbr + K32 -0.011 [-0.019, +0.002]\",\n"}
+,{"stream_name":"stdout","time":786.553463959,"data":"     \"(b) B-\u003eJ: Table + nbr + K32 +0.004 [-0.017, +0.005]\",\n"}
+,{"stream_name":"stdout","time":786.553466309,"data":"     \"(b) B-\u003eD: Table + nbr + K32 -0.006 [-0.018, +0.001]\"\n"}
+,{"stream_name":"stdout","time":786.553468736,"data":"    ]\n"}
+,{"stream_name":"stdout","time":786.553470884,"data":"   },\n"}
+,{"stream_name":"stdout","time":786.553473024,"data":"   \"1\": {\n"}
+,{"stream_name":"stdout","time":786.553475231,"data":"    \"a\": true,\n"}
+,{"stream_name":"stdout","time":786.553477505,"data":"    \"b\": true,\n"}
+,{"stream_name":"stdout","time":786.553479699,"data":"    \"passed\": true,\n"}
+,{"stream_name":"stdout","time":786.55348193,"data":"    \"details\": [\n"}
+,{"stream_name":"stdout","time":786.553485336,"data":"     \"(a) J-\u003eJ: KRONOS linear 0.736 vs Table + nbr 0.755 (-0.019)\",\n"}
+,{"stream_name":"stdout","time":786.553487707,"data":"     \"(a) D-\u003eD: KRONOS linear 0.502 vs Table + nbr 0.578 (-0.076)\",\n"}
+,{"stream_name":"stdout","time":786.553490059,"data":"     \"(b) J-\u003eJ: Table + nbr + K32 -0.010 [-0.025, -0.004]\",\n"}
+,{"stream_name":"stdout","time":786.553492407,"data":"     \"(b) J-\u003eD: Table + nbr + K32 -0.015 [-0.022, -0.004]\",\n"}
+,{"stream_name":"stdout","time":786.553494739,"data":"     \"(b) D-\u003eJ: Table + nbr + K32 +0.032 [+0.008, +0.045]\",\n"}
+,{"stream_name":"stdout","time":786.553497037,"data":"     \"(b) D-\u003eD: Table + nbr + K32 +0.000 [-0.010, +0.013]\",\n"}
+,{"stream_name":"stdout","time":786.553499352,"data":"     \"(b) B-\u003eJ: Table + nbr + K32 -0.002 [-0.011, +0.006]\",\n"}
+,{"stream_name":"stdout","time":786.553501659,"data":"     \"(b) B-\u003eD: Table + nbr + K32 +0.007 [+0.004, +0.014]\"\n"}
+,{"stream_name":"stdout","time":786.553503984,"data":"    ]\n"}
+,{"stream_name":"stdout","time":786.553506096,"data":"   },\n"}
+,{"stream_name":"stdout","time":786.553508216,"data":"   \"2\": {\n"}
+,{"stream_name":"stdout","time":786.553510413,"data":"    \"a\": false,\n"}
+,{"stream_name":"stdout","time":786.553512606,"data":"    \"b\": false,\n"}
+,{"stream_name":"stdout","time":786.553514781,"data":"    \"passed\": false,\n"}
+,{"stream_name":"stdout","time":786.553516978,"data":"    \"details\": [\n"}
+,{"stream_name":"stdout","time":786.553519196,"data":"     \"(a) J-\u003eJ: KRONOS linear 0.482 vs Table + nbr 0.547 (-0.065)\",\n"}
+,{"stream_name":"stdout","time":786.553523797,"data":"     \"(a) D-\u003eD: KRONOS linear 0.506 vs Table + nbr 0.586 (-0.080)\",\n"}
+,{"stream_name":"stdout","time":786.553526215,"data":"     \"(b) J-\u003eJ: Table + nbr + K32 -0.040 [-0.050, +0.001]\",\n"}
+,{"stream_name":"stdout","time":786.553528576,"data":"     \"(b) J-\u003eD: Table + nbr + K32 -0.003 [-0.012, +0.008]\",\n"}
+,{"stream_name":"stdout","time":786.553530891,"data":"     \"(b) D-\u003eJ: Table + nbr + K32 +0.041 [-0.000, +0.100]\",\n"}
+,{"stream_name":"stdout","time":786.553533201,"data":"     \"(b) D-\u003eD: Table + nbr + K32 +0.010 [-0.010, +0.026]\",\n"}
+,{"stream_name":"stdout","time":786.553535529,"data":"     \"(b) B-\u003eJ: Table + nbr + K32 +0.017 [-0.009, +0.026]\",\n"}
+,{"stream_name":"stdout","time":786.553537872,"data":"     \"(b) B-\u003eD: Table + nbr + K32 -0.012 [-0.020, +0.009]\"\n"}
+,{"stream_name":"stdout","time":786.553540324,"data":"    ]\n"}
+,{"stream_name":"stdout","time":786.55354244,"data":"   }\n"}
+,{"stream_name":"stdout","time":786.553544568,"data":"  },\n"}
+,{"stream_name":"stdout","time":786.553546699,"data":"  \"rep0_rule_v1\": true,\n"}
+,{"stream_name":"stdout","time":786.553548968,"data":"  \"passes_every_replicate\": false,\n"}
+,{"stream_name":"stdout","time":786.553551262,"data":"  \"replicates_run\": [\n"}
+,{"stream_name":"stdout","time":786.553553494,"data":"   0,\n"}
+,{"stream_name":"stdout","time":786.553555607,"data":"   1,\n"}
+,{"stream_name":"stdout","time":786.553557711,"data":"   2\n"}
+,{"stream_name":"stdout","time":786.553559802,"data":"  ],\n"}
+,{"stream_name":"stdout","time":786.553561905,"data":"  \"proceed_to_adaptation\": false\n"}
+,{"stream_name":"stdout","time":786.553564212,"data":" },\n"}
+,{"stream_name":"stdout","time":786.553566354,"data":" \"KRONOS2\": {\n"}
+,{"stream_name":"stdout","time":786.553568576,"data":"  \"per_replicate\": {\n"}
+,{"stream_name":"stdout","time":786.553570774,"data":"   \"0\": {\n"}
+,{"stream_name":"stdout","time":786.553572944,"data":"    \"a\": false,\n"}
+,{"stream_name":"stdout","time":786.553575137,"data":"    \"b\": true,\n"}
+,{"stream_name":"stdout","time":786.553577331,"data":"    \"passed\": true,\n"}
+,{"stream_name":"stdout","time":786.553579535,"data":"    \"details\": [\n"}
+,{"stream_name":"stdout","time":786.553581769,"data":"     \"(a) J-\u003eJ: KRONOS2 linear 0.611 vs Table + nbr 0.720 (-0.110)\",\n"}
+,{"stream_name":"stdout","time":786.553584171,"data":"     \"(a) D-\u003eD: KRONOS2 linear 0.518 vs Table + nbr 0.581 (-0.063)\",\n"}
+,{"stream_name":"stdout","time":786.553586551,"data":"     \"(b) J-\u003eJ: Table + nbr + K2-32 +0.008 [-0.006, +0.021]\",\n"}
+,{"stream_name":"stdout","time":786.553588906,"data":"     \"(b) J-\u003eD: Table + nbr + K2-32 +0.005 [-0.003, +0.016]\",\n"}
+,{"stream_name":"stdout","time":786.553591261,"data":"     \"(b) D-\u003eJ: Table + nbr + K2-32 +0.011 [+0.008, +0.038]\",\n"}
+,{"stream_name":"stdout","time":786.553593596,"data":"     \"(b) D-\u003eD: Table + nbr + K2-32 +0.008 [-0.003, +0.030]\",\n"}
+,{"stream_name":"stdout","time":786.553595884,"data":"     \"(b) B-\u003eJ: Table + nbr + K2-32 -0.008 [-0.029, -0.006]\",\n"}
+,{"stream_name":"stdout","time":786.553598176,"data":"     \"(b) B-\u003eD: Table + nbr + K2-32 +0.012 [+0.002, +0.026]\"\n"}
+,{"stream_name":"stdout","time":786.553600506,"data":"    ]\n"}
+,{"stream_name":"stdout","time":786.553602611,"data":"   },\n"}
+,{"stream_name":"stdout","time":786.553604729,"data":"   \"1\": {\n"}
+,{"stream_name":"stdout","time":786.553606881,"data":"    \"a\": true,\n"}
+,{"stream_name":"stdout","time":786.55361586,"data":"    \"b\": true,\n"}
+,{"stream_name":"stdout","time":786.553618589,"data":"    \"passed\": true,\n"}
+,{"stream_name":"stdout","time":786.553620752,"data":"    \"details\": [\n"}
+,{"stream_name":"stdout","time":786.553622964,"data":"     \"(a) J-\u003eJ: KRONOS2 linear 0.709 vs Table + nbr 0.755 (-0.046)\",\n"}
+,{"stream_name":"stdout","time":786.553625359,"data":"     \"(a) D-\u003eD: KRONOS2 linear 0.508 vs Table + nbr 0.578 (-0.070)\",\n"}
+,{"stream_name":"stdout","time":786.553628024,"data":"     \"(b) J-\u003eJ: Table + nbr + K2-32 -0.007 [-0.047, +0.002]\",\n"}
+,{"stream_name":"stdout","time":786.553630448,"data":"     \"(b) J-\u003eD: Table + nbr + K2-32 -0.001 [-0.011, +0.019]\",\n"}
+,{"stream_name":"stdout","time":786.553632787,"data":"     \"(b) D-\u003eJ: Table + nbr + K2-32 +0.027 [+0.002, +0.037]\",\n"}
+,{"stream_name":"stdout","time":786.553655734,"data":"     \"(b) D-\u003eD: Table + nbr + K2-32 +0.009 [+0.001, +0.023]\",\n"}
+,{"stream_name":"stdout","time":786.553660219,"data":"     \"(b) B-\u003eJ: Table + nbr + K2-32 +0.011 [-0.006, +0.019]\",\n"}
+,{"stream_name":"stdout","time":786.553664304,"data":"     \"(b) B-\u003eD: Table + nbr + K2-32 +0.012 [+0.008, +0.021]\"\n"}
+,{"stream_name":"stdout","time":786.553667919,"data":"    ]\n"}
+,{"stream_name":"stdout","time":786.553671192,"data":"   },\n"}
+,{"stream_name":"stdout","time":786.553674782,"data":"   \"2\": {\n"}
+,{"stream_name":"stdout","time":786.553678414,"data":"    \"a\": true,\n"}
+,{"stream_name":"stdout","time":786.553681961,"data":"    \"b\": true,\n"}
+,{"stream_name":"stdout","time":786.553685217,"data":"    \"passed\": true,\n"}
+,{"stream_name":"stdout","time":786.553688462,"data":"    \"details\": [\n"}
+,{"stream_name":"stdout","time":786.553691711,"data":"     \"(a) J-\u003eJ: KRONOS2 linear 0.500 vs Table + nbr 0.547 (-0.047)\",\n"}
+,{"stream_name":"stdout","time":786.553697281,"data":"     \"(a) D-\u003eD: KRONOS2 linear 0.514 vs Table + nbr 0.586 (-0.072)\",\n"}
+,{"stream_name":"stdout","time":786.553704292,"data":"     \"(b) J-\u003eJ: Table + nbr + K2-32 -0.002 [-0.017, +0.017]\",\n"}
+,{"stream_name":"stdout","time":786.553706657,"data":"     \"(b) J-\u003eD: Table + nbr + K2-32 +0.002 [-0.006, +0.011]\",\n"}
+,{"stream_name":"stdout","time":786.553709002,"data":"     \"(b) D-\u003eJ: Table + nbr + K2-32 +0.027 [+0.005, +0.082]\",\n"}
+,{"stream_name":"stdout","time":786.553711332,"data":"     \"(b) D-\u003eD: Table + nbr + K2-32 +0.005 [-0.011, +0.017]\",\n"}
+,{"stream_name":"stdout","time":786.553713677,"data":"     \"(b) B-\u003eJ: Table + nbr + K2-32 +0.011 [-0.009, +0.017]\",\n"}
+,{"stream_name":"stdout","time":786.553716042,"data":"     \"(b) B-\u003eD: Table + nbr + K2-32 -0.002 [-0.010, +0.006]\"\n"}
+,{"stream_name":"stdout","time":786.553718389,"data":"    ]\n"}
+,{"stream_name":"stdout","time":786.553720529,"data":"   }\n"}
+,{"stream_name":"stdout","time":786.55372268,"data":"  },\n"}
+,{"stream_name":"stdout","time":786.553724812,"data":"  \"rep0_rule_v1\": true,\n"}
+,{"stream_name":"stdout","time":786.553727084,"data":"  \"passes_every_replicate\": true,\n"}
+,{"stream_name":"stdout","time":786.553729376,"data":"  \"replicates_run\": [\n"}
+,{"stream_name":"stdout","time":786.553731584,"data":"   0,\n"}
+,{"stream_name":"stdout","time":786.553733707,"data":"   1,\n"}
+,{"stream_name":"stdout","time":786.553735817,"data":"   2\n"}
+,{"stream_name":"stdout","time":786.553737938,"data":"  ],\n"}
+,{"stream_name":"stdout","time":786.553740056,"data":"  \"proceed_to_adaptation\": true\n"}
+,{"stream_name":"stdout","time":786.553743196,"data":" }\n"}
+,{"stream_name":"stdout","time":786.553762511,"data":"}\n"}
+,{"stream_name":"stdout","time":786.553766331,"data":"failed blocks: none\n"}
+,{"stream_name":"stdout","time":786.553769682,"data":"[  12.4 min] done\n"}
+,{"stream_name":"stderr","time":792.888370611,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":792.888401706,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":793.063302826,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":793.06334284,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":793.852678586,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":793.955853349,"data":"[NbConvertApp] Writing 225836 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":796.543157044,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":797.350865318,"data":"[NbConvertApp] Writing 698362 bytes to __results__.html\n"}
+]

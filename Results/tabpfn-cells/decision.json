@@ -1,0 +1,14 @@
+{
+ "transfer_coverage_better": {
+  "Danenberg": true,
+  "Jackson": false
+ },
+ "fewshot_crps_markers_better": {
+  "few-shot k=20 Danenberg->Jackson": 2,
+  "few-shot k=20 Jackson->Danenberg": 3,
+  "few-shot k=5 Danenberg->Jackson": 4,
+  "few-shot k=5 Jackson->Danenberg": 3
+ },
+ "claim": true,
+ "rule": "TabPFN lowers transfer |cov80-0.8| vs quantile LightGBM (full) (paired CI<0), or few-shot CRPS better for >=6/10 markers"
+}

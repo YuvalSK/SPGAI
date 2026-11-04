@@ -1,0 +1,109 @@
+kind,test,truth,train_a,model_a,train_b,model_b,better_rep0,better_rep1,better_rep2,worse_rep0,worse_rep1,worse_rep2,median_diff_mean,same_call_all_3
+both − other,Danenberg,cell mean,Both,GCN,Jackson,GCN,6.0,9.0,8.0,1.0,0.0,0.0,0.06478489946635675,cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,cell mean,Both,GraphSAGE,Jackson,GraphSAGE,7.0,8.0,8.0,0.0,0.0,0.0,0.10020638074427618,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,cell mean,Both,MLP,Jackson,MLP,7.0,7.0,9.0,0.0,0.0,0.0,0.06691704665832447,c_erb_b_2_her2:better; cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,cell mean,Both,Table,Jackson,Table,8.0,9.0,8.0,0.0,0.0,0.0,0.07712083548810798,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,target map,Both,GCN,Jackson,GCN,7.0,7.0,9.0,0.0,0.0,0.0,0.07338291039948591,cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,target map,Both,GraphSAGE,Jackson,GraphSAGE,8.0,7.0,8.0,0.0,0.0,0.0,0.10372501084813351,cd20:better; cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,target map,Both,MLP,Jackson,MLP,8.0,9.0,9.0,0.0,0.0,0.0,0.07945346798245807,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+both − other,Danenberg,target map,Both,Table,Jackson,Table,8.0,9.0,8.0,0.0,0.0,0.0,0.07466868149675937,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+both − other,Jackson,table,Both,GCN,Danenberg,GCN,9.0,8.0,7.0,0.0,0.0,0.0,0.07600952280856667,c_erb_b_2_her2:better; cd3:better; cd45:better; cytokeratin_5:better; pan_cytokeratin:better; sma:better
+both − other,Jackson,table,Both,GraphSAGE,Danenberg,GraphSAGE,10.0,9.0,8.0,0.0,0.0,0.0,0.1164729927369446,c_erb_b_2_her2:better; cd3:better; cd45:better; cd68:better; cytokeratin_5:better; pan_cytokeratin:better; sma:better
+both − other,Jackson,table,Both,MLP,Danenberg,MLP,10.0,10.0,10.0,0.0,0.0,0.0,0.11901161177414164,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; cytokeratin_5:better; cytokeratin_8_18:better; ki_67:better; pan_cytokeratin:better; sma:better
+both − other,Jackson,table,Both,Table,Danenberg,Table,9.0,9.0,10.0,0.0,0.0,0.0,0.11952449200782232,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; cytokeratin_5:better; cytokeratin_8_18:better; pan_cytokeratin:better; sma:better
+both − own,Danenberg,cell mean,Both,GCN,Danenberg,GCN,2.0,4.0,1.0,2.0,3.0,3.0,0.0016952383650899333,sma:worse
+both − own,Danenberg,cell mean,Both,GraphSAGE,Danenberg,GraphSAGE,3.0,1.0,1.0,5.0,3.0,4.0,-0.009989207611032634,cd3:worse; cd45:worse; sma:worse
+both − own,Danenberg,cell mean,Both,MLP,Danenberg,MLP,3.0,1.0,1.0,4.0,4.0,5.0,-0.010440641930545017,cd20:worse; cd3:worse; cd45:worse; pan_cytokeratin:better; sma:worse
+both − own,Danenberg,cell mean,Both,Table,Danenberg,Table,2.0,2.0,2.0,3.0,3.0,3.0,-0.0013975657909858167,cd20:worse; cd45:worse; cytokeratin_8_18:better; pan_cytokeratin:better; sma:worse
+both − own,Danenberg,target map,Both,GCN,Danenberg,GCN,3.0,3.0,1.0,1.0,3.0,3.0,0.0023370385765742,sma:worse
+both − own,Danenberg,target map,Both,GraphSAGE,Danenberg,GraphSAGE,3.0,1.0,1.0,4.0,2.0,4.0,-0.0072136888219201155,cd45:worse; sma:worse
+both − own,Danenberg,target map,Both,MLP,Danenberg,MLP,4.0,1.0,0.0,4.0,4.0,5.0,-0.0008001258746473663,cd20:worse; cd3:worse; cd45:worse; sma:worse
+both − own,Danenberg,target map,Both,Table,Danenberg,Table,2.0,3.0,2.0,2.0,2.0,2.0,0.0011426241994123832,cd45:worse; cytokeratin_8_18:better; pan_cytokeratin:better; sma:worse
+both − own,Jackson,table,Both,GCN,Jackson,GCN,0.0,0.0,1.0,2.0,2.0,1.0,-0.0031394828368668,sma:worse
+both − own,Jackson,table,Both,GraphSAGE,Jackson,GraphSAGE,0.0,0.0,0.0,6.0,7.0,5.0,-0.0171207510525767,cd45:worse; cytokeratin_5:worse; ki_67:worse; sma:worse
+both − own,Jackson,table,Both,MLP,Jackson,MLP,0.0,0.0,1.0,6.0,4.0,1.0,-0.013299632393457701,sma:worse
+both − own,Jackson,table,Both,Table,Jackson,Table,0.0,0.0,0.0,6.0,4.0,4.0,-0.00739144720202795,cd45:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet gamma,Both,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.4192947980776483,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet gamma,Danenberg,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.4355797608702238,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet gamma,Jackson,Table,1.0,1.0,1.0,8.0,9.0,9.0,-0.24291151330009764,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:better
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet immuvis,Both,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.3774532309084895,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.3770659236420042,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet immuvis,Jackson,Table,1.0,1.0,1.0,8.0,9.0,9.0,-0.26487042606452293,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:better
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet residual,Both,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.5490088731737597,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet residual,Danenberg,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.5451455311226278,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,cell mean,Jackson (images),ResNet-UNet residual,Jackson,Table,1.0,1.0,1.0,9.0,9.0,9.0,-0.24834129246828004,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:better
+image,Danenberg,target map,Jackson (images),ResNet-UNet gamma,Both,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.3915719311215484,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,target map,Jackson (images),ResNet-UNet gamma,Danenberg,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.4013004492062626,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,target map,Jackson (images),ResNet-UNet gamma,Jackson,Table,1.0,1.0,1.0,8.0,9.0,8.0,-0.24444796225034812,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:better
+image,Danenberg,target map,Jackson (images),ResNet-UNet immuvis,Both,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.401206817556583,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,target map,Jackson (images),ResNet-UNet immuvis,Danenberg,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.408642959394893,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,target map,Jackson (images),ResNet-UNet immuvis,Jackson,Table,1.0,1.0,1.0,9.0,9.0,9.0,-0.2555469963937712,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:better
+image,Danenberg,target map,Jackson (images),ResNet-UNet residual,Both,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.49255514755541024,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,target map,Jackson (images),ResNet-UNet residual,Danenberg,Table,0.0,0.0,0.0,10.0,10.0,10.0,-0.4980981244490174,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+image,Danenberg,target map,Jackson (images),ResNet-UNet residual,Jackson,Table,1.0,1.0,1.0,9.0,9.0,9.0,-0.2562149835345103,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_5:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:better
+model,Danenberg,cell mean,Both,GCN,Both,MLP,1.0,1.0,0.0,9.0,9.0,8.0,-0.18209526234402115,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,cell mean,Both,GCN,Both,Table,0.0,0.0,0.0,10.0,8.0,9.0,-0.1784644255637793,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,cell mean,Both,GraphSAGE,Both,MLP,4.0,4.0,2.0,0.0,0.0,1.0,0.012506190059490765,cd3:better; sma:better
+model,Danenberg,cell mean,Both,GraphSAGE,Both,Table,3.0,4.0,5.0,1.0,1.0,2.0,0.010048358103341816,sma:better
+model,Danenberg,cell mean,Both,MLP,Both,Table,1.0,0.0,2.0,4.0,4.0,4.0,-0.0021807368371286368,cd20:worse; sma:worse
+model,Danenberg,cell mean,Both,Table,Both,MLP,4.0,4.0,4.0,1.0,0.0,2.0,0.0021807368371286368,cd20:better; sma:better
+model,Danenberg,cell mean,Danenberg,GCN,Danenberg,MLP,0.0,0.0,0.0,10.0,10.0,9.0,-0.1856524935433513,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,cell mean,Danenberg,GCN,Danenberg,Table,0.0,0.0,0.0,10.0,9.0,9.0,-0.18135763099569624,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,cell mean,Danenberg,GraphSAGE,Danenberg,MLP,5.0,4.0,6.0,1.0,1.0,2.0,0.0107948529294815,cd3:better; cd68:better
+model,Danenberg,cell mean,Danenberg,GraphSAGE,Danenberg,Table,4.0,2.0,4.0,1.0,2.0,0.0,0.011611175631854084,cd3:better; cd68:better
+model,Danenberg,cell mean,Danenberg,MLP,Danenberg,Table,3.0,2.0,3.0,2.0,2.0,0.0,0.0020096918677763335,cd3:better
+model,Danenberg,cell mean,Danenberg,Table,Danenberg,MLP,2.0,2.0,0.0,3.0,2.0,3.0,-0.0020096918677763335,cd3:worse
+model,Danenberg,cell mean,Jackson,GCN,Jackson,MLP,1.0,1.0,1.0,7.0,7.0,7.0,-0.10517222569475088,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse
+model,Danenberg,cell mean,Jackson,GCN,Jackson,Table,1.0,1.0,2.0,6.0,6.0,7.0,-0.10419195719974907,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse
+model,Danenberg,cell mean,Jackson,GraphSAGE,Jackson,MLP,1.0,2.0,2.0,4.0,2.0,3.0,-0.0011849329972491998,cd20:better; sma:worse
+model,Danenberg,cell mean,Jackson,GraphSAGE,Jackson,Table,3.0,3.0,1.0,4.0,2.0,3.0,0.0026828941938919506,cd20:better; pan_cytokeratin:worse; sma:worse
+model,Danenberg,cell mean,Jackson,MLP,Jackson,Table,6.0,5.0,3.0,0.0,2.0,3.0,0.0113290580312308,cd45:better; sma:better
+model,Danenberg,cell mean,Jackson,Table,Jackson,MLP,0.0,2.0,3.0,6.0,5.0,3.0,-0.0113290580312308,cd45:worse; sma:worse
+model,Danenberg,target map,Both,GCN,Both,MLP,1.0,0.0,0.0,9.0,9.0,8.0,-0.1733992936328763,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,target map,Both,GCN,Both,Table,0.0,0.0,0.0,10.0,8.0,9.0,-0.17461477059804978,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,target map,Both,GraphSAGE,Both,MLP,6.0,4.0,3.0,0.0,0.0,1.0,0.009602445269935415,cd20:better; sma:better
+model,Danenberg,target map,Both,GraphSAGE,Both,Table,4.0,4.0,5.0,0.0,1.0,2.0,0.008998055980354733,sma:better
+model,Danenberg,target map,Both,MLP,Both,Table,3.0,0.0,2.0,4.0,3.0,4.0,-0.004573075845557167,cd20:worse; cd45:worse; sma:worse
+model,Danenberg,target map,Both,Table,Both,MLP,4.0,3.0,4.0,3.0,0.0,2.0,0.004573075845557167,cd20:better; cd45:better; sma:better
+model,Danenberg,target map,Danenberg,GCN,Danenberg,MLP,0.0,0.0,0.0,10.0,10.0,9.0,-0.17937829804519556,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,target map,Danenberg,GCN,Danenberg,Table,0.0,0.0,0.0,10.0,9.0,9.0,-0.18013896583399505,c_erb_b_2_her2:worse; cd20:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Danenberg,target map,Danenberg,GraphSAGE,Danenberg,MLP,5.0,4.0,6.0,1.0,2.0,1.0,0.009802787333332685,cd3:better; cd68:better; cytokeratin_8_18:worse
+model,Danenberg,target map,Danenberg,GraphSAGE,Danenberg,Table,4.0,3.0,4.0,1.0,1.0,0.0,0.010029430925577667,cd3:better; cd68:better
+model,Danenberg,target map,Danenberg,MLP,Danenberg,Table,3.0,1.0,2.0,2.0,0.0,1.0,-0.001286177581478,cd3:better
+model,Danenberg,target map,Danenberg,Table,Danenberg,MLP,2.0,0.0,1.0,3.0,1.0,2.0,0.001286177581478,cd3:worse
+model,Danenberg,target map,Jackson,GCN,Jackson,MLP,1.0,1.0,1.0,7.0,7.0,7.0,-0.10517215626785004,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse
+model,Danenberg,target map,Jackson,GCN,Jackson,Table,2.0,1.0,2.0,6.0,6.0,7.0,-0.0940110797611325,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse
+model,Danenberg,target map,Jackson,GraphSAGE,Jackson,MLP,1.0,3.0,2.0,4.0,2.0,3.0,-0.0006514372088471873,cd20:better; sma:worse
+model,Danenberg,target map,Jackson,GraphSAGE,Jackson,Table,3.0,3.0,2.0,4.0,1.0,3.0,0.005461874708754067,cd20:better; sma:worse
+model,Danenberg,target map,Jackson,MLP,Jackson,Table,5.0,4.0,5.0,0.0,2.0,3.0,0.0109009291044412,c_erb_b_2_her2:better; cd45:better; sma:better
+model,Danenberg,target map,Jackson,Table,Jackson,MLP,0.0,2.0,3.0,5.0,4.0,5.0,-0.0109009291044412,c_erb_b_2_her2:worse; cd45:worse; sma:worse
+model,Jackson,table,Both,GCN,Both,MLP,0.0,0.0,0.0,8.0,9.0,8.0,-0.13455743646458443,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; pan_cytokeratin:worse; sma:worse
+model,Jackson,table,Both,GCN,Both,Table,0.0,0.0,0.0,8.0,8.0,8.0,-0.1392387134448584,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; pan_cytokeratin:worse; sma:worse
+model,Jackson,table,Both,GraphSAGE,Both,MLP,5.0,4.0,1.0,1.0,1.0,0.0,0.006276932378787968,sma:better
+model,Jackson,table,Both,GraphSAGE,Both,Table,4.0,4.0,1.0,1.0,2.0,1.0,0.009456662727853083,sma:better
+model,Jackson,table,Both,MLP,Both,Table,2.0,2.0,2.0,4.0,2.0,2.0,0.001395034899525233,cd3:better
+model,Jackson,table,Both,Table,Both,MLP,4.0,2.0,2.0,2.0,2.0,2.0,-0.001395034899525233,cd3:worse
+model,Jackson,table,Danenberg,GCN,Danenberg,MLP,2.0,2.0,1.0,5.0,5.0,5.0,-0.04398650638020793,cd68:worse; cytokeratin_8_18:worse; pan_cytokeratin:worse; sma:better
+model,Jackson,table,Danenberg,GCN,Danenberg,Table,2.0,1.0,1.0,7.0,6.0,4.0,-0.07464883659346638,c_erb_b_2_her2:worse; cd68:worse; cytokeratin_8_18:worse; pan_cytokeratin:worse; sma:better
+model,Jackson,table,Danenberg,GraphSAGE,Danenberg,MLP,2.0,4.0,1.0,3.0,2.0,2.0,0.016983606359386064,c_erb_b_2_her2:worse; pan_cytokeratin:worse; sma:better
+model,Jackson,table,Danenberg,GraphSAGE,Danenberg,Table,1.0,3.0,2.0,4.0,3.0,1.0,-0.004880961155479167,c_erb_b_2_her2:worse; sma:better
+model,Jackson,table,Danenberg,MLP,Danenberg,Table,2.0,2.0,2.0,3.0,5.0,3.0,-0.0024119668986012834,c_erb_b_2_her2:worse; cd3:worse; cytokeratin_5:worse; sma:better
+model,Jackson,table,Danenberg,Table,Danenberg,MLP,3.0,5.0,3.0,2.0,2.0,2.0,0.0024119668986012834,c_erb_b_2_her2:better; cd3:better; cytokeratin_5:better; sma:worse
+model,Jackson,table,Jackson,GCN,Jackson,MLP,0.0,0.0,0.0,8.0,10.0,8.0,-0.14925474878879463,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; pan_cytokeratin:worse; sma:worse
+model,Jackson,table,Jackson,GCN,Jackson,Table,0.0,0.0,0.0,10.0,10.0,8.0,-0.15811075771177743,c_erb_b_2_her2:worse; cd3:worse; cd45:worse; cd68:worse; cytokeratin_8_18:worse; ki_67:worse; pan_cytokeratin:worse; sma:worse
+model,Jackson,table,Jackson,GraphSAGE,Jackson,MLP,8.0,4.0,5.0,0.0,0.0,0.0,0.014966441135804717,cd45:better; ki_67:better; sma:better
+model,Jackson,table,Jackson,GraphSAGE,Jackson,Table,5.0,4.0,4.0,0.0,0.0,0.0,0.016776227224813034,cd45:better; sma:better
+model,Jackson,table,Jackson,MLP,Jackson,Table,2.0,4.0,0.0,4.0,1.0,1.0,-0.00162656495932875,ki_67:worse
+model,Jackson,table,Jackson,Table,Jackson,MLP,4.0,1.0,1.0,2.0,4.0,0.0,0.00162656495932875,ki_67:better
+own − other,Danenberg,cell mean,Danenberg,GCN,Jackson,GCN,6.0,7.0,7.0,1.0,1.0,1.0,0.06414042912578476,cd45:better; ki_67:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,cell mean,Danenberg,GraphSAGE,Jackson,GraphSAGE,7.0,6.0,8.0,0.0,0.0,0.0,0.10828878006262972,cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,cell mean,Danenberg,MLP,Jackson,MLP,7.0,7.0,9.0,0.0,0.0,0.0,0.08843384551618243,cd20:better; cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,cell mean,Danenberg,Table,Jackson,Table,9.0,9.0,8.0,0.0,0.0,0.0,0.08112717056774789,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,target map,Danenberg,GCN,Jackson,GCN,6.0,5.0,7.0,1.0,1.0,0.0,0.07120607505481723,cd45:better; ki_67:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,target map,Danenberg,GraphSAGE,Jackson,GraphSAGE,7.0,6.0,8.0,0.0,0.0,0.0,0.10511897932902571,cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,target map,Danenberg,MLP,Jackson,MLP,8.0,8.0,9.0,0.0,0.0,0.0,0.08860398216488657,cd20:better; cd3:better; cd45:better; cd68:better; ki_67:better; pan_cytokeratin:better; sma:better
+own − other,Danenberg,target map,Danenberg,Table,Jackson,Table,9.0,8.0,8.0,0.0,0.0,0.0,0.07334746598734111,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+own − other,Jackson,table,Jackson,GCN,Danenberg,GCN,8.0,7.0,8.0,0.0,0.0,0.0,0.08016293944435172,c_erb_b_2_her2:better; cd3:better; cd45:better; cd68:better; pan_cytokeratin:better; sma:better
+own − other,Jackson,table,Jackson,GraphSAGE,Danenberg,GraphSAGE,10.0,9.0,9.0,0.0,0.0,0.0,0.16749477720020747,c_erb_b_2_her2:better; cd3:better; cd45:better; cd68:better; cytokeratin_5:better; ki_67:better; pan_cytokeratin:better; sma:better
+own − other,Jackson,table,Jackson,MLP,Danenberg,MLP,10.0,10.0,9.0,0.0,0.0,0.0,0.16376839630976972,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; cytokeratin_5:better; cytokeratin_8_18:better; pan_cytokeratin:better; sma:better
+own − other,Jackson,table,Jackson,Table,Danenberg,Table,10.0,10.0,10.0,0.0,0.0,0.0,0.13803788939117725,c_erb_b_2_her2:better; cd20:better; cd3:better; cd45:better; cd68:better; cytokeratin_5:better; cytokeratin_8_18:better; ki_67:better; pan_cytokeratin:better; sma:better

@@ -1,0 +1,18 @@
+{
+ "Jackson|knn10": {
+  "mean_degree": 11.366496051944546
+ },
+ "Jackson|r30": {
+  "mean_degree": 17.6564889834512,
+  "median_distance": 20.96950550189107,
+  "contact_fraction": 0.29656079411506653
+ },
+ "Danenberg|knn10": {
+  "mean_degree": 11.263189605909892
+ },
+ "Danenberg|r30": {
+  "mean_degree": 15.19714296204455,
+  "median_distance": 21.2906647657786,
+  "contact_fraction": 0.38384124636650085
+ }
+}

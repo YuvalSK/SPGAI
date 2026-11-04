@@ -1,0 +1,60 @@
+{
+ "passed": false,
+ "n_failures": 11,
+ "failures": [
+  "negative control state mean danenberg cd45 R5_table: R5 +0.0110",
+  "negative control state mean danenberg cytokeratin_5 R5_own: R5 +0.0328",
+  "negative control planted a=0 danenberg cytokeratin_5 R5_own: R5 +0.0227",
+  "negative control state mean danenberg pan_cytokeratin R5_table: R5 +0.0142",
+  "negative control state mean jackson cd68 R5_own: R5 +0.0147",
+  "negative control state mean jackson cytokeratin_5 R5_own: R5 +0.0164",
+  "negative control state mean jackson cytokeratin_5 R5_table: R5 +0.0180",
+  "negative control planted a=0 jackson cytokeratin_5 R5_table: R5 +0.0115",
+  "negative control state mean jackson pan_cytokeratin R5_table: R5 +0.0201",
+  "negative control state mean jackson sma R5_own: R5 +0.0136",
+  "negative control state mean jackson sma R5_table: R5 +0.0238"
+ ],
+ "failed_blocks": [],
+ "main_markers": [
+  "danenberg:c_erb_b_2_her2",
+  "danenberg:cd20",
+  "danenberg:cd3",
+  "danenberg:cd45",
+  "danenberg:cd68",
+  "danenberg:cytokeratin_5",
+  "danenberg:cytokeratin_8_18",
+  "danenberg:estrogen_receptor_alpha",
+  "danenberg:ki_67",
+  "danenberg:pan_cytokeratin",
+  "danenberg:sma",
+  "jackson:c_erb_b_2_her2",
+  "jackson:cd20",
+  "jackson:cd3",
+  "jackson:cd45",
+  "jackson:cd68",
+  "jackson:cytokeratin_5",
+  "jackson:cytokeratin_8_18",
+  "jackson:estrogen_receptor_alpha",
+  "jackson:ki_67",
+  "jackson:pan_cytokeratin",
+  "jackson:sma"
+ ],
+ "ceiling_split_flags": [
+  "danenberg:c_erb_b_2_her2:R5_cell (0.051)",
+  "danenberg:c_erb_b_2_her2:R5_table (0.051)",
+  "danenberg:estrogen_receptor_alpha:R5_cell (0.052)",
+  "danenberg:estrogen_receptor_alpha:R5_table (0.052)",
+  "danenberg:sma:R5_cell (0.054)",
+  "danenberg:sma:R5_table (0.054)"
+ ],
+ "thresholds": {
+  "NEG_TOL": 0.01,
+  "ID_FRAC": 0.9,
+  "MAIN_CEIL": 0.05,
+  "MONO_TOL": 0.002
+ },
+ "identity_below_ceiling_reported": [],
+ "version": 2,
+ "smoke": false,
+ "minutes": 409.5611346006393
+}

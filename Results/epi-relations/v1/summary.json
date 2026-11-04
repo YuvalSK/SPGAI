@@ -1,0 +1,281 @@
+{
+ "smoke": false,
+ "cells": {
+  "jackson": 1126124,
+  "danenberg": 1062219
+ },
+ "erosion": {
+  "images": 542,
+  "cells_with_full_mask_values": 1126124,
+  "cells_kept_after_erosion": 967279,
+  "median_pixels_full": 90.0,
+  "median_pixels_eroded": 16.0,
+  "table_vs_image_r": {
+   "dna1": 0.9999999999999714,
+   "histone_h3_trimethylate": 0.9999999999999913,
+   "histone_h3_phospho": 0.9977795227672299,
+   "cd45": 0.9922979614488118
+  }
+ },
+ "n_reliable": {
+  "h3k27me3": {
+   "C": 20,
+   "K": 1,
+   "L": 4,
+   "P": 8
+  },
+  "phh3": {
+   "C": 7,
+   "K": 0,
+   "L": 3,
+   "P": 6
+  }
+ },
+ "reliable_P_surviving_brightness_adjustment": {
+  "h3k27me3": "5/8",
+  "phh3": "3/6"
+ },
+ "image_models": [],
+ "jackson_test": {
+  "cells": 229818,
+  "patients": 66,
+  "images": 106
+ },
+ "accuracy": [
+  {
+   "evaluation": "Jackson test",
+   "mark": "h3k27me3",
+   "model": "nuclear",
+   "r_within": 0.4928,
+   "r_lo": 0.4095,
+   "r_hi": 0.5699,
+   "partial_beyond_nuclear": 0.1727,
+   "partial_lo": 0.1291,
+   "partial_hi": 0.2125,
+   "patient_spearman": 0.4563,
+   "patient_lo": 0.2368,
+   "patient_hi": 0.642,
+   "auc_top1pct": NaN,
+   "auc_lo": NaN,
+   "auc_hi": NaN
+  },
+  {
+   "evaluation": "Jackson test",
+   "mark": "h3k27me3",
+   "model": "lgbm",
+   "r_within": 0.7309,
+   "r_lo": 0.6944,
+   "r_hi": 0.7635,
+   "partial_beyond_nuclear": 0.6019,
+   "partial_lo": 0.5738,
+   "partial_hi": 0.6284,
+   "patient_spearman": 0.8272,
+   "patient_lo": 0.7102,
+   "patient_hi": 0.9006,
+   "auc_top1pct": NaN,
+   "auc_lo": NaN,
+   "auc_hi": NaN
+  },
+  {
+   "evaluation": "Jackson test",
+   "mark": "phh3",
+   "model": "nuclear",
+   "r_within": 0.2814,
+   "r_lo": 0.2381,
+   "r_hi": 0.3311,
+   "partial_beyond_nuclear": 0.1204,
+   "partial_lo": 0.0894,
+   "partial_hi": 0.1494,
+   "patient_spearman": 0.5335,
+   "patient_lo": 0.3443,
+   "patient_hi": 0.6731,
+   "auc_top1pct": 0.7519,
+   "auc_lo": 0.684,
+   "auc_hi": 0.8036
+  },
+  {
+   "evaluation": "Jackson test",
+   "mark": "phh3",
+   "model": "lgbm",
+   "r_within": 0.3555,
+   "r_lo": 0.3121,
+   "r_hi": 0.4069,
+   "partial_beyond_nuclear": 0.2931,
+   "partial_lo": 0.2604,
+   "partial_hi": 0.3245,
+   "patient_spearman": 0.6627,
+   "patient_lo": 0.5167,
+   "patient_hi": 0.7652,
+   "auc_top1pct": 0.8104,
+   "auc_lo": 0.7601,
+   "auc_hi": 0.8498
+  },
+  {
+   "evaluation": "Jackson out-of-fold",
+   "mark": "h3k27me3",
+   "model": "nuclear",
+   "r_within": 0.4996,
+   "r_lo": 0.474,
+   "r_hi": 0.5231,
+   "partial_beyond_nuclear": 0.1582,
+   "partial_lo": 0.1401,
+   "partial_hi": 0.1758,
+   "patient_spearman": 0.4676,
+   "patient_lo": 0.3677,
+   "patient_hi": 0.5561,
+   "auc_top1pct": NaN,
+   "auc_lo": NaN,
+   "auc_hi": NaN
+  },
+  {
+   "evaluation": "Jackson out-of-fold",
+   "mark": "h3k27me3",
+   "model": "lgbm",
+   "r_within": 0.7275,
+   "r_lo": 0.7086,
+   "r_hi": 0.743,
+   "partial_beyond_nuclear": 0.5916,
+   "partial_lo": 0.5729,
+   "partial_hi": 0.6084,
+   "patient_spearman": 0.8641,
+   "patient_lo": 0.8345,
+   "patient_hi": 0.8895,
+   "auc_top1pct": NaN,
+   "auc_lo": NaN,
+   "auc_hi": NaN
+  },
+  {
+   "evaluation": "Jackson out-of-fold",
+   "mark": "phh3",
+   "model": "nuclear",
+   "r_within": 0.2907,
+   "r_lo": 0.2684,
+   "r_hi": 0.3139,
+   "partial_beyond_nuclear": 0.0937,
+   "partial_lo": 0.0781,
+   "partial_hi": 0.1098,
+   "patient_spearman": 0.4815,
+   "patient_lo": 0.3913,
+   "patient_hi": 0.5642,
+   "auc_top1pct": 0.7352,
+   "auc_lo": 0.7084,
+   "auc_hi": 0.7647
+  },
+  {
+   "evaluation": "Jackson out-of-fold",
+   "mark": "phh3",
+   "model": "lgbm",
+   "r_within": 0.3459,
+   "r_lo": 0.3233,
+   "r_hi": 0.3688,
+   "partial_beyond_nuclear": 0.2652,
+   "partial_lo": 0.2479,
+   "partial_hi": 0.2816,
+   "patient_spearman": 0.6475,
+   "patient_lo": 0.5735,
+   "patient_hi": 0.7062,
+   "auc_top1pct": 0.7982,
+   "auc_lo": 0.7711,
+   "auc_hi": 0.8245
+  }
+ ],
+ "danenberg_cells": {
+  "all": 1062219,
+  "loa_subset": 0
+ },
+ "verdict": [
+  {
+   "mark": "h3k27me3",
+   "model": "nuclear",
+   "partial_beyond_nuclear": 0.1727,
+   "A_accuracy": false,
+   "B_jackson_test_reproduced": 7,
+   "B_jackson_test_of": 33,
+   "B_jackson_test": false,
+   "B_jackson_test_full_inputs_reproduced": "7/33",
+   "C_danenberg_reproduced": 0,
+   "C_danenberg_of": 33,
+   "C_danenberg": false,
+   "C_danenberg_full_inputs_reproduced": "0/33",
+   "jackson_oof_reproduced": 3,
+   "jackson_oof_of": 33,
+   "jackson_oof": false,
+   "jackson_oof_full_inputs_reproduced": "3/33",
+   "verdict": "no"
+  },
+  {
+   "mark": "h3k27me3",
+   "model": "lgbm",
+   "partial_beyond_nuclear": 0.6019,
+   "A_accuracy": true,
+   "B_jackson_test_reproduced": 29,
+   "B_jackson_test_of": 33,
+   "B_jackson_test": true,
+   "B_jackson_test_full_inputs_reproduced": "27/33",
+   "C_danenberg_reproduced": 19,
+   "C_danenberg_of": 33,
+   "C_danenberg": false,
+   "C_danenberg_full_inputs_reproduced": "27/33",
+   "jackson_oof_reproduced": 32,
+   "jackson_oof_of": 33,
+   "jackson_oof": true,
+   "jackson_oof_full_inputs_reproduced": "29/33",
+   "verdict": "only within Jackson"
+  },
+  {
+   "mark": "phh3",
+   "model": "nuclear",
+   "partial_beyond_nuclear": 0.1204,
+   "A_accuracy": false,
+   "B_jackson_test_reproduced": 4,
+   "B_jackson_test_of": 16,
+   "B_jackson_test": false,
+   "B_jackson_test_full_inputs_reproduced": "4/16",
+   "C_danenberg_reproduced": 0,
+   "C_danenberg_of": 16,
+   "C_danenberg": false,
+   "C_danenberg_full_inputs_reproduced": "0/16",
+   "jackson_oof_reproduced": 6,
+   "jackson_oof_of": 16,
+   "jackson_oof": false,
+   "jackson_oof_full_inputs_reproduced": "6/16",
+   "verdict": "no"
+  },
+  {
+   "mark": "phh3",
+   "model": "lgbm",
+   "partial_beyond_nuclear": 0.2931,
+   "A_accuracy": false,
+   "B_jackson_test_reproduced": 9,
+   "B_jackson_test_of": 16,
+   "B_jackson_test": false,
+   "B_jackson_test_full_inputs_reproduced": "3/16",
+   "C_danenberg_reproduced": 13,
+   "C_danenberg_of": 16,
+   "C_danenberg": true,
+   "C_danenberg_full_inputs_reproduced": "10/16",
+   "jackson_oof_reproduced": 16,
+   "jackson_oof_of": 16,
+   "jackson_oof": true,
+   "jackson_oof_full_inputs_reproduced": "11/16",
+   "verdict": "no"
+  }
+ ],
+ "failed_blocks": [],
+ "minutes": 37.70667749643326,
+ "thresholds": {
+  "THR": {
+   "C": 0.1,
+   "K": 0.2,
+   "P": 0.2,
+   "L": 0.06
+  },
+  "ratio": [
+   0.5,
+   2.0
+  ],
+  "acc_min": 0.3,
+  "repro_frac": 0.6666666666666666,
+  "phh3_top1pct": 1.2941203117370605
+ }
+}

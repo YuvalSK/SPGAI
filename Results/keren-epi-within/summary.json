@@ -1,0 +1,107 @@
+{
+ "smoke": false,
+ "cells": 197678,
+ "patients": 40,
+ "channels": 36,
+ "reference": {
+  "Jackson-trained, Jackson test (epi-relations v3)": 0.607,
+  "Jackson-trained, Keren (epi-relations v3)": 0.117
+ },
+ "scores": [
+  {
+   "model": "nuclear",
+   "n_features": 2,
+   "r_within": 0.5229,
+   "r_lo": 0.4807,
+   "r_hi": 0.5606,
+   "partial_beyond_nuclear": 0.0555,
+   "partial_lo": 0.0255,
+   "partial_hi": 0.0859,
+   "patient_spearman": 0.3432,
+   "patient_lo": 0.0274,
+   "patient_hi": 0.6202,
+   "n_patients": 40
+  },
+  {
+   "model": "shared 9",
+   "n_features": 9,
+   "r_within": 0.5411,
+   "r_lo": 0.4954,
+   "r_hi": 0.5803,
+   "partial_beyond_nuclear": 0.2271,
+   "partial_lo": 0.172,
+   "partial_hi": 0.2777,
+   "patient_spearman": 0.3238,
+   "patient_lo": 0.0314,
+   "patient_hi": 0.5878,
+   "n_patients": 40
+  },
+  {
+   "model": "all channels",
+   "n_features": 35,
+   "r_within": 0.6957,
+   "r_lo": 0.642,
+   "r_hi": 0.744,
+   "partial_beyond_nuclear": 0.544,
+   "partial_lo": 0.4783,
+   "partial_hi": 0.6081,
+   "patient_spearman": 0.5246,
+   "patient_lo": 0.2209,
+   "patient_hi": 0.7518,
+   "n_patients": 40
+  },
+  {
+   "model": "all, no mass neighbours",
+   "n_features": 32,
+   "r_within": 0.5536,
+   "r_lo": 0.5073,
+   "r_hi": 0.5924,
+   "partial_beyond_nuclear": 0.2749,
+   "partial_lo": 0.225,
+   "partial_hi": 0.3225,
+   "patient_spearman": 0.3827,
+   "patient_lo": 0.0631,
+   "patient_hi": 0.6372,
+   "n_patients": 40
+  },
+  {
+   "model": "all + H3K9ac",
+   "n_features": 36,
+   "r_within": 0.7726,
+   "r_lo": 0.7231,
+   "r_hi": 0.8151,
+   "partial_beyond_nuclear": 0.6665,
+   "partial_lo": 0.6081,
+   "partial_hi": 0.7215,
+   "patient_spearman": 0.6118,
+   "patient_lo": 0.3016,
+   "patient_hi": 0.8399,
+   "n_patients": 40
+  }
+ ],
+ "top_importance": {
+  "phospho_s6": 0.5276,
+  "ds_dna": 0.1545,
+  "egfr": 0.0414,
+  "hla_class_1": 0.0367,
+  "pan_keratin": 0.0266,
+  "keratin6": 0.0231,
+  "beta_catenin": 0.0228,
+  "cd3": 0.0215,
+  "p53": 0.0201,
+  "hla_dr": 0.0137
+ },
+ "top_partials": {
+  "h3k9ac": 0.5782,
+  "phospho_s6": 0.4492,
+  "cd20": 0.2358,
+  "cd45ro": 0.1967,
+  "cd45": 0.1835,
+  "cd3": 0.1707,
+  "hla_class_1": 0.1498,
+  "cd4": 0.1239,
+  "cd8": 0.1071,
+  "beta_catenin": -0.0832
+ },
+ "minutes": 1.6645752350489298
+}

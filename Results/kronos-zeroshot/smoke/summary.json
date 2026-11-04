@@ -1,0 +1,38 @@
+{
+ "gate": {
+  "within_005_coarse_own_cohort": true,
+  "beats_table_nbr": true,
+  "details": [
+   "Table + K32 Jackson->Jackson: 0.714 vs Table + nbr 0.720",
+   "Table + K32 Danenberg->Danenberg: 0.571 vs Table + nbr 0.581",
+   "Table + nbr + K32 better than Table + nbr: Jackson->Jackson +0.014 [+0.014, +0.018]",
+   "Table + nbr + K32 better than Table + nbr: Danenberg->Jackson +0.084 [+0.046, +0.084]"
+  ],
+  "proceed_to_adaptation": true
+ },
+ "calibration": {
+  "kronos": {
+   "macro_f1_val": 0.5734840469371972,
+   "weight_decay": 0.0001,
+   "n_fit": 13442,
+   "n_val": 10388
+  },
+  "own": {
+   "macro_f1_val": 0.5959145378060381,
+   "weight_decay": 0.001,
+   "n_fit": 13442,
+   "n_val": 10388
+  },
+  "pca": {
+   "n_components": 256,
+   "variance_explained": 0.9502604823691323
+  }
+ },
+ "variant": "own",
+ "failed": [],
+ "smoke": true,
+ "minutes": 2.3469412088394166,
+ "kronos_commit": [
+  "26f1bc02f9ee3a7da3d37ebc63179b2f73e5bc0b"
+ ]
+}

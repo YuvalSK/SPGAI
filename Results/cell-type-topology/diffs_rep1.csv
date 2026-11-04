@@ -1,0 +1,193 @@
+rep,task,train,test,model,base,metric,diff,lo,hi,call
+1,fine,Danenberg,Danenberg,Table,Table + nbr,macro_f1,-0.01568205242906162,-0.020942723212472543,-0.009089895647264444,worse
+1,fine,Danenberg,Danenberg,Table,Table + nbr,bal_acc,-0.0035126371868411943,-0.006860643157191375,0.0053037912921464914,n.s.
+1,fine,Danenberg,Danenberg,Table,Topology,macro_f1,0.38266582974258706,0.3545682475796022,0.3926078460374271,better
+1,fine,Danenberg,Danenberg,Table,Topology,bal_acc,0.39685674813217015,0.3710111418998289,0.41129638535781904,better
+1,fine,Danenberg,Danenberg,Table + nbr,Table,macro_f1,0.01568205242906162,0.009089895647264444,0.020942723212472543,better
+1,fine,Danenberg,Danenberg,Table + nbr,Table,bal_acc,0.0035126371868411943,-0.005303791292146492,0.006860643157191374,n.s.
+1,fine,Danenberg,Danenberg,Table + nbr,Topology,macro_f1,0.3983478821716487,0.3684265805381825,0.40886775859986724,better
+1,fine,Danenberg,Danenberg,Table + nbr,Topology,bal_acc,0.40036938531901134,0.36930589990687074,0.41402236696584804,better
+1,fine,Danenberg,Danenberg,Topology,Table,macro_f1,-0.38266582974258706,-0.39260784603742716,-0.35456824757960226,worse
+1,fine,Danenberg,Danenberg,Topology,Table,bal_acc,-0.39685674813217015,-0.41129638535781904,-0.3710111418998289,worse
+1,fine,Danenberg,Danenberg,Topology,Table + nbr,macro_f1,-0.3983478821716487,-0.40886775859986724,-0.3684265805381825,worse
+1,fine,Danenberg,Danenberg,Topology,Table + nbr,bal_acc,-0.40036938531901134,-0.41402236696584804,-0.36930589990687074,worse
+1,fine,Danenberg,Danenberg,Table + topo,Table,macro_f1,-0.0009501089847444022,-0.0052935935793977625,0.005755811334138011,n.s.
+1,fine,Danenberg,Danenberg,Table + topo,Table,bal_acc,-0.006014109695372916,-0.012164308673286137,0.0023813763935034656,n.s.
+1,fine,Danenberg,Danenberg,Table + topo,Table + nbr,macro_f1,-0.016632161413806024,-0.023422016263354134,-0.0066622412780171746,worse
+1,fine,Danenberg,Danenberg,Table + topo,Table + nbr,bal_acc,-0.00952674688221411,-0.014220115605548849,0.003056279527995072,n.s.
+1,fine,Danenberg,Danenberg,Table + topo,Topology,macro_f1,0.38171572075784266,0.35797365468857134,0.3915984439458415,better
+1,fine,Danenberg,Danenberg,Table + topo,Topology,bal_acc,0.39084263843679723,0.3701968511656375,0.404120133037658,better
+1,fine,Danenberg,Danenberg,Table + nbr + topo,Table,macro_f1,0.014878927092491223,0.008320525702028788,0.021106480103922447,better
+1,fine,Danenberg,Danenberg,Table + nbr + topo,Table,bal_acc,0.002098679305095441,-0.006679283872403128,0.006883556344654918,n.s.
+1,fine,Danenberg,Danenberg,Table + nbr + topo,Table + nbr,macro_f1,-0.0008031253365703983,-0.0033697102316573428,0.0029205099033644917,n.s.
+1,fine,Danenberg,Danenberg,Table + nbr + topo,Table + nbr,bal_acc,-0.0014139578817457532,-0.003814578434690988,0.002956105493781055,n.s.
+1,fine,Danenberg,Danenberg,Table + nbr + topo,Topology,macro_f1,0.3975447568350783,0.3685068279397604,0.40927498347283925,better
+1,fine,Danenberg,Danenberg,Table + nbr + topo,Topology,bal_acc,0.3989554274372656,0.37070521229695175,0.41383886616126075,better
+1,fine,Jackson,Jackson,Table,Table + nbr,macro_f1,-0.03501408345512591,-0.04572114758201556,-0.02584730588586732,worse
+1,fine,Jackson,Jackson,Table,Table + nbr,bal_acc,-0.03226939763327852,-0.041838726062391786,-0.023025342792605007,worse
+1,fine,Jackson,Jackson,Table,Topology,macro_f1,0.31073968051040557,0.2845706636253565,0.3263793349742574,better
+1,fine,Jackson,Jackson,Table,Topology,bal_acc,0.30118827188343017,0.2807807714909434,0.3240841856627448,better
+1,fine,Jackson,Jackson,Table + nbr,Table,macro_f1,0.03501408345512591,0.02584730588586732,0.04572114758201556,better
+1,fine,Jackson,Jackson,Table + nbr,Table,bal_acc,0.03226939763327852,0.023025342792605007,0.041838726062391786,better
+1,fine,Jackson,Jackson,Table + nbr,Topology,macro_f1,0.3457537639655315,0.316954810870281,0.365064352142559,better
+1,fine,Jackson,Jackson,Table + nbr,Topology,bal_acc,0.3334576695167087,0.3096280433166748,0.3591701406296809,better
+1,fine,Jackson,Jackson,Topology,Table,macro_f1,-0.31073968051040557,-0.3263793349742574,-0.2845706636253565,worse
+1,fine,Jackson,Jackson,Topology,Table,bal_acc,-0.30118827188343017,-0.3240841856627448,-0.2807807714909434,worse
+1,fine,Jackson,Jackson,Topology,Table + nbr,macro_f1,-0.3457537639655315,-0.36506435214255906,-0.316954810870281,worse
+1,fine,Jackson,Jackson,Topology,Table + nbr,bal_acc,-0.3334576695167087,-0.3591701406296809,-0.3096280433166748,worse
+1,fine,Jackson,Jackson,Table + topo,Table,macro_f1,0.013072891825115007,0.005754680648935684,0.02481803025834252,better
+1,fine,Jackson,Jackson,Table + topo,Table,bal_acc,0.01589751283055174,0.006126389920334867,0.02653204258226572,better
+1,fine,Jackson,Jackson,Table + topo,Table + nbr,macro_f1,-0.021941191630010903,-0.030348958953836668,-0.01164321656105626,worse
+1,fine,Jackson,Jackson,Table + topo,Table + nbr,bal_acc,-0.016371884802726777,-0.02716880807620434,-0.006431711094974016,worse
+1,fine,Jackson,Jackson,Table + topo,Topology,macro_f1,0.32381257233552063,0.29840284302240083,0.3417865305042603,better
+1,fine,Jackson,Jackson,Table + topo,Topology,bal_acc,0.3170857847139819,0.2965219915404951,0.337654616402546,better
+1,fine,Jackson,Jackson,Table + nbr + topo,Table,macro_f1,0.03610322326441823,0.026563254997056685,0.04695687338793563,better
+1,fine,Jackson,Jackson,Table + nbr + topo,Table,bal_acc,0.031057896609365476,0.020913435455415755,0.04070068763885703,better
+1,fine,Jackson,Jackson,Table + nbr + topo,Table + nbr,macro_f1,0.0010891398092923166,-0.0024814850108216464,0.0033117126974486237,n.s.
+1,fine,Jackson,Jackson,Table + nbr + topo,Table + nbr,bal_acc,-0.001211501023913042,-0.005221007880673943,0.0016236043408664024,n.s.
+1,fine,Jackson,Jackson,Table + nbr + topo,Topology,macro_f1,0.34684290377482385,0.31763564194578336,0.3654996501704094,better
+1,fine,Jackson,Jackson,Table + nbr + topo,Topology,bal_acc,0.33224616849279565,0.30815167380398995,0.35646769205095,better
+1,coarse,Jackson,Jackson,Table,Table + nbr,macro_f1,-0.023432090737181555,-0.03102628733833162,-0.016609918558620335,worse
+1,coarse,Jackson,Jackson,Table,Table + nbr,bal_acc,-0.020797220315444842,-0.02730066762712851,-0.014358925170160224,worse
+1,coarse,Jackson,Jackson,Table,Topology,macro_f1,0.4996858745551258,0.47131529898970326,0.5258639331251096,better
+1,coarse,Jackson,Jackson,Table,Topology,bal_acc,0.5177642484213765,0.4941110597767326,0.5375266656266018,better
+1,coarse,Jackson,Danenberg,Table,Table + nbr,macro_f1,-0.034914008126639806,-0.04061106814599195,-0.02958204891733504,worse
+1,coarse,Jackson,Danenberg,Table,Table + nbr,bal_acc,-0.037539048213926174,-0.043386554007866,-0.03199986013844214,worse
+1,coarse,Jackson,Danenberg,Table,Topology,macro_f1,0.3206326619878547,0.30319746864762276,0.33741191047924185,better
+1,coarse,Jackson,Danenberg,Table,Topology,bal_acc,0.29163257481693705,0.27508714788474864,0.3088256885596453,better
+1,coarse,Jackson,Jackson,Table + nbr,Table,macro_f1,0.023432090737181555,0.016609918558620335,0.03102628733833162,better
+1,coarse,Jackson,Jackson,Table + nbr,Table,bal_acc,0.020797220315444842,0.014358925170160223,0.02730066762712851,better
+1,coarse,Jackson,Jackson,Table + nbr,Topology,macro_f1,0.5231179652923074,0.49548952568538474,0.5492762361304271,better
+1,coarse,Jackson,Jackson,Table + nbr,Topology,bal_acc,0.5385614687368213,0.5174101474603318,0.5581231667783781,better
+1,coarse,Jackson,Danenberg,Table + nbr,Table,macro_f1,0.034914008126639806,0.029582048917335037,0.04061106814599195,better
+1,coarse,Jackson,Danenberg,Table + nbr,Table,bal_acc,0.037539048213926174,0.03199986013844214,0.043386554007866,better
+1,coarse,Jackson,Danenberg,Table + nbr,Topology,macro_f1,0.3555466701144945,0.3382238455566229,0.37221218542938456,better
+1,coarse,Jackson,Danenberg,Table + nbr,Topology,bal_acc,0.3291716230308632,0.3133527727698174,0.34649674119618046,better
+1,coarse,Jackson,Jackson,Topology,Table,macro_f1,-0.4996858745551258,-0.5258639331251096,-0.47131529898970326,worse
+1,coarse,Jackson,Jackson,Topology,Table,bal_acc,-0.5177642484213765,-0.5375266656266018,-0.49411105977673264,worse
+1,coarse,Jackson,Jackson,Topology,Table + nbr,macro_f1,-0.5231179652923074,-0.5492762361304271,-0.49548952568538474,worse
+1,coarse,Jackson,Jackson,Topology,Table + nbr,bal_acc,-0.5385614687368213,-0.5581231667783781,-0.5174101474603318,worse
+1,coarse,Jackson,Danenberg,Topology,Table,macro_f1,-0.3206326619878547,-0.33741191047924185,-0.30319746864762276,worse
+1,coarse,Jackson,Danenberg,Topology,Table,bal_acc,-0.29163257481693705,-0.3088256885596453,-0.27508714788474864,worse
+1,coarse,Jackson,Danenberg,Topology,Table + nbr,macro_f1,-0.3555466701144945,-0.37221218542938456,-0.3382238455566229,worse
+1,coarse,Jackson,Danenberg,Topology,Table + nbr,bal_acc,-0.3291716230308632,-0.34649674119618046,-0.3133527727698174,worse
+1,coarse,Jackson,Jackson,Table + topo,Table,macro_f1,0.012547669568598985,0.008575979156505315,0.01809039491076098,better
+1,coarse,Jackson,Jackson,Table + topo,Table,bal_acc,0.013567045561824087,0.00956280175931001,0.018621450721500565,better
+1,coarse,Jackson,Jackson,Table + topo,Table + nbr,macro_f1,-0.01088442116858257,-0.018594135823971486,-0.0021747890317081083,worse
+1,coarse,Jackson,Jackson,Table + topo,Table + nbr,bal_acc,-0.007230174753620755,-0.013496121574475656,0.0002473288286985248,n.s.
+1,coarse,Jackson,Jackson,Table + topo,Topology,macro_f1,0.5122335441237248,0.48604038011483763,0.5376813297903108,better
+1,coarse,Jackson,Jackson,Table + topo,Topology,bal_acc,0.5313312939832006,0.5098218415787417,0.5506604543010922,better
+1,coarse,Jackson,Danenberg,Table + topo,Table,macro_f1,0.007015453680061512,0.0016875428046122744,0.01314264283398438,better
+1,coarse,Jackson,Danenberg,Table + topo,Table,bal_acc,0.005689756530719348,-0.0001022558202842194,0.012477221550227936,n.s.
+1,coarse,Jackson,Danenberg,Table + topo,Table + nbr,macro_f1,-0.027898554446578294,-0.033901709852642195,-0.02112447615959725,worse
+1,coarse,Jackson,Danenberg,Table + topo,Table + nbr,bal_acc,-0.031849291683206826,-0.03859459806954661,-0.024439859093920515,worse
+1,coarse,Jackson,Danenberg,Table + topo,Topology,macro_f1,0.3276481156679162,0.3119333821308899,0.3427530509515204,better
+1,coarse,Jackson,Danenberg,Table + topo,Topology,bal_acc,0.2973223313476564,0.28336656692086415,0.31223521418889677,better
+1,coarse,Jackson,Jackson,Table + nbr + topo,Table,macro_f1,0.025974361962945225,0.020461022994378818,0.032604415123687225,better
+1,coarse,Jackson,Jackson,Table + nbr + topo,Table,bal_acc,0.02293127596730249,0.017904594174665046,0.02866306762761404,better
+1,coarse,Jackson,Jackson,Table + nbr + topo,Table + nbr,macro_f1,0.0025422712257636704,-0.00012805944319184965,0.006136109301172474,n.s.
+1,coarse,Jackson,Jackson,Table + nbr + topo,Table + nbr,bal_acc,0.002134055651857647,-0.00027323171371297357,0.005125548657443407,n.s.
+1,coarse,Jackson,Jackson,Table + nbr + topo,Topology,macro_f1,0.525660236518071,0.49844433770276003,0.551258853461703,better
+1,coarse,Jackson,Jackson,Table + nbr + topo,Topology,bal_acc,0.540695524388679,0.5186456415679781,0.5599015928460745,better
+1,coarse,Jackson,Danenberg,Table + nbr + topo,Table,macro_f1,0.028749689860658068,0.023004129485977583,0.034811757366606154,better
+1,coarse,Jackson,Danenberg,Table + nbr + topo,Table,bal_acc,0.029836910173510756,0.023428872592856448,0.03645384173050338,better
+1,coarse,Jackson,Danenberg,Table + nbr + topo,Table + nbr,macro_f1,-0.006164318265981739,-0.008768791833329978,-0.0030113160076625295,worse
+1,coarse,Jackson,Danenberg,Table + nbr + topo,Table + nbr,bal_acc,-0.007702138040415418,-0.010600224852676258,-0.004109680487102615,worse
+1,coarse,Jackson,Danenberg,Table + nbr + topo,Topology,macro_f1,0.34938235184851274,0.3332938625815416,0.3648181226932794,better
+1,coarse,Jackson,Danenberg,Table + nbr + topo,Topology,bal_acc,0.3214694849904478,0.30695307108001185,0.3379292171643583,better
+1,coarse,Danenberg,Jackson,Table,Table + nbr,macro_f1,-0.011309772901947013,-0.024040588495452216,-0.001032338347785625,worse
+1,coarse,Danenberg,Jackson,Table,Table + nbr,bal_acc,0.0044931122961137104,-0.0009332219816050952,0.011917971976067166,n.s.
+1,coarse,Danenberg,Jackson,Table,Topology,macro_f1,0.31860536280882495,0.2877449088585986,0.3459328234934263,better
+1,coarse,Danenberg,Jackson,Table,Topology,bal_acc,0.40066254793469697,0.3837362881897335,0.42649400376393304,better
+1,coarse,Danenberg,Danenberg,Table,Table + nbr,macro_f1,-0.02645490169389031,-0.03257495644892636,-0.020483945247980976,worse
+1,coarse,Danenberg,Danenberg,Table,Table + nbr,bal_acc,-0.02203536262833994,-0.02731487879562399,-0.016129133738829255,worse
+1,coarse,Danenberg,Danenberg,Table,Topology,macro_f1,0.43383038670104257,0.4137995562860753,0.4541626932674973,better
+1,coarse,Danenberg,Danenberg,Table,Topology,bal_acc,0.4493420663462423,0.4330096664515703,0.463907057581288,better
+1,coarse,Danenberg,Jackson,Table + nbr,Table,macro_f1,0.011309772901947013,0.0010323383477856246,0.024040588495452216,better
+1,coarse,Danenberg,Jackson,Table + nbr,Table,bal_acc,-0.0044931122961137104,-0.011917971976067166,0.000933221981605095,n.s.
+1,coarse,Danenberg,Jackson,Table + nbr,Topology,macro_f1,0.32991513571077197,0.3036774735916932,0.35206555860421956,better
+1,coarse,Danenberg,Jackson,Table + nbr,Topology,bal_acc,0.39616943563858326,0.37838211881449896,0.41822910754223813,better
+1,coarse,Danenberg,Danenberg,Table + nbr,Table,macro_f1,0.02645490169389031,0.020483945247980976,0.03257495644892636,better
+1,coarse,Danenberg,Danenberg,Table + nbr,Table,bal_acc,0.02203536262833994,0.016129133738829255,0.02731487879562399,better
+1,coarse,Danenberg,Danenberg,Table + nbr,Topology,macro_f1,0.4602852883949329,0.43801609230658595,0.4810218889571556,better
+1,coarse,Danenberg,Danenberg,Table + nbr,Topology,bal_acc,0.47137742897458224,0.45189737010987807,0.48816042598424253,better
+1,coarse,Danenberg,Jackson,Topology,Table,macro_f1,-0.31860536280882495,-0.3459328234934263,-0.2877449088585986,worse
+1,coarse,Danenberg,Jackson,Topology,Table,bal_acc,-0.40066254793469697,-0.42649400376393304,-0.3837362881897335,worse
+1,coarse,Danenberg,Jackson,Topology,Table + nbr,macro_f1,-0.32991513571077197,-0.35206555860421956,-0.3036774735916932,worse
+1,coarse,Danenberg,Jackson,Topology,Table + nbr,bal_acc,-0.39616943563858326,-0.41822910754223813,-0.37838211881449896,worse
+1,coarse,Danenberg,Danenberg,Topology,Table,macro_f1,-0.43383038670104257,-0.4541626932674973,-0.4137995562860753,worse
+1,coarse,Danenberg,Danenberg,Topology,Table,bal_acc,-0.4493420663462423,-0.463907057581288,-0.43300966645157035,worse
+1,coarse,Danenberg,Danenberg,Topology,Table + nbr,macro_f1,-0.4602852883949329,-0.48102188895715564,-0.43801609230658595,worse
+1,coarse,Danenberg,Danenberg,Topology,Table + nbr,bal_acc,-0.47137742897458224,-0.48816042598424253,-0.45189737010987807,worse
+1,coarse,Danenberg,Jackson,Table + topo,Table,macro_f1,0.007471353012639126,0.0027985936739997968,0.013069469057709147,better
+1,coarse,Danenberg,Jackson,Table + topo,Table,bal_acc,0.002354910432974755,-0.0014666380890273085,0.006881204988648015,n.s.
+1,coarse,Danenberg,Jackson,Table + topo,Table + nbr,macro_f1,-0.003838419889307887,-0.014946653007385348,0.006475544719065884,n.s.
+1,coarse,Danenberg,Jackson,Table + topo,Table + nbr,bal_acc,0.006848022729088465,0.0012801855573251976,0.015552161864198354,better
+1,coarse,Danenberg,Jackson,Table + topo,Topology,macro_f1,0.3260767158214641,0.29765286540360925,0.35150297542720127,better
+1,coarse,Danenberg,Jackson,Table + topo,Topology,bal_acc,0.4030174583676717,0.38532127605940913,0.4292039038071576,better
+1,coarse,Danenberg,Danenberg,Table + topo,Table,macro_f1,0.008563870170813503,0.004272007134863173,0.012907638015364284,better
+1,coarse,Danenberg,Danenberg,Table + topo,Table,bal_acc,0.007096562762426539,0.003102971993744377,0.01103693754874617,better
+1,coarse,Danenberg,Danenberg,Table + topo,Table + nbr,macro_f1,-0.017891031523076806,-0.022267158319481346,-0.013249607867723185,worse
+1,coarse,Danenberg,Danenberg,Table + topo,Table + nbr,bal_acc,-0.0149387998659134,-0.019058395581759334,-0.009942341503955258,worse
+1,coarse,Danenberg,Danenberg,Table + topo,Topology,macro_f1,0.4423942568718561,0.4219128334416154,0.46210329354280427,better
+1,coarse,Danenberg,Danenberg,Table + topo,Topology,bal_acc,0.45643862910866884,0.43934408241561534,0.4718015605162312,better
+1,coarse,Danenberg,Jackson,Table + nbr + topo,Table,macro_f1,0.008655278099077623,-0.0015547951386868319,0.02075829067760611,n.s.
+1,coarse,Danenberg,Jackson,Table + nbr + topo,Table,bal_acc,-0.006390288638175479,-0.014102193750458685,-0.0007292340146073618,worse
+1,coarse,Danenberg,Jackson,Table + nbr + topo,Table + nbr,macro_f1,-0.0026544948028693893,-0.005327956679940904,-0.0003250888731655329,worse
+1,coarse,Danenberg,Jackson,Table + nbr + topo,Table + nbr,bal_acc,-0.0018971763420617682,-0.0037627592977742706,-0.0002485605796775232,worse
+1,coarse,Danenberg,Jackson,Table + nbr + topo,Topology,macro_f1,0.3272606409079026,0.3004321278581217,0.34959066787627247,better
+1,coarse,Danenberg,Jackson,Table + nbr + topo,Topology,bal_acc,0.3942722592965215,0.37651064406301604,0.41659658588156345,better
+1,coarse,Danenberg,Danenberg,Table + nbr + topo,Table,macro_f1,0.025919492797567112,0.019959140649460496,0.031618832433636626,better
+1,coarse,Danenberg,Danenberg,Table + nbr + topo,Table,bal_acc,0.021439763415403434,0.015496317184932704,0.026636541116791423,better
+1,coarse,Danenberg,Danenberg,Table + nbr + topo,Table + nbr,macro_f1,-0.0005354088963231973,-0.0020881293577905856,0.0010454908664786207,n.s.
+1,coarse,Danenberg,Danenberg,Table + nbr + topo,Table + nbr,bal_acc,-0.000595599212936504,-0.002199707585964819,0.0010211772507051347,n.s.
+1,coarse,Danenberg,Danenberg,Table + nbr + topo,Topology,macro_f1,0.4597498794986097,0.43813999212300303,0.48034946625568825,better
+1,coarse,Danenberg,Danenberg,Table + nbr + topo,Topology,bal_acc,0.47078182976164573,0.4517433480947103,0.4872655322662624,better
+1,coarse,Both,Jackson,Table,Table + nbr,macro_f1,-0.021478042831175603,-0.028915902121585887,-0.014970068876481847,worse
+1,coarse,Both,Jackson,Table,Table + nbr,bal_acc,-0.018907808393082037,-0.023765127158336084,-0.013496244037204338,worse
+1,coarse,Both,Jackson,Table,Topology,macro_f1,0.4868560608360422,0.4607384516668157,0.5112704549784128,better
+1,coarse,Both,Jackson,Table,Topology,bal_acc,0.5125446517035683,0.49351685080452645,0.530036210308767,better
+1,coarse,Both,Danenberg,Table,Table + nbr,macro_f1,-0.022157036451067036,-0.027612299763745414,-0.01696566035979744,worse
+1,coarse,Both,Danenberg,Table,Table + nbr,bal_acc,-0.021128903510642116,-0.026681508673730807,-0.015569313739508204,worse
+1,coarse,Both,Danenberg,Table,Topology,macro_f1,0.4221620356525103,0.40058045599749137,0.4437554489076007,better
+1,coarse,Both,Danenberg,Table,Topology,bal_acc,0.44748188979585635,0.4299258919781998,0.46234960738102104,better
+1,coarse,Both,Jackson,Table + nbr,Table,macro_f1,0.021478042831175603,0.01497006887648184,0.028915902121585887,better
+1,coarse,Both,Jackson,Table + nbr,Table,bal_acc,0.018907808393082037,0.013496244037204336,0.02376512715833608,better
+1,coarse,Both,Jackson,Table + nbr,Topology,macro_f1,0.5083341036672178,0.48389314096320507,0.5319757517680915,better
+1,coarse,Both,Jackson,Table + nbr,Topology,bal_acc,0.5314524600966504,0.5121837868782348,0.5484557668610411,better
+1,coarse,Both,Danenberg,Table + nbr,Table,macro_f1,0.022157036451067036,0.01696566035979744,0.027612299763745414,better
+1,coarse,Both,Danenberg,Table + nbr,Table,bal_acc,0.021128903510642116,0.015569313739508202,0.026681508673730807,better
+1,coarse,Both,Danenberg,Table + nbr,Topology,macro_f1,0.44431907210357735,0.42156938405260225,0.46609682487302284,better
+1,coarse,Both,Danenberg,Table + nbr,Topology,bal_acc,0.46861079330649846,0.4490367019036783,0.48493057710211035,better
+1,coarse,Both,Jackson,Topology,Table,macro_f1,-0.4868560608360422,-0.5112704549784128,-0.4607384516668157,worse
+1,coarse,Both,Jackson,Topology,Table,bal_acc,-0.5125446517035683,-0.530036210308767,-0.4935168508045265,worse
+1,coarse,Both,Jackson,Topology,Table + nbr,macro_f1,-0.5083341036672178,-0.5319757517680915,-0.48389314096320507,worse
+1,coarse,Both,Jackson,Topology,Table + nbr,bal_acc,-0.5314524600966504,-0.5484557668610411,-0.5121837868782348,worse
+1,coarse,Both,Danenberg,Topology,Table,macro_f1,-0.4221620356525103,-0.4437554489076007,-0.40058045599749137,worse
+1,coarse,Both,Danenberg,Topology,Table,bal_acc,-0.44748188979585635,-0.46234960738102104,-0.4299258919781998,worse
+1,coarse,Both,Danenberg,Topology,Table + nbr,macro_f1,-0.44431907210357735,-0.46609682487302284,-0.42156938405260225,worse
+1,coarse,Both,Danenberg,Topology,Table + nbr,bal_acc,-0.46861079330649846,-0.48493057710211035,-0.4490367019036783,worse
+1,coarse,Both,Jackson,Table + topo,Table,macro_f1,0.010317272485934281,0.0072397060434222,0.014378385966980874,better
+1,coarse,Both,Jackson,Table + topo,Table,bal_acc,0.01044208003402014,0.0070447945377214135,0.014262965150778111,better
+1,coarse,Both,Jackson,Table + topo,Table + nbr,macro_f1,-0.011160770345241322,-0.0185314937103278,-0.003028777192767205,worse
+1,coarse,Both,Jackson,Table + topo,Table + nbr,bal_acc,-0.008465728359061897,-0.013930738118447522,-0.002089159710638595,worse
+1,coarse,Both,Jackson,Table + topo,Topology,macro_f1,0.4971733333219765,0.47096196954558983,0.5211867743582369,better
+1,coarse,Both,Jackson,Table + topo,Topology,bal_acc,0.5229867317375885,0.5044681564354332,0.5394914273585876,better
+1,coarse,Both,Danenberg,Table + topo,Table,macro_f1,0.006675733209672519,0.003086977967618315,0.010688846052307932,better
+1,coarse,Both,Danenberg,Table + topo,Table,bal_acc,0.007023618869902437,0.0033453498353823107,0.011071487198161964,better
+1,coarse,Both,Danenberg,Table + topo,Table + nbr,macro_f1,-0.015481303241394517,-0.019376816415993557,-0.01116648095790513,worse
+1,coarse,Both,Danenberg,Table + topo,Table + nbr,bal_acc,-0.01410528464073968,-0.017908972591744912,-0.00952157944928709,worse
+1,coarse,Both,Danenberg,Table + topo,Topology,macro_f1,0.42883776886218283,0.4069040280883444,0.45012509556032604,better
+1,coarse,Both,Danenberg,Table + topo,Topology,bal_acc,0.4545055086657588,0.4368210105135692,0.46900506787771734,better
+1,coarse,Both,Jackson,Table + nbr + topo,Table,macro_f1,0.023270671633936035,0.0175614071299204,0.030057610796254877,better
+1,coarse,Both,Jackson,Table + nbr + topo,Table,bal_acc,0.019493606776200156,0.014647567200267959,0.02409945526292865,better
+1,coarse,Both,Jackson,Table + nbr + topo,Table + nbr,macro_f1,0.001792628802760432,-8.623890423157531e-05,0.003968798464773382,n.s.
+1,coarse,Both,Jackson,Table + nbr + topo,Table + nbr,bal_acc,0.000585798383118119,-0.0013413417315715575,0.0029013089050393035,n.s.
+1,coarse,Both,Jackson,Table + nbr + topo,Topology,macro_f1,0.5101267324699783,0.4858464612679084,0.53404474833338,better
+1,coarse,Both,Jackson,Table + nbr + topo,Topology,bal_acc,0.5320382584797685,0.5132054758705245,0.5493491421308551,better
+1,coarse,Both,Danenberg,Table + nbr + topo,Table,macro_f1,0.022832333493882695,0.017327098092935152,0.028767903516343833,better
+1,coarse,Both,Danenberg,Table + nbr + topo,Table,bal_acc,0.022093228062466386,0.0162255307965128,0.02762428342123345,better
+1,coarse,Both,Danenberg,Table + nbr + topo,Table + nbr,macro_f1,0.0006752970428156591,-0.0007446654546704622,0.0021575524561775277,n.s.
+1,coarse,Both,Danenberg,Table + nbr + topo,Table + nbr,bal_acc,0.0009643245518242693,-0.0005510323350842644,0.002399702000278375,n.s.
+1,coarse,Both,Danenberg,Table + nbr + topo,Topology,macro_f1,0.444994369146393,0.422285393791994,0.46636424684976857,better
+1,coarse,Both,Danenberg,Table + nbr + topo,Topology,bal_acc,0.46957511785832273,0.4502777651780288,0.4859195567882572,better

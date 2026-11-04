@@ -1,0 +1,160 @@
+{
+ "gate": {
+  "KRONOS": {
+   "per_replicate": {
+    "0": {
+     "a": true,
+     "b": true,
+     "passed": true,
+     "details": [
+      "(a) J->J: KRONOS linear 0.693 vs Table + nbr 0.748 (-0.055)",
+      "(a) D->D: KRONOS linear 0.628 vs Table + nbr 0.670 (-0.042)",
+      "(b) J->J: Table + nbr + K32 +0.004 [+0.002, +0.006]",
+      "(b) J->D: Table + nbr + K32 +0.002 [-0.000, +0.004]",
+      "(b) D->J: Table + nbr + K32 +0.006 [+0.001, +0.011]",
+      "(b) D->D: Table + nbr + K32 +0.010 [+0.008, +0.013]",
+      "(b) B->J: Table + nbr + K32 +0.001 [-0.001, +0.004]",
+      "(b) B->D: Table + nbr + K32 +0.007 [+0.005, +0.009]"
+     ]
+    },
+    "1": {
+     "a": true,
+     "b": false,
+     "passed": true,
+     "details": [
+      "(a) J->J: KRONOS linear 0.715 vs Table + nbr 0.766 (-0.051)",
+      "(a) D->D: KRONOS linear 0.624 vs Table + nbr 0.672 (-0.047)",
+      "(b) J->J: Table + nbr + K32 +0.004 [+0.003, +0.005]",
+      "(b) J->D: Table + nbr + K32 -0.000 [-0.002, +0.002]",
+      "(b) D->J: Table + nbr + K32 +0.009 [+0.005, +0.013]",
+      "(b) D->D: Table + nbr + K32 +0.009 [+0.007, +0.012]",
+      "(b) B->J: Table + nbr + K32 +0.003 [+0.002, +0.005]",
+      "(b) B->D: Table + nbr + K32 +0.006 [+0.005, +0.008]"
+     ]
+    },
+    "2": {
+     "a": true,
+     "b": true,
+     "passed": true,
+     "details": [
+      "(a) J->J: KRONOS linear 0.676 vs Table + nbr 0.750 (-0.075)",
+      "(a) D->D: KRONOS linear 0.628 vs Table + nbr 0.673 (-0.045)",
+      "(b) J->J: Table + nbr + K32 +0.004 [+0.002, +0.007]",
+      "(b) J->D: Table + nbr + K32 +0.000 [-0.002, +0.003]",
+      "(b) D->J: Table + nbr + K32 +0.013 [+0.006, +0.018]",
+      "(b) D->D: Table + nbr + K32 +0.009 [+0.007, +0.012]",
+      "(b) B->J: Table + nbr + K32 +0.002 [-0.001, +0.005]",
+      "(b) B->D: Table + nbr + K32 +0.008 [+0.007, +0.011]"
+     ]
+    }
+   },
+   "rep0_rule_v1": true,
+   "passes_every_replicate": true,
+   "replicates_run": [
+    0,
+    1,
+    2
+   ],
+   "proceed_to_adaptation": true
+  },
+  "KRONOS2": {
+   "per_replicate": {
+    "0": {
+     "a": true,
+     "b": true,
+     "passed": true,
+     "details": [
+      "(a) J->J: KRONOS2 linear 0.683 vs Table + nbr 0.748 (-0.065)",
+      "(a) D->D: KRONOS2 linear 0.628 vs Table + nbr 0.670 (-0.042)",
+      "(b) J->J: Table + nbr + K2-32 +0.004 [+0.002, +0.006]",
+      "(b) J->D: Table + nbr + K2-32 +0.004 [+0.001, +0.007]",
+      "(b) D->J: Table + nbr + K2-32 +0.004 [-0.003, +0.011]",
+      "(b) D->D: Table + nbr + K2-32 +0.013 [+0.010, +0.016]",
+      "(b) B->J: Table + nbr + K2-32 +0.003 [+0.000, +0.005]",
+      "(b) B->D: Table + nbr + K2-32 +0.011 [+0.009, +0.014]"
+     ]
+    },
+    "1": {
+     "a": true,
+     "b": true,
+     "passed": true,
+     "details": [
+      "(a) J->J: KRONOS2 linear 0.711 vs Table + nbr 0.766 (-0.056)",
+      "(a) D->D: KRONOS2 linear 0.624 vs Table + nbr 0.672 (-0.047)",
+      "(b) J->J: Table + nbr + K2-32 +0.004 [+0.003, +0.006]",
+      "(b) J->D: Table + nbr + K2-32 -0.002 [-0.003, +0.000]",
+      "(b) D->J: Table + nbr + K2-32 +0.009 [+0.004, +0.015]",
+      "(b) D->D: Table + nbr + K2-32 +0.012 [+0.010, +0.015]",
+      "(b) B->J: Table + nbr + K2-32 +0.003 [+0.001, +0.006]",
+      "(b) B->D: Table + nbr + K2-32 +0.012 [+0.010, +0.015]"
+     ]
+    },
+    "2": {
+     "a": true,
+     "b": true,
+     "passed": true,
+     "details": [
+      "(a) J->J: KRONOS2 linear 0.664 vs Table + nbr 0.750 (-0.086)",
+      "(a) D->D: KRONOS2 linear 0.629 vs Table + nbr 0.673 (-0.044)",
+      "(b) J->J: Table + nbr + K2-32 +0.003 [+0.001, +0.007]",
+      "(b) J->D: Table + nbr + K2-32 +0.001 [-0.001, +0.002]",
+      "(b) D->J: Table + nbr + K2-32 +0.011 [-0.000, +0.018]",
+      "(b) D->D: Table + nbr + K2-32 +0.012 [+0.009, +0.016]",
+      "(b) B->J: Table + nbr + K2-32 +0.000 [-0.005, +0.005]",
+      "(b) B->D: Table + nbr + K2-32 +0.014 [+0.011, +0.017]"
+     ]
+    }
+   },
+   "rep0_rule_v1": true,
+   "passes_every_replicate": true,
+   "replicates_run": [
+    0,
+    1,
+    2
+   ],
+   "proceed_to_adaptation": true
+  }
+ },
+ "calibration": {
+  "kronos2": {
+   "repo": "MahmoodLab/KRONOS2",
+   "arch": "ViT-B/16",
+   "embed_dim": 768,
+   "checkpoint_sha256": "afa261ef8b63bb0acea62612d7594ac11fbdb89fbdd23c513f046a034725d2b4",
+   "novel_markers": [
+    "CK5",
+    "CK8_18"
+   ]
+  },
+  "own": {
+   "macro_f1_val": 0.707244191066965,
+   "weight_decay": 0.001,
+   "n_fit": 57056,
+   "n_val": 81503
+  },
+  "pca": {
+   "n_components": 256,
+   "variance_explained": 0.9800838558629517
+  },
+  "variant": "kronos2"
+ },
+ "variant": "kronos2",
+ "reps": [
+  0,
+  1,
+  2
+ ],
+ "failed": [],
+ "smoke": false,
+ "minutes": 363.5440409262975,
+ "kronos2": {
+  "repo": "MahmoodLab/KRONOS2",
+  "arch": "ViT-B/16",
+  "embed_dim": 768,
+  "checkpoint_sha256": "afa261ef8b63bb0acea62612d7594ac11fbdb89fbdd23c513f046a034725d2b4",
+  "novel_markers": [
+   "CK5",
+   "CK8_18"
+  ]
+ }
+}

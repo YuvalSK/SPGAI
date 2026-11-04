@@ -1,0 +1,121 @@
+task,train,test,model,metric,mean,std,count
+coarse,Both,Danenberg,Table,acc,0.8127373105484964,0.0002760504273494771,3
+coarse,Both,Danenberg,Table,bal_acc,0.6950814193425958,0.0005099039001034397,3
+coarse,Both,Danenberg,Table,macro_f1,0.6705603274476485,0.00043581990860750417,3
+coarse,Both,Danenberg,Table + nbr,acc,0.8249190630212136,0.0007355735978363919,3
+coarse,Both,Danenberg,Table + nbr,bal_acc,0.7150975179885163,0.0009055523372989916,3
+coarse,Both,Danenberg,Table + nbr,macro_f1,0.6916960457978149,0.0005424588512076135,3
+coarse,Both,Danenberg,Table + nbr + topo,acc,0.825298608685396,0.0010374088676889071,3
+coarse,Both,Danenberg,Table + nbr + topo,bal_acc,0.7154983120630228,0.0012829877647548794,3
+coarse,Both,Danenberg,Table + nbr + topo,macro_f1,0.6918577114994783,0.0010971876808607164,3
+coarse,Both,Danenberg,Table + topo,acc,0.8144626555796993,0.00029682541854664506,3
+coarse,Both,Danenberg,Table + topo,bal_acc,0.701792694744344,0.0002185710107343504,3
+coarse,Both,Danenberg,Table + topo,macro_f1,0.676704242536169,7.07097001244744e-05,3
+coarse,Both,Danenberg,Topology,acc,0.5886692766101582,0.003417029332024689,3
+coarse,Both,Danenberg,Topology,bal_acc,0.2528888543954951,0.005186659260039766,3
+coarse,Both,Danenberg,Topology,macro_f1,0.25224601371214206,0.003833363690603769,3
+coarse,Both,Jackson,Table,acc,0.8398362578700928,0.014282240998246069,3
+coarse,Both,Jackson,Table,bal_acc,0.7857972484617441,0.006632818343472448,3
+coarse,Both,Jackson,Table,macro_f1,0.7487264839233982,0.012349533748613814,3
+coarse,Both,Jackson,Table + nbr,acc,0.8568044435400369,0.011038173267040603,3
+coarse,Both,Jackson,Table + nbr,bal_acc,0.8041003125270884,0.006333448794063326,3
+coarse,Both,Jackson,Table + nbr,macro_f1,0.77142216364044,0.010270065130051619,3
+coarse,Both,Jackson,Table + nbr + topo,acc,0.8572257583890405,0.011192982344928855,3
+coarse,Both,Jackson,Table + nbr + topo,bal_acc,0.8044455063307838,0.006807918580394707,3
+coarse,Both,Jackson,Table + nbr + topo,macro_f1,0.7725873481377311,0.010934967432014105,3
+coarse,Both,Jackson,Table + topo,acc,0.8444529206944478,0.014861556643546804,3
+coarse,Both,Jackson,Table + topo,bal_acc,0.7943233822897008,0.011008493657774713,3
+coarse,Both,Jackson,Table + topo,macro_f1,0.7573251206493065,0.014846453352431203,3
+coarse,Both,Jackson,Topology,acc,0.647105274109386,0.009948174033759607,3
+coarse,Both,Jackson,Topology,bal_acc,0.267434919650174,0.008778564530442233,3
+coarse,Both,Jackson,Topology,macro_f1,0.2582224978404961,0.01339936673619884,3
+coarse,Danenberg,Danenberg,Table,acc,0.8216195863708328,0.00036520152173766306,3
+coarse,Danenberg,Danenberg,Table,bal_acc,0.6974996190713701,0.0020240805719567954,3
+coarse,Danenberg,Danenberg,Table,macro_f1,0.6795307058619895,0.0016357249053307816,3
+coarse,Danenberg,Danenberg,Table + nbr,acc,0.8376315745701381,0.0005793171128064164,3
+coarse,Danenberg,Danenberg,Table + nbr,bal_acc,0.717148238810978,0.001269831348190243,3
+coarse,Danenberg,Danenberg,Table + nbr,macro_f1,0.7040213817068611,0.0008202940278185694,3
+coarse,Danenberg,Danenberg,Table + nbr + topo,acc,0.837515140242879,0.0005516533866896384,3
+coarse,Danenberg,Danenberg,Table + nbr + topo,bal_acc,0.7165680125293242,0.0010866490369666945,3
+coarse,Danenberg,Danenberg,Table + nbr + topo,macro_f1,0.7034495259666312,0.0004549840584823669,3
+coarse,Danenberg,Danenberg,Table + topo,acc,0.8252214898452633,0.0003659614501988999,3
+coarse,Danenberg,Danenberg,Table + topo,bal_acc,0.7040889296807213,0.0006971688999435228,3
+coarse,Danenberg,Danenberg,Table + topo,macro_f1,0.6871925037715335,0.0005247591834108021,3
+coarse,Danenberg,Danenberg,Topology,acc,0.5905987597475946,0.0033952570049582648,3
+coarse,Danenberg,Danenberg,Topology,bal_acc,0.25110598785794086,0.0039900740703331895,3
+coarse,Danenberg,Danenberg,Topology,macro_f1,0.247515702615993,0.0028887265142511775,3
+coarse,Danenberg,Jackson,Table,acc,0.7411542623563108,0.03278378125145464,3
+coarse,Danenberg,Jackson,Table,bal_acc,0.6582300031579734,0.013837288417064683,3
+coarse,Danenberg,Jackson,Table,macro_f1,0.5575903667547091,0.035556719065232036,3
+coarse,Danenberg,Jackson,Table + nbr,acc,0.762970651237114,0.02485525145231816,3
+coarse,Danenberg,Jackson,Table + nbr,bal_acc,0.6508258044479837,0.026365422002263855,3
+coarse,Danenberg,Jackson,Table + nbr,macro_f1,0.573639869402193,0.03577324818489364,3
+coarse,Danenberg,Jackson,Table + nbr + topo,acc,0.7590700793872696,0.02612318989539095,3
+coarse,Danenberg,Jackson,Table + nbr + topo,bal_acc,0.6517591851305339,0.024542258277545543,3
+coarse,Danenberg,Jackson,Table + nbr + topo,macro_f1,0.5714349059204714,0.03765154529466989,3
+coarse,Danenberg,Jackson,Table + topo,acc,0.7368002113777181,0.03638387873370573,3
+coarse,Danenberg,Jackson,Table + topo,bal_acc,0.6610918261568136,0.01324279348715398,3
+coarse,Danenberg,Jackson,Table + topo,macro_f1,0.5628271601751537,0.036482292779374446,3
+coarse,Danenberg,Jackson,Topology,acc,0.6566828998809349,0.009038197498984926,3
+coarse,Danenberg,Jackson,Topology,bal_acc,0.25436538082457294,0.010214307357230768,3
+coarse,Danenberg,Jackson,Topology,macro_f1,0.2529977663572265,0.015565877867145719,3
+coarse,Jackson,Danenberg,Table,acc,0.723060196547193,0.004137025684002089,3
+coarse,Jackson,Danenberg,Table,bal_acc,0.5256781313144946,0.0022124823487614997,3
+coarse,Jackson,Danenberg,Table,macro_f1,0.5338236202696433,0.0043954236439050325,3
+coarse,Jackson,Danenberg,Table + nbr,acc,0.7496813177341578,0.002231785483559732,3
+coarse,Jackson,Danenberg,Table + nbr,bal_acc,0.5562846217971947,0.00706227732703709,3
+coarse,Jackson,Danenberg,Table + nbr,macro_f1,0.5657577999619606,0.0063243256134856585,3
+coarse,Jackson,Danenberg,Table + nbr + topo,acc,0.7497085361483222,0.00226355113782498,3
+coarse,Jackson,Danenberg,Table + nbr + topo,bal_acc,0.5518194453968476,0.004488820793911464,3
+coarse,Jackson,Danenberg,Table + nbr + topo,macro_f1,0.5620664976192192,0.004249116241656443,3
+coarse,Jackson,Danenberg,Table + topo,acc,0.7308718814123938,0.00039237476665397123,3
+coarse,Jackson,Danenberg,Table + topo,bal_acc,0.5300083725098333,0.0036665983085325173,3
+coarse,Jackson,Danenberg,Table + topo,macro_f1,0.5406253109642468,0.0054125824887492876,3
+coarse,Jackson,Danenberg,Topology,acc,0.5552601853574005,0.006122652713447885,3
+coarse,Jackson,Danenberg,Topology,bal_acc,0.25641613105394656,0.020217406099675362,3
+coarse,Jackson,Danenberg,Topology,macro_f1,0.24585940734091796,0.026739626538910984,3
+coarse,Jackson,Jackson,Table,acc,0.8414771779230366,0.014672515510099297,3
+coarse,Jackson,Jackson,Table,bal_acc,0.7977071189561208,0.005836619579119286,3
+coarse,Jackson,Jackson,Table,macro_f1,0.7630681984810165,0.007892100608334717,3
+coarse,Jackson,Jackson,Table + nbr,acc,0.8608378068481614,0.0114395104144272,3
+coarse,Jackson,Jackson,Table + nbr,bal_acc,0.8170163983420102,0.005552536241506973,3
+coarse,Jackson,Jackson,Table + nbr,macro_f1,0.7857504248245407,0.008179344976014425,3
+coarse,Jackson,Jackson,Table + nbr + topo,acc,0.861180944557438,0.011947507860620253,3
+coarse,Jackson,Jackson,Table + nbr + topo,bal_acc,0.8175911442155436,0.009170314929897982,3
+coarse,Jackson,Jackson,Table + nbr + topo,macro_f1,0.7868551732174026,0.00988491047860436,3
+coarse,Jackson,Jackson,Table + topo,acc,0.8489184295335167,0.015583698096690416,3
+coarse,Jackson,Jackson,Table + topo,bal_acc,0.8079920433994919,0.009343822372868214,3
+coarse,Jackson,Jackson,Table + topo,macro_f1,0.7734921111903018,0.009556051988315903,3
+coarse,Jackson,Jackson,Topology,acc,0.6408849580349193,0.010408880448490173,3
+coarse,Jackson,Jackson,Topology,bal_acc,0.27374860200801904,0.007823166670777553,3
+coarse,Jackson,Jackson,Topology,macro_f1,0.26112196772877505,0.00949296700341837,3
+fine,Danenberg,Danenberg,Table,acc,0.5604004475349837,0.002767331394369172,3
+fine,Danenberg,Danenberg,Table,bal_acc,0.4557705126514655,0.0018132204766217277,3
+fine,Danenberg,Danenberg,Table,macro_f1,0.43692192627564536,0.0016444782420806008,3
+fine,Danenberg,Danenberg,Table + nbr,acc,0.5778321393718464,0.0018903225176961334,3
+fine,Danenberg,Danenberg,Table + nbr,bal_acc,0.4600592222824858,0.002461821240264107,3
+fine,Danenberg,Danenberg,Table + nbr,macro_f1,0.4539489297141616,0.00284840131522014,3
+fine,Danenberg,Danenberg,Table + nbr + topo,acc,0.5784010397748905,0.0025306298180569416,3
+fine,Danenberg,Danenberg,Table + nbr + topo,bal_acc,0.45960539196617506,0.0032325179173040386,3
+fine,Danenberg,Danenberg,Table + nbr + topo,macro_f1,0.45471358426552544,0.0041133256339515615,3
+fine,Danenberg,Danenberg,Table + topo,acc,0.5590657196663035,0.0024048538647242043,3
+fine,Danenberg,Danenberg,Table + topo,bal_acc,0.4475933117444828,0.0022851781401414945,3
+fine,Danenberg,Danenberg,Table + topo,macro_f1,0.43474649129950227,0.0021625092618456987,3
+fine,Danenberg,Danenberg,Topology,acc,0.12906162066596352,0.0011100956880239514,3
+fine,Danenberg,Danenberg,Topology,bal_acc,0.056705916952032066,0.0006241542649446417,3
+fine,Danenberg,Danenberg,Topology,macro_f1,0.051936142259603434,0.0005164350145180271,3
+fine,Jackson,Jackson,Table,acc,0.4535245205023622,0.023806754392075018,3
+fine,Jackson,Jackson,Table,bal_acc,0.38892776898978804,0.020160400234608716,3
+fine,Jackson,Jackson,Table,macro_f1,0.3744554594788542,0.02199579738267109,3
+fine,Jackson,Jackson,Table + nbr,acc,0.509677074031753,0.01849169731429372,3
+fine,Jackson,Jackson,Table + nbr,bal_acc,0.42950259821575526,0.019277707173946137,3
+fine,Jackson,Jackson,Table + nbr,macro_f1,0.4205106163264531,0.01838059562909908,3
+fine,Jackson,Jackson,Table + nbr + topo,acc,0.5122654066850073,0.02124187337226482,3
+fine,Jackson,Jackson,Table + nbr + topo,bal_acc,0.4295319624457936,0.019966150162046167,3
+fine,Jackson,Jackson,Table + nbr + topo,macro_f1,0.4215201003853258,0.018857240796649258,3
+fine,Jackson,Jackson,Table + topo,acc,0.47929618141223096,0.023147615640179097,3
+fine,Jackson,Jackson,Table + topo,bal_acc,0.4088052280201364,0.023343410439454388,3
+fine,Jackson,Jackson,Table + topo,macro_f1,0.39470695791032445,0.02194590896039157,3
+fine,Jackson,Jackson,Topology,acc,0.14567196715318667,0.004794735388006294,3
+fine,Jackson,Jackson,Topology,bal_acc,0.09846602404228177,0.0006391551677949576,3
+fine,Jackson,Jackson,Topology,macro_f1,0.07697421138864387,0.003205745536405762,3

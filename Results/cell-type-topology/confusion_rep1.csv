@@ -1,0 +1,1077 @@
+rep,train,test,model,true,pred,n
+1,Jackson,Jackson,Table,epithelial,epithelial,137046
+1,Jackson,Jackson,Table,epithelial,T cell,361
+1,Jackson,Jackson,Table,epithelial,B cell,134
+1,Jackson,Jackson,Table,epithelial,myeloid,1498
+1,Jackson,Jackson,Table,epithelial,endothelial,1068
+1,Jackson,Jackson,Table,epithelial,stroma,8781
+1,Jackson,Jackson,Table,T cell,epithelial,44
+1,Jackson,Jackson,Table,T cell,T cell,8774
+1,Jackson,Jackson,Table,T cell,B cell,226
+1,Jackson,Jackson,Table,T cell,myeloid,19
+1,Jackson,Jackson,Table,T cell,endothelial,46
+1,Jackson,Jackson,Table,T cell,stroma,89
+1,Jackson,Jackson,Table,B cell,epithelial,72
+1,Jackson,Jackson,Table,B cell,T cell,131
+1,Jackson,Jackson,Table,B cell,B cell,6575
+1,Jackson,Jackson,Table,B cell,myeloid,7
+1,Jackson,Jackson,Table,B cell,endothelial,22
+1,Jackson,Jackson,Table,B cell,stroma,33
+1,Jackson,Jackson,Table,myeloid,epithelial,83
+1,Jackson,Jackson,Table,myeloid,T cell,38
+1,Jackson,Jackson,Table,myeloid,B cell,13
+1,Jackson,Jackson,Table,myeloid,myeloid,6482
+1,Jackson,Jackson,Table,myeloid,endothelial,20
+1,Jackson,Jackson,Table,myeloid,stroma,796
+1,Jackson,Jackson,Table,endothelial,epithelial,504
+1,Jackson,Jackson,Table,endothelial,T cell,121
+1,Jackson,Jackson,Table,endothelial,B cell,36
+1,Jackson,Jackson,Table,endothelial,myeloid,135
+1,Jackson,Jackson,Table,endothelial,endothelial,3073
+1,Jackson,Jackson,Table,endothelial,stroma,4985
+1,Jackson,Jackson,Table,stroma,epithelial,7658
+1,Jackson,Jackson,Table,stroma,T cell,275
+1,Jackson,Jackson,Table,stroma,B cell,86
+1,Jackson,Jackson,Table,stroma,myeloid,1816
+1,Jackson,Jackson,Table,stroma,endothelial,5784
+1,Jackson,Jackson,Table,stroma,stroma,46430
+1,Jackson,Danenberg,Table,epithelial,epithelial,110327
+1,Jackson,Danenberg,Table,epithelial,T cell,1181
+1,Jackson,Danenberg,Table,epithelial,B cell,772
+1,Jackson,Danenberg,Table,epithelial,myeloid,2508
+1,Jackson,Danenberg,Table,epithelial,endothelial,554
+1,Jackson,Danenberg,Table,epithelial,stroma,8988
+1,Jackson,Danenberg,Table,T cell,epithelial,1965
+1,Jackson,Danenberg,Table,T cell,T cell,4486
+1,Jackson,Danenberg,Table,T cell,B cell,147
+1,Jackson,Danenberg,Table,T cell,myeloid,564
+1,Jackson,Danenberg,Table,T cell,endothelial,386
+1,Jackson,Danenberg,Table,T cell,stroma,4225
+1,Jackson,Danenberg,Table,B cell,epithelial,283
+1,Jackson,Danenberg,Table,B cell,T cell,1120
+1,Jackson,Danenberg,Table,B cell,B cell,9037
+1,Jackson,Danenberg,Table,B cell,myeloid,171
+1,Jackson,Danenberg,Table,B cell,endothelial,114
+1,Jackson,Danenberg,Table,B cell,stroma,558
+1,Jackson,Danenberg,Table,myeloid,epithelial,1003
+1,Jackson,Danenberg,Table,myeloid,T cell,1190
+1,Jackson,Danenberg,Table,myeloid,B cell,160
+1,Jackson,Danenberg,Table,myeloid,myeloid,4520
+1,Jackson,Danenberg,Table,myeloid,endothelial,112
+1,Jackson,Danenberg,Table,myeloid,stroma,3174
+1,Jackson,Danenberg,Table,endothelial,epithelial,2319
+1,Jackson,Danenberg,Table,endothelial,T cell,186
+1,Jackson,Danenberg,Table,endothelial,B cell,166
+1,Jackson,Danenberg,Table,endothelial,myeloid,216
+1,Jackson,Danenberg,Table,endothelial,endothelial,811
+1,Jackson,Danenberg,Table,endothelial,stroma,6740
+1,Jackson,Danenberg,Table,stroma,epithelial,17820
+1,Jackson,Danenberg,Table,stroma,T cell,1032
+1,Jackson,Danenberg,Table,stroma,B cell,421
+1,Jackson,Danenberg,Table,stroma,myeloid,2501
+1,Jackson,Danenberg,Table,stroma,endothelial,1503
+1,Jackson,Danenberg,Table,stroma,stroma,29179
+1,Jackson,Jackson,Table + nbr,epithelial,epithelial,137829
+1,Jackson,Jackson,Table + nbr,epithelial,T cell,354
+1,Jackson,Jackson,Table + nbr,epithelial,B cell,106
+1,Jackson,Jackson,Table + nbr,epithelial,myeloid,1294
+1,Jackson,Jackson,Table + nbr,epithelial,endothelial,901
+1,Jackson,Jackson,Table + nbr,epithelial,stroma,8404
+1,Jackson,Jackson,Table + nbr,T cell,epithelial,52
+1,Jackson,Jackson,Table + nbr,T cell,T cell,8692
+1,Jackson,Jackson,Table + nbr,T cell,B cell,302
+1,Jackson,Jackson,Table + nbr,T cell,myeloid,19
+1,Jackson,Jackson,Table + nbr,T cell,endothelial,45
+1,Jackson,Jackson,Table + nbr,T cell,stroma,88
+1,Jackson,Jackson,Table + nbr,B cell,epithelial,65
+1,Jackson,Jackson,Table + nbr,B cell,T cell,87
+1,Jackson,Jackson,Table + nbr,B cell,B cell,6614
+1,Jackson,Jackson,Table + nbr,B cell,myeloid,9
+1,Jackson,Jackson,Table + nbr,B cell,endothelial,21
+1,Jackson,Jackson,Table + nbr,B cell,stroma,44
+1,Jackson,Jackson,Table + nbr,myeloid,epithelial,161
+1,Jackson,Jackson,Table + nbr,myeloid,T cell,35
+1,Jackson,Jackson,Table + nbr,myeloid,B cell,15
+1,Jackson,Jackson,Table + nbr,myeloid,myeloid,6479
+1,Jackson,Jackson,Table + nbr,myeloid,endothelial,13
+1,Jackson,Jackson,Table + nbr,myeloid,stroma,729
+1,Jackson,Jackson,Table + nbr,endothelial,epithelial,468
+1,Jackson,Jackson,Table + nbr,endothelial,T cell,109
+1,Jackson,Jackson,Table + nbr,endothelial,B cell,25
+1,Jackson,Jackson,Table + nbr,endothelial,myeloid,135
+1,Jackson,Jackson,Table + nbr,endothelial,endothelial,3795
+1,Jackson,Jackson,Table + nbr,endothelial,stroma,4322
+1,Jackson,Jackson,Table + nbr,stroma,epithelial,6093
+1,Jackson,Jackson,Table + nbr,stroma,T cell,257
+1,Jackson,Jackson,Table + nbr,stroma,B cell,76
+1,Jackson,Jackson,Table + nbr,stroma,myeloid,1580
+1,Jackson,Jackson,Table + nbr,stroma,endothelial,5032
+1,Jackson,Jackson,Table + nbr,stroma,stroma,49011
+1,Jackson,Danenberg,Table + nbr,epithelial,epithelial,108212
+1,Jackson,Danenberg,Table + nbr,epithelial,T cell,1199
+1,Jackson,Danenberg,Table + nbr,epithelial,B cell,725
+1,Jackson,Danenberg,Table + nbr,epithelial,myeloid,2413
+1,Jackson,Danenberg,Table + nbr,epithelial,endothelial,508
+1,Jackson,Danenberg,Table + nbr,epithelial,stroma,11273
+1,Jackson,Danenberg,Table + nbr,T cell,epithelial,754
+1,Jackson,Danenberg,Table + nbr,T cell,T cell,4339
+1,Jackson,Danenberg,Table + nbr,T cell,B cell,162
+1,Jackson,Danenberg,Table + nbr,T cell,myeloid,582
+1,Jackson,Danenberg,Table + nbr,T cell,endothelial,572
+1,Jackson,Danenberg,Table + nbr,T cell,stroma,5364
+1,Jackson,Danenberg,Table + nbr,B cell,epithelial,89
+1,Jackson,Danenberg,Table + nbr,B cell,T cell,1119
+1,Jackson,Danenberg,Table + nbr,B cell,B cell,9081
+1,Jackson,Danenberg,Table + nbr,B cell,myeloid,156
+1,Jackson,Danenberg,Table + nbr,B cell,endothelial,150
+1,Jackson,Danenberg,Table + nbr,B cell,stroma,688
+1,Jackson,Danenberg,Table + nbr,myeloid,epithelial,545
+1,Jackson,Danenberg,Table + nbr,myeloid,T cell,1137
+1,Jackson,Danenberg,Table + nbr,myeloid,B cell,180
+1,Jackson,Danenberg,Table + nbr,myeloid,myeloid,4414
+1,Jackson,Danenberg,Table + nbr,myeloid,endothelial,246
+1,Jackson,Danenberg,Table + nbr,myeloid,stroma,3637
+1,Jackson,Danenberg,Table + nbr,endothelial,epithelial,700
+1,Jackson,Danenberg,Table + nbr,endothelial,T cell,172
+1,Jackson,Danenberg,Table + nbr,endothelial,B cell,168
+1,Jackson,Danenberg,Table + nbr,endothelial,myeloid,191
+1,Jackson,Danenberg,Table + nbr,endothelial,endothelial,1791
+1,Jackson,Danenberg,Table + nbr,endothelial,stroma,7416
+1,Jackson,Danenberg,Table + nbr,stroma,epithelial,7527
+1,Jackson,Danenberg,Table + nbr,stroma,T cell,987
+1,Jackson,Danenberg,Table + nbr,stroma,B cell,451
+1,Jackson,Danenberg,Table + nbr,stroma,myeloid,2322
+1,Jackson,Danenberg,Table + nbr,stroma,endothelial,3210
+1,Jackson,Danenberg,Table + nbr,stroma,stroma,37959
+1,Jackson,Jackson,Topology,epithelial,epithelial,116303
+1,Jackson,Jackson,Topology,epithelial,T cell,4418
+1,Jackson,Jackson,Topology,epithelial,B cell,524
+1,Jackson,Jackson,Topology,epithelial,myeloid,14
+1,Jackson,Jackson,Topology,epithelial,endothelial,94
+1,Jackson,Jackson,Topology,epithelial,stroma,27535
+1,Jackson,Jackson,Topology,T cell,epithelial,4183
+1,Jackson,Jackson,Topology,T cell,T cell,2079
+1,Jackson,Jackson,Topology,T cell,B cell,423
+1,Jackson,Jackson,Topology,T cell,myeloid,6
+1,Jackson,Jackson,Topology,T cell,endothelial,10
+1,Jackson,Jackson,Topology,T cell,stroma,2497
+1,Jackson,Jackson,Topology,B cell,epithelial,4481
+1,Jackson,Jackson,Topology,B cell,T cell,1359
+1,Jackson,Jackson,Topology,B cell,B cell,272
+1,Jackson,Jackson,Topology,B cell,myeloid,1
+1,Jackson,Jackson,Topology,B cell,endothelial,3
+1,Jackson,Jackson,Topology,B cell,stroma,724
+1,Jackson,Jackson,Topology,myeloid,epithelial,3394
+1,Jackson,Jackson,Topology,myeloid,T cell,168
+1,Jackson,Jackson,Topology,myeloid,B cell,13
+1,Jackson,Jackson,Topology,myeloid,myeloid,2
+1,Jackson,Jackson,Topology,myeloid,endothelial,3
+1,Jackson,Jackson,Topology,myeloid,stroma,3852
+1,Jackson,Jackson,Topology,endothelial,epithelial,4658
+1,Jackson,Jackson,Topology,endothelial,T cell,405
+1,Jackson,Jackson,Topology,endothelial,B cell,41
+1,Jackson,Jackson,Topology,endothelial,myeloid,1
+1,Jackson,Jackson,Topology,endothelial,endothelial,21
+1,Jackson,Jackson,Topology,endothelial,stroma,3728
+1,Jackson,Jackson,Topology,stroma,epithelial,20516
+1,Jackson,Jackson,Topology,stroma,T cell,1245
+1,Jackson,Jackson,Topology,stroma,B cell,77
+1,Jackson,Jackson,Topology,stroma,myeloid,4
+1,Jackson,Jackson,Topology,stroma,endothelial,62
+1,Jackson,Jackson,Topology,stroma,stroma,40145
+1,Jackson,Danenberg,Topology,epithelial,epithelial,88740
+1,Jackson,Danenberg,Topology,epithelial,T cell,4127
+1,Jackson,Danenberg,Topology,epithelial,B cell,443
+1,Jackson,Danenberg,Topology,epithelial,myeloid,99
+1,Jackson,Danenberg,Topology,epithelial,endothelial,258
+1,Jackson,Danenberg,Topology,epithelial,stroma,30663
+1,Jackson,Danenberg,Topology,T cell,epithelial,6680
+1,Jackson,Danenberg,Topology,T cell,T cell,830
+1,Jackson,Danenberg,Topology,T cell,B cell,78
+1,Jackson,Danenberg,Topology,T cell,myeloid,3
+1,Jackson,Danenberg,Topology,T cell,endothelial,16
+1,Jackson,Danenberg,Topology,T cell,stroma,4166
+1,Jackson,Danenberg,Topology,B cell,epithelial,7226
+1,Jackson,Danenberg,Topology,B cell,T cell,2133
+1,Jackson,Danenberg,Topology,B cell,B cell,199
+1,Jackson,Danenberg,Topology,B cell,myeloid,1
+1,Jackson,Danenberg,Topology,B cell,endothelial,23
+1,Jackson,Danenberg,Topology,B cell,stroma,1701
+1,Jackson,Danenberg,Topology,myeloid,epithelial,5066
+1,Jackson,Danenberg,Topology,myeloid,T cell,457
+1,Jackson,Danenberg,Topology,myeloid,B cell,57
+1,Jackson,Danenberg,Topology,myeloid,myeloid,4
+1,Jackson,Danenberg,Topology,myeloid,endothelial,19
+1,Jackson,Danenberg,Topology,myeloid,stroma,4556
+1,Jackson,Danenberg,Topology,endothelial,epithelial,4034
+1,Jackson,Danenberg,Topology,endothelial,T cell,341
+1,Jackson,Danenberg,Topology,endothelial,B cell,64
+1,Jackson,Danenberg,Topology,endothelial,myeloid,1
+1,Jackson,Danenberg,Topology,endothelial,endothelial,46
+1,Jackson,Danenberg,Topology,endothelial,stroma,5952
+1,Jackson,Danenberg,Topology,stroma,epithelial,19730
+1,Jackson,Danenberg,Topology,stroma,T cell,1415
+1,Jackson,Danenberg,Topology,stroma,B cell,113
+1,Jackson,Danenberg,Topology,stroma,myeloid,52
+1,Jackson,Danenberg,Topology,stroma,endothelial,105
+1,Jackson,Danenberg,Topology,stroma,stroma,31041
+1,Jackson,Jackson,Table + topo,epithelial,epithelial,137091
+1,Jackson,Jackson,Table + topo,epithelial,T cell,359
+1,Jackson,Jackson,Table + topo,epithelial,B cell,120
+1,Jackson,Jackson,Table + topo,epithelial,myeloid,1473
+1,Jackson,Jackson,Table + topo,epithelial,endothelial,1110
+1,Jackson,Jackson,Table + topo,epithelial,stroma,8735
+1,Jackson,Jackson,Table + topo,T cell,epithelial,47
+1,Jackson,Jackson,Table + topo,T cell,T cell,8865
+1,Jackson,Jackson,Table + topo,T cell,B cell,136
+1,Jackson,Jackson,Table + topo,T cell,myeloid,13
+1,Jackson,Jackson,Table + topo,T cell,endothelial,47
+1,Jackson,Jackson,Table + topo,T cell,stroma,90
+1,Jackson,Jackson,Table + topo,B cell,epithelial,83
+1,Jackson,Jackson,Table + topo,B cell,T cell,142
+1,Jackson,Jackson,Table + topo,B cell,B cell,6556
+1,Jackson,Jackson,Table + topo,B cell,myeloid,4
+1,Jackson,Jackson,Table + topo,B cell,endothelial,26
+1,Jackson,Jackson,Table + topo,B cell,stroma,29
+1,Jackson,Jackson,Table + topo,myeloid,epithelial,75
+1,Jackson,Jackson,Table + topo,myeloid,T cell,36
+1,Jackson,Jackson,Table + topo,myeloid,B cell,11
+1,Jackson,Jackson,Table + topo,myeloid,myeloid,6526
+1,Jackson,Jackson,Table + topo,myeloid,endothelial,20
+1,Jackson,Jackson,Table + topo,myeloid,stroma,764
+1,Jackson,Jackson,Table + topo,endothelial,epithelial,559
+1,Jackson,Jackson,Table + topo,endothelial,T cell,126
+1,Jackson,Jackson,Table + topo,endothelial,B cell,30
+1,Jackson,Jackson,Table + topo,endothelial,myeloid,151
+1,Jackson,Jackson,Table + topo,endothelial,endothelial,3485
+1,Jackson,Jackson,Table + topo,endothelial,stroma,4503
+1,Jackson,Jackson,Table + topo,stroma,epithelial,6476
+1,Jackson,Jackson,Table + topo,stroma,T cell,255
+1,Jackson,Jackson,Table + topo,stroma,B cell,81
+1,Jackson,Jackson,Table + topo,stroma,myeloid,1761
+1,Jackson,Jackson,Table + topo,stroma,endothelial,5710
+1,Jackson,Jackson,Table + topo,stroma,stroma,47766
+1,Jackson,Danenberg,Table + topo,epithelial,epithelial,109818
+1,Jackson,Danenberg,Table + topo,epithelial,T cell,1130
+1,Jackson,Danenberg,Table + topo,epithelial,B cell,716
+1,Jackson,Danenberg,Table + topo,epithelial,myeloid,2476
+1,Jackson,Danenberg,Table + topo,epithelial,endothelial,651
+1,Jackson,Danenberg,Table + topo,epithelial,stroma,9539
+1,Jackson,Danenberg,Table + topo,T cell,epithelial,1749
+1,Jackson,Danenberg,Table + topo,T cell,T cell,4257
+1,Jackson,Danenberg,Table + topo,T cell,B cell,165
+1,Jackson,Danenberg,Table + topo,T cell,myeloid,576
+1,Jackson,Danenberg,Table + topo,T cell,endothelial,566
+1,Jackson,Danenberg,Table + topo,T cell,stroma,4460
+1,Jackson,Danenberg,Table + topo,B cell,epithelial,355
+1,Jackson,Danenberg,Table + topo,B cell,T cell,1427
+1,Jackson,Danenberg,Table + topo,B cell,B cell,8680
+1,Jackson,Danenberg,Table + topo,B cell,myeloid,164
+1,Jackson,Danenberg,Table + topo,B cell,endothelial,159
+1,Jackson,Danenberg,Table + topo,B cell,stroma,498
+1,Jackson,Danenberg,Table + topo,myeloid,epithelial,1162
+1,Jackson,Danenberg,Table + topo,myeloid,T cell,1116
+1,Jackson,Danenberg,Table + topo,myeloid,B cell,179
+1,Jackson,Danenberg,Table + topo,myeloid,myeloid,4456
+1,Jackson,Danenberg,Table + topo,myeloid,endothelial,195
+1,Jackson,Danenberg,Table + topo,myeloid,stroma,3051
+1,Jackson,Danenberg,Table + topo,endothelial,epithelial,1605
+1,Jackson,Danenberg,Table + topo,endothelial,T cell,177
+1,Jackson,Danenberg,Table + topo,endothelial,B cell,164
+1,Jackson,Danenberg,Table + topo,endothelial,myeloid,216
+1,Jackson,Danenberg,Table + topo,endothelial,endothelial,1088
+1,Jackson,Danenberg,Table + topo,endothelial,stroma,7188
+1,Jackson,Danenberg,Table + topo,stroma,epithelial,13647
+1,Jackson,Danenberg,Table + topo,stroma,T cell,958
+1,Jackson,Danenberg,Table + topo,stroma,B cell,425
+1,Jackson,Danenberg,Table + topo,stroma,myeloid,2372
+1,Jackson,Danenberg,Table + topo,stroma,endothelial,2251
+1,Jackson,Danenberg,Table + topo,stroma,stroma,32803
+1,Jackson,Jackson,Table + nbr + topo,epithelial,epithelial,137866
+1,Jackson,Jackson,Table + nbr + topo,epithelial,T cell,352
+1,Jackson,Jackson,Table + nbr + topo,epithelial,B cell,107
+1,Jackson,Jackson,Table + nbr + topo,epithelial,myeloid,1338
+1,Jackson,Jackson,Table + nbr + topo,epithelial,endothelial,814
+1,Jackson,Jackson,Table + nbr + topo,epithelial,stroma,8411
+1,Jackson,Jackson,Table + nbr + topo,T cell,epithelial,49
+1,Jackson,Jackson,Table + nbr + topo,T cell,T cell,8790
+1,Jackson,Jackson,Table + nbr + topo,T cell,B cell,220
+1,Jackson,Jackson,Table + nbr + topo,T cell,myeloid,15
+1,Jackson,Jackson,Table + nbr + topo,T cell,endothelial,44
+1,Jackson,Jackson,Table + nbr + topo,T cell,stroma,80
+1,Jackson,Jackson,Table + nbr + topo,B cell,epithelial,77
+1,Jackson,Jackson,Table + nbr + topo,B cell,T cell,97
+1,Jackson,Jackson,Table + nbr + topo,B cell,B cell,6593
+1,Jackson,Jackson,Table + nbr + topo,B cell,myeloid,8
+1,Jackson,Jackson,Table + nbr + topo,B cell,endothelial,24
+1,Jackson,Jackson,Table + nbr + topo,B cell,stroma,41
+1,Jackson,Jackson,Table + nbr + topo,myeloid,epithelial,123
+1,Jackson,Jackson,Table + nbr + topo,myeloid,T cell,36
+1,Jackson,Jackson,Table + nbr + topo,myeloid,B cell,12
+1,Jackson,Jackson,Table + nbr + topo,myeloid,myeloid,6521
+1,Jackson,Jackson,Table + nbr + topo,myeloid,endothelial,12
+1,Jackson,Jackson,Table + nbr + topo,myeloid,stroma,728
+1,Jackson,Jackson,Table + nbr + topo,endothelial,epithelial,460
+1,Jackson,Jackson,Table + nbr + topo,endothelial,T cell,112
+1,Jackson,Jackson,Table + nbr + topo,endothelial,B cell,27
+1,Jackson,Jackson,Table + nbr + topo,endothelial,myeloid,140
+1,Jackson,Jackson,Table + nbr + topo,endothelial,endothelial,3773
+1,Jackson,Jackson,Table + nbr + topo,endothelial,stroma,4342
+1,Jackson,Jackson,Table + nbr + topo,stroma,epithelial,6152
+1,Jackson,Jackson,Table + nbr + topo,stroma,T cell,257
+1,Jackson,Jackson,Table + nbr + topo,stroma,B cell,77
+1,Jackson,Jackson,Table + nbr + topo,stroma,myeloid,1562
+1,Jackson,Jackson,Table + nbr + topo,stroma,endothelial,4878
+1,Jackson,Jackson,Table + nbr + topo,stroma,stroma,49123
+1,Jackson,Danenberg,Table + nbr + topo,epithelial,epithelial,108875
+1,Jackson,Danenberg,Table + nbr + topo,epithelial,T cell,1110
+1,Jackson,Danenberg,Table + nbr + topo,epithelial,B cell,709
+1,Jackson,Danenberg,Table + nbr + topo,epithelial,myeloid,2457
+1,Jackson,Danenberg,Table + nbr + topo,epithelial,endothelial,451
+1,Jackson,Danenberg,Table + nbr + topo,epithelial,stroma,10728
+1,Jackson,Danenberg,Table + nbr + topo,T cell,epithelial,795
+1,Jackson,Danenberg,Table + nbr + topo,T cell,T cell,4231
+1,Jackson,Danenberg,Table + nbr + topo,T cell,B cell,151
+1,Jackson,Danenberg,Table + nbr + topo,T cell,myeloid,612
+1,Jackson,Danenberg,Table + nbr + topo,T cell,endothelial,589
+1,Jackson,Danenberg,Table + nbr + topo,T cell,stroma,5395
+1,Jackson,Danenberg,Table + nbr + topo,B cell,epithelial,136
+1,Jackson,Danenberg,Table + nbr + topo,B cell,T cell,1325
+1,Jackson,Danenberg,Table + nbr + topo,B cell,B cell,8817
+1,Jackson,Danenberg,Table + nbr + topo,B cell,myeloid,184
+1,Jackson,Danenberg,Table + nbr + topo,B cell,endothelial,189
+1,Jackson,Danenberg,Table + nbr + topo,B cell,stroma,632
+1,Jackson,Danenberg,Table + nbr + topo,myeloid,epithelial,563
+1,Jackson,Danenberg,Table + nbr + topo,myeloid,T cell,1102
+1,Jackson,Danenberg,Table + nbr + topo,myeloid,B cell,160
+1,Jackson,Danenberg,Table + nbr + topo,myeloid,myeloid,4410
+1,Jackson,Danenberg,Table + nbr + topo,myeloid,endothelial,252
+1,Jackson,Danenberg,Table + nbr + topo,myeloid,stroma,3672
+1,Jackson,Danenberg,Table + nbr + topo,endothelial,epithelial,774
+1,Jackson,Danenberg,Table + nbr + topo,endothelial,T cell,154
+1,Jackson,Danenberg,Table + nbr + topo,endothelial,B cell,169
+1,Jackson,Danenberg,Table + nbr + topo,endothelial,myeloid,188
+1,Jackson,Danenberg,Table + nbr + topo,endothelial,endothelial,1609
+1,Jackson,Danenberg,Table + nbr + topo,endothelial,stroma,7544
+1,Jackson,Danenberg,Table + nbr + topo,stroma,epithelial,7901
+1,Jackson,Danenberg,Table + nbr + topo,stroma,T cell,965
+1,Jackson,Danenberg,Table + nbr + topo,stroma,B cell,435
+1,Jackson,Danenberg,Table + nbr + topo,stroma,myeloid,2290
+1,Jackson,Danenberg,Table + nbr + topo,stroma,endothelial,2966
+1,Jackson,Danenberg,Table + nbr + topo,stroma,stroma,37899
+1,Danenberg,Jackson,Table,epithelial,epithelial,133438
+1,Danenberg,Jackson,Table,epithelial,T cell,3051
+1,Danenberg,Jackson,Table,epithelial,B cell,142
+1,Danenberg,Jackson,Table,epithelial,myeloid,2483
+1,Danenberg,Jackson,Table,epithelial,endothelial,697
+1,Danenberg,Jackson,Table,epithelial,stroma,9077
+1,Danenberg,Jackson,Table,T cell,epithelial,334
+1,Danenberg,Jackson,Table,T cell,T cell,7162
+1,Danenberg,Jackson,Table,T cell,B cell,1165
+1,Danenberg,Jackson,Table,T cell,myeloid,277
+1,Danenberg,Jackson,Table,T cell,endothelial,5
+1,Danenberg,Jackson,Table,T cell,stroma,255
+1,Danenberg,Jackson,Table,B cell,epithelial,519
+1,Danenberg,Jackson,Table,B cell,T cell,15
+1,Danenberg,Jackson,Table,B cell,B cell,6243
+1,Danenberg,Jackson,Table,B cell,myeloid,15
+1,Danenberg,Jackson,Table,B cell,endothelial,21
+1,Danenberg,Jackson,Table,B cell,stroma,27
+1,Danenberg,Jackson,Table,myeloid,epithelial,929
+1,Danenberg,Jackson,Table,myeloid,T cell,223
+1,Danenberg,Jackson,Table,myeloid,B cell,32
+1,Danenberg,Jackson,Table,myeloid,myeloid,5751
+1,Danenberg,Jackson,Table,myeloid,endothelial,1
+1,Danenberg,Jackson,Table,myeloid,stroma,496
+1,Danenberg,Jackson,Table,endothelial,epithelial,899
+1,Danenberg,Jackson,Table,endothelial,T cell,955
+1,Danenberg,Jackson,Table,endothelial,B cell,64
+1,Danenberg,Jackson,Table,endothelial,myeloid,550
+1,Danenberg,Jackson,Table,endothelial,endothelial,711
+1,Danenberg,Jackson,Table,endothelial,stroma,5675
+1,Danenberg,Jackson,Table,stroma,epithelial,12713
+1,Danenberg,Jackson,Table,stroma,T cell,5777
+1,Danenberg,Jackson,Table,stroma,B cell,200
+1,Danenberg,Jackson,Table,stroma,myeloid,5286
+1,Danenberg,Jackson,Table,stroma,endothelial,3616
+1,Danenberg,Jackson,Table,stroma,stroma,34457
+1,Danenberg,Danenberg,Table,epithelial,epithelial,114993
+1,Danenberg,Danenberg,Table,epithelial,T cell,1390
+1,Danenberg,Danenberg,Table,epithelial,B cell,484
+1,Danenberg,Danenberg,Table,epithelial,myeloid,1800
+1,Danenberg,Danenberg,Table,epithelial,endothelial,211
+1,Danenberg,Danenberg,Table,epithelial,stroma,5452
+1,Danenberg,Danenberg,Table,T cell,epithelial,340
+1,Danenberg,Danenberg,Table,T cell,T cell,8288
+1,Danenberg,Danenberg,Table,T cell,B cell,430
+1,Danenberg,Danenberg,Table,T cell,myeloid,1221
+1,Danenberg,Danenberg,Table,T cell,endothelial,100
+1,Danenberg,Danenberg,Table,T cell,stroma,1394
+1,Danenberg,Danenberg,Table,B cell,epithelial,58
+1,Danenberg,Danenberg,Table,B cell,T cell,757
+1,Danenberg,Danenberg,Table,B cell,B cell,10008
+1,Danenberg,Danenberg,Table,B cell,myeloid,148
+1,Danenberg,Danenberg,Table,B cell,endothelial,51
+1,Danenberg,Danenberg,Table,B cell,stroma,261
+1,Danenberg,Danenberg,Table,myeloid,epithelial,403
+1,Danenberg,Danenberg,Table,myeloid,T cell,1458
+1,Danenberg,Danenberg,Table,myeloid,B cell,270
+1,Danenberg,Danenberg,Table,myeloid,myeloid,6491
+1,Danenberg,Danenberg,Table,myeloid,endothelial,65
+1,Danenberg,Danenberg,Table,myeloid,stroma,1472
+1,Danenberg,Danenberg,Table,endothelial,epithelial,456
+1,Danenberg,Danenberg,Table,endothelial,T cell,414
+1,Danenberg,Danenberg,Table,endothelial,B cell,197
+1,Danenberg,Danenberg,Table,endothelial,myeloid,397
+1,Danenberg,Danenberg,Table,endothelial,endothelial,3088
+1,Danenberg,Danenberg,Table,endothelial,stroma,5886
+1,Danenberg,Danenberg,Table,stroma,epithelial,5084
+1,Danenberg,Danenberg,Table,stroma,T cell,2985
+1,Danenberg,Danenberg,Table,stroma,B cell,588
+1,Danenberg,Danenberg,Table,stroma,myeloid,2592
+1,Danenberg,Danenberg,Table,stroma,endothelial,3039
+1,Danenberg,Danenberg,Table,stroma,stroma,38168
+1,Danenberg,Jackson,Table + nbr,epithelial,epithelial,134537
+1,Danenberg,Jackson,Table + nbr,epithelial,T cell,1333
+1,Danenberg,Jackson,Table + nbr,epithelial,B cell,111
+1,Danenberg,Jackson,Table + nbr,epithelial,myeloid,2207
+1,Danenberg,Jackson,Table + nbr,epithelial,endothelial,519
+1,Danenberg,Jackson,Table + nbr,epithelial,stroma,10181
+1,Danenberg,Jackson,Table + nbr,T cell,epithelial,354
+1,Danenberg,Jackson,Table + nbr,T cell,T cell,6951
+1,Danenberg,Jackson,Table + nbr,T cell,B cell,1305
+1,Danenberg,Jackson,Table + nbr,T cell,myeloid,246
+1,Danenberg,Jackson,Table + nbr,T cell,endothelial,6
+1,Danenberg,Jackson,Table + nbr,T cell,stroma,336
+1,Danenberg,Jackson,Table + nbr,B cell,epithelial,503
+1,Danenberg,Jackson,Table + nbr,B cell,T cell,9
+1,Danenberg,Jackson,Table + nbr,B cell,B cell,6242
+1,Danenberg,Jackson,Table + nbr,B cell,myeloid,15
+1,Danenberg,Jackson,Table + nbr,B cell,endothelial,28
+1,Danenberg,Jackson,Table + nbr,B cell,stroma,43
+1,Danenberg,Jackson,Table + nbr,myeloid,epithelial,1174
+1,Danenberg,Jackson,Table + nbr,myeloid,T cell,183
+1,Danenberg,Jackson,Table + nbr,myeloid,B cell,44
+1,Danenberg,Jackson,Table + nbr,myeloid,myeloid,5459
+1,Danenberg,Jackson,Table + nbr,myeloid,endothelial,8
+1,Danenberg,Jackson,Table + nbr,myeloid,stroma,564
+1,Danenberg,Jackson,Table + nbr,endothelial,epithelial,736
+1,Danenberg,Jackson,Table + nbr,endothelial,T cell,858
+1,Danenberg,Jackson,Table + nbr,endothelial,B cell,82
+1,Danenberg,Jackson,Table + nbr,endothelial,myeloid,503
+1,Danenberg,Jackson,Table + nbr,endothelial,endothelial,533
+1,Danenberg,Jackson,Table + nbr,endothelial,stroma,6142
+1,Danenberg,Jackson,Table + nbr,stroma,epithelial,13022
+1,Danenberg,Jackson,Table + nbr,stroma,T cell,4492
+1,Danenberg,Jackson,Table + nbr,stroma,B cell,204
+1,Danenberg,Jackson,Table + nbr,stroma,myeloid,4845
+1,Danenberg,Jackson,Table + nbr,stroma,endothelial,2042
+1,Danenberg,Jackson,Table + nbr,stroma,stroma,37444
+1,Danenberg,Danenberg,Table + nbr,epithelial,epithelial,117037
+1,Danenberg,Danenberg,Table + nbr,epithelial,T cell,954
+1,Danenberg,Danenberg,Table + nbr,epithelial,B cell,395
+1,Danenberg,Danenberg,Table + nbr,epithelial,myeloid,1196
+1,Danenberg,Danenberg,Table + nbr,epithelial,endothelial,207
+1,Danenberg,Danenberg,Table + nbr,epithelial,stroma,4541
+1,Danenberg,Danenberg,Table + nbr,T cell,epithelial,317
+1,Danenberg,Danenberg,Table + nbr,T cell,T cell,8285
+1,Danenberg,Danenberg,Table + nbr,T cell,B cell,395
+1,Danenberg,Danenberg,Table + nbr,T cell,myeloid,1241
+1,Danenberg,Danenberg,Table + nbr,T cell,endothelial,156
+1,Danenberg,Danenberg,Table + nbr,T cell,stroma,1379
+1,Danenberg,Danenberg,Table + nbr,B cell,epithelial,75
+1,Danenberg,Danenberg,Table + nbr,B cell,T cell,795
+1,Danenberg,Danenberg,Table + nbr,B cell,B cell,9996
+1,Danenberg,Danenberg,Table + nbr,B cell,myeloid,127
+1,Danenberg,Danenberg,Table + nbr,B cell,endothelial,42
+1,Danenberg,Danenberg,Table + nbr,B cell,stroma,248
+1,Danenberg,Danenberg,Table + nbr,myeloid,epithelial,354
+1,Danenberg,Danenberg,Table + nbr,myeloid,T cell,1378
+1,Danenberg,Danenberg,Table + nbr,myeloid,B cell,309
+1,Danenberg,Danenberg,Table + nbr,myeloid,myeloid,6440
+1,Danenberg,Danenberg,Table + nbr,myeloid,endothelial,103
+1,Danenberg,Danenberg,Table + nbr,myeloid,stroma,1575
+1,Danenberg,Danenberg,Table + nbr,endothelial,epithelial,328
+1,Danenberg,Danenberg,Table + nbr,endothelial,T cell,398
+1,Danenberg,Danenberg,Table + nbr,endothelial,B cell,205
+1,Danenberg,Danenberg,Table + nbr,endothelial,myeloid,350
+1,Danenberg,Danenberg,Table + nbr,endothelial,endothelial,4243
+1,Danenberg,Danenberg,Table + nbr,endothelial,stroma,4914
+1,Danenberg,Danenberg,Table + nbr,stroma,epithelial,4373
+1,Danenberg,Danenberg,Table + nbr,stroma,T cell,2888
+1,Danenberg,Danenberg,Table + nbr,stroma,B cell,588
+1,Danenberg,Danenberg,Table + nbr,stroma,myeloid,2388
+1,Danenberg,Danenberg,Table + nbr,stroma,endothelial,3450
+1,Danenberg,Danenberg,Table + nbr,stroma,stroma,38769
+1,Danenberg,Jackson,Topology,epithelial,epithelial,130507
+1,Danenberg,Jackson,Topology,epithelial,T cell,481
+1,Danenberg,Jackson,Topology,epithelial,B cell,1861
+1,Danenberg,Jackson,Topology,epithelial,myeloid,57
+1,Danenberg,Jackson,Topology,epithelial,endothelial,262
+1,Danenberg,Jackson,Topology,epithelial,stroma,15720
+1,Danenberg,Jackson,Topology,T cell,epithelial,5797
+1,Danenberg,Jackson,Topology,T cell,T cell,495
+1,Danenberg,Jackson,Topology,T cell,B cell,843
+1,Danenberg,Jackson,Topology,T cell,myeloid,67
+1,Danenberg,Jackson,Topology,T cell,endothelial,88
+1,Danenberg,Jackson,Topology,T cell,stroma,1908
+1,Danenberg,Jackson,Topology,B cell,epithelial,4771
+1,Danenberg,Jackson,Topology,B cell,T cell,313
+1,Danenberg,Jackson,Topology,B cell,B cell,1252
+1,Danenberg,Jackson,Topology,B cell,myeloid,31
+1,Danenberg,Jackson,Topology,B cell,endothelial,24
+1,Danenberg,Jackson,Topology,B cell,stroma,449
+1,Danenberg,Jackson,Topology,myeloid,epithelial,4543
+1,Danenberg,Jackson,Topology,myeloid,T cell,22
+1,Danenberg,Jackson,Topology,myeloid,B cell,70
+1,Danenberg,Jackson,Topology,myeloid,myeloid,6
+1,Danenberg,Jackson,Topology,myeloid,endothelial,32
+1,Danenberg,Jackson,Topology,myeloid,stroma,2759
+1,Danenberg,Jackson,Topology,endothelial,epithelial,6108
+1,Danenberg,Jackson,Topology,endothelial,T cell,53
+1,Danenberg,Jackson,Topology,endothelial,B cell,74
+1,Danenberg,Jackson,Topology,endothelial,myeloid,14
+1,Danenberg,Jackson,Topology,endothelial,endothelial,28
+1,Danenberg,Jackson,Topology,endothelial,stroma,2577
+1,Danenberg,Jackson,Topology,stroma,epithelial,31856
+1,Danenberg,Jackson,Topology,stroma,T cell,226
+1,Danenberg,Jackson,Topology,stroma,B cell,172
+1,Danenberg,Jackson,Topology,stroma,myeloid,62
+1,Danenberg,Jackson,Topology,stroma,endothelial,217
+1,Danenberg,Jackson,Topology,stroma,stroma,29516
+1,Danenberg,Danenberg,Topology,epithelial,epithelial,104541
+1,Danenberg,Danenberg,Topology,epithelial,T cell,520
+1,Danenberg,Danenberg,Topology,epithelial,B cell,1996
+1,Danenberg,Danenberg,Topology,epithelial,myeloid,35
+1,Danenberg,Danenberg,Topology,epithelial,endothelial,461
+1,Danenberg,Danenberg,Topology,epithelial,stroma,16777
+1,Danenberg,Danenberg,Topology,T cell,epithelial,8477
+1,Danenberg,Danenberg,Topology,T cell,T cell,186
+1,Danenberg,Danenberg,Topology,T cell,B cell,336
+1,Danenberg,Danenberg,Topology,T cell,myeloid,32
+1,Danenberg,Danenberg,Topology,T cell,endothelial,58
+1,Danenberg,Danenberg,Topology,T cell,stroma,2684
+1,Danenberg,Danenberg,Topology,B cell,epithelial,8270
+1,Danenberg,Danenberg,Topology,B cell,T cell,420
+1,Danenberg,Danenberg,Topology,B cell,B cell,1583
+1,Danenberg,Danenberg,Topology,B cell,myeloid,90
+1,Danenberg,Danenberg,Topology,B cell,endothelial,40
+1,Danenberg,Danenberg,Topology,B cell,stroma,880
+1,Danenberg,Danenberg,Topology,myeloid,epithelial,6794
+1,Danenberg,Danenberg,Topology,myeloid,T cell,105
+1,Danenberg,Danenberg,Topology,myeloid,B cell,195
+1,Danenberg,Danenberg,Topology,myeloid,myeloid,19
+1,Danenberg,Danenberg,Topology,myeloid,endothelial,69
+1,Danenberg,Danenberg,Topology,myeloid,stroma,2977
+1,Danenberg,Danenberg,Topology,endothelial,epithelial,5597
+1,Danenberg,Danenberg,Topology,endothelial,T cell,62
+1,Danenberg,Danenberg,Topology,endothelial,B cell,145
+1,Danenberg,Danenberg,Topology,endothelial,myeloid,20
+1,Danenberg,Danenberg,Topology,endothelial,endothelial,227
+1,Danenberg,Danenberg,Topology,endothelial,stroma,4387
+1,Danenberg,Danenberg,Topology,stroma,epithelial,26957
+1,Danenberg,Danenberg,Topology,stroma,T cell,225
+1,Danenberg,Danenberg,Topology,stroma,B cell,503
+1,Danenberg,Danenberg,Topology,stroma,myeloid,44
+1,Danenberg,Danenberg,Topology,stroma,endothelial,509
+1,Danenberg,Danenberg,Topology,stroma,stroma,24218
+1,Danenberg,Jackson,Table + topo,epithelial,epithelial,133578
+1,Danenberg,Jackson,Table + topo,epithelial,T cell,2795
+1,Danenberg,Jackson,Table + topo,epithelial,B cell,157
+1,Danenberg,Jackson,Table + topo,epithelial,myeloid,2106
+1,Danenberg,Jackson,Table + topo,epithelial,endothelial,754
+1,Danenberg,Jackson,Table + topo,epithelial,stroma,9498
+1,Danenberg,Jackson,Table + topo,T cell,epithelial,349
+1,Danenberg,Jackson,Table + topo,T cell,T cell,7223
+1,Danenberg,Jackson,Table + topo,T cell,B cell,1108
+1,Danenberg,Jackson,Table + topo,T cell,myeloid,217
+1,Danenberg,Jackson,Table + topo,T cell,endothelial,8
+1,Danenberg,Jackson,Table + topo,T cell,stroma,293
+1,Danenberg,Jackson,Table + topo,B cell,epithelial,535
+1,Danenberg,Jackson,Table + topo,B cell,T cell,7
+1,Danenberg,Jackson,Table + topo,B cell,B cell,6234
+1,Danenberg,Jackson,Table + topo,B cell,myeloid,14
+1,Danenberg,Jackson,Table + topo,B cell,endothelial,22
+1,Danenberg,Jackson,Table + topo,B cell,stroma,28
+1,Danenberg,Jackson,Table + topo,myeloid,epithelial,982
+1,Danenberg,Jackson,Table + topo,myeloid,T cell,194
+1,Danenberg,Jackson,Table + topo,myeloid,B cell,25
+1,Danenberg,Jackson,Table + topo,myeloid,myeloid,5694
+1,Danenberg,Jackson,Table + topo,myeloid,endothelial,15
+1,Danenberg,Jackson,Table + topo,myeloid,stroma,522
+1,Danenberg,Jackson,Table + topo,endothelial,epithelial,917
+1,Danenberg,Jackson,Table + topo,endothelial,T cell,929
+1,Danenberg,Jackson,Table + topo,endothelial,B cell,60
+1,Danenberg,Jackson,Table + topo,endothelial,myeloid,491
+1,Danenberg,Jackson,Table + topo,endothelial,endothelial,886
+1,Danenberg,Jackson,Table + topo,endothelial,stroma,5571
+1,Danenberg,Jackson,Table + topo,stroma,epithelial,12616
+1,Danenberg,Jackson,Table + topo,stroma,T cell,5679
+1,Danenberg,Jackson,Table + topo,stroma,B cell,148
+1,Danenberg,Jackson,Table + topo,stroma,myeloid,4992
+1,Danenberg,Jackson,Table + topo,stroma,endothelial,4419
+1,Danenberg,Jackson,Table + topo,stroma,stroma,34195
+1,Danenberg,Danenberg,Table + topo,epithelial,epithelial,115634
+1,Danenberg,Danenberg,Table + topo,epithelial,T cell,1290
+1,Danenberg,Danenberg,Table + topo,epithelial,B cell,461
+1,Danenberg,Danenberg,Table + topo,epithelial,myeloid,1645
+1,Danenberg,Danenberg,Table + topo,epithelial,endothelial,224
+1,Danenberg,Danenberg,Table + topo,epithelial,stroma,5076
+1,Danenberg,Danenberg,Table + topo,T cell,epithelial,375
+1,Danenberg,Danenberg,Table + topo,T cell,T cell,8262
+1,Danenberg,Danenberg,Table + topo,T cell,B cell,436
+1,Danenberg,Danenberg,Table + topo,T cell,myeloid,1227
+1,Danenberg,Danenberg,Table + topo,T cell,endothelial,125
+1,Danenberg,Danenberg,Table + topo,T cell,stroma,1348
+1,Danenberg,Danenberg,Table + topo,B cell,epithelial,68
+1,Danenberg,Danenberg,Table + topo,B cell,T cell,742
+1,Danenberg,Danenberg,Table + topo,B cell,B cell,10040
+1,Danenberg,Danenberg,Table + topo,B cell,myeloid,136
+1,Danenberg,Danenberg,Table + topo,B cell,endothelial,47
+1,Danenberg,Danenberg,Table + topo,B cell,stroma,250
+1,Danenberg,Danenberg,Table + topo,myeloid,epithelial,455
+1,Danenberg,Danenberg,Table + topo,myeloid,T cell,1407
+1,Danenberg,Danenberg,Table + topo,myeloid,B cell,278
+1,Danenberg,Danenberg,Table + topo,myeloid,myeloid,6458
+1,Danenberg,Danenberg,Table + topo,myeloid,endothelial,63
+1,Danenberg,Danenberg,Table + topo,myeloid,stroma,1498
+1,Danenberg,Danenberg,Table + topo,endothelial,epithelial,465
+1,Danenberg,Danenberg,Table + topo,endothelial,T cell,408
+1,Danenberg,Danenberg,Table + topo,endothelial,B cell,201
+1,Danenberg,Danenberg,Table + topo,endothelial,myeloid,379
+1,Danenberg,Danenberg,Table + topo,endothelial,endothelial,3542
+1,Danenberg,Danenberg,Table + topo,endothelial,stroma,5443
+1,Danenberg,Danenberg,Table + topo,stroma,epithelial,5114
+1,Danenberg,Danenberg,Table + topo,stroma,T cell,2941
+1,Danenberg,Danenberg,Table + topo,stroma,B cell,568
+1,Danenberg,Danenberg,Table + topo,stroma,myeloid,2593
+1,Danenberg,Danenberg,Table + topo,stroma,endothelial,3253
+1,Danenberg,Danenberg,Table + topo,stroma,stroma,37987
+1,Danenberg,Jackson,Table + nbr + topo,epithelial,epithelial,134397
+1,Danenberg,Jackson,Table + nbr + topo,epithelial,T cell,1507
+1,Danenberg,Jackson,Table + nbr + topo,epithelial,B cell,94
+1,Danenberg,Jackson,Table + nbr + topo,epithelial,myeloid,2102
+1,Danenberg,Jackson,Table + nbr + topo,epithelial,endothelial,524
+1,Danenberg,Jackson,Table + nbr + topo,epithelial,stroma,10264
+1,Danenberg,Jackson,Table + nbr + topo,T cell,epithelial,342
+1,Danenberg,Jackson,Table + nbr + topo,T cell,T cell,6970
+1,Danenberg,Jackson,Table + nbr + topo,T cell,B cell,1329
+1,Danenberg,Jackson,Table + nbr + topo,T cell,myeloid,200
+1,Danenberg,Jackson,Table + nbr + topo,T cell,endothelial,4
+1,Danenberg,Jackson,Table + nbr + topo,T cell,stroma,353
+1,Danenberg,Jackson,Table + nbr + topo,B cell,epithelial,492
+1,Danenberg,Jackson,Table + nbr + topo,B cell,T cell,10
+1,Danenberg,Jackson,Table + nbr + topo,B cell,B cell,6257
+1,Danenberg,Jackson,Table + nbr + topo,B cell,myeloid,16
+1,Danenberg,Jackson,Table + nbr + topo,B cell,endothelial,23
+1,Danenberg,Jackson,Table + nbr + topo,B cell,stroma,42
+1,Danenberg,Jackson,Table + nbr + topo,myeloid,epithelial,1189
+1,Danenberg,Jackson,Table + nbr + topo,myeloid,T cell,209
+1,Danenberg,Jackson,Table + nbr + topo,myeloid,B cell,47
+1,Danenberg,Jackson,Table + nbr + topo,myeloid,myeloid,5384
+1,Danenberg,Jackson,Table + nbr + topo,myeloid,endothelial,7
+1,Danenberg,Jackson,Table + nbr + topo,myeloid,stroma,596
+1,Danenberg,Jackson,Table + nbr + topo,endothelial,epithelial,729
+1,Danenberg,Jackson,Table + nbr + topo,endothelial,T cell,874
+1,Danenberg,Jackson,Table + nbr + topo,endothelial,B cell,76
+1,Danenberg,Jackson,Table + nbr + topo,endothelial,myeloid,497
+1,Danenberg,Jackson,Table + nbr + topo,endothelial,endothelial,528
+1,Danenberg,Jackson,Table + nbr + topo,endothelial,stroma,6150
+1,Danenberg,Jackson,Table + nbr + topo,stroma,epithelial,12876
+1,Danenberg,Jackson,Table + nbr + topo,stroma,T cell,4847
+1,Danenberg,Jackson,Table + nbr + topo,stroma,B cell,216
+1,Danenberg,Jackson,Table + nbr + topo,stroma,myeloid,4663
+1,Danenberg,Jackson,Table + nbr + topo,stroma,endothelial,2254
+1,Danenberg,Jackson,Table + nbr + topo,stroma,stroma,37193
+1,Danenberg,Danenberg,Table + nbr + topo,epithelial,epithelial,117040
+1,Danenberg,Danenberg,Table + nbr + topo,epithelial,T cell,938
+1,Danenberg,Danenberg,Table + nbr + topo,epithelial,B cell,407
+1,Danenberg,Danenberg,Table + nbr + topo,epithelial,myeloid,1223
+1,Danenberg,Danenberg,Table + nbr + topo,epithelial,endothelial,216
+1,Danenberg,Danenberg,Table + nbr + topo,epithelial,stroma,4506
+1,Danenberg,Danenberg,Table + nbr + topo,T cell,epithelial,315
+1,Danenberg,Danenberg,Table + nbr + topo,T cell,T cell,8309
+1,Danenberg,Danenberg,Table + nbr + topo,T cell,B cell,397
+1,Danenberg,Danenberg,Table + nbr + topo,T cell,myeloid,1222
+1,Danenberg,Danenberg,Table + nbr + topo,T cell,endothelial,163
+1,Danenberg,Danenberg,Table + nbr + topo,T cell,stroma,1367
+1,Danenberg,Danenberg,Table + nbr + topo,B cell,epithelial,70
+1,Danenberg,Danenberg,Table + nbr + topo,B cell,T cell,777
+1,Danenberg,Danenberg,Table + nbr + topo,B cell,B cell,10022
+1,Danenberg,Danenberg,Table + nbr + topo,B cell,myeloid,132
+1,Danenberg,Danenberg,Table + nbr + topo,B cell,endothelial,51
+1,Danenberg,Danenberg,Table + nbr + topo,B cell,stroma,231
+1,Danenberg,Danenberg,Table + nbr + topo,myeloid,epithelial,369
+1,Danenberg,Danenberg,Table + nbr + topo,myeloid,T cell,1413
+1,Danenberg,Danenberg,Table + nbr + topo,myeloid,B cell,295
+1,Danenberg,Danenberg,Table + nbr + topo,myeloid,myeloid,6379
+1,Danenberg,Danenberg,Table + nbr + topo,myeloid,endothelial,98
+1,Danenberg,Danenberg,Table + nbr + topo,myeloid,stroma,1605
+1,Danenberg,Danenberg,Table + nbr + topo,endothelial,epithelial,332
+1,Danenberg,Danenberg,Table + nbr + topo,endothelial,T cell,396
+1,Danenberg,Danenberg,Table + nbr + topo,endothelial,B cell,200
+1,Danenberg,Danenberg,Table + nbr + topo,endothelial,myeloid,346
+1,Danenberg,Danenberg,Table + nbr + topo,endothelial,endothelial,4221
+1,Danenberg,Danenberg,Table + nbr + topo,endothelial,stroma,4943
+1,Danenberg,Danenberg,Table + nbr + topo,stroma,epithelial,4374
+1,Danenberg,Danenberg,Table + nbr + topo,stroma,T cell,2905
+1,Danenberg,Danenberg,Table + nbr + topo,stroma,B cell,575
+1,Danenberg,Danenberg,Table + nbr + topo,stroma,myeloid,2378
+1,Danenberg,Danenberg,Table + nbr + topo,stroma,endothelial,3446
+1,Danenberg,Danenberg,Table + nbr + topo,stroma,stroma,38778
+1,Both,Jackson,Table,epithelial,epithelial,136994
+1,Both,Jackson,Table,epithelial,T cell,535
+1,Both,Jackson,Table,epithelial,B cell,141
+1,Both,Jackson,Table,epithelial,myeloid,1661
+1,Both,Jackson,Table,epithelial,endothelial,984
+1,Both,Jackson,Table,epithelial,stroma,8573
+1,Both,Jackson,Table,T cell,epithelial,61
+1,Both,Jackson,Table,T cell,T cell,8700
+1,Both,Jackson,Table,T cell,B cell,307
+1,Both,Jackson,Table,T cell,myeloid,21
+1,Both,Jackson,Table,T cell,endothelial,29
+1,Both,Jackson,Table,T cell,stroma,80
+1,Both,Jackson,Table,B cell,epithelial,69
+1,Both,Jackson,Table,B cell,T cell,114
+1,Both,Jackson,Table,B cell,B cell,6611
+1,Both,Jackson,Table,B cell,myeloid,7
+1,Both,Jackson,Table,B cell,endothelial,11
+1,Both,Jackson,Table,B cell,stroma,28
+1,Both,Jackson,Table,myeloid,epithelial,115
+1,Both,Jackson,Table,myeloid,T cell,39
+1,Both,Jackson,Table,myeloid,B cell,9
+1,Both,Jackson,Table,myeloid,myeloid,6483
+1,Both,Jackson,Table,myeloid,endothelial,16
+1,Both,Jackson,Table,myeloid,stroma,770
+1,Both,Jackson,Table,endothelial,epithelial,555
+1,Both,Jackson,Table,endothelial,T cell,188
+1,Both,Jackson,Table,endothelial,B cell,46
+1,Both,Jackson,Table,endothelial,myeloid,173
+1,Both,Jackson,Table,endothelial,endothelial,2474
+1,Both,Jackson,Table,endothelial,stroma,5418
+1,Both,Jackson,Table,stroma,epithelial,8261
+1,Both,Jackson,Table,stroma,T cell,384
+1,Both,Jackson,Table,stroma,B cell,122
+1,Both,Jackson,Table,stroma,myeloid,1878
+1,Both,Jackson,Table,stroma,endothelial,4550
+1,Both,Jackson,Table,stroma,stroma,46854
+1,Both,Danenberg,Table,epithelial,epithelial,115087
+1,Both,Danenberg,Table,epithelial,T cell,1499
+1,Both,Danenberg,Table,epithelial,B cell,613
+1,Both,Danenberg,Table,epithelial,myeloid,2256
+1,Both,Danenberg,Table,epithelial,endothelial,290
+1,Both,Danenberg,Table,epithelial,stroma,4585
+1,Both,Danenberg,Table,T cell,epithelial,318
+1,Both,Danenberg,Table,T cell,T cell,8390
+1,Both,Danenberg,Table,T cell,B cell,373
+1,Both,Danenberg,Table,T cell,myeloid,1255
+1,Both,Danenberg,Table,T cell,endothelial,136
+1,Both,Danenberg,Table,T cell,stroma,1301
+1,Both,Danenberg,Table,B cell,epithelial,55
+1,Both,Danenberg,Table,B cell,T cell,852
+1,Both,Danenberg,Table,B cell,B cell,9942
+1,Both,Danenberg,Table,B cell,myeloid,170
+1,Both,Danenberg,Table,B cell,endothelial,39
+1,Both,Danenberg,Table,B cell,stroma,225
+1,Both,Danenberg,Table,myeloid,epithelial,393
+1,Both,Danenberg,Table,myeloid,T cell,1463
+1,Both,Danenberg,Table,myeloid,B cell,252
+1,Both,Danenberg,Table,myeloid,myeloid,6550
+1,Both,Danenberg,Table,myeloid,endothelial,78
+1,Both,Danenberg,Table,myeloid,stroma,1423
+1,Both,Danenberg,Table,endothelial,epithelial,490
+1,Both,Danenberg,Table,endothelial,T cell,454
+1,Both,Danenberg,Table,endothelial,B cell,208
+1,Both,Danenberg,Table,endothelial,myeloid,398
+1,Both,Danenberg,Table,endothelial,endothelial,3342
+1,Both,Danenberg,Table,endothelial,stroma,5546
+1,Both,Danenberg,Table,stroma,epithelial,5816
+1,Both,Danenberg,Table,stroma,T cell,3191
+1,Both,Danenberg,Table,stroma,B cell,616
+1,Both,Danenberg,Table,stroma,myeloid,3011
+1,Both,Danenberg,Table,stroma,endothelial,3905
+1,Both,Danenberg,Table,stroma,stroma,35917
+1,Both,Jackson,Table + nbr,epithelial,epithelial,137433
+1,Both,Jackson,Table + nbr,epithelial,T cell,392
+1,Both,Jackson,Table + nbr,epithelial,B cell,117
+1,Both,Jackson,Table + nbr,epithelial,myeloid,1466
+1,Both,Jackson,Table + nbr,epithelial,endothelial,839
+1,Both,Jackson,Table + nbr,epithelial,stroma,8641
+1,Both,Jackson,Table + nbr,T cell,epithelial,70
+1,Both,Jackson,Table + nbr,T cell,T cell,8625
+1,Both,Jackson,Table + nbr,T cell,B cell,374
+1,Both,Jackson,Table + nbr,T cell,myeloid,21
+1,Both,Jackson,Table + nbr,T cell,endothelial,29
+1,Both,Jackson,Table + nbr,T cell,stroma,79
+1,Both,Jackson,Table + nbr,B cell,epithelial,83
+1,Both,Jackson,Table + nbr,B cell,T cell,93
+1,Both,Jackson,Table + nbr,B cell,B cell,6607
+1,Both,Jackson,Table + nbr,B cell,myeloid,9
+1,Both,Jackson,Table + nbr,B cell,endothelial,20
+1,Both,Jackson,Table + nbr,B cell,stroma,28
+1,Both,Jackson,Table + nbr,myeloid,epithelial,145
+1,Both,Jackson,Table + nbr,myeloid,T cell,44
+1,Both,Jackson,Table + nbr,myeloid,B cell,14
+1,Both,Jackson,Table + nbr,myeloid,myeloid,6491
+1,Both,Jackson,Table + nbr,myeloid,endothelial,12
+1,Both,Jackson,Table + nbr,myeloid,stroma,726
+1,Both,Jackson,Table + nbr,endothelial,epithelial,472
+1,Both,Jackson,Table + nbr,endothelial,T cell,181
+1,Both,Jackson,Table + nbr,endothelial,B cell,44
+1,Both,Jackson,Table + nbr,endothelial,myeloid,165
+1,Both,Jackson,Table + nbr,endothelial,endothelial,3191
+1,Both,Jackson,Table + nbr,endothelial,stroma,4801
+1,Both,Jackson,Table + nbr,stroma,epithelial,6492
+1,Both,Jackson,Table + nbr,stroma,T cell,372
+1,Both,Jackson,Table + nbr,stroma,B cell,120
+1,Both,Jackson,Table + nbr,stroma,myeloid,1804
+1,Both,Jackson,Table + nbr,stroma,endothelial,4100
+1,Both,Jackson,Table + nbr,stroma,stroma,49161
+1,Both,Danenberg,Table + nbr,epithelial,epithelial,116383
+1,Both,Danenberg,Table + nbr,epithelial,T cell,1159
+1,Both,Danenberg,Table + nbr,epithelial,B cell,600
+1,Both,Danenberg,Table + nbr,epithelial,myeloid,1746
+1,Both,Danenberg,Table + nbr,epithelial,endothelial,238
+1,Both,Danenberg,Table + nbr,epithelial,stroma,4204
+1,Both,Danenberg,Table + nbr,T cell,epithelial,249
+1,Both,Danenberg,Table + nbr,T cell,T cell,8330
+1,Both,Danenberg,Table + nbr,T cell,B cell,386
+1,Both,Danenberg,Table + nbr,T cell,myeloid,1283
+1,Both,Danenberg,Table + nbr,T cell,endothelial,211
+1,Both,Danenberg,Table + nbr,T cell,stroma,1314
+1,Both,Danenberg,Table + nbr,B cell,epithelial,43
+1,Both,Danenberg,Table + nbr,B cell,T cell,871
+1,Both,Danenberg,Table + nbr,B cell,B cell,9972
+1,Both,Danenberg,Table + nbr,B cell,myeloid,153
+1,Both,Danenberg,Table + nbr,B cell,endothelial,44
+1,Both,Danenberg,Table + nbr,B cell,stroma,200
+1,Both,Danenberg,Table + nbr,myeloid,epithelial,294
+1,Both,Danenberg,Table + nbr,myeloid,T cell,1436
+1,Both,Danenberg,Table + nbr,myeloid,B cell,295
+1,Both,Danenberg,Table + nbr,myeloid,myeloid,6487
+1,Both,Danenberg,Table + nbr,myeloid,endothelial,125
+1,Both,Danenberg,Table + nbr,myeloid,stroma,1522
+1,Both,Danenberg,Table + nbr,endothelial,epithelial,334
+1,Both,Danenberg,Table + nbr,endothelial,T cell,413
+1,Both,Danenberg,Table + nbr,endothelial,B cell,214
+1,Both,Danenberg,Table + nbr,endothelial,myeloid,368
+1,Both,Danenberg,Table + nbr,endothelial,endothelial,4574
+1,Both,Danenberg,Table + nbr,endothelial,stroma,4535
+1,Both,Danenberg,Table + nbr,stroma,epithelial,5225
+1,Both,Danenberg,Table + nbr,stroma,T cell,2980
+1,Both,Danenberg,Table + nbr,stroma,B cell,653
+1,Both,Danenberg,Table + nbr,stroma,myeloid,2769
+1,Both,Danenberg,Table + nbr,stroma,endothelial,4547
+1,Both,Danenberg,Table + nbr,stroma,stroma,36282
+1,Both,Jackson,Topology,epithelial,epithelial,117444
+1,Both,Jackson,Topology,epithelial,T cell,2171
+1,Both,Jackson,Topology,epithelial,B cell,624
+1,Both,Jackson,Topology,epithelial,myeloid,5
+1,Both,Jackson,Topology,epithelial,endothelial,28
+1,Both,Jackson,Topology,epithelial,stroma,28616
+1,Both,Jackson,Topology,T cell,epithelial,4627
+1,Both,Jackson,Topology,T cell,T cell,1456
+1,Both,Jackson,Topology,T cell,B cell,460
+1,Both,Jackson,Topology,T cell,myeloid,2
+1,Both,Jackson,Topology,T cell,stroma,2653
+1,Both,Jackson,Topology,B cell,epithelial,4825
+1,Both,Jackson,Topology,B cell,T cell,902
+1,Both,Jackson,Topology,B cell,B cell,391
+1,Both,Jackson,Topology,B cell,stroma,722
+1,Both,Jackson,Topology,myeloid,epithelial,3461
+1,Both,Jackson,Topology,myeloid,T cell,83
+1,Both,Jackson,Topology,myeloid,B cell,21
+1,Both,Jackson,Topology,myeloid,endothelial,1
+1,Both,Jackson,Topology,myeloid,stroma,3866
+1,Both,Jackson,Topology,endothelial,epithelial,4781
+1,Both,Jackson,Topology,endothelial,T cell,188
+1,Both,Jackson,Topology,endothelial,B cell,30
+1,Both,Jackson,Topology,endothelial,myeloid,1
+1,Both,Jackson,Topology,endothelial,endothelial,4
+1,Both,Jackson,Topology,endothelial,stroma,3850
+1,Both,Jackson,Topology,stroma,epithelial,20570
+1,Both,Jackson,Topology,stroma,T cell,494
+1,Both,Jackson,Topology,stroma,B cell,56
+1,Both,Jackson,Topology,stroma,myeloid,6
+1,Both,Jackson,Topology,stroma,endothelial,11
+1,Both,Jackson,Topology,stroma,stroma,40912
+1,Both,Danenberg,Topology,epithelial,epithelial,104478
+1,Both,Danenberg,Topology,epithelial,T cell,1259
+1,Both,Danenberg,Topology,epithelial,B cell,1657
+1,Both,Danenberg,Topology,epithelial,myeloid,29
+1,Both,Danenberg,Topology,epithelial,endothelial,645
+1,Both,Danenberg,Topology,epithelial,stroma,16262
+1,Both,Danenberg,Topology,T cell,epithelial,8361
+1,Both,Danenberg,Topology,T cell,T cell,348
+1,Both,Danenberg,Topology,T cell,B cell,318
+1,Both,Danenberg,Topology,T cell,myeloid,22
+1,Both,Danenberg,Topology,T cell,endothelial,109
+1,Both,Danenberg,Topology,T cell,stroma,2615
+1,Both,Danenberg,Topology,B cell,epithelial,8159
+1,Both,Danenberg,Topology,B cell,T cell,699
+1,Both,Danenberg,Topology,B cell,B cell,1401
+1,Both,Danenberg,Topology,B cell,myeloid,115
+1,Both,Danenberg,Topology,B cell,endothelial,43
+1,Both,Danenberg,Topology,B cell,stroma,866
+1,Both,Danenberg,Topology,myeloid,epithelial,6799
+1,Both,Danenberg,Topology,myeloid,T cell,177
+1,Both,Danenberg,Topology,myeloid,B cell,158
+1,Both,Danenberg,Topology,myeloid,myeloid,10
+1,Both,Danenberg,Topology,myeloid,endothelial,86
+1,Both,Danenberg,Topology,myeloid,stroma,2929
+1,Both,Danenberg,Topology,endothelial,epithelial,5580
+1,Both,Danenberg,Topology,endothelial,T cell,127
+1,Both,Danenberg,Topology,endothelial,B cell,124
+1,Both,Danenberg,Topology,endothelial,myeloid,5
+1,Both,Danenberg,Topology,endothelial,endothelial,394
+1,Both,Danenberg,Topology,endothelial,stroma,4208
+1,Both,Danenberg,Topology,stroma,epithelial,26969
+1,Both,Danenberg,Topology,stroma,T cell,496
+1,Both,Danenberg,Topology,stroma,B cell,442
+1,Both,Danenberg,Topology,stroma,myeloid,35
+1,Both,Danenberg,Topology,stroma,endothelial,835
+1,Both,Danenberg,Topology,stroma,stroma,23679
+1,Both,Jackson,Table + topo,epithelial,epithelial,136671
+1,Both,Jackson,Table + topo,epithelial,T cell,490
+1,Both,Jackson,Table + topo,epithelial,B cell,134
+1,Both,Jackson,Table + topo,epithelial,myeloid,1589
+1,Both,Jackson,Table + topo,epithelial,endothelial,1027
+1,Both,Jackson,Table + topo,epithelial,stroma,8977
+1,Both,Jackson,Table + topo,T cell,epithelial,61
+1,Both,Jackson,Table + topo,T cell,T cell,8775
+1,Both,Jackson,Table + topo,T cell,B cell,228
+1,Both,Jackson,Table + topo,T cell,myeloid,21
+1,Both,Jackson,Table + topo,T cell,endothelial,32
+1,Both,Jackson,Table + topo,T cell,stroma,81
+1,Both,Jackson,Table + topo,B cell,epithelial,95
+1,Both,Jackson,Table + topo,B cell,T cell,118
+1,Both,Jackson,Table + topo,B cell,B cell,6583
+1,Both,Jackson,Table + topo,B cell,myeloid,8
+1,Both,Jackson,Table + topo,B cell,endothelial,16
+1,Both,Jackson,Table + topo,B cell,stroma,20
+1,Both,Jackson,Table + topo,myeloid,epithelial,102
+1,Both,Jackson,Table + topo,myeloid,T cell,40
+1,Both,Jackson,Table + topo,myeloid,B cell,11
+1,Both,Jackson,Table + topo,myeloid,myeloid,6493
+1,Both,Jackson,Table + topo,myeloid,endothelial,16
+1,Both,Jackson,Table + topo,myeloid,stroma,770
+1,Both,Jackson,Table + topo,endothelial,epithelial,609
+1,Both,Jackson,Table + topo,endothelial,T cell,175
+1,Both,Jackson,Table + topo,endothelial,B cell,43
+1,Both,Jackson,Table + topo,endothelial,myeloid,173
+1,Both,Jackson,Table + topo,endothelial,endothelial,2811
+1,Both,Jackson,Table + topo,endothelial,stroma,5043
+1,Both,Jackson,Table + topo,stroma,epithelial,6821
+1,Both,Jackson,Table + topo,stroma,T cell,373
+1,Both,Jackson,Table + topo,stroma,B cell,106
+1,Both,Jackson,Table + topo,stroma,myeloid,1871
+1,Both,Jackson,Table + topo,stroma,endothelial,4699
+1,Both,Jackson,Table + topo,stroma,stroma,48179
+1,Both,Danenberg,Table + topo,epithelial,epithelial,115225
+1,Both,Danenberg,Table + topo,epithelial,T cell,1442
+1,Both,Danenberg,Table + topo,epithelial,B cell,611
+1,Both,Danenberg,Table + topo,epithelial,myeloid,2191
+1,Both,Danenberg,Table + topo,epithelial,endothelial,286
+1,Both,Danenberg,Table + topo,epithelial,stroma,4575
+1,Both,Danenberg,Table + topo,T cell,epithelial,331
+1,Both,Danenberg,Table + topo,T cell,T cell,8394
+1,Both,Danenberg,Table + topo,T cell,B cell,381
+1,Both,Danenberg,Table + topo,T cell,myeloid,1246
+1,Both,Danenberg,Table + topo,T cell,endothelial,166
+1,Both,Danenberg,Table + topo,T cell,stroma,1255
+1,Both,Danenberg,Table + topo,B cell,epithelial,59
+1,Both,Danenberg,Table + topo,B cell,T cell,821
+1,Both,Danenberg,Table + topo,B cell,B cell,9987
+1,Both,Danenberg,Table + topo,B cell,myeloid,149
+1,Both,Danenberg,Table + topo,B cell,endothelial,41
+1,Both,Danenberg,Table + topo,B cell,stroma,226
+1,Both,Danenberg,Table + topo,myeloid,epithelial,400
+1,Both,Danenberg,Table + topo,myeloid,T cell,1471
+1,Both,Danenberg,Table + topo,myeloid,B cell,273
+1,Both,Danenberg,Table + topo,myeloid,myeloid,6528
+1,Both,Danenberg,Table + topo,myeloid,endothelial,79
+1,Both,Danenberg,Table + topo,myeloid,stroma,1408
+1,Both,Danenberg,Table + topo,endothelial,epithelial,477
+1,Both,Danenberg,Table + topo,endothelial,T cell,441
+1,Both,Danenberg,Table + topo,endothelial,B cell,198
+1,Both,Danenberg,Table + topo,endothelial,myeloid,393
+1,Both,Danenberg,Table + topo,endothelial,endothelial,3810
+1,Both,Danenberg,Table + topo,endothelial,stroma,5119
+1,Both,Danenberg,Table + topo,stroma,epithelial,5909
+1,Both,Danenberg,Table + topo,stroma,T cell,3150
+1,Both,Danenberg,Table + topo,stroma,B cell,614
+1,Both,Danenberg,Table + topo,stroma,myeloid,3033
+1,Both,Danenberg,Table + topo,stroma,endothelial,4146
+1,Both,Danenberg,Table + topo,stroma,stroma,35604
+1,Both,Jackson,Table + nbr + topo,epithelial,epithelial,137356
+1,Both,Jackson,Table + nbr + topo,epithelial,T cell,386
+1,Both,Jackson,Table + nbr + topo,epithelial,B cell,117
+1,Both,Jackson,Table + nbr + topo,epithelial,myeloid,1458
+1,Both,Jackson,Table + nbr + topo,epithelial,endothelial,836
+1,Both,Jackson,Table + nbr + topo,epithelial,stroma,8735
+1,Both,Jackson,Table + nbr + topo,T cell,epithelial,71
+1,Both,Jackson,Table + nbr + topo,T cell,T cell,8644
+1,Both,Jackson,Table + nbr + topo,T cell,B cell,352
+1,Both,Jackson,Table + nbr + topo,T cell,myeloid,20
+1,Both,Jackson,Table + nbr + topo,T cell,endothelial,30
+1,Both,Jackson,Table + nbr + topo,T cell,stroma,81
+1,Both,Jackson,Table + nbr + topo,B cell,epithelial,97
+1,Both,Jackson,Table + nbr + topo,B cell,T cell,93
+1,Both,Jackson,Table + nbr + topo,B cell,B cell,6592
+1,Both,Jackson,Table + nbr + topo,B cell,myeloid,11
+1,Both,Jackson,Table + nbr + topo,B cell,endothelial,16
+1,Both,Jackson,Table + nbr + topo,B cell,stroma,31
+1,Both,Jackson,Table + nbr + topo,myeloid,epithelial,136
+1,Both,Jackson,Table + nbr + topo,myeloid,T cell,42
+1,Both,Jackson,Table + nbr + topo,myeloid,B cell,14
+1,Both,Jackson,Table + nbr + topo,myeloid,myeloid,6494
+1,Both,Jackson,Table + nbr + topo,myeloid,endothelial,15
+1,Both,Jackson,Table + nbr + topo,myeloid,stroma,731
+1,Both,Jackson,Table + nbr + topo,endothelial,epithelial,476
+1,Both,Jackson,Table + nbr + topo,endothelial,T cell,186
+1,Both,Jackson,Table + nbr + topo,endothelial,B cell,46
+1,Both,Jackson,Table + nbr + topo,endothelial,myeloid,154
+1,Both,Jackson,Table + nbr + topo,endothelial,endothelial,3195
+1,Both,Jackson,Table + nbr + topo,endothelial,stroma,4797
+1,Both,Jackson,Table + nbr + topo,stroma,epithelial,6515
+1,Both,Jackson,Table + nbr + topo,stroma,T cell,372
+1,Both,Jackson,Table + nbr + topo,stroma,B cell,110
+1,Both,Jackson,Table + nbr + topo,stroma,myeloid,1737
+1,Both,Jackson,Table + nbr + topo,stroma,endothelial,3949
+1,Both,Jackson,Table + nbr + topo,stroma,stroma,49366
+1,Both,Danenberg,Table + nbr + topo,epithelial,epithelial,116361
+1,Both,Danenberg,Table + nbr + topo,epithelial,T cell,1159
+1,Both,Danenberg,Table + nbr + topo,epithelial,B cell,605
+1,Both,Danenberg,Table + nbr + topo,epithelial,myeloid,1760
+1,Both,Danenberg,Table + nbr + topo,epithelial,endothelial,242
+1,Both,Danenberg,Table + nbr + topo,epithelial,stroma,4203
+1,Both,Danenberg,Table + nbr + topo,T cell,epithelial,251
+1,Both,Danenberg,Table + nbr + topo,T cell,T cell,8346
+1,Both,Danenberg,Table + nbr + topo,T cell,B cell,368
+1,Both,Danenberg,Table + nbr + topo,T cell,myeloid,1270
+1,Both,Danenberg,Table + nbr + topo,T cell,endothelial,210
+1,Both,Danenberg,Table + nbr + topo,T cell,stroma,1328
+1,Both,Danenberg,Table + nbr + topo,B cell,epithelial,40
+1,Both,Danenberg,Table + nbr + topo,B cell,T cell,850
+1,Both,Danenberg,Table + nbr + topo,B cell,B cell,9982
+1,Both,Danenberg,Table + nbr + topo,B cell,myeloid,154
+1,Both,Danenberg,Table + nbr + topo,B cell,endothelial,49
+1,Both,Danenberg,Table + nbr + topo,B cell,stroma,208
+1,Both,Danenberg,Table + nbr + topo,myeloid,epithelial,287
+1,Both,Danenberg,Table + nbr + topo,myeloid,T cell,1446
+1,Both,Danenberg,Table + nbr + topo,myeloid,B cell,291
+1,Both,Danenberg,Table + nbr + topo,myeloid,myeloid,6483
+1,Both,Danenberg,Table + nbr + topo,myeloid,endothelial,110
+1,Both,Danenberg,Table + nbr + topo,myeloid,stroma,1542
+1,Both,Danenberg,Table + nbr + topo,endothelial,epithelial,324
+1,Both,Danenberg,Table + nbr + topo,endothelial,T cell,430
+1,Both,Danenberg,Table + nbr + topo,endothelial,B cell,212
+1,Both,Danenberg,Table + nbr + topo,endothelial,myeloid,364
+1,Both,Danenberg,Table + nbr + topo,endothelial,endothelial,4600
+1,Both,Danenberg,Table + nbr + topo,endothelial,stroma,4508
+1,Both,Danenberg,Table + nbr + topo,stroma,epithelial,5093
+1,Both,Danenberg,Table + nbr + topo,stroma,T cell,2973
+1,Both,Danenberg,Table + nbr + topo,stroma,B cell,660
+1,Both,Danenberg,Table + nbr + topo,stroma,myeloid,2801
+1,Both,Danenberg,Table + nbr + topo,stroma,endothelial,4562
+1,Both,Danenberg,Table + nbr + topo,stroma,stroma,36367

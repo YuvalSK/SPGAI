@@ -1,0 +1,140 @@
+[{"stream_name":"stderr","time":9.719223191,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":9.719274158,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":11.06661044,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.066646548,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.06665008,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.066652571,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.835374875,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.835415805,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.835419813,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.835422565,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":35.62345831,"data":"{\n"}
+,{"stream_name":"stdout","time":35.623493409,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":35.623509364,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":35.623514329,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":35.623518952,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":35.623523129,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":35.623542097,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":35.623545985,"data":" },\n"}
+,{"stream_name":"stdout","time":35.623549319,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":35.623552734,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":35.623556435,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":35.623560195,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":35.623568549,"data":" }\n"}
+,{"stream_name":"stdout","time":35.623571237,"data":"}\n"}
+,{"stream_name":"stdout","time":43.740604619,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":43.740644976,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":43.808189035,"data":"[   0.3 min] tables loaded\n"}
+,{"stream_name":"stdout","time":47.727786775,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 47.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":47.92987207,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 47.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":62.263950384,"data":"Danenberg test: 228,511 cells in 145 images; Jackson tiffs found: 735\n"}
+,{"stream_name":"stdout","time":62.602022713,"data":"Jackson images: train 397, val 39 (tumour images of train / val patients)\n"}
+,{"stream_name":"stdout","time":64.857037512,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.9/859.9 kB 16.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":64.897772367,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 50.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":65.059792569,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.9/859.9 kB 16.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":65.059826952,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 50.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":76.311268123,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stdout","time":76.470621168,"data":"anonymous release not available: HTTP Error 403: Forbidden\n"}
+,{"stream_name":"stderr","time":76.514606502,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stderr","time":76.514640777,"data":"\n"}
+,{"stream_name":"stderr","time":76.514646674,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stdout","time":80.594643788,"data":"ImmuVis code from github.com/dav3794/multiplex-image-model\n"}
+,{"stream_name":"stdout","time":92.012029934,"data":"[   1.1 min] 80 Jackson train images preprocessed; RAM 3.3 GB (available 26.7); GPU0 0.0/0.0 GB, GPU1 0.0/0.0 GB\n"}
+,{"stream_name":"stdout","time":92.016127326,"data":"!!! config failed: 2 GPUs (DataParallel), batch 16, fp16 Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":92.016158836,"data":"  File \"/tmp/ipykernel_23/3798573556.py\", line 91, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":92.016165333,"data":"    torch.cuda.reset_peak_memory_stats(d)\n"}
+,{"stream_name":"stdout","time":92.01616996,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/cuda/memory.py\", line 432, in reset_peak_memory_stats\n"}
+,{"stream_name":"stdout","time":92.016174541,"data":"    return torch._C._cuda_resetPeakMemoryStats(device)\n"}
+,{"stream_name":"stdout","time":92.016178721,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":92.01618336,"data":"RuntimeError: Invalid device argument \n"}
+,{"stream_name":"stdout","time":92.016193255,"data":"\n"}
+,{"stream_name":"stdout","time":92.661463787,"data":"!!! config failed: 2 GPUs, batch 16, fp16, cudnn.benchmark Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":92.661531576,"data":"  File \"/tmp/ipykernel_23/3798573556.py\", line 91, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":92.661583095,"data":"    torch.cuda.reset_peak_memory_stats(d)\n"}
+,{"stream_name":"stdout","time":92.661588841,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/cuda/memory.py\", line 432, in reset_peak_memory_stats\n"}
+,{"stream_name":"stdout","time":92.661593548,"data":"    return torch._C._cuda_resetPeakMemoryStats(device)\n"}
+,{"stream_name":"stdout","time":92.661597808,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":92.661616148,"data":"RuntimeError: Invalid device argument \n"}
+,{"stream_name":"stdout","time":92.661619796,"data":"\n"}
+,{"stream_name":"stdout","time":92.662602505,"data":"!!! config failed: 1 GPU, batch 16, fp16, cudnn.benchmark Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":92.66262475,"data":"  File \"/tmp/ipykernel_23/3798573556.py\", line 91, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":92.662629649,"data":"    torch.cuda.reset_peak_memory_stats(d)\n"}
+,{"stream_name":"stdout","time":92.662633099,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/cuda/memory.py\", line 432, in reset_peak_memory_stats\n"}
+,{"stream_name":"stdout","time":92.662636816,"data":"    return torch._C._cuda_resetPeakMemoryStats(device)\n"}
+,{"stream_name":"stdout","time":92.662640313,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":92.662643562,"data":"RuntimeError: Invalid device argument \n"}
+,{"stream_name":"stdout","time":92.662648453,"data":"\n"}
+,{"stream_name":"stdout","time":92.959683641,"data":"!!! config failed: 1 GPU, batch 8, fp16, cudnn.benchmark Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":92.959724315,"data":"  File \"/tmp/ipykernel_23/3798573556.py\", line 91, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":92.959729333,"data":"    torch.cuda.reset_peak_memory_stats(d)\n"}
+,{"stream_name":"stdout","time":92.959731965,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/cuda/memory.py\", line 432, in reset_peak_memory_stats\n"}
+,{"stream_name":"stdout","time":92.959735873,"data":"    return torch._C._cuda_resetPeakMemoryStats(device)\n"}
+,{"stream_name":"stdout","time":92.959739155,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":92.959741408,"data":"RuntimeError: Invalid device argument \n"}
+,{"stream_name":"stdout","time":92.959743666,"data":"\n"}
+,{"stream_name":"stdout","time":93.56566168,"data":"!!! config failed: 1 GPU, batch 16, fp32, cudnn.benchmark Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":93.5656928,"data":"  File \"/tmp/ipykernel_23/3798573556.py\", line 91, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":93.565698287,"data":"    torch.cuda.reset_peak_memory_stats(d)\n"}
+,{"stream_name":"stdout","time":93.565702421,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/cuda/memory.py\", line 432, in reset_peak_memory_stats\n"}
+,{"stream_name":"stdout","time":93.565707139,"data":"    return torch._C._cuda_resetPeakMemoryStats(device)\n"}
+,{"stream_name":"stdout","time":93.565711567,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":93.565715539,"data":"RuntimeError: Invalid device argument \n"}
+,{"stream_name":"stdout","time":93.565719638,"data":"\n"}
+,{"stream_name":"stdout","time":93.858458566,"data":"!!! config failed: 2 GPUs, batch 16, fp16, decoder 256 Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":93.858495139,"data":"  File \"/tmp/ipykernel_23/3798573556.py\", line 91, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":93.858505716,"data":"    torch.cuda.reset_peak_memory_stats(d)\n"}
+,{"stream_name":"stdout","time":93.858508721,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/cuda/memory.py\", line 432, in reset_peak_memory_stats\n"}
+,{"stream_name":"stdout","time":93.858511405,"data":"    return torch._C._cuda_resetPeakMemoryStats(device)\n"}
+,{"stream_name":"stdout","time":93.85851398,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":93.858569048,"data":"RuntimeError: Invalid device argument \n"}
+,{"stream_name":"stdout","time":93.858576392,"data":"\n"}
+,{"stream_name":"stdout","time":93.868434876,"data":"[   1.1 min] timing done\n"}
+,{"stream_name":"stdout","time":335.833676416,"data":"-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n"}
+,{"stream_name":"stdout","time":335.833750603,"data":"                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  \n"}
+,{"stream_name":"stdout","time":335.833756202,"data":"-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n"}
+,{"stream_name":"stdout","time":335.83375968,"data":"                                   DataParallel.forward         0.00%       0.000us         0.00%       0.000us       0.000us       46.923s       160.71%       46.923s        3.910s            12  \n"}
+,{"stream_name":"stdout","time":335.833762796,"data":"autograd::engine::evaluate_function: ConvolutionBack...         0.01%       2.901ms        45.56%       20.178s     160.143ms       0.000us         0.00%        9.873s      78.359ms           126  \n"}
+,{"stream_name":"stdout","time":335.833766207,"data":"                                   ConvolutionBackward0         0.01%       3.826ms        45.56%       20.174s     160.111ms       0.000us         0.00%        9.869s      78.327ms           126  \n"}
+,{"stream_name":"stdout","time":335.833769391,"data":"                             aten::convolution_backward        30.40%       13.461s        45.55%       20.170s     160.081ms        9.855s        33.75%        9.869s      78.327ms           126  \n"}
+,{"stream_name":"stdout","time":335.833772465,"data":"                                   DataParallel.forward        32.28%       14.294s        52.99%       23.465s        7.822s       0.000us         0.00%        8.753s        2.918s             3  \n"}
+,{"stream_name":"stdout","time":335.833775548,"data":"_5x_cudnn_volta_fp16_s884cudnn_fp16_256x128_ldg8_rel...         0.00%       0.000us         0.00%       0.000us       0.000us        4.945s        16.94%        4.945s     303.006us         16320  \n"}
+,{"stream_name":"stdout","time":335.833792852,"data":"                                       cudaLaunchKernel         4.49%        1.990s         4.59%        2.032s       4.740us        2.963s        10.15%        2.987s       6.969us        428616  \n"}
+,{"stream_name":"stdout","time":335.833804846,"data":"void tensorTransformGeneric\u003c__half, __half, float, t...         0.00%       0.000us         0.00%       0.000us       0.000us        2.938s        10.06%        2.938s      29.481us         99672  \n"}
+,{"stream_name":"stdout","time":335.833811605,"data":"_5x_cudnn_turing_s1688cudnn_fp16_128x128_ldg8_wgrad_...         0.00%       0.000us         0.00%       0.000us       0.000us        2.923s        10.01%        2.923s      22.833ms           128  \n"}
+,{"stream_name":"stdout","time":335.833816578,"data":"                                        cudaEventRecord         0.39%     173.852ms         0.39%     174.841ms       1.967us        2.892s         9.91%        2.892s      32.536us         88890  \n"}
+,{"stream_name":"stdout","time":335.833821382,"data":"_5x_cudnn_turing_fp16_s1688cudnn_fp16_256x128_ldg8_r...         0.00%       0.000us         0.00%       0.000us       0.000us        2.649s         9.07%        2.649s     161.931us         16356  \n"}
+,{"stream_name":"stdout","time":335.833833865,"data":"                                   cudaEventSynchronize        13.11%        5.804s        14.35%        6.355s       9.345ms       2.151ms         0.01%        2.479s       3.646ms           680  \n"}
+,{"stream_name":"stdout","time":335.833837845,"data":"                                        cudaMemsetAsync         0.98%     434.405ms         1.00%     441.582ms       3.291us        2.283s         7.82%        2.288s      17.053us        134193  \n"}
+,{"stream_name":"stdout","time":335.833841648,"data":"_5x_cudnn_turing_s1688cudnn_fp16_64x64_sliced1x4_ldg...         0.00%       0.000us         0.00%       0.000us       0.000us        1.557s         5.33%        1.557s      11.450ms           136  \n"}
+,{"stream_name":"stdout","time":335.833845451,"data":"void convolve_common_engine_float_NHWC\u003c__half, __hal...         0.00%       0.000us         0.00%       0.000us       0.000us        1.443s         4.94%        1.443s      88.433us         16320  \n"}
+,{"stream_name":"stdout","time":335.833849414,"data":"void cudnn::detail::dgrad_engine\u003c__half, 128, 6, 8, ...         0.00%       0.000us         0.00%       0.000us       0.000us        1.403s         4.80%        1.403s      10.959ms           128  \n"}
+,{"stream_name":"stdout","time":335.833853285,"data":"void implicit_convolve_sgemm\u003c__half, __half, 128, 6,...         0.00%       0.000us         0.00%       0.000us       0.000us        1.249s         4.28%        1.249s      19.137us         65280  \n"}
+,{"stream_name":"stdout","time":335.833865166,"data":"_ZN17cutlass__5x_cudnn6KernelINS_4conv6kernel23Impli...         0.00%       0.000us         0.00%       0.000us       0.000us     940.965ms         3.22%     940.965ms       7.351ms           128  \n"}
+,{"stream_name":"stdout","time":335.83386785,"data":"void precomputed_convolve_sgemm\u003c__half, 128, 6, 7, 3...         0.00%       0.000us         0.00%       0.000us       0.000us     911.247ms         3.12%     911.247ms      55.836us         16320  \n"}
+,{"stream_name":"stdout","time":335.833871123,"data":"_5x_cudnn_volta_fp16_scudnn_fp16_128x128_3dconv_fpro...         0.00%       0.000us         0.00%       0.000us       0.000us     827.651ms         2.83%     827.651ms      50.714us         16320  \n"}
+,{"stream_name":"stdout","time":335.833873685,"data":"void cudnn::detail::dgrad_engine\u003c__half, 128, 6, 7, ...         0.00%       0.000us         0.00%       0.000us       0.000us     810.732ms         2.78%     810.732ms       6.334ms           128  \n"}
+,{"stream_name":"stdout","time":335.833877176,"data":"void convolve_common_engine_float_NHWC\u003c__half, __hal...         0.00%       0.000us         0.00%       0.000us       0.000us     794.818ms         2.72%     794.818ms      48.702us         16320  \n"}
+,{"stream_name":"stdout","time":335.833892599,"data":"_5x_cudnn_volta_fp16_s884cudnn_fp16_128x128_ldg8_dgr...         0.00%       0.000us         0.00%       0.000us       0.000us     641.232ms         2.20%     641.232ms       5.010ms           128  \n"}
+,{"stream_name":"stdout","time":335.83389707,"data":"void cudnn::cnn::conv2d_grouped_direct_kernel\u003cfalse,...         0.00%       0.000us         0.00%       0.000us       0.000us     529.533ms         1.81%     529.533ms       5.516ms            96  \n"}
+,{"stream_name":"stdout","time":335.833901509,"data":"      autograd::engine::evaluate_function: MulBackward0         0.01%       6.256ms         0.08%      37.552ms     156.465us       0.000us         0.00%     453.157ms       1.888ms           240  \n"}
+,{"stream_name":"stdout","time":335.833906107,"data":"-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n"}
+,{"stream_name":"stdout","time":335.833914116,"data":"Self CPU time total: 44.284s\n"}
+,{"stream_name":"stdout","time":335.833917585,"data":"Self CUDA time total: 29.197s\n"}
+,{"stream_name":"stdout","time":335.833920892,"data":"\n"}
+,{"stream_name":"stdout","time":368.799746203,"data":"validate: -0.0008452140297678499 33.2 s | RAM 13.3 GB (available 17.4); GPU0 0.2/5.2 GB, GPU1 0.0/5.1 GB\n"}
+,{"stream_name":"stdout","time":368.958597254,"data":"checkpoint saved: 131 MB | RAM 13.3 GB (available 17.4); GPU0 0.2/5.2 GB, GPU1 0.0/5.1 GB\n"}
+,{"stream_name":"stdout","time":587.500788955,"data":"step 25: loss 710.2637 | RAM 15.8 GB (available 15.0); GPU0 0.4/5.3 GB, GPU1 0.0/5.1 GB\n"}
+,{"stream_name":"stdout","time":787.902790032,"data":"step 50: loss 591.3671 | RAM 16.9 GB (available 13.9); GPU0 0.4/5.3 GB, GPU1 0.0/5.1 GB\n"}
+,{"stream_name":"stdout","time":993.877986039,"data":"step 75: loss 575.0994 | RAM 18.4 GB (available 12.4); GPU0 0.4/5.5 GB, GPU1 0.0/5.2 GB\n"}
+,{"stream_name":"stdout","time":1194.219158567,"data":"step 100: loss 564.1117 | RAM 19.8 GB (available 11.0); GPU0 0.4/5.5 GB, GPU1 0.0/5.2 GB\n"}
+,{"stream_name":"stdout","time":1393.028367923,"data":"step 125: loss 565.2690 | RAM 20.9 GB (available 9.8); GPU0 0.4/5.5 GB, GPU1 0.0/5.2 GB\n"}
+,{"stream_name":"stdout","time":1570.11807638,"data":"[  25.7 min] leak test done: 147 steps\n"}
+,{"stream_name":"stderr","time":1576.965067487,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1576.965105233,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1577.199230526,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1577.199264862,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1577.897617765,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1578.21248428,"data":"[NbConvertApp] Writing 50248 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1580.76997108,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1581.79913094,"data":"[NbConvertApp] Writing 461033 bytes to __results__.html\n"}
+]

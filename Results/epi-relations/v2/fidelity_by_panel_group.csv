@@ -1,0 +1,50 @@
+mark,group,level,relation,jackson_effect,lgbm_J,lgbm_D,immuvis_J,immuvis_D,lgbm_D_effect
+h3k27me3,1 epithelial lineage,cell,"H3K27me3 ~ CK8/18, cells (all)",0.38,Y,Y,Y,Y,0.41
+h3k27me3,1 epithelial lineage,cell,"H3K27me3 ~ CK8/18, cells (epithelial)",0.42,Y,Y,Y,Y,0.44
+h3k27me3,1 epithelial lineage,cell,"H3K27me3 ~ CK8/18, cells (stromal)",0.31,Y,.,Y,.,0.04
+h3k27me3,1 epithelial lineage,cell,"H3K27me3 ~ panCK, cells (all)",0.33,Y,Y,Y,Y,0.52
+h3k27me3,1 epithelial lineage,cell,"H3K27me3 ~ panCK, cells (epithelial)",0.47,Y,Y,Y,Y,0.5
+h3k27me3,1 epithelial lineage,cell,"H3K27me3 ~ panCK, cells (stromal)",0.13,Y,.,Y,.,0.31
+h3k27me3,1 epithelial lineage,patient,"H3K27me3 ~ CK5, patients",0.56,Y,.,Y,.,0.21
+h3k27me3,1 epithelial lineage,patient,"H3K27me3 ~ CK8/18, patients",0.61,Y,Y,Y,.,0.43
+h3k27me3,1 epithelial lineage,patient,"H3K27me3 ~ panCK, patients",0.65,Y,Y,Y,.,0.58
+h3k27me3,2 hormone / HER2,cell,"H3K27me3 ~ HER2, cells (all)",0.32,Y,Y,Y,Y,0.5
+h3k27me3,2 hormone / HER2,cell,"H3K27me3 ~ HER2, cells (epithelial)",0.32,Y,Y,Y,Y,0.45
+h3k27me3,2 hormone / HER2,cell,"H3K27me3 ~ HER2, cells (immune)",0.22,Y,Y,Y,Y,0.28
+h3k27me3,2 hormone / HER2,cell,"H3K27me3 ~ HER2, cells (stromal)",0.25,Y,Y,Y,Y,0.36
+h3k27me3,2 hormone / HER2,patient,"H3K27me3 ~ ERα, patients",0.41,Y,Y,Y,Y,0.32
+h3k27me3,2 hormone / HER2,patient,"H3K27me3 ~ HER2, patients",0.22,.,Y,.,Y,0.3
+h3k27me3,4 immune lineage,cell,"H3K27me3 ~ CD20, cells (immune)",0.16,Y,Y,Y,Y,0.1
+h3k27me3,4 immune lineage,cell,"H3K27me3 ~ CD3, cells (epithelial)",0.11,Y,.,Y,Y,0.3
+h3k27me3,4 immune lineage,cell,"H3K27me3 ~ CD68, cells (all)",0.11,Y,.,.,.,0.03
+h3k27me3,4 immune lineage,cell,"H3K27me3 ~ CD68, cells (epithelial)",0.12,Y,Y,Y,.,0.09
+h3k27me3,4 immune lineage,cell,"H3K27me3 ~ CD68, cells (immune)",0.2,.,.,Y,Y,0.06
+h3k27me3,4 immune lineage,cell,"H3K27me3 ~ CD68, cells (stromal)",0.24,Y,.,Y,Y,0.05
+h3k27me3,4 immune lineage,patient,"H3K27me3 ~ CD3, patients",0.45,Y,Y,Y,Y,0.46
+h3k27me3,4 immune lineage,patient,"H3K27me3 ~ CD45, patients",0.39,Y,.,Y,.,0.13
+h3k27me3,5 stroma,cell,"H3K27me3 ~ SMA, cells (all)",0.14,Y,.,.,.,-0.09
+h3k27me3,5 stroma,cell,"H3K27me3 ~ SMA, cells (epithelial)",0.11,Y,.,.,.,-0.03
+h3k27me3,5 stroma,cell,"H3K27me3 ~ SMA, cells (immune)",0.13,Y,.,.,.,0.05
+h3k27me3,5 stroma,cell,"H3K27me3 ~ SMA, cells (stromal)",0.36,Y,.,Y,.,0.04
+h3k27me3,5 stroma,patient,"H3K27me3 ~ SMA, patients",0.37,.,.,.,.,-0.04
+h3k27me3,6 cell class,class,H3K27me3: stromal − epithelial cells,-0.34,Y,.,.,.,-0.89
+h3k27me3,7 clinical,clinical,H3K27me3 vs ER−,-0.17,Y,Y,Y,.,-0.13
+h3k27me3,7 clinical,clinical,H3K27me3 vs PR−,-0.15,Y,Y,Y,.,-0.09
+h3k27me3,7 clinical,clinical,H3K27me3 vs grade 3,-0.19,Y,Y,.,.,-0.1
+h3k27me3,7 clinical,clinical,H3K27me3 vs triple-negative,-0.15,.,Y,Y,.,-0.16
+phh3,1 epithelial lineage,patient,"pHH3 ~ CK5, patients",0.31,Y,.,Y,Y,0.09
+phh3,1 epithelial lineage,patient,"pHH3 ~ CK8/18, patients",0.21,.,Y,.,.,0.16
+phh3,1 epithelial lineage,patient,"pHH3 ~ panCK, patients",0.21,.,Y,.,.,0.15
+phh3,2 hormone / HER2,cell,"pHH3 ~ ERα, cells (epithelial)",0.16,Y,Y,Y,Y,0.15
+phh3,2 hormone / HER2,cell,"pHH3 ~ ERα, cells (stromal)",0.11,Y,Y,Y,Y,0.16
+phh3,2 hormone / HER2,patient,"pHH3 ~ ERα, patients",0.43,Y,.,Y,.,0.15
+phh3,4 immune lineage,cell,"pHH3 ~ CD68, cells (all)",0.13,Y,Y,Y,.,0.14
+phh3,4 immune lineage,cell,"pHH3 ~ CD68, cells (immune)",0.19,Y,Y,Y,Y,0.21
+phh3,4 immune lineage,patient,"pHH3 ~ CD45, patients",0.33,.,Y,.,Y,0.26
+phh3,5 stroma,cell,"pHH3 ~ SMA, cells (all)",0.15,Y,Y,Y,.,0.09
+phh3,5 stroma,cell,"pHH3 ~ SMA, cells (immune)",0.1,Y,Y,Y,Y,0.07
+phh3,5 stroma,cell,"pHH3 ~ SMA, cells (stromal)",0.2,Y,Y,Y,Y,0.14
+phh3,5 stroma,patient,"pHH3 ~ SMA, patients",0.24,.,Y,.,.,0.16
+phh3,7 clinical,clinical,pHH3 vs ER−,-0.09,.,Y,.,.,-0.17
+phh3,7 clinical,clinical,pHH3 vs PR−,-0.11,.,.,.,.,-0.06
+phh3,7 clinical,clinical,pHH3 vs grade 3,-0.11,.,Y,.,.,-0.07

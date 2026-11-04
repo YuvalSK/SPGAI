@@ -1,0 +1,295 @@
+[{"stream_name":"stderr","time":7.035736763,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.035768534,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":8.01311737,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.013146317,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.01318327,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.013188321,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.655014106,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.655068983,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.655074468,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.655078586,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":31.955986319,"data":"device cuda 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":40.816931512,"data":"[   0.3 min] tables: Danenberg 1,062,219 cells, Jackson 1,126,124 cells\n"}
+,{"stream_name":"stderr","time":41.464577829,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":41.46460712,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":41.66651976,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":41.666550749,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":41.666556597,"data":"\n"}
+,{"stream_name":"stderr","time":41.666561096,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":41.666566343,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":510.001254264,"data":"[   8.1 min] per-cell image means\n"}
+,{"stream_name":"stdout","time":511.505618528,"data":"Jackson {'train': (806958, 251), 'val': (89348, 32), 'test': (229818, 66)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":511.505689247,"data":"Danenberg {'train': (728537, 465), 'val': (105171, 55), 'test': (228511, 130)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":513.185245394,"data":"[   8.1 min] splits and harmonisation\n"}
+,{"stream_name":"stdout","time":513.679260891,"data":"Jackson test cells scored 40000 patients 66\n"}
+,{"stream_name":"stdout","time":513.679283049,"data":"Danenberg test cells scored 40000 patients 130\n"}
+,{"stream_name":"stderr","time":515.950467941,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":515.950495907,"data":"\n"}
+,{"stream_name":"stderr","time":515.950500814,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":519.170534781,"data":"[   8.2 min] TabPFN v2 loads and predicts\n"}
+,{"stream_name":"stdout","time":816.456485621,"data":"[  13.2 min] zero-shot Jackson: c_erb_b_2_her2 (297 s)\n"}
+,{"stream_name":"stdout","time":1123.625444815,"data":"[  18.3 min] zero-shot Jackson: cd20 (307 s)\n"}
+,{"stream_name":"stdout","time":1430.987907872,"data":"[  23.4 min] zero-shot Jackson: cd3 (307 s)\n"}
+,{"stream_name":"stdout","time":1738.559103772,"data":"[  28.6 min] zero-shot Jackson: cd45 (307 s)\n"}
+,{"stream_name":"stdout","time":2045.880341334,"data":"[  33.7 min] zero-shot Jackson: cd68 (307 s)\n"}
+,{"stream_name":"stdout","time":2351.634315098,"data":"[  38.8 min] zero-shot Jackson: cytokeratin_5 (306 s)\n"}
+,{"stream_name":"stdout","time":2657.253054288,"data":"[  43.9 min] zero-shot Jackson: cytokeratin_8_18 (306 s)\n"}
+,{"stream_name":"stdout","time":2964.206811187,"data":"[  49.0 min] zero-shot Jackson: estrogen_receptor_alpha (307 s)\n"}
+,{"stream_name":"stdout","time":3270.81769743,"data":"[  54.1 min] zero-shot Jackson: ki_67 (307 s)\n"}
+,{"stream_name":"stdout","time":3577.76613224,"data":"[  59.2 min] zero-shot Jackson: pan_cytokeratin (307 s)\n"}
+,{"stream_name":"stdout","time":3884.482623319,"data":"[  64.3 min] zero-shot Jackson: sma (307 s)\n"}
+,{"stream_name":"stdout","time":4190.13825772,"data":"[  69.4 min] zero-shot Danenberg: c_erb_b_2_her2 (306 s)\n"}
+,{"stream_name":"stdout","time":4496.416910503,"data":"[  74.5 min] zero-shot Danenberg: cd20 (306 s)\n"}
+,{"stream_name":"stdout","time":4802.198587162,"data":"[  79.6 min] zero-shot Danenberg: cd3 (306 s)\n"}
+,{"stream_name":"stdout","time":5108.751975425,"data":"[  84.7 min] zero-shot Danenberg: cd45 (306 s)\n"}
+,{"stream_name":"stdout","time":5414.999430748,"data":"[  89.8 min] zero-shot Danenberg: cd68 (306 s)\n"}
+,{"stream_name":"stdout","time":5720.075702212,"data":"[  94.9 min] zero-shot Danenberg: cytokeratin_5 (305 s)\n"}
+,{"stream_name":"stdout","time":6024.938389761,"data":"[ 100.0 min] zero-shot Danenberg: cytokeratin_8_18 (305 s)\n"}
+,{"stream_name":"stdout","time":6330.618965032,"data":"[ 105.1 min] zero-shot Danenberg: estrogen_receptor_alpha (306 s)\n"}
+,{"stream_name":"stdout","time":6635.306239215,"data":"[ 110.2 min] zero-shot Danenberg: ki_67 (305 s)\n"}
+,{"stream_name":"stdout","time":6940.729401091,"data":"[ 115.3 min] zero-shot Danenberg: pan_cytokeratin (305 s)\n"}
+,{"stream_name":"stdout","time":7246.915241627,"data":"[ 120.4 min] zero-shot Danenberg: sma (306 s)\n"}
+,{"stream_name":"stdout","time":7562.936653481,"data":"[ 125.6 min] zero-shot Both: c_erb_b_2_her2 (316 s)\n"}
+,{"stream_name":"stdout","time":7878.070031993,"data":"[ 130.9 min] zero-shot Both: cd20 (315 s)\n"}
+,{"stream_name":"stdout","time":8193.923100587,"data":"[ 136.2 min] zero-shot Both: cd3 (316 s)\n"}
+,{"stream_name":"stdout","time":8510.472294623,"data":"[ 141.4 min] zero-shot Both: cd45 (316 s)\n"}
+,{"stream_name":"stdout","time":8826.999196702,"data":"[ 146.7 min] zero-shot Both: cd68 (316 s)\n"}
+,{"stream_name":"stdout","time":9141.511424511,"data":"[ 151.9 min] zero-shot Both: cytokeratin_5 (314 s)\n"}
+,{"stream_name":"stdout","time":9455.815922704,"data":"[ 157.2 min] zero-shot Both: cytokeratin_8_18 (314 s)\n"}
+,{"stream_name":"stdout","time":9770.810879994,"data":"[ 162.4 min] zero-shot Both: estrogen_receptor_alpha (315 s)\n"}
+,{"stream_name":"stdout","time":10085.335008338,"data":"[ 167.7 min] zero-shot Both: ki_67 (314 s)\n"}
+,{"stream_name":"stdout","time":10400.531957051,"data":"[ 172.9 min] zero-shot Both: pan_cytokeratin (315 s)\n"}
+,{"stream_name":"stdout","time":10716.453033734,"data":"[ 178.2 min] zero-shot Both: sma (316 s)\n"}
+,{"stream_name":"stdout","time":10894.581886818,"data":"[ 181.2 min] few-shot Jackson-\u003eDanenberg k=5: c_erb_b_2_her2 (8243 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":11072.799547537,"data":"[ 184.1 min] few-shot Jackson-\u003eDanenberg k=5: cd20 (8243 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":11252.256123552,"data":"[ 187.1 min] few-shot Jackson-\u003eDanenberg k=5: cd3 (8243 target cells, 179 s)\n"}
+,{"stream_name":"stdout","time":11431.32424687,"data":"[ 190.1 min] few-shot Jackson-\u003eDanenberg k=5: cd45 (8243 target cells, 179 s)\n"}
+,{"stream_name":"stdout","time":11609.708519406,"data":"[ 193.1 min] few-shot Jackson-\u003eDanenberg k=5: cd68 (8243 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":11788.813710422,"data":"[ 196.1 min] few-shot Jackson-\u003eDanenberg k=5: cytokeratin_5 (8243 target cells, 179 s)\n"}
+,{"stream_name":"stdout","time":11966.313645248,"data":"[ 199.0 min] few-shot Jackson-\u003eDanenberg k=5: cytokeratin_8_18 (8243 target cells, 177 s)\n"}
+,{"stream_name":"stdout","time":12144.534202953,"data":"[ 202.0 min] few-shot Jackson-\u003eDanenberg k=5: estrogen_receptor_alpha (8243 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":12320.647047427,"data":"[ 204.9 min] few-shot Jackson-\u003eDanenberg k=5: ki_67 (8243 target cells, 176 s)\n"}
+,{"stream_name":"stdout","time":12497.185169811,"data":"[ 207.9 min] few-shot Jackson-\u003eDanenberg k=5: pan_cytokeratin (8243 target cells, 176 s)\n"}
+,{"stream_name":"stdout","time":12675.408977881,"data":"[ 210.8 min] few-shot Jackson-\u003eDanenberg k=5: sma (8243 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":12857.933669265,"data":"[ 213.9 min] few-shot Jackson-\u003eDanenberg k=20: c_erb_b_2_her2 (25322 target cells, 182 s)\n"}
+,{"stream_name":"stdout","time":13039.222711481,"data":"[ 216.9 min] few-shot Jackson-\u003eDanenberg k=20: cd20 (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":13221.362749696,"data":"[ 219.9 min] few-shot Jackson-\u003eDanenberg k=20: cd3 (25322 target cells, 182 s)\n"}
+,{"stream_name":"stdout","time":13404.265992007,"data":"[ 223.0 min] few-shot Jackson-\u003eDanenberg k=20: cd45 (25322 target cells, 183 s)\n"}
+,{"stream_name":"stdout","time":13585.666023622,"data":"[ 226.0 min] few-shot Jackson-\u003eDanenberg k=20: cd68 (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":13766.993655081,"data":"[ 229.0 min] few-shot Jackson-\u003eDanenberg k=20: cytokeratin_5 (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":13947.570479793,"data":"[ 232.0 min] few-shot Jackson-\u003eDanenberg k=20: cytokeratin_8_18 (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":14129.073277293,"data":"[ 235.1 min] few-shot Jackson-\u003eDanenberg k=20: estrogen_receptor_alpha (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":14309.646503145,"data":"[ 238.1 min] few-shot Jackson-\u003eDanenberg k=20: ki_67 (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":14490.630291622,"data":"[ 241.1 min] few-shot Jackson-\u003eDanenberg k=20: pan_cytokeratin (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":14671.212092651,"data":"[ 244.1 min] few-shot Jackson-\u003eDanenberg k=20: sma (25322 target cells, 181 s)\n"}
+,{"stream_name":"stdout","time":14850.324243204,"data":"[ 247.1 min] few-shot Danenberg-\u003eJackson k=5: c_erb_b_2_her2 (14941 target cells, 179 s)\n"}
+,{"stream_name":"stdout","time":15028.332664892,"data":"[ 250.1 min] few-shot Danenberg-\u003eJackson k=5: cd20 (14941 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":15208.344037893,"data":"[ 253.1 min] few-shot Danenberg-\u003eJackson k=5: cd3 (14941 target cells, 180 s)\n"}
+,{"stream_name":"stdout","time":15386.822456621,"data":"[ 256.0 min] few-shot Danenberg-\u003eJackson k=5: cd45 (14941 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":15566.435356696,"data":"[ 259.0 min] few-shot Danenberg-\u003eJackson k=5: cd68 (14941 target cells, 180 s)\n"}
+,{"stream_name":"stdout","time":15745.850090665,"data":"[ 262.0 min] few-shot Danenberg-\u003eJackson k=5: cytokeratin_5 (14941 target cells, 179 s)\n"}
+,{"stream_name":"stdout","time":15924.400233456,"data":"[ 265.0 min] few-shot Danenberg-\u003eJackson k=5: cytokeratin_8_18 (14941 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":16102.784868806,"data":"[ 268.0 min] few-shot Danenberg-\u003eJackson k=5: estrogen_receptor_alpha (14941 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":16282.751396692,"data":"[ 271.0 min] few-shot Danenberg-\u003eJackson k=5: ki_67 (14941 target cells, 180 s)\n"}
+,{"stream_name":"stdout","time":16461.424467381,"data":"[ 273.9 min] few-shot Danenberg-\u003eJackson k=5: pan_cytokeratin (14941 target cells, 179 s)\n"}
+,{"stream_name":"stdout","time":16639.725224933,"data":"[ 276.9 min] few-shot Danenberg-\u003eJackson k=5: sma (14941 target cells, 178 s)\n"}
+,{"stream_name":"stdout","time":16829.349603638,"data":"[ 280.1 min] few-shot Danenberg-\u003eJackson k=20: c_erb_b_2_her2 (60950 target cells, 189 s)\n"}
+,{"stream_name":"stdout","time":17018.01600887,"data":"[ 283.2 min] few-shot Danenberg-\u003eJackson k=20: cd20 (60950 target cells, 189 s)\n"}
+,{"stream_name":"stdout","time":17207.715594432,"data":"[ 286.4 min] few-shot Danenberg-\u003eJackson k=20: cd3 (60950 target cells, 190 s)\n"}
+,{"stream_name":"stdout","time":17396.18622571,"data":"[ 289.5 min] few-shot Danenberg-\u003eJackson k=20: cd45 (60950 target cells, 188 s)\n"}
+,{"stream_name":"stdout","time":17584.942804033,"data":"[ 292.7 min] few-shot Danenberg-\u003eJackson k=20: cd68 (60950 target cells, 189 s)\n"}
+,{"stream_name":"stdout","time":17774.873208161,"data":"[ 295.8 min] few-shot Danenberg-\u003eJackson k=20: cytokeratin_5 (60950 target cells, 190 s)\n"}
+,{"stream_name":"stdout","time":17963.04518837,"data":"[ 299.0 min] few-shot Danenberg-\u003eJackson k=20: cytokeratin_8_18 (60950 target cells, 188 s)\n"}
+,{"stream_name":"stdout","time":18151.788840133,"data":"[ 302.1 min] few-shot Danenberg-\u003eJackson k=20: estrogen_receptor_alpha (60950 target cells, 189 s)\n"}
+,{"stream_name":"stdout","time":18343.317332199,"data":"[ 305.3 min] few-shot Danenberg-\u003eJackson k=20: ki_67 (60950 target cells, 191 s)\n"}
+,{"stream_name":"stdout","time":18531.866263297,"data":"[ 308.4 min] few-shot Danenberg-\u003eJackson k=20: pan_cytokeratin (60950 target cells, 188 s)\n"}
+,{"stream_name":"stdout","time":18719.785673501,"data":"[ 311.6 min] few-shot Danenberg-\u003eJackson k=20: sma (60950 target cells, 188 s)\n"}
+,{"stream_name":"stdout","time":18719.97030371,"data":"      setting     kind     train      test                            model  crps  cov50  cov80  cov95  width80  pit_ks  W2_draw    R4  rmse  gap80\n"}
+,{"stream_name":"stdout","time":18719.970332009,"data":"few-shot k=20 few-shot Danenberg   Jackson            Point LightGBM (full) 0.125    NaN    NaN    NaN      NaN     NaN      NaN 0.556 0.228    NaN\n"}
+,{"stream_name":"stdout","time":18719.970337319,"data":"few-shot k=20 few-shot Danenberg   Jackson    Point LightGBM (same context) 0.128    NaN    NaN    NaN      NaN     NaN      NaN 0.539 0.229    NaN\n"}
+,{"stream_name":"stdout","time":18719.970350434,"data":"few-shot k=20 few-shot Danenberg   Jackson         Quantile LightGBM (full) 0.089  0.419  0.688  0.843    0.252   0.083    0.081 0.518   NaN  0.112\n"}
+,{"stream_name":"stdout","time":18719.970353993,"data":"few-shot k=20 few-shot Danenberg   Jackson Quantile LightGBM (same context) 0.091  0.397  0.661  0.823    0.253   0.101    0.093 0.511   NaN  0.139\n"}
+,{"stream_name":"stdout","time":18719.970357597,"data":"few-shot k=20 few-shot Danenberg   Jackson                        TabPFN v2 0.089  0.429  0.709  0.856    0.246   0.069    0.079 0.526   NaN  0.091\n"}
+,{"stream_name":"stdout","time":18719.970361162,"data":"few-shot k=20 few-shot Danenberg   Jackson               TabPFN v2 (median) 0.117    NaN    NaN    NaN      NaN     NaN      NaN 0.531 0.236    NaN\n"}
+,{"stream_name":"stdout","time":18719.970364811,"data":"few-shot k=20 few-shot   Jackson Danenberg            Point LightGBM (full) 0.107    NaN    NaN    NaN      NaN     NaN      NaN 0.557 0.193    NaN\n"}
+,{"stream_name":"stdout","time":18719.970368362,"data":"few-shot k=20 few-shot   Jackson Danenberg    Point LightGBM (same context) 0.111    NaN    NaN    NaN      NaN     NaN      NaN 0.536 0.195    NaN\n"}
+,{"stream_name":"stdout","time":18719.970371808,"data":"few-shot k=20 few-shot   Jackson Danenberg         Quantile LightGBM (full) 0.076  0.403  0.670  0.826    0.206   0.092    0.070 0.541   NaN  0.130\n"}
+,{"stream_name":"stdout","time":18719.970376889,"data":"few-shot k=20 few-shot   Jackson Danenberg Quantile LightGBM (same context) 0.077  0.393  0.660  0.822    0.211   0.099    0.072 0.525   NaN  0.140\n"}
+,{"stream_name":"stdout","time":18719.970384161,"data":"few-shot k=20 few-shot   Jackson Danenberg                        TabPFN v2 0.077  0.411  0.680  0.828    0.205   0.085    0.061 0.545   NaN  0.120\n"}
+,{"stream_name":"stdout","time":18719.970386577,"data":"few-shot k=20 few-shot   Jackson Danenberg               TabPFN v2 (median) 0.101    NaN    NaN    NaN      NaN     NaN      NaN 0.548 0.195    NaN\n"}
+,{"stream_name":"stdout","time":18719.970389973,"data":" few-shot k=5 few-shot Danenberg   Jackson            Point LightGBM (full) 0.140    NaN    NaN    NaN      NaN     NaN      NaN 0.490 0.254    NaN\n"}
+,{"stream_name":"stdout","time":18719.970392422,"data":" few-shot k=5 few-shot Danenberg   Jackson    Point LightGBM (same context) 0.142    NaN    NaN    NaN      NaN     NaN      NaN 0.487 0.255    NaN\n"}
+,{"stream_name":"stdout","time":18719.970394784,"data":" few-shot k=5 few-shot Danenberg   Jackson         Quantile LightGBM (full) 0.107  0.339  0.585  0.757    0.202   0.152    0.128 0.487   NaN  0.215\n"}
+,{"stream_name":"stdout","time":18719.970397189,"data":" few-shot k=5 few-shot Danenberg   Jackson Quantile LightGBM (same context) 0.106  0.332  0.578  0.748    0.213   0.151    0.128 0.477   NaN  0.222\n"}
+,{"stream_name":"stdout","time":18719.970399514,"data":" few-shot k=5 few-shot Danenberg   Jackson                        TabPFN v2 0.104  0.379  0.643  0.803    0.212   0.131    0.119 0.470   NaN  0.157\n"}
+,{"stream_name":"stdout","time":18719.970401833,"data":" few-shot k=5 few-shot Danenberg   Jackson               TabPFN v2 (median) 0.132    NaN    NaN    NaN      NaN     NaN      NaN 0.473 0.263    NaN\n"}
+,{"stream_name":"stdout","time":18719.970404159,"data":" few-shot k=5 few-shot   Jackson Danenberg            Point LightGBM (full) 0.115    NaN    NaN    NaN      NaN     NaN      NaN 0.524 0.203    NaN\n"}
+,{"stream_name":"stdout","time":18719.970406568,"data":" few-shot k=5 few-shot   Jackson Danenberg    Point LightGBM (same context) 0.115    NaN    NaN    NaN      NaN     NaN      NaN 0.515 0.202    NaN\n"}
+,{"stream_name":"stdout","time":18719.970408886,"data":" few-shot k=5 few-shot   Jackson Danenberg         Quantile LightGBM (full) 0.084  0.334  0.587  0.781    0.173   0.154    0.094 0.524   NaN  0.213\n"}
+,{"stream_name":"stdout","time":18719.970414388,"data":" few-shot k=5 few-shot   Jackson Danenberg Quantile LightGBM (same context) 0.084  0.340  0.596  0.776    0.185   0.160    0.093 0.525   NaN  0.204\n"}
+,{"stream_name":"stdout","time":18719.970416831,"data":" few-shot k=5 few-shot   Jackson Danenberg                        TabPFN v2 0.085  0.364  0.618  0.774    0.181   0.126    0.089 0.535   NaN  0.182\n"}
+,{"stream_name":"stdout","time":18719.970419175,"data":" few-shot k=5 few-shot   Jackson Danenberg               TabPFN v2 (median) 0.109    NaN    NaN    NaN      NaN     NaN      NaN 0.539 0.205    NaN\n"}
+,{"stream_name":"stdout","time":18719.970421539,"data":"    zero-shot     both      Both Danenberg            Point LightGBM (full) 0.102    NaN    NaN    NaN      NaN     NaN      NaN 0.606 0.184    NaN\n"}
+,{"stream_name":"stdout","time":18719.970423891,"data":"    zero-shot     both      Both Danenberg    Point LightGBM (same context) 0.108    NaN    NaN    NaN      NaN     NaN      NaN 0.554 0.191    NaN\n"}
+,{"stream_name":"stdout","time":18719.970426471,"data":"    zero-shot     both      Both Danenberg         Quantile LightGBM (full) 0.071  0.473  0.753  0.888    0.267   0.047    0.059 0.557   NaN  0.047\n"}
+,{"stream_name":"stdout","time":18719.970428833,"data":"    zero-shot     both      Both Danenberg Quantile LightGBM (same context) 0.073  0.437  0.705  0.851    0.255   0.065    0.068 0.546   NaN  0.095\n"}
+,{"stream_name":"stdout","time":18719.970431172,"data":"    zero-shot     both      Both Danenberg                        TabPFN v2 0.072  0.465  0.745  0.883    0.252   0.047    0.066 0.558   NaN  0.055\n"}
+,{"stream_name":"stdout","time":18719.970433509,"data":"    zero-shot     both      Both Danenberg               TabPFN v2 (median) 0.097    NaN    NaN    NaN      NaN     NaN      NaN 0.565 0.192    NaN\n"}
+,{"stream_name":"stdout","time":18719.970435823,"data":"    zero-shot     both      Both   Jackson            Point LightGBM (full) 0.122    NaN    NaN    NaN      NaN     NaN      NaN 0.591 0.216    NaN\n"}
+,{"stream_name":"stdout","time":18719.970438131,"data":"    zero-shot     both      Both   Jackson    Point LightGBM (same context) 0.130    NaN    NaN    NaN      NaN     NaN      NaN 0.556 0.225    NaN\n"}
+,{"stream_name":"stdout","time":18719.970440443,"data":"    zero-shot     both      Both   Jackson         Quantile LightGBM (full) 0.084  0.470  0.758  0.900    0.323   0.046    0.065 0.540   NaN  0.042\n"}
+,{"stream_name":"stdout","time":18719.970442778,"data":"    zero-shot     both      Both   Jackson Quantile LightGBM (same context) 0.088  0.433  0.710  0.865    0.308   0.061    0.079 0.545   NaN  0.090\n"}
+,{"stream_name":"stdout","time":18719.970445098,"data":"    zero-shot     both      Both   Jackson                        TabPFN v2 0.082  0.461  0.755  0.899    0.303   0.049    0.069 0.565   NaN  0.045\n"}
+,{"stream_name":"stdout","time":18719.970447411,"data":"    zero-shot     both      Both   Jackson               TabPFN v2 (median) 0.113    NaN    NaN    NaN      NaN     NaN      NaN 0.570 0.227    NaN\n"}
+,{"stream_name":"stdout","time":18719.970449966,"data":"    zero-shot      own Danenberg Danenberg            Point LightGBM (full) 0.101    NaN    NaN    NaN      NaN     NaN      NaN 0.616 0.183    NaN\n"}
+,{"stream_name":"stdout","time":18719.970452319,"data":"    zero-shot      own Danenberg Danenberg    Point LightGBM (same context) 0.104    NaN    NaN    NaN      NaN     NaN      NaN 0.581 0.187    NaN\n"}
+,{"stream_name":"stdout","time":18719.970454647,"data":"    zero-shot      own Danenberg Danenberg         Quantile LightGBM (full) 0.069  0.462  0.741  0.881    0.250   0.054    0.058 0.569   NaN  0.059\n"}
+,{"stream_name":"stdout","time":18719.97045697,"data":"    zero-shot      own Danenberg Danenberg Quantile LightGBM (same context) 0.070  0.430  0.697  0.849    0.239   0.068    0.064 0.559   NaN  0.103\n"}
+,{"stream_name":"stdout","time":18719.970461774,"data":"    zero-shot      own Danenberg Danenberg                        TabPFN v2 0.069  0.456  0.738  0.879    0.235   0.053    0.062 0.569   NaN  0.062\n"}
+,{"stream_name":"stdout","time":18719.970464261,"data":"    zero-shot      own Danenberg Danenberg               TabPFN v2 (median) 0.093    NaN    NaN    NaN      NaN     NaN      NaN 0.574 0.187    NaN\n"}
+,{"stream_name":"stdout","time":18719.970466776,"data":"    zero-shot      own   Jackson   Jackson            Point LightGBM (full) 0.116    NaN    NaN    NaN      NaN     NaN      NaN 0.619 0.208    NaN\n"}
+,{"stream_name":"stdout","time":18719.970469154,"data":"    zero-shot      own   Jackson   Jackson    Point LightGBM (same context) 0.121    NaN    NaN    NaN      NaN     NaN      NaN 0.579 0.215    NaN\n"}
+,{"stream_name":"stdout","time":18719.970471476,"data":"    zero-shot      own   Jackson   Jackson         Quantile LightGBM (full) 0.080  0.460  0.743  0.887    0.293   0.043    0.063 0.578   NaN  0.057\n"}
+,{"stream_name":"stdout","time":18719.970473799,"data":"    zero-shot      own   Jackson   Jackson Quantile LightGBM (same context) 0.083  0.429  0.698  0.851    0.279   0.059    0.075 0.570   NaN  0.102\n"}
+,{"stream_name":"stdout","time":18719.970476123,"data":"    zero-shot      own   Jackson   Jackson                        TabPFN v2 0.079  0.463  0.755  0.893    0.273   0.048    0.070 0.594   NaN  0.045\n"}
+,{"stream_name":"stdout","time":18719.970478461,"data":"    zero-shot      own   Jackson   Jackson               TabPFN v2 (median) 0.108    NaN    NaN    NaN      NaN     NaN      NaN 0.600 0.219    NaN\n"}
+,{"stream_name":"stdout","time":18719.970480788,"data":"    zero-shot transfer Danenberg   Jackson            Point LightGBM (full) 0.163    NaN    NaN    NaN      NaN     NaN      NaN 0.373 0.293    NaN\n"}
+,{"stream_name":"stdout","time":18719.970483111,"data":"    zero-shot transfer Danenberg   Jackson    Point LightGBM (same context) 0.171    NaN    NaN    NaN      NaN     NaN      NaN 0.364 0.302    NaN\n"}
+,{"stream_name":"stdout","time":18719.970485428,"data":"    zero-shot transfer Danenberg   Jackson         Quantile LightGBM (full) 0.135  0.237  0.434  0.591    0.210   0.369    0.209 0.363   NaN  0.366\n"}
+,{"stream_name":"stdout","time":18719.970487752,"data":"    zero-shot transfer Danenberg   Jackson Quantile LightGBM (same context) 0.137  0.225  0.429  0.597    0.213   0.384    0.211 0.356   NaN  0.371\n"}
+,{"stream_name":"stdout","time":18719.97049008,"data":"    zero-shot transfer Danenberg   Jackson                        TabPFN v2 0.135  0.243  0.439  0.592    0.228   0.358    0.210 0.334   NaN  0.361\n"}
+,{"stream_name":"stdout","time":18719.970492402,"data":"    zero-shot transfer Danenberg   Jackson               TabPFN v2 (median) 0.161    NaN    NaN    NaN      NaN     NaN      NaN 0.341 0.298    NaN\n"}
+,{"stream_name":"stdout","time":18719.970494951,"data":"    zero-shot transfer   Jackson Danenberg            Point LightGBM (full) 0.189    NaN    NaN    NaN      NaN     NaN      NaN 0.405 0.271    NaN\n"}
+,{"stream_name":"stdout","time":18719.970497326,"data":"    zero-shot transfer   Jackson Danenberg    Point LightGBM (same context) 0.199    NaN    NaN    NaN      NaN     NaN      NaN 0.380 0.277    NaN\n"}
+,{"stream_name":"stdout","time":18719.970499682,"data":"    zero-shot transfer   Jackson Danenberg         Quantile LightGBM (full) 0.128  0.336  0.570  0.722    0.326   0.375    0.168 0.402   NaN  0.273\n"}
+,{"stream_name":"stdout","time":18719.970502014,"data":"    zero-shot transfer   Jackson Danenberg Quantile LightGBM (same context) 0.128  0.319  0.541  0.720    0.324   0.393    0.167 0.386   NaN  0.310\n"}
+,{"stream_name":"stdout","time":18719.970504331,"data":"    zero-shot transfer   Jackson Danenberg                        TabPFN v2 0.125  0.339  0.590  0.754    0.332   0.394    0.168 0.410   NaN  0.248\n"}
+,{"stream_name":"stdout","time":18719.970508625,"data":"    zero-shot transfer   Jackson Danenberg               TabPFN v2 (median) 0.161    NaN    NaN    NaN      NaN     NaN      NaN 0.428 0.254    NaN\n"}
+,{"stream_name":"stdout","time":18720.025708189,"data":"metric                                                              cov80   crps  gap80  gap80_diff\n"}
+,{"stream_name":"stdout","time":18720.025761048,"data":"setting       train     test      model                                                            \n"}
+,{"stream_name":"stdout","time":18720.025766565,"data":"few-shot k=20 Danenberg Jackson   Point LightGBM (full)               NaN  0.125    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025770702,"data":"                                  Point LightGBM (same context)       NaN  0.128    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025774727,"data":"                                  Quantile LightGBM (full)          0.688  0.089  0.112         NaN\n"}
+,{"stream_name":"stdout","time":18720.025778643,"data":"                                  Quantile LightGBM (same context)  0.661  0.091  0.139         NaN\n"}
+,{"stream_name":"stdout","time":18720.025789003,"data":"                                  TabPFN v2                         0.709  0.089  0.091         NaN\n"}
+,{"stream_name":"stdout","time":18720.025791868,"data":"                                  TabPFN v2 (median)                  NaN  0.117    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025794468,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.021\n"}
+,{"stream_name":"stdout","time":18720.025797629,"data":"              Jackson   Danenberg Point LightGBM (full)               NaN  0.107    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025800106,"data":"                                  Point LightGBM (same context)       NaN  0.111    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025802649,"data":"                                  Quantile LightGBM (full)          0.670  0.076  0.130         NaN\n"}
+,{"stream_name":"stdout","time":18720.025805185,"data":"                                  Quantile LightGBM (same context)  0.660  0.077  0.140         NaN\n"}
+,{"stream_name":"stdout","time":18720.025807641,"data":"                                  TabPFN v2                         0.680  0.077  0.120         NaN\n"}
+,{"stream_name":"stdout","time":18720.025810721,"data":"                                  TabPFN v2 (median)                  NaN  0.101    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025813304,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.010\n"}
+,{"stream_name":"stdout","time":18720.025815814,"data":"few-shot k=5  Danenberg Jackson   Point LightGBM (full)               NaN  0.140    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025818292,"data":"                                  Point LightGBM (same context)       NaN  0.142    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025820926,"data":"                                  Quantile LightGBM (full)          0.585  0.107  0.215         NaN\n"}
+,{"stream_name":"stdout","time":18720.025823397,"data":"                                  Quantile LightGBM (same context)  0.578  0.106  0.222         NaN\n"}
+,{"stream_name":"stdout","time":18720.025826834,"data":"                                  TabPFN v2                         0.643  0.104  0.157         NaN\n"}
+,{"stream_name":"stdout","time":18720.025829384,"data":"                                  TabPFN v2 (median)                  NaN  0.132    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025831882,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.058\n"}
+,{"stream_name":"stdout","time":18720.025846012,"data":"              Jackson   Danenberg Point LightGBM (full)               NaN  0.115    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025848776,"data":"                                  Point LightGBM (same context)       NaN  0.115    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025851247,"data":"                                  Quantile LightGBM (full)          0.587  0.084  0.213         NaN\n"}
+,{"stream_name":"stdout","time":18720.025853692,"data":"                                  Quantile LightGBM (same context)  0.596  0.084  0.204         NaN\n"}
+,{"stream_name":"stdout","time":18720.025856167,"data":"                                  TabPFN v2                         0.618  0.085  0.182         NaN\n"}
+,{"stream_name":"stdout","time":18720.025858623,"data":"                                  TabPFN v2 (median)                  NaN  0.109    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.02586108,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.031\n"}
+,{"stream_name":"stdout","time":18720.025863556,"data":"zero-shot     Both      Danenberg Point LightGBM (full)               NaN  0.102    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025866092,"data":"                                  Point LightGBM (same context)       NaN  0.108    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025868627,"data":"                                  Quantile LightGBM (full)          0.753  0.071  0.047         NaN\n"}
+,{"stream_name":"stdout","time":18720.025871158,"data":"                                  Quantile LightGBM (same context)  0.705  0.073  0.095         NaN\n"}
+,{"stream_name":"stdout","time":18720.025873696,"data":"                                  TabPFN v2                         0.745  0.072  0.055         NaN\n"}
+,{"stream_name":"stdout","time":18720.025876137,"data":"                                  TabPFN v2 (median)                  NaN  0.097    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025878663,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN       0.008\n"}
+,{"stream_name":"stdout","time":18720.025881127,"data":"                        Jackson   Point LightGBM (full)               NaN  0.122    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.02588358,"data":"                                  Point LightGBM (same context)       NaN  0.130    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025886108,"data":"                                  Quantile LightGBM (full)          0.758  0.084  0.042         NaN\n"}
+,{"stream_name":"stdout","time":18720.025888877,"data":"                                  Quantile LightGBM (same context)  0.710  0.088  0.090         NaN\n"}
+,{"stream_name":"stdout","time":18720.025891485,"data":"                                  TabPFN v2                         0.755  0.082  0.045         NaN\n"}
+,{"stream_name":"stdout","time":18720.025893943,"data":"                                  TabPFN v2 (median)                  NaN  0.113    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025896406,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN       0.003\n"}
+,{"stream_name":"stdout","time":18720.025898888,"data":"              Danenberg Danenberg Point LightGBM (full)               NaN  0.101    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025901345,"data":"                                  Point LightGBM (same context)       NaN  0.104    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025903805,"data":"                                  Quantile LightGBM (full)          0.741  0.069  0.059         NaN\n"}
+,{"stream_name":"stdout","time":18720.025908781,"data":"                                  Quantile LightGBM (same context)  0.697  0.070  0.103         NaN\n"}
+,{"stream_name":"stdout","time":18720.025911427,"data":"                                  TabPFN v2                         0.738  0.069  0.062         NaN\n"}
+,{"stream_name":"stdout","time":18720.025913876,"data":"                                  TabPFN v2 (median)                  NaN  0.093    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.02591635,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN       0.004\n"}
+,{"stream_name":"stdout","time":18720.025918905,"data":"                        Jackson   Point LightGBM (full)               NaN  0.163    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025921395,"data":"                                  Point LightGBM (same context)       NaN  0.171    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025923851,"data":"                                  Quantile LightGBM (full)          0.434  0.135  0.366         NaN\n"}
+,{"stream_name":"stdout","time":18720.025926295,"data":"                                  Quantile LightGBM (same context)  0.429  0.137  0.371         NaN\n"}
+,{"stream_name":"stdout","time":18720.025928732,"data":"                                  TabPFN v2                         0.439  0.135  0.361         NaN\n"}
+,{"stream_name":"stdout","time":18720.025931329,"data":"                                  TabPFN v2 (median)                  NaN  0.161    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025933865,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.005\n"}
+,{"stream_name":"stdout","time":18720.025936347,"data":"              Jackson   Danenberg Point LightGBM (full)               NaN  0.189    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025938801,"data":"                                  Point LightGBM (same context)       NaN  0.199    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025941253,"data":"                                  Quantile LightGBM (full)          0.570  0.128  0.273         NaN\n"}
+,{"stream_name":"stdout","time":18720.025944267,"data":"                                  Quantile LightGBM (same context)  0.541  0.128  0.310         NaN\n"}
+,{"stream_name":"stdout","time":18720.025946781,"data":"                                  TabPFN v2                         0.590  0.125  0.248         NaN\n"}
+,{"stream_name":"stdout","time":18720.025949233,"data":"                                  TabPFN v2 (median)                  NaN  0.161    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025951678,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.025\n"}
+,{"stream_name":"stdout","time":18720.025954138,"data":"                        Jackson   Point LightGBM (full)               NaN  0.116    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025956602,"data":"                                  Point LightGBM (same context)       NaN  0.121    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025959063,"data":"                                  Quantile LightGBM (full)          0.743  0.080  0.057         NaN\n"}
+,{"stream_name":"stdout","time":18720.025961501,"data":"                                  Quantile LightGBM (same context)  0.698  0.083  0.102         NaN\n"}
+,{"stream_name":"stdout","time":18720.025963961,"data":"                                  TabPFN v2                         0.755  0.079  0.045         NaN\n"}
+,{"stream_name":"stdout","time":18720.025966423,"data":"                                  TabPFN v2 (median)                  NaN  0.108    NaN         NaN\n"}
+,{"stream_name":"stdout","time":18720.025971127,"data":"                                  TabPFN − LightGBM (full)            NaN    NaN    NaN      -0.012\n"}
+,{"stream_name":"stdout","time":18720.025973752,"data":"call                                                                                   better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":18720.025976235,"data":"setting       train     test      model              vs                                                   \n"}
+,{"stream_name":"stdout","time":18720.02597868,"data":"few-shot k=20 Danenberg Jackson   TabPFN v2          Quantile LightGBM (full)               2     8      0\n"}
+,{"stream_name":"stdout","time":18720.025981148,"data":"                                                     Quantile LightGBM (same context)       5     5      0\n"}
+,{"stream_name":"stdout","time":18720.025987177,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  8     1      1\n"}
+,{"stream_name":"stdout","time":18720.025989741,"data":"              Jackson   Danenberg TabPFN v2          Quantile LightGBM (full)               3     6      1\n"}
+,{"stream_name":"stdout","time":18720.025992241,"data":"                                                     Quantile LightGBM (same context)       5     4      1\n"}
+,{"stream_name":"stdout","time":18720.025994749,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  5     5      0\n"}
+,{"stream_name":"stdout","time":18720.025997235,"data":"few-shot k=5  Danenberg Jackson   TabPFN v2          Quantile LightGBM (full)               4     5      1\n"}
+,{"stream_name":"stdout","time":18720.026000034,"data":"                                                     Quantile LightGBM (same context)       4     4      2\n"}
+,{"stream_name":"stdout","time":18720.026002588,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  4     6      0\n"}
+,{"stream_name":"stdout","time":18720.026005085,"data":"              Jackson   Danenberg TabPFN v2          Quantile LightGBM (full)               3     6      1\n"}
+,{"stream_name":"stdout","time":18720.026007569,"data":"                                                     Quantile LightGBM (same context)       2     6      2\n"}
+,{"stream_name":"stdout","time":18720.02601007,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  7     2      1\n"}
+,{"stream_name":"stdout","time":18720.026012561,"data":"zero-shot     Both      Danenberg TabPFN v2          Quantile LightGBM (full)               2     6      2\n"}
+,{"stream_name":"stdout","time":18720.02601505,"data":"                                                     Quantile LightGBM (same context)       6     4      0\n"}
+,{"stream_name":"stdout","time":18720.026017533,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  6     4      0\n"}
+,{"stream_name":"stdout","time":18720.026020016,"data":"                        Jackson   TabPFN v2          Quantile LightGBM (full)               2     7      1\n"}
+,{"stream_name":"stdout","time":18720.026022674,"data":"                                                     Quantile LightGBM (same context)       8     2      0\n"}
+,{"stream_name":"stdout","time":18720.026025162,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  8     2      0\n"}
+,{"stream_name":"stdout","time":18720.026027652,"data":"              Danenberg Danenberg TabPFN v2          Quantile LightGBM (full)               1     8      1\n"}
+,{"stream_name":"stdout","time":18720.026030136,"data":"                                                     Quantile LightGBM (same context)       7     3      0\n"}
+,{"stream_name":"stdout","time":18720.026034709,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  6     4      0\n"}
+,{"stream_name":"stdout","time":18720.026037356,"data":"                        Jackson   TabPFN v2          Quantile LightGBM (full)               2     4      4\n"}
+,{"stream_name":"stdout","time":18720.026039844,"data":"                                                     Quantile LightGBM (same context)       2     4      4\n"}
+,{"stream_name":"stdout","time":18720.026042321,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  4     2      4\n"}
+,{"stream_name":"stdout","time":18720.026044803,"data":"              Jackson   Danenberg TabPFN v2          Quantile LightGBM (full)               4     2      4\n"}
+,{"stream_name":"stdout","time":18720.026052478,"data":"                                                     Quantile LightGBM (same context)       5     2      3\n"}
+,{"stream_name":"stdout","time":18720.02605532,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  7     1      2\n"}
+,{"stream_name":"stdout","time":18720.026057871,"data":"                        Jackson   TabPFN v2          Quantile LightGBM (full)               2     8      0\n"}
+,{"stream_name":"stdout","time":18720.026060381,"data":"                                                     Quantile LightGBM (same context)       5     5      0\n"}
+,{"stream_name":"stdout","time":18720.026062883,"data":"                                  TabPFN v2 (median) Point LightGBM (full)                  7     3      0\n"}
+,{"stream_name":"stdout","time":18720.026065494,"data":"{\n"}
+,{"stream_name":"stdout","time":18720.026067901,"data":" \"transfer_coverage_better\": {\n"}
+,{"stream_name":"stdout","time":18720.026070418,"data":"  \"Danenberg\": true,\n"}
+,{"stream_name":"stdout","time":18720.026072826,"data":"  \"Jackson\": false\n"}
+,{"stream_name":"stdout","time":18720.026075282,"data":" },\n"}
+,{"stream_name":"stdout","time":18720.026077636,"data":" \"fewshot_crps_markers_better\": {\n"}
+,{"stream_name":"stdout","time":18720.026080169,"data":"  \"few-shot k=20 Danenberg-\u003eJackson\": 2,\n"}
+,{"stream_name":"stdout","time":18720.026082976,"data":"  \"few-shot k=20 Jackson-\u003eDanenberg\": 3,\n"}
+,{"stream_name":"stdout","time":18720.026085519,"data":"  \"few-shot k=5 Danenberg-\u003eJackson\": 4,\n"}
+,{"stream_name":"stdout","time":18720.02608796,"data":"  \"few-shot k=5 Jackson-\u003eDanenberg\": 3\n"}
+,{"stream_name":"stdout","time":18720.02609041,"data":" },\n"}
+,{"stream_name":"stdout","time":18720.026092818,"data":" \"claim\": true,\n"}
+,{"stream_name":"stdout","time":18720.026095514,"data":" \"rule\": \"TabPFN lowers transfer |cov80-0.8| vs quantile LightGBM (full) (paired CI\u003c0), or few-shot CRPS better for \u003e=6/10 markers\"\n"}
+,{"stream_name":"stdout","time":18720.026098406,"data":"}\n"}
+,{"stream_name":"stdout","time":18721.056005502,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":18726.121200645,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":18726.12122486,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":18726.302037199,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":18726.302072343,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":18727.06217801,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":18727.155622184,"data":"[NbConvertApp] Writing 109576 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":18729.548759429,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":18730.245270373,"data":"[NbConvertApp] Writing 528871 bytes to __results__.html\n"}
+]

@@ -1,0 +1,42 @@
+[   0.0 min] child started: 397 train / 39 val images, 96 val crops, 2 GPUs | RSS 1.1 GB, system used 7.3 GB, GPU0 0.0 GB
+[   0.6 min] 0.525 s/step, validation 17 s -> 19331 steps in 180 min | RSS 4.0 GB, system used 8.3 GB, GPU0 0.4 GB
+[   5.5 min] step 500/19331: train loss 409.8477, val LOO pixel r 0.006 (best 0.006) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  10.4 min] step 1000/19331: train loss 123.3280, val LOO pixel r 0.026 (best 0.026) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  15.3 min] step 1500/19331: train loss 124.4482, val LOO pixel r 0.018 (best 0.026) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  20.2 min] step 2000/19331: train loss 107.4930, val LOO pixel r 0.023 (best 0.026) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  25.1 min] step 2500/19331: train loss 91.0394, val LOO pixel r 0.018 (best 0.026) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  30.0 min] step 3000/19331: train loss 91.1261, val LOO pixel r 0.017 (best 0.026) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  34.9 min] step 3500/19331: train loss 85.0681, val LOO pixel r 0.016 (best 0.026) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  39.8 min] step 4000/19331: train loss 20.3737, val LOO pixel r 0.030 (best 0.030) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  44.6 min] step 4500/19331: train loss 0.0085, val LOO pixel r 0.054 (best 0.054) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  49.5 min] step 5000/19331: train loss -0.0563, val LOO pixel r 0.098 (best 0.098) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  54.4 min] step 5500/19331: train loss -0.1142, val LOO pixel r 0.133 (best 0.133) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  59.3 min] step 6000/19331: train loss -0.1497, val LOO pixel r 0.201 (best 0.201) | RSS 6.6 GB, system used 8.4 GB, GPU0 0.4 GB
+[  64.2 min] step 6500/19331: train loss -0.1706, val LOO pixel r 0.263 (best 0.263) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  69.1 min] step 7000/19331: train loss -0.1743, val LOO pixel r 0.362 (best 0.362) | RSS 6.8 GB, system used 8.6 GB, GPU0 0.4 GB
+[  74.0 min] step 7500/19331: train loss -0.1715, val LOO pixel r 0.398 (best 0.398) | RSS 6.8 GB, system used 8.6 GB, GPU0 0.4 GB
+[  78.9 min] step 8000/19331: train loss -0.1678, val LOO pixel r 0.459 (best 0.459) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  83.8 min] step 8500/19331: train loss -0.1672, val LOO pixel r 0.478 (best 0.478) | RSS 6.8 GB, system used 8.6 GB, GPU0 0.4 GB
+[  88.7 min] step 9000/19331: train loss -0.1643, val LOO pixel r 0.500 (best 0.500) | RSS 6.7 GB, system used 8.6 GB, GPU0 0.4 GB
+[  93.6 min] step 9500/19331: train loss -0.1613, val LOO pixel r 0.535 (best 0.535) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[  98.5 min] step 10000/19331: train loss -0.1626, val LOO pixel r 0.597 (best 0.597) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 103.4 min] step 10500/19331: train loss -0.1637, val LOO pixel r 0.611 (best 0.611) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 108.4 min] step 11000/19331: train loss -0.1634, val LOO pixel r 0.615 (best 0.615) | RSS 6.7 GB, system used 8.6 GB, GPU0 0.4 GB
+[ 113.3 min] step 11500/19331: train loss -0.1595, val LOO pixel r 0.624 (best 0.624) | RSS 6.7 GB, system used 8.6 GB, GPU0 0.4 GB
+[ 118.2 min] step 12000/19331: train loss -0.1583, val LOO pixel r 0.631 (best 0.631) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 123.1 min] step 12500/19331: train loss -0.1579, val LOO pixel r 0.627 (best 0.631) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 128.0 min] step 13000/19331: train loss -0.1573, val LOO pixel r 0.636 (best 0.636) | RSS 6.8 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 132.9 min] step 13500/19331: train loss -0.1555, val LOO pixel r 0.637 (best 0.637) | RSS 6.8 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 137.9 min] step 14000/19331: train loss -0.1536, val LOO pixel r 0.639 (best 0.639) | RSS 6.8 GB, system used 8.6 GB, GPU0 0.4 GB
+[ 142.8 min] step 14500/19331: train loss -0.1531, val LOO pixel r 0.639 (best 0.639) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 147.7 min] step 15000/19331: train loss -0.1522, val LOO pixel r 0.640 (best 0.640) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 152.6 min] step 15500/19331: train loss -0.1524, val LOO pixel r 0.644 (best 0.644) | RSS 6.8 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 157.5 min] step 16000/19331: train loss -0.1517, val LOO pixel r 0.644 (best 0.644) | RSS 6.8 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 162.4 min] step 16500/19331: train loss -0.1500, val LOO pixel r 0.646 (best 0.646) | RSS 6.8 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 167.4 min] step 17000/19331: train loss -0.1509, val LOO pixel r 0.645 (best 0.646) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 172.3 min] step 17500/19331: train loss -0.1516, val LOO pixel r 0.646 (best 0.646) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 177.2 min] step 18000/19331: train loss -0.1501, val LOO pixel r 0.645 (best 0.646) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 182.1 min] step 18500/19331: train loss -0.1509, val LOO pixel r 0.646 (best 0.646) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 187.0 min] step 19000/19331: train loss -0.1511, val LOO pixel r 0.646 (best 0.646) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 190.3 min] step 19331/19331: train loss -0.1513, val LOO pixel r 0.645 (best 0.646) | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB
+[ 190.3 min] child done | RSS 6.7 GB, system used 8.5 GB, GPU0 0.4 GB

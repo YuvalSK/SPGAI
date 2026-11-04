@@ -1,0 +1,78 @@
+setting,train,marker,seconds,n_target_cells
+zero-shot,Jackson,c_erb_b_2_her2,297.15297389030457,
+zero-shot,Jackson,cd20,307.1067488193512,
+zero-shot,Jackson,cd3,307.2920506000519,
+zero-shot,Jackson,cd45,307.4877471923828,
+zero-shot,Jackson,cd68,307.2556269168854,
+zero-shot,Jackson,cytokeratin_5,305.6998670101166,
+zero-shot,Jackson,cytokeratin_8_18,305.5524425506592,
+zero-shot,Jackson,estrogen_receptor_alpha,306.8931164741516,
+zero-shot,Jackson,ki_67,306.5537438392639,
+zero-shot,Jackson,pan_cytokeratin,306.87981963157654,
+zero-shot,Jackson,sma,306.6475031375885,
+zero-shot,Danenberg,c_erb_b_2_her2,305.57879757881165,
+zero-shot,Danenberg,cd20,306.21579599380493,
+zero-shot,Danenberg,cd3,305.72080659866333,
+zero-shot,Danenberg,cd45,306.482882976532,
+zero-shot,Danenberg,cd68,306.18593668937683,
+zero-shot,Danenberg,cytokeratin_5,305.0093140602112,
+zero-shot,Danenberg,cytokeratin_8_18,304.8052361011505,
+zero-shot,Danenberg,estrogen_receptor_alpha,305.6171176433563,
+zero-shot,Danenberg,ki_67,304.6290352344513,
+zero-shot,Danenberg,pan_cytokeratin,305.35722041130066,
+zero-shot,Danenberg,sma,306.1246728897095,
+zero-shot,Both,c_erb_b_2_her2,315.9000585079193,
+zero-shot,Both,cd20,314.9983344078064,
+zero-shot,Both,cd3,315.72384548187256,
+zero-shot,Both,cd45,316.425888299942,
+zero-shot,Both,cd68,316.40124249458313,
+zero-shot,Both,cytokeratin_5,314.38091492652893,
+zero-shot,Both,cytokeratin_8_18,314.1792869567871,
+zero-shot,Both,estrogen_receptor_alpha,314.8703815937042,
+zero-shot,Both,ki_67,314.39173889160156,
+zero-shot,Both,pan_cytokeratin,315.06494426727295,
+zero-shot,Both,sma,315.79903268814087,
+few-shot k=5,Jackson,c_erb_b_2_her2,177.67228817939758,8243.0
+few-shot k=5,Jackson,cd20,178.15010166168213,8243.0
+few-shot k=5,Jackson,cd3,179.3989224433899,8243.0
+few-shot k=5,Jackson,cd45,179.00332736968994,8243.0
+few-shot k=5,Jackson,cd68,178.3187439441681,8243.0
+few-shot k=5,Jackson,cytokeratin_5,179.0461142063141,8243.0
+few-shot k=5,Jackson,cytokeratin_8_18,177.43254017829895,8243.0
+few-shot k=5,Jackson,estrogen_receptor_alpha,178.16392493247986,8243.0
+few-shot k=5,Jackson,ki_67,176.05209469795227,8243.0
+few-shot k=5,Jackson,pan_cytokeratin,176.474205493927,8243.0
+few-shot k=5,Jackson,sma,178.16176414489746,8243.0
+few-shot k=20,Jackson,c_erb_b_2_her2,182.41651129722595,25322.0
+few-shot k=20,Jackson,cd20,181.22716689109802,25322.0
+few-shot k=20,Jackson,cd3,182.06939673423767,25322.0
+few-shot k=20,Jackson,cd45,182.8402864933014,25322.0
+few-shot k=20,Jackson,cd68,181.33983874320984,25322.0
+few-shot k=20,Jackson,cytokeratin_5,181.2637541294098,25322.0
+few-shot k=20,Jackson,cytokeratin_8_18,180.51407933235168,25322.0
+few-shot k=20,Jackson,estrogen_receptor_alpha,181.44124507904053,25322.0
+few-shot k=20,Jackson,ki_67,180.50644302368164,25322.0
+few-shot k=20,Jackson,pan_cytokeratin,180.9169840812683,25322.0
+few-shot k=20,Jackson,sma,180.52197456359863,25322.0
+few-shot k=5,Danenberg,c_erb_b_2_her2,178.56912326812744,14941.0
+few-shot k=5,Danenberg,cd20,177.95380353927612,14941.0
+few-shot k=5,Danenberg,cd3,179.9508707523346,14941.0
+few-shot k=5,Danenberg,cd45,178.41351175308228,14941.0
+few-shot k=5,Danenberg,cd68,179.54975843429565,14941.0
+few-shot k=5,Danenberg,cytokeratin_5,179.3574423789978,14941.0
+few-shot k=5,Danenberg,cytokeratin_8_18,178.48738360404968,14941.0
+few-shot k=5,Danenberg,estrogen_receptor_alpha,178.32684707641602,14941.0
+few-shot k=5,Danenberg,ki_67,179.90870237350464,14941.0
+few-shot k=5,Danenberg,pan_cytokeratin,178.60784721374512,14941.0
+few-shot k=5,Danenberg,sma,178.24003076553345,14941.0
+few-shot k=20,Danenberg,c_erb_b_2_her2,189.49247932434082,60950.0
+few-shot k=20,Danenberg,cd20,188.5977749824524,60950.0
+few-shot k=20,Danenberg,cd3,189.63548827171326,60950.0
+few-shot k=20,Danenberg,cd45,188.40065813064575,60950.0
+few-shot k=20,Danenberg,cd68,188.69428300857544,60950.0
+few-shot k=20,Danenberg,cytokeratin_5,189.8602476119995,60950.0
+few-shot k=20,Danenberg,cytokeratin_8_18,188.1043405532837,60950.0
+few-shot k=20,Danenberg,estrogen_receptor_alpha,188.67317247390747,60950.0
+few-shot k=20,Danenberg,ki_67,191.4663941860199,60950.0
+few-shot k=20,Danenberg,pan_cytokeratin,188.4807152748108,60950.0
+few-shot k=20,Danenberg,sma,187.8471119403839,60950.0

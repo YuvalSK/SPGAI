@@ -1,0 +1,76 @@
+[{"stream_name":"stderr","time":6.889975049,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.890016445,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.850097642,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.850123576,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.850128138,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.850131672,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.475207916,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.475242182,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.475249005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.47525463,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":22.528402461,"data":"{\n"}
+,{"stream_name":"stdout","time":22.528437671,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":22.528443444,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":22.528447901,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":22.528451985,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":22.528456028,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":22.52846032,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":22.528464448,"data":" },\n"}
+,{"stream_name":"stdout","time":22.528468498,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":22.528471995,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":22.528476793,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":22.528480966,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":22.528485082,"data":" }\n"}
+,{"stream_name":"stdout","time":22.528488718,"data":"}\n"}
+,{"stream_name":"stdout","time":30.306326878,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":30.306364892,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":30.374503074,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stderr","time":31.922055711,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":31.922335966,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":32.124626797,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":32.124657459,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":32.124663043,"data":"\n"}
+,{"stream_name":"stderr","time":32.124667105,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":32.12467196,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":48.463549399,"data":"cache: /kaggle/input/datasets/yuvalsamoilov/your-notebook-output-files2/cv_cache | device: cuda | tasks: ['c_erb_b_2_her2', 'cd20', 'cd3', 'cd45', 'cd68', 'cytokeratin_5', 'cytokeratin_8_18', 'estrogen_receptor_alpha', 'ki_67', 'pan_cytokeratin', 'sma']\n"}
+,{"stream_name":"stdout","time":53.93785705,"data":"cells with ≥1 mask pixel: median 1.0000, min 0.9955\n"}
+,{"stream_name":"stdout","time":53.937893169,"data":"[   0.6 min] pixel maps\n"}
+,{"stream_name":"stdout","time":108.154075124,"data":"image-derived vs published table, histone_h3: r = 0.992\n"}
+,{"stream_name":"stdout","time":108.154114369,"data":"image-derived vs published table, dna1: r = 0.986\n"}
+,{"stream_name":"stdout","time":108.154124647,"data":"image-derived vs published table, pan_cytokeratin: r = 0.986\n"}
+,{"stream_name":"stdout","time":108.154128233,"data":"image-derived vs published table, estrogen_receptor_alpha: r = 0.711\n"}
+,{"stream_name":"stdout","time":108.154131665,"data":"[   1.5 min] raw per-cell means\n"}
+,{"stream_name":"stdout","time":108.625169752,"data":"Downloading: \"https://download.pytorch.org/models/resnet50-0676ba61.pth\" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth\n"}
+,{"stream_name":"stderr","time":108.626465004,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\n"}
+,{"stream_name":"stderr","time":108.726180437,"data":"\r  0%|          | 0.00/97.8M [00:00\u003c?, ?B/s]\r 18%|█▊        | 17.9M/97.8M [00:00\u003c00:00, 187MB/s]\n"}
+,{"stream_name":"stderr","time":108.827619233,"data":"\r 18%|█▊        | 17.9M/97.8M [00:00\u003c00:00, 187MB/s]\r 40%|████      | 39.5M/97.8M [00:00\u003c00:00, 209MB/s]\n"}
+,{"stream_name":"stderr","time":108.940894119,"data":"\r 40%|████      | 39.5M/97.8M [00:00\u003c00:00, 209MB/s]\r 61%|██████    | 59.5M/97.8M [00:00\u003c00:00, 198MB/s]\n"}
+,{"stream_name":"stderr","time":109.044269634,"data":"\r 61%|██████    | 59.5M/97.8M [00:00\u003c00:00, 198MB/s]\r 80%|████████  | 78.5M/97.8M [00:00\u003c00:00, 196MB/s]\n"}
+,{"stream_name":"stderr","time":109.147980661,"data":"\r 80%|████████  | 78.5M/97.8M [00:00\u003c00:00, 196MB/s]\r 99%|█████████▉| 97.2M/97.8M [00:00\u003c00:00, 193MB/s]\n"}
+,{"stream_name":"stderr","time":109.151808734,"data":"\r 99%|█████████▉| 97.2M/97.8M [00:00\u003c00:00, 193MB/s]\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 195MB/s]\n"}
+,{"stream_name":"stderr","time":109.245367078,"data":"\r100%|██████████| 97.8M/97.8M [00:00\u003c00:00, 195MB/s]\n"}
+,{"stream_name":"stderr","time":109.245420778,"data":"\n"}
+,{"stream_name":"stderr","time":109.245424927,"data":"\n"}
+,{"stream_name":"stdout","time":253.018798708,"data":"[   3.9 min] immuvis c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":396.326395535,"data":"[   6.3 min] immuvis cd20\n"}
+,{"stream_name":"stdout","time":540.586374267,"data":"[   8.7 min] immuvis cd3\n"}
+,{"stream_name":"stdout","time":684.988083261,"data":"[  11.1 min] immuvis cd45\n"}
+,{"stream_name":"stdout","time":828.676055857,"data":"[  13.5 min] immuvis cd68\n"}
+,{"stream_name":"stdout","time":970.443228009,"data":"[  15.8 min] immuvis cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1113.672614248,"data":"[  18.2 min] immuvis cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1256.263574792,"data":"[  20.6 min] immuvis estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":1399.106547548,"data":"[  23.0 min] immuvis ki_67\n"}
+,{"stream_name":"stdout","time":1541.638804377,"data":"[  25.4 min] immuvis pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1684.551032794,"data":"[  27.7 min] immuvis sma\n"}
+,{"stream_name":"stdout","time":1684.876251733,"data":"[  27.8 min] GPU pass done; pixel and patch sums saved\n"}
+,{"stream_name":"stdout","time":1687.084994284,"data":"max relative difference vs kill-test: {'n': 0.0, 'Sg': 2.6062477767755845e-16, 'Sp': 2.01360586654283e-05, 'Sgg': 2.7208539549548954e-16, 'Spp': 3.713949037965658e-05, 'Sgp': 2.088979962314191e-05}\n"}
+,{"stream_name":"stdout","time":1687.085024853,"data":"[  27.8 min] done\n"}
+,{"stream_name":"stderr","time":1692.878021337,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1692.878048015,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1693.051418937,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1693.051444235,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1693.847247033,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1693.931004252,"data":"[NbConvertApp] Writing 65998 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1696.385361214,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1697.150899877,"data":"[NbConvertApp] Writing 544597 bytes to __results__.html\n"}
+]

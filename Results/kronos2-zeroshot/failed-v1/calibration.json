@@ -1,0 +1,23 @@
+{
+ "kronos2": {
+  "repo": "MahmoodLab/KRONOS2",
+  "arch": "ViT-B/16",
+  "embed_dim": 768,
+  "checkpoint_sha256": "afa261ef8b63bb0acea62612d7594ac11fbdb89fbdd23c513f046a034725d2b4",
+  "novel_markers": [
+   "CK5",
+   "CK8_18"
+  ]
+ },
+ "own": {
+  "macro_f1_val": 0.707244191066965,
+  "weight_decay": 0.001,
+  "n_fit": 57056,
+  "n_val": 81503
+ },
+ "pca": {
+  "n_components": 256,
+  "variance_explained": 0.9800838558629517
+ },
+ "variant": "kronos2"
+}

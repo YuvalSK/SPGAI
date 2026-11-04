@@ -1,0 +1,361 @@
+train,test,arm,model,marker,diff,lo,hi,call
+Jackson,Danenberg,2 cohort z,Point LightGBM,c_erb_b_2_her2,-0.11455495077135444,-0.13026702245011818,-0.0973260848592581,better
+Jackson,Danenberg,2 cohort z,Point LightGBM,cd20,-0.04492277721084641,-0.06157243502663086,-0.029561349992499007,better
+Jackson,Danenberg,2 cohort z,Point LightGBM,cd3,-0.04834862117594234,-0.05310807764116599,-0.0434862901385663,better
+Jackson,Danenberg,2 cohort z,Point LightGBM,cd45,0.030474801062933987,0.02631584618519274,0.03526854830458782,worse
+Jackson,Danenberg,2 cohort z,Point LightGBM,cd68,-0.00013236228367791147,-0.00828293278667505,0.008506699724209138,n.s.
+Jackson,Danenberg,2 cohort z,Point LightGBM,cytokeratin_5,-0.013062737234453572,-0.018263268398257305,-0.007506298230196649,better
+Jackson,Danenberg,2 cohort z,Point LightGBM,cytokeratin_8_18,-0.007246056653623184,-0.018864607822963734,0.004590211644052511,n.s.
+Jackson,Danenberg,2 cohort z,Point LightGBM,ki_67,-0.018105985466998424,-0.026781367436874738,-0.010459038727774792,better
+Jackson,Danenberg,2 cohort z,Point LightGBM,pan_cytokeratin,0.04753505246288531,0.0034636024583914933,0.10022009547652797,worse
+Jackson,Danenberg,2 cohort z,Point LightGBM,sma,0.02456221960681748,0.008907394970271848,0.03941969692772873,worse
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,c_erb_b_2_her2,-0.04669846996350266,-0.05810089172270855,-0.03417842629330103,better
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,cd20,0.012633476846986527,0.0057687492157639676,0.02039837738755268,worse
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,cd3,-0.021922180094791917,-0.025218059752417726,-0.01878477409461882,better
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,cd45,0.0350303003335157,0.03128708222148474,0.038842639909186724,worse
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,cd68,-0.023324436033876628,-0.02734900621103898,-0.019670697467980374,better
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,cytokeratin_5,-0.0034520550496349653,-0.004169401980864195,-0.00282548052315565,better
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,cytokeratin_8_18,-1.9840765386525128e-05,-0.004380202550896555,0.004611939766890476,n.s.
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,ki_67,-0.0020062257488561164,-0.002861005143348702,-0.0010864563135425144,better
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,pan_cytokeratin,-0.001261989778679029,-0.04077591234135019,0.04926336836968237,n.s.
+Jackson,Danenberg,2 cohort z,Quantile LightGBM,sma,-0.01866929111399579,-0.02888538873485776,-0.008995878146263538,better
+Jackson,Danenberg,2 cohort z,Residual sampling,c_erb_b_2_her2,-0.04176237548915543,-0.053227740666352635,-0.029785580675020604,better
+Jackson,Danenberg,2 cohort z,Residual sampling,cd20,-0.01907410843472232,-0.032223095093694254,-0.006857496909805601,better
+Jackson,Danenberg,2 cohort z,Residual sampling,cd3,-0.025043612594402083,-0.028941307574906133,-0.021090374813709793,better
+Jackson,Danenberg,2 cohort z,Residual sampling,cd45,0.03784836617835716,0.033387073003860034,0.04305698992923883,worse
+Jackson,Danenberg,2 cohort z,Residual sampling,cd68,0.008460822149078687,0.0032854703032716374,0.014011216538290487,worse
+Jackson,Danenberg,2 cohort z,Residual sampling,cytokeratin_5,-0.002968374445442984,-0.006517505014233344,0.0011530720448032663,n.s.
+Jackson,Danenberg,2 cohort z,Residual sampling,cytokeratin_8_18,0.0009109285914299381,-0.006926871714679152,0.009383329183581177,n.s.
+Jackson,Danenberg,2 cohort z,Residual sampling,ki_67,-0.004110662931214291,-0.008042098309401481,-0.0009024219911267654,better
+Jackson,Danenberg,2 cohort z,Residual sampling,pan_cytokeratin,0.014053084951981043,-0.027372620258006915,0.06671654067705564,n.s.
+Jackson,Danenberg,2 cohort z,Residual sampling,sma,0.0018721486196716097,-0.007841043545101642,0.011393418633817801,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,c_erb_b_2_her2,-0.10711672966123525,-0.12086484797757402,-0.09150284961388093,better
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,cd20,-0.04457528315130131,-0.059945662095626025,-0.03043989689349399,better
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,cd3,-0.04653469349961699,-0.05112046784777095,-0.04184579670759552,better
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,cd45,0.014952689177701733,0.011499188878880046,0.01885088282969896,worse
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,cd68,-0.022319620913376637,-0.03075890276414869,-0.01470255581921296,better
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,cytokeratin_5,-0.03212949856576692,-0.03858357835688669,-0.026141134528567433,better
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,cytokeratin_8_18,-0.0009642638945646098,-0.01189106114894203,0.0106889608855458,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,ki_67,-0.024250851216380875,-0.032378899583128326,-0.017132411254885793,better
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,pan_cytokeratin,0.05749846997799635,0.0012812069113712341,0.12604708318479904,worse
+Jackson,Danenberg,3 per-cluster ComBat,Point LightGBM,sma,0.06466471271933738,0.04736651150526541,0.08088966543359928,worse
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,c_erb_b_2_her2,-0.043553281245222175,-0.054031789071935496,-0.03212489072899963,better
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,cd20,0.010938104403612106,0.005049041800156687,0.017557925626277518,worse
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,cd3,-0.020536991940964602,-0.023605234941733756,-0.01759358908587391,better
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,cd45,0.01819292944925427,0.014878926239389665,0.021605422167456593,worse
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,cd68,-0.027123952187153293,-0.031117026050634152,-0.023558505653119628,better
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,cytokeratin_5,-0.0040679165159181255,-0.005030615973431287,-0.0031291807582271517,better
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,cytokeratin_8_18,0.004449502616962184,-0.0008642599374528451,0.009512823300162279,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,ki_67,-0.002023064433616356,-0.002947429415747419,-0.001004403398980041,better
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,pan_cytokeratin,0.015660998421816563,-0.035501657656387506,0.08108010285801083,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Quantile LightGBM,sma,0.01379139393429557,0.002235803719864313,0.024942093347802126,worse
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,c_erb_b_2_her2,-0.04032825402457535,-0.05092918787939709,-0.02863921083944004,better
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,cd20,-0.019750498506714675,-0.0321961485556511,-0.00843641761824087,better
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,cd3,-0.02370764764738634,-0.027406657847621963,-0.01994658539261579,better
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,cd45,0.021908252989402743,0.017960124409000862,0.02635500410475718,worse
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,cd68,-0.0005165558611823218,-0.006206851298040005,0.005315683876877958,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,cytokeratin_5,-0.014687269263558685,-0.01941536869136502,-0.010644066999273376,better
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,cytokeratin_8_18,0.0022749366324222586,-0.0054204385346167975,0.009762822169003635,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,ki_67,-0.005633735294053126,-0.00941162891768235,-0.00253183070922237,better
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,pan_cytokeratin,0.03593985104223962,-0.018756576793231384,0.1059444776054385,n.s.
+Jackson,Danenberg,3 per-cluster ComBat,Residual sampling,sma,0.03113724492477027,0.019541780578454994,0.04215703728425878,worse
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,c_erb_b_2_her2,-0.10858299813664252,-0.12224633197089312,-0.09320086301892284,better
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,cd20,-0.04477163485908235,-0.0603690640799379,-0.030387670599818468,better
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,cd3,-0.04611682676401248,-0.050773569303662905,-0.04148977521410235,better
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,cd45,0.018062744165473293,0.014596430444726062,0.021586760458618726,worse
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,cd68,-0.05270801985512032,-0.060242033119771596,-0.04513817609520715,better
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,cytokeratin_5,-0.03345928424807438,-0.040301013693205934,-0.02739127805813974,better
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,cytokeratin_8_18,0.001120973021963484,-0.010813052164160696,0.01398150568814585,n.s.
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,ki_67,-0.018160856697655048,-0.026857268647095176,-0.010782175928955343,better
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,pan_cytokeratin,0.035632740830058796,-0.018424107911752027,0.10041230551297299,n.s.
+Jackson,Danenberg,4 per-cluster quantile,Point LightGBM,sma,0.05792712288815571,0.040165626546697045,0.07396967659243602,worse
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,c_erb_b_2_her2,-0.044415483171248715,-0.05441060366002498,-0.0334255798836289,better
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,cd20,0.01071721094605406,0.0047756875730435395,0.017668710736425054,worse
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,cd3,-0.020274565221748655,-0.023326688731013415,-0.017385105204340726,better
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,cd45,0.02285388622105214,0.01961904600176189,0.0259447511927939,worse
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,cd68,-0.02815408328718577,-0.03202309262984979,-0.024727256635427908,better
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,cytokeratin_5,-0.004118881879270689,-0.004996939448548315,-0.003305057922477291,better
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,cytokeratin_8_18,0.006487454076532423,0.000591606113715925,0.012377521831910356,worse
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,ki_67,-0.0018720203914814638,-0.0027792208374460303,-0.000872686644904916,better
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,pan_cytokeratin,0.0013789058671932475,-0.04672204193070208,0.06211923498239088,n.s.
+Jackson,Danenberg,4 per-cluster quantile,Quantile LightGBM,sma,0.013196096163266502,0.0013581872404140774,0.024152325833264286,worse
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,c_erb_b_2_her2,-0.04153815331606012,-0.051744592889331205,-0.03085623469093601,better
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,cd20,-0.01990849390318225,-0.03240173511850502,-0.008663001335708244,better
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,cd3,-0.023223696517556666,-0.026806372212220347,-0.019517703883561454,better
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,cd45,0.0259568635639775,0.022160464121334628,0.02977201806097169,worse
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,cd68,-0.024972874986730363,-0.029625983814998758,-0.02012728278463323,better
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,cytokeratin_5,-0.01520319240027719,-0.02014551616194959,-0.01095119391621794,better
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,cytokeratin_8_18,0.003667191863422667,-0.005051629962072183,0.012712341206596766,n.s.
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,ki_67,-0.0034069790595144325,-0.007531740535034797,2.3978449453587917e-05,n.s.
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,pan_cytokeratin,0.022860388383813435,-0.028020155439345825,0.08646473456475946,n.s.
+Jackson,Danenberg,4 per-cluster quantile,Residual sampling,sma,0.02964349561823415,0.017596396618047537,0.04122812093871438,worse
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,c_erb_b_2_her2,-0.11035321163126327,-0.12402864924877698,-0.09617491706770234,better
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,cd20,-0.049089120409278514,-0.06587866211826444,-0.033641108748960646,better
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,cd3,-0.04812752815631932,-0.05267179941730617,-0.043487082979235654,better
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,cd45,-0.02558134151597874,-0.030245874268533104,-0.020860836416432084,better
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,cd68,0.04263822492993477,0.029006901642413756,0.056068477326264,worse
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,cytokeratin_5,-0.008929346625489797,-0.013960583507196596,-0.004201298871616247,better
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,cytokeratin_8_18,0.004941918398866679,-0.006480451807670336,0.01589534051941993,n.s.
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,ki_67,-0.010599664260196373,-0.019605762247684382,-0.003176443903909146,better
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,pan_cytokeratin,0.016404402086573566,-0.01201049773730093,0.049607792958718464,n.s.
+Jackson,Danenberg,5 GMM landmarks,Point LightGBM,sma,0.033533374481800216,0.014362801915182893,0.052094558677288114,worse
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,c_erb_b_2_her2,-0.04678181166814473,-0.056410578107382425,-0.036032598573818644,better
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,cd20,0.008184228566806756,0.001348639900829125,0.0161049584417105,worse
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,cd3,-0.02269536831783011,-0.02580821739389614,-0.019684147385594267,better
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,cd45,-0.0342807829138293,-0.03984713559618482,-0.02924097331133734,better
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,cd68,-0.024772284373125793,-0.028344780295956,-0.021543338929600198,better
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,cytokeratin_5,-0.0023791896496493034,-0.002940326058033333,-0.0018411773309718383,better
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,cytokeratin_8_18,0.005836125798362651,-0.002685968422299954,0.0126110379436054,n.s.
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,ki_67,-0.0013231906419106272,-0.002058149916561539,-0.0005145550075423246,better
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,pan_cytokeratin,-0.014551501433312797,-0.04280012591411457,0.020548340782288236,n.s.
+Jackson,Danenberg,5 GMM landmarks,Quantile LightGBM,sma,-0.016905677491250215,-0.029794653534419444,-0.0044844308655055416,better
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,c_erb_b_2_her2,-0.044365563932256644,-0.05437064079284143,-0.03383300071683058,better
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,cd20,-0.02155565978524876,-0.034780008596430635,-0.009254578795938736,better
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,cd3,-0.025843870257668218,-0.029648882983726314,-0.021849763773245698,better
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,cd45,-0.030087754302773856,-0.03590000409130919,-0.024867345544940783,better
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,cd68,0.0491130338947134,0.03743882785016576,0.06109661544014227,worse
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,cytokeratin_5,-0.002585771715141176,-0.006384408268935397,0.0007627557270225869,n.s.
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,cytokeratin_8_18,0.006076616906920476,-0.00368802518556711,0.015077072709325295,n.s.
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,ki_67,-0.001926499916737684,-0.005800727858673603,0.0011908897911362883,n.s.
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,pan_cytokeratin,-0.003432337018349385,-0.028726573735264573,0.02832549323109092,n.s.
+Jackson,Danenberg,5 GMM landmarks,Residual sampling,sma,0.005953978609006705,-0.006436813745472341,0.017738421274904187,n.s.
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,c_erb_b_2_her2,-0.1121146124453094,-0.12711584899871764,-0.0960950366467455,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,cd20,-0.05531441837680219,-0.06882619301948263,-0.04333124238757767,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,cd3,-0.04993273524147297,-0.05441520285752522,-0.045272454503254955,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,cd45,-0.09530863167138962,-0.1107807070086389,-0.07936613149990485,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,cd68,-0.06840345615020743,-0.07521797289896172,-0.061747284018338865,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,cytokeratin_5,-0.020886749328512262,-0.02643590345928371,-0.016087275568257283,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,cytokeratin_8_18,-0.06659028687059904,-0.08791905139459641,-0.04494526825233208,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,ki_67,-0.04360545432812942,-0.05137855572196189,-0.03784505955757341,better
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,pan_cytokeratin,0.03939608707108283,0.001382354604627141,0.08445997141645875,worse
+Jackson,Danenberg,6a oracle: level + scale,Point LightGBM,sma,-0.05429837847975599,-0.0829164986125918,-0.022494503358649328,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,c_erb_b_2_her2,-0.04584184644397615,-0.056705087156507746,-0.03404957978762966,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,cd20,-0.008269794135463145,-0.01188235601734333,-0.0037338348122694267,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,cd3,-0.024480214220303366,-0.027397238124467427,-0.021560806729759303,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,cd45,-0.09951433878879473,-0.11316859399886336,-0.08569313907390216,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,cd68,-0.03685982504118358,-0.04177548195543919,-0.03250568840260975,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,cytokeratin_5,-0.004787504267884084,-0.0057339368337693515,-0.003885109439636413,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,cytokeratin_8_18,-0.021394150845285648,-0.033571224955123435,-0.006119948754681508,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,ki_67,-0.004960464494508765,-0.006357652503284678,-0.0033613379961954138,better
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,pan_cytokeratin,-0.003926619605811754,-0.03776334190870889,0.038801114010808824,n.s.
+Jackson,Danenberg,6a oracle: level + scale,Quantile LightGBM,sma,-0.07969762428287883,-0.10339040465616746,-0.05420513971015324,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,c_erb_b_2_her2,-0.04179206929935447,-0.05276747510498063,-0.03068762204436882,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,cd20,-0.03867300499505884,-0.04958928227322873,-0.028546220497681504,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,cd3,-0.028460487428774682,-0.032098465405493874,-0.024589777945848924,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,cd45,-0.08439949734925421,-0.09838574996214616,-0.06913783460207112,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,cd68,-0.0276843437860178,-0.03237585156600371,-0.02340152548640155,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,cytokeratin_5,-0.006356077879322346,-0.009908154627255566,-0.002890569419695963,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,cytokeratin_8_18,-0.027700170440924946,-0.04273595374836381,-0.010375111433709581,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,ki_67,-0.012929738090974661,-0.0160988448776774,-0.010477956205697136,better
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,pan_cytokeratin,0.010818354428446864,-0.025094824415094762,0.05584797756326423,n.s.
+Jackson,Danenberg,6a oracle: level + scale,Residual sampling,sma,-0.0719375830138568,-0.09397952267521321,-0.04780938241798778,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,c_erb_b_2_her2,-0.10798817088152232,-0.12159111695730455,-0.0925379646187492,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,cd20,-0.05456583500347559,-0.06727835143271213,-0.04321673855317777,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,cd3,-0.05028147544292473,-0.05468659894553652,-0.04559062784082886,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,cd45,-0.09186716654644084,-0.10821880597032532,-0.0752763840427934,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,cd68,-0.08639199822935575,-0.09415682544657647,-0.07936865567839071,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,cytokeratin_5,-0.02807289789255521,-0.03510595547984153,-0.021873558705673604,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,cytokeratin_8_18,-0.06679793733189557,-0.09068318304329208,-0.043701652464231786,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,ki_67,-0.0373838768134395,-0.044487229644395596,-0.03210392002191669,better
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,pan_cytokeratin,0.020621701970213957,-0.02390399867560523,0.07329308294446402,n.s.
+Jackson,Danenberg,6b oracle: full marginal,Point LightGBM,sma,-0.04763089266471937,-0.0769928154640127,-0.01470588517730613,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,c_erb_b_2_her2,-0.04433694021556002,-0.05396535492750956,-0.033724553098321175,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,cd20,-0.009354027392763975,-0.01226987530452973,-0.00611175183784313,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,cd3,-0.02471941260755778,-0.02773139548195144,-0.021750801396110842,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,cd45,-0.10724933316982363,-0.12074035388979276,-0.09310714772263377,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,cd68,-0.037806583642851055,-0.043059566811830055,-0.03321193406362483,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,cytokeratin_5,-0.005243429371961816,-0.006245888422205935,-0.004323536000028339,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,cytokeratin_8_18,-0.019564248982647053,-0.032749263134297664,-0.0031838386118840344,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,ki_67,-0.00599605920428516,-0.007268626628053515,-0.004599191114924997,better
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,pan_cytokeratin,-0.008248575787413892,-0.04892764787752522,0.04336924309220114,n.s.
+Jackson,Danenberg,6b oracle: full marginal,Quantile LightGBM,sma,-0.08273137959560878,-0.1036274112029634,-0.0615769680494985,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,c_erb_b_2_her2,-0.041706779676132136,-0.051728471196218304,-0.03132004920396943,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,cd20,-0.03955941733926287,-0.04969821541947076,-0.030485253444613218,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,cd3,-0.0285325893016005,-0.032100350998275254,-0.02483100779749394,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,cd45,-0.09069030686679419,-0.10376606174331937,-0.07613283965635509,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,cd68,-0.03776882375397226,-0.04304525959891561,-0.03293958029922401,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,cytokeratin_5,-0.013394578767666688,-0.01825547732595581,-0.009051440288899386,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,cytokeratin_8_18,-0.02564114772039186,-0.041019152354153404,-0.009126157856240652,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,ki_67,-0.01319758423578709,-0.016228474497837667,-0.0108707798343301,better
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,pan_cytokeratin,0.010306442766154444,-0.0333451490990938,0.06516230196513031,n.s.
+Jackson,Danenberg,6b oracle: full marginal,Residual sampling,sma,-0.07540508754175379,-0.09431364857760816,-0.05472156042762191,better
+Danenberg,Jackson,2 cohort z,Point LightGBM,c_erb_b_2_her2,-0.05094120546981171,-0.07361663237313684,-0.026398015801582655,better
+Danenberg,Jackson,2 cohort z,Point LightGBM,cd20,0.032401178782495585,0.028727849474577495,0.03648968189402627,worse
+Danenberg,Jackson,2 cohort z,Point LightGBM,cd3,0.007355638075871727,0.0041020240130419305,0.010125275132137703,worse
+Danenberg,Jackson,2 cohort z,Point LightGBM,cd45,0.1514106126587748,0.14231746848949808,0.16126668807063593,worse
+Danenberg,Jackson,2 cohort z,Point LightGBM,cd68,-0.0020889985301512093,-0.0037773876714145183,-0.0005631252447249557,better
+Danenberg,Jackson,2 cohort z,Point LightGBM,cytokeratin_5,0.006499815035567097,0.0024206712400246634,0.011550843260998445,worse
+Danenberg,Jackson,2 cohort z,Point LightGBM,cytokeratin_8_18,-0.011082717714185314,-0.02247061914938618,0.0019085425542529396,n.s.
+Danenberg,Jackson,2 cohort z,Point LightGBM,ki_67,0.01846301253533862,0.00803446521146795,0.03221145213857706,worse
+Danenberg,Jackson,2 cohort z,Point LightGBM,pan_cytokeratin,-0.026513672244061925,-0.0629565393685037,0.009351638041765266,n.s.
+Danenberg,Jackson,2 cohort z,Point LightGBM,sma,0.12903980827669254,0.09972312636029614,0.15936685075289406,worse
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,c_erb_b_2_her2,-0.08556528831939113,-0.1029491124019416,-0.06603565111985958,better
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,cd20,0.022377880436369516,0.02022352480602178,0.024042180447843953,worse
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,cd3,0.003552476395884307,9.860107362234613e-05,0.006498295047884826,worse
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,cd45,0.12176637918659901,0.11430342154382643,0.1303076007267359,worse
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,cd68,-0.008273419756090125,-0.00974415638386243,-0.006839320012087649,better
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,cytokeratin_5,-0.0027414339725964007,-0.0051714223192228775,-0.0005566985136834264,better
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,cytokeratin_8_18,-0.024495088657697645,-0.034877777002830915,-0.014222283477086557,better
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,ki_67,0.0032989269839644453,0.0002766499311285281,0.005800636184752551,worse
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,pan_cytokeratin,-0.020959001704173974,-0.0438470653337414,0.002013633861096465,n.s.
+Danenberg,Jackson,2 cohort z,Quantile LightGBM,sma,0.0795756082975076,0.05195128089476329,0.10725718666172378,worse
+Danenberg,Jackson,2 cohort z,Residual sampling,c_erb_b_2_her2,-0.07830103113124835,-0.09781467735395259,-0.05819723259771594,better
+Danenberg,Jackson,2 cohort z,Residual sampling,cd20,0.025189160755794263,0.02198114578394099,0.02854100844735187,worse
+Danenberg,Jackson,2 cohort z,Residual sampling,cd3,0.004964816606746513,0.0018058366561679398,0.007581270934273277,worse
+Danenberg,Jackson,2 cohort z,Residual sampling,cd45,0.10789758689652817,0.10121793360331917,0.11512465952344132,worse
+Danenberg,Jackson,2 cohort z,Residual sampling,cd68,-0.004059885715819611,-0.005592851553681341,-0.002566303032201253,better
+Danenberg,Jackson,2 cohort z,Residual sampling,cytokeratin_5,-0.0008710760361915065,-0.003880197092680225,0.0019170160269000914,n.s.
+Danenberg,Jackson,2 cohort z,Residual sampling,cytokeratin_8_18,-0.01879726004931162,-0.028129201307422816,-0.009173939643978732,better
+Danenberg,Jackson,2 cohort z,Residual sampling,ki_67,0.011030793013965243,0.002741992367210794,0.02214740188540589,worse
+Danenberg,Jackson,2 cohort z,Residual sampling,pan_cytokeratin,-0.008400573356657115,-0.033214505290375715,0.016179620099200202,n.s.
+Danenberg,Jackson,2 cohort z,Residual sampling,sma,0.10805481875690148,0.07827052330419994,0.1381165630358116,worse
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,c_erb_b_2_her2,-0.0659942584506912,-0.08705765490339883,-0.04343109717129691,better
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,cd20,0.024309993045205626,0.020580027667296375,0.028117027038916696,worse
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,cd3,0.00416148688215991,0.0014033171632051237,0.006606007656846124,worse
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,cd45,0.12457496818066015,0.11285706631411609,0.13660137208821946,worse
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,cd68,-0.002005978066568506,-0.0038111624984026116,-6.573714405688705e-05,better
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,cytokeratin_5,0.008566066980134908,0.0022498618577427533,0.014917367983268363,worse
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,cytokeratin_8_18,0.0010760464672667225,-0.00647507969503282,0.01015493739731473,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,ki_67,0.008705920939611159,0.0041691037263866,0.014841891321841138,worse
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,pan_cytokeratin,-0.001958506046376818,-0.04925737538592127,0.04859644481328906,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Point LightGBM,sma,0.09875188895896325,0.07281277517276143,0.12405170345500449,worse
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,c_erb_b_2_her2,-0.09237863426476513,-0.10912681272237665,-0.07407922153310678,better
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,cd20,0.017254712411177393,0.015203063266003692,0.01894893988430943,worse
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,cd3,0.0014464927734322217,-0.0013826186899203701,0.003927888391260851,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,cd45,0.09956574574501524,0.09061817336239779,0.1096748477117876,worse
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,cd68,-0.007419886518680946,-0.00918144909585224,-0.005749443515387877,better
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,cytokeratin_5,-0.002640582386426199,-0.0067680951404098105,0.0010307496454683128,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,cytokeratin_8_18,-0.0074717187537066965,-0.015822038875903284,0.0006554790570339138,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,ki_67,0.00226215922777126,0.00011161122027950579,0.004038027492701047,worse
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,pan_cytokeratin,0.007157358773370481,-0.02972970462939514,0.0464340604216138,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Quantile LightGBM,sma,0.05080059486034261,0.026359907228896112,0.0743982071621196,worse
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,c_erb_b_2_her2,-0.0877485460741692,-0.10656133599135419,-0.06830421277115643,better
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,cd20,0.018561696762327003,0.015443323049768429,0.021867575611333356,worse
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,cd3,0.0019591823168825847,-0.0008229204455540644,0.004340536907349549,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,cd45,0.08889590186707402,0.08058596831057956,0.0975250107994042,worse
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,cd68,-0.003093436799210758,-0.0048227356056232355,-0.001256253633076405,better
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,cytokeratin_5,-0.000298072344640736,-0.004680412259487149,0.004215448050426888,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,cytokeratin_8_18,-0.0024739658103505036,-0.00954347562274691,0.004581190239004855,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,ki_67,0.004019584154849501,0.0007352841608661997,0.00807817692322571,worse
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,pan_cytokeratin,0.016625841540573782,-0.01678353962466964,0.052956241003171076,n.s.
+Danenberg,Jackson,3 per-cluster ComBat,Residual sampling,sma,0.07949923784025598,0.05481867315866737,0.10513083636392387,worse
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,c_erb_b_2_her2,-0.065840827126771,-0.08656685041221454,-0.04343019696846028,better
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,cd20,0.02491211457827444,0.021249044502911544,0.028803895086886043,worse
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,cd3,0.003855721828765691,0.0009570535820555984,0.006326771356561547,worse
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,cd45,0.12512477521786342,0.11461869362745304,0.1359574104551326,worse
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,cd68,-0.0019667489407803745,-0.0035203509548882147,-0.000446324750034623,better
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,cytokeratin_5,0.004440961424440261,0.00041005473598234346,0.008642229706946945,worse
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,cytokeratin_8_18,-0.00351989862093105,-0.011877103012709982,0.004907759421894681,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,ki_67,0.005291951061719119,0.0019324871916202274,0.009300979398541654,worse
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,pan_cytokeratin,-0.022405946405910038,-0.06726550821574746,0.02246866174231473,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Point LightGBM,sma,0.09338896829299292,0.06753384296522565,0.11929155627467534,worse
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,c_erb_b_2_her2,-0.09195338177766033,-0.10859827730117028,-0.07358076596701951,better
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,cd20,0.017479654598664667,0.015327607961572148,0.01946282436834611,worse
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,cd3,0.0011706160302411422,-0.0017329662926957197,0.0037224934960137174,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,cd45,0.0990729662189007,0.09107516287719587,0.10819933209399274,worse
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,cd68,-0.00722295498449424,-0.008861592477772639,-0.005779410607246893,better
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,cytokeratin_5,-0.001866267543508611,-0.004350865429820647,0.00041986230716612425,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,cytokeratin_8_18,-0.012079551048017279,-0.02251127197237055,-0.0021137653933388082,better
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,ki_67,0.001549491068062507,-0.0006495762609826778,0.0033602932304731786,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,pan_cytokeratin,-0.016792887513640553,-0.049591076242028846,0.016359009194388173,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Quantile LightGBM,sma,0.04814027451906011,0.024032115387818975,0.0722119529352449,worse
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,c_erb_b_2_her2,-0.08691022732403307,-0.10600005769860554,-0.06783394150322243,better
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,cd20,0.01895355782886729,0.015932749450939365,0.021992693896773684,worse
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,cd3,0.0017038570814420315,-0.0011778421849827734,0.004129557869845661,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,cd45,0.08918172640789784,0.08151725461424743,0.09713727387750243,worse
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,cd68,-0.002828494050347047,-0.004355245287813893,-0.0013736649380988069,better
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,cytokeratin_5,-0.0015534149173680387,-0.004289092067068466,0.0009106219716600619,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,cytokeratin_8_18,-0.007938184788026187,-0.016680247178386724,0.0002936664567318307,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,ki_67,0.0019289755340667,-0.00042292461913481756,0.004428002210784335,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,pan_cytokeratin,-0.002785762237292655,-0.03334714202927075,0.028737979979034777,n.s.
+Danenberg,Jackson,4 per-cluster quantile,Residual sampling,sma,0.07430202500765826,0.050021465593537845,0.10000815299269954,worse
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,c_erb_b_2_her2,-0.05345787174585595,-0.0721235595865719,-0.033261142807548875,better
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,cd20,0.02003378016622586,0.017141471932301887,0.023286715440553798,worse
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,cd3,0.0043924700199771925,0.0014731673840467719,0.007002454608399618,worse
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,cd45,0.07634113014131742,0.06294978582314857,0.08893726444403881,worse
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,cd68,-0.002237875353792315,-0.004110712043688802,-0.0004940116478801802,better
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,cytokeratin_5,0.005553163873739442,0.0023267217360157526,0.009062583815157845,worse
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,cytokeratin_8_18,-0.0028170526713099386,-0.011466571238055008,0.008089668151295753,n.s.
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,ki_67,0.013951542507646658,0.004867359223585576,0.0268019700149594,worse
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,pan_cytokeratin,-0.023057057593766472,-0.05780891459609297,0.011818246398563017,n.s.
+Danenberg,Jackson,5 GMM landmarks,Point LightGBM,sma,0.11277944397933215,0.08611289047531037,0.14112149958568224,worse
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,c_erb_b_2_her2,-0.0831796808644566,-0.09803500094061586,-0.06676844985237139,better
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,cd20,0.013883755956297924,0.012298654757778294,0.015219169477493874,worse
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,cd3,0.001601626279563062,-0.0014715140196142585,0.004218551963428388,n.s.
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,cd45,0.06343974602571605,0.05302954298249835,0.07407721800076059,worse
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,cd68,-0.009276364832286804,-0.011135364318622816,-0.0074834440949812535,better
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,cytokeratin_5,-0.0022943641193008332,-0.004396398091158114,-0.0004524795943401867,better
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,cytokeratin_8_18,-0.013701342736943178,-0.020446959144848897,-0.007171763729054291,better
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,ki_67,0.0014397529270082851,-0.0009902386146674643,0.0034726469752465947,n.s.
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,pan_cytokeratin,-0.019368075254534267,-0.039304805933762614,0.0010032842033584589,n.s.
+Danenberg,Jackson,5 GMM landmarks,Quantile LightGBM,sma,0.05736478112474169,0.03060447489093704,0.08337779625924072,worse
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,c_erb_b_2_her2,-0.07453144703337383,-0.09147198223669104,-0.05718960176408421,better
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,cd20,0.015188137146078938,0.012685739448642692,0.017910980308621146,worse
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,cd3,0.0022403087404979285,-0.0006214149357042179,0.004730853476179318,n.s.
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,cd45,0.055751583167644087,0.04628526026592665,0.06499660843968569,worse
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,cd68,-0.005743500358592266,-0.00725284989247439,-0.004385085166608523,better
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,cytokeratin_5,-0.0005081050889283525,-0.003005273972854526,0.0017444767654284212,n.s.
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,cytokeratin_8_18,-0.0073033796431864195,-0.014272848760442675,-7.392695794910385e-05,better
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,ki_67,0.008531937150378976,0.001378883956794673,0.01838793478737299,worse
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,pan_cytokeratin,-0.008809779748746138,-0.03218684601284762,0.014913889557076765,n.s.
+Danenberg,Jackson,5 GMM landmarks,Residual sampling,sma,0.09232503382744378,0.06515590848513828,0.12131131526516281,worse
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,c_erb_b_2_her2,-0.05229624618445741,-0.07397715169065307,-0.028746936621779576,better
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,cd20,-0.008556294489522089,-0.010071621679376018,-0.007120135721212171,better
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,cd3,0.0005278490486695375,-0.0018850709551888481,0.0025585242595370593,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,cd45,-0.057811097664106116,-0.06758897888098853,-0.04993450503760526,better
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,cd68,0.013282254109356198,0.004524353531048923,0.02153402232954419,worse
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,cytokeratin_5,0.010869912561838974,0.005203860825629936,0.017917805542144897,worse
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,cytokeratin_8_18,-0.036520681176673175,-0.07227845936596271,0.0006822548873363012,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,ki_67,0.08763909267340442,0.0390001964560029,0.1556259349416194,worse
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,pan_cytokeratin,-0.016362987970910514,-0.04797836586247122,0.015807700374341517,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Point LightGBM,sma,0.18535056693353352,0.14873168918352872,0.22172343108799994,worse
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,c_erb_b_2_her2,-0.08483358752996023,-0.10150164979874679,-0.06608907171817541,better
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,cd20,-0.000861685450578277,-0.0012330741092863166,-0.0005275801468253772,better
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,cd3,-0.001772644349413252,-0.004419325324821333,0.0004425809859458684,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,cd45,-0.03884916313131973,-0.04465451375474158,-0.033597762533180725,better
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,cd68,-0.01645935890745917,-0.024298569906048506,-0.009272950131568957,better
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,cytokeratin_5,-0.003250848152752818,-0.0061485170732665856,-0.0006327452053740299,better
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,cytokeratin_8_18,-0.07073392553325442,-0.1033675841346207,-0.03966094169914719,better
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,ki_67,0.014517443705947777,0.00023701957131694906,0.0324543707548849,worse
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,pan_cytokeratin,-0.012909428254320898,-0.032715018402027805,0.005715080224778079,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Quantile LightGBM,sma,0.11625852653687152,0.0921752573455029,0.14174759788650493,worse
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,c_erb_b_2_her2,-0.07769858695249246,-0.09678669815078596,-0.058072859797880245,better
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,cd20,-0.005464729319375548,-0.006670514371965881,-0.004339117392304957,better
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,cd3,-0.0006815005052761523,-0.0031518411596297116,0.0013003733532649365,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,cd45,-0.031042460418164802,-0.03603974809325227,-0.02613192303480695,better
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,cd68,-0.012507432985938316,-0.019084821269025956,-0.0066352403660643825,better
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,cytokeratin_5,-0.0004206875014806932,-0.00363793510829154,0.002925586018616611,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,cytokeratin_8_18,-0.05938479375620331,-0.09075697404129873,-0.02922519996774349,better
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,ki_67,0.05350516447393926,0.014018425935298373,0.11129817248629399,worse
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,pan_cytokeratin,-0.004423576573458932,-0.026310472314425272,0.01691272363431563,n.s.
+Danenberg,Jackson,6a oracle: level + scale,Residual sampling,sma,0.146414586659373,0.11169504962989399,0.18113343405148613,worse
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,c_erb_b_2_her2,-0.06632957629126393,-0.08644494036872204,-0.044584200541800165,better
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,cd20,-0.008480480154899762,-0.010192519621770693,-0.00669736338219896,better
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,cd3,-0.001541877618588157,-0.0036151434212103187,8.603417361066859e-05,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,cd45,-0.06227759487988709,-0.07081933839700566,-0.05461747811237155,better
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,cd68,0.010870864385117043,0.0024181211017174275,0.019285437869742166,worse
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,cytokeratin_5,0.002587461283916126,-2.9869379875875596e-05,0.005290512611815363,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,cytokeratin_8_18,-0.040978569006129506,-0.08303310910512077,0.0019654245048757145,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,ki_67,0.026224527849087007,0.0062854940667609865,0.05588383242891045,worse
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,pan_cytokeratin,-0.025902542011117524,-0.06913009700108756,0.016920007453475387,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Point LightGBM,sma,0.10066269408878298,0.05760797658922857,0.1462169443287412,worse
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,c_erb_b_2_her2,-0.09147951847235947,-0.1075045944570943,-0.07387481893521836,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,cd20,-0.0009837852014432762,-0.001466291405273308,-0.000592951552553819,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,cd3,-0.0032082014405317386,-0.005667661740756834,-0.0013012018393556352,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,cd45,-0.0413041916992854,-0.04662071473724297,-0.0362681954170366,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,cd68,-0.01781593550565122,-0.025687283421785462,-0.010669609935399806,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,cytokeratin_5,-0.0022809087244050757,-0.004354367660198832,-0.000536773990868467,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,cytokeratin_8_18,-0.07044946786779696,-0.10786766831899204,-0.03593379927927215,better
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,ki_67,0.0014434294381155816,-0.005494877648010475,0.00859772509436535,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,pan_cytokeratin,-0.019101113026465888,-0.05000669513745766,0.012438960985117231,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Quantile LightGBM,sma,0.03595127559441452,0.008815681099593351,0.06428140138026343,worse
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,c_erb_b_2_her2,-0.08640202652088107,-0.1048963432538971,-0.06778235856140767,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,cd20,-0.004938990291357411,-0.0064520698490592495,-0.0033353632981918905,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,cd3,-0.0022848579030211175,-0.0046759039462132505,-0.000441977305293441,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,cd45,-0.03396519881907675,-0.038794465522539186,-0.029160783813622967,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,cd68,-0.01322694481900677,-0.01977054413290604,-0.007372979990206008,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,cytokeratin_5,-0.003174676574980738,-0.006270035574989147,-0.0005330163411262166,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,cytokeratin_8_18,-0.061200661249196764,-0.09643483233858463,-0.028041046620036852,better
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,ki_67,0.012487924640138606,-0.0023724052608090633,0.03519781585830323,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,pan_cytokeratin,-0.004965775136858364,-0.03328561067204868,0.02390525949756476,n.s.
+Danenberg,Jackson,6b oracle: full marginal,Residual sampling,sma,0.07351017050798248,0.03710089836584449,0.11384274518498172,worse

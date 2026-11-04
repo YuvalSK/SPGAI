@@ -1,0 +1,137 @@
+true,predicted,n_cells,feature,group,mean_push
+epithelial,stroma,1143,own:c_erb_b_2_her2,own: hormone/HER2,0.16083697974681854
+epithelial,stroma,1143,own:cd20,own: immune,0.1590481698513031
+epithelial,stroma,1143,own:cytokeratin_8_18,own: epithelial,0.15034480392932892
+epithelial,stroma,1143,own:estrogen_receptor_alpha,own: hormone/HER2,0.13569921255111694
+epithelial,stroma,1143,own:log_area,own: size/density,0.12303156405687332
+epithelial,stroma,1143,own:cd45,own: immune,0.0932370200753212
+epithelial,stroma,1143,nbr_hop2:cd20,neighbours: immune,0.08052874356508255
+epithelial,stroma,1143,nbr_hop2:histone_h3,neighbours: nuclear,0.07766181230545044
+endothelial,stroma,590,own:c_erb_b_2_her2,own: hormone/HER2,0.3183498978614807
+endothelial,stroma,590,own:sma,own: stroma,0.20642170310020447
+endothelial,stroma,590,nbr_hop2:cd3,neighbours: immune,0.182829350233078
+endothelial,stroma,590,own:cd20,own: immune,0.17824558913707733
+endothelial,stroma,590,nbr_hop2:estrogen_receptor_alpha,neighbours: hormone/HER2,0.1442975252866745
+endothelial,stroma,590,nbr_sd:histone_h3,neighbours: nuclear,0.13973793387413025
+endothelial,stroma,590,nbr_hop2:dna1,neighbours: nuclear,0.13923004269599915
+endothelial,stroma,590,nbr_hop2:cd20,neighbours: immune,0.11517114192247391
+stroma,endothelial,568,own:sma,own: stroma,0.3049834370613098
+stroma,endothelial,568,own:c_erb_b_2_her2,own: hormone/HER2,0.2801184356212616
+stroma,endothelial,568,density:contact_count,neighbours: size/density,0.20882423222064972
+stroma,endothelial,568,own:cd68,own: immune,0.10905128717422485
+stroma,endothelial,568,own:cd45,own: immune,0.10290379822254181
+stroma,endothelial,568,nbr_hop2:ki_67,neighbours: proliferation,0.07316000014543533
+stroma,endothelial,568,nbr_mean:sma,neighbours: stroma,0.06041689217090607
+stroma,endothelial,568,nbr_sd:sma,neighbours: stroma,0.058452706784009933
+stroma,epithelial,551,own:ki_67,own: proliferation,0.9884589314460754
+stroma,epithelial,551,own:estrogen_receptor_alpha,own: hormone/HER2,0.5467099547386169
+stroma,epithelial,551,own:sma,own: stroma,0.24239300191402435
+stroma,epithelial,551,nbr_hop2:cd68,neighbours: immune,0.1902822107076645
+stroma,epithelial,551,nbr_hop2:sma,neighbours: stroma,0.18701060116291046
+stroma,epithelial,551,density:contact_count,neighbours: size/density,0.14336198568344116
+stroma,epithelial,551,own:c_erb_b_2_her2,own: hormone/HER2,0.14120393991470337
+stroma,epithelial,551,nbr_hop2:ki_67,neighbours: proliferation,0.12553787231445312
+T cell,stroma,412,own:cd3,own: immune,4.01869535446167
+T cell,stroma,412,own:cd45,own: immune,1.232448697090149
+T cell,stroma,412,nbr_hop2:cd3,neighbours: immune,0.46604299545288086
+T cell,stroma,412,nbr_mean:cd3,neighbours: immune,0.18232640624046326
+T cell,stroma,412,own:dna1,own: nuclear,0.09931667894124985
+T cell,stroma,412,own:dna2,own: nuclear,0.09870138764381409
+T cell,stroma,412,nbr_hop2:estrogen_receptor_alpha,neighbours: hormone/HER2,0.0900515764951706
+T cell,stroma,412,own:pan_cytokeratin,own: epithelial,0.0546625591814518
+myeloid,stroma,269,own:cd68,own: immune,2.1355392932891846
+myeloid,stroma,269,own:cd45,own: immune,0.1856927126646042
+myeloid,stroma,269,density:contact_count,neighbours: size/density,0.16149583458900452
+myeloid,stroma,269,own:cd20,own: immune,0.12403365969657898
+myeloid,stroma,269,nbr_sd:histone_h3,neighbours: nuclear,0.08521898090839386
+myeloid,stroma,269,own:histone_h3,own: nuclear,0.08149143308401108
+myeloid,stroma,269,own:cytokeratin_8_18,own: epithelial,0.07938003540039062
+myeloid,stroma,269,own:dna1,own: nuclear,0.0789414495229721
+stroma,myeloid,256,own:cd68,own: immune,2.745875120162964
+stroma,myeloid,256,nbr_hop2:cd3,neighbours: immune,0.23166657984256744
+stroma,myeloid,256,own:sma,own: stroma,0.13112975656986237
+stroma,myeloid,256,nbr_hop2:cd68,neighbours: immune,0.10551393032073975
+stroma,myeloid,256,nbr_hop2:sma,neighbours: stroma,0.07384887337684631
+stroma,myeloid,256,own:cd3,own: immune,0.07256260514259338
+stroma,myeloid,256,own:log_area,own: size/density,0.04940570145845413
+stroma,myeloid,256,nbr_mean:estrogen_receptor_alpha,neighbours: hormone/HER2,0.03722573444247246
+epithelial,myeloid,249,own:cd68,own: immune,4.098005771636963
+epithelial,myeloid,249,nbr_hop2:cd68,neighbours: immune,0.2405165135860443
+epithelial,myeloid,249,nbr_hop2:histone_h3,neighbours: nuclear,0.07838364690542221
+epithelial,myeloid,249,nbr_sd:cd3,neighbours: immune,0.07522674649953842
+epithelial,myeloid,249,own:cd3,own: immune,0.06347119063138962
+epithelial,myeloid,249,nbr_sd:estrogen_receptor_alpha,neighbours: hormone/HER2,0.05944029986858368
+epithelial,myeloid,249,own:cd20,own: immune,0.05415555089712143
+epithelial,myeloid,249,nbr_sd:cd45,neighbours: immune,0.04998858645558357
+epithelial,endothelial,193,own:sma,own: stroma,0.5818305611610413
+epithelial,endothelial,193,own:c_erb_b_2_her2,own: hormone/HER2,0.3038541078567505
+epithelial,endothelial,193,own:cd68,own: immune,0.142045795917511
+epithelial,endothelial,193,nbr_hop2:sma,neighbours: stroma,0.14136339724063873
+epithelial,endothelial,193,own:cd45,own: immune,0.13844788074493408
+epithelial,endothelial,193,nbr_mean:sma,neighbours: stroma,0.09622014313936234
+epithelial,endothelial,193,own:cd3,own: immune,0.08552133291959763
+epithelial,endothelial,193,own:cd20,own: immune,0.06899498403072357
+epithelial,T cell,117,own:cd3,own: immune,1.7864383459091187
+epithelial,T cell,117,own:cd45,own: immune,1.0330445766448975
+epithelial,T cell,117,own:cd20,own: immune,0.5441445112228394
+epithelial,T cell,117,own:cd68,own: immune,0.27355414628982544
+epithelial,T cell,117,nbr_sd:cd45,neighbours: immune,0.20647741854190826
+epithelial,T cell,117,nbr_hop2:cd45,neighbours: immune,0.18106037378311157
+epithelial,T cell,117,nbr_hop2:cd3,neighbours: immune,0.10590734332799911
+epithelial,T cell,117,nbr_sd:cd3,neighbours: immune,0.08045739680528641
+T cell,endothelial,113,own:cd3,own: immune,3.3681795597076416
+T cell,endothelial,113,own:cd45,own: immune,1.1865075826644897
+T cell,endothelial,113,nbr_hop2:cd3,neighbours: immune,0.26599255204200745
+T cell,endothelial,113,own:c_erb_b_2_her2,own: hormone/HER2,0.23425529897212982
+T cell,endothelial,113,own:pan_cytokeratin,own: epithelial,0.17998096346855164
+T cell,endothelial,113,nbr_hop2:sma,neighbours: stroma,0.15404435992240906
+T cell,endothelial,113,nbr_mean:sma,neighbours: stroma,0.1255759447813034
+T cell,endothelial,113,nbr_mean:cd3,neighbours: immune,0.11043131351470947
+myeloid,T cell,113,own:cd68,own: immune,2.713181972503662
+myeloid,T cell,113,own:cd3,own: immune,1.3019392490386963
+myeloid,T cell,113,own:cd45,own: immune,0.8924514055252075
+myeloid,T cell,113,own:cd20,own: immune,0.5615187287330627
+myeloid,T cell,113,nbr_hop2:cd3,neighbours: immune,0.3748099207878113
+myeloid,T cell,113,density:contact_count,neighbours: size/density,0.34240540862083435
+myeloid,T cell,113,own:estrogen_receptor_alpha,own: hormone/HER2,0.22142161428928375
+myeloid,T cell,113,own:c_erb_b_2_her2,own: hormone/HER2,0.18977822363376617
+B cell,T cell,96,own:cd3,own: immune,2.6774308681488037
+B cell,T cell,96,own:cd20,own: immune,1.4521712064743042
+B cell,T cell,96,nbr_hop2:cd3,neighbours: immune,0.5388143062591553
+B cell,T cell,96,own:cd45,own: immune,0.33652129769325256
+B cell,T cell,96,own:cd68,own: immune,0.1698015183210373
+B cell,T cell,96,own:estrogen_receptor_alpha,own: hormone/HER2,0.12558233737945557
+B cell,T cell,96,own:cytokeratin_8_18,own: epithelial,0.11761649698019028
+B cell,T cell,96,own:sma,own: stroma,0.11329405754804611
+stroma,T cell,86,own:cd3,own: immune,2.330127000808716
+stroma,T cell,86,own:cd45,own: immune,1.595374584197998
+stroma,T cell,86,own:cd20,own: immune,0.6425888538360596
+stroma,T cell,86,nbr_hop2:cd3,neighbours: immune,0.23635683953762054
+stroma,T cell,86,own:cd68,own: immune,0.1669660210609436
+stroma,T cell,86,nbr_hop2:cd20,neighbours: immune,0.105430006980896
+stroma,T cell,86,own:estrogen_receptor_alpha,own: hormone/HER2,0.10298840701580048
+stroma,T cell,86,own:dna1,own: nuclear,0.09680246561765671
+epithelial,B cell,73,own:cd20,own: immune,4.840238094329834
+epithelial,B cell,73,nbr_hop2:cd20,neighbours: immune,0.41194459795951843
+epithelial,B cell,73,own:cd3,own: immune,0.3186147212982178
+epithelial,B cell,73,own:cd45,own: immune,0.21903979778289795
+epithelial,B cell,73,nbr_hop2:cd45,neighbours: immune,0.16843833029270172
+epithelial,B cell,73,nbr_sd:cd45,neighbours: immune,0.13041965663433075
+epithelial,B cell,73,own:log_area,own: size/density,0.07629160583019257
+epithelial,B cell,73,density:mean_nbr_distance,neighbours: size/density,0.07584580034017563
+myeloid,endothelial,68,own:cd68,own: immune,2.1170382499694824
+myeloid,endothelial,68,density:contact_count,neighbours: size/density,0.4765649735927582
+myeloid,endothelial,68,own:c_erb_b_2_her2,own: hormone/HER2,0.27018287777900696
+myeloid,endothelial,68,nbr_hop2:sma,neighbours: stroma,0.12680363655090332
+myeloid,endothelial,68,nbr_hop2:cd3,neighbours: immune,0.11666235327720642
+myeloid,endothelial,68,nbr_hop2:cd20,neighbours: immune,0.10130760073661804
+myeloid,endothelial,68,nbr_mean:sma,neighbours: stroma,0.09944731742143631
+myeloid,endothelial,68,own:pan_cytokeratin,own: epithelial,0.09241992980241776
+T cell,myeloid,55,own:cd68,own: immune,3.3834192752838135
+T cell,myeloid,55,own:cd3,own: immune,2.370612859725952
+T cell,myeloid,55,own:cd45,own: immune,0.4522005319595337
+T cell,myeloid,55,nbr_hop2:cd68,neighbours: immune,0.20674069225788116
+T cell,myeloid,55,nbr_hop2:cd3,neighbours: immune,0.15099704265594482
+T cell,myeloid,55,nbr_mean:cd3,neighbours: immune,0.10528109967708588
+T cell,myeloid,55,own:sma,own: stroma,0.09891847521066666
+T cell,myeloid,55,nbr_hop2:histone_h3,neighbours: nuclear,0.0759921669960022

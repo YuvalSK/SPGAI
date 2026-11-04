@@ -1,0 +1,289 @@
+[{"stream_name":"stderr","time":7.720377827,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.720542538,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.739816504,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.739855901,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.739861821,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.739887667,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.596725377,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.596763055,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.59676883,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.596773173999999,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.942063132,"data":"FULL | xgboost 3.2.0\n"}
+,{"stream_name":"stdout","time":77.752456804,"data":"{\n"}
+,{"stream_name":"stdout","time":77.752496078,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":77.752501331,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":77.752505259,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":77.752509292,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":77.752512705,"data":" },\n"}
+,{"stream_name":"stdout","time":77.752515808,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":77.75251888,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":77.752521969,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":77.752525388,"data":" }\n"}
+,{"stream_name":"stdout","time":77.752528432,"data":"}\n"}
+,{"stream_name":"stdout","time":127.922604409,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients, 27 fine labels\n"}
+,{"stream_name":"stdout","time":138.231056145,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients, 32 fine labels\n"}
+,{"stream_name":"stdout","time":138.231102534,"data":"[   2.1 min] tables, labels and neighbour features\n"}
+,{"stream_name":"stdout","time":139.467436693,"data":"Jackson {'train': 397, 'val': 39, 'test': 106} images\n"}
+,{"stream_name":"stdout","time":139.467477422,"data":"Danenberg {'train': 494, 'val': 65, 'test': 145} images\n"}
+,{"stream_name":"stdout","time":139.486638281,"data":"neighbours: immune           16\n"}
+,{"stream_name":"stdout","time":139.486673184,"data":"neighbours: nuclear          12\n"}
+,{"stream_name":"stdout","time":139.486679392,"data":"neighbours: epithelial       12\n"}
+,{"stream_name":"stdout","time":139.486682722,"data":"neighbours: hormone/HER2      8\n"}
+,{"stream_name":"stdout","time":139.486701306,"data":"neighbours: size/density      7\n"}
+,{"stream_name":"stdout","time":139.486705361,"data":"own: immune                   4\n"}
+,{"stream_name":"stdout","time":139.48670914,"data":"neighbours: stroma            4\n"}
+,{"stream_name":"stdout","time":139.486712771,"data":"neighbours: proliferation     4\n"}
+,{"stream_name":"stdout","time":139.486716561,"data":"own: nuclear                  3\n"}
+,{"stream_name":"stdout","time":139.486720643,"data":"own: epithelial               3\n"}
+,{"stream_name":"stdout","time":139.486724364,"data":"own: hormone/HER2             2\n"}
+,{"stream_name":"stdout","time":139.486728048,"data":"own: proliferation            1\n"}
+,{"stream_name":"stdout","time":139.486731771,"data":"own: stroma                   1\n"}
+,{"stream_name":"stdout","time":139.486735628,"data":"own: size/density             1\n"}
+,{"stream_name":"stdout","time":248.579197448,"data":"[   3.9 min] XGBoost trained on Jackson\n"}
+,{"stream_name":"stdout","time":358.629113245,"data":"[   5.7 min] XGBoost trained on Danenberg\n"}
+,{"stream_name":"stdout","time":543.250430048,"data":"[   8.8 min] XGBoost trained on Both\n"}
+,{"stream_name":"stdout","time":543.261485606,"data":"    train      test  macro_f1  f1_epithelial  f1_T cell  f1_B cell  f1_myeloid  f1_endothelial  f1_stroma\n"}
+,{"stream_name":"stdout","time":543.261539182,"data":"  Jackson   Jackson     0.756          0.913      0.907      0.913       0.734           0.354      0.715\n"}
+,{"stream_name":"stdout","time":543.261546192,"data":"  Jackson Danenberg     0.570          0.886      0.423      0.815       0.444           0.235      0.619\n"}
+,{"stream_name":"stdout","time":543.26155197,"data":"Danenberg   Jackson     0.555          0.888      0.476      0.737       0.487           0.134      0.606\n"}
+,{"stream_name":"stdout","time":543.261556718,"data":"Danenberg Danenberg     0.679          0.943      0.608      0.855       0.566           0.440      0.661\n"}
+,{"stream_name":"stdout","time":543.26156198,"data":"     Both   Jackson     0.745          0.912      0.896      0.893       0.700           0.357      0.709\n"}
+,{"stream_name":"stdout","time":543.261567072,"data":"     Both Danenberg     0.649          0.936      0.596      0.839       0.528           0.412      0.583\n"}
+,{"stream_name":"stdout","time":767.424544883,"data":"[  12.6 min] SHAP Jackson -\u003e Jackson\n"}
+,{"stream_name":"stdout","time":991.442685424,"data":"[  16.3 min] SHAP Jackson -\u003e Danenberg\n"}
+,{"stream_name":"stdout","time":1244.238216563,"data":"[  20.5 min] SHAP Danenberg -\u003e Jackson\n"}
+,{"stream_name":"stdout","time":1497.445733795,"data":"[  24.7 min] SHAP Danenberg -\u003e Danenberg\n"}
+,{"stream_name":"stdout","time":1757.792014339,"data":"[  29.1 min] SHAP Both -\u003e Jackson\n"}
+,{"stream_name":"stdout","time":2017.14842838,"data":"[  33.4 min] SHAP Both -\u003e Danenberg\n"}
+,{"stream_name":"stdout","time":2017.24798897,"data":"--- share of |SHAP| by group, trained on Jackson, tested on Jackson\n"}
+,{"stream_name":"stdout","time":2017.248026665,"data":"cls                        epithelial  T cell  B cell  myeloid  endothelial  stroma\n"}
+,{"stream_name":"stdout","time":2017.248033256,"data":"group                                                                              \n"}
+,{"stream_name":"stdout","time":2017.24803913,"data":"own: epithelial                 0.368   0.031   0.030    0.014        0.098   0.036\n"}
+,{"stream_name":"stdout","time":2017.248044003,"data":"own: hormone/HER2               0.165   0.033   0.029    0.030        0.084   0.096\n"}
+,{"stream_name":"stdout","time":2017.2480493,"data":"own: immune                     0.057   0.562   0.567    0.545        0.172   0.213\n"}
+,{"stream_name":"stdout","time":2017.248068969,"data":"own: nuclear                    0.024   0.042   0.018    0.021        0.019   0.060\n"}
+,{"stream_name":"stdout","time":2017.248073313,"data":"own: proliferation              0.047   0.009   0.007    0.003        0.006   0.009\n"}
+,{"stream_name":"stdout","time":2017.248077169,"data":"own: size/density               0.027   0.014   0.008    0.008        0.002   0.043\n"}
+,{"stream_name":"stdout","time":2017.24808126,"data":"own: stroma                     0.038   0.014   0.004    0.028        0.131   0.022\n"}
+,{"stream_name":"stdout","time":2017.248084193,"data":"neighbours: epithelial          0.067   0.042   0.061    0.048        0.070   0.065\n"}
+,{"stream_name":"stdout","time":2017.248086892,"data":"neighbours: hormone/HER2        0.041   0.027   0.050    0.033        0.078   0.062\n"}
+,{"stream_name":"stdout","time":2017.248089337,"data":"neighbours: immune              0.076   0.120   0.111    0.137        0.118   0.115\n"}
+,{"stream_name":"stdout","time":2017.248091849,"data":"neighbours: nuclear             0.040   0.051   0.041    0.052        0.092   0.084\n"}
+,{"stream_name":"stdout","time":2017.248094356,"data":"neighbours: proliferation       0.013   0.011   0.015    0.012        0.015   0.022\n"}
+,{"stream_name":"stdout","time":2017.248096835,"data":"neighbours: size/density        0.026   0.030   0.041    0.054        0.052   0.088\n"}
+,{"stream_name":"stdout","time":2017.248099249,"data":"neighbours: stroma              0.010   0.015   0.018    0.015        0.063   0.086\n"}
+,{"stream_name":"stdout","time":2017.248101703,"data":"--- top 6 features per class, trained on Jackson, tested on Jackson\n"}
+,{"stream_name":"stdout","time":2017.248104202,"data":"epithelial   own:pan_cytokeratin 1.45, own:cytokeratin_8_18 0.78, own:c_erb_b_2_her2 0.61, own:estrogen_receptor_alpha 0.53, own:ki_67 0.33, own:cytokeratin_5 0.32\n"}
+,{"stream_name":"stdout","time":2017.248107168,"data":"T cell       own:cd3 2.34, own:cd45 1.00, own:cd20 0.65, nbr_hop2:cd3 0.40, own:cd68 0.22, own:estrogen_receptor_alpha 0.13\n"}
+,{"stream_name":"stdout","time":2017.248109713,"data":"B cell       own:cd20 4.02, own:cd3 0.68, nbr_hop2:cd20 0.36, own:cd45 0.22, own:c_erb_b_2_her2 0.16, nbr_hop2:cd3 0.13\n"}
+,{"stream_name":"stdout","time":2017.248112239,"data":"myeloid      own:cd68 3.44, nbr_hop2:cd3 0.27, nbr_hop2:cd68 0.22, density:contact_count 0.21, own:sma 0.20, own:cd3 0.18\n"}
+,{"stream_name":"stdout","time":2017.248116137,"data":"endothelial  own:sma 0.53, own:pan_cytokeratin 0.32, own:c_erb_b_2_her2 0.30, own:cd45 0.29, own:cd68 0.26, nbr_sd:sma 0.11\n"}
+,{"stream_name":"stdout","time":2017.248120011,"data":"stroma       own:cd20 0.26, own:c_erb_b_2_her2 0.25, own:cd45 0.17, nbr_hop2:sma 0.17, own:cd68 0.15, own:log_area 0.14\n"}
+,{"stream_name":"stdout","time":2017.248123773,"data":"--- share of |SHAP| by group, trained on Danenberg, tested on Danenberg\n"}
+,{"stream_name":"stdout","time":2017.248127998,"data":"cls                        epithelial  T cell  B cell  myeloid  endothelial  stroma\n"}
+,{"stream_name":"stdout","time":2017.248131949,"data":"group                                                                              \n"}
+,{"stream_name":"stdout","time":2017.248136411,"data":"own: epithelial                 0.584   0.047   0.023    0.045        0.059   0.035\n"}
+,{"stream_name":"stdout","time":2017.248140344,"data":"own: hormone/HER2               0.028   0.049   0.022    0.025        0.034   0.099\n"}
+,{"stream_name":"stdout","time":2017.248144579,"data":"own: immune                     0.013   0.428   0.539    0.413        0.204   0.293\n"}
+,{"stream_name":"stdout","time":2017.248148527,"data":"own: nuclear                    0.007   0.088   0.052    0.135        0.032   0.078\n"}
+,{"stream_name":"stdout","time":2017.248156638,"data":"own: proliferation              0.004   0.017   0.008    0.003        0.024   0.009\n"}
+,{"stream_name":"stdout","time":2017.248160939,"data":"own: size/density               0.011   0.010   0.006    0.011        0.010   0.013\n"}
+,{"stream_name":"stdout","time":2017.248164744,"data":"own: stroma                     0.002   0.030   0.031    0.031        0.152   0.098\n"}
+,{"stream_name":"stdout","time":2017.248168018,"data":"neighbours: epithelial          0.171   0.070   0.051    0.080        0.072   0.063\n"}
+,{"stream_name":"stdout","time":2017.248171963,"data":"neighbours: hormone/HER2        0.048   0.036   0.036    0.044        0.074   0.046\n"}
+,{"stream_name":"stdout","time":2017.248175204,"data":"neighbours: immune              0.056   0.108   0.121    0.105        0.109   0.092\n"}
+,{"stream_name":"stdout","time":2017.24817857,"data":"neighbours: nuclear             0.029   0.056   0.051    0.050        0.063   0.049\n"}
+,{"stream_name":"stdout","time":2017.248181889,"data":"neighbours: proliferation       0.010   0.017   0.016    0.013        0.017   0.018\n"}
+,{"stream_name":"stdout","time":2017.248185513,"data":"neighbours: size/density        0.020   0.028   0.023    0.023        0.053   0.041\n"}
+,{"stream_name":"stdout","time":2017.248189493,"data":"neighbours: stroma              0.016   0.016   0.021    0.021        0.098   0.065\n"}
+,{"stream_name":"stdout","time":2017.248193031,"data":"--- top 6 features per class, trained on Danenberg, tested on Danenberg\n"}
+,{"stream_name":"stdout","time":2017.248197353,"data":"epithelial   own:pan_cytokeratin 2.94, own:cytokeratin_8_18 0.93, own:cytokeratin_5 0.50, nbr_hop2:pan_cytokeratin 0.34, nbr_hop2:cytokeratin_8_18 0.28, nbr_sd:pan_cytokeratin 0.16\n"}
+,{"stream_name":"stdout","time":2017.248201684,"data":"T cell       own:cd3 0.67, own:cd45 0.46, own:cd20 0.25, own:histone_h3 0.19, own:c_erb_b_2_her2 0.14, own:pan_cytokeratin 0.12\n"}
+,{"stream_name":"stdout","time":2017.248206847,"data":"B cell       own:cd20 3.43, own:cd45 0.41, nbr_hop2:cd20 0.29, own:sma 0.23, own:histone_h3 0.16, own:cd68 0.13\n"}
+,{"stream_name":"stdout","time":2017.248210933,"data":"myeloid      own:cd68 1.09, own:histone_h3 0.49, own:cd45 0.30, own:cd20 0.14, own:sma 0.12, own:cd3 0.11\n"}
+,{"stream_name":"stdout","time":2017.248214702,"data":"endothelial  own:sma 0.63, own:cd45 0.43, nbr_sd:sma 0.24, own:cd68 0.22, own:pan_cytokeratin 0.16, nbr_hop2:c_erb_b_2_her2 0.13\n"}
+,{"stream_name":"stdout","time":2017.248219023,"data":"stroma       own:cd45 0.36, own:sma 0.27, own:c_erb_b_2_her2 0.24, own:cd20 0.23, own:cd3 0.17, own:histone_h3 0.12\n"}
+,{"stream_name":"stdout","time":2017.24822291,"data":"--- share of |SHAP| by group, trained on Jackson, tested on Danenberg\n"}
+,{"stream_name":"stdout","time":2017.248226669,"data":"cls                        epithelial  T cell  B cell  myeloid  endothelial  stroma\n"}
+,{"stream_name":"stdout","time":2017.248230439,"data":"group                                                                              \n"}
+,{"stream_name":"stdout","time":2017.248234584,"data":"own: epithelial                 0.349   0.024   0.027    0.016        0.051   0.028\n"}
+,{"stream_name":"stdout","time":2017.248238416,"data":"own: hormone/HER2               0.156   0.046   0.024    0.029        0.081   0.094\n"}
+,{"stream_name":"stdout","time":2017.248242133,"data":"own: immune                     0.063   0.555   0.580    0.481        0.166   0.208\n"}
+,{"stream_name":"stdout","time":2017.248246058,"data":"own: nuclear                    0.027   0.042   0.019    0.019        0.027   0.061\n"}
+,{"stream_name":"stdout","time":2017.248250076,"data":"own: proliferation              0.050   0.011   0.009    0.003        0.006   0.017\n"}
+,{"stream_name":"stdout","time":2017.248257846,"data":"own: size/density               0.028   0.014   0.007    0.012        0.004   0.049\n"}
+,{"stream_name":"stdout","time":2017.248262185,"data":"own: stroma                     0.041   0.012   0.007    0.027        0.134   0.022\n"}
+,{"stream_name":"stdout","time":2017.248265879,"data":"neighbours: epithelial          0.070   0.035   0.042    0.044        0.060   0.060\n"}
+,{"stream_name":"stdout","time":2017.248270068,"data":"neighbours: hormone/HER2        0.040   0.029   0.053    0.044        0.081   0.061\n"}
+,{"stream_name":"stdout","time":2017.248274007,"data":"neighbours: immune              0.086   0.122   0.116    0.152        0.147   0.125\n"}
+,{"stream_name":"stdout","time":2017.248278015,"data":"neighbours: nuclear             0.038   0.058   0.044    0.063        0.107   0.089\n"}
+,{"stream_name":"stdout","time":2017.248281973,"data":"neighbours: proliferation       0.015   0.009   0.014    0.014        0.020   0.022\n"}
+,{"stream_name":"stdout","time":2017.248285973,"data":"neighbours: size/density        0.023   0.030   0.038    0.077        0.044   0.088\n"}
+,{"stream_name":"stdout","time":2017.248289892,"data":"neighbours: stroma              0.013   0.014   0.020    0.020        0.073   0.077\n"}
+,{"stream_name":"stdout","time":2017.248293785,"data":"--- top 6 features per class, trained on Jackson, tested on Danenberg\n"}
+,{"stream_name":"stdout","time":2017.248298501,"data":"epithelial   own:pan_cytokeratin 1.46, own:cytokeratin_8_18 0.65, own:c_erb_b_2_her2 0.54, own:estrogen_receptor_alpha 0.48, own:ki_67 0.33, own:sma 0.27\n"}
+,{"stream_name":"stdout","time":2017.248303062,"data":"T cell       own:cd3 2.98, own:cd45 1.15, nbr_hop2:cd3 0.42, own:cd20 0.40, own:cd68 0.22, own:estrogen_receptor_alpha 0.21\n"}
+,{"stream_name":"stdout","time":2017.248307677,"data":"B cell       own:cd20 4.35, own:cd3 0.62, nbr_hop2:cd20 0.43, own:cd45 0.20, nbr_hop2:estrogen_receptor_alpha 0.16, own:c_erb_b_2_her2 0.14\n"}
+,{"stream_name":"stdout","time":2017.248311843,"data":"myeloid      own:cd68 2.74, density:contact_count 0.30, nbr_hop2:cd3 0.27, own:cd3 0.20, nbr_hop2:cd68 0.18, own:sma 0.18\n"}
+,{"stream_name":"stdout","time":2017.248316338,"data":"endothelial  own:sma 0.63, own:cd45 0.33, own:c_erb_b_2_her2 0.31, own:cd68 0.27, own:pan_cytokeratin 0.19, nbr_hop2:cd3 0.16\n"}
+,{"stream_name":"stdout","time":2017.248320412,"data":"stroma       own:cd20 0.29, own:c_erb_b_2_her2 0.24, own:log_area 0.17, own:cd68 0.17, nbr_hop2:sma 0.16, density:contact_count 0.15\n"}
+,{"stream_name":"stdout","time":2017.343696359,"data":"        cls  spearman_feature_importance  top10_overlap\n"}
+,{"stream_name":"stdout","time":2017.343731397,"data":" epithelial                        0.606              5\n"}
+,{"stream_name":"stdout","time":2017.343736692,"data":"     T cell                        0.515              7\n"}
+,{"stream_name":"stdout","time":2017.34374072,"data":"     B cell                        0.424              5\n"}
+,{"stream_name":"stdout","time":2017.343744347,"data":"    myeloid                        0.530              7\n"}
+,{"stream_name":"stdout","time":2017.343747647,"data":"endothelial                        0.689              7\n"}
+,{"stream_name":"stdout","time":2017.343751863,"data":"     stroma                        0.660              7\n"}
+,{"stream_name":"stdout","time":2017.343755534,"data":"col_0        B cell  T cell  endothelial  epithelial  myeloid  stroma\n"}
+,{"stream_name":"stdout","time":2017.343759628,"data":"row_0                                                                \n"}
+,{"stream_name":"stdout","time":2017.343763622,"data":"B cell          797      96           33           7       12      42\n"}
+,{"stream_name":"stdout","time":2017.343783363,"data":"T cell           17     402          113          45       55     412\n"}
+,{"stream_name":"stdout","time":2017.34378798,"data":"endothelial      10      15          254          47       21     590\n"}
+,{"stream_name":"stdout","time":2017.343791917,"data":"epithelial       73     117          193        9712      249    1143\n"}
+,{"stream_name":"stdout","time":2017.343795798,"data":"myeloid          17     113           68          25      421     269\n"}
+,{"stream_name":"stdout","time":2017.343799722,"data":"stroma           38      86          568         551      256    3133\n"}
+,{"stream_name":"stdout","time":2017.359206518,"data":"       true   predicted  n_cells                     feature                    group  mean_push\n"}
+,{"stream_name":"stdout","time":2017.3592403,"data":" epithelial      stroma     1143          own:c_erb_b_2_her2        own: hormone/HER2      0.161\n"}
+,{"stream_name":"stdout","time":2017.359246243,"data":" epithelial      stroma     1143                    own:cd20              own: immune      0.159\n"}
+,{"stream_name":"stdout","time":2017.359250598,"data":" epithelial      stroma     1143        own:cytokeratin_8_18          own: epithelial      0.150\n"}
+,{"stream_name":"stdout","time":2017.35925452,"data":" epithelial      stroma     1143 own:estrogen_receptor_alpha        own: hormone/HER2      0.136\n"}
+,{"stream_name":"stdout","time":2017.35925806,"data":"endothelial      stroma      590          own:c_erb_b_2_her2        own: hormone/HER2      0.318\n"}
+,{"stream_name":"stdout","time":2017.359262356,"data":"endothelial      stroma      590                     own:sma              own: stroma      0.206\n"}
+,{"stream_name":"stdout","time":2017.359266298,"data":"endothelial      stroma      590                nbr_hop2:cd3       neighbours: immune      0.183\n"}
+,{"stream_name":"stdout","time":2017.359270046,"data":"endothelial      stroma      590                    own:cd20              own: immune      0.178\n"}
+,{"stream_name":"stdout","time":2017.359273903,"data":"     stroma endothelial      568                     own:sma              own: stroma      0.305\n"}
+,{"stream_name":"stdout","time":2017.359278146,"data":"     stroma endothelial      568          own:c_erb_b_2_her2        own: hormone/HER2      0.280\n"}
+,{"stream_name":"stdout","time":2017.359282229,"data":"     stroma endothelial      568       density:contact_count neighbours: size/density      0.209\n"}
+,{"stream_name":"stdout","time":2017.359286377,"data":"     stroma endothelial      568                    own:cd68              own: immune      0.109\n"}
+,{"stream_name":"stdout","time":2017.359290216,"data":"     stroma  epithelial      551                   own:ki_67       own: proliferation      0.988\n"}
+,{"stream_name":"stdout","time":2017.359294227,"data":"     stroma  epithelial      551 own:estrogen_receptor_alpha        own: hormone/HER2      0.547\n"}
+,{"stream_name":"stdout","time":2017.359298057,"data":"     stroma  epithelial      551                     own:sma              own: stroma      0.242\n"}
+,{"stream_name":"stdout","time":2017.359302058,"data":"     stroma  epithelial      551               nbr_hop2:cd68       neighbours: immune      0.190\n"}
+,{"stream_name":"stdout","time":2017.359306045,"data":"     T cell      stroma      412                     own:cd3              own: immune      4.019\n"}
+,{"stream_name":"stdout","time":2017.359310336,"data":"     T cell      stroma      412                    own:cd45              own: immune      1.232\n"}
+,{"stream_name":"stdout","time":2017.359314715,"data":"     T cell      stroma      412                nbr_hop2:cd3       neighbours: immune      0.466\n"}
+,{"stream_name":"stdout","time":2017.359334722,"data":"     T cell      stroma      412                nbr_mean:cd3       neighbours: immune      0.182\n"}
+,{"stream_name":"stdout","time":2017.359341321,"data":"    myeloid      stroma      269                    own:cd68              own: immune      2.136\n"}
+,{"stream_name":"stdout","time":2017.359345546,"data":"    myeloid      stroma      269                    own:cd45              own: immune      0.186\n"}
+,{"stream_name":"stdout","time":2017.359349447,"data":"    myeloid      stroma      269       density:contact_count neighbours: size/density      0.161\n"}
+,{"stream_name":"stdout","time":2017.35935349,"data":"    myeloid      stroma      269                    own:cd20              own: immune      0.124\n"}
+,{"stream_name":"stdout","time":2017.359357191,"data":"     stroma     myeloid      256                    own:cd68              own: immune      2.746\n"}
+,{"stream_name":"stdout","time":2017.359361213,"data":"     stroma     myeloid      256                nbr_hop2:cd3       neighbours: immune      0.232\n"}
+,{"stream_name":"stdout","time":2017.359365322,"data":"     stroma     myeloid      256                     own:sma              own: stroma      0.131\n"}
+,{"stream_name":"stdout","time":2017.359369375,"data":"     stroma     myeloid      256               nbr_hop2:cd68       neighbours: immune      0.106\n"}
+,{"stream_name":"stdout","time":2017.359373533,"data":" epithelial     myeloid      249                    own:cd68              own: immune      4.098\n"}
+,{"stream_name":"stdout","time":2017.359377195,"data":" epithelial     myeloid      249               nbr_hop2:cd68       neighbours: immune      0.241\n"}
+,{"stream_name":"stdout","time":2017.359380689,"data":" epithelial     myeloid      249         nbr_hop2:histone_h3      neighbours: nuclear      0.078\n"}
+,{"stream_name":"stdout","time":2017.359384333,"data":" epithelial     myeloid      249                  nbr_sd:cd3       neighbours: immune      0.075\n"}
+,{"stream_name":"stdout","time":2017.359388255,"data":" epithelial endothelial      193                     own:sma              own: stroma      0.582\n"}
+,{"stream_name":"stdout","time":2017.359391845,"data":" epithelial endothelial      193          own:c_erb_b_2_her2        own: hormone/HER2      0.304\n"}
+,{"stream_name":"stdout","time":2017.35939581,"data":" epithelial endothelial      193                    own:cd68              own: immune      0.142\n"}
+,{"stream_name":"stdout","time":2017.359399611,"data":" epithelial endothelial      193                nbr_hop2:sma       neighbours: stroma      0.141\n"}
+,{"stream_name":"stdout","time":2017.3594034,"data":" epithelial      T cell      117                     own:cd3              own: immune      1.786\n"}
+,{"stream_name":"stdout","time":2017.359407155,"data":" epithelial      T cell      117                    own:cd45              own: immune      1.033\n"}
+,{"stream_name":"stdout","time":2017.359410814,"data":" epithelial      T cell      117                    own:cd20              own: immune      0.544\n"}
+,{"stream_name":"stdout","time":2017.359414557,"data":" epithelial      T cell      117                    own:cd68              own: immune      0.274\n"}
+,{"stream_name":"stdout","time":2017.359418039,"data":"     T cell endothelial      113                     own:cd3              own: immune      3.368\n"}
+,{"stream_name":"stdout","time":2017.359422445,"data":"     T cell endothelial      113                    own:cd45              own: immune      1.187\n"}
+,{"stream_name":"stdout","time":2017.35942625,"data":"     T cell endothelial      113                nbr_hop2:cd3       neighbours: immune      0.266\n"}
+,{"stream_name":"stdout","time":2017.359430415,"data":"     T cell endothelial      113          own:c_erb_b_2_her2        own: hormone/HER2      0.234\n"}
+,{"stream_name":"stdout","time":2017.359440073,"data":"    myeloid      T cell      113                    own:cd68              own: immune      2.713\n"}
+,{"stream_name":"stdout","time":2017.359443975,"data":"    myeloid      T cell      113                     own:cd3              own: immune      1.302\n"}
+,{"stream_name":"stdout","time":2017.359447769,"data":"    myeloid      T cell      113                    own:cd45              own: immune      0.892\n"}
+,{"stream_name":"stdout","time":2017.35945155,"data":"    myeloid      T cell      113                    own:cd20              own: immune      0.562\n"}
+,{"stream_name":"stdout","time":2017.359455397,"data":"     B cell      T cell       96                     own:cd3              own: immune      2.677\n"}
+,{"stream_name":"stdout","time":2017.359464875,"data":"     B cell      T cell       96                    own:cd20              own: immune      1.452\n"}
+,{"stream_name":"stdout","time":2017.359468985,"data":"     B cell      T cell       96                nbr_hop2:cd3       neighbours: immune      0.539\n"}
+,{"stream_name":"stdout","time":2017.359472845,"data":"     B cell      T cell       96                    own:cd45              own: immune      0.337\n"}
+,{"stream_name":"stdout","time":2017.359476372,"data":"     stroma      T cell       86                     own:cd3              own: immune      2.330\n"}
+,{"stream_name":"stdout","time":2017.359480435,"data":"     stroma      T cell       86                    own:cd45              own: immune      1.595\n"}
+,{"stream_name":"stdout","time":2017.359488622,"data":"     stroma      T cell       86                    own:cd20              own: immune      0.643\n"}
+,{"stream_name":"stdout","time":2017.359492991,"data":"     stroma      T cell       86                nbr_hop2:cd3       neighbours: immune      0.236\n"}
+,{"stream_name":"stdout","time":2017.359496856,"data":" epithelial      B cell       73                    own:cd20              own: immune      4.840\n"}
+,{"stream_name":"stdout","time":2017.359500659,"data":" epithelial      B cell       73               nbr_hop2:cd20       neighbours: immune      0.412\n"}
+,{"stream_name":"stdout","time":2017.359504522,"data":" epithelial      B cell       73                     own:cd3              own: immune      0.319\n"}
+,{"stream_name":"stdout","time":2017.359508202,"data":" epithelial      B cell       73                    own:cd45              own: immune      0.219\n"}
+,{"stream_name":"stdout","time":2017.359512244,"data":"    myeloid endothelial       68                    own:cd68              own: immune      2.117\n"}
+,{"stream_name":"stdout","time":2017.3595162,"data":"    myeloid endothelial       68       density:contact_count neighbours: size/density      0.477\n"}
+,{"stream_name":"stdout","time":2017.359521407,"data":"    myeloid endothelial       68          own:c_erb_b_2_her2        own: hormone/HER2      0.270\n"}
+,{"stream_name":"stdout","time":2017.35952572,"data":"    myeloid endothelial       68                nbr_hop2:sma       neighbours: stroma      0.127\n"}
+,{"stream_name":"stdout","time":2017.359529804,"data":"     T cell     myeloid       55                    own:cd68              own: immune      3.383\n"}
+,{"stream_name":"stdout","time":2017.359533797,"data":"     T cell     myeloid       55                     own:cd3              own: immune      2.371\n"}
+,{"stream_name":"stdout","time":2017.359537843,"data":"     T cell     myeloid       55                    own:cd45              own: immune      0.452\n"}
+,{"stream_name":"stdout","time":2017.359541854,"data":"     T cell     myeloid       55               nbr_hop2:cd68       neighbours: immune      0.207\n"}
+,{"stream_name":"stdout","time":5472.348899434,"data":"        cls  main_own  main_nbr  inter_own_own  inter_own_nbr  inter_nbr_nbr  n_cells  main_own_share  main_nbr_share  inter_own_own_share  inter_own_nbr_share  inter_nbr_nbr_share\n"}
+,{"stream_name":"stdout","time":5472.349410765,"data":" epithelial     6.633     2.170          3.049          5.211          3.323     1351           0.325           0.106                0.150                0.256                0.163\n"}
+,{"stream_name":"stdout","time":5472.349423584,"data":"     T cell     5.185     2.062          2.581          4.218          3.719       97           0.292           0.116                0.145                0.237                0.209\n"}
+,{"stream_name":"stdout","time":5472.349428545,"data":"     B cell     5.593     2.468          1.701          5.623          4.292        5           0.284           0.125                0.086                0.286                0.218\n"}
+,{"stream_name":"stdout","time":5472.349432854,"data":"    myeloid     4.964     2.862          1.960          5.261          5.096       23           0.246           0.142                0.097                0.261                0.253\n"}
+,{"stream_name":"stdout","time":5472.349437251,"data":"endothelial     1.928     1.809          1.084          2.790          3.065      129           0.181           0.169                0.102                0.261                0.287\n"}
+,{"stream_name":"stdout","time":5472.349441383,"data":"     stroma     1.561     1.585          0.810          2.328          2.789      395           0.172           0.175                0.089                0.257                0.307\n"}
+,{"stream_name":"stdout","time":5472.349449961,"data":"[  91.0 min] interactions\n"}
+,{"stream_name":"stdout","time":5521.815928019,"data":"    train      test                     group  drop_macro_f1  drop_epithelial  drop_T cell  drop_B cell  drop_myeloid  drop_endothelial  drop_stroma\n"}
+,{"stream_name":"stdout","time":5521.815991558,"data":"  Jackson   Jackson           own: epithelial          0.088            0.153        0.031        0.036        -0.011             0.187        0.134\n"}
+,{"stream_name":"stdout","time":5521.815998438,"data":"  Jackson   Jackson         own: hormone/HER2          0.049            0.044        0.019        0.009        -0.004             0.082        0.143\n"}
+,{"stream_name":"stdout","time":5521.816002114,"data":"  Jackson   Jackson               own: immune          0.443            0.029        0.872        0.898         0.659             0.105        0.094\n"}
+,{"stream_name":"stdout","time":5521.816005662,"data":"  Jackson   Jackson              own: nuclear          0.009            0.005        0.007        0.003         0.007             0.019        0.011\n"}
+,{"stream_name":"stdout","time":5521.816009096,"data":"  Jackson   Jackson        own: proliferation          0.012            0.013        0.025       -0.005         0.009             0.008        0.022\n"}
+,{"stream_name":"stdout","time":5521.816012328,"data":"  Jackson   Jackson         own: size/density          0.004            0.006        0.002       -0.000         0.002             0.003        0.013\n"}
+,{"stream_name":"stdout","time":5521.816015546,"data":"  Jackson   Jackson               own: stroma          0.009            0.008        0.002        0.004         0.021             0.036       -0.013\n"}
+,{"stream_name":"stdout","time":5521.81601867,"data":"  Jackson   Jackson    neighbours: epithelial          0.004            0.015        0.003        0.004        -0.008             0.011        0.002\n"}
+,{"stream_name":"stdout","time":5521.816021876,"data":"  Jackson   Jackson  neighbours: hormone/HER2         -0.001            0.011       -0.002       -0.009        -0.006             0.006       -0.004\n"}
+,{"stream_name":"stdout","time":5521.816025124,"data":"  Jackson   Jackson        neighbours: immune          0.013            0.007        0.007        0.015        -0.002             0.037        0.014\n"}
+,{"stream_name":"stdout","time":5521.816045265,"data":"  Jackson   Jackson       neighbours: nuclear          0.007            0.011        0.010        0.018         0.003             0.005       -0.005\n"}
+,{"stream_name":"stdout","time":5521.816048076,"data":"  Jackson   Jackson neighbours: proliferation          0.002            0.001        0.004       -0.004        -0.003             0.010        0.006\n"}
+,{"stream_name":"stdout","time":5521.816052038,"data":"  Jackson   Jackson  neighbours: size/density          0.018            0.008        0.006        0.005        -0.006             0.045        0.052\n"}
+,{"stream_name":"stdout","time":5521.816068437,"data":"  Jackson   Jackson        neighbours: stroma          0.015            0.003       -0.001        0.004        -0.000             0.041        0.043\n"}
+,{"stream_name":"stdout","time":5521.816071479,"data":"Danenberg Danenberg           own: epithelial          0.275            0.394        0.284        0.141         0.216             0.263        0.352\n"}
+,{"stream_name":"stdout","time":5521.816074118,"data":"Danenberg Danenberg         own: hormone/HER2          0.033            0.001        0.015        0.007         0.009             0.068        0.097\n"}
+,{"stream_name":"stdout","time":5521.81607794,"data":"Danenberg Danenberg               own: immune          0.279           -0.000        0.426        0.553         0.366             0.143        0.189\n"}
+,{"stream_name":"stdout","time":5521.816082092,"data":"Danenberg Danenberg              own: nuclear          0.037            0.000        0.042        0.019         0.085             0.040        0.036\n"}
+,{"stream_name":"stdout","time":5521.816086467,"data":"Danenberg Danenberg        own: proliferation          0.007           -0.000        0.008       -0.000         0.007             0.016        0.009\n"}
+,{"stream_name":"stdout","time":5521.816090508,"data":"Danenberg Danenberg         own: size/density          0.002            0.001        0.001       -0.002         0.002             0.005        0.007\n"}
+,{"stream_name":"stdout","time":5521.816094225,"data":"Danenberg Danenberg               own: stroma          0.032           -0.000        0.041       -0.002         0.033             0.084        0.036\n"}
+,{"stream_name":"stdout","time":5521.816098201,"data":"Danenberg Danenberg    neighbours: epithelial          0.029            0.046        0.023       -0.009         0.040             0.025        0.052\n"}
+,{"stream_name":"stdout","time":5521.816101368,"data":"Danenberg Danenberg  neighbours: hormone/HER2          0.004            0.001        0.004       -0.009         0.005             0.033       -0.012\n"}
+,{"stream_name":"stdout","time":5521.816104318,"data":"Danenberg Danenberg        neighbours: immune          0.011            0.001        0.007        0.021         0.013             0.026       -0.001\n"}
+,{"stream_name":"stdout","time":5521.816107085,"data":"Danenberg Danenberg       neighbours: nuclear          0.004            0.000        0.001        0.001         0.010             0.010        0.001\n"}
+,{"stream_name":"stdout","time":5521.816109769,"data":"Danenberg Danenberg neighbours: proliferation          0.002            0.000        0.003       -0.005         0.011             0.004        0.001\n"}
+,{"stream_name":"stdout","time":5521.816112923,"data":"Danenberg Danenberg  neighbours: size/density         -0.001            0.001       -0.003       -0.003         0.000             0.002       -0.006\n"}
+,{"stream_name":"stdout","time":5521.816115613,"data":"Danenberg Danenberg        neighbours: stroma          0.011            0.000        0.003       -0.007         0.007             0.040        0.023\n"}
+,{"stream_name":"stdout","time":5521.816118222,"data":"  Jackson Danenberg           own: epithelial          0.093            0.185        0.049        0.012         0.022             0.152        0.138\n"}
+,{"stream_name":"stdout","time":5521.816123729,"data":"  Jackson Danenberg         own: hormone/HER2          0.035            0.053        0.046        0.014         0.007             0.013        0.079\n"}
+,{"stream_name":"stdout","time":5521.816126539,"data":"  Jackson Danenberg               own: immune          0.277            0.026        0.343        0.765         0.378             0.086        0.065\n"}
+,{"stream_name":"stdout","time":5521.816129136,"data":"  Jackson Danenberg              own: nuclear          0.003            0.004        0.013       -0.005         0.001            -0.003        0.010\n"}
+,{"stream_name":"stdout","time":5521.816131918,"data":"  Jackson Danenberg        own: proliferation          0.007            0.011        0.004       -0.001         0.008             0.005        0.015\n"}
+,{"stream_name":"stdout","time":5521.816147504,"data":"  Jackson Danenberg         own: size/density          0.001           -0.000        0.005        0.001         0.000             0.003       -0.001\n"}
+,{"stream_name":"stdout","time":5521.816150531,"data":"  Jackson Danenberg               own: stroma          0.014            0.008        0.006       -0.001         0.006             0.070       -0.007\n"}
+,{"stream_name":"stdout","time":5521.816153134,"data":"  Jackson Danenberg    neighbours: epithelial          0.007            0.009        0.001        0.000        -0.001             0.029        0.004\n"}
+,{"stream_name":"stdout","time":5521.816155696,"data":"  Jackson Danenberg  neighbours: hormone/HER2          0.002            0.001       -0.005       -0.001        -0.001             0.026       -0.006\n"}
+,{"stream_name":"stdout","time":5521.816158274,"data":"  Jackson Danenberg        neighbours: immune          0.002            0.002        0.028        0.002        -0.001            -0.022        0.002\n"}
+,{"stream_name":"stdout","time":5521.816161025,"data":"  Jackson Danenberg       neighbours: nuclear         -0.002           -0.003        0.005       -0.007        -0.003             0.005       -0.009\n"}
+,{"stream_name":"stdout","time":5521.816163634,"data":"  Jackson Danenberg neighbours: proliferation          0.000            0.001        0.000       -0.002         0.000             0.001        0.001\n"}
+,{"stream_name":"stdout","time":5521.816166671,"data":"  Jackson Danenberg  neighbours: size/density          0.002            0.006        0.000       -0.002        -0.001            -0.012        0.018\n"}
+,{"stream_name":"stdout","time":5521.816169336,"data":"  Jackson Danenberg        neighbours: stroma          0.003            0.003       -0.002        0.002         0.001             0.007        0.007\n"}
+,{"stream_name":"stdout","time":5521.816171968,"data":"[  91.8 min] permutation check\n"}
+,{"stream_name":"stdout","time":5658.977494576,"data":"[  94.1 min] SMA\n"}
+,{"stream_name":"stdout","time":5706.95224458,"data":"[  94.9 min] H3K27me3 Jackson\n"}
+,{"stream_name":"stdout","time":5781.034610392,"data":"[  96.1 min] H3K27me3 Keren\n"}
+,{"stream_name":"stdout","time":5781.035934862,"data":"--- SMA, Jackson-trained (test R² 0.638)\n"}
+,{"stream_name":"stdout","time":5781.035960382,"data":"CK8/18 0.25, panCK 0.22, CD68 0.15, CD20 0.13, CK5 0.07, area 0.03, CD3 0.03, Ki-67 0.02\n"}
+,{"stream_name":"stdout","time":5781.03596668,"data":"--- SMA, Danenberg-trained (test R² 0.188)\n"}
+,{"stream_name":"stdout","time":5781.03597167,"data":"panCK 0.18, H3 0.13, CD68 0.09, CD45 0.09, CK8/18 0.09, HER2 0.08, CD20 0.06, DNA2 0.05\n"}
+,{"stream_name":"stdout","time":5781.035977032,"data":"--- SMA, Jackson-trained, on Danenberg (test R² -0.000)\n"}
+,{"stream_name":"stdout","time":5781.035995836,"data":"panCK 0.17, CK8/18 0.17, CD68 0.17, CD20 0.16, CK5 0.07, Ki-67 0.04, area 0.04, CD3 0.04\n"}
+,{"stream_name":"stdout","time":5781.036000617,"data":"--- H3K27me3, Jackson (14 shared channels + area) (test R² 0.507)\n"}
+,{"stream_name":"stdout","time":5781.03600454,"data":"H3 0.21, CK8/18 0.15, CK5 0.12, panCK 0.10, SMA 0.08, CD3 0.06, Ki-67 0.05, CD20 0.05\n"}
+,{"stream_name":"stdout","time":5781.036008417,"data":"--- H3K27me3, Keren (all 34 non-histone-mark channels + area) (test R² 0.702)\n"}
+,{"stream_name":"stdout","time":5781.036012142,"data":"phospho_s6 0.31, ds_dna 0.14, egfr 0.05, hla_dr 0.05, cd3 0.04, keratin6 0.04, hla_class_1 0.03, p53 0.03\n"}
+,{"stream_name":"stdout","time":5782.044643656,"data":"failed blocks: none\n"}
+,{"stream_name":"stdout","time":5782.044673915,"data":"[  96.1 min] done\n"}
+,{"stream_name":"stderr","time":5786.668321088,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5786.668352112,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5786.873625085,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5786.873665926,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5787.623503991,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":5788.030466497,"data":"[NbConvertApp] Writing 73331 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":5791.080732309,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5792.386026051,"data":"[NbConvertApp] Writing 500674 bytes to __results__.html\n"}
+]

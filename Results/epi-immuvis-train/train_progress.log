@@ -1,0 +1,38 @@
+[   0.0 min] child started: 397 train / 39 val images, 128 val crops, 16 channels, 2 GPUs | RSS 1.2 GB, system used 2.5 GB, GPU0 0.0 GB
+[   0.8 min] 0.572 s/step, validation 25 s -> 17378 steps in 180 min | RSS 4.4 GB, system used 3.7 GB, GPU0 0.4 GB
+[   6.2 min] step 500/17378: train loss 443.3815, val r H3K27me3 -0.001, pHH3 0.002 (best mean 0.001), shared LOO r 0.002 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  11.2 min] step 1000/17378: train loss 160.2423, val r H3K27me3 0.005, pHH3 0.002 (best mean 0.004) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB
+[  16.1 min] step 1500/17378: train loss 119.3005, val r H3K27me3 0.008, pHH3 0.004 (best mean 0.006) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB
+[  21.1 min] step 2000/17378: train loss 91.1188, val r H3K27me3 0.001, pHH3 0.006 (best mean 0.006) | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB
+[  26.5 min] step 2500/17378: train loss 74.7890, val r H3K27me3 0.002, pHH3 0.007 (best mean 0.006), shared LOO r 0.030 | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB
+[  31.5 min] step 3000/17378: train loss 79.1099, val r H3K27me3 0.005, pHH3 0.007 (best mean 0.006) | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB
+[  36.5 min] step 3500/17378: train loss 53.2298, val r H3K27me3 0.007, pHH3 0.006 (best mean 0.007) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB
+[  41.4 min] step 4000/17378: train loss 27.3287, val r H3K27me3 0.008, pHH3 0.011 (best mean 0.010) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB
+[  46.8 min] step 4500/17378: train loss 26.4364, val r H3K27me3 0.020, pHH3 0.019 (best mean 0.020), shared LOO r 0.106 | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB
+[  51.8 min] step 5000/17378: train loss 26.6010, val r H3K27me3 0.057, pHH3 0.031 (best mean 0.044) | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB
+[  56.8 min] step 5500/17378: train loss 1.8335, val r H3K27me3 0.046, pHH3 0.030 (best mean 0.044) | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB
+[  61.8 min] step 6000/17378: train loss -0.1076, val r H3K27me3 0.070, pHH3 0.034 (best mean 0.052) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  67.1 min] step 6500/17378: train loss -0.1094, val r H3K27me3 0.092, pHH3 0.051 (best mean 0.072), shared LOO r 0.300 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  72.0 min] step 7000/17378: train loss -0.1340, val r H3K27me3 0.110, pHH3 0.067 (best mean 0.089) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  76.9 min] step 7500/17378: train loss -0.1368, val r H3K27me3 0.116, pHH3 0.071 (best mean 0.093) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  81.9 min] step 8000/17378: train loss -0.1167, val r H3K27me3 0.506, pHH3 0.050 (best mean 0.278) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  87.2 min] step 8500/17378: train loss -0.1340, val r H3K27me3 0.531, pHH3 0.069 (best mean 0.300), shared LOO r 0.389 | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB
+[  92.1 min] step 9000/17378: train loss -0.1325, val r H3K27me3 0.557, pHH3 0.082 (best mean 0.319) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[  97.0 min] step 9500/17378: train loss -0.1326, val r H3K27me3 0.567, pHH3 0.087 (best mean 0.327) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 101.9 min] step 10000/17378: train loss -0.1317, val r H3K27me3 0.597, pHH3 0.080 (best mean 0.339) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 107.3 min] step 10500/17378: train loss -0.1325, val r H3K27me3 0.598, pHH3 0.087 (best mean 0.343), shared LOO r 0.448 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 112.2 min] step 11000/17378: train loss -0.1361, val r H3K27me3 0.607, pHH3 0.083 (best mean 0.345) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 117.1 min] step 11500/17378: train loss -0.1358, val r H3K27me3 0.616, pHH3 0.093 (best mean 0.354) | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 122.0 min] step 12000/17378: train loss -0.1353, val r H3K27me3 0.638, pHH3 0.087 (best mean 0.363) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 127.4 min] step 12500/17378: train loss -0.1331, val r H3K27me3 0.644, pHH3 0.085 (best mean 0.364), shared LOO r 0.491 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 132.3 min] step 13000/17378: train loss -0.1340, val r H3K27me3 0.652, pHH3 0.480 (best mean 0.566) | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 137.2 min] step 13500/17378: train loss -0.1328, val r H3K27me3 0.650, pHH3 0.479 (best mean 0.566) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 142.0 min] step 14000/17378: train loss -0.1327, val r H3K27me3 0.647, pHH3 0.481 (best mean 0.566) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 147.3 min] step 14500/17378: train loss -0.1309, val r H3K27me3 0.655, pHH3 0.487 (best mean 0.571), shared LOO r 0.527 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 152.2 min] step 15000/17378: train loss -0.1314, val r H3K27me3 0.652, pHH3 0.488 (best mean 0.571) | RSS 7.4 GB, system used 3.8 GB, GPU0 0.4 GB
+[ 157.1 min] step 15500/17378: train loss -0.1330, val r H3K27me3 0.651, pHH3 0.488 (best mean 0.571) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 162.0 min] step 16000/17378: train loss -0.1331, val r H3K27me3 0.649, pHH3 0.492 (best mean 0.571) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 167.4 min] step 16500/17378: train loss -0.1312, val r H3K27me3 0.651, pHH3 0.492 (best mean 0.571), shared LOO r 0.530 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 172.3 min] step 17000/17378: train loss -0.1316, val r H3K27me3 0.649, pHH3 0.492 (best mean 0.571) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 176.4 min] step 17378/17378: train loss -0.1321, val r H3K27me3 0.653, pHH3 0.503 (best mean 0.578), shared LOO r 0.530 | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB
+[ 176.4 min] child done | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB

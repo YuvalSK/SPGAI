@@ -1,0 +1,256 @@
+[{"stream_name":"stderr","time":5.397873157,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.397935528,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":6.1290762149999996,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.129102062,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.129107426,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.129111127,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.682783383,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.682811181,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.682814726,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.682817127,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":21.874658094,"data":"{\n"}
+,{"stream_name":"stdout","time":21.874687501,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":21.874692755,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":21.874696742,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":21.874701056,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":21.874705531,"data":" },\n"}
+,{"stream_name":"stdout","time":21.874709709,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":21.874713855,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":21.874717565,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":21.874721274,"data":" }\n"}
+,{"stream_name":"stdout","time":21.874724346,"data":"}\n"}
+,{"stream_name":"stdout","time":31.925144641,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients, 27 fine labels; coarse {'epithelial': 591813, 'stroma': 291265, 'unlabelled': 118279, 'T cell': 38040, 'myeloid': 34909, 'endothelial': 34410, 'B cell': 17408}\n"}
+,{"stream_name":"stdout","time":33.305063167,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients, 32 fine labels; coarse {'epithelial': 600818, 'stroma': 243138, 'T cell': 56364, 'myeloid': 50675, 'endothelial': 47355, 'unlabelled': 35585, 'B cell': 28284}\n"}
+,{"stream_name":"stdout","time":39.559917245,"data":"[   0.3 min] tables loaded\n"}
+,{"stream_name":"stdout","time":82.814904715,"data":"                 mean_degree  median_distance  contact_fraction\n"}
+,{"stream_name":"stdout","time":82.814936784,"data":"Jackson   knn5          5.83              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814942551,"data":"          knn10        11.37              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814947382,"data":"          knn20        22.35              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814973807,"data":"          r20           8.03              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814977055,"data":"          r30          17.66            20.97              0.30\n"}
+,{"stream_name":"stdout","time":82.814979492,"data":"Danenberg knn5          5.76              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814981897,"data":"          knn10        11.26              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814984268,"data":"          knn20        22.21              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814986628,"data":"          r20           6.67              NaN               NaN\n"}
+,{"stream_name":"stdout","time":82.814989064,"data":"          r30          15.20            21.29              0.38\n"}
+,{"stream_name":"stdout","time":82.814991473,"data":"[   1.1 min] graphs and neighbour features\n"}
+,{"stream_name":"stdout","time":83.284773802,"data":"[   1.1 min] replicate 0\n"}
+,{"stream_name":"stdout","time":84.184801093,"data":"Jackson {'train': (397, 251), 'val': (39, 32), 'test': (106, 66)} (images, patients)\n"}
+,{"stream_name":"stdout","time":84.18483092,"data":"Danenberg {'train': (494, 465), 'val': (65, 55), 'test': (145, 130)} (images, patients)\n"}
+,{"stream_name":"stdout","time":217.458838619,"data":"[   3.3 min] rep 0 fine / train Danenberg: Table Danenberg F1 0.438\n"}
+,{"stream_name":"stdout","time":532.464075255,"data":"[   8.6 min] rep 0 fine / train Danenberg: Table + nbr Danenberg F1 0.455\n"}
+,{"stream_name":"stdout","time":541.29822076,"data":"[   8.7 min] rep 0 fine / train Danenberg: MLP Danenberg F1 0.393\n"}
+,{"stream_name":"stdout","time":559.394134596,"data":"[   9.0 min] rep 0 fine / train Danenberg: GCN Danenberg F1 0.250\n"}
+,{"stream_name":"stdout","time":567.099571225,"data":"[   9.1 min] rep 0 fine / train Danenberg: GraphSAGE Danenberg F1 0.385\n"}
+,{"stream_name":"stdout","time":600.856987476,"data":"[   9.7 min] rep 0 fine / train Danenberg: SAGE+ Danenberg F1 0.380\n"}
+,{"stream_name":"stdout","time":686.316301339,"data":"[  11.1 min] rep 0 fine / train Danenberg: GATv2-e Danenberg F1 0.412\n"}
+,{"stream_name":"stdout","time":802.491574139,"data":"[  13.1 min] rep 0 fine / train Jackson: Table Jackson F1 0.350\n"}
+,{"stream_name":"stdout","time":1071.136335413,"data":"[  17.5 min] rep 0 fine / train Jackson: Table + nbr Jackson F1 0.400\n"}
+,{"stream_name":"stdout","time":1073.318184018,"data":"[  17.6 min] rep 0 fine / train Jackson: MLP Jackson F1 0.300\n"}
+,{"stream_name":"stdout","time":1089.935346603,"data":"[  17.8 min] rep 0 fine / train Jackson: GCN Jackson F1 0.244\n"}
+,{"stream_name":"stdout","time":1100.562212365,"data":"[  18.0 min] rep 0 fine / train Jackson: GraphSAGE Jackson F1 0.352\n"}
+,{"stream_name":"stdout","time":1138.913826391,"data":"[  18.7 min] rep 0 fine / train Jackson: SAGE+ Jackson F1 0.340\n"}
+,{"stream_name":"stdout","time":1239.034827504,"data":"[  20.3 min] rep 0 fine / train Jackson: GATv2-e Jackson F1 0.366\n"}
+,{"stream_name":"stdout","time":1272.50626191,"data":"[  20.9 min] rep 0 coarse / train Jackson: Table Jackson F1 0.761, Danenberg F1 0.537\n"}
+,{"stream_name":"stdout","time":1341.093812769,"data":"[  22.0 min] rep 0 coarse / train Jackson: Table + nbr Jackson F1 0.781, Danenberg F1 0.568\n"}
+,{"stream_name":"stdout","time":1378.726954948,"data":"[  22.7 min] rep 0 coarse / train Jackson: Table [img-z] Jackson F1 0.617, Danenberg F1 0.468\n"}
+,{"stream_name":"stdout","time":1381.302633445,"data":"[  22.7 min] rep 0 coarse / train Jackson: MLP Jackson F1 0.741, Danenberg F1 0.538\n"}
+,{"stream_name":"stdout","time":1401.571785486,"data":"[  23.0 min] rep 0 coarse / train Jackson: GCN Jackson F1 0.526, Danenberg F1 0.398\n"}
+,{"stream_name":"stdout","time":1413.131815305,"data":"[  23.2 min] rep 0 coarse / train Jackson: GraphSAGE Jackson F1 0.761, Danenberg F1 0.555\n"}
+,{"stream_name":"stdout","time":1459.049840266,"data":"[  24.0 min] rep 0 coarse / train Jackson: SAGE+ Jackson F1 0.765, Danenberg F1 0.591\n"}
+,{"stream_name":"stdout","time":1569.693768026,"data":"[  25.8 min] rep 0 coarse / train Jackson: GATv2-e Jackson F1 0.771, Danenberg F1 0.565\n"}
+,{"stream_name":"stdout","time":1628.932106185,"data":"[  26.8 min] rep 0 coarse / train Jackson: SAGE+ [img-z] Jackson F1 0.651, Danenberg F1 0.503\n"}
+,{"stream_name":"stdout","time":1663.888861911,"data":"[  27.4 min] rep 0 coarse / train Danenberg: Table Jackson F1 0.565, Danenberg F1 0.679\n"}
+,{"stream_name":"stdout","time":1734.845927237,"data":"[  28.6 min] rep 0 coarse / train Danenberg: Table + nbr Jackson F1 0.587, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":1771.600367134,"data":"[  29.2 min] rep 0 coarse / train Danenberg: Table [img-z] Jackson F1 0.516, Danenberg F1 0.559\n"}
+,{"stream_name":"stdout","time":1775.410865899,"data":"[  29.3 min] rep 0 coarse / train Danenberg: MLP Jackson F1 0.601, Danenberg F1 0.662\n"}
+,{"stream_name":"stdout","time":1786.718993908,"data":"[  29.5 min] rep 0 coarse / train Danenberg: GCN Jackson F1 0.450, Danenberg F1 0.487\n"}
+,{"stream_name":"stdout","time":1801.793847366,"data":"[  29.7 min] rep 0 coarse / train Danenberg: GraphSAGE Jackson F1 0.582, Danenberg F1 0.672\n"}
+,{"stream_name":"stdout","time":1855.905526964,"data":"[  30.6 min] rep 0 coarse / train Danenberg: SAGE+ Jackson F1 0.595, Danenberg F1 0.677\n"}
+,{"stream_name":"stdout","time":1993.678953766,"data":"[  32.9 min] rep 0 coarse / train Danenberg: GATv2-e Jackson F1 0.593, Danenberg F1 0.694\n"}
+,{"stream_name":"stdout","time":2055.715649297,"data":"[  33.9 min] rep 0 coarse / train Danenberg: SAGE+ [img-z] Jackson F1 0.520, Danenberg F1 0.614\n"}
+,{"stream_name":"stdout","time":2108.210455231,"data":"[  34.8 min] rep 0 coarse / train Both: Table Jackson F1 0.751, Danenberg F1 0.671\n"}
+,{"stream_name":"stdout","time":2228.190761207,"data":"[  36.8 min] rep 0 coarse / train Both: Table + nbr Jackson F1 0.772, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":2282.895787253,"data":"[  37.7 min] rep 0 coarse / train Both: Table [img-z] Jackson F1 0.604, Danenberg F1 0.545\n"}
+,{"stream_name":"stdout","time":2290.01899761,"data":"[  37.8 min] rep 0 coarse / train Both: MLP Jackson F1 0.717, Danenberg F1 0.638\n"}
+,{"stream_name":"stdout","time":2339.818982849,"data":"[  38.7 min] rep 0 coarse / train Both: GCN Jackson F1 0.522, Danenberg F1 0.484\n"}
+,{"stream_name":"stdout","time":2363.637990093,"data":"[  39.1 min] rep 0 coarse / train Both: GraphSAGE Jackson F1 0.753, Danenberg F1 0.668\n"}
+,{"stream_name":"stdout","time":2504.643043919,"data":"[  41.4 min] rep 0 coarse / train Both: SAGE+ Jackson F1 0.768, Danenberg F1 0.679\n"}
+,{"stream_name":"stdout","time":2714.980862223,"data":"[  44.9 min] rep 0 coarse / train Both: GATv2-e Jackson F1 0.750, Danenberg F1 0.674\n"}
+,{"stream_name":"stdout","time":2815.329793408,"data":"[  46.6 min] rep 0 coarse / train Both: SAGE+ [img-z] Jackson F1 0.655, Danenberg F1 0.603\n"}
+,{"stream_name":"stdout","time":2815.803990504,"data":"--- replicate 0: macro-F1\n"}
+,{"stream_name":"stdout","time":2815.804015599,"data":"model                       GATv2-e    GCN  GraphSAGE    MLP  SAGE+  SAGE+ [img-z]  Table  Table + nbr  Table [img-z]\n"}
+,{"stream_name":"stdout","time":2815.804022149,"data":"task   train     test                                                                                                \n"}
+,{"stream_name":"stdout","time":2815.804037567,"data":"coarse Both      Danenberg    0.674  0.484      0.668  0.638  0.679          0.603  0.671        0.692          0.545\n"}
+,{"stream_name":"stdout","time":2815.804041498,"data":"                 Jackson      0.750  0.522      0.753  0.717  0.768          0.655  0.751        0.772          0.604\n"}
+,{"stream_name":"stdout","time":2815.804044984,"data":"       Danenberg Danenberg    0.694  0.487      0.672  0.662  0.677          0.614  0.679        0.703          0.559\n"}
+,{"stream_name":"stdout","time":2815.80404859,"data":"                 Jackson      0.593  0.450      0.582  0.601  0.595          0.520  0.565        0.587          0.516\n"}
+,{"stream_name":"stdout","time":2815.804052099,"data":"       Jackson   Danenberg    0.565  0.398      0.555  0.538  0.591          0.503  0.537        0.568          0.468\n"}
+,{"stream_name":"stdout","time":2815.804055602,"data":"                 Jackson      0.771  0.526      0.761  0.741  0.765          0.651  0.761        0.781          0.617\n"}
+,{"stream_name":"stdout","time":2815.804059219,"data":"fine   Danenberg Danenberg    0.412  0.250      0.385  0.393  0.380            NaN  0.438        0.455            NaN\n"}
+,{"stream_name":"stdout","time":2815.804068615,"data":"       Jackson   Jackson      0.366  0.244      0.352  0.300  0.340            NaN  0.350        0.400            NaN\n"}
+,{"stream_name":"stdout","time":2815.80407138,"data":"[  46.6 min] replicate 0 done\n"}
+,{"stream_name":"stdout","time":2884.500825964,"data":"[  47.8 min] sweep Jackson knn5\n"}
+,{"stream_name":"stdout","time":3026.775961771,"data":"[  50.1 min] sweep Jackson knn10\n"}
+,{"stream_name":"stdout","time":3297.963897382,"data":"[  54.6 min] sweep Jackson knn20\n"}
+,{"stream_name":"stdout","time":3385.915893889,"data":"[  56.1 min] sweep Jackson r20\n"}
+,{"stream_name":"stdout","time":3588.284543474,"data":"[  59.5 min] sweep Jackson r30\n"}
+,{"stream_name":"stdout","time":3676.733963103,"data":"[  61.0 min] sweep Danenberg knn5\n"}
+,{"stream_name":"stdout","time":3809.5082457,"data":"[  63.2 min] sweep Danenberg knn10\n"}
+,{"stream_name":"stdout","time":4037.435580469,"data":"[  67.0 min] sweep Danenberg knn20\n"}
+,{"stream_name":"stdout","time":4132.858900102,"data":"[  68.6 min] sweep Danenberg r20\n"}
+,{"stream_name":"stdout","time":4312.232878276,"data":"[  71.5 min] sweep Danenberg r30\n"}
+,{"stream_name":"stdout","time":4312.233099504,"data":"layers                         1      2      3\n"}
+,{"stream_name":"stdout","time":4312.233110259,"data":"train     test      graph                     \n"}
+,{"stream_name":"stdout","time":4312.233114654,"data":"Danenberg Danenberg knn10  0.671  0.679  0.679\n"}
+,{"stream_name":"stdout","time":4312.233118765,"data":"                    knn20  0.676  0.677  0.677\n"}
+,{"stream_name":"stdout","time":4312.23312293,"data":"                    knn5   0.669  0.679  0.678\n"}
+,{"stream_name":"stdout","time":4312.233127069,"data":"                    r20    0.667  0.672  0.675\n"}
+,{"stream_name":"stdout","time":4312.23313107,"data":"                    r30    0.674  0.677  0.676\n"}
+,{"stream_name":"stdout","time":4312.233135075,"data":"          Jackson   knn10  0.614  0.598  0.593\n"}
+,{"stream_name":"stdout","time":4312.233139087,"data":"                    knn20  0.614  0.600  0.595\n"}
+,{"stream_name":"stdout","time":4312.233143101,"data":"                    knn5   0.612  0.612  0.602\n"}
+,{"stream_name":"stdout","time":4312.233147096,"data":"                    r20    0.612  0.609  0.593\n"}
+,{"stream_name":"stdout","time":4312.233151044,"data":"                    r30    0.614  0.596  0.597\n"}
+,{"stream_name":"stdout","time":4312.233154969,"data":"Jackson   Danenberg knn10  0.574  0.589  0.583\n"}
+,{"stream_name":"stdout","time":4312.233167565,"data":"                    knn20  0.575  0.590  0.590\n"}
+,{"stream_name":"stdout","time":4312.233170901,"data":"                    knn5   0.571  0.572  0.573\n"}
+,{"stream_name":"stdout","time":4312.233174125,"data":"                    r20    0.576  0.584  0.588\n"}
+,{"stream_name":"stdout","time":4312.233177331,"data":"                    r30    0.578  0.591  0.585\n"}
+,{"stream_name":"stdout","time":4312.233180565,"data":"          Jackson   knn10  0.762  0.765  0.761\n"}
+,{"stream_name":"stdout","time":4312.23318378,"data":"                    knn20  0.760  0.775  0.763\n"}
+,{"stream_name":"stdout","time":4312.233187064,"data":"                    knn5   0.759  0.754  0.754\n"}
+,{"stream_name":"stdout","time":4312.233190359,"data":"                    r20    0.760  0.771  0.759\n"}
+,{"stream_name":"stdout","time":4312.233193597,"data":"                    r30    0.763  0.765  0.761\n"}
+,{"stream_name":"stdout","time":4312.233196944,"data":"[  71.6 min] replicate 1\n"}
+,{"stream_name":"stdout","time":4313.252739979,"data":"Jackson {'train': (378, 242), 'val': (46, 31), 'test': (118, 76)} (images, patients)\n"}
+,{"stream_name":"stdout","time":4313.252793612,"data":"Danenberg {'train': (489, 455), 'val': (70, 65), 'test': (145, 130)} (images, patients)\n"}
+,{"stream_name":"stdout","time":4447.353409682,"data":"[  73.8 min] rep 1 fine / train Danenberg: Table Danenberg F1 0.435\n"}
+,{"stream_name":"stdout","time":4764.529185893,"data":"[  79.1 min] rep 1 fine / train Danenberg: Table + nbr Danenberg F1 0.451\n"}
+,{"stream_name":"stdout","time":4768.337795749,"data":"[  79.2 min] rep 1 fine / train Danenberg: MLP Danenberg F1 0.386\n"}
+,{"stream_name":"stdout","time":4788.693823056,"data":"[  79.5 min] rep 1 fine / train Danenberg: GCN Danenberg F1 0.244\n"}
+,{"stream_name":"stdout","time":4800.912362161,"data":"[  79.7 min] rep 1 fine / train Danenberg: GraphSAGE Danenberg F1 0.395\n"}
+,{"stream_name":"stdout","time":4841.266363778,"data":"[  80.4 min] rep 1 fine / train Danenberg: SAGE+ Danenberg F1 0.386\n"}
+,{"stream_name":"stdout","time":4937.688830038,"data":"[  82.0 min] rep 1 fine / train Danenberg: GATv2-e Danenberg F1 0.403\n"}
+,{"stream_name":"stdout","time":5056.206910747,"data":"[  83.9 min] rep 1 fine / train Jackson: Table Jackson F1 0.391\n"}
+,{"stream_name":"stdout","time":5326.886229513,"data":"[  88.5 min] rep 1 fine / train Jackson: Table + nbr Jackson F1 0.426\n"}
+,{"stream_name":"stdout","time":5329.611308627,"data":"[  88.5 min] rep 1 fine / train Jackson: MLP Jackson F1 0.341\n"}
+,{"stream_name":"stdout","time":5360.221864439,"data":"[  89.0 min] rep 1 fine / train Jackson: GCN Jackson F1 0.306\n"}
+,{"stream_name":"stdout","time":5373.028844534,"data":"[  89.2 min] rep 1 fine / train Jackson: GraphSAGE Jackson F1 0.380\n"}
+,{"stream_name":"stdout","time":5415.227606258,"data":"[  89.9 min] rep 1 fine / train Jackson: SAGE+ Jackson F1 0.368\n"}
+,{"stream_name":"stdout","time":5530.59570817,"data":"[  91.9 min] rep 1 fine / train Jackson: GATv2-e Jackson F1 0.402\n"}
+,{"stream_name":"stdout","time":5565.686822128,"data":"[  92.4 min] rep 1 coarse / train Jackson: Table Jackson F1 0.772, Danenberg F1 0.536\n"}
+,{"stream_name":"stdout","time":5636.223296913,"data":"[  93.6 min] rep 1 coarse / train Jackson: Table + nbr Jackson F1 0.795, Danenberg F1 0.571\n"}
+,{"stream_name":"stdout","time":5675.257405457,"data":"[  94.3 min] rep 1 coarse / train Jackson: Table [img-z] Jackson F1 0.600, Danenberg F1 0.464\n"}
+,{"stream_name":"stdout","time":5679.223409199,"data":"[  94.3 min] rep 1 coarse / train Jackson: MLP Jackson F1 0.757, Danenberg F1 0.530\n"}
+,{"stream_name":"stdout","time":5709.554891112,"data":"[  94.8 min] rep 1 coarse / train Jackson: GCN Jackson F1 0.550, Danenberg F1 0.390\n"}
+,{"stream_name":"stdout","time":5722.282848642,"data":"[  95.1 min] rep 1 coarse / train Jackson: GraphSAGE Jackson F1 0.769, Danenberg F1 0.567\n"}
+,{"stream_name":"stdout","time":5813.27892329,"data":"[  96.6 min] rep 1 coarse / train Jackson: SAGE+ Jackson F1 0.781, Danenberg F1 0.591\n"}
+,{"stream_name":"stdout","time":5935.235905639,"data":"[  98.6 min] rep 1 coarse / train Jackson: GATv2-e Jackson F1 0.778, Danenberg F1 0.567\n"}
+,{"stream_name":"stdout","time":5983.177338524,"data":"[  99.4 min] rep 1 coarse / train Jackson: SAGE+ [img-z] Jackson F1 0.645, Danenberg F1 0.532\n"}
+,{"stream_name":"stdout","time":6019.845921759,"data":"[ 100.0 min] rep 1 coarse / train Danenberg: Table Jackson F1 0.589, Danenberg F1 0.678\n"}
+,{"stream_name":"stdout","time":6093.680530047,"data":"[ 101.2 min] rep 1 coarse / train Danenberg: Table + nbr Jackson F1 0.600, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":6132.086785191,"data":"[ 101.9 min] rep 1 coarse / train Danenberg: Table [img-z] Jackson F1 0.500, Danenberg F1 0.555\n"}
+,{"stream_name":"stdout","time":6135.963055027,"data":"[ 101.9 min] rep 1 coarse / train Danenberg: MLP Jackson F1 0.593, Danenberg F1 0.656\n"}
+,{"stream_name":"stdout","time":6165.569909319,"data":"[ 102.4 min] rep 1 coarse / train Danenberg: GCN Jackson F1 0.478, Danenberg F1 0.485\n"}
+,{"stream_name":"stdout","time":6182.828040232,"data":"[ 102.7 min] rep 1 coarse / train Danenberg: GraphSAGE Jackson F1 0.605, Danenberg F1 0.687\n"}
+,{"stream_name":"stdout","time":6223.394831176,"data":"[ 103.4 min] rep 1 coarse / train Danenberg: SAGE+ Jackson F1 0.644, Danenberg F1 0.673\n"}
+,{"stream_name":"stdout","time":6350.227834885,"data":"[ 105.5 min] rep 1 coarse / train Danenberg: GATv2-e Jackson F1 0.627, Danenberg F1 0.695\n"}
+,{"stream_name":"stdout","time":6417.092078181,"data":"[ 106.6 min] rep 1 coarse / train Danenberg: SAGE+ [img-z] Jackson F1 0.546, Danenberg F1 0.613\n"}
+,{"stream_name":"stdout","time":6471.137154649,"data":"[ 107.5 min] rep 1 coarse / train Both: Table Jackson F1 0.760, Danenberg F1 0.670\n"}
+,{"stream_name":"stdout","time":6592.74420119,"data":"[ 109.6 min] rep 1 coarse / train Both: Table + nbr Jackson F1 0.782, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":6649.954301654,"data":"[ 110.5 min] rep 1 coarse / train Both: Table [img-z] Jackson F1 0.588, Danenberg F1 0.543\n"}
+,{"stream_name":"stdout","time":6660.194970724,"data":"[ 110.7 min] rep 1 coarse / train Both: MLP Jackson F1 0.739, Danenberg F1 0.654\n"}
+,{"stream_name":"stdout","time":6717.245204248,"data":"[ 111.6 min] rep 1 coarse / train Both: GCN Jackson F1 0.535, Danenberg F1 0.483\n"}
+,{"stream_name":"stdout","time":6751.065826374,"data":"[ 112.2 min] rep 1 coarse / train Both: GraphSAGE Jackson F1 0.760, Danenberg F1 0.676\n"}
+,{"stream_name":"stdout","time":6865.963706004,"data":"[ 114.1 min] rep 1 coarse / train Both: SAGE+ Jackson F1 0.758, Danenberg F1 0.663\n"}
+,{"stream_name":"stdout","time":7167.686160709,"data":"[ 119.1 min] rep 1 coarse / train Both: GATv2-e Jackson F1 0.778, Danenberg F1 0.683\n"}
+,{"stream_name":"stdout","time":7259.397864014,"data":"[ 120.7 min] rep 1 coarse / train Both: SAGE+ [img-z] Jackson F1 0.645, Danenberg F1 0.602\n"}
+,{"stream_name":"stdout","time":7260.110499359,"data":"--- replicate 1: macro-F1\n"}
+,{"stream_name":"stdout","time":7260.110541761,"data":"model                       GATv2-e    GCN  GraphSAGE    MLP  SAGE+  SAGE+ [img-z]  Table  Table + nbr  Table [img-z]\n"}
+,{"stream_name":"stdout","time":7260.110551355,"data":"task   train     test                                                                                                \n"}
+,{"stream_name":"stdout","time":7260.110580969,"data":"coarse Both      Danenberg    0.683  0.483      0.676  0.654  0.663          0.602  0.670        0.692          0.543\n"}
+,{"stream_name":"stdout","time":7260.11058801,"data":"                 Jackson      0.778  0.535      0.760  0.739  0.758          0.645  0.760        0.782          0.588\n"}
+,{"stream_name":"stdout","time":7260.110594358,"data":"       Danenberg Danenberg    0.695  0.485      0.687  0.656  0.673          0.613  0.678        0.704          0.555\n"}
+,{"stream_name":"stdout","time":7260.110600666,"data":"                 Jackson      0.627  0.478      0.605  0.593  0.644          0.546  0.589        0.600          0.500\n"}
+,{"stream_name":"stdout","time":7260.110607467,"data":"       Jackson   Danenberg    0.567  0.390      0.567  0.530  0.591          0.532  0.536        0.571          0.464\n"}
+,{"stream_name":"stdout","time":7260.110613699,"data":"                 Jackson      0.778  0.550      0.769  0.757  0.781          0.645  0.772        0.795          0.600\n"}
+,{"stream_name":"stdout","time":7260.110620087,"data":"fine   Danenberg Danenberg    0.403  0.244      0.395  0.386  0.386            NaN  0.435        0.451            NaN\n"}
+,{"stream_name":"stdout","time":7260.110626315,"data":"       Jackson   Jackson      0.402  0.306      0.380  0.341  0.368            NaN  0.391        0.426            NaN\n"}
+,{"stream_name":"stdout","time":7260.110632566,"data":"[ 120.7 min] replicate 1 done\n"}
+,{"stream_name":"stdout","time":7260.111345963,"data":"[ 120.7 min] replicate 2\n"}
+,{"stream_name":"stdout","time":7261.00368291,"data":"Jackson {'train': (390, 254), 'val': (65, 40), 'test': (87, 55)} (images, patients)\n"}
+,{"stream_name":"stdout","time":7261.003709872,"data":"Danenberg {'train': (490, 452), 'val': (69, 68), 'test': (145, 130)} (images, patients)\n"}
+,{"stream_name":"stdout","time":7400.576561043,"data":"[ 123.0 min] rep 2 fine / train Danenberg: Table Danenberg F1 0.437\n"}
+,{"stream_name":"stdout","time":7718.962905642,"data":"[ 128.3 min] rep 2 fine / train Danenberg: Table + nbr Danenberg F1 0.456\n"}
+,{"stream_name":"stdout","time":7721.731964363,"data":"[ 128.4 min] rep 2 fine / train Danenberg: MLP Danenberg F1 0.387\n"}
+,{"stream_name":"stdout","time":7730.830821673,"data":"[ 128.5 min] rep 2 fine / train Danenberg: GCN Danenberg F1 0.235\n"}
+,{"stream_name":"stdout","time":7737.95992984,"data":"[ 128.6 min] rep 2 fine / train Danenberg: GraphSAGE Danenberg F1 0.376\n"}
+,{"stream_name":"stdout","time":7777.541899861,"data":"[ 129.3 min] rep 2 fine / train Danenberg: SAGE+ Danenberg F1 0.380\n"}
+,{"stream_name":"stdout","time":7808.655828603,"data":"[ 129.8 min] rep 2 fine / train Danenberg: GATv2-e Danenberg F1 0.362\n"}
+,{"stream_name":"stdout","time":7913.002948906,"data":"[ 131.6 min] rep 2 fine / train Jackson: Table Jackson F1 0.382\n"}
+,{"stream_name":"stdout","time":8166.877896677,"data":"[ 135.8 min] rep 2 fine / train Jackson: Table + nbr Jackson F1 0.435\n"}
+,{"stream_name":"stdout","time":8170.748815236,"data":"[ 135.9 min] rep 2 fine / train Jackson: MLP Jackson F1 0.350\n"}
+,{"stream_name":"stdout","time":8185.74142177,"data":"[ 136.1 min] rep 2 fine / train Jackson: GCN Jackson F1 0.260\n"}
+,{"stream_name":"stdout","time":8194.385285747,"data":"[ 136.3 min] rep 2 fine / train Jackson: GraphSAGE Jackson F1 0.360\n"}
+,{"stream_name":"stdout","time":8245.587842024,"data":"[ 137.1 min] rep 2 fine / train Jackson: SAGE+ Jackson F1 0.359\n"}
+,{"stream_name":"stdout","time":8326.809831849,"data":"[ 138.5 min] rep 2 fine / train Jackson: GATv2-e Jackson F1 0.368\n"}
+,{"stream_name":"stdout","time":8358.237479377,"data":"[ 139.0 min] rep 2 coarse / train Jackson: Table Jackson F1 0.756, Danenberg F1 0.529\n"}
+,{"stream_name":"stdout","time":8423.550968363,"data":"[ 140.1 min] rep 2 coarse / train Jackson: Table + nbr Jackson F1 0.781, Danenberg F1 0.559\n"}
+,{"stream_name":"stdout","time":8458.239532041,"data":"[ 140.6 min] rep 2 coarse / train Jackson: Table [img-z] Jackson F1 0.572, Danenberg F1 0.462\n"}
+,{"stream_name":"stdout","time":8460.651319358,"data":"[ 140.7 min] rep 2 coarse / train Jackson: MLP Jackson F1 0.705, Danenberg F1 0.543\n"}
+,{"stream_name":"stdout","time":8490.248695182,"data":"[ 141.2 min] rep 2 coarse / train Jackson: GCN Jackson F1 0.496, Danenberg F1 0.391\n"}
+,{"stream_name":"stdout","time":8509.151017722,"data":"[ 141.5 min] rep 2 coarse / train Jackson: GraphSAGE Jackson F1 0.751, Danenberg F1 0.563\n"}
+,{"stream_name":"stdout","time":8599.057868247,"data":"[ 143.0 min] rep 2 coarse / train Jackson: SAGE+ Jackson F1 0.740, Danenberg F1 0.586\n"}
+,{"stream_name":"stdout","time":8695.103166698,"data":"[ 144.6 min] rep 2 coarse / train Jackson: GATv2-e Jackson F1 0.728, Danenberg F1 0.571\n"}
+,{"stream_name":"stdout","time":8748.661080239,"data":"[ 145.5 min] rep 2 coarse / train Jackson: SAGE+ [img-z] Jackson F1 0.615, Danenberg F1 0.531\n"}
+,{"stream_name":"stdout","time":8782.10584305,"data":"[ 146.0 min] rep 2 coarse / train Danenberg: Table Jackson F1 0.519, Danenberg F1 0.681\n"}
+,{"stream_name":"stdout","time":8853.046787467,"data":"[ 147.2 min] rep 2 coarse / train Danenberg: Table + nbr Jackson F1 0.533, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":8888.292326865,"data":"[ 147.8 min] rep 2 coarse / train Danenberg: Table [img-z] Jackson F1 0.470, Danenberg F1 0.558\n"}
+,{"stream_name":"stdout","time":8893.722877927,"data":"[ 147.9 min] rep 2 coarse / train Danenberg: MLP Jackson F1 0.534, Danenberg F1 0.668\n"}
+,{"stream_name":"stdout","time":8912.792615694,"data":"[ 148.2 min] rep 2 coarse / train Danenberg: GCN Jackson F1 0.393, Danenberg F1 0.484\n"}
+,{"stream_name":"stdout","time":8926.248886719,"data":"[ 148.4 min] rep 2 coarse / train Danenberg: GraphSAGE Jackson F1 0.525, Danenberg F1 0.682\n"}
+,{"stream_name":"stdout","time":8988.800689045,"data":"[ 149.5 min] rep 2 coarse / train Danenberg: SAGE+ Jackson F1 0.559, Danenberg F1 0.683\n"}
+,{"stream_name":"stdout","time":9097.483912735,"data":"[ 151.3 min] rep 2 coarse / train Danenberg: GATv2-e Jackson F1 0.541, Danenberg F1 0.689\n"}
+,{"stream_name":"stdout","time":9154.101819447,"data":"[ 152.2 min] rep 2 coarse / train Danenberg: SAGE+ [img-z] Jackson F1 0.515, Danenberg F1 0.606\n"}
+,{"stream_name":"stdout","time":9204.516793348,"data":"[ 153.1 min] rep 2 coarse / train Both: Table Jackson F1 0.736, Danenberg F1 0.671\n"}
+,{"stream_name":"stdout","time":9322.249606232,"data":"[ 155.0 min] rep 2 coarse / train Both: Table + nbr Jackson F1 0.761, Danenberg F1 0.691\n"}
+,{"stream_name":"stdout","time":9375.120167453,"data":"[ 155.9 min] rep 2 coarse / train Both: Table [img-z] Jackson F1 0.561, Danenberg F1 0.546\n"}
+,{"stream_name":"stdout","time":9385.427640355,"data":"[ 156.1 min] rep 2 coarse / train Both: MLP Jackson F1 0.691, Danenberg F1 0.652\n"}
+,{"stream_name":"stdout","time":9425.45984243,"data":"[ 156.8 min] rep 2 coarse / train Both: GCN Jackson F1 0.487, Danenberg F1 0.487\n"}
+,{"stream_name":"stdout","time":9449.255216594,"data":"[ 157.2 min] rep 2 coarse / train Both: GraphSAGE Jackson F1 0.694, Danenberg F1 0.666\n"}
+,{"stream_name":"stdout","time":9581.630983032,"data":"[ 159.4 min] rep 2 coarse / train Both: SAGE+ Jackson F1 0.725, Danenberg F1 0.675\n"}
+,{"stream_name":"stdout","time":9903.040922907,"data":"[ 164.7 min] rep 2 coarse / train Both: GATv2-e Jackson F1 0.746, Danenberg F1 0.684\n"}
+,{"stream_name":"stdout","time":10057.014679459,"data":"[ 167.3 min] rep 2 coarse / train Both: SAGE+ [img-z] Jackson F1 0.622, Danenberg F1 0.612\n"}
+,{"stream_name":"stdout","time":10057.52564293,"data":"--- replicate 2: macro-F1\n"}
+,{"stream_name":"stdout","time":10057.525670477,"data":"model                       GATv2-e    GCN  GraphSAGE    MLP  SAGE+  SAGE+ [img-z]  Table  Table + nbr  Table [img-z]\n"}
+,{"stream_name":"stdout","time":10057.52567609,"data":"task   train     test                                                                                                \n"}
+,{"stream_name":"stdout","time":10057.525680389,"data":"coarse Both      Danenberg    0.684  0.487      0.666  0.652  0.675          0.612  0.671        0.691          0.546\n"}
+,{"stream_name":"stdout","time":10057.52568461,"data":"                 Jackson      0.746  0.487      0.694  0.691  0.725          0.622  0.736        0.761          0.561\n"}
+,{"stream_name":"stdout","time":10057.525688969,"data":"       Danenberg Danenberg    0.689  0.484      0.682  0.668  0.683          0.606  0.681        0.704          0.558\n"}
+,{"stream_name":"stdout","time":10057.525692828,"data":"                 Jackson      0.541  0.393      0.525  0.534  0.559          0.515  0.519        0.533          0.470\n"}
+,{"stream_name":"stdout","time":10057.525696434,"data":"       Jackson   Danenberg    0.571  0.391      0.563  0.543  0.586          0.531  0.529        0.559          0.462\n"}
+,{"stream_name":"stdout","time":10057.525700296,"data":"                 Jackson      0.728  0.496      0.751  0.705  0.740          0.615  0.756        0.781          0.572\n"}
+,{"stream_name":"stdout","time":10057.525704416,"data":"fine   Danenberg Danenberg    0.362  0.235      0.376  0.387  0.380            NaN  0.437        0.456            NaN\n"}
+,{"stream_name":"stdout","time":10057.525708379,"data":"       Jackson   Jackson      0.368  0.260      0.360  0.350  0.359            NaN  0.382        0.435            NaN\n"}
+,{"stream_name":"stdout","time":10057.525712441,"data":"[ 167.3 min] replicate 2 done\n"}
+,{"stream_name":"stdout","time":10057.527051542,"data":"skipped units: none\n"}
+,{"stream_name":"stdout","time":10057.587702622,"data":"model                       GATv2-e    GCN  GraphSAGE    MLP  SAGE+  SAGE+ [img-z]  Table  Table + nbr  Table [img-z]\n"}
+,{"stream_name":"stdout","time":10057.587719943,"data":"task   train     test                                                                                                \n"}
+,{"stream_name":"stdout","time":10057.587725257,"data":"coarse Both      Danenberg    0.680  0.485      0.670  0.648  0.673          0.605  0.671        0.692          0.544\n"}
+,{"stream_name":"stdout","time":10057.587729312,"data":"                 Jackson      0.758  0.515      0.736  0.716  0.750          0.641  0.749        0.771          0.584\n"}
+,{"stream_name":"stdout","time":10057.587733119,"data":"       Danenberg Danenberg    0.692  0.486      0.680  0.662  0.678          0.611  0.680        0.704          0.558\n"}
+,{"stream_name":"stdout","time":10057.587737097,"data":"                 Jackson      0.587  0.440      0.570  0.576  0.599          0.527  0.558        0.574          0.495\n"}
+,{"stream_name":"stdout","time":10057.587740913,"data":"       Jackson   Danenberg    0.568  0.393      0.561  0.537  0.590          0.522  0.534        0.566          0.465\n"}
+,{"stream_name":"stdout","time":10057.587762347,"data":"                 Jackson      0.759  0.524      0.760  0.734  0.762          0.637  0.763        0.786          0.596\n"}
+,{"stream_name":"stdout","time":10057.587766606,"data":"fine   Danenberg Danenberg    0.392  0.243      0.385  0.389  0.382            NaN  0.437        0.454            NaN\n"}
+,{"stream_name":"stdout","time":10057.587773017,"data":"       Jackson   Jackson      0.379  0.270      0.364  0.330  0.355            NaN  0.374        0.421            NaN\n"}
+,{"stream_name":"stderr","time":10063.430851296,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":10063.430894876,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":10063.578234747,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":10063.578262502,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":10064.165653597,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":10064.480584051,"data":"[NbConvertApp] Writing 68778 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":10066.775916116,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":10067.753681727,"data":"[NbConvertApp] Writing 525807 bytes to __results__.html\n"}
+]

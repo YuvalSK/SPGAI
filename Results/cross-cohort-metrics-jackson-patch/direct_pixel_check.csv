@@ -1,0 +1,5 @@
+image,marker,model,r_direct,r_sums
+43_108_x13y8,pan_cytokeratin,Table [Danenberg-scaled inputs],0.22000562182193012,0.22000562232223328
+43_108_x13y8,pan_cytokeratin,Table (Jackson-trained),0.2788592558866761,0.2788592570783074
+43_108_x13y8,cd3,Table [Danenberg-scaled inputs],0.02238663544598317,0.022386635715915447
+43_108_x13y8,cd3,Table (Jackson-trained),0.05044787328410944,0.05044787358719879

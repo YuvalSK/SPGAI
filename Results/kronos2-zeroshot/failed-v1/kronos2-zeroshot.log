@@ -1,0 +1,166 @@
+[{"stream_name":"stderr","time":6.851659956,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.851705342,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.834826971,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.834859081,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.834867215,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.834870062,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.457222273,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.457252198,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.457264593,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.457267807000001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":20.548477021,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":20.548865426,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":20.751085964,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":20.751117306,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":20.75112229,"data":"\n"}
+,{"stream_name":"stderr","time":20.75112626,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":20.751130909,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":43.485912592,"data":"FULL | device cuda | GPUs 2 | torch 2.11.0+cu128 | transformers 5.16.1 | reps [0, 1, 2]\n"}
+,{"stream_name":"stderr","time":125.938564249,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":125.938594914,"data":"\n"}
+,{"stream_name":"stderr","time":125.938601557,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":144.660110055,"data":"        channel  vocab_index  in_pretraining  kronos2_mean  kronos2_sd\n"}
+,{"stream_name":"stdout","time":144.660146864,"data":"0          DAPI            0            True      0.083207    0.095882\n"}
+,{"stream_name":"stdout","time":144.660152857,"data":"1     HISTONEH3           15            True      0.017520    0.032944\n"}
+,{"stream_name":"stdout","time":144.660172503,"data":"2          HER2          123            True      0.002635    0.002680\n"}
+,{"stream_name":"stdout","time":144.660176815,"data":"3          CD20           65            True      0.045192    0.057727\n"}
+,{"stream_name":"stdout","time":144.660184531,"data":"4           CD3           73            True      0.031814    0.066670\n"}
+,{"stream_name":"stdout","time":144.660188229,"data":"5          CD45           84            True      0.064862    0.112588\n"}
+,{"stream_name":"stdout","time":144.660191808,"data":"6          CD68           94            True      0.013593    0.033644\n"}
+,{"stream_name":"stdout","time":144.660195374,"data":"7           CK5          288           False           NaN         NaN\n"}
+,{"stream_name":"stdout","time":144.660198935,"data":"8        CK8_18          289           False           NaN         NaN\n"}
+,{"stream_name":"stdout","time":144.660202423,"data":"9           ERA          202            True      0.009006    0.029332\n"}
+,{"stream_name":"stdout","time":144.660205983,"data":"10         KI67           17            True      0.029532    0.076519\n"}
+,{"stream_name":"stdout","time":144.660209457,"data":"11  CYTOKERATIN          107            True      0.017070    0.040264\n"}
+,{"stream_name":"stdout","time":144.660212985,"data":"12        A-SMA           29            True      0.029575    0.041247\n"}
+,{"stream_name":"stdout","time":144.926289018,"data":"CK5: nearest vocabulary markers by text embedding ['ck20', 'ck17', 'panck', 'cytokeratin', 'ck8_18']\n"}
+,{"stream_name":"stdout","time":144.926325409,"data":"CK8_18: nearest vocabulary markers by text embedding ['ck20', 'ck5', 'ck17', 'panck', 'pancytokeratin']\n"}
+,{"stream_name":"stdout","time":144.993272594,"data":"[   1.7 min] KRONOS2 loaded, embedding dim 768\n"}
+,{"stream_name":"stdout","time":150.50389239,"data":"{\n"}
+,{"stream_name":"stdout","time":150.503929268,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":150.503933053,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":150.503936001,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":150.503938778,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":150.503941486,"data":" },\n"}
+,{"stream_name":"stdout","time":150.503943794,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":150.503946332,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":150.503948861,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":150.503951438,"data":" }\n"}
+,{"stream_name":"stdout","time":150.503953726,"data":"}\n"}
+,{"stream_name":"stdout","time":150.503956085,"data":"{'Danenberg': (794, 794), 'Jackson': (735, 708)}\n"}
+,{"stream_name":"stdout","time":172.74506825,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients, 27 fine labels\n"}
+,{"stream_name":"stdout","time":182.009073535,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients, 32 fine labels\n"}
+,{"stream_name":"stdout","time":182.009104264,"data":"[   2.3 min] tables, labels and neighbour features\n"}
+,{"stream_name":"stdout","time":183.128421482,"data":"Jackson {'train': 397, 'val': 39, 'test': 106} images\n"}
+,{"stream_name":"stdout","time":183.128462499,"data":"Danenberg {'train': 494, 'val': 65, 'test': 145} images\n"}
+,{"stream_name":"stdout","time":246.5214795,"data":"Jackson          DAPI  HISTONEH3       HER2    CD20     CD3     CD45       CD68      CK5     CK8_18      ERA     KI67  CYTOKERATIN       A-SMA\n"}
+,{"stream_name":"stdout","time":246.521518806,"data":"q   69.345497    80.3508  21.648001  5.3810  6.1572  10.4590  22.705799  14.9768  57.047001  15.3142  29.8682   348.839203  159.833206\n"}
+,{"stream_name":"stdout","time":246.521523814,"data":"mu   0.087300     0.1065   0.068600  0.0326  0.0294   0.0349   0.026900   0.0164   0.041200   0.0343   0.0174     0.041500    0.022900\n"}
+,{"stream_name":"stdout","time":246.521527315,"data":"sd   0.135000     0.1443   0.125500  0.0999  0.0933   0.1000   0.077500   0.0715   0.106500   0.0954   0.0728     0.104400    0.080100\n"}
+,{"stream_name":"stdout","time":304.301853306,"data":"Danenberg           DAPI   HISTONEH3     HER2     CD20     CD3     CD45     CD68      CK5     CK8_18         ERA    KI67  CYTOKERATIN    A-SMA\n"}
+,{"stream_name":"stdout","time":304.301893478,"data":"q   216.464005  265.349396  22.8046  14.3498  3.7770  24.5168  11.5540  27.3426  25.836901  190.281799  7.0751   273.616211  48.7925\n"}
+,{"stream_name":"stdout","time":304.301903477,"data":"mu    0.127000    0.074400   0.0648   0.0242  0.0463   0.0670   0.0205   0.0097   0.039200    0.049500  0.0230     0.045400   0.0568\n"}
+,{"stream_name":"stdout","time":304.301907185,"data":"sd    0.173000    0.135200   0.1172   0.0695  0.1282   0.1141   0.0749   0.0617   0.100600    0.083100  0.0820     0.101200   0.0942\n"}
+,{"stream_name":"stdout","time":304.301910671,"data":"[   4.3 min] embedding helpers ready\n"}
+,{"stream_name":"stdout","time":680.733469346,"data":"kronos2 {'macro_f1_val': 0.7079966462016287, 'weight_decay': 0.001, 'n_fit': 57056, 'n_val': 81503}\n"}
+,{"stream_name":"stdout","time":1053.018612689,"data":"own {'macro_f1_val': 0.707244191066965, 'weight_decay': 0.001, 'n_fit': 57056, 'n_val': 81503}\n"}
+,{"stream_name":"stdout","time":1053.018649825,"data":"normalisation used: kronos2\n"}
+,{"stream_name":"stdout","time":1241.585008496,"data":"PCA: 256 components explain 0.980 of the variance\n"}
+,{"stream_name":"stdout","time":1241.585043234,"data":"[  20.0 min] calibration\n"}
+,{"stream_name":"stdout","time":1413.163821735,"data":"[  22.8 min] Jackson: embedded 50 / 542 images\n"}
+,{"stream_name":"stdout","time":1615.217582123,"data":"[  26.2 min] Jackson: embedded 100 / 542 images\n"}
+,{"stream_name":"stdout","time":1862.039371018,"data":"[  30.3 min] Jackson: embedded 150 / 542 images\n"}
+,{"stream_name":"stdout","time":2156.317059807,"data":"[  35.2 min] Jackson: embedded 200 / 542 images\n"}
+,{"stream_name":"stdout","time":2465.731188764,"data":"[  40.4 min] Jackson: embedded 250 / 542 images\n"}
+,{"stream_name":"stdout","time":2792.315799311,"data":"[  45.8 min] Jackson: embedded 300 / 542 images\n"}
+,{"stream_name":"stdout","time":3142.198311435,"data":"[  51.6 min] Jackson: embedded 350 / 542 images\n"}
+,{"stream_name":"stdout","time":3477.330923101,"data":"[  57.2 min] Jackson: embedded 400 / 542 images\n"}
+,{"stream_name":"stdout","time":3690.555768821,"data":"[  60.8 min] Jackson: embedded 450 / 542 images\n"}
+,{"stream_name":"stdout","time":3865.552416234,"data":"[  63.7 min] Jackson: embedded 500 / 542 images\n"}
+,{"stream_name":"stdout","time":3997.628165566,"data":"[  65.9 min] Jackson: embedded 542 / 542 images\n"}
+,{"stream_name":"stdout","time":4002.707204378,"data":"Jackson: cells with an embedding 1.0000\n"}
+,{"stream_name":"stdout","time":4163.847331066,"data":"[  68.7 min] Danenberg: embedded 50 / 704 images\n"}
+,{"stream_name":"stdout","time":4395.016716919,"data":"[  72.5 min] Danenberg: embedded 100 / 704 images\n"}
+,{"stream_name":"stdout","time":4582.975235728,"data":"[  75.7 min] Danenberg: embedded 150 / 704 images\n"}
+,{"stream_name":"stdout","time":4767.083195968,"data":"[  78.7 min] Danenberg: embedded 200 / 704 images\n"}
+,{"stream_name":"stdout","time":5001.442453995,"data":"[  82.6 min] Danenberg: embedded 250 / 704 images\n"}
+,{"stream_name":"stdout","time":5207.999176798,"data":"[  86.1 min] Danenberg: embedded 300 / 704 images\n"}
+,{"stream_name":"stdout","time":5414.107070735,"data":"[  89.5 min] Danenberg: embedded 350 / 704 images\n"}
+,{"stream_name":"stdout","time":5608.517842857,"data":"[  92.8 min] Danenberg: embedded 400 / 704 images\n"}
+,{"stream_name":"stdout","time":5788.848265901,"data":"[  95.8 min] Danenberg: embedded 450 / 704 images\n"}
+,{"stream_name":"stdout","time":5951.656229291,"data":"[  98.5 min] Danenberg: embedded 500 / 704 images\n"}
+,{"stream_name":"stdout","time":6117.018116834,"data":"[ 101.2 min] Danenberg: embedded 550 / 704 images\n"}
+,{"stream_name":"stdout","time":6303.952054012,"data":"[ 104.3 min] Danenberg: embedded 600 / 704 images\n"}
+,{"stream_name":"stdout","time":6466.813419009,"data":"[ 107.1 min] Danenberg: embedded 650 / 704 images\n"}
+,{"stream_name":"stdout","time":6632.600278381,"data":"[ 109.8 min] Danenberg: embedded 700 / 704 images\n"}
+,{"stream_name":"stdout","time":6643.992450822,"data":"[ 110.0 min] Danenberg: embedded 704 / 704 images\n"}
+,{"stream_name":"stdout","time":6650.809217753,"data":"Danenberg: cells with an embedding 1.0000\n"}
+,{"stream_name":"stdout","time":6651.763697593,"data":"[ 110.1 min] KRONOS2 embeddings saved\n"}
+,{"stream_name":"stdout","time":6676.347083251,"data":"Jackson: v1 embedding (1126124, 640), finite rows 1.0000\n"}
+,{"stream_name":"stdout","time":6698.509571186,"data":"Danenberg: v1 embedding (1062219, 640), finite rows 1.0000\n"}
+,{"stream_name":"stdout","time":6698.509612335,"data":"[ 110.9 min] KRONOS (v1) embeddings aligned\n"}
+,{"stream_name":"stdout","time":7159.293414155,"data":"[ 118.6 min] rep 0 coarse / train Jackson: Table@J 0.721, Table@D 0.552, Table + nbr@J 0.748, Table + nbr@D 0.572, Table + K32@J 0.731, Table + K32@D 0.560, Table + nbr + K32@J 0.752, Table + nbr + K32@D 0.573, Table + K2-32@J 0.733, Table + K2-32@D 0.566, Table + nbr + K2-32@J 0.752, Table + nbr + K2-32@D 0.575, KRONOS linear@J 0.693, KRONOS linear@D 0.466, KRONOS2 linear@J 0.683, KRONOS2 linear@D 0.495\n"}
+,{"stream_name":"stdout","time":7611.188287893,"data":"[ 126.1 min] rep 0 coarse / train Danenberg: Table@J 0.517, Table@D 0.644, Table + nbr@J 0.552, Table + nbr@D 0.670, Table + K32@J 0.532, Table + K32@D 0.662, Table + nbr + K32@J 0.558, Table + nbr + K32@D 0.681, Table + K2-32@J 0.535, Table + K2-32@D 0.666, Table + nbr + K2-32@J 0.556, Table + nbr + K2-32@D 0.683, KRONOS linear@J 0.561, KRONOS linear@D 0.628, KRONOS2 linear@J 0.469, KRONOS2 linear@D 0.628\n"}
+,{"stream_name":"stderr","time":8361.570799828,"data":"Kernel died while waiting for execute reply.\n"}
+,{"stream_name":"stderr","time":8361.854692521,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":8361.856712191,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 949, in async_execute_cell\n"}
+,{"stream_name":"stderr","time":8361.856734677,"data":"    exec_reply = await self.task_poll_for_reply\n"}
+,{"stream_name":"stderr","time":8361.856741175,"data":"                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.856746104,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 730, in _async_poll_for_reply\n"}
+,{"stream_name":"stderr","time":8361.856751381,"data":"    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))\n"}
+,{"stream_name":"stderr","time":8361.856793682,"data":"          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.856808631,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/util.py\", line 96, in ensure_async\n"}
+,{"stream_name":"stderr","time":8361.856813033,"data":"    result = await obj\n"}
+,{"stream_name":"stderr","time":8361.856816985,"data":"             ^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.856821346,"data":"  File \"/usr/local/lib/python3.13/dist-packages/jupyter_client/channels.py\", line 224, in get_msg\n"}
+,{"stream_name":"stderr","time":8361.856825435,"data":"    ready = await self.socket.poll(timeout)\n"}
+,{"stream_name":"stderr","time":8361.85682935,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.85683347,"data":"asyncio.exceptions.CancelledError\n"}
+,{"stream_name":"stderr","time":8361.856865923,"data":"\n"}
+,{"stream_name":"stderr","time":8361.856872243,"data":"During handling of the above exception, another exception occurred:\n"}
+,{"stream_name":"stderr","time":8361.856875011,"data":"\n"}
+,{"stream_name":"stderr","time":8361.856877478,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":8361.860103056,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":8361.860121638,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":8361.860128761,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.860134252,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 116, in execute_notebook\n"}
+,{"stream_name":"stderr","time":8361.860138709,"data":"    nb = papermill_engines.execute_notebook_with_engine(\n"}
+,{"stream_name":"stderr","time":8361.860143093,"data":"        engine_name,\n"}
+,{"stream_name":"stderr","time":8361.860146935,"data":"    ...\u003c9 lines\u003e...\n"}
+,{"stream_name":"stderr","time":8361.860151317,"data":"        **engine_kwargs,\n"}
+,{"stream_name":"stderr","time":8361.860155556,"data":"    )\n"}
+,{"stream_name":"stderr","time":8361.860159876,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/engines.py\", line 49, in execute_notebook_with_engine\n"}
+,{"stream_name":"stderr","time":8361.860164052,"data":"    return self.get_engine(engine_name).execute_notebook(nb, kernel_name, **kwargs)\n"}
+,{"stream_name":"stderr","time":8361.860167949,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.860171874,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/engines.py\", line 371, in execute_notebook\n"}
+,{"stream_name":"stderr","time":8361.860175941,"data":"    cls.execute_managed_notebook(nb_man, kernel_name, log_output=log_output, **kwargs)\n"}
+,{"stream_name":"stderr","time":8361.860179809,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.860183686,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/engines.py\", line 443, in execute_managed_notebook\n"}
+,{"stream_name":"stderr","time":8361.860189719,"data":"    return PapermillNotebookClient(nb_man, **final_kwargs).execute()\n"}
+,{"stream_name":"stderr","time":8361.860198101,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":8361.860208518,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/clientwrap.py\", line 45, in execute\n"}
+,{"stream_name":"stderr","time":8361.86021137,"data":"    self.papermill_execute_cells()\n"}
+,{"stream_name":"stderr","time":8361.860214269,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":8361.860216739,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/clientwrap.py\", line 72, in papermill_execute_cells\n"}
+,{"stream_name":"stderr","time":8361.860219419,"data":"    self.execute_cell(cell, index)\n"}
+,{"stream_name":"stderr","time":8361.860222047,"data":"    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.860224497,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/util.py\", line 84, in wrapped\n"}
+,{"stream_name":"stderr","time":8361.860227116,"data":"    return just_run(coro(*args, **kwargs))\n"}
+,{"stream_name":"stderr","time":8361.860230544,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/util.py\", line 62, in just_run\n"}
+,{"stream_name":"stderr","time":8361.860233299,"data":"    return loop.run_until_complete(coro)\n"}
+,{"stream_name":"stderr","time":8361.860235816,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":8361.860238441,"data":"  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 726, in run_until_complete\n"}
+,{"stream_name":"stderr","time":8361.860241474,"data":"    return future.result()\n"}
+,{"stream_name":"stderr","time":8361.860244074,"data":"           ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":8361.860246535,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 953, in async_execute_cell\n"}
+,{"stream_name":"stderr","time":8361.860249179,"data":"    raise DeadKernelError(\"Kernel died\")\n"}
+,{"stream_name":"stderr","time":8361.860251829,"data":"nbclient.exceptions.DeadKernelError: Kernel died\n"}
+,{"stream_name":"stderr","time":8365.533237853,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8365.533267071,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8365.907974384,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8365.908004457,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8367.950986602,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8368.04706534,"data":"[NbConvertApp] Writing 72073 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8370.539884566,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8370.945105343,"data":"[NbConvertApp] Writing 570289 bytes to __results__.html\n"}
+]

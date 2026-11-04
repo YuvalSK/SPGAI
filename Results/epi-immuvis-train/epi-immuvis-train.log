@@ -1,0 +1,94 @@
+[{"stream_name":"stderr","time":6.843040782,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.843087884,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.785054748,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.785079521,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.785084432,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.785088539,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.4147386,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.414766041,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.414770574,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.414775763,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":15.342626151,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 23.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":15.545129025,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 23.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.202865542,"data":"Jackson: 1,126,124 cells, 349 patients; images train 397, val 39\n"}
+,{"stream_name":"stdout","time":24.40014421,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.9/859.9 kB 16.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":24.44033547,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 54.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":24.602177329,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.9/859.9 kB 16.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":24.602201149,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 54.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":28.856173831,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stdout","time":29.034066011,"data":"anonymous release not available: HTTP Error 403: Forbidden\n"}
+,{"stream_name":"stderr","time":29.058532884,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stderr","time":29.058549301,"data":"\n"}
+,{"stream_name":"stderr","time":29.058554076,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stdout","time":29.719022829,"data":"ImmuVis code from github.com/dav3794/multiplex-image-model\n"}
+,{"stream_name":"stdout","time":717.899324041,"data":"[  11.8 min] Jackson preprocessed (397 train, 39 val images, 16 channels); system RAM used 2.0 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":777.903526507,"data":"[   0.0 min] child started: 397 train / 39 val images, 128 val crops, 16 channels, 2 GPUs | RSS 1.2 GB, system used 2.5 GB, GPU0 0.0 GB\n"}
+,{"stream_name":"stdout","time":837.905155929,"data":"[   0.8 min] 0.572 s/step, validation 25 s -\u003e 17378 steps in 180 min | RSS 4.4 GB, system used 3.7 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":1137.909810174,"data":"[   6.2 min] step 500/17378: train loss 443.3815, val r H3K27me3 -0.001, pHH3 0.002 (best mean 0.001), shared LOO r 0.002 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":1317.917207383,"data":"[monitor 10 min] child RSS 7.3 GB; system RAM used 3.8 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":1437.915776649,"data":"[  11.2 min] step 1000/17378: train loss 160.2423, val r H3K27me3 0.005, pHH3 0.002 (best mean 0.004) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":1737.919764237,"data":"[  16.1 min] step 1500/17378: train loss 119.3005, val r H3K27me3 0.008, pHH3 0.004 (best mean 0.006) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":1917.92196629,"data":"[monitor 20 min] child RSS 7.3 GB; system RAM used 3.8 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":2037.923846993,"data":"[  21.1 min] step 2000/17378: train loss 91.1188, val r H3K27me3 0.001, pHH3 0.006 (best mean 0.006) | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":2337.927762083,"data":"[  26.5 min] step 2500/17378: train loss 74.7890, val r H3K27me3 0.002, pHH3 0.007 (best mean 0.006), shared LOO r 0.030 | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":2517.93039692,"data":"[monitor 30 min] child RSS 7.3 GB; system RAM used 3.8 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":2637.936231377,"data":"[  31.5 min] step 3000/17378: train loss 79.1099, val r H3K27me3 0.005, pHH3 0.007 (best mean 0.006) | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":2937.937704709,"data":"[  36.5 min] step 3500/17378: train loss 53.2298, val r H3K27me3 0.007, pHH3 0.006 (best mean 0.007) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":3117.941628608,"data":"[monitor 40 min] child RSS 7.3 GB; system RAM used 3.8 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":3237.941037902,"data":"[  41.4 min] step 4000/17378: train loss 27.3287, val r H3K27me3 0.008, pHH3 0.011 (best mean 0.010) | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":3597.945212452,"data":"[  46.8 min] step 4500/17378: train loss 26.4364, val r H3K27me3 0.020, pHH3 0.019 (best mean 0.020), shared LOO r 0.106 | RSS 7.3 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":3717.949910702,"data":"[monitor 50 min] child RSS 7.3 GB; system RAM used 3.8 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":3897.949813934,"data":"[  51.8 min] step 5000/17378: train loss 26.6010, val r H3K27me3 0.057, pHH3 0.031 (best mean 0.044) | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":4197.953307249,"data":"[  56.8 min] step 5500/17378: train loss 1.8335, val r H3K27me3 0.046, pHH3 0.030 (best mean 0.044) | RSS 7.3 GB, system used 3.8 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":4317.955698953,"data":"[monitor 60 min] child RSS 7.4 GB; system RAM used 3.8 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":4497.958505075,"data":"[  61.8 min] step 6000/17378: train loss -0.1076, val r H3K27me3 0.070, pHH3 0.034 (best mean 0.052) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":4797.961714906,"data":"[  67.1 min] step 6500/17378: train loss -0.1094, val r H3K27me3 0.092, pHH3 0.051 (best mean 0.072), shared LOO r 0.300 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":4917.964224218,"data":"[monitor 70 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":5097.966580758,"data":"[  72.0 min] step 7000/17378: train loss -0.1340, val r H3K27me3 0.110, pHH3 0.067 (best mean 0.089) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":5397.973886861,"data":"[  76.9 min] step 7500/17378: train loss -0.1368, val r H3K27me3 0.116, pHH3 0.071 (best mean 0.093) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":5517.972157547,"data":"[monitor 80 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":5697.974825604,"data":"[  81.9 min] step 8000/17378: train loss -0.1167, val r H3K27me3 0.506, pHH3 0.050 (best mean 0.278) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":5997.979543422,"data":"[  87.2 min] step 8500/17378: train loss -0.1340, val r H3K27me3 0.531, pHH3 0.069 (best mean 0.300), shared LOO r 0.389 | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":6117.984949485,"data":"[monitor 90 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":6297.982158363,"data":"[  92.1 min] step 9000/17378: train loss -0.1325, val r H3K27me3 0.557, pHH3 0.082 (best mean 0.319) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":6597.991265028,"data":"[  97.0 min] step 9500/17378: train loss -0.1326, val r H3K27me3 0.567, pHH3 0.087 (best mean 0.327) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":6717.988448407,"data":"[monitor 100 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":6897.991361297,"data":"[ 101.9 min] step 10000/17378: train loss -0.1317, val r H3K27me3 0.597, pHH3 0.080 (best mean 0.339) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":7197.995690284,"data":"[ 107.3 min] step 10500/17378: train loss -0.1325, val r H3K27me3 0.598, pHH3 0.087 (best mean 0.343), shared LOO r 0.448 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":7317.999943275,"data":"[monitor 110 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":7498.002569345,"data":"[ 112.2 min] step 11000/17378: train loss -0.1361, val r H3K27me3 0.607, pHH3 0.083 (best mean 0.345) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":7798.002599216,"data":"[ 117.1 min] step 11500/17378: train loss -0.1358, val r H3K27me3 0.616, pHH3 0.093 (best mean 0.354) | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":7918.004845756,"data":"[monitor 120 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":8098.007567256,"data":"[ 122.0 min] step 12000/17378: train loss -0.1353, val r H3K27me3 0.638, pHH3 0.087 (best mean 0.363) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":8398.015690748,"data":"[ 127.4 min] step 12500/17378: train loss -0.1331, val r H3K27me3 0.644, pHH3 0.085 (best mean 0.364), shared LOO r 0.491 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":8518.013678079,"data":"[monitor 130 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":8698.015804433,"data":"[ 132.3 min] step 13000/17378: train loss -0.1340, val r H3K27me3 0.652, pHH3 0.480 (best mean 0.566) | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":8998.022088771,"data":"[ 137.2 min] step 13500/17378: train loss -0.1328, val r H3K27me3 0.650, pHH3 0.479 (best mean 0.566) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":9118.022068334,"data":"[monitor 140 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":9298.031317394,"data":"[ 142.0 min] step 14000/17378: train loss -0.1327, val r H3K27me3 0.647, pHH3 0.481 (best mean 0.566) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":9598.029191619,"data":"[ 147.3 min] step 14500/17378: train loss -0.1309, val r H3K27me3 0.655, pHH3 0.487 (best mean 0.571), shared LOO r 0.527 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":9718.030994486,"data":"[monitor 150 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":9898.035786242,"data":"[ 152.2 min] step 15000/17378: train loss -0.1314, val r H3K27me3 0.652, pHH3 0.488 (best mean 0.571) | RSS 7.4 GB, system used 3.8 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":10198.037156869,"data":"[ 157.1 min] step 15500/17378: train loss -0.1330, val r H3K27me3 0.651, pHH3 0.488 (best mean 0.571) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":10318.039196854,"data":"[monitor 160 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":10498.048844266,"data":"[ 162.0 min] step 16000/17378: train loss -0.1331, val r H3K27me3 0.649, pHH3 0.492 (best mean 0.571) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":10798.049693287,"data":"[ 167.4 min] step 16500/17378: train loss -0.1312, val r H3K27me3 0.651, pHH3 0.492 (best mean 0.571), shared LOO r 0.530 | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":10918.049678348,"data":"[monitor 170 min] child RSS 7.4 GB; system RAM used 3.9 of 31.3 GB\n"}
+,{"stream_name":"stdout","time":11098.052221875,"data":"[ 172.3 min] step 17000/17378: train loss -0.1316, val r H3K27me3 0.649, pHH3 0.492 (best mean 0.571) | RSS 7.4 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":11338.058073386,"data":"[ 176.4 min] step 17378/17378: train loss -0.1321, val r H3K27me3 0.653, pHH3 0.503 (best mean 0.578), shared LOO r 0.530 | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":11338.059075732,"data":"[ 176.4 min] child done | RSS 7.5 GB, system used 3.9 GB, GPU0 0.4 GB\n"}
+,{"stream_name":"stdout","time":11338.060286812,"data":"child exit code 0\n"}
+,{"stream_name":"stdout","time":11338.061115657,"data":"child stdout tail:\n"}
+,{"stream_name":"stdout","time":11338.061127662,"data":"/tmp/train_immuvis.py:115: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stdout","time":11338.061134898,"data":"  sched.step()\n"}
+,{"stream_name":"stdout","time":11338.06113939,"data":"\n"}
+,{"stream_name":"stdout","time":11338.061909619,"data":"[ 188.8 min] ImmuVis trained\n"}
+,{"stream_name":"stderr","time":11342.86139481,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":11342.861423125,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":11343.024831415,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":11343.024869194,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":11343.665237722,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":11343.968356509,"data":"[NbConvertApp] Writing 35480 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":11346.280225194,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":11347.108071544,"data":"[NbConvertApp] Writing 353024 bytes to __results__.html\n"}
+]

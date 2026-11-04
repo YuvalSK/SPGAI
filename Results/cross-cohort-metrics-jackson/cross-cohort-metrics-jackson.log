@@ -1,0 +1,103 @@
+[{"stream_name":"stderr","time":6.769611949,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.769653955,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.691980795,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.692011837,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.692017452,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.692021305,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.322281826,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.322314011,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.322317594,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.322320111,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":32.985962496,"data":"{\n"}
+,{"stream_name":"stdout","time":32.986002722,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":32.986007884,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":32.986012169,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":32.98601671,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":32.986020515999996,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":32.986024042,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":32.986027613,"data":" },\n"}
+,{"stream_name":"stdout","time":32.986030836,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":32.98604034,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":32.986043058999996,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":32.986045422,"data":"  \"report\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":32.986047759,"data":" }\n"}
+,{"stream_name":"stdout","time":32.986049901,"data":"}\n"}
+,{"stream_name":"stdout","time":44.162970871,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":44.163007287,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":44.229547529,"data":"[   0.4 min] tables loaded\n"}
+,{"stream_name":"stdout","time":48.933538078,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 16.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.135662156,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 16.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":116.127292638,"data":"[   1.6 min] kill-test outputs loaded; per-cell image means recomputed\n"}
+,{"stream_name":"stdout","time":123.114263003,"data":"non-finite targets: Jackson 0, Danenberg 448\n"}
+,{"stream_name":"stdout","time":129.951851113,"data":"kNN graphs: mean degree Jackson 11.4, Danenberg 11.3; device cuda\n"}
+,{"stream_name":"stdout","time":132.359697181,"data":"[   1.9 min] features and graphs\n"}
+,{"stream_name":"stdout","time":132.900603842,"data":"Danenberg test: 228,511 cells, 130 patients\n"}
+,{"stream_name":"stdout","time":136.966358188,"data":"Jackson images with a tiff and a mask: 542 / 542 (tiffs 735, masks 708)\n"}
+,{"stream_name":"stdout","time":136.966394025,"data":"Danenberg train 728,537 / val 105,171 cells; Jackson test 229,818 cells in 106 images, 66 patients\n"}
+,{"stream_name":"stdout","time":180.316739717,"data":"cells with mask pixels: 1.0000\n"}
+,{"stream_name":"stdout","time":180.326521235,"data":"                 marker  r_truth_vs_table       n\n"}
+,{"stream_name":"stdout","time":180.326553604,"data":"         c_erb_b_2_her2             0.988 1126124\n"}
+,{"stream_name":"stdout","time":180.326559389,"data":"                   cd20             0.841 1126124\n"}
+,{"stream_name":"stdout","time":180.32656385,"data":"                    cd3             0.800 1126124\n"}
+,{"stream_name":"stdout","time":180.326569931,"data":"                   cd45             0.961 1126124\n"}
+,{"stream_name":"stdout","time":180.326578146,"data":"                   cd68             0.888 1126124\n"}
+,{"stream_name":"stdout","time":180.326595542,"data":"          cytokeratin_5             0.883 1126124\n"}
+,{"stream_name":"stdout","time":180.326600503,"data":"       cytokeratin_8_18             0.991 1126124\n"}
+,{"stream_name":"stdout","time":180.326605409,"data":"estrogen_receptor_alpha             0.956 1126124\n"}
+,{"stream_name":"stdout","time":180.326610169,"data":"                  ki_67             0.899 1126124\n"}
+,{"stream_name":"stdout","time":180.326614999,"data":"        pan_cytokeratin             0.989 1126124\n"}
+,{"stream_name":"stdout","time":180.326619139,"data":"                    sma             0.982 1126124\n"}
+,{"stream_name":"stdout","time":180.326623217,"data":"[   2.7 min] Jackson truth maps, cell means and pixel sums\n"}
+,{"stream_name":"stdout","time":271.155447576,"data":"[   4.2 min] trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":372.229001127,"data":"[   5.9 min] trained cd20\n"}
+,{"stream_name":"stdout","time":486.79554564,"data":"[   7.8 min] trained cd3\n"}
+,{"stream_name":"stdout","time":589.309735718,"data":"[   9.5 min] trained cd45\n"}
+,{"stream_name":"stdout","time":698.855266991,"data":"[  11.3 min] trained cd68\n"}
+,{"stream_name":"stdout","time":724.902790799,"data":"[  11.8 min] trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":767.065164523,"data":"[  12.5 min] trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":923.471468131,"data":"[  15.1 min] trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":953.391269364,"data":"[  15.6 min] trained ki_67\n"}
+,{"stream_name":"stdout","time":1088.900222175,"data":"[  17.8 min] trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1260.556503376,"data":"[  20.7 min] trained sma\n"}
+,{"stream_name":"stderr","time":1263.69796296,"data":"Cloning into '/tmp/Eva'...\n"}
+,{"stream_name":"stderr","time":1263.900835313,"data":"Cloning into '/tmp/Eva'...\n"}
+,{"stream_name":"stderr","time":1263.900881303,"data":"\n"}
+,{"stream_name":"stderr","time":1263.900885065,"data":"Cloning into '/tmp/Eva'...\n"}
+,{"stream_name":"stdout","time":1290.50107672,"data":"EVA commit 1ee894ca297b8e28a9d81d880e55ed62691c2be7 | parameters 122.441088 M\n"}
+,{"stream_name":"stdout","time":1295.507627789,"data":"[  21.3 min] EVA: scored 1/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":1384.290669936,"data":"[  22.7 min] EVA: scored 21/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":1523.108844877,"data":"[  25.1 min] EVA: scored 41/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":1670.528706874,"data":"[  27.5 min] EVA: scored 61/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":1787.659116971,"data":"[  29.5 min] EVA: scored 81/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":1865.674229957,"data":"[  30.8 min] EVA: scored 101/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":1888.033019404,"data":"       image          marker                           model  r_direct  r_sums\n"}
+,{"stream_name":"stdout","time":1888.03306034,"data":"43_108_x13y8 pan_cytokeratin Table [Danenberg-scaled inputs]   0.22001 0.22001\n"}
+,{"stream_name":"stdout","time":1888.033066261,"data":"43_108_x13y8 pan_cytokeratin         Table (Jackson-trained)   0.27886 0.27886\n"}
+,{"stream_name":"stdout","time":1888.033069596,"data":"43_108_x13y8             cd3 Table [Danenberg-scaled inputs]   0.02239 0.02239\n"}
+,{"stream_name":"stdout","time":1888.033072912,"data":"43_108_x13y8             cd3         Table (Jackson-trained)   0.05045 0.05045\n"}
+,{"stream_name":"stdout","time":1894.297484253,"data":"[  31.2 min] per-image pixel sums and per-cell predictions saved\n"}
+,{"stream_name":"stdout","time":1895.720703411,"data":"mean over 10 markers (ERα excluded), Jackson test patients:\n"}
+,{"stream_name":"stdout","time":1895.720730099,"data":"metric                                  R4  per-image pixel r  pooled pixel r\n"}
+,{"stream_name":"stdout","time":1895.720735384,"data":"model                                                                        \n"}
+,{"stream_name":"stdout","time":1895.720739664,"data":"EVA                                  0.184              0.205           0.210\n"}
+,{"stream_name":"stdout","time":1895.720743865,"data":"GCN                                  0.319              0.244           0.307\n"}
+,{"stream_name":"stdout","time":1895.720749753,"data":"GCN [Danenberg-scaled inputs]        0.312              0.226           0.295\n"}
+,{"stream_name":"stdout","time":1895.720758854,"data":"GraphSAGE                            0.398              0.269           0.323\n"}
+,{"stream_name":"stdout","time":1895.720762035,"data":"GraphSAGE [Danenberg-scaled inputs]  0.403              0.255           0.311\n"}
+,{"stream_name":"stdout","time":1895.72076495,"data":"MLP                                  0.407              0.273           0.335\n"}
+,{"stream_name":"stdout","time":1895.720768039,"data":"MLP [Danenberg-scaled inputs]        0.411              0.261           0.331\n"}
+,{"stream_name":"stdout","time":1895.7207708,"data":"Painted true cell means              1.000              0.424           0.550\n"}
+,{"stream_name":"stdout","time":1895.720773565,"data":"Table                                0.436              0.273           0.338\n"}
+,{"stream_name":"stdout","time":1895.720776327,"data":"Table (Jackson-trained)              0.685              0.340           0.440\n"}
+,{"stream_name":"stdout","time":1895.72077919,"data":"Table [Danenberg-scaled inputs]      0.413              0.266           0.336\n"}
+,{"stream_name":"stdout","time":1895.720781994,"data":"[  31.3 min] metrics done\n"}
+,{"stream_name":"stdout","time":1895.722013877,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":1901.248073235,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1901.248102734,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1901.426924374,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1901.426969409,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1902.041488729,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1902.343852767,"data":"[NbConvertApp] Writing 66725 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1904.6458408,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1905.676190363,"data":"[NbConvertApp] Writing 563593 bytes to __results__.html\n"}
+]

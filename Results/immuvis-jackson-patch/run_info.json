@@ -1,0 +1,1 @@
+{"code_source": "github.com/dav3794/multiplex-image-model", "train_minutes": 180.0, "total_steps": 19331, "best_step": 19000, "best_val_loo_pixel_r": 0.6460718607195813, "minutes": 32.186756738026936, "n_jackson_train_images": 397, "n_jackson_val_images": 39, "failed_blocks": []}

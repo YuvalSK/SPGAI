@@ -1,0 +1,8 @@
+{
+ "n_markers_calibrated_80": {
+  "Danenberg": 0,
+  "Jackson": 0
+ },
+ "quantile_calibrated_under_transfer": false,
+ "rule": "|cov80 - 0.80| < 0.03 for >= 8/10 markers in both directions"
+}

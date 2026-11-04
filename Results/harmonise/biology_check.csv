@@ -1,0 +1,11 @@
+train,test,arm,cohort_auroc,patient_mean_spearman_median,patient_mean_spearman_min,worst_input
+Jackson,Danenberg,1 source scaling,0.999984473329952,0.9999999126078953,0.9999975093250107,dna1
+Jackson,Danenberg,2 cohort z,0.9970821921930441,1.0,1.0,histone_h3
+Jackson,Danenberg,3 per-cluster ComBat,0.9847749504423035,0.96701808852711,0.7778490945904833,log_area
+Jackson,Danenberg,4 per-cluster quantile,0.8711984016414103,0.9655067731612292,0.7527213300641403,log_area
+Jackson,Danenberg,5 GMM landmarks,0.9987942588875491,1.0,0.9999995630394757,dna1
+Danenberg,Jackson,1 source scaling,0.99999047444237,0.9999999999999999,0.9999999999999999,histone_h3
+Danenberg,Jackson,2 cohort z,0.997613873309472,0.9999999999999999,0.9999999999999999,histone_h3
+Danenberg,Jackson,3 per-cluster ComBat,0.9656666275612366,0.9716953434866683,0.8859048371843549,cytokeratin_5
+Danenberg,Jackson,4 per-cluster quantile,0.926502949605573,0.9775990514771267,0.8982858836647988,log_area
+Danenberg,Jackson,5 GMM landmarks,0.9989752833321948,0.9999999999999999,0.9999999999999999,histone_h3

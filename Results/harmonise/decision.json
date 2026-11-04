@@ -1,0 +1,25 @@
+{
+ "per_test_cohort": {
+  "Jackson": {
+   "gap_arm1": 0.36475907022078347,
+   "gap_oracle": 0.16014420106345023,
+   "oracle_reduction": 0.20461486915733323,
+   "best_arm": "5 GMM landmarks",
+   "gap_best": 0.39539592199044465,
+   "closed_fraction": -0.14972935200571266,
+   "level_shift_explains": true
+  },
+  "Danenberg": {
+   "gap_arm1": 0.27333476295301073,
+   "gap_oracle": 0.13502903732620278,
+   "oracle_reduction": 0.13830572562680796,
+   "best_arm": "5 GMM landmarks",
+   "gap_best": 0.20943181370596814,
+   "closed_fraction": 0.46204124201967395,
+   "level_shift_explains": true
+  }
+ },
+ "adopt_for_bayes_impute": false,
+ "arm": null,
+ "rule": "best of arms 2-5 closes >= 50% of the arm-1 -> oracle gap in |cov80-0.8| in both directions"
+}

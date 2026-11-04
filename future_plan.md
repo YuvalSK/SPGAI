@@ -10,7 +10,43 @@
 
 ## 0. Publication strategy and priorities
 
-### 0.0 Flagship analysis and kill test (read this first)
+### 0.00 Pivot (2026-10-20): does an image model know a marker beyond the cell table? (supersedes 0.0–0.3 where they conflict)
+**Why.** The metric-critique headline has thin novelty: Sengupta 2025, 7-UP, Sun/Li/Murphy 2024 and MAXIM already cover it. The unanswered question is whether a virtual-staining image model carries information about marker M that the measured cell table (own and neighbour markers) does not. Plan file: `~/.claude/plans/go-over-this-project-scalable-bachman.md`.
+
+**Estimator (replaces the kill-test R5).**
+- **Statistic:** R5 = out-of-fold ΔR² of LightGBM(C + prediction) vs LightGBM(C).
+- **Patient split, three ways:**
+  - **S (20%):** fits every control that is a function of C, and the state deciles;
+  - **A / B (40% / 40%):** carry the cross-fit.
+  - Cross-fitted controls switch functions between fit and scored rows, which gave a spurious R5 ≈ −0.011 on synthetic data.
+- **Rungs:**
+  - **R5_own:** within image.
+  - **R5_cell:** within image × state decile.
+  - **R5_table:** R5_cell plus ring and contact neighbour means. This is the headline rung.
+
+**Phase 0 (`Scripts/R5Validate.ipynb`, kernel `r5-validate`).** True data only. It runs the controls, the planted signal, a split-half noise ceiling (checkerboard and random pixel splits), the eroded-mask spillover check and mask hashes.
+- **Gate G-R5** (all must hold):
+  - every negative control |R5| < 0.01;
+  - identity ≥ 0.9 × the residual share and ≥ the ceiling;
+  - for main markers (ceiling ≥ 0.05), the planted curve is monotone and α = 0.1 is detected on R5_cell and R5_table.
+- **No Phase 1 code is written before G-R5 passes.**
+- **Status (run 2026-10-21, `Results/r5-validate/summary.md`): G-R5 FAILED.**
+  - Passed: masks, power, noise ceiling, spillover.
+  - Failed: the shuffled and shifted controls leak image- and state-level brightness (up to +0.20).
+  - **Next:** apply the five fixes listed in that summary and rerun `r5-validate` on Kaggle:
+    1. same subsample and seed for base and full models;
+    2. cofactor 1 plus a 99.9th-percentile clip;
+    3. leave-one-out group mean and SD as base features;
+    4. candidate entered only as its deviation from the group mean;
+    5. drop the "identity ≥ ceiling" criterion.
+
+**Phase 1 decision (pre-registered 2026-10-20, before any image-model R5 is computed).**
+- **Setting:** within cohort. ImmuVis-Danenberg is scored on Danenberg test patients, and ImmuVis-Jackson on Jackson test patients. Pixel outputs are aggregated with the Phase 0 masks, whose hashes must match.
+- **Cell-table predictions** scored as candidates (B1/B2) must be fixed functions, never cross-fitted.
+- **GO:** ≥ 2 markers with R5_table ≥ 0.05, a CI excluding 0, above that marker's minimum detectable R5 from the planted curve, and stable under 2-px erosion.
+- **NO-GO** otherwise. Then train one full-panel (36-marker) seed and write the validated negative result.
+
+### 0.0 Flagship analysis and kill-test outcome (read this first)
 **Flagship: "same pooled r, different surviving biology"** (C3, with R5 as its key ingredient).
 - Replace each measured marker with its imputed version.
 - Rerun the standard analyses: patient status, phenotype classification, M+ fraction per cell type, neighbourhood enrichment.
@@ -28,38 +64,15 @@
 - Colour = trust level (finest rung reached).
 - Statistic: leave-one-marker-out incremental prediction of downstream agreement by the rungs, over pooled r alone.
 
-**Kill test (weeks 3–6, no new training; notebook `FlagshipKillTest.ipynb`):**
-- **Inputs:**
-  - the pilot J2D checkpoints (11 markers × 3 preprocessing arms = 33 units);
-  - the published Danenberg masks and cell table;
-  - the frozen split.
-
-  All of these come from the `danenberg-cells-prep` Kaggle kernel.
-- **Kaggle GPU pass.** Built from AbundanceVsStructure E2 `_collect`. It writes per-cell means of:
-  - the true target;
-  - the predicted target;
-  - 5 cyclically shifted predictions (the null);
-  - all input channels.
-
-  Everything stays in the model's target space.
-- **CPU pass:**
-  - R4 (per-cell r, image mean removed).
-  - `R5_input` and `R5_panel` (section 6.2).
-  - Three readouts:
-    - ER/HER2 status AUROC;
-    - phenotype-classifier substitution (macro-F1 drop; classifier trained on measured features of train patients);
-    - M+ fraction per cell type.
-- **Caveat:** the published masks used membrane channels. That is acceptable for this test only.
-- **Decision** (thresholds fixed in the notebook before running):
-  - **Dissociation** holds if either condition does:
-    - **D1:** for ≥2 markers, the arm ranking by pooled r and the ranking by a cell-level readout go in opposite directions, and both CIs exclude 0.
-    - **D2:** adding R4/R5 to pooled r raises leave-one-marker-out R² of the cell-level readouts by ≥ 0.1.
-  - **Beyond-panel signal:** `R5_input` beats the cyclic-shift null for ≥2 markers.
-
-| | R5 > 0 (≥2 markers) | R5 ≈ 0 everywhere |
-|---|---|---|
-| **Dissociation** | **GO**: full paper as planned | **PIVOT-A**: re-test R5 with the S1 main model at G0. If R5 is still 0, write a "virtual staining = panel redundancy" paper |
-| **No dissociation** | **PIVOT-B**: weight moves to C2 (the marker map); decide with the PI | **KILL**: drop the ladder paper; E1/E2 becomes a short methods note |
+**Kill test: run 2026-10-09** (`Results/kill-test/summary.md`).
+- The image models lose to a per-cell regression on the same channels for 10 of 11 markers (about half the R4).
+- R5 failed its positive controls, so the automatic "GO" is invalid.
+- The current reading is **PIVOT-A** or **KILL**; GK is not yet decided. The outcomes:
+  - **GO:** a validated R5 > 0 for ≥ 2 markers, plus dissociation between pooled r and the cell-level readouts. Full paper as planned.
+  - **PIVOT-A:** re-test R5 with the S1 main model at G0. If R5 is still ≈ 0, write a "virtual staining = panel redundancy" paper.
+  - **PIVOT-B:** no dissociation, but R5 > 0. Weight moves to C2 (the marker map); decide with the PI.
+  - **KILL:** drop the ladder paper; E1/E2 becomes a short methods note.
+- **Open before GK:** pass G-R5 (section 0.00).
 
 ### 0.1 Venue
 - **MLCB 2026 format** (verify against the 2027 call):
@@ -91,36 +104,86 @@
   a. The exact decomposition of pooled r into abundance and structure, and the pilot result that preprocessing can inflate the abundance part.
   b. Validity of the metric itself: positive controls whose answer is known, nulls, and a direct comparison with the standard metrics (pooled r, SSIM, PSNR, FID, per-cell r).
   c. **R5: does the image model know M beyond what the cell's other markers already imply?** A model can score well per cell, and support cell typing, just by regressing M onto correlated markers. That is redundancy, not new information.
-- **Weeks 3–6 task (alongside the kill test):** a positioning memo covering 7-UP, MIM-CyCIF, VirTues, ImmuVis, EVA and the downstream-utility papers.
+- **Open task (weeks 3–6):** a positioning memo covering 7-UP, MIM-CyCIF, VirTues, ImmuVis, EVA and the downstream-utility papers.
 
-### 0.3 Run order (reprioritised 2026-10-08)
-**How items are ranked.**
-- By how much each tells us about the research question, per unit of compute. The question: can a generative model give trustworthy virtual cells for breast-cancer IMC?
-- Then by what it unblocks.
-- Cheap CPU items that can stop or redirect GPU work come first.
+### 0.3 Run order (reprioritised 2026-10-30)
 
-**Already done.** Cell tables, masks, clinical data and patient IDs for both cohorts (`danenberg-cells-prep`, `jackson-cells-prep`), plus the frozen Danenberg split.
+**Done since the last ranking (details in `project_recap.md`, items 35–39):**
+- correlation vs W2 diagnostic;
+- `prob-impute`: calibrated within a cohort, not across (cov₈₀ 0.57 / 0.44);
+- `harmonise`: input correction not adopted; the shift sits in the target marker's level;
+- `tabpfn-cells`: ties LightGBM; few-shot (k = 5 / 20 target patients) is the strong lever;
+- LISI of virtual cells: transferred virtual cells keep cell types but don't mix with real cells (iLISI ≤ 0.09).
 
-**Phase 1: no training (weeks 3–6, Oct 12 – Nov 8). Decides GK.**
-1. **Cell-table information map** (section 14, Steps 0–1; CPU; one Kaggle notebook).
-   - Both cohorts, full panels, reported by marker group.
-   - Includes the Jackson arm restricted to Danenberg's channels, which is gate 1 for section 15.
-   - It tells which markers can be virtual at all, which need spatial context and which must be measured, so it sets the targets for everything after.
-2. **Virtual tumour state from the cell table** (section 15-lite; CPU).
-   - Apply the restricted Jackson cell-table models to Danenberg cells, then run the section 15 tests (PR/PAM50 and survival).
-   - This is the first answer to the virtual-cell question with no GPU, and the baseline the image model must beat later.
-3. **Kill test with cell-table baselines** (section 0.0; one GPU inference pass on the existing J2D checkpoints, then CPU).
-   - Readouts: R4, R5_input and the D3 readouts.
-   - Comparators: the panel-redundancy regressor and the context regressor from section 14.
-   - Run the R5 positive controls here (kNN-mean; shuffle within state), so R5 is certified before GK relies on it.
-4. **Neighbour interactions** (section 14, Step 2; CPU), including H3K27me3 vs CA-IX.
-5. **Positioning memo** (0.2). Add SVCA/MISTy/NCEM and prior work that used imputed markers for survival.
-6. **Housekeeping:** pull the E2 CSVs from Kaggle.
+**The paper story these results support (MLCB 2027, early July):**
+- **Working title:** *Virtual cells are not trustworthy across cohorts, and how to make them honest.*
+- **Story, step by step:**
+  1. Pixel metrics mislead.
+  2. A cell table matches or beats image models.
+  3. Across cohorts, virtual cells are confidently wrong, because of a level shift in each target marker. They keep cell types but don't mix with real cells.
+  4. Input harmonisation doesn't fix it.
+  5. A hierarchical Bayesian model with a cohort effect gives honest intervals for an unseen cohort, and a few measured patients fix the rest.
+- **This frame holds under either R5 outcome.**
+  - If G-R5 passes and R5 > 0, the ladder (C1–C3) is added as the "beyond the panel" part.
+  - If not, this is PIVOT-A: the paper is the frame above.
+- **Main figures:**
+  1. The metric disagreement (`fig_cross_cohort_metrics`).
+  2. iLISI vs cLISI plus calibration within vs across cohorts.
+  3. Harmonisation oracle and the few-shot curve.
+  4. Bayesian model: S2 / S3 and downstream biology.
+  - Table 1: the per-marker trust table.
 
-**Phase 2: main models (weeks 7–19). Starts only after GK.**
+**How items are ranked:**
+- **Must:** without it, a main claim is unsupported, or a reviewer will reject.
+- **High value:** strengthens a main claim or answers an obvious reviewer question.
+- **Nice to have:** appendix or journal version.
 
-7. **G0:** smoke-test the main model on S1 and time one run.
-8. **S1 main model** (gamma arm, 3 seeds) and **S2 Jackson main model** (3 seeds).
+CPU and GPU kernels run in parallel on Kaggle; run the must items in the order given.
+
+#### Tier 1: must for submission
+| # | Run | Compute | Why it is a must | Gate / what it decides |
+|---|---|---|---|---|
+| M1 | **`r5-validate` v3: state-mean fix** (§18.5 item 1; a stronger base LightGBM with early stopping, or a stacked base) | CPU, ~7 h | Closes GK, which sets the framing: ladder + calibration, or PIVOT-A. Cheap, so do it now and stop carrying it | Passes → R5 Phase 1 (within cohort, ImmuVis vs table). Fails → R5 dropped for good; PIVOT-A |
+| M2 | **`bayes-impute`** (§18.6.1, pre-registered): simulation-based calibration first, then S1–S4 | CPU, ~4–8 h | The ML-method contribution. Without it the paper is only negative results plus baselines | H1–H4 and the kill rule in §18.6.1. Comparators: quantile LightGBM (S2), TabPFN k = 5 (S3: cov₈₀ 0.62 / 0.64, CRPS 0.085 / 0.104) |
+| M3 | **`fewshot-curve`**: k ∈ {0, 1, 2, 5, 10, 20} target patients × 5 draws of which patients × 3 split replicates; quantile LightGBM, TabPFN and (once M2 runs) Bayes. Also reps 1–2 of `prob-impute` and `harmonise` | 1 T4 + CPU, ~6–8 h | The few-shot result is the strongest positive finding, but it rests on one draw and one replicate. The curve answers the practical question "how many patients must be measured?" | Headline figure 3. If the k = 5 gain varies by > 0.05 cov₈₀ across draws, report the spread, not a point |
+| M4 | **ImmuVis seed 2 (J→D) + variance export in both directions**; also inference on each cohort's own test patients | GPU, ~4.5 h | (a) The metric-disagreement and asymmetry claims rest on one ImmuVis run per direction. (b) The variance makes ImmuVis the image-model comparator in S2. (c) The own-cohort predictions fill in the LISI figure | If seed 2 doesn't reproduce the per-image pixel r flip (LightGBM ≤ 2 wins / ≥ 6 losses), downgrade the metric-disagreement claim to "model-dependent" |
+| M5 | **Downstream biology on virtual cells** (C3-lite on cell models; §18.6 item 3; §18.4 item 3): measured vs virtual (point, sampled, few-shot, Bayes) for phenotype composition, immune–tumour contact depletion, HER2 status AUROC and patient-level marker means | CPU, ~2–3 h | "Trustworthy" has to mean the same biological conclusion, not only CRPS. This is the reframed flagship | Which analyses survive transfer, and whether calibration or few-shot rescues them |
+| M6 | **Complete the LISI / distribution figure**: save per-cell predictions for the within-cohort MLP, GraphSAGE and GCN; add samples from quantile LightGBM, TabPFN, Bayes and ImmuVis (M4); add a classifier two-sample AUROC next to iLISI | CPU, ~1–2 h, after M2 and M4 | The figure currently has only LightGBM within a cohort, and a reviewer will ask for the full set | None |
+| M7 | **No compute:** positioning memo (§0.2, plus scDesign2/3 LISI, Lingshu-Cell, Astir, SHADE, Tonks 2026, TabPFN, cyCombine / CytoNorm); **per-marker trust table** (§18.4 item 5) from existing outputs | Local | Novelty framing for the calibration angle; Table 1 | – |
+
+#### Tier 2: high value (run if time allows before the deadline; most are cheap)
+| # | Run | Compute | Why |
+|---|---|---|---|
+| H1 | **Uncertainty as a trust signal** (§18.4 item 2): do predicted intervals flag the cells and markers that fail (AUROC for large errors), for Bayes, quantile LightGBM, TabPFN and ImmuVis? | CPU, < 1 h, after M2 / M4 | Turns calibration into a usable per-cell trust flag |
+| H2 | **A third cohort for the cohort-effect variance**: Keren on the 7 shared markers (§18.4 item 4), plus a search for another public IMC breast cohort | CPU, ~2 h; search has no compute | With two cohorts, τ_b is set by the prior (§18.6.1 caveat). Reviewers will raise this first |
+| H3 | **ImmuVis asymmetry** (§18.5 item 4): Danenberg subsampled to 397 images; per-cohort clip | GPU, 1–2 runs | Explains the one direction in which an image model wins. Can share a session with M4 |
+| H4 | **Joint generator** (§18.6 item 4): a conditional flow or mixture density network over all held-out markers | GPU, ~3–4 h | A real "virtual cell" with correlation structure. Run only if M2 shows the per-marker model is calibrated |
+| H5 | **Crosstalk audit** (§18.4 item 1; §18.5 item 6) | CPU, < 1 h | Needed only if the epigenetic results (§17) go into the paper |
+| H6 | **Scale-resolved curve + exact patch W2** (§18.5 item 3) | Mostly CPU | Turns the three-level metric figure into a curve |
+
+#### Tier 3: nice to have (appendix, journal version or reviewer requests)
+- TabPFN cell typing (§18.8 task 2); TabPFN 2.5 (gated weights, 50k context).
+- Tokenisation ablation, then KRONOS2 adaptation (§18.5 items 2, 7). Cell typing is not a paper claim, and the embedding gain is +0.01.
+- Label propagation for cell typing (§16).
+- KID/FID on cell crops with a KRONOS encoder (§18.6 item 5).
+- H3K27me3 survival test (§17 item 3) and §15 with the image model.
+- Other baselines: Nimbus, CytoBERT / GPCT (§18.3).
+- VirTues, on reviewer request only.
+- Phase 2–4 below (GPU main models, zoo, PatchGAN, diffusion), **only if M1 passes and GK = GO**.
+
+**Dropped or superseded:**
+- Targeted CD3 / CD45 quantile matching (§18.5 item 5): superseded by `harmonise`, where per-cluster quantile matching didn't help.
+- Input harmonisation as the S2 preprocessing (§18.7): not adopted.
+- CyTOF / C2S rank work: a separate paper, parked.
+
+**No compute, ongoing:** look for an IMC cohort with H3K27me3 measured (§17 item 1).
+
+**KRONOS weights on Kaggle.** The model is gated on Hugging Face (`HF_TOKEN` is in `.env`). Don't put the token in notebook source. Download the weights locally once and upload them as a private Kaggle dataset (`yuvalsamoilov/kronos-weights`; academic-use licence, so keep it private). Alternatively, use a Kaggle notebook secret, which can only be set in the Kaggle UI.
+
+**Phase 2: main models (weeks 7–19). Starts only after GK = GO (Tier 3 unless M1 passes).**
+
+4. **G0:** smoke-test the main model on S1 and time one run.
+5. **S1 main model** (gamma arm, 3 seeds) and **S2 Jackson main model** (3 seeds).
    - Interleave the runs (S1 seed 1, S2 seed 1, then the rest), so section 15 gate 2 is known early.
    - **Marker-dropout schedule:**
      - S1: often drop every channel Jackson lacks;
@@ -128,23 +191,23 @@
 
      This lets the same weights serve S1-shared, S3 and section 15 without dedicated runs. Train dedicated S1-shared/S3 models only if the dropout version is clearly worse at G0.
    - Weight the targets toward the markers section 14 found context-dependent.
-9. **`ladder` package, full positive controls and metric meta-evaluation** (section 6.4). Runs on CPU while the GPU queue runs. Includes the VirTues domain FID (inference). Gate G1.
-10. **GPU zoo members, staged.**
+6. **`ladder` package, full positive controls and metric meta-evaluation** (section 6.4). Runs on CPU while the GPU queue runs. Includes the VirTues domain FID (inference). Gate G1.
+7. **GPU zoo members, staged.**
     - Run the low-pass arm and the DNA/H3-only U-Net with 1 seed each first.
     - Add seeds 2–3 only if one lands within the main model's CI on any rung.
     - The panel-redundancy regressor and the per-pixel GBM are CPU and already exist from Phase 1.
 
 **Phase 3: results (weeks 18–27).**
-11. **Marker map (C2) and the P0 sensitivity checks.** The expansion sweep matters most, because spillover can fake R5 and the interaction terms. Gate G2.
-12. **Flagship C3 on the full zoo** (section 7).
-13. **Section 15 with the image model.** Same tests as 15-lite. Report what the image model adds beyond the cell-table virtual markers.
+8. **Marker map (C2) and the P0 sensitivity checks.** The expansion sweep matters most, because spillover can fake R5 and the interaction terms. Gate G2.
+9. **Flagship C3 on the full zoo** (section 7).
+10. **Section 15 with the image model.** Same tests as 15-lite (done in `cell-table-map`). Report what the image model adds beyond the cell-table virtual markers.
 
 **Phase 4: P1 tail (weeks 28–31). If late, cut from the bottom.**
-14. C5 cross-cohort: S1-shared vs S3 from the dropout models, plus the antibody clone check (sections 3, 8).
-15. VirTues audit as zoo member 8 (inference only).
-16. C4 rankings and the model-selection case study (section 6.6).
-17. PatchGAN member, the cheapest adversarial ("generative") member.
-18. Scale-resolved correlation curve (section 6.2).
+11. C5 cross-cohort: S1-shared vs S3 from the dropout models, plus the antibody clone check (sections 3, 8).
+12. VirTues audit as zoo member 8 (inference only).
+13. C4 rankings and the model-selection case study (section 6.6).
+14. PatchGAN member, the cheapest adversarial ("generative") member.
+15. Scale-resolved correlation curve (section 6.2).
 
 **P2: journal extension or appendix.**
 - Level B calibration.
@@ -153,8 +216,8 @@
 - Cellpose vs Mesmer.
 - 5-fold CV.
 - Diffusion model.
-- MIBI check.
 - Web trust dictionary.
+- (The MIBI check was done for H3K27me3 on Keren 2018; see section 17.)
 
 **Out of this paper.**
 - The CyTOF/C2S side project (section 13) becomes a separate paper. It is parked: the rank analyses are done, and the PDAC IMC replication waits on Zenodo access.
@@ -162,7 +225,7 @@
 ### 0.4 Gates
 | Gate | When | Pass condition | If it fails |
 |---|---|---|---|
-| **GK** | End of week 6 | The kill test (0.0) returns GO. It is read together with section 14: at least 2 markers show a context gain (ΔR² CI > 0), or the image model beats the cell-table baselines at R4/R5 | PIVOT-A, PIVOT-B or KILL, as in the 0.0 decision table. If no marker shows a context gain and the image model never beats the cell table, take PIVOT-A ("virtual staining = panel redundancy"). Section 15 then continues on the cell table. No zoo training starts before GK. |
+| **GK** | End of week 6 | The kill test (0.0) returns GO. It is read together with section 14: at least 2 markers show a context gain (ΔR² CI > 0), or the image model beats the cell-table baselines at R4/R5 | PIVOT-A, PIVOT-B or KILL, as defined in 0.0. If no marker shows a context gain and the image model never beats the cell table, take PIVOT-A ("virtual staining = panel redundancy"). Section 15 then continues on the cell table. No zoo training starts before GK. |
 | **G0** | End of week 9 | The main model trains stably on Danenberg, and the wall-clock time per run is measured | Fall back to the pilot joint ResNet-UNet with an explicit target-marker input. Resize the zoo to the Kaggle quota (0.5). |
 | **G1** | End of week 12 | Every positive control lands on its expected rung | Fix the ladder before any model results exist |
 | | | At least one standard metric fails to separate the controls | If every standard metric already separates every control, C1 shrinks to a validity appendix; the flagship is unaffected |
@@ -418,9 +481,7 @@ Degraded versions of the true marker whose correct rung is known:
 
 ## 7. D3 — Panel substitution: which biology survives imputation (THE FLAGSHIP, C3)
 
-This section is the flagship (section 0.0). It is built twice:
-1. As the **kill test** on the pilot checkpoints (weeks 3–6; 11 markers × 3 arms).
-2. On the **full S1 zoo** (weeks 22–27). This version produces the paper's flagship figure: x = pooled r, y = downstream agreement, colour = trust level.
+This section is the flagship (section 0.0). It is built on the **full S1 zoo** (weeks 22–27) and produces the paper's flagship figure: x = pooled r, y = downstream agreement, colour = trust level.
 
 **Protocol:**
 1. Mask one target marker M at a time.
@@ -481,9 +542,7 @@ All thresholds are set on the training split (or on Jackson for S3) and are neve
 
 | Weeks | Dates (approx.) | Work | Gate |
 |---|---|---|---|
-| 1–2 | Sep 28 – Oct 11 | Kaggle prep kernel (cell table, masks, clinical data, frozen split); CyTOF profile-vs-physical analysis (section 13) | CyTOF decision |
-| 3–4 | Oct 12 – Oct 25 | **Phase 1, first:** cell-table information map, both cohorts (section 14, Steps 0–1); section 15-lite (virtual tumour state from the cell table, PR/PAM50 and survival); pull E2 CSVs | — |
-| 4–6 | Oct 19 – Nov 8 | **Kill test** with cell-table baselines and the R5 positive controls (section 0.0); neighbour interactions (section 14, Step 2); positioning memo | **GK** |
+| 3–6 | Oct 12 – Nov 8 | `r5-validate` rerun with fixes, then Phase 1 (section 0.00); positioning memo; pull E2 CSVs | **GK** |
 | 7–9 | Nov 9 – Nov 29 | DNA-only masks, compared with the published masks; smoke-test the main model on Danenberg (S1) with the dropout schedule and time one run | **G0** |
 | 8–12 | Nov 16 – Dec 20 | `ladder` package (reuses the kill-test R4/R5 code); full positive controls and metric meta-evaluation on **true** data only, with the VirTues domain FID | **G1** |
 | 10–19 | Nov 30 – Feb 7 | GPU queue: S1 seed 1 → S2 seed 1 (section 15 gate 2) → remaining S1/S2 seeds → low-pass and DNA-only (1 seed each, more if needed) | — |
@@ -495,15 +554,13 @@ All thresholds are set on the training split (or on Jackson for S3) and are neve
 | — | after Nov 2027 | Journal extension with the P2 items | — |
 
 **Checkpoints for the PI:**
-- **Week 6 (GK):** the kill-test decision table decides whether any zoo training happens.
+- **Week 6 (GK):** the GK decision (section 0.0) decides whether any zoo training happens.
 - **Week 12 (G1):** if the positive controls do not land on their rungs, fix the ladder before interpreting any model results.
 
 ## 11. Risks and mitigations
 
 | Risk | Mitigation |
 |---|---|
-| The flagship fails: rungs add nothing over pooled r | Kill test at week 6 (GK) on existing checkpoints, before any zoo compute is spent; decision table in 0.0 |
-| Kill test underpowered (33 units) | Decide on paired within-marker arm comparisons with patient-bootstrap CIs; ambiguous results go to PIVOT, not KILL |
 | Published masks used membrane channels (possible target leakage at R4/R5) | Used for the kill test only; the paper uses DNA-only masks (6.1) |
 | Positive controls misassigned → metric invalid | Validate on true data first (weeks 8–12, G1); adjust rung definitions before any model results exist |
 | Standard metrics already separate every control → C1 is weak | G1 detects this; C1 shrinks to a validity appendix, and the flagship (C3) is unaffected |
@@ -521,89 +578,20 @@ All thresholds are set on the training split (or on Jackson for S3) and are neve
 | Tuning on test data | Freeze everything listed in section 3 before training; S3 thresholds come from Jackson only |
 
 ## 12. Open decisions for the PI
-1. Is an unseen cohort available? It would reopen the pretraining comparison (D2) and make the VirTues audit P0.
+1. Is an unseen cohort available? It would reopen the pretraining comparison (D2) and make the VirTues audit P0. An **IMC cohort with H3K27me3 measured** is the one thing that would let the epigenetic result be validated (section 17).
 2. Should the PatchGAN zoo member be included? It is P1 and costs 3 GPU runs.
 3. Should a non-archival workshop version be presented before MLCB (e.g. an ICLR 2027 workshop, ~Feb 2027)? Check MLCB's policy on prior presentations first.
 4. If extra compute (e.g. a university cluster) becomes available, it would restore 5-fold CV and S2.
 
 ## 13. Side project: link to the breast-cancer CyTOF / C2S project
 
-> **Out of scope for the MLCB paper.** This becomes a separate paper, for example an MLCB 2-page abstract or a workshop paper. It shares the leave-target-out kNN code with rung R5.
+Done and parked (`project_recap.md` Part 2; `Results/c2s-imc-summary.md`). The PDAC IMC replication waits on Zenodo access.
 
-**What and why.**
-- **The CyTOF finding.** The CyTOF project (7 breast tumours, 31 markers) compares two ways of representing each cell: rank encoding (the "sentence" C2S reads) and intensity.
-  - **Supported by the CyTOF repo:** rank grouping of marker-high cells is tighter, but on **PDAC** only. Mean kNN enrichment for intensity / rank vector / C2S is 2.09 / 2.73 / 2.71 (`PDAC_reanalysis.md`).
-  - **BC** never had a model-free rank-vector arm; it compared only the C2S embedding with intensity.
-  - **VERIFY (not found in the CyTOF repo on 2026-09-27):** the claim that "intensity is better at predicting a held-out marker from the cell's neighbours in marker space". No leave-target-out kNN predictor or result exists there. The closest is `level3_conditional.csv`: masked-marker prediction where C2S-LM Spearman ≈ 0 vs Ridge/XGBoost 0.53–0.67, which is not kNN. Treat this claim as a hypothesis until the analysis is run.
-- **Those neighbours are not physical.** They are cells with similar profiles, not cells that are physically close, because CyTOF dissociates the tissue and loses spatial coordinates.
-- **Rejected idea: a "virtual spatial" layout.** Building one for the CyTOF cells from an IMC model was considered and rejected:
-  - A single cell's markers carry only a weak signal about its location.
-  - Any such layout would therefore mostly copy the IMC prior.
-  - That would make every spatial finding circular and impossible to validate on CyTOF.
-- **The honest question.** Does the encoding that groups similar profiles better also better reflect a cell's real physical surroundings? IMC cell tables have both profiles and coordinates, so they can answer that directly.
-- **What it adds and reuses:**
-  - It extends the C2S result from similarity in marker space to tissue organisation.
-  - The marker-space kNN code is shared with rung R5 (section 6.2).
+## 14. Cell-table information map and neighbour interactions
 
-**How.**
-- **Data:** the Danenberg cell table prepared on Kaggle (`danenberg-cells-prep`).
-- **Panel overlap with the 31-marker BC CyTOF panel:**
-  - **Danenberg: only 6 markers** (panCK, CK5, CK8/18, SMA, ER, Ki-67).
-  - **Jackson: ~11 markers** (those plus E-cadherin, vimentin, CD44, GATA3, H3K27me3 and pHH3). ER maps only if Jackson's "Rabbit IgG H L" channel is the ER antibody; verify this.
-  - Profile spaces therefore run on three marker sets: the matched 6, all 36 Danenberg proteins, and random 6-marker subsets (to separate panel size from panel composition).
-- **Encodings, copied from the CyTOF code:**
-  - intensity = per-tumour (per-image) robust z `(x−median)/(1.4826·MAD+1e-6)`, clipped to ±5 (`scripts/bc_knn_enrichment.py`);
-  - rank vector = each marker's within-cell position, computed from the clipped z, ties broken by column order (`scripts/rankvec_control.py` @ `9dad454`);
-  - Euclidean kNN, k = 30.
-  - The C2S LLM embedding is out of scope: it needs the CyTOF-trained adapter.
-- **Step 2 runs first** (moved ahead of Step 1 on 2026-09-27).
-  - Notebook: `ProfileVsPhysical.ipynb` (Kaggle kernel `profile-vs-physical`).
-  - Results and the pre-registered decision rule: `Results/ProfileVsPhysical/summary.md`.
-  - The nulls include a **type-matched** null (random cells with the same phenotype as each profile neighbour), which isolates the signal beyond cell type.
-  - Touching cells are excluded, as a spillover guard.
-- **Replication:** Jackson with the matched ~11 markers, run after Danenberg if there is a signal.
-- **Step 1 (go/no-go):** measure how well a cell's own profile predicts its physical surroundings:
-  - Surroundings = the immune, stromal and epithelial fractions among the cell's 10 nearest cells in physical space, and a cellular-neighbourhood label.
-  - Model: gradient boosting.
-  - Validation: patient-level CV.
-  - Stop if the neighbourhood label is predicted at AUROC ≲ 0.65. Transferring any spatial information to CyTOF would then be meaningless.
-- **Step 2 (main test, run first):** for each encoding (intensity and rank):
-  - Build the profile kNN graph (k = 30).
-  - For each cell, check two things:
-    - are its profile neighbours physically close?
-    - do they share its physical-neighbourhood composition (R² of context from the profile neighbours, and agreement of CN labels)?
-  - Compare against a uniform null and a type-matched null, with a patient bootstrap for CIs.
-  - Result: does the rank advantage inside the representation carry over to physical space, or does intensity win?
-- **Step 3 (only if Step 1 passes):** train the Step 1 predictor on IMC and apply it to CyTOF cells.
-  - It gives each cell a predicted neighbourhood with a calibrated probability (the Bayesian version of the virtual-space idea).
-  - It is validated only on held-out IMC patients, never on CyTOF.
-  - It is reported as a hypothesis generator, with two caveats:
-    - CyTOF and IMC intensities differ.
-    - IMC cell measurements include signal spilling over from neighbouring cells.
+Done (`cell-table-map`, `cell-table-followup`; see `project_recap.md`). Two parts stay in use.
 
-## 14. Cell-table information map and neighbour interactions (weeks 3–6, CPU, alongside the kill test)
-
-**Why.**
-- Measure, per marker, how much a cell's own other markers and its neighbours tell us about it, before any image model is trained.
-  - A marker predictable from the cell's own profile can be imputed without an image model (panel redundancy).
-  - A marker that depends on neighbours is the only kind for which a spatial generative model can beat a cell-table model.
-- This gives R5_panel and the C2 map early and without a model. It also tells the main model (section 5) which targets matter.
-- `profile-vs-physical` found that a cell's profile adds little about its surroundings beyond cell type (R² +0.02 to +0.08). That number was averaged over all cells and markers, so rare but strong interactions could be hidden in it. Steps 0 and 2 test that.
-
-**Data.**
-- Cell tables, contact graphs and masks:
-  - Danenberg (36 proteins, spillover-corrected) from `danenberg-cells-prep`;
-  - Jackson (32 proteins, not spillover-corrected) from `jackson-cells-prep`.
-- Splits:
-  - Danenberg: the frozen patient split.
-  - Jackson: a new patient-level split built from the `jackson-cells-prep` patient IDs. This is also the split S2 needs.
-
-**Scope: full panels, per dataset, reported by marker group.**
-- The virtual-staining work so far used only the 11 shared markers. Those are almost all lineage markers, plus ER, HER2 and Ki-67.
-- Nearly every state marker belongs to one cohort only:
-  - Danenberg covers immune state;
-  - Jackson covers tumour-cell state and the only chromatin mark.
-- So Steps 1–2 run on the full panel of each dataset (36 Danenberg, 32 Jackson), and every result is reported per group. Groups:
+**Marker groups** (results are reported by group):
 
 | Group | Danenberg (36) | Jackson (32) |
 |---|---|---|
@@ -622,50 +610,10 @@ All thresholds are set on the training split (or on Jackson for S3) and are neve
 - Total histone H3, DNA1 and DNA2 are nuclear controls in both cohorts and are not targets.
 - Across the two cohorts, only Ki-67 is a shared state marker. Cleaved caspase-3 is a partial match.
 
-**Step 0: immune–tumour contact check (hours).**
-- Per image, count immune–tumour contacts in the contact graph. Compare with 1000 label permutations within the image (positions fixed).
-- Report the share of images where contact is enriched, depleted or neither, and whether that split follows PAM50, ER or grade.
-- Expected from the literature: patient-specific (mixed vs compartmentalised, Keren 2018), not uniformly enriched.
-
-**Step 1: per-marker map.** For every marker M, per cell, with gradient boosting on the patient split:
-- **(a) own:** the cell's other markers;
-- **(b) own + neighbours:** (a), plus the cell-type counts among its contacts and within 30 µm, plus the mean profile of non-touching cells within 30 µm.
-
-Readouts, with patient-bootstrap CIs and signal quality (positive fraction, SNR; E2 code) as a covariate:
-- R² of (a): redundancy;
-- ΔR² = (b) − (a): context.
-
-**Jackson arm restricted to Danenberg's channels (the CPU gate for section 15).**
-- Repeat (a) and (b) for every Jackson-only marker, using as inputs only the channels Danenberg also has: the 11 shared markers, H3, DNA1 and DNA2.
-- A marker whose cell-level R² is no better than an intercept-only model here does not go to section 15.
-
-**Step 2: interaction terms.**
-- For each cell type A, neighbour type B and marker M: ΔR² from adding "number of contacts with B" to model (a), fitted within type-A cells.
-- **Spillover guard:** only test markers that type B does not express itself (e.g. never panCK on T cells touching tumour).
-- **Pre-specified examples:**
-  - PD-1, ICOS and Ki-67 on CD8 T cells touching tumour;
-  - HLA-ABC and β2M on tumour cells touching T cells;
-  - CD163 on macrophages near tumour;
-  - **H3K27me3 (Jackson only):** per-cell H3K27me3/H3 in tumour cells vs their own CA-IX and their distance to CA-IX-high cells. Hypoxia raises H3K27me3 through the oxygen-sensing demethylase KDM6A (Chakraborty 2019; verify).
-- Benjamini–Hochberg correction across all (A, B, M) triples.
-- **Spillover checks:**
-  - Danenberg is primary.
-  - Compare contact effects with non-touching effects at 10–30 µm.
-  - The effects must not grow as the masks are expanded.
-
-**H3K27me3 as a target.**
-- It is the only chromatin mark in either cohort (Jackson only). Report it separately in Step 1, normalised per cell to total H3 so it does not just track nuclear density.
-- Both outcomes are a result:
-  - predictable from the other proteins → chromatin state largely follows cell identity, and a virtual H3K27me3 is possible;
-  - not predictable → the mark carries information a protein panel misses, and must be measured.
-- Earlier image models for H3K27me3 within Jackson failed (r −0.14 to −0.21, Nov 2025, old pipeline).
-
-**Decision.**
-- Markers with a context gain (ΔR² CI > 0) or a significant interaction term become the main targets for the image model (section 5) and the flagship (section 7).
-- High (a) with no context gain → reported as panel-redundant.
+**Decision rule** (sets the image-model targets in sections 5 and 7):
+- Markers with a context gain (ΔR² CI > 0) or a significant interaction term become the main targets for the image model and the flagship.
+- High own-marker R² with no context gain → reported as panel-redundant.
 - Low on both → "must measure".
-
-**Novelty.** Neighbour-dependent marker variance is an established question (SVCA, MISTy, NCEM; verify details). Here it serves as the ceiling for virtual staining, not as a standalone biology claim.
 
 ## 15. Virtual tumour state: Jackson-only markers in Danenberg, tested against METABRIC survival (P1, C6)
 
@@ -686,14 +634,18 @@ Only markers that pass both gates below are carried forward.
 - The S2 main model is trained within Jackson with marker dropout. The dropout patterns must include the shared-only input set (11 shared markers + H3, DNA1, DNA2) often, so the same 3 seeds serve both S2 and this section with no extra GPU cost.
 - Inputs at inference in Danenberg: the shared-only set, level A (no Danenberg statistics; section 4).
 
-**15-lite: the cell-table version (CPU, weeks 3–4; run first).**
-- Train the restricted Jackson cell-table models (section 14) and apply them to the Danenberg cell table. This gives a virtual value per Danenberg cell for each target that passes gate 1.
-- **Input harmonisation:** the published tables differ (Danenberg is spillover-corrected, Jackson is not). Inputs are therefore standardised per cohort. This uses Danenberg input statistics only, never target statistics (level B, labelled as such).
-- Run the patient-level validation and the three survival tests below, unchanged.
-- The image model (below) is later judged by what it adds beyond 15-lite.
+**15-lite (cell-table version): done** (`cell-table-map`).
+- No virtual marker was prognostic.
+- Only EGFR added to basal-like AUROC (+0.027).
+- The image model is judged by what it adds beyond 15-lite.
+
+**H3K27me3 status (2026-10-22): see section 17.**
+- A Danenberg imputation already exists (LightGBM, `IMC data/Danenberg2022/epi-relations/`).
+- The survival test (low H3K27me3 → worse) has not been run.
+- Run it only with section 17's caveat: cross-cohort validity of the mark is unproven.
 
 **Gates (thresholds fixed before running).**
-1. **CPU, weeks 3–6:** the section 14 Jackson arm restricted to Danenberg's channels. Cell-level R² > 0 with the CI excluding 0.
+1. **CPU:** passed for all 21 Jackson-only markers (`cell-table-map`).
 2. **GPU:** the S2 model with shared-only inputs, on held-out Jackson patients:
    - it must beat the restricted cell-table model at R4 (per-cell r, image mean removed);
    - it must beat the cyclic-shift null.
@@ -733,3 +685,298 @@ Only markers that pass both gates below are carried forward.
 **Framing.**
 - Virtual values are always labelled as imputed, with their gate results. They are never treated as measurements.
 - Agreement in Danenberg shows consistency with Jackson biology, not ground truth. Only re-staining METABRIC tissue would give that.
+
+## 16. Cell typing: topology and label propagation (LiveJournal DOI-paper analogue)
+
+**Background.**
+- `cell-type-graph` (2026-10-16): LightGBM with neighbour-marker features is best within a cohort; SAGE+ is best across cohorts (J↔D).
+- `cell-type-topology` (done, 3 replicates): adds 13 graph-position features per cell (contact graph and 30 µm graph).
+  - Topology alone reaches coarse macro-F1 ≈ 0.25 (chance ≈ 0.15).
+  - It adds ≤ 0.002 on top of Table + nbr in every setting.
+- The DOI paper (Samoilov-Katz, Louzoun, Muchnik & Zaidel, arXiv 2106.13672) combined:
+  - 20 topology features;
+  - 4 **label-propagation** features per DOI: counts of first neighbours with and without that DOI, separately for in- and out-edges. They were counted only over neighbours with known (training) labels, from an 80/20 node split.
+  - The two sets were concatenated as input to a 3-layer feed-forward network.
+  - The paper reports no topology-only or propagation-only ablation.
+- None of our arms uses neighbours' *labels*. Table + nbr propagates neighbours' *markers* only.
+
+**Problem.** The paper is transductive: test nodes sit in the same graph as labelled nodes. We hold out whole images and patients, so test images have no labelled cells.
+
+**A. Predicted-label propagation (main arm; works on unseen images and across cohorts).**
+1. Stage 1: Table + nbr, with out-of-fold predictions (grouped by image) on the training images, so stage 2 never sees in-sample predictions.
+2. Stage 2: add each cell's neighbours' predicted class probabilities:
+   - mean and argmax counts per class on the contact graph and the 30 µm graph;
+   - a 2-hop mean.
+3. Optional: iterate 2–3 rounds (iterative classification), recomputing neighbour predictions from the stage-2 output.
+4. Arms:
+   - Propagation only;
+   - Topology + propagation (the paper's combination);
+   - Table + nbr + propagation;
+   - Table + nbr + topology + propagation.
+5. Same tasks (fine/coarse; D, J, J→D, D→J, Both), patient bootstrap, 3 replicates. Report per-class F1, especially endothelial.
+
+**B. Partly labelled test images (the paper's setting; side analysis).**
+- Reveal the true labels of a random 20% of cells in each test image (also try 5% and 50%). Score only the hidden cells.
+- Add the paper's features: per class, the counts of revealed neighbours with and without that class. The graph is undirected, so there are 2 features per class instead of 4.
+- Interpretation: how much does a pathologist annotating a few cells per image help?
+- Not comparable with the other arms, because it uses test labels.
+
+**Compute.** CPU kernel (LightGBM only), about 3 h. Run after `cell-type-topology` finishes, reusing its notebook (`Scripts/CellTypeTopology.ipynb`).
+
+## 17. Epigenetic virtual cells (H3K27me3, pHH3)
+
+**Done (2026-10-21/22; `project_recap.md` items 29–31).**
+- `epi-immuvis-train` and `epi-immuvis-infer`.
+- `epi-relations` v1–v3 (pre-registered), including post-hoc Amendment 1.
+- Keren 2018: Kaggle dataset, `keren-cells-prep`, `keren-epi-within`.
+
+**Results.**
+- **Within Jackson:** H3K27me3 is imputable. LightGBM ≈ ImmuVis (partial r 0.60), so the image adds nothing. pHH3 fails.
+- **Danenberg:** passes only after dropping the anchors that don't transfer (SMA, CD68, CD20).
+- **Keren:** not usable as an external test. Even the measured mark keeps only 2/18 Jackson relations. It is weakly predictable even within Keren (0.23 from the shared inputs) and likely affected by crosstalk from the neighbouring mass (pS6, Yb173).
+
+**Open (in order).**
+1. **Find an IMC cohort with H3K27me3 measured** (same technology as Jackson). This is the only route to a real external test. Section 12, item 1.
+2. **Optional, cheap (CPU):** confirm the Keren crosstalk. Regress H3K27me3 pixels on the pS6 and panCK pixels, and test whether the cell-level H3K27me3–pS6 link follows the fixed isotope ratio rather than biology. This decides whether Keren's H3K27me3 can be used after correction.
+3. **Section 15 survival test with the imputed H3K27me3.** Only if item 1 or 2 rescues its validity; otherwise report it as exploratory.
+4. **Rule fix for later tests:** the anchor-transfer ratio needs a floor on the within-cohort r. In Keren, SMA "transferred" with r ≈ 0.15 both ways.
+
+## 18. Further analyses (ideas, 2026-10-22)
+
+Ranked by information per unit of compute. None of these starts R5 Phase 1 before G-R5 passes (§0.00).
+
+### 18.1 What drives cell typing: XGBoost + SHAP (CPU or one T4; ~2 h)
+**Question.** Which inputs drive each cell type, and does that differ between cohorts? Candidate inputs: own markers, neighbour features, morphology/area, nuclear channels. A cohort difference would explain where transfer fails (e.g. endothelial cells, SMA).
+
+**Design.**
+- **Model:** XGBoost (`device="cuda"`) on the `cell-type-graph` features (Table + nbr), with coarse and fine labels, trained on D, J and Both.
+- **TreeSHAP** via `pred_contribs` / `pred_interactions`:
+  - mean |SHAP| per class and per feature group;
+  - rank agreement of the importances between the D and J models;
+  - SHAP on misclassified J→D cells: which features mislead the model;
+  - own × neighbour interaction values, especially for endothelial cells.
+- **Robustness:** correlated markers split SHAP credit. Report SHAP summed per marker group, and check it against grouped permutation importance.
+- **Same tool for imputation:**
+  - SMA in J vs D: why the sign flips;
+  - H3K27me3 in Jackson: which markers carry it. Compare with Keren, where pS6 dominates.
+
+**Decision value:** interpretation for the paper and the trust table. Cheap.
+
+### 18.2 KRONOS as a clean zero-shot image encoder, then IMC adaptation (2×T4)
+**Facts** (Shaban et al. 2025, arXiv 2506.03373; weights at github.com/mahmoodlab/KRONOS, academic use only):
+- ViT-S/16, DINO-v2.
+- Pretrained on SPM-47M: 8 fluorescence platforms (CODEX, MxIF, COMET, IBEX, CellDive). **No IMC or MIBI.**
+- Inputs: a shared per-marker conv stem with fixed sinusoidal marker encodings, so it accepts any panel.
+- Cell embeddings: from nucleus-centred 64×64 px patches at ~0.5 µm/px, with pixels outside the cell zeroed.
+- **Why it matters here:** neither of our cohorts is in its pretraining. That makes it the only clean zero-shot foundation-model test. ImmuVis, VirTues and EVA all have overlap or scale issues.
+
+**Steps.**
+1. **Zero-shot.**
+   - IMC is 1 µm/px: resample ×2 (or use 32×32 native patches; compare both).
+   - Map our markers onto KRONOS's marker vocabulary.
+   - Normalise intensities per marker as in their recipe.
+   - Readouts:
+     - linear and LightGBM probes for coarse/fine cell types (D, J, J→D), against Table and Table + nbr;
+     - a marker-imputation probe: predict a held-out marker from the embedding of the other channels, against the cell table;
+     - an H3K27me3 probe in Jackson, scored as ΔR² of LightGBM(table + embedding) over LightGBM(table). This is a cheap, generator-free version of the R5 question. Score it with the same leak controls once G-R5 passes.
+2. **Domain adaptation.** Continue DINO-v2 self-supervised training on the Jackson + Danenberg train images (no labels). Compare frozen vs LoRA (r = 8–16 on attention) vs full fine-tuning. Rerun the step-1 probes.
+3. **Supervised.** Add a cell-type head with LoRA vs full fine-tuning.
+- **On QLoRA:** not needed. ViT-S has about 22 M parameters, so full fine-tuning in fp16 fits on one T4. 4-bit quantisation only adds error at this size; QLoRA is for multi-billion-parameter models.
+  - Checked again for KRONOS2 (ViT-B, about 86 M parameters): full fine-tuning plus Adam is about 1.4 GB, still small. Use LoRA (r 8–16 on qkv/proj, plus the marker-embedding MLP) vs full fine-tuning.
+  - Train in fp16 with a grad scaler (no bf16 on T4), and use DDP across the 2×T4, not DataParallel.
+- **Step 1 result (2026-10-27; `Results/kronos2-zeroshot/summary.md`):**
+  - Zero-shot embeddings alone are 0.04–0.07 below Table + nbr.
+  - Adding 32 PCs gives +0.01, on Danenberg only.
+  - KRONOS2 ≈ KRONOS overall. Both pass the gate; KRONOS2 meets (b) in every replicate.
+- **KRONOS2 on DataParallel:** the replicas have no `parameters()`. Cache the marker embedding as a buffer, as the notebook does.
+- **Risks:** mass-ion vs fluorescence intensity statistics; 1 vs 0.5 µm/px; markers missing from KRONOS's vocabulary.
+
+### 18.3 Other foundation models to consider
+| Model | Data | Relevance | Status |
+|---|---|---|---|
+| **ImmuVis** (Uchal 2026, arXiv 2602.04585) | IMC17M: 28 IMC cohorts, 265 markers, incl. ours | Already reimplemented and trained from scratch | No public weights found (2026-10-13) |
+| **VirTues** (Wenckstern et al., *Nature* 2026; github.com/bunnelab/virtues) | >12k images, >30 cohorts, 4 technologies | Marker reconstruction, cell typing, niches, zero-shot across panels | **Not run (decided 2026-10-27).** The public weights saw both cohorts, and ImmuVis beats it in its own paper. If a reviewer asks: public-weights inference in both directions, about 1 GPU run each, scored with the existing pixel/patch/cell code and labelled "pretrained on both cohorts" |
+| **EVA** (Liu 2026) | – | Done (zero-shot) | Cannot represent histone marks (one shared token, H3F3A) |
+| **KRONOS / KRONOS2** (Mahmood lab) | Fluorescence only. KRONOS2: SPM-56M, 8 platforms, no IMC or MIBI, 268 markers, ViT-B/16 | Clean zero-shot test (18.2) | **Done:** zero-shot cell typing, 3 reps (`kronos2-probes`). Weights: private dataset `kronos2-weights` |
+| **Nimbus** (Angelo lab; *Nature Methods*) | Pan-M, 197 M marker-positivity labels | Pretrained marker-positive/negative classifier; a baseline for "M+" readouts | Check platform coverage (IMC?) |
+| **CytoBERT** (arXiv 2608.14414), **GPCT** (bioRxiv 2026) | Cytometry tables, no images | Cell-table foundation models: a stronger table baseline, and a link to the CyTOF/C2S project | Unread |
+
+### 18.4 Cheap follow-ups that close open questions (CPU, existing outputs)
+1. **Crosstalk audit, every cohort.**
+   - For each target, test whether the ±1 Da and +16 Da (oxide) channels carry it.
+   - Jackson H3K27me3 (La139) has no neighbour or oxide source, so it is clean. Jackson pHH3 (Eu153) sits next to CD3 (Sm152), and its oxide falls on EGFR (Tm169).
+   - Apply spillover compensation (CATALYST-style matrix) to Jackson, which is uncorrected, and recheck the key relations.
+   - For Keren, fit the H3K27me3 → pS6 leakage as a fixed isotope ratio (§17 item 2).
+2. **Trust signal from uncertainty.**
+   - ImmuVis's β-NLL gives a per-pixel variance. Does it rank the cells and markers where imputation fails (AUROC for detecting large errors)?
+   - Compare with the LightGBM ensemble or quantile spread.
+   - This feeds the per-marker trust table.
+3. **HER2 as a "must-measure" marker.**
+   - All J→D imputations lose HER2 status (AUROC 0.86 → 0.43–0.58).
+   - Test HER2 status from ImmuVis-D on Jackson (cell-level HER2 r 0.65), and pseudo-bulk vs cell-level.
+   - Is any model able to keep the magnitude signal?
+4. **IMC → MIBI cost for the shared markers.** Train on Jackson / Danenberg / Both and test on Keren for the 7 shared markers (cell table). Compare with within-Keren cross-validation.
+5. **Per-marker trust table** (the deliverable from §9). Columns:
+   - within-cohort R4;
+   - transfer ratio;
+   - pooling cost;
+   - crosstalk flag;
+   - clinical retention (HER2 status, prognostic HR);
+   - uncertainty calibration.
+
+   Everything in it already exists or comes from items 1–4.
+
+### 18.5 New ideas (2026-10-27, after the patch level and KRONOS2)
+Ranked by information per unit of compute.
+
+1. **R5 state-mean fix** (CPU, about 7 h). The base LightGBM probably underfits. Give it more capacity with early stopping on held-out patients, then rerun `r5-validate`.
+   - Gate as before: the state-mean control must fall below 0.01.
+   - If it doesn't, report R5 against a stacked base, LightGBM(C, f_S(C)).
+2. **Tokenisation ablation for image encoders** (GPU, about 2 h per arm with the KRONOS2 notebook). We never compared tokenisations. Arms, all scored with the same cell-typing probes and 3 replicates:
+   - crop 16 / 32 / 64 µm;
+   - cell mask applied vs not;
+   - upsampling ×1 / ×2 / ×2.7 (0.37 µm/px, KRONOS2's reference);
+   - CLS only vs CLS + per-marker PCs.
+
+   This decides whether the +0.01 gain is the ceiling or a tokenisation artefact, before any fine-tuning.
+3. **Scale-resolved correlation curve** (mostly CPU). Extend the 32 µm patch metric to 8 / 16 / 64 / 128 µm.
+   - Per-cell models and the oracle need only `cross-cohort-metrics-patch` with a list of patch sizes.
+   - Image models need one more pass each, or save pixel maps once.
+   - This turns the three-level figure into a curve showing where the image models' advantage ends (§0.3 Phase 4 item 15).
+4. **Why ImmuVis transfers D→J but not J→D** (GPU, 1–2 runs). Two candidate causes:
+   - the number of training images: subsample Danenberg to 397 images;
+   - the fixed clip saturating bright Danenberg CD45/CD20: retrain on Jackson with the per-cohort clip (Danenberg 2.9).
+
+   Currently there is one run per direction.
+5. **Cross-cohort CD3 scale shift** (CPU). SHAP pins the J→D T-cell errors on own CD3/CD45 values. Test per-marker quantile matching of the inputs, for those two markers only, as a targeted fix. Score both cell typing and imputation.
+6. **Keren H3K27me3 vs pS6 spillover** (CPU, existing data). pS6 (Yb172, the mass neighbour) carries 0.31 of the SHAP weight.
+   - Fit the leakage as a fixed isotope ratio and subtract it.
+   - Then recheck the 2 / 18 Jackson relations that Keren keeps (§17 item 2; §18.4 item 1).
+7. **KRONOS2 adaptation**, only if item 2 finds a tokenisation that clears +0.02 (§18.2 steps 2–3):
+   - LoRA vs full fine-tuning, DDP on 2×T4, fp16;
+   - continued DINO pretraining on our training images, then the cell-type head.
+8. **VirTues reference run**, only on reviewer request (§18.3).
+
+### 18.6 Generative evaluation: distributions, not point predictions (2026-10-27)
+**Why:** every model we compare returns one value per cell or pixel (the conditional mean). LightGBM, MLP and GraphSAGE are regressors. The U-Net, ImmuVis and EVA, as run, give one deterministic map; ImmuVis's β-NLL head also predicts a variance. So we have not yet tested any *generative* ability. A mean predictor is under-dispersed by construction: its predictions vary less than the truth by exactly the variance it cannot explain.
+
+**Done (diagnostic only):** `Results/cross-cohort-metrics/realism_vs_correlation.py` → `fig_realism_vs_correlation.png`. It plots correlation against Wasserstein-2 between the predicted and true marginals at pixel, patch and cell level, in both directions.
+- Pixel and patch W2 is a moment bound (only sums saved). The cell-level W2 is exact; the bound is 90–97% of it.
+- **J→D:** the transferred cell models are no closer than a constant at the cell level (LightGBM 0.144 vs 0.139). They are over-dispersed (SD ratio 1.4×, ImmuVis 1.6×): a symptom of cohort shift.
+- **D→J:** every model is under-dispersed (0.47–0.72×), as expected of mean predictors.
+- Read this as a distribution-match diagnostic, not realism. To do: relabel the figure; add bootstrap CIs on W2.
+
+**Plan** (Kaggle CPU kernel, cell tables; both directions; the same splits and seeds as `train-test-grid` replicate 0):
+1. **Give the cell models a predictive distribution:**
+   - quantile LightGBM, with 19 quantiles per marker (sort the quantiles to stop them crossing);
+   - residual sampling: the prediction plus residuals drawn from training cells of the same type and prediction decile.
+2. **Give ImmuVis one too.** Its predicted variance per pixel, pooled per cell, defines a Gaussian. The U-Net and EVA stay as point predictions; they are scored with CRPS, where a point prediction gets its absolute error.
+3. **Scoring:**
+   - **CRPS:** one scale for distributions and points;
+   - **log score / information gain** (Tonks et al. 2026, arXiv 2602.23305);
+   - **calibration:** a PIT histogram and the coverage of the 80% and 95% intervals, within each cohort vs across cohorts;
+   - **distribution match on samples:** W2 per marker, energy distance and a classifier two-sample test (AUROC) on the joint 10-marker vector, within each cell type; the marker–marker correlation matrix;
+   - **downstream checks on sampled cells:** phenotype composition with the Danenberg classifier; immune–tumour contact depletion.
+4. **Joint generator (optional, GPU):** a mixture density network or conditional flow over all held-out markers given the measured ones. This is the actual "virtual cell". Compare it against independent per-marker quantile models on energy score and correlation structure.
+5. **Optional:** single-cell KID/FID on cell crops with a microscopy encoder (KRONOS), not Inception, with a real-vs-real baseline. Secondary only: it compares distributions, not cells.
+
+**Gate:** call a model "generative-valid" for a marker only if its 80% interval covers 75–85% of cells and its CRPS beats the constant's, on the *transfer* cohort.
+
+#### 18.6.1 Bayesian arm: hierarchical imputation with cohort effects (pre-registered 2026-10-27, before any code)
+**Question:** does a hierarchical Bayesian imputation model stay calibrated under cohort shift, without losing accuracy? And how fast does it adapt when a few target patients have the marker measured?
+
+**Prior work found** (search 2026-10-27): IMC has Bayesian *cell typing* (Astir) and Bayesian *spatial interaction* models (SHADE; Eliason et al. 2025, a log-Gaussian Cox process). We found none for marker imputation with a calibrated posterior. ImmuVis has a heteroscedastic head but no posterior over cohorts. Tonks et al. 2026 frame virtual staining as posterior inference, but on brightfield data.
+
+**Model, per target marker m** (NumPyro):
+- **Mean:** y = f(x) + a_cohort + a_patient + Σ_k b_k,cohort · x_k.
+  - x = the other 10 shared markers, H3, DNA1, DNA2 and log area (harmonised, as in `train-test-grid`);
+  - f = additive natural splines with 4 df per input;
+  - b_k,cohort = cohort deviations of the linear slopes, with prior b_k,cohort ~ N(0, τ_b);
+  - a_patient ~ N(0, τ_p).
+- **Likelihood (amended 2026-10-27, before any code):** a two-component mixture on the unclipped harmonised arcsinh scale, left-censored at the floor (Tobit):
+  - y ~ π(x) · Background + (1 − π(x)) · Expressed, with logit π(x) = h(x) + c_cohort;
+  - Background = Student-t with a small scale;
+  - Expressed = Student-t (ν learned, robust to spillover and segmentation errors), with mean μ(x) as above and log σ = g(x) + s_cohort;
+  - both components are censored at the observed floor: a cell at the floor contributes the CDF, not the density.
+  - **Why** (checked on the test-cell truth): exact zeros are rare (0–4% of cells), but up to 50% of cells sit within 0.02 of the floor (Ki-67, CK8/18, CD68 in Danenberg). That is a continuous off-population, not a point mass, so a zero-only hurdle would model almost nothing. The skew of log y has opposite signs across markers (−1.65 to +1.18), so no single positive family (Gamma, Log-Normal) fits every marker. Censoring, not truncation, because floor values are real observations at the detection limit.
+  - **Sensitivity models:** the plain heteroscedastic Student-t (the original plan) and a Log-Normal hurdle, compared by PSIS-LOO on training patients and by the same test metrics. The primary model stays the mixture whichever wins.
+- **Priors:** τ_b, τ_p ~ HalfNormal(0.3); the spline weights get a weak N(0, 1).
+- **Space:** fit on the unclipped harmonised arcsinh scale (this avoids the ERα ceiling). Map the samples through the monotone target transform, clip them to [0, 1], and score everything in target space, so ImmuVis is directly comparable.
+- **Inference:**
+  - NUTS on 50k training cells per cohort (4 chains, 1000 + 1000 draws);
+  - ADVI on the full training set, checked against NUTS on the same 50k.
+
+**Identifiability caveat (decided in advance):** with only two cohorts, the between-cohort variance is driven by the prior. So zero-shot transfer is reported with the prior-sensitivity range (τ_b ∈ {0.1, 0.3, 1}), not as a single number. Keren (third cohort) is optional and exploratory: its table is standardised and its panel overlap is partial.
+
+**Scenarios** (splits and seeds of `train-test-grid` replicate 0; both directions):
+| | Training data | Test | Purpose |
+|---|---|---|---|
+| S1 | target cohort | held-out target patients | sanity: within-cohort accuracy and calibration |
+| S2 | source cohort | target cohort, new-cohort effect drawn from the prior (zero-shot) | the main shift test |
+| S3 | source + k target patients with the marker measured, k ∈ {1, 5, 20} | the remaining target test patients | few-shot adaptation |
+| S4 | both cohorts | each cohort's held-out patients | the "Both" result, with uncertainty |
+
+**Comparators**, the same cells and scenarios:
+- point LightGBM (CRPS = MAE);
+- quantile LightGBM (19 quantiles);
+- LightGBM + residual sampling (§18.6);
+- ImmuVis Gaussian (S2, from its predicted variance);
+- the constant (training mean);
+- complete-pooling Bayesian (no cohort or patient effects): this isolates what the hierarchy adds.
+
+**Metrics** (10 markers, ERα excluded; 1000× patient bootstrap; paired differences use the same draws):
+- **Primary:** cell CRPS.
+- **Calibration:** coverage of the 80% and 95% intervals; the PIT histogram (KS distance from uniform); mean interval width, as a sharpness check, so that wide intervals can't buy calibration.
+- **Secondary:**
+  - R4 of the posterior mean;
+  - NLL;
+  - W2 and energy distance on one posterior draw per cell;
+  - correlation structure, if fitted jointly (later);
+  - phenotype composition on sampled cells.
+
+**Hypotheses and decision rules (fixed now):**
+- **H1, calibration under shift (S2):** the Bayesian |coverage₈₀ − 0.80|, averaged over markers, is lower than quantile LightGBM's (paired CI < 0), in both directions. This must hold across the τ_b range.
+- **H2, no loss of accuracy (S1, S4):** the R4 of the posterior mean is within 0.05 of LightGBM (non-inferiority margin, lower CI > −0.05).
+- **H3, few-shot (S3):** with k = 5, CRPS closes ≥ 50% of the gap between S2 and the target-trained model.
+- **H4, useful, not just calibrated:** in S2, CRPS beats the constant (CI < 0) for ≥ 6/10 markers.
+- **Kill rule:** if H1 fails *and* S2 CRPS is not better than quantile LightGBM, drop the Bayesian arm and report it as negative.
+
+**Controls and diagnostics:**
+- **Simulation-based calibration:** simulate data from the fitted model with a known cohort shift, refit, and check that coverage recovers within 0.78–0.82. Run this before any real-data claim.
+- **Negative control:** permute the cohort labels within the training data. The cohort effects should then shrink to about 0 (posterior τ_b near its prior mode, no gain over complete pooling).
+- **Convergence:** R-hat < 1.01 and bulk ESS > 400 for every hyperparameter. For ADVI, report coverage against NUTS on the same 50k cells (difference ≤ 0.03), else use NUTS only.
+- **Replicates 1–2:** only if H1 or H3 passes on replicate 0.
+
+**Compute:** Kaggle CPU kernel `bayes-impute`. About 2–4 h per direction for NUTS (10 markers × 50k cells); ADVI on the full data takes under 1 h. No GPU needed.
+**Order:** run after the §18.6 quantile and residual baselines. They share the scoring code, and they are the bar the Bayesian arm has to clear.
+
+### 18.7 Cross-cohort harmonisation: a CytoNorm-like correction (2026-10-29)
+**Why:** part of the transfer failure is a plain level shift (§18.6: Danenberg CD45, SMA and ERα sit off the floor). Our current fixes (cohort z, rank) are global. CytoNorm (Van Gassen 2020) can't be used, because the cohorts share no reference sample. cyCombine (Pedersen 2022) is the reference-free analogue: SOM clusters, then ComBat within each cluster.
+
+**Arms** (kernel `harmonise`, CPU; LightGBM point + quantile, rep 0 split; J→D and D→J):
+1. current: source-cohort scaling (= `prob-impute`);
+2. global cohort z (per marker);
+3. per-cluster ComBat (cyCombine style; SOM on the input markers);
+4. per-cluster quantile matching (CytoNorm-style splines, but cohort-to-cohort, no reference sample);
+5. per-marker GMM landmark registration (align the floor and the high component; UniFORM/MxNorm style);
+6. oracle: the target marker's marginal from the test cohort (§0.3 item 2 follow-up). Upper bound only.
+
+**No leakage:** arms 2–5 fit the correction on the **input** markers only. The target marker is never corrected with test-cohort information; its output is mapped back with the source cohort's statistics, as now.
+
+**Metrics:** R4, cell RMSE vs the constant, CRPS, coverage₈₀, W2 (§18.6 scoring code).
+
+**Biology check (the risk):** reference-free correction can erase real composition differences. Report the coarse cell-type fractions per cohort before and after correction (`cell-type-graph` labels). A method that moves them by > 5 points flattens biology, so flag it.
+
+**Decision:** if the best of arms 2–5 closes ≥ 50% of the coverage gap between arm 1 and the oracle (arm 6) in both directions, it becomes the default preprocessing for `bayes-impute` (S2). If even the oracle doesn't fix coverage, the failure is a change in how markers relate, not a level shift, and harmonisation is dropped.
+
+### 18.8 Tabular foundation models (TabPFN v2/2.5, TabICL) as the cell model (2026-10-29)
+**Why:** the cell table is our best model, and the literature search (2026-10-29) found **no** published test of a tabular foundation model on IMC, CyTOF or spatial proteomics single-cell data. The only cytometry use found is a vendor case study (BostonGene, flow cytometry, patient-level classification). TabPFN also returns a predictive distribution (it approximates the Bayesian posterior predictive), so it doubles as a §18.6 generative baseline.
+
+**Tasks** (kernel `tabpfn-cells`, one T4; rep 0 split):
+1. **Marker imputation:** TabPFN regressor vs LightGBM; within cohort, J→D, D→J, Both. Score R4 and RMSE; CRPS and coverage from its output distribution, vs quantile LightGBM.
+2. **Cell typing:** TabPFN classifier on the same features as Table and Table + nbr (§16); macro-F1.
+3. **Few-shot (S3 analogue):** context = source cells + k = 0, 5, 20 target-cohort patients. In-context learning is where TabPFN should beat a refit LightGBM.
+
+**Constraints:** TabPFN v2 context ~10k rows (2.5: ~50k). Subsample the context per test batch (stratified by image), and report the context size. Licence: check the TabPFN-2.5 weights licence before use (v2 is open).
+
+**Decision:** report it as one row in the model comparison. It is a claim only if it beats LightGBM on transfer coverage or few-shot CRPS (paired CI), not on within-cohort R4, where the cell models already tie.

@@ -1,0 +1,22 @@
+{
+ "kronos": {
+  "macro_f1_val": 0.5734840469371972,
+  "weight_decay": 0.0001,
+  "n_fit": 13442,
+  "n_val": 10388
+ },
+ "own": {
+  "macro_f1_val": 0.5959145378060381,
+  "weight_decay": 0.001,
+  "n_fit": 13442,
+  "n_val": 10388
+ },
+ "pca": {
+  "n_components": 256,
+  "variance_explained": 0.9502604823691323
+ },
+ "variant": "own",
+ "kronos_commit": [
+  "26f1bc02f9ee3a7da3d37ebc63179b2f73e5bc0b"
+ ]
+}

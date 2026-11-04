@@ -1,7 +1,9 @@
+#folders
 IMC data/
 cv_cache/
-papers/
+papers/internal
+
+#internals
 .vscode/
 .ipynb_checkpoints/
-
 .env

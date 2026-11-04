@@ -1,0 +1,57 @@
+[{"stream_name":"stderr","time":8.397696355,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":8.397757853,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":9.603054716,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.603090522,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.603096715,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.603101999,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.571159133,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.57120058,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.571205237000001,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.57120868,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":26.737053431,"data":"36 channels: ['ds_dna', 'vimentin', 'sma', 'fox_p3', 'lag3', 'cd4', 'cd16', 'cd56', 'pd1', 'cd31', 'pd_l1', 'egfr', 'ki67', 'cd209', 'cd11c', 'cd138', 'cd68', 'cd8', 'cd3', 'ido', 'keratin17', 'cd63', 'cd45ro', 'cd20', 'p53', 'beta_catenin', 'hla_dr', 'cd11b', 'cd45', 'h3k9ac', 'pan_keratin', 'h3k27me3', 'phospho_s6', 'mpo', 'keratin6', 'hla_class_1']\n"}
+,{"stream_name":"stdout","time":26.800732103,"data":"197,678 cells, 40 patients, 40 images\n"}
+,{"stream_name":"stdout","time":34.230766737,"data":"[   0.2 min] nuclear: 2 features\n"}
+,{"stream_name":"stdout","time":46.8421912,"data":"[   0.4 min] shared 9: 9 features\n"}
+,{"stream_name":"stdout","time":70.414693636,"data":"[   0.8 min] all channels: 35 features\n"}
+,{"stream_name":"stdout","time":92.085161107,"data":"[   1.1 min] all, no mass neighbours: 32 features\n"}
+,{"stream_name":"stdout","time":116.100453955,"data":"[   1.5 min] all + H3K9ac: 36 features\n"}
+,{"stream_name":"stdout","time":117.226263335,"data":"                  model  n_features  r_within  r_lo  r_hi  partial_beyond_nuclear  partial_lo  partial_hi  patient_spearman  patient_lo  patient_hi  n_patients\n"}
+,{"stream_name":"stdout","time":117.226307405,"data":"                nuclear           2     0.523 0.481 0.561                   0.055       0.025       0.086             0.343       0.027       0.620          40\n"}
+,{"stream_name":"stdout","time":117.226314679,"data":"               shared 9           9     0.541 0.495 0.580                   0.227       0.172       0.278             0.324       0.031       0.588          40\n"}
+,{"stream_name":"stdout","time":117.22632042,"data":"           all channels          35     0.696 0.642 0.744                   0.544       0.478       0.608             0.525       0.221       0.752          40\n"}
+,{"stream_name":"stdout","time":117.226326041,"data":"all, no mass neighbours          32     0.554 0.507 0.592                   0.275       0.225       0.323             0.383       0.063       0.637          40\n"}
+,{"stream_name":"stdout","time":117.226331602,"data":"           all + H3K9ac          36     0.773 0.723 0.815                   0.667       0.608       0.721             0.612       0.302       0.840          40\n"}
+,{"stream_name":"stdout","time":123.185167001,"data":"phospho_s6      0.528\n"}
+,{"stream_name":"stdout","time":123.185206878,"data":"ds_dna          0.155\n"}
+,{"stream_name":"stdout","time":123.18521086,"data":"egfr            0.041\n"}
+,{"stream_name":"stdout","time":123.185214151,"data":"hla_class_1     0.037\n"}
+,{"stream_name":"stdout","time":123.185217258,"data":"pan_keratin     0.027\n"}
+,{"stream_name":"stdout","time":123.18522016,"data":"keratin6        0.023\n"}
+,{"stream_name":"stdout","time":123.185223111,"data":"beta_catenin    0.023\n"}
+,{"stream_name":"stdout","time":123.185226113,"data":"cd3             0.022\n"}
+,{"stream_name":"stdout","time":123.185228908,"data":"p53             0.020\n"}
+,{"stream_name":"stdout","time":123.185232257,"data":"hla_dr          0.014\n"}
+,{"stream_name":"stdout","time":123.185235154,"data":"cd20            0.012\n"}
+,{"stream_name":"stdout","time":123.18523801,"data":"cd45            0.012\n"}
+,{"stream_name":"stdout","time":124.150718085,"data":"h3k9ac          0.578\n"}
+,{"stream_name":"stdout","time":124.150760338,"data":"phospho_s6      0.449\n"}
+,{"stream_name":"stdout","time":124.150767421,"data":"cd20            0.236\n"}
+,{"stream_name":"stdout","time":124.150773054,"data":"cd45ro          0.197\n"}
+,{"stream_name":"stdout","time":124.15077821,"data":"cd45            0.183\n"}
+,{"stream_name":"stdout","time":124.150783217,"data":"cd3             0.171\n"}
+,{"stream_name":"stdout","time":124.150788544,"data":"hla_class_1     0.150\n"}
+,{"stream_name":"stdout","time":124.150793824,"data":"cd4             0.124\n"}
+,{"stream_name":"stdout","time":124.150799076,"data":"cd8             0.107\n"}
+,{"stream_name":"stdout","time":124.15080422,"data":"beta_catenin   -0.083\n"}
+,{"stream_name":"stdout","time":124.150809575,"data":"pd1             0.079\n"}
+,{"stream_name":"stdout","time":124.150891247,"data":"hla_dr          0.063\n"}
+,{"stream_name":"stdout","time":124.464001436,"data":"[   1.7 min] done\n"}
+,{"stream_name":"stderr","time":130.038139698,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":130.038185559,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":130.291253133,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":130.291289391,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":131.082053761,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":131.505716478,"data":"[NbConvertApp] Writing 20515 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":134.926907734,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":136.150868377,"data":"[NbConvertApp] Writing 344134 bytes to __results__.html\n"}
+]

@@ -1,0 +1,43 @@
+{
+ "immuvis_checkpoint": {
+  "step": 17378,
+  "total_steps": 17378,
+  "best_val_epi_pixel_r": 0.5780027743250976,
+  "val_r_at_best": {
+   "histone_h3_trimethylate": 0.6529894426771073,
+   "histone_h3_phospho": 0.5030161059730879
+  },
+  "train_minutes": 180.0,
+  "n_train_images": 397,
+  "n_val_images": 39,
+  "code_source": "github.com/dav3794/multiplex-image-model"
+ },
+ "pixel_r_jackson_test_h3k27me3": {
+  "pooled": 0.6412175378268886,
+  "per_image_mean": 0.6171631842535026
+ },
+ "pixel_r_jackson_test_phh3": {
+  "pooled": 0.47638766886322076,
+  "per_image_mean": 0.4670069219150503
+ },
+ "eva": {
+  "commit": "35dd50ce557e72474fe48da7e871afcb8e63298a",
+  "genes": {
+   "H3K27me3": "H3F3A",
+   "HistoneH3p": "H3F3A",
+   "HistoneH3": "H3F3A"
+  },
+  "h3f3a_has_genept_embedding": true,
+  "token_identical_h3k27me3_phh3": true,
+  "token_identical_h3k27me3_h3": true,
+  "token_cosine_h3k27me3_h3": 1.0000001192092896,
+  "max_abs_diff_h3k27me3_vs_phh3_output": 0.0
+ },
+ "failed_blocks": [],
+ "minutes": 173.7602547287941,
+ "n_jackson_test_cells": 229818,
+ "n_jackson_test_images": 106,
+ "n_danenberg_cells": 1062219,
+ "n_danenberg_images": 704,
+ "n_danenberg_loa_images": 300
+}

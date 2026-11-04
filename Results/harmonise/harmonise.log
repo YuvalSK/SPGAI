@@ -1,0 +1,204 @@
+[{"stream_name":"stderr","time":9.069502778,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":9.069568578,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":10.510151442,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.510202021,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.510208646,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.510212219,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.518712468,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.518751388,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.518757377,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.518762427,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":36.679833724,"data":"[   0.3 min] tables: Danenberg 1,062,219 cells, Jackson 1,126,124 cells\n"}
+,{"stream_name":"stderr","time":38.027378292,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":38.027414682,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":38.230681058,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":38.230720415,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":38.230724958,"data":"\n"}
+,{"stream_name":"stderr","time":38.230728416,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":38.230733412,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":108.454378607,"data":"[   1.5 min] per-cell image means\n"}
+,{"stream_name":"stdout","time":110.069059285,"data":"Jackson {'train': (806958, 251), 'val': (89348, 32), 'test': (229818, 66)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":110.069194638,"data":"Danenberg {'train': (728537, 465), 'val': (105171, 55), 'test': (228511, 130)} (cells, patients)\n"}
+,{"stream_name":"stdout","time":112.164600215,"data":"[   1.5 min] splits and harmonisation\n"}
+,{"stream_name":"stdout","time":112.63400027,"data":"correction unit checks passed\n"}
+,{"stream_name":"stdout","time":163.334431116,"data":"[   2.4 min] biology check Jackson -\u003e Danenberg\n"}
+,{"stream_name":"stdout","time":213.9937352,"data":"[   3.2 min] biology check Danenberg -\u003e Jackson\n"}
+,{"stream_name":"stdout","time":214.01566218,"data":"    train      test                    arm  cohort_auroc  patient_mean_spearman_median  patient_mean_spearman_min   worst_input\n"}
+,{"stream_name":"stdout","time":214.01571779,"data":"  Jackson Danenberg       1 source scaling         1.000                         1.000                      1.000          dna1\n"}
+,{"stream_name":"stdout","time":214.015723097,"data":"  Jackson Danenberg             2 cohort z         0.997                         1.000                      1.000    histone_h3\n"}
+,{"stream_name":"stdout","time":214.015727627,"data":"  Jackson Danenberg   3 per-cluster ComBat         0.985                         0.967                      0.778      log_area\n"}
+,{"stream_name":"stdout","time":214.015731892,"data":"  Jackson Danenberg 4 per-cluster quantile         0.871                         0.966                      0.753      log_area\n"}
+,{"stream_name":"stdout","time":214.015736681,"data":"  Jackson Danenberg        5 GMM landmarks         0.999                         1.000                      1.000          dna1\n"}
+,{"stream_name":"stdout","time":214.015740805,"data":"Danenberg   Jackson       1 source scaling         1.000                         1.000                      1.000    histone_h3\n"}
+,{"stream_name":"stdout","time":214.015751501,"data":"Danenberg   Jackson             2 cohort z         0.998                         1.000                      1.000    histone_h3\n"}
+,{"stream_name":"stdout","time":214.01575555,"data":"Danenberg   Jackson   3 per-cluster ComBat         0.966                         0.972                      0.886 cytokeratin_5\n"}
+,{"stream_name":"stdout","time":214.01575955,"data":"Danenberg   Jackson 4 per-cluster quantile         0.927                         0.978                      0.898      log_area\n"}
+,{"stream_name":"stdout","time":214.015763783,"data":"Danenberg   Jackson        5 GMM landmarks         0.999                         1.000                      1.000    histone_h3\n"}
+,{"stream_name":"stdout","time":214.067253744,"data":"[   3.2 min] train on Jackson, test on Danenberg\n"}
+,{"stream_name":"stdout","time":396.669525255,"data":"[   6.3 min]   Jackson-\u003eDanenberg: c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":582.940862947,"data":"[   9.4 min]   Jackson-\u003eDanenberg: cd20\n"}
+,{"stream_name":"stdout","time":774.221665578,"data":"[  12.6 min]   Jackson-\u003eDanenberg: cd3\n"}
+,{"stream_name":"stdout","time":961.117554811,"data":"[  15.7 min]   Jackson-\u003eDanenberg: cd45\n"}
+,{"stream_name":"stdout","time":1156.87906088,"data":"[  18.9 min]   Jackson-\u003eDanenberg: cd68\n"}
+,{"stream_name":"stdout","time":1351.293843742,"data":"[  22.2 min]   Jackson-\u003eDanenberg: cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1535.72037911,"data":"[  25.2 min]   Jackson-\u003eDanenberg: cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1728.920926209,"data":"[  28.5 min]   Jackson-\u003eDanenberg: estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":1922.694360574,"data":"[  31.7 min]   Jackson-\u003eDanenberg: ki_67\n"}
+,{"stream_name":"stdout","time":2115.762874647,"data":"[  34.9 min]   Jackson-\u003eDanenberg: pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":2319.08753572,"data":"[  38.3 min]   Jackson-\u003eDanenberg: sma\n"}
+,{"stream_name":"stdout","time":2319.088975153,"data":"[  38.3 min] train on Danenberg, test on Jackson\n"}
+,{"stream_name":"stdout","time":2521.165251456,"data":"[  41.7 min]   Danenberg-\u003eJackson: c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":2719.888867441,"data":"[  45.0 min]   Danenberg-\u003eJackson: cd20\n"}
+,{"stream_name":"stdout","time":2913.229003499,"data":"[  48.2 min]   Danenberg-\u003eJackson: cd3\n"}
+,{"stream_name":"stdout","time":3114.264751233,"data":"[  51.6 min]   Danenberg-\u003eJackson: cd45\n"}
+,{"stream_name":"stdout","time":3309.737713999,"data":"[  54.8 min]   Danenberg-\u003eJackson: cd68\n"}
+,{"stream_name":"stdout","time":3506.367302788,"data":"[  58.1 min]   Danenberg-\u003eJackson: cytokeratin_5\n"}
+,{"stream_name":"stdout","time":3694.521133286,"data":"[  61.2 min]   Danenberg-\u003eJackson: cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":3889.006864134,"data":"[  64.5 min]   Danenberg-\u003eJackson: estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":4076.924172319,"data":"[  67.6 min]   Danenberg-\u003eJackson: ki_67\n"}
+,{"stream_name":"stdout","time":4267.56871707,"data":"[  70.8 min]   Danenberg-\u003eJackson: pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":4467.153008093,"data":"[  74.1 min]   Danenberg-\u003eJackson: sma\n"}
+,{"stream_name":"stdout","time":4467.347480161,"data":"     test     train                      arm                    model  crps  cov50  cov80  cov95  width80  pit_ks  W2_draw     R4  rmse  gap80\n"}
+,{"stream_name":"stdout","time":4467.347541697,"data":"Danenberg   Jackson         1 source scaling              Climatology 0.146  0.437  0.743  0.912    0.589   0.292    0.159 -0.001   NaN  0.137\n"}
+,{"stream_name":"stdout","time":4467.347549314,"data":"Danenberg   Jackson         1 source scaling Constant (training mean) 0.212    NaN    NaN    NaN      NaN     NaN    0.288 -0.000 0.288    NaN\n"}
+,{"stream_name":"stdout","time":4467.347555646,"data":"Danenberg   Jackson         1 source scaling           Point LightGBM 0.189    NaN    NaN    NaN      NaN     NaN    0.182  0.406 0.271    NaN\n"}
+,{"stream_name":"stdout","time":4467.347561072,"data":"Danenberg   Jackson         1 source scaling        Quantile LightGBM 0.129  0.337  0.570  0.722    0.327   0.374    0.169  0.402   NaN  0.273\n"}
+,{"stream_name":"stdout","time":4467.347566497,"data":"Danenberg   Jackson         1 source scaling        Residual sampling 0.133  0.305  0.566  0.771    0.325   0.340    0.181  0.395   NaN  0.252\n"}
+,{"stream_name":"stdout","time":4467.347572031,"data":"Danenberg   Jackson               2 cohort z           Point LightGBM 0.175    NaN    NaN    NaN      NaN     NaN    0.154  0.427 0.269    NaN\n"}
+,{"stream_name":"stdout","time":4467.347575991,"data":"Danenberg   Jackson               2 cohort z        Quantile LightGBM 0.122  0.347  0.575  0.723    0.309   0.315    0.139  0.421   NaN  0.248\n"}
+,{"stream_name":"stdout","time":4467.347580033,"data":"Danenberg   Jackson               2 cohort z        Residual sampling 0.130  0.325  0.570  0.752    0.320   0.330    0.173  0.410   NaN  0.243\n"}
+,{"stream_name":"stdout","time":4467.347584377,"data":"Danenberg   Jackson     3 per-cluster ComBat           Point LightGBM 0.175    NaN    NaN    NaN      NaN     NaN    0.152  0.404 0.276    NaN\n"}
+,{"stream_name":"stdout","time":4467.347589785,"data":"Danenberg   Jackson     3 per-cluster ComBat        Quantile LightGBM 0.125  0.340  0.571  0.719    0.306   0.312    0.144  0.405   NaN  0.247\n"}
+,{"stream_name":"stdout","time":4467.347595592,"data":"Danenberg   Jackson     3 per-cluster ComBat        Residual sampling 0.132  0.328  0.574  0.754    0.304   0.318    0.175  0.388   NaN  0.235\n"}
+,{"stream_name":"stdout","time":4467.347601538,"data":"Danenberg   Jackson   4 per-cluster quantile           Point LightGBM 0.170    NaN    NaN    NaN      NaN     NaN    0.146  0.433 0.267    NaN\n"}
+,{"stream_name":"stdout","time":4467.347607133,"data":"Danenberg   Jackson   4 per-cluster quantile        Quantile LightGBM 0.124  0.338  0.567  0.714    0.300   0.316    0.141  0.409   NaN  0.253\n"}
+,{"stream_name":"stdout","time":4467.347614175,"data":"Danenberg   Jackson   4 per-cluster quantile        Residual sampling 0.128  0.334  0.579  0.757    0.299   0.314    0.167  0.417   NaN  0.232\n"}
+,{"stream_name":"stdout","time":4467.347658123,"data":"Danenberg   Jackson          5 GMM landmarks           Point LightGBM 0.174    NaN    NaN    NaN      NaN     NaN    0.156  0.419 0.274    NaN\n"}
+,{"stream_name":"stdout","time":4467.347665392,"data":"Danenberg   Jackson          5 GMM landmarks        Quantile LightGBM 0.114  0.366  0.612  0.776    0.323   0.280    0.132  0.425   NaN  0.209\n"}
+,{"stream_name":"stdout","time":4467.347670495,"data":"Danenberg   Jackson          5 GMM landmarks        Residual sampling 0.126  0.350  0.611  0.802    0.339   0.281    0.171  0.403   NaN  0.201\n"}
+,{"stream_name":"stdout","time":4467.347675393,"data":"Danenberg   Jackson 6a oracle: level + scale              Climatology 0.128  0.419  0.676  0.790    0.503   0.176    0.064 -0.001   NaN  0.163\n"}
+,{"stream_name":"stdout","time":4467.34768042,"data":"Danenberg   Jackson 6a oracle: level + scale Constant (training mean) 0.195    NaN    NaN    NaN      NaN     NaN    0.272 -0.000 0.272    NaN\n"}
+,{"stream_name":"stdout","time":4467.347685218,"data":"Danenberg   Jackson 6a oracle: level + scale           Point LightGBM 0.136    NaN    NaN    NaN      NaN     NaN    0.113  0.427 0.221    NaN\n"}
+,{"stream_name":"stdout","time":4467.347689155,"data":"Danenberg   Jackson 6a oracle: level + scale        Quantile LightGBM 0.096  0.352  0.578  0.701    0.252   0.184    0.077  0.421   NaN  0.222\n"}
+,{"stream_name":"stdout","time":4467.347693703,"data":"Danenberg   Jackson 6a oracle: level + scale        Residual sampling 0.100  0.340  0.582  0.734    0.255   0.171    0.082  0.410   NaN  0.218\n"}
+,{"stream_name":"stdout","time":4467.347698617,"data":"Danenberg   Jackson 6b oracle: full marginal              Climatology 0.125  0.489  0.782  0.926    0.512   0.040    0.039 -0.001   NaN  0.035\n"}
+,{"stream_name":"stdout","time":4467.347703317,"data":"Danenberg   Jackson 6b oracle: full marginal Constant (training mean) 0.198    NaN    NaN    NaN      NaN     NaN    0.275 -0.000 0.275    NaN\n"}
+,{"stream_name":"stdout","time":4467.347708085,"data":"Danenberg   Jackson 6b oracle: full marginal           Point LightGBM 0.134    NaN    NaN    NaN      NaN     NaN    0.101  0.439 0.220    NaN\n"}
+,{"stream_name":"stdout","time":4467.347712905,"data":"Danenberg   Jackson 6b oracle: full marginal        Quantile LightGBM 0.094  0.408  0.665  0.816    0.266   0.092    0.060  0.420   NaN  0.135\n"}
+,{"stream_name":"stdout","time":4467.347717313,"data":"Danenberg   Jackson 6b oracle: full marginal        Residual sampling 0.097  0.408  0.683  0.849    0.261   0.081    0.058  0.423   NaN  0.117\n"}
+,{"stream_name":"stdout","time":4467.34772267,"data":"  Jackson Danenberg         1 source scaling              Climatology 0.163  0.313  0.538  0.714    0.513   0.289    0.146  0.000   NaN  0.262\n"}
+,{"stream_name":"stdout","time":4467.347727295,"data":"  Jackson Danenberg         1 source scaling Constant (training mean) 0.244    NaN    NaN    NaN      NaN     NaN    0.347 -0.000 0.347    NaN\n"}
+,{"stream_name":"stdout","time":4467.347732444,"data":"  Jackson Danenberg         1 source scaling           Point LightGBM 0.161    NaN    NaN    NaN      NaN     NaN    0.215  0.375 0.291    NaN\n"}
+,{"stream_name":"stdout","time":4467.347737365,"data":"  Jackson Danenberg         1 source scaling        Quantile LightGBM 0.135  0.239  0.435  0.592    0.210   0.367    0.208  0.366   NaN  0.365\n"}
+,{"stream_name":"stdout","time":4467.347742321,"data":"  Jackson Danenberg         1 source scaling        Residual sampling 0.131  0.226  0.426  0.611    0.197   0.355    0.196  0.352   NaN  0.374\n"}
+,{"stream_name":"stdout","time":4467.347747321,"data":"  Jackson Danenberg               2 cohort z           Point LightGBM 0.187    NaN    NaN    NaN      NaN     NaN    0.174  0.401 0.298    NaN\n"}
+,{"stream_name":"stdout","time":4467.347757991,"data":"  Jackson Danenberg               2 cohort z        Quantile LightGBM 0.144  0.213  0.380  0.502    0.260   0.420    0.153  0.381   NaN  0.420\n"}
+,{"stream_name":"stdout","time":4467.347762986,"data":"  Jackson Danenberg               2 cohort z        Residual sampling 0.145  0.204  0.382  0.549    0.249   0.405    0.150  0.384   NaN  0.418\n"}
+,{"stream_name":"stdout","time":4467.347767911,"data":"  Jackson Danenberg     3 per-cluster ComBat           Point LightGBM 0.181    NaN    NaN    NaN      NaN     NaN    0.178  0.401 0.298    NaN\n"}
+,{"stream_name":"stdout","time":4467.34777282,"data":"  Jackson Danenberg     3 per-cluster ComBat        Quantile LightGBM 0.142  0.215  0.383  0.509    0.243   0.407    0.160  0.380   NaN  0.417\n"}
+,{"stream_name":"stdout","time":4467.347777871,"data":"  Jackson Danenberg     3 per-cluster ComBat        Residual sampling 0.142  0.207  0.390  0.561    0.235   0.389    0.157  0.386   NaN  0.410\n"}
+,{"stream_name":"stdout","time":4467.347782685,"data":"  Jackson Danenberg   4 per-cluster quantile           Point LightGBM 0.178    NaN    NaN    NaN      NaN     NaN    0.181  0.400 0.292    NaN\n"}
+,{"stream_name":"stdout","time":4467.347787811,"data":"  Jackson Danenberg   4 per-cluster quantile        Quantile LightGBM 0.139  0.221  0.393  0.520    0.248   0.403    0.160  0.374   NaN  0.407\n"}
+,{"stream_name":"stdout","time":4467.347792775,"data":"  Jackson Danenberg   4 per-cluster quantile        Residual sampling 0.139  0.209  0.393  0.565    0.237   0.388    0.158  0.384   NaN  0.407\n"}
+,{"stream_name":"stdout","time":4467.34779779,"data":"  Jackson Danenberg          5 GMM landmarks           Point LightGBM 0.177    NaN    NaN    NaN      NaN     NaN    0.174  0.391 0.289    NaN\n"}
+,{"stream_name":"stdout","time":4467.347802658,"data":"  Jackson Danenberg          5 GMM landmarks        Quantile LightGBM 0.136  0.229  0.405  0.531    0.254   0.394    0.152  0.371   NaN  0.395\n"}
+,{"stream_name":"stdout","time":4467.34780717,"data":"  Jackson Danenberg          5 GMM landmarks        Residual sampling 0.138  0.210  0.394  0.564    0.238   0.390    0.149  0.374   NaN  0.406\n"}
+,{"stream_name":"stdout","time":4467.347812,"data":"  Jackson Danenberg 6a oracle: level + scale              Climatology 0.151  0.576  0.791  0.906    0.601   0.169    0.082  0.000   NaN  0.079\n"}
+,{"stream_name":"stdout","time":4467.347816535,"data":"  Jackson Danenberg 6a oracle: level + scale Constant (training mean) 0.224    NaN    NaN    NaN      NaN     NaN    0.331  0.000 0.331    NaN\n"}
+,{"stream_name":"stdout","time":4467.347821254,"data":"  Jackson Danenberg 6a oracle: level + scale           Point LightGBM 0.174    NaN    NaN    NaN      NaN     NaN    0.115  0.401 0.295    NaN\n"}
+,{"stream_name":"stdout","time":4467.347826161,"data":"  Jackson Danenberg 6a oracle: level + scale        Quantile LightGBM 0.125  0.387  0.641  0.787    0.317   0.124    0.089  0.381   NaN  0.160\n"}
+,{"stream_name":"stdout","time":4467.347831363,"data":"  Jackson Danenberg 6a oracle: level + scale        Residual sampling 0.131  0.361  0.636  0.819    0.302   0.130    0.085  0.384   NaN  0.164\n"}
+,{"stream_name":"stdout","time":4467.347836521,"data":"  Jackson Danenberg 6b oracle: full marginal              Climatology 0.146  0.483  0.780  0.923    0.588   0.034    0.041 -0.000   NaN  0.036\n"}
+,{"stream_name":"stdout","time":4467.347841502,"data":"  Jackson Danenberg 6b oracle: full marginal Constant (training mean) 0.226    NaN    NaN    NaN      NaN     NaN    0.334 -0.000 0.334    NaN\n"}
+,{"stream_name":"stdout","time":4467.347846514,"data":"  Jackson Danenberg 6b oracle: full marginal           Point LightGBM 0.155    NaN    NaN    NaN      NaN     NaN    0.100  0.412 0.276    NaN\n"}
+,{"stream_name":"stdout","time":4467.347855933,"data":"  Jackson Danenberg 6b oracle: full marginal        Quantile LightGBM 0.114  0.366  0.620  0.776    0.281   0.105    0.070  0.388   NaN  0.180\n"}
+,{"stream_name":"stdout","time":4467.347861165,"data":"  Jackson Danenberg 6b oracle: full marginal        Residual sampling 0.118  0.345  0.611  0.801    0.265   0.115    0.067  0.396   NaN  0.189\n"}
+,{"stream_name":"stdout","time":4467.509015897,"data":"metric                              cov80   crps  gap80\n"}
+,{"stream_name":"stdout","time":4467.509057756,"data":"test      arm                                          \n"}
+,{"stream_name":"stdout","time":4467.509063616,"data":"Danenberg 1 source scaling          0.570  0.129  0.273\n"}
+,{"stream_name":"stdout","time":4467.509068494,"data":"          2 cohort z                0.575  0.122  0.248\n"}
+,{"stream_name":"stdout","time":4467.509073417,"data":"          3 per-cluster ComBat      0.571  0.125  0.247\n"}
+,{"stream_name":"stdout","time":4467.50907818,"data":"          4 per-cluster quantile    0.567  0.124  0.253\n"}
+,{"stream_name":"stdout","time":4467.50908271,"data":"          5 GMM landmarks           0.612  0.114  0.209\n"}
+,{"stream_name":"stdout","time":4467.509087468,"data":"          6a oracle: level + scale  0.578  0.096  0.222\n"}
+,{"stream_name":"stdout","time":4467.509092113,"data":"          6b oracle: full marginal  0.665  0.094  0.135\n"}
+,{"stream_name":"stdout","time":4467.509096899,"data":"Jackson   1 source scaling          0.435  0.135  0.365\n"}
+,{"stream_name":"stdout","time":4467.509101269,"data":"          2 cohort z                0.380  0.144  0.420\n"}
+,{"stream_name":"stdout","time":4467.509105547,"data":"          3 per-cluster ComBat      0.383  0.142  0.417\n"}
+,{"stream_name":"stdout","time":4467.509108624,"data":"          4 per-cluster quantile    0.393  0.139  0.407\n"}
+,{"stream_name":"stdout","time":4467.509111556,"data":"          5 GMM landmarks           0.405  0.136  0.395\n"}
+,{"stream_name":"stdout","time":4467.509114484,"data":"          6a oracle: level + scale  0.641  0.125  0.160\n"}
+,{"stream_name":"stdout","time":4467.509117464,"data":"          6b oracle: full marginal  0.620  0.114  0.180\n"}
+,{"stream_name":"stdout","time":4467.509120467,"data":"call                                                  better  n.s.  worse\n"}
+,{"stream_name":"stdout","time":4467.509123733,"data":"test      arm                      model                                 \n"}
+,{"stream_name":"stdout","time":4467.509142733,"data":"Danenberg 2 cohort z               Point LightGBM          5     2      3\n"}
+,{"stream_name":"stdout","time":4467.509145798,"data":"                                   Quantile LightGBM       6     2      2\n"}
+,{"stream_name":"stdout","time":4467.50915708,"data":"                                   Residual sampling       4     4      2\n"}
+,{"stream_name":"stdout","time":4467.509160114,"data":"          3 per-cluster ComBat     Point LightGBM          6     1      3\n"}
+,{"stream_name":"stdout","time":4467.509163109,"data":"                                   Quantile LightGBM       5     2      3\n"}
+,{"stream_name":"stdout","time":4467.509166342,"data":"                                   Residual sampling       5     3      2\n"}
+,{"stream_name":"stdout","time":4467.509170636,"data":"          4 per-cluster quantile   Point LightGBM          6     2      2\n"}
+,{"stream_name":"stdout","time":4467.509175156,"data":"                                   Quantile LightGBM       5     1      4\n"}
+,{"stream_name":"stdout","time":4467.509179618,"data":"                                   Residual sampling       5     3      2\n"}
+,{"stream_name":"stdout","time":4467.509184236,"data":"          5 GMM landmarks          Point LightGBM          6     2      2\n"}
+,{"stream_name":"stdout","time":4467.509209617,"data":"                                   Quantile LightGBM       7     2      1\n"}
+,{"stream_name":"stdout","time":4467.509214831,"data":"                                   Residual sampling       4     5      1\n"}
+,{"stream_name":"stdout","time":4467.509219447,"data":"          6a oracle: level + scale Point LightGBM          9     0      1\n"}
+,{"stream_name":"stdout","time":4467.509225597,"data":"                                   Quantile LightGBM       9     1      0\n"}
+,{"stream_name":"stdout","time":4467.509230348,"data":"                                   Residual sampling       9     1      0\n"}
+,{"stream_name":"stdout","time":4467.509234978,"data":"          6b oracle: full marginal Point LightGBM          9     1      0\n"}
+,{"stream_name":"stdout","time":4467.509239676,"data":"                                   Quantile LightGBM       9     1      0\n"}
+,{"stream_name":"stdout","time":4467.509244529,"data":"                                   Residual sampling       9     1      0\n"}
+,{"stream_name":"stdout","time":4467.509250258,"data":"Jackson   2 cohort z               Point LightGBM          2     2      6\n"}
+,{"stream_name":"stdout","time":4467.509254921,"data":"                                   Quantile LightGBM       4     1      5\n"}
+,{"stream_name":"stdout","time":4467.509259459,"data":"                                   Residual sampling       3     2      5\n"}
+,{"stream_name":"stdout","time":4467.509264519,"data":"          3 per-cluster ComBat     Point LightGBM          2     2      6\n"}
+,{"stream_name":"stdout","time":4467.50926926,"data":"                                   Quantile LightGBM       2     4      4\n"}
+,{"stream_name":"stdout","time":4467.509273776,"data":"                                   Residual sampling       2     4      4\n"}
+,{"stream_name":"stdout","time":4467.509278311,"data":"          4 per-cluster quantile   Point LightGBM          2     2      6\n"}
+,{"stream_name":"stdout","time":4467.509282487,"data":"                                   Quantile LightGBM       3     4      3\n"}
+,{"stream_name":"stdout","time":4467.509286967,"data":"                                   Residual sampling       2     5      3\n"}
+,{"stream_name":"stdout","time":4467.5092912,"data":"          5 GMM landmarks          Point LightGBM          2     2      6\n"}
+,{"stream_name":"stdout","time":4467.509295561,"data":"                                   Quantile LightGBM       4     3      3\n"}
+,{"stream_name":"stdout","time":4467.509300019,"data":"                                   Residual sampling       3     3      4\n"}
+,{"stream_name":"stdout","time":4467.509304501,"data":"          6a oracle: level + scale Point LightGBM          3     3      4\n"}
+,{"stream_name":"stdout","time":4467.509309024,"data":"                                   Quantile LightGBM       6     2      2\n"}
+,{"stream_name":"stdout","time":4467.509313576,"data":"                                   Residual sampling       5     3      2\n"}
+,{"stream_name":"stdout","time":4467.509318173,"data":"          6b oracle: full marginal Point LightGBM          3     4      3\n"}
+,{"stream_name":"stdout","time":4467.509322769,"data":"                                   Quantile LightGBM       7     2      1\n"}
+,{"stream_name":"stdout","time":4467.509327348,"data":"                                   Residual sampling       7     2      1\n"}
+,{"stream_name":"stdout","time":4467.510638038,"data":"{\n"}
+,{"stream_name":"stdout","time":4467.510670437,"data":" \"per_test_cohort\": {\n"}
+,{"stream_name":"stdout","time":4467.510676191,"data":"  \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":4467.510696648,"data":"   \"gap_arm1\": 0.36475907022078347,\n"}
+,{"stream_name":"stdout","time":4467.510701923,"data":"   \"gap_oracle\": 0.16014420106345023,\n"}
+,{"stream_name":"stdout","time":4467.510706527,"data":"   \"oracle_reduction\": 0.20461486915733323,\n"}
+,{"stream_name":"stdout","time":4467.510710893,"data":"   \"best_arm\": \"5 GMM landmarks\",\n"}
+,{"stream_name":"stdout","time":4467.510715421,"data":"   \"gap_best\": 0.39539592199044465,\n"}
+,{"stream_name":"stdout","time":4467.510719493,"data":"   \"closed_fraction\": -0.14972935200571266,\n"}
+,{"stream_name":"stdout","time":4467.510724036,"data":"   \"level_shift_explains\": true\n"}
+,{"stream_name":"stdout","time":4467.510728648,"data":"  },\n"}
+,{"stream_name":"stdout","time":4467.510732811,"data":"  \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":4467.510737239,"data":"   \"gap_arm1\": 0.27333476295301073,\n"}
+,{"stream_name":"stdout","time":4467.510741708,"data":"   \"gap_oracle\": 0.13502903732620278,\n"}
+,{"stream_name":"stdout","time":4467.510745936,"data":"   \"oracle_reduction\": 0.13830572562680796,\n"}
+,{"stream_name":"stdout","time":4467.510750074,"data":"   \"best_arm\": \"5 GMM landmarks\",\n"}
+,{"stream_name":"stdout","time":4467.510754946,"data":"   \"gap_best\": 0.20943181370596814,\n"}
+,{"stream_name":"stdout","time":4467.510759213,"data":"   \"closed_fraction\": 0.46204124201967395,\n"}
+,{"stream_name":"stdout","time":4467.510764314,"data":"   \"level_shift_explains\": true\n"}
+,{"stream_name":"stdout","time":4467.510768798,"data":"  }\n"}
+,{"stream_name":"stdout","time":4467.510772778,"data":" },\n"}
+,{"stream_name":"stdout","time":4467.510776818,"data":" \"adopt_for_bayes_impute\": false,\n"}
+,{"stream_name":"stdout","time":4467.510781133,"data":" \"arm\": null,\n"}
+,{"stream_name":"stdout","time":4467.510785187,"data":" \"rule\": \"best of arms 2-5 closes \u003e= 50% of the arm-1 -\u003e oracle gap in |cov80-0.8| in both directions\"\n"}
+,{"stream_name":"stdout","time":4467.510790586,"data":"}\n"}
+,{"stream_name":"stdout","time":4469.033512792,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":4476.052602686,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4476.052676417,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4476.358891555,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4476.358927221,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4477.535794991,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4477.683694124,"data":"[NbConvertApp] Writing 62801 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4481.748878647,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4482.933846248,"data":"[NbConvertApp] Writing 491284 bytes to __results__.html\n"}
+]

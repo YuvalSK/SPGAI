@@ -1,0 +1,82 @@
+[{"stream_name":"stderr","time":7.074671196,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.074721399,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.024882389,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.024934737,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.024944122,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.024947435,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.668784947,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.668817673,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.668825055,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.668832388,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":15.522715757,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 14.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":15.725233559,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 14.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":35.535568707,"data":"Jackson test: 229,818 cells, 106 images, 66 patients\n"}
+,{"stream_name":"stdout","time":35.535610151,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; LOA on 300 images\n"}
+,{"stream_name":"stdout","time":37.960998692,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.9/859.9 kB 16.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":38.014345174,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 37.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":38.163591913,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 859.9/859.9 kB 16.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":38.163625141,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 37.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":42.766530581,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stdout","time":42.941767896,"data":"anonymous release not available: HTTP Error 403: Forbidden\n"}
+,{"stream_name":"stderr","time":42.969459689,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stderr","time":42.969488393,"data":"\n"}
+,{"stream_name":"stderr","time":42.969498726,"data":"Cloning into '/tmp/immuvis_code'...\n"}
+,{"stream_name":"stdout","time":57.273202129,"data":"checkpoint: step 17378/17378, val pixel r {'histone_h3_trimethylate': 0.6529894426771073, 'histone_h3_phospho': 0.5030161059730879}, 397 train images\n"}
+,{"stream_name":"stdout","time":69.071287438,"data":"[   1.0 min] ImmuVis jackson: 1/106 images\n"}
+,{"stream_name":"stdout","time":499.938236661,"data":"[   8.2 min] ImmuVis jackson: 26/106 images\n"}
+,{"stream_name":"stdout","time":1173.222998568,"data":"[  19.4 min] ImmuVis jackson: 51/106 images\n"}
+,{"stream_name":"stdout","time":1844.226951691,"data":"[  30.6 min] ImmuVis jackson: 76/106 images\n"}
+,{"stream_name":"stdout","time":2189.501023655,"data":"[  36.3 min] ImmuVis jackson: 101/106 images\n"}
+,{"stream_name":"stdout","time":2262.401256954,"data":"{'pixel_r_jackson_test_h3k27me3': {'pooled': 0.6412175378268886, 'per_image_mean': 0.6171631842535026}, 'pixel_r_jackson_test_phh3': {'pooled': 0.47638766886322076, 'per_image_mean': 0.4670069219150503}}\n"}
+,{"stream_name":"stdout","time":2262.83895996,"data":"[  37.5 min] ImmuVis Jackson test done\n"}
+,{"stream_name":"stdout","time":2266.209708747,"data":"[  37.6 min] ImmuVis danenberg: 1/704 images\n"}
+,{"stream_name":"stdout","time":2561.386954172,"data":"[  42.5 min] ImmuVis danenberg: 26/704 images\n"}
+,{"stream_name":"stdout","time":2763.299259522,"data":"[  45.9 min] ImmuVis danenberg: 51/704 images\n"}
+,{"stream_name":"stdout","time":3050.684949512,"data":"[  50.7 min] ImmuVis danenberg: 76/704 images\n"}
+,{"stream_name":"stdout","time":3498.503572194,"data":"[  58.1 min] ImmuVis danenberg: 101/704 images\n"}
+,{"stream_name":"stdout","time":3763.617754986,"data":"[  62.5 min] ImmuVis danenberg: 126/704 images\n"}
+,{"stream_name":"stdout","time":4110.933133417,"data":"[  68.3 min] ImmuVis danenberg: 151/704 images\n"}
+,{"stream_name":"stdout","time":4389.550920385,"data":"[  73.0 min] ImmuVis danenberg: 176/704 images\n"}
+,{"stream_name":"stdout","time":4630.415845885,"data":"[  77.0 min] ImmuVis danenberg: 201/704 images\n"}
+,{"stream_name":"stdout","time":4951.516524019,"data":"[  82.3 min] ImmuVis danenberg: 226/704 images\n"}
+,{"stream_name":"stdout","time":5252.818187408,"data":"[  87.4 min] ImmuVis danenberg: 251/704 images\n"}
+,{"stream_name":"stdout","time":5608.070706793,"data":"[  93.3 min] ImmuVis danenberg: 276/704 images\n"}
+,{"stream_name":"stdout","time":5925.173071811,"data":"[  98.6 min] ImmuVis danenberg: 301/704 images\n"}
+,{"stream_name":"stdout","time":6233.117520264,"data":"[ 103.7 min] ImmuVis danenberg: 326/704 images\n"}
+,{"stream_name":"stdout","time":6584.500994883,"data":"[ 109.6 min] ImmuVis danenberg: 351/704 images\n"}
+,{"stream_name":"stdout","time":6906.763939809,"data":"[ 114.9 min] ImmuVis danenberg: 376/704 images\n"}
+,{"stream_name":"stdout","time":7184.784307372,"data":"[ 119.6 min] ImmuVis danenberg: 401/704 images\n"}
+,{"stream_name":"stdout","time":7439.729678893,"data":"[ 123.8 min] ImmuVis danenberg: 426/704 images\n"}
+,{"stream_name":"stdout","time":7725.237363955,"data":"[ 128.6 min] ImmuVis danenberg: 451/704 images\n"}
+,{"stream_name":"stdout","time":7970.918403564,"data":"[ 132.7 min] ImmuVis danenberg: 476/704 images\n"}
+,{"stream_name":"stdout","time":8207.147677362,"data":"[ 136.6 min] ImmuVis danenberg: 501/704 images\n"}
+,{"stream_name":"stdout","time":8497.482185702,"data":"[ 141.4 min] ImmuVis danenberg: 526/704 images\n"}
+,{"stream_name":"stdout","time":8727.76022291,"data":"[ 145.3 min] ImmuVis danenberg: 551/704 images\n"}
+,{"stream_name":"stdout","time":8982.523193085,"data":"[ 149.5 min] ImmuVis danenberg: 576/704 images\n"}
+,{"stream_name":"stdout","time":9267.39765222,"data":"[ 154.3 min] ImmuVis danenberg: 601/704 images\n"}
+,{"stream_name":"stdout","time":9468.67669468,"data":"[ 157.6 min] ImmuVis danenberg: 626/704 images\n"}
+,{"stream_name":"stdout","time":9732.913980095,"data":"[ 162.0 min] ImmuVis danenberg: 651/704 images\n"}
+,{"stream_name":"stdout","time":9952.665747404,"data":"[ 165.7 min] ImmuVis danenberg: 676/704 images\n"}
+,{"stream_name":"stdout","time":10217.354905848,"data":"[ 170.1 min] ImmuVis danenberg: 701/704 images\n"}
+,{"stream_name":"stdout","time":10247.044099697,"data":"[ 170.6 min] ImmuVis Danenberg done\n"}
+,{"stream_name":"stderr","time":10251.283529537,"data":"Cloning into '/tmp/Eva'...\n"}
+,{"stream_name":"stderr","time":10251.486118208,"data":"Cloning into '/tmp/Eva'...\n"}
+,{"stream_name":"stderr","time":10251.486156198,"data":"\n"}
+,{"stream_name":"stderr","time":10251.486167169,"data":"Cloning into '/tmp/Eva'...\n"}
+,{"stream_name":"stdout","time":10303.539060427,"data":"EVA tokens: {'commit': '35dd50ce557e72474fe48da7e871afcb8e63298a', 'genes': {'H3K27me3': 'H3F3A', 'HistoneH3p': 'H3F3A', 'HistoneH3': 'H3F3A'}, 'h3f3a_has_genept_embedding': True, 'token_identical_h3k27me3_phh3': True, 'token_identical_h3k27me3_h3': True, 'token_cosine_h3k27me3_h3': 1.0000001192092896}\n"}
+,{"stream_name":"stdout","time":10305.035801335,"data":"[ 171.6 min] EVA: 1/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":10332.511925982,"data":"[ 172.0 min] EVA: 26/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":10371.970193585,"data":"[ 172.7 min] EVA: 51/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":10410.122616373,"data":"[ 173.3 min] EVA: 76/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":10431.384479083,"data":"[ 173.7 min] EVA: 101/106 Jackson test images\n"}
+,{"stream_name":"stdout","time":10436.080338034,"data":"EVA: {'commit': '35dd50ce557e72474fe48da7e871afcb8e63298a', 'genes': {'H3K27me3': 'H3F3A', 'HistoneH3p': 'H3F3A', 'HistoneH3': 'H3F3A'}, 'h3f3a_has_genept_embedding': True, 'token_identical_h3k27me3_phh3': True, 'token_identical_h3k27me3_h3': True, 'token_cosine_h3k27me3_h3': 1.0000001192092896, 'max_abs_diff_h3k27me3_vs_phh3_output': 0.0}\n"}
+,{"stream_name":"stdout","time":10436.46290126,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":10441.866262412,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":10441.866334144,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":10442.043389345,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":10442.043417607,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":10442.742971773,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":10443.047461254,"data":"[NbConvertApp] Writing 33376 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":10445.429847611,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":10446.356958404,"data":"[NbConvertApp] Writing 411066 bytes to __results__.html\n"}
+]

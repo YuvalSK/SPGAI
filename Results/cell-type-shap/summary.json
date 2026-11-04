@@ -1,0 +1,106 @@
+{
+ "smoke": false,
+ "minutes": 96.13493953148524,
+ "failed": [],
+ "xgboost": "3.2.0",
+ "scores": [
+  {
+   "train": "Jackson",
+   "test": "Jackson",
+   "macro_f1": 0.7561,
+   "f1_epithelial": 0.9133,
+   "f1_T cell": 0.9066,
+   "f1_B cell": 0.9134,
+   "f1_myeloid": 0.7338,
+   "f1_endothelial": 0.3542,
+   "f1_stroma": 0.7153
+  },
+  {
+   "train": "Jackson",
+   "test": "Danenberg",
+   "macro_f1": 0.5704,
+   "f1_epithelial": 0.886,
+   "f1_T cell": 0.423,
+   "f1_B cell": 0.8148,
+   "f1_myeloid": 0.4441,
+   "f1_endothelial": 0.2349,
+   "f1_stroma": 0.6194
+  },
+  {
+   "train": "Danenberg",
+   "test": "Jackson",
+   "macro_f1": 0.5546,
+   "f1_epithelial": 0.8881,
+   "f1_T cell": 0.476,
+   "f1_B cell": 0.737,
+   "f1_myeloid": 0.4873,
+   "f1_endothelial": 0.1338,
+   "f1_stroma": 0.6057
+  },
+  {
+   "train": "Danenberg",
+   "test": "Danenberg",
+   "macro_f1": 0.6787,
+   "f1_epithelial": 0.9429,
+   "f1_T cell": 0.6079,
+   "f1_B cell": 0.855,
+   "f1_myeloid": 0.5656,
+   "f1_endothelial": 0.4396,
+   "f1_stroma": 0.6613
+  },
+  {
+   "train": "Both",
+   "test": "Jackson",
+   "macro_f1": 0.7447,
+   "f1_epithelial": 0.9123,
+   "f1_T cell": 0.896,
+   "f1_B cell": 0.8934,
+   "f1_myeloid": 0.6999,
+   "f1_endothelial": 0.3568,
+   "f1_stroma": 0.7095
+  },
+  {
+   "train": "Both",
+   "test": "Danenberg",
+   "macro_f1": 0.6491,
+   "f1_epithelial": 0.936,
+   "f1_T cell": 0.5964,
+   "f1_B cell": 0.8392,
+   "f1_myeloid": 0.5283,
+   "f1_endothelial": 0.4122,
+   "f1_stroma": 0.5826
+  }
+ ],
+ "driver_agreement": [
+  {
+   "cls": "epithelial",
+   "spearman_feature_importance": 0.6059,
+   "top10_overlap": 5
+  },
+  {
+   "cls": "T cell",
+   "spearman_feature_importance": 0.5152,
+   "top10_overlap": 7
+  },
+  {
+   "cls": "B cell",
+   "spearman_feature_importance": 0.4239,
+   "top10_overlap": 5
+  },
+  {
+   "cls": "myeloid",
+   "spearman_feature_importance": 0.5302,
+   "top10_overlap": 7
+  },
+  {
+   "cls": "endothelial",
+   "spearman_feature_importance": 0.6885,
+   "top10_overlap": 7
+  },
+  {
+   "cls": "stroma",
+   "spearman_feature_importance": 0.6603,
+   "top10_overlap": 7
+  }
+ ]
+}

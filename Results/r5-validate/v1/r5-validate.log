@@ -1,0 +1,528 @@
+[{"stream_name":"stderr","time":8.597937538,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":8.598103843,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":9.770974696,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.771009337,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.771014587,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.771018758,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.567894714,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.56793381,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.5679464,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.567953009,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":28.230520259,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 36.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":28.433352614,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 36.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":32.179335942,"data":"python 3.12.13 | numpy 2.0.2 | imagecodecs 2024.9.22\n"}
+,{"stream_name":"stdout","time":32.179397054,"data":"FULL | cpus 4 | markers ['c_erb_b_2_her2', 'cd20', 'cd3', 'cd45', 'cd68', 'cytokeratin_5', 'cytokeratin_8_18', 'estrogen_receptor_alpha', 'ki_67', 'pan_cytokeratin', 'sma']\n"}
+,{"stream_name":"stdout","time":35.616872272,"data":"{\n"}
+,{"stream_name":"stdout","time":35.616905836,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":35.616909772,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":35.616912764,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":35.616915596,"data":" },\n"}
+,{"stream_name":"stdout","time":35.616918,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":35.616920438,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":35.616923197,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":35.616925808,"data":" }\n"}
+,{"stream_name":"stdout","time":35.616928194,"data":"}\n"}
+,{"stream_name":"stdout","time":35.616930432,"data":"{'danenberg': (794, 794), 'jackson': (735, 708)}\n"}
+,{"stream_name":"stdout","time":38.007868405,"data":"danenberg: cells in images with a tiff and a mask 1.0000\n"}
+,{"stream_name":"stdout","time":43.665065643,"data":"jackson: cells in images with a tiff and a mask 1.0000\n"}
+,{"stream_name":"stdout","time":46.655984008,"data":"danenberg: 1,062,219 cells, 704 images, 650 patients, cells by split {'B': 427096, 'A': 420775, 'S': 214348}, 6,198,634 contacts\n"}
+,{"stream_name":"stdout","time":46.656057056,"data":"jackson: 1,126,124 cells, 542 images, 349 patients, cells by split {'B': 464016, 'A': 454936, 'S': 207172}, 5,898,764 contacts\n"}
+,{"stream_name":"stdout","time":46.656063412,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stdout","time":207.059047752,"data":"danenberg full: cells with ≥1 pixel 1.0000, median pixels 130\n"}
+,{"stream_name":"stdout","time":207.059099964,"data":"danenberg erode1: cells with ≥1 pixel 0.9996, median pixels 76\n"}
+,{"stream_name":"stdout","time":207.05910585,"data":"danenberg erode2: cells with ≥1 pixel 0.9748, median pixels 37\n"}
+,{"stream_name":"stdout","time":207.059110855,"data":"   cohort                 channel     r\n"}
+,{"stream_name":"stdout","time":207.05911542,"data":"danenberg              histone_h3 0.992\n"}
+,{"stream_name":"stdout","time":207.059119949,"data":"danenberg                    dna1 0.986\n"}
+,{"stream_name":"stdout","time":207.059124733,"data":"danenberg         pan_cytokeratin 0.986\n"}
+,{"stream_name":"stdout","time":207.059128958,"data":"danenberg estrogen_receptor_alpha 0.711\n"}
+,{"stream_name":"stdout","time":207.059133742,"data":"[   2.9 min] pixel pass danenberg\n"}
+,{"stream_name":"stdout","time":347.524596527,"data":"jackson full: cells with ≥1 pixel 1.0000, median pixels 90\n"}
+,{"stream_name":"stdout","time":347.524683249,"data":"jackson erode1: cells with ≥1 pixel 0.9848, median pixels 46\n"}
+,{"stream_name":"stdout","time":347.524691261,"data":"jackson erode2: cells with ≥1 pixel 0.8696, median pixels 16\n"}
+,{"stream_name":"stdout","time":347.524695764,"data":" cohort                 channel     r\n"}
+,{"stream_name":"stdout","time":347.52470068,"data":"jackson              histone_h3 1.000\n"}
+,{"stream_name":"stdout","time":347.524703845,"data":"jackson                    dna1 1.000\n"}
+,{"stream_name":"stdout","time":347.52470688,"data":"jackson         pan_cytokeratin 1.000\n"}
+,{"stream_name":"stdout","time":347.524709832,"data":"jackson estrogen_receptor_alpha 0.997\n"}
+,{"stream_name":"stdout","time":347.524712727,"data":"[   5.3 min] pixel pass jackson\n"}
+,{"stream_name":"stdout","time":350.518551372,"data":"[   5.3 min] per-cell tables saved\n"}
+,{"stream_name":"stdout","time":353.975964338,"data":"danenberg: mean contacts 5.84, mean ring cells 9.37\n"}
+,{"stream_name":"stdout","time":357.005449446,"data":"jackson: mean contacts 5.24, mean ring cells 12.59\n"}
+,{"stream_name":"stdout","time":357.005490416,"data":"[   5.4 min] graphs\n"}
+,{"stream_name":"stdout","time":357.006556882,"data":"[   5.4 min] helpers ready\n"}
+,{"stream_name":"stdout","time":1004.591241012,"data":"[  16.2 min] danenberg c_erb_b_2_her2: done\n"}
+,{"stream_name":"stdout","time":1552.166977031,"data":"[  25.3 min] danenberg cd20: done\n"}
+,{"stream_name":"stdout","time":2116.276729682,"data":"[  34.7 min] danenberg cd3: done\n"}
+,{"stream_name":"stdout","time":2697.129976706,"data":"[  44.4 min] danenberg cd45: done\n"}
+,{"stream_name":"stdout","time":3231.282033168,"data":"[  53.3 min] danenberg cd68: done\n"}
+,{"stream_name":"stdout","time":3749.071942839,"data":"[  61.9 min] danenberg cytokeratin_5: done\n"}
+,{"stream_name":"stdout","time":4285.788428023,"data":"[  70.9 min] danenberg cytokeratin_8_18: done\n"}
+,{"stream_name":"stdout","time":4896.003012522,"data":"[  81.1 min] danenberg estrogen_receptor_alpha: done\n"}
+,{"stream_name":"stdout","time":5416.178363818,"data":"[  89.7 min] danenberg ki_67: done\n"}
+,{"stream_name":"stdout","time":6016.264138951,"data":"[  99.7 min] danenberg pan_cytokeratin: done\n"}
+,{"stream_name":"stdout","time":6631.587993163,"data":"[ 110.0 min] danenberg sma: done\n"}
+,{"stream_name":"stdout","time":7280.005093867,"data":"[ 120.8 min] jackson c_erb_b_2_her2: done\n"}
+,{"stream_name":"stdout","time":7838.086422265,"data":"[ 130.1 min] jackson cd20: done\n"}
+,{"stream_name":"stdout","time":8486.07424769,"data":"[ 140.9 min] jackson cd3: done\n"}
+,{"stream_name":"stdout","time":9091.784466693,"data":"[ 151.0 min] jackson cd45: done\n"}
+,{"stream_name":"stdout","time":9742.586989435,"data":"[ 161.8 min] jackson cd68: done\n"}
+,{"stream_name":"stdout","time":10325.869219338,"data":"[ 171.6 min] jackson cytokeratin_5: done\n"}
+,{"stream_name":"stdout","time":10987.019619267,"data":"[ 182.6 min] jackson cytokeratin_8_18: done\n"}
+,{"stream_name":"stdout","time":11655.3315803,"data":"[ 193.7 min] jackson estrogen_receptor_alpha: done\n"}
+,{"stream_name":"stdout","time":12255.164510399,"data":"[ 203.7 min] jackson ki_67: done\n"}
+,{"stream_name":"stdout","time":12958.813109058,"data":"[ 215.4 min] jackson pan_cytokeratin: done\n"}
+,{"stream_name":"stdout","time":13677.265686464,"data":"[ 227.4 min] jackson sma: done\n"}
+,{"stream_name":"stdout","time":13677.336060242,"data":"rung                                                             R5_cell  R5_own  R5_table\n"}
+,{"stream_name":"stdout","time":13677.336112673,"data":"cohort    marker                  control                                                 \n"}
+,{"stream_name":"stdout","time":13677.336120014,"data":"danenberg c_erb_b_2_her2          identity                        0.8856  0.4885    0.8797\n"}
+,{"stream_name":"stdout","time":13677.336124867,"data":"                                  kNN mean (S cells)              0.0018  0.0013    0.0007\n"}
+,{"stream_name":"stdout","time":13677.336129427,"data":"                                  planted a=0                     0.0002  0.0034    0.0010\n"}
+,{"stream_name":"stdout","time":13677.33613383,"data":"                                  planted a=0.05                  0.0050  0.0034    0.0066\n"}
+,{"stream_name":"stdout","time":13677.336138345,"data":"                                  planted a=0.1                   0.0157  0.0128    0.0155\n"}
+,{"stream_name":"stdout","time":13677.336142747,"data":"                                  planted a=0.2                   0.0585  0.0467    0.0590\n"}
+,{"stream_name":"stdout","time":13677.336146901,"data":"                                  planted a=0.4                   0.2207  0.1435    0.2199\n"}
+,{"stream_name":"stdout","time":13677.336151248,"data":"                                  shifted true map                0.0121  0.1420    0.0117\n"}
+,{"stream_name":"stdout","time":13677.336155968,"data":"                                  shuffled within image x state   0.0236  0.2179    0.0278\n"}
+,{"stream_name":"stdout","time":13677.336160493,"data":"                                  state mean                      0.0033  0.0125    0.0013\n"}
+,{"stream_name":"stdout","time":13677.336165651,"data":"          cd20                    identity                        0.9004  0.7812    0.8844\n"}
+,{"stream_name":"stdout","time":13677.336170514,"data":"                                  kNN mean (S cells)              0.0166  0.0077    0.0038\n"}
+,{"stream_name":"stdout","time":13677.336175301,"data":"                                  planted a=0                     0.0090  0.0025    0.0023\n"}
+,{"stream_name":"stdout","time":13677.336179698,"data":"                                  planted a=0.05                  0.0150  0.0178    0.0083\n"}
+,{"stream_name":"stdout","time":13677.336184597,"data":"                                  planted a=0.1                   0.0475  0.0426    0.0409\n"}
+,{"stream_name":"stdout","time":13677.33618937,"data":"                                  planted a=0.2                   0.1896  0.1761    0.1691\n"}
+,{"stream_name":"stdout","time":13677.336216326,"data":"                                  planted a=0.4                   0.4998  0.4375    0.4763\n"}
+,{"stream_name":"stdout","time":13677.336221179,"data":"                                  shifted true map                0.0115  0.0270    0.0127\n"}
+,{"stream_name":"stdout","time":13677.33622503,"data":"                                  shuffled within image x state   0.0351  0.0691    0.0275\n"}
+,{"stream_name":"stdout","time":13677.336228753,"data":"                                  state mean                     -0.0012  0.0057    0.0040\n"}
+,{"stream_name":"stdout","time":13677.336235272,"data":"          cd3                     identity                        0.7847  0.3788    0.7852\n"}
+,{"stream_name":"stdout","time":13677.336239075,"data":"                                  kNN mean (S cells)              0.0015 -0.0064    0.0069\n"}
+,{"stream_name":"stdout","time":13677.336242949,"data":"                                  planted a=0                    -0.0003 -0.0024    0.0057\n"}
+,{"stream_name":"stdout","time":13677.336248343,"data":"                                  planted a=0.05                  0.0074  0.0034    0.0154\n"}
+,{"stream_name":"stdout","time":13677.336252879,"data":"                                  planted a=0.1                   0.0259  0.0113    0.0333\n"}
+,{"stream_name":"stdout","time":13677.336256756,"data":"                                  planted a=0.2                   0.0927  0.0439    0.0917\n"}
+,{"stream_name":"stdout","time":13677.336259892,"data":"                                  planted a=0.4                   0.2536  0.1241    0.2533\n"}
+,{"stream_name":"stdout","time":13677.336263384,"data":"                                  shifted true map               -0.0039 -0.0004    0.0057\n"}
+,{"stream_name":"stdout","time":13677.336266952,"data":"                                  shuffled within image x state   0.0026  0.0090    0.0086\n"}
+,{"stream_name":"stdout","time":13677.336270596,"data":"                                  state mean                     -0.0010  0.0021    0.0039\n"}
+,{"stream_name":"stdout","time":13677.336274365,"data":"          cd45                    identity                        0.8090  0.3694    0.7930\n"}
+,{"stream_name":"stdout","time":13677.336278152,"data":"                                  kNN mean (S cells)              0.0068  0.0043    0.0051\n"}
+,{"stream_name":"stdout","time":13677.336282243,"data":"                                  planted a=0                     0.0007 -0.0038    0.0006\n"}
+,{"stream_name":"stdout","time":13677.336285583,"data":"                                  planted a=0.05                  0.0087  0.0026    0.0065\n"}
+,{"stream_name":"stdout","time":13677.336291052,"data":"                                  planted a=0.1                   0.0312  0.0110    0.0290\n"}
+,{"stream_name":"stdout","time":13677.336295992,"data":"                                  planted a=0.2                   0.1110  0.0442    0.1029\n"}
+,{"stream_name":"stdout","time":13677.336299901,"data":"                                  planted a=0.4                   0.2771  0.1264    0.2772\n"}
+,{"stream_name":"stdout","time":13677.336303563,"data":"                                  shifted true map                0.0008  0.0047    0.0039\n"}
+,{"stream_name":"stdout","time":13677.336306831,"data":"                                  shuffled within image x state   0.0040  0.0172    0.0027\n"}
+,{"stream_name":"stdout","time":13677.336310564,"data":"                                  state mean                      0.0038  0.0029    0.0010\n"}
+,{"stream_name":"stdout","time":13677.336313965,"data":"          cd68                    identity                        0.9071  0.7546    0.8986\n"}
+,{"stream_name":"stdout","time":13677.336324123,"data":"                                  kNN mean (S cells)              0.0115  0.0080    0.0050\n"}
+,{"stream_name":"stdout","time":13677.336328183,"data":"                                  planted a=0                     0.0037 -0.0004   -0.0033\n"}
+,{"stream_name":"stdout","time":13677.336334811,"data":"                                  planted a=0.05                  0.0153  0.0149    0.0095\n"}
+,{"stream_name":"stdout","time":13677.336339102,"data":"                                  planted a=0.1                   0.0463  0.0393    0.0377\n"}
+,{"stream_name":"stdout","time":13677.336342613,"data":"                                  planted a=0.2                   0.1493  0.1281    0.1392\n"}
+,{"stream_name":"stdout","time":13677.336346287,"data":"                                  planted a=0.4                   0.4172  0.3459    0.4235\n"}
+,{"stream_name":"stdout","time":13677.336350128,"data":"                                  shifted true map                0.0165  0.0379   -0.0005\n"}
+,{"stream_name":"stdout","time":13677.336354544,"data":"                                  shuffled within image x state   0.0179  0.0401    0.0135\n"}
+,{"stream_name":"stdout","time":13677.33635979,"data":"                                  state mean                      0.0054  0.0060   -0.0036\n"}
+,{"stream_name":"stdout","time":13677.336363379,"data":"          cytokeratin_5           identity                        0.9181  0.8771    0.9174\n"}
+,{"stream_name":"stdout","time":13677.336367228,"data":"                                  kNN mean (S cells)              0.0048  0.0269    0.0077\n"}
+,{"stream_name":"stdout","time":13677.336371077,"data":"                                  planted a=0                     0.0013 -0.0041    0.0080\n"}
+,{"stream_name":"stdout","time":13677.336375859,"data":"                                  planted a=0.05                  0.0169  0.0117    0.0247\n"}
+,{"stream_name":"stdout","time":13677.336379269,"data":"                                  planted a=0.1                   0.0485  0.0347    0.0575\n"}
+,{"stream_name":"stdout","time":13677.336383396,"data":"                                  planted a=0.2                   0.2013  0.1729    0.2072\n"}
+,{"stream_name":"stdout","time":13677.336386863,"data":"                                  planted a=0.4                   0.5144  0.4727    0.5255\n"}
+,{"stream_name":"stdout","time":13677.336392024,"data":"                                  shifted true map                0.0657  0.1943    0.0741\n"}
+,{"stream_name":"stdout","time":13677.33639672,"data":"                                  shuffled within image x state   0.1196  0.2193    0.1368\n"}
+,{"stream_name":"stdout","time":13677.336400276,"data":"                                  state mean                      0.0016  0.0059    0.0077\n"}
+,{"stream_name":"stdout","time":13677.336404526,"data":"          cytokeratin_8_18        identity                        0.7692  0.4387    0.7667\n"}
+,{"stream_name":"stdout","time":13677.336408227,"data":"                                  kNN mean (S cells)             -0.0005  0.0002   -0.0025\n"}
+,{"stream_name":"stdout","time":13677.336412041,"data":"                                  planted a=0                    -0.0001  0.0038   -0.0007\n"}
+,{"stream_name":"stdout","time":13677.336415813,"data":"                                  planted a=0.05                  0.0073  0.0053    0.0057\n"}
+,{"stream_name":"stdout","time":13677.336419199,"data":"                                  planted a=0.1                   0.0265  0.0200    0.0258\n"}
+,{"stream_name":"stdout","time":13677.33642384,"data":"                                  planted a=0.2                   0.0892  0.0524    0.0881\n"}
+,{"stream_name":"stdout","time":13677.336432009,"data":"                                  planted a=0.4                   0.2812  0.1455    0.2777\n"}
+,{"stream_name":"stdout","time":13677.336435895,"data":"                                  shifted true map                0.0309  0.2022    0.0354\n"}
+,{"stream_name":"stdout","time":13677.336439647,"data":"                                  shuffled within image x state   0.0653  0.2436    0.0641\n"}
+,{"stream_name":"stdout","time":13677.336443281,"data":"                                  state mean                      0.0000  0.0066   -0.0019\n"}
+,{"stream_name":"stdout","time":13677.336446812,"data":"          estrogen_receptor_alpha identity                        0.8693  0.2866    0.8662\n"}
+,{"stream_name":"stdout","time":13677.336450466,"data":"                                  kNN mean (S cells)              0.0026  0.0089    0.0051\n"}
+,{"stream_name":"stdout","time":13677.336453855,"data":"                                  planted a=0                    -0.0005  0.0010    0.0023\n"}
+,{"stream_name":"stdout","time":13677.33645735,"data":"                                  planted a=0.05                  0.0070  0.0036    0.0101\n"}
+,{"stream_name":"stdout","time":13677.336461845,"data":"                                  planted a=0.1                   0.0221  0.0088    0.0233\n"}
+,{"stream_name":"stdout","time":13677.336465585,"data":"                                  planted a=0.2                   0.0767  0.0251    0.0821\n"}
+,{"stream_name":"stdout","time":13677.336469514,"data":"                                  planted a=0.4                   0.2618  0.0772    0.2600\n"}
+,{"stream_name":"stdout","time":13677.336473687,"data":"                                  shifted true map               -0.0015  0.0076    0.0036\n"}
+,{"stream_name":"stdout","time":13677.336477623,"data":"                                  shuffled within image x state   0.0079  0.0299    0.0082\n"}
+,{"stream_name":"stdout","time":13677.336481534,"data":"                                  state mean                      0.0018  0.0085    0.0049\n"}
+,{"stream_name":"stdout","time":13677.336485453,"data":"          ki_67                   identity                        0.8948  0.8307    0.8948\n"}
+,{"stream_name":"stdout","time":13677.336489284,"data":"                                  kNN mean (S cells)              0.0100  0.0056    0.0057\n"}
+,{"stream_name":"stdout","time":13677.336493126,"data":"                                  planted a=0                     0.0030  0.0006    0.0024\n"}
+,{"stream_name":"stdout","time":13677.336497009,"data":"                                  planted a=0.05                  0.0113  0.0186    0.0186\n"}
+,{"stream_name":"stdout","time":13677.33650115,"data":"                                  planted a=0.1                   0.0412  0.0466    0.0425\n"}
+,{"stream_name":"stdout","time":13677.336505036,"data":"                                  planted a=0.2                   0.1603  0.1463    0.1657\n"}
+,{"stream_name":"stdout","time":13677.336508876,"data":"                                  planted a=0.4                   0.4293  0.4012    0.4226\n"}
+,{"stream_name":"stdout","time":13677.336512781,"data":"                                  shifted true map                0.0064  0.0269    0.0089\n"}
+,{"stream_name":"stdout","time":13677.336517261,"data":"                                  shuffled within image x state   0.0064  0.0356    0.0102\n"}
+,{"stream_name":"stdout","time":13677.336520833,"data":"                                  state mean                      0.0028  0.0065    0.0052\n"}
+,{"stream_name":"stdout","time":13677.336524295,"data":"          pan_cytokeratin         identity                        0.8373  0.1948    0.8281\n"}
+,{"stream_name":"stdout","time":13677.336528494,"data":"                                  kNN mean (S cells)              0.0025  0.0047    0.0044\n"}
+,{"stream_name":"stdout","time":13677.336534684,"data":"                                  planted a=0                     0.0010  0.0006    0.0023\n"}
+,{"stream_name":"stdout","time":13677.336537182,"data":"                                  planted a=0.05                  0.0036  0.0006    0.0068\n"}
+,{"stream_name":"stdout","time":13677.336539855,"data":"                                  planted a=0.1                   0.0131  0.0043    0.0138\n"}
+,{"stream_name":"stdout","time":13677.336543414,"data":"                                  planted a=0.2                   0.0499  0.0121    0.0544\n"}
+,{"stream_name":"stdout","time":13677.336547198,"data":"                                  planted a=0.4                   0.1934  0.0410    0.1953\n"}
+,{"stream_name":"stdout","time":13677.336550852,"data":"                                  shifted true map                0.0016  0.0321    0.0016\n"}
+,{"stream_name":"stdout","time":13677.336554361,"data":"                                  shuffled within image x state   0.0074  0.0669    0.0114\n"}
+,{"stream_name":"stdout","time":13677.336557941,"data":"                                  state mean                      0.0007  0.0023    0.0048\n"}
+,{"stream_name":"stdout","time":13677.336561561,"data":"          sma                     identity                        0.8609  0.3651    0.8265\n"}
+,{"stream_name":"stdout","time":13677.336565073,"data":"                                  kNN mean (S cells)              0.0009 -0.0007   -0.0040\n"}
+,{"stream_name":"stdout","time":13677.336569393,"data":"                                  planted a=0                     0.0001 -0.0016   -0.0032\n"}
+,{"stream_name":"stdout","time":13677.336573133,"data":"                                  planted a=0.05                  0.0105  0.0050    0.0068\n"}
+,{"stream_name":"stdout","time":13677.336577033,"data":"                                  planted a=0.1                   0.0244  0.0146    0.0214\n"}
+,{"stream_name":"stdout","time":13677.336580454,"data":"                                  planted a=0.2                   0.0827  0.0387    0.0772\n"}
+,{"stream_name":"stdout","time":13677.336584444,"data":"                                  planted a=0.4                   0.2681  0.1179    0.2518\n"}
+,{"stream_name":"stdout","time":13677.336588334,"data":"                                  shifted true map                0.0013  0.0011   -0.0030\n"}
+,{"stream_name":"stdout","time":13677.336592338,"data":"                                  shuffled within image x state   0.0160  0.0099    0.0156\n"}
+,{"stream_name":"stdout","time":13677.336596266,"data":"                                  state mean                      0.0060  0.0033    0.0069\n"}
+,{"stream_name":"stdout","time":13677.336600609,"data":"jackson   c_erb_b_2_her2          identity                        0.9067  0.5022    0.9015\n"}
+,{"stream_name":"stdout","time":13677.336604515,"data":"                                  kNN mean (S cells)             -0.0014  0.0059    0.0030\n"}
+,{"stream_name":"stdout","time":13677.336608457,"data":"                                  planted a=0                    -0.0020  0.0006   -0.0004\n"}
+,{"stream_name":"stdout","time":13677.336612303,"data":"                                  planted a=0.05                  0.0019  0.0014    0.0040\n"}
+,{"stream_name":"stdout","time":13677.33661612,"data":"                                  planted a=0.1                   0.0098  0.0087    0.0132\n"}
+,{"stream_name":"stdout","time":13677.336619948,"data":"                                  planted a=0.2                   0.0502  0.0275    0.0523\n"}
+,{"stream_name":"stdout","time":13677.336624044,"data":"                                  planted a=0.4                   0.2042  0.1091    0.2116\n"}
+,{"stream_name":"stdout","time":13677.336632484,"data":"                                  shifted true map                0.0004  0.0722    0.0045\n"}
+,{"stream_name":"stdout","time":13677.336636465,"data":"                                  shuffled within image x state   0.0050  0.1238    0.0068\n"}
+,{"stream_name":"stdout","time":13677.336640358,"data":"                                  state mean                     -0.0009  0.0011    0.0056\n"}
+,{"stream_name":"stdout","time":13677.336643868,"data":"          cd20                    identity                        0.8391  0.7341    0.8481\n"}
+,{"stream_name":"stdout","time":13677.336648465,"data":"                                  kNN mean (S cells)              0.0121  0.0072    0.0287\n"}
+,{"stream_name":"stdout","time":13677.336651482,"data":"                                  planted a=0                     0.0137 -0.0040    0.0030\n"}
+,{"stream_name":"stdout","time":13677.336655053,"data":"                                  planted a=0.05                  0.0267  0.0134    0.0287\n"}
+,{"stream_name":"stdout","time":13677.336659192,"data":"                                  planted a=0.1                   0.0754  0.0386    0.0720\n"}
+,{"stream_name":"stdout","time":13677.336663379,"data":"                                  planted a=0.2                   0.2216  0.1615    0.2171\n"}
+,{"stream_name":"stdout","time":13677.33666688,"data":"                                  planted a=0.4                   0.4906  0.3596    0.4848\n"}
+,{"stream_name":"stdout","time":13677.336671004,"data":"                                  shifted true map                0.0275  0.0544    0.0234\n"}
+,{"stream_name":"stdout","time":13677.336674864,"data":"                                  shuffled within image x state   0.0384  0.0638    0.0426\n"}
+,{"stream_name":"stdout","time":13677.336678955,"data":"                                  state mean                     -0.0033 -0.0110    0.0065\n"}
+,{"stream_name":"stdout","time":13677.336683075,"data":"          cd3                     identity                        0.6397  0.5154    0.6643\n"}
+,{"stream_name":"stdout","time":13677.336687331,"data":"                                  kNN mean (S cells)             -0.0143  0.0009   -0.0047\n"}
+,{"stream_name":"stdout","time":13677.336691398,"data":"                                  planted a=0                    -0.0028 -0.0029   -0.0003\n"}
+,{"stream_name":"stdout","time":13677.336695825,"data":"                                  planted a=0.05                  0.0196  0.0171    0.0122\n"}
+,{"stream_name":"stdout","time":13677.336699719,"data":"                                  planted a=0.1                   0.0493  0.0701    0.0452\n"}
+,{"stream_name":"stdout","time":13677.33670359,"data":"                                  planted a=0.2                   0.1159  0.1758    0.1315\n"}
+,{"stream_name":"stdout","time":13677.336707461,"data":"                                  planted a=0.4                   0.2559  0.2765    0.2624\n"}
+,{"stream_name":"stdout","time":13677.336711291,"data":"                                  shifted true map               -0.0131 -0.0006   -0.0011\n"}
+,{"stream_name":"stdout","time":13677.336724074,"data":"                                  shuffled within image x state  -0.0077  0.0077    0.0020\n"}
+,{"stream_name":"stdout","time":13677.336728279,"data":"                                  state mean                     -0.0040  0.0048   -0.0036\n"}
+,{"stream_name":"stdout","time":13677.336732253,"data":"          cd45                    identity                        0.7110  0.3749    0.6988\n"}
+,{"stream_name":"stdout","time":13677.336736238,"data":"                                  kNN mean (S cells)              0.0046  0.0002    0.0021\n"}
+,{"stream_name":"stdout","time":13677.336740554,"data":"                                  planted a=0                     0.0037 -0.0021    0.0024\n"}
+,{"stream_name":"stdout","time":13677.336746983,"data":"                                  planted a=0.05                  0.0071  0.0000    0.0198\n"}
+,{"stream_name":"stdout","time":13677.336750853,"data":"                                  planted a=0.1                   0.0369  0.0142    0.0322\n"}
+,{"stream_name":"stdout","time":13677.336754804,"data":"                                  planted a=0.2                   0.1201  0.0516    0.0936\n"}
+,{"stream_name":"stdout","time":13677.336758404,"data":"                                  planted a=0.4                   0.2889  0.1454    0.2792\n"}
+,{"stream_name":"stdout","time":13677.336763108,"data":"                                  shifted true map                0.0017  0.0045    0.0104\n"}
+,{"stream_name":"stdout","time":13677.336767015,"data":"                                  shuffled within image x state   0.0078  0.0121    0.0025\n"}
+,{"stream_name":"stdout","time":13677.336770616,"data":"                                  state mean                      0.0002  0.0015    0.0033\n"}
+,{"stream_name":"stdout","time":13677.336774499,"data":"          cd68                    identity                        0.8921  0.7208    0.8931\n"}
+,{"stream_name":"stdout","time":13677.336778422,"data":"                                  kNN mean (S cells)              0.0160  0.0115    0.0271\n"}
+,{"stream_name":"stdout","time":13677.336782254,"data":"                                  planted a=0                     0.0009  0.0008    0.0043\n"}
+,{"stream_name":"stdout","time":13677.336786108,"data":"                                  planted a=0.05                  0.0165  0.0105    0.0178\n"}
+,{"stream_name":"stdout","time":13677.336789938,"data":"                                  planted a=0.1                   0.0379  0.0309    0.0423\n"}
+,{"stream_name":"stdout","time":13677.336795223,"data":"                                  planted a=0.2                   0.1520  0.1072    0.1494\n"}
+,{"stream_name":"stdout","time":13677.336799186,"data":"                                  planted a=0.4                   0.4157  0.3301    0.4296\n"}
+,{"stream_name":"stdout","time":13677.336803035,"data":"                                  shifted true map               -0.0030  0.0072    0.0003\n"}
+,{"stream_name":"stdout","time":13677.336806923,"data":"                                  shuffled within image x state   0.0127  0.0249    0.0097\n"}
+,{"stream_name":"stdout","time":13677.336838821,"data":"                                  state mean                      0.0088  0.0036    0.0061\n"}
+,{"stream_name":"stdout","time":13677.336843444,"data":"          cytokeratin_5           identity                        0.8880  0.8028    0.8660\n"}
+,{"stream_name":"stdout","time":13677.33684737,"data":"                                  kNN mean (S cells)              0.0221  0.0003    0.0072\n"}
+,{"stream_name":"stdout","time":13677.336851548,"data":"                                  planted a=0                     0.0181 -0.0311   -0.0074\n"}
+,{"stream_name":"stdout","time":13677.336855444,"data":"                                  planted a=0.05                  0.0230 -0.0059    0.0106\n"}
+,{"stream_name":"stdout","time":13677.336859358,"data":"                                  planted a=0.1                   0.0622  0.0205    0.0384\n"}
+,{"stream_name":"stdout","time":13677.336863209,"data":"                                  planted a=0.2                   0.2356  0.1210    0.1813\n"}
+,{"stream_name":"stdout","time":13677.336867035,"data":"                                  planted a=0.4                   0.5173  0.4300    0.4774\n"}
+,{"stream_name":"stdout","time":13677.336870954,"data":"                                  shifted true map                0.0497  0.1647    0.0417\n"}
+,{"stream_name":"stdout","time":13677.336879519,"data":"                                  shuffled within image x state   0.1178  0.1928    0.0979\n"}
+,{"stream_name":"stdout","time":13677.336883494,"data":"                                  state mean                      0.0090 -0.0460    0.0016\n"}
+,{"stream_name":"stdout","time":13677.336887654,"data":"          cytokeratin_8_18        identity                        0.7228  0.3274    0.7207\n"}
+,{"stream_name":"stdout","time":13677.336891696,"data":"                                  kNN mean (S cells)              0.0019  0.0116    0.0024\n"}
+,{"stream_name":"stdout","time":13677.336895863,"data":"                                  planted a=0                     0.0013  0.0027   -0.0020\n"}
+,{"stream_name":"stdout","time":13677.336899831,"data":"                                  planted a=0.05                  0.0079  0.0047    0.0058\n"}
+,{"stream_name":"stdout","time":13677.336902261,"data":"                                  planted a=0.1                   0.0212  0.0125    0.0207\n"}
+,{"stream_name":"stdout","time":13677.336905269,"data":"                                  planted a=0.2                   0.0717  0.0310    0.0709\n"}
+,{"stream_name":"stdout","time":13677.336909039,"data":"                                  planted a=0.4                   0.2279  0.0958    0.2305\n"}
+,{"stream_name":"stdout","time":13677.336912696,"data":"                                  shifted true map                0.0205  0.1488    0.0176\n"}
+,{"stream_name":"stdout","time":13677.336917724,"data":"                                  shuffled within image x state   0.0428  0.1977    0.0420\n"}
+,{"stream_name":"stdout","time":13677.336921908,"data":"                                  state mean                      0.0021 -0.0024   -0.0004\n"}
+,{"stream_name":"stdout","time":13677.33692583,"data":"          estrogen_receptor_alpha identity                        0.8726  0.5996    0.8685\n"}
+,{"stream_name":"stdout","time":13677.336930051,"data":"                                  kNN mean (S cells)             -0.0002  0.0013   -0.0015\n"}
+,{"stream_name":"stdout","time":13677.336933988,"data":"                                  planted a=0                     0.0020  0.0007    0.0014\n"}
+,{"stream_name":"stdout","time":13677.336937673,"data":"                                  planted a=0.05                  0.0065  0.0050    0.0093\n"}
+,{"stream_name":"stdout","time":13677.336941501,"data":"                                  planted a=0.1                   0.0311  0.0235    0.0267\n"}
+,{"stream_name":"stdout","time":13677.336945314,"data":"                                  planted a=0.2                   0.1101  0.0722    0.0957\n"}
+,{"stream_name":"stdout","time":13677.336949369,"data":"                                  planted a=0.4                   0.3262  0.2325    0.3148\n"}
+,{"stream_name":"stdout","time":13677.336953221,"data":"                                  shifted true map                0.0058  0.1375    0.0046\n"}
+,{"stream_name":"stdout","time":13677.336957071,"data":"                                  shuffled within image x state   0.0370  0.2007    0.0363\n"}
+,{"stream_name":"stdout","time":13677.336960943,"data":"                                  state mean                      0.0028  0.0014   -0.0001\n"}
+,{"stream_name":"stdout","time":13677.336964751,"data":"          ki_67                   identity                        0.9702  0.9031    0.9662\n"}
+,{"stream_name":"stdout","time":13677.336968546,"data":"                                  kNN mean (S cells)              0.0004  0.0033   -0.0015\n"}
+,{"stream_name":"stdout","time":13677.336972352,"data":"                                  planted a=0                     0.0044  0.0020    0.0011\n"}
+,{"stream_name":"stdout","time":13677.336976142,"data":"                                  planted a=0.05                  0.0062  0.0049    0.0050\n"}
+,{"stream_name":"stdout","time":13677.33698401,"data":"                                  planted a=0.1                   0.0233  0.0210    0.0214\n"}
+,{"stream_name":"stdout","time":13677.336987915,"data":"                                  planted a=0.2                   0.1010  0.0888    0.1054\n"}
+,{"stream_name":"stdout","time":13677.336991777,"data":"                                  planted a=0.4                   0.4026  0.3719    0.4059\n"}
+,{"stream_name":"stdout","time":13677.336994764,"data":"                                  shifted true map                0.0168  0.0599    0.0105\n"}
+,{"stream_name":"stdout","time":13677.336997329,"data":"                                  shuffled within image x state   0.0260  0.0649    0.0260\n"}
+,{"stream_name":"stdout","time":13677.337000941,"data":"                                  state mean                      0.0023  0.0025    0.0031\n"}
+,{"stream_name":"stdout","time":13677.337005053,"data":"          pan_cytokeratin         identity                        0.8277  0.1517    0.8101\n"}
+,{"stream_name":"stdout","time":13677.337008984,"data":"                                  kNN mean (S cells)              0.0064  0.0068    0.0081\n"}
+,{"stream_name":"stdout","time":13677.337013208,"data":"                                  planted a=0                    -0.0009  0.0008   -0.0020\n"}
+,{"stream_name":"stdout","time":13677.337017069,"data":"                                  planted a=0.05                  0.0038  0.0030    0.0052\n"}
+,{"stream_name":"stdout","time":13677.337021246,"data":"                                  planted a=0.1                   0.0155  0.0054    0.0142\n"}
+,{"stream_name":"stdout","time":13677.337025309,"data":"                                  planted a=0.2                   0.0511  0.0117    0.0519\n"}
+,{"stream_name":"stdout","time":13677.337029194,"data":"                                  planted a=0.4                   0.1925  0.0345    0.1908\n"}
+,{"stream_name":"stdout","time":13677.337033008,"data":"                                  shifted true map               -0.0006  0.0154    0.0010\n"}
+,{"stream_name":"stdout","time":13677.337036782,"data":"                                  shuffled within image x state   0.0083  0.0421    0.0088\n"}
+,{"stream_name":"stdout","time":13677.337040622,"data":"                                  state mean                      0.0050  0.0063    0.0073\n"}
+,{"stream_name":"stdout","time":13677.337044715,"data":"          sma                     identity                        0.7495  0.3258    0.7252\n"}
+,{"stream_name":"stdout","time":13677.33704859,"data":"                                  kNN mean (S cells)              0.0076  0.0051    0.0140\n"}
+,{"stream_name":"stdout","time":13677.337052455,"data":"                                  planted a=0                    -0.0028  0.0094   -0.0033\n"}
+,{"stream_name":"stdout","time":13677.337056325,"data":"                                  planted a=0.05                  0.0013  0.0126    0.0051\n"}
+,{"stream_name":"stdout","time":13677.337060104,"data":"                                  planted a=0.1                   0.0176  0.0211    0.0187\n"}
+,{"stream_name":"stdout","time":13677.337063966,"data":"                                  planted a=0.2                   0.0641  0.0427    0.0674\n"}
+,{"stream_name":"stdout","time":13677.337067788,"data":"                                  planted a=0.4                   0.2061  0.1001    0.2012\n"}
+,{"stream_name":"stdout","time":13677.337071657,"data":"                                  shifted true map                0.0112  0.0249    0.0157\n"}
+,{"stream_name":"stdout","time":13677.337075728,"data":"                                  shuffled within image x state   0.0497  0.0397    0.0522\n"}
+,{"stream_name":"stdout","time":13677.337083331,"data":"                                  state mean                      0.0159  0.0207    0.0231\n"}
+,{"stream_name":"stdout","time":13677.337085882,"data":"split                                       checker  random\n"}
+,{"stream_name":"stdout","time":13677.337089074,"data":"cohort    marker                  rung                     \n"}
+,{"stream_name":"stdout","time":13677.337092803,"data":"danenberg c_erb_b_2_her2          R5_cell    0.8493  0.8053\n"}
+,{"stream_name":"stdout","time":13677.337096446,"data":"                                  R5_own     0.4817  0.4709\n"}
+,{"stream_name":"stdout","time":13677.337100585,"data":"                                  R5_table   0.8445  0.8006\n"}
+,{"stream_name":"stdout","time":13677.337104977,"data":"          cd20                    R5_cell    0.9183  0.9003\n"}
+,{"stream_name":"stdout","time":13677.337109241,"data":"                                  R5_own     0.8012  0.7874\n"}
+,{"stream_name":"stdout","time":13677.33711301,"data":"                                  R5_table   0.8998  0.8819\n"}
+,{"stream_name":"stdout","time":13677.337122292,"data":"          cd3                     R5_cell    0.5039  0.4760\n"}
+,{"stream_name":"stdout","time":13677.337126146,"data":"                                  R5_own     0.2586  0.2461\n"}
+,{"stream_name":"stdout","time":13677.337130042,"data":"                                  R5_table   0.5062  0.4783\n"}
+,{"stream_name":"stdout","time":13677.337133787,"data":"          cd45                    R5_cell    0.7888  0.7498\n"}
+,{"stream_name":"stdout","time":13677.337137583,"data":"                                  R5_own     0.3615  0.3457\n"}
+,{"stream_name":"stdout","time":13677.337141278,"data":"                                  R5_table   0.7738  0.7348\n"}
+,{"stream_name":"stdout","time":13677.337145259,"data":"          cd68                    R5_cell    0.9294  0.9087\n"}
+,{"stream_name":"stdout","time":13677.337149032,"data":"                                  R5_own     0.7791  0.7634\n"}
+,{"stream_name":"stdout","time":13677.337152797,"data":"                                  R5_table   0.9214  0.9007\n"}
+,{"stream_name":"stdout","time":13677.33715655,"data":"          cytokeratin_5           R5_cell    0.9618  0.9516\n"}
+,{"stream_name":"stdout","time":13677.337160361,"data":"                                  R5_own     0.9156  0.9084\n"}
+,{"stream_name":"stdout","time":13677.337164123,"data":"                                  R5_table   0.9582  0.9480\n"}
+,{"stream_name":"stdout","time":13677.337167765,"data":"          cytokeratin_8_18        R5_cell    0.7567  0.7207\n"}
+,{"stream_name":"stdout","time":13677.337172714,"data":"                                  R5_own     0.4385  0.4309\n"}
+,{"stream_name":"stdout","time":13677.337175378,"data":"                                  R5_table   0.7537  0.7177\n"}
+,{"stream_name":"stdout","time":13677.337177863,"data":"          estrogen_receptor_alpha R5_cell    0.8515  0.8005\n"}
+,{"stream_name":"stdout","time":13677.337181513,"data":"                                  R5_own     0.2820  0.2683\n"}
+,{"stream_name":"stdout","time":13677.337185295,"data":"                                  R5_table   0.8487  0.7977\n"}
+,{"stream_name":"stdout","time":13677.337189034,"data":"          ki_67                   R5_cell    0.9755  0.9655\n"}
+,{"stream_name":"stdout","time":13677.337192831,"data":"                                  R5_own     0.9054  0.8967\n"}
+,{"stream_name":"stdout","time":13677.337196738,"data":"                                  R5_table   0.9716  0.9615\n"}
+,{"stream_name":"stdout","time":13677.337200672,"data":"          pan_cytokeratin         R5_cell    0.8313  0.7918\n"}
+,{"stream_name":"stdout","time":13677.337205064,"data":"                                  R5_own     0.1943  0.1896\n"}
+,{"stream_name":"stdout","time":13677.337212677,"data":"                                  R5_table   0.8228  0.7832\n"}
+,{"stream_name":"stdout","time":13677.337216518,"data":"          sma                     R5_cell    0.8368  0.7850\n"}
+,{"stream_name":"stdout","time":13677.337220225,"data":"                                  R5_own     0.3560  0.3360\n"}
+,{"stream_name":"stdout","time":13677.33722398,"data":"                                  R5_table   0.8028  0.7511\n"}
+,{"stream_name":"stdout","time":13677.337227659,"data":"jackson   c_erb_b_2_her2          R5_cell    0.8285  0.7825\n"}
+,{"stream_name":"stdout","time":13677.337231405,"data":"                                  R5_own     0.4780  0.4622\n"}
+,{"stream_name":"stdout","time":13677.337235067,"data":"                                  R5_table   0.8241  0.7782\n"}
+,{"stream_name":"stdout","time":13677.337239801,"data":"          cd20                    R5_cell    0.8588  0.8316\n"}
+,{"stream_name":"stdout","time":13677.337243546,"data":"                                  R5_own     0.7440  0.7244\n"}
+,{"stream_name":"stdout","time":13677.337247264,"data":"                                  R5_table   0.8584  0.8312\n"}
+,{"stream_name":"stdout","time":13677.337251068,"data":"          cd3                     R5_cell    0.7973  0.7509\n"}
+,{"stream_name":"stdout","time":13677.33725483,"data":"                                  R5_own     0.6267  0.5921\n"}
+,{"stream_name":"stdout","time":13677.337258745,"data":"                                  R5_table   0.8001  0.7537\n"}
+,{"stream_name":"stdout","time":13677.337261663,"data":"          cd45                    R5_cell    0.6795  0.6506\n"}
+,{"stream_name":"stdout","time":13677.337263927,"data":"                                  R5_own     0.3618  0.3480\n"}
+,{"stream_name":"stdout","time":13677.337266535,"data":"                                  R5_table   0.6671  0.6381\n"}
+,{"stream_name":"stdout","time":13677.337269768,"data":"          cd68                    R5_cell    0.8877  0.8605\n"}
+,{"stream_name":"stdout","time":13677.337273293,"data":"                                  R5_own     0.7199  0.6995\n"}
+,{"stream_name":"stdout","time":13677.337276928,"data":"                                  R5_table   0.8932  0.8660\n"}
+,{"stream_name":"stdout","time":13677.337280708,"data":"          cytokeratin_5           R5_cell    0.9312  0.9169\n"}
+,{"stream_name":"stdout","time":13677.337284436,"data":"                                  R5_own     0.8470  0.8374\n"}
+,{"stream_name":"stdout","time":13677.337288255,"data":"                                  R5_table   0.9125  0.8982\n"}
+,{"stream_name":"stdout","time":13677.337292239,"data":"          cytokeratin_8_18        R5_cell    0.6787  0.6286\n"}
+,{"stream_name":"stdout","time":13677.337296119,"data":"                                  R5_own     0.3212  0.3137\n"}
+,{"stream_name":"stdout","time":13677.337299727,"data":"                                  R5_table   0.6765  0.6263\n"}
+,{"stream_name":"stdout","time":13677.337303466,"data":"          estrogen_receptor_alpha R5_cell    0.8167  0.7851\n"}
+,{"stream_name":"stdout","time":13677.337307147,"data":"                                  R5_own     0.5781  0.5656\n"}
+,{"stream_name":"stdout","time":13677.337310899,"data":"                                  R5_table   0.8095  0.7779\n"}
+,{"stream_name":"stdout","time":13677.337314538,"data":"          ki_67                   R5_cell    0.9746  0.9628\n"}
+,{"stream_name":"stdout","time":13677.337318283,"data":"                                  R5_own     0.9104  0.9007\n"}
+,{"stream_name":"stdout","time":13677.337322001,"data":"                                  R5_table   0.9709  0.9590\n"}
+,{"stream_name":"stdout","time":13677.337329872,"data":"          pan_cytokeratin         R5_cell    0.7915  0.7450\n"}
+,{"stream_name":"stdout","time":13677.337333565,"data":"                                  R5_own     0.1478  0.1429\n"}
+,{"stream_name":"stdout","time":13677.337337249,"data":"                                  R5_table   0.7745  0.7280\n"}
+,{"stream_name":"stdout","time":13677.33734095,"data":"          sma                     R5_cell    0.7323  0.7077\n"}
+,{"stream_name":"stdout","time":13677.337344693,"data":"                                  R5_own     0.3199  0.3105\n"}
+,{"stream_name":"stdout","time":13677.337348436,"data":"                                  R5_table   0.7078  0.6832\n"}
+,{"stream_name":"stdout","time":13677.337351948,"data":"[ 227.4 min] R5 controls done\n"}
+,{"stream_name":"stdout","time":13851.969291047,"data":"[ 230.3 min] spillover danenberg c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":14010.907576423,"data":"[ 233.0 min] spillover danenberg cd20\n"}
+,{"stream_name":"stdout","time":14167.172395079,"data":"[ 235.6 min] spillover danenberg cd3\n"}
+,{"stream_name":"stdout","time":14336.763004033,"data":"[ 238.4 min] spillover danenberg cd45\n"}
+,{"stream_name":"stdout","time":14496.633874857,"data":"[ 241.1 min] spillover danenberg cd68\n"}
+,{"stream_name":"stdout","time":14647.042092624,"data":"[ 243.6 min] spillover danenberg cytokeratin_5\n"}
+,{"stream_name":"stdout","time":14797.936246917,"data":"[ 246.1 min] spillover danenberg cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":14982.413725908,"data":"[ 249.2 min] spillover danenberg estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":15128.910191821,"data":"[ 251.6 min] spillover danenberg ki_67\n"}
+,{"stream_name":"stdout","time":15303.097109204,"data":"[ 254.5 min] spillover danenberg pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":15472.030773535,"data":"[ 257.3 min] spillover danenberg sma\n"}
+,{"stream_name":"stdout","time":15652.543050595,"data":"[ 260.3 min] spillover jackson c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":15816.238074192,"data":"[ 263.1 min] spillover jackson cd20\n"}
+,{"stream_name":"stdout","time":15997.909828859,"data":"[ 266.1 min] spillover jackson cd3\n"}
+,{"stream_name":"stdout","time":16164.564755293,"data":"[ 268.9 min] spillover jackson cd45\n"}
+,{"stream_name":"stdout","time":16329.806676496,"data":"[ 271.6 min] spillover jackson cd68\n"}
+,{"stream_name":"stdout","time":16491.952130251,"data":"[ 274.3 min] spillover jackson cytokeratin_5\n"}
+,{"stream_name":"stdout","time":16657.908496978,"data":"[ 277.1 min] spillover jackson cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":16827.490670214,"data":"[ 279.9 min] spillover jackson estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":16987.332517948,"data":"[ 282.6 min] spillover jackson ki_67\n"}
+,{"stream_name":"stdout","time":17176.949466362,"data":"[ 285.7 min] spillover jackson pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":17361.419598792,"data":"[ 288.8 min] spillover jackson sma\n"}
+,{"stream_name":"stdout","time":17361.46260704,"data":"mask                               erode1  erode2    full\n"}
+,{"stream_name":"stdout","time":17361.462647518,"data":"cohort    marker                                         \n"}
+,{"stream_name":"stdout","time":17361.462653903,"data":"danenberg c_erb_b_2_her2           0.0026  0.0012  0.0041\n"}
+,{"stream_name":"stdout","time":17361.462659081,"data":"          cd20                     0.0220  0.0123  0.0164\n"}
+,{"stream_name":"stdout","time":17361.462664211,"data":"          cd3                      0.0039  0.0007  0.0045\n"}
+,{"stream_name":"stdout","time":17361.462669008,"data":"          cd45                     0.0112  0.0132  0.0124\n"}
+,{"stream_name":"stdout","time":17361.462751827,"data":"          cd68                     0.0047  0.0048 -0.0014\n"}
+,{"stream_name":"stdout","time":17361.462757905,"data":"          cytokeratin_5            0.0048  0.0092  0.0086\n"}
+,{"stream_name":"stdout","time":17361.462761782,"data":"          cytokeratin_8_18        -0.0024  0.0038 -0.0001\n"}
+,{"stream_name":"stdout","time":17361.462765405,"data":"          estrogen_receptor_alpha  0.0041  0.0035  0.0051\n"}
+,{"stream_name":"stdout","time":17361.46276925,"data":"          ki_67                    0.0072  0.0005  0.0020\n"}
+,{"stream_name":"stdout","time":17361.462773082,"data":"          pan_cytokeratin          0.0149  0.0214  0.0134\n"}
+,{"stream_name":"stdout","time":17361.462776805,"data":"          sma                      0.0371  0.0272  0.0360\n"}
+,{"stream_name":"stdout","time":17361.462780609,"data":"jackson   c_erb_b_2_her2           0.0052  0.0027  0.0054\n"}
+,{"stream_name":"stdout","time":17361.462784683,"data":"          cd20                     0.0041  0.0088  0.0099\n"}
+,{"stream_name":"stdout","time":17361.462788499,"data":"          cd3                      0.0052  0.0028  0.0072\n"}
+,{"stream_name":"stdout","time":17361.462792262,"data":"          cd45                     0.0140  0.0089  0.0201\n"}
+,{"stream_name":"stdout","time":17361.462796038,"data":"          cd68                    -0.0057 -0.0016 -0.0029\n"}
+,{"stream_name":"stdout","time":17361.462799795,"data":"          cytokeratin_5            0.0101  0.0121  0.0032\n"}
+,{"stream_name":"stdout","time":17361.462803453,"data":"          cytokeratin_8_18         0.0007 -0.0007  0.0032\n"}
+,{"stream_name":"stdout","time":17361.462807211,"data":"          estrogen_receptor_alpha  0.0058  0.0079  0.0060\n"}
+,{"stream_name":"stdout","time":17361.46283335,"data":"          ki_67                    0.0015  0.0058  0.0000\n"}
+,{"stream_name":"stdout","time":17361.462841812,"data":"          pan_cytokeratin          0.0241  0.0297  0.0169\n"}
+,{"stream_name":"stdout","time":17361.462845797,"data":"          sma                      0.0278  0.0211  0.0262\n"}
+,{"stream_name":"stdout","time":17361.755666161,"data":"{\n"}
+,{"stream_name":"stdout","time":17361.755725481,"data":" \"passed\": false,\n"}
+,{"stream_name":"stdout","time":17361.755731188,"data":" \"n_failures\": 116,\n"}
+,{"stream_name":"stdout","time":17361.755735122,"data":" \"failed_blocks\": [],\n"}
+,{"stream_name":"stdout","time":17361.755739232,"data":" \"main_markers\": [\n"}
+,{"stream_name":"stdout","time":17361.755743047,"data":"  \"danenberg:c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":17361.755746972,"data":"  \"danenberg:cd20\",\n"}
+,{"stream_name":"stdout","time":17361.755750602,"data":"  \"danenberg:cd3\",\n"}
+,{"stream_name":"stdout","time":17361.755755578,"data":"  \"danenberg:cd45\",\n"}
+,{"stream_name":"stdout","time":17361.755758183,"data":"  \"danenberg:cd68\",\n"}
+,{"stream_name":"stdout","time":17361.755760588,"data":"  \"danenberg:cytokeratin_5\",\n"}
+,{"stream_name":"stdout","time":17361.755763092,"data":"  \"danenberg:cytokeratin_8_18\",\n"}
+,{"stream_name":"stdout","time":17361.755765876,"data":"  \"danenberg:estrogen_receptor_alpha\",\n"}
+,{"stream_name":"stdout","time":17361.755768448,"data":"  \"danenberg:ki_67\",\n"}
+,{"stream_name":"stdout","time":17361.755770817,"data":"  \"danenberg:pan_cytokeratin\",\n"}
+,{"stream_name":"stdout","time":17361.755773139,"data":"  \"danenberg:sma\",\n"}
+,{"stream_name":"stdout","time":17361.755775501,"data":"  \"jackson:c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":17361.755777781,"data":"  \"jackson:cd20\",\n"}
+,{"stream_name":"stdout","time":17361.755780059,"data":"  \"jackson:cd3\",\n"}
+,{"stream_name":"stdout","time":17361.755799528,"data":"  \"jackson:cd45\",\n"}
+,{"stream_name":"stdout","time":17361.755802213,"data":"  \"jackson:cd68\",\n"}
+,{"stream_name":"stdout","time":17361.75580449,"data":"  \"jackson:cytokeratin_5\",\n"}
+,{"stream_name":"stdout","time":17361.75580689,"data":"  \"jackson:cytokeratin_8_18\",\n"}
+,{"stream_name":"stdout","time":17361.755809219,"data":"  \"jackson:estrogen_receptor_alpha\",\n"}
+,{"stream_name":"stdout","time":17361.755845665,"data":"  \"jackson:ki_67\",\n"}
+,{"stream_name":"stdout","time":17361.755848119,"data":"  \"jackson:pan_cytokeratin\",\n"}
+,{"stream_name":"stdout","time":17361.755850669,"data":"  \"jackson:sma\"\n"}
+,{"stream_name":"stdout","time":17361.755853016,"data":" ],\n"}
+,{"stream_name":"stdout","time":17361.755855256,"data":" \"ceiling_split_flags\": [\n"}
+,{"stream_name":"stdout","time":17361.755857683,"data":"  \"danenberg:estrogen_receptor_alpha:R5_cell (0.051)\",\n"}
+,{"stream_name":"stdout","time":17361.755860107,"data":"  \"danenberg:estrogen_receptor_alpha:R5_table (0.051)\",\n"}
+,{"stream_name":"stdout","time":17361.755862581,"data":"  \"danenberg:sma:R5_cell (0.052)\",\n"}
+,{"stream_name":"stdout","time":17361.755864861,"data":"  \"danenberg:sma:R5_table (0.052)\",\n"}
+,{"stream_name":"stdout","time":17361.755867942,"data":"  \"jackson:cytokeratin_8_18:R5_cell (0.050)\",\n"}
+,{"stream_name":"stdout","time":17361.755870538,"data":"  \"jackson:cytokeratin_8_18:R5_table (0.050)\"\n"}
+,{"stream_name":"stdout","time":17361.755872913,"data":" ],\n"}
+,{"stream_name":"stdout","time":17361.75587516,"data":" \"thresholds\": {\n"}
+,{"stream_name":"stdout","time":17361.755877504,"data":"  \"NEG_TOL\": 0.01,\n"}
+,{"stream_name":"stdout","time":17361.755879976,"data":"  \"ID_FRAC\": 0.9,\n"}
+,{"stream_name":"stdout","time":17361.755882279,"data":"  \"MAIN_CEIL\": 0.05,\n"}
+,{"stream_name":"stdout","time":17361.755884624,"data":"  \"MONO_TOL\": 0.002\n"}
+,{"stream_name":"stdout","time":17361.755886941,"data":" },\n"}
+,{"stream_name":"stdout","time":17361.755889427,"data":" \"smoke\": false,\n"}
+,{"stream_name":"stdout","time":17361.755891743,"data":" \"minutes\": 288.82621888319653\n"}
+,{"stream_name":"stdout","time":17361.755894199,"data":"}\n"}
+,{"stream_name":"stdout","time":17361.755896443,"data":"negative control shifted true map danenberg c_erb_b_2_her2 R5_own: R5 +0.1420\n"}
+,{"stream_name":"stdout","time":17361.755898937,"data":"negative control state mean danenberg c_erb_b_2_her2 R5_own: R5 +0.0125\n"}
+,{"stream_name":"stdout","time":17361.75590125,"data":"negative control shifted true map danenberg c_erb_b_2_her2 R5_cell: R5 +0.0121\n"}
+,{"stream_name":"stdout","time":17361.755903623,"data":"negative control shuffled within image x state danenberg c_erb_b_2_her2 R5_cell: R5 +0.0236\n"}
+,{"stream_name":"stdout","time":17361.755905991,"data":"negative control shifted true map danenberg c_erb_b_2_her2 R5_table: R5 +0.0117\n"}
+,{"stream_name":"stdout","time":17361.755908527,"data":"negative control shuffled within image x state danenberg c_erb_b_2_her2 R5_table: R5 +0.0278\n"}
+,{"stream_name":"stdout","time":17361.75591093,"data":"negative control shifted true map danenberg cd20 R5_own: R5 +0.0270\n"}
+,{"stream_name":"stdout","time":17361.755913498,"data":"negative control shifted true map danenberg cd20 R5_cell: R5 +0.0115\n"}
+,{"stream_name":"stdout","time":17361.755915821,"data":"negative control kNN mean (S cells) danenberg cd20 R5_cell: R5 +0.0166\n"}
+,{"stream_name":"stdout","time":17361.755918149,"data":"negative control shuffled within image x state danenberg cd20 R5_cell: R5 +0.0351\n"}
+,{"stream_name":"stdout","time":17361.755920474,"data":"negative control shifted true map danenberg cd20 R5_table: R5 +0.0127\n"}
+,{"stream_name":"stdout","time":17361.755991145,"data":"negative control shuffled within image x state danenberg cd20 R5_table: R5 +0.0275\n"}
+,{"stream_name":"stdout","time":17361.755997662,"data":"negative control shifted true map danenberg cd68 R5_own: R5 +0.0379\n"}
+,{"stream_name":"stdout","time":17361.75600022,"data":"negative control shifted true map danenberg cd68 R5_cell: R5 +0.0165\n"}
+,{"stream_name":"stdout","time":17361.756002558,"data":"negative control kNN mean (S cells) danenberg cd68 R5_cell: R5 +0.0115\n"}
+,{"stream_name":"stdout","time":17361.756004928,"data":"negative control shuffled within image x state danenberg cd68 R5_cell: R5 +0.0179\n"}
+,{"stream_name":"stdout","time":17361.756007274,"data":"negative control shuffled within image x state danenberg cd68 R5_table: R5 +0.0135\n"}
+,{"stream_name":"stdout","time":17361.756009655,"data":"negative control shifted true map danenberg cytokeratin_5 R5_own: R5 +0.1943\n"}
+,{"stream_name":"stdout","time":17361.756012007,"data":"negative control kNN mean (S cells) danenberg cytokeratin_5 R5_own: R5 +0.0269\n"}
+,{"stream_name":"stdout","time":17361.756014542,"data":"negative control shifted true map danenberg cytokeratin_5 R5_cell: R5 +0.0657\n"}
+,{"stream_name":"stdout","time":17361.75601693,"data":"negative control shuffled within image x state danenberg cytokeratin_5 R5_cell: R5 +0.1196\n"}
+,{"stream_name":"stdout","time":17361.756019424,"data":"negative control shifted true map danenberg cytokeratin_5 R5_table: R5 +0.0741\n"}
+,{"stream_name":"stdout","time":17361.75602179,"data":"negative control shuffled within image x state danenberg cytokeratin_5 R5_table: R5 +0.1368\n"}
+,{"stream_name":"stdout","time":17361.756024188,"data":"negative control shifted true map danenberg cytokeratin_8_18 R5_own: R5 +0.2022\n"}
+,{"stream_name":"stdout","time":17361.756026521,"data":"negative control shifted true map danenberg cytokeratin_8_18 R5_cell: R5 +0.0309\n"}
+,{"stream_name":"stdout","time":17361.756028978,"data":"negative control shuffled within image x state danenberg cytokeratin_8_18 R5_cell: R5 +0.0653\n"}
+,{"stream_name":"stdout","time":17361.75603134,"data":"negative control shifted true map danenberg cytokeratin_8_18 R5_table: R5 +0.0354\n"}
+,{"stream_name":"stdout","time":17361.756033949,"data":"negative control shuffled within image x state danenberg cytokeratin_8_18 R5_table: R5 +0.0641\n"}
+,{"stream_name":"stdout","time":17361.756036345,"data":"negative control shifted true map danenberg ki_67 R5_own: R5 +0.0269\n"}
+,{"stream_name":"stdout","time":17361.756038727,"data":"negative control shuffled within image x state danenberg ki_67 R5_table: R5 +0.0102\n"}
+,{"stream_name":"stdout","time":17361.756041095,"data":"negative control shifted true map danenberg pan_cytokeratin R5_own: R5 +0.0321\n"}
+,{"stream_name":"stdout","time":17361.756043537,"data":"negative control shuffled within image x state danenberg pan_cytokeratin R5_table: R5 +0.0114\n"}
+,{"stream_name":"stdout","time":17361.756045945,"data":"negative control shuffled within image x state danenberg sma R5_cell: R5 +0.0160\n"}
+,{"stream_name":"stdout","time":17361.756048292,"data":"negative control shuffled within image x state danenberg sma R5_table: R5 +0.0156\n"}
+,{"stream_name":"stdout","time":17361.756050627,"data":"negative control shifted true map jackson c_erb_b_2_her2 R5_own: R5 +0.0722\n"}
+,{"stream_name":"stdout","time":17361.756053167,"data":"negative control shifted true map jackson cd20 R5_own: R5 +0.0544\n"}
+,{"stream_name":"stdout","time":17361.756055539,"data":"negative control state mean jackson cd20 R5_own: R5 -0.0110\n"}
+,{"stream_name":"stdout","time":17361.75605794,"data":"negative control shifted true map jackson cd20 R5_cell: R5 +0.0275\n"}
+,{"stream_name":"stdout","time":17361.756064949,"data":"negative control kNN mean (S cells) jackson cd20 R5_cell: R5 +0.0121\n"}
+,{"stream_name":"stdout","time":17361.756067704,"data":"negative control shuffled within image x state jackson cd20 R5_cell: R5 +0.0384\n"}
+,{"stream_name":"stdout","time":17361.756070175,"data":"negative control planted a=0 jackson cd20 R5_cell: R5 +0.0137\n"}
+,{"stream_name":"stdout","time":17361.756072548,"data":"negative control shifted true map jackson cd20 R5_table: R5 +0.0234\n"}
+,{"stream_name":"stdout","time":17361.756074856,"data":"negative control kNN mean (S cells) jackson cd20 R5_table: R5 +0.0287\n"}
+,{"stream_name":"stdout","time":17361.756077385,"data":"negative control shuffled within image x state jackson cd20 R5_table: R5 +0.0426\n"}
+,{"stream_name":"stdout","time":17361.75607977,"data":"negative control shifted true map jackson cd3 R5_cell: R5 -0.0131\n"}
+,{"stream_name":"stdout","time":17361.756082138,"data":"negative control kNN mean (S cells) jackson cd3 R5_cell: R5 -0.0143\n"}
+,{"stream_name":"stdout","time":17361.756084453,"data":"negative control shifted true map jackson cd45 R5_table: R5 +0.0104\n"}
+,{"stream_name":"stdout","time":17361.756086783,"data":"negative control kNN mean (S cells) jackson cd68 R5_own: R5 +0.0115\n"}
+,{"stream_name":"stdout","time":17361.75608908,"data":"negative control kNN mean (S cells) jackson cd68 R5_cell: R5 +0.0160\n"}
+,{"stream_name":"stdout","time":17361.756127394,"data":"negative control shuffled within image x state jackson cd68 R5_cell: R5 +0.0127\n"}
+,{"stream_name":"stdout","time":17361.756130626,"data":"negative control kNN mean (S cells) jackson cd68 R5_table: R5 +0.0271\n"}
+,{"stream_name":"stdout","time":17361.756133101,"data":"negative control shifted true map jackson cytokeratin_5 R5_own: R5 +0.1647\n"}
+,{"stream_name":"stdout","time":17361.756136175,"data":"negative control state mean jackson cytokeratin_5 R5_own: R5 -0.0460\n"}
+,{"stream_name":"stdout","time":17361.756139841,"data":"negative control planted a=0 jackson cytokeratin_5 R5_own: R5 -0.0311\n"}
+,{"stream_name":"stdout","time":17361.756142232,"data":"negative control shifted true map jackson cytokeratin_5 R5_cell: R5 +0.0497\n"}
+,{"stream_name":"stdout","time":17361.756144571,"data":"negative control kNN mean (S cells) jackson cytokeratin_5 R5_cell: R5 +0.0221\n"}
+,{"stream_name":"stdout","time":17361.756147183,"data":"negative control shuffled within image x state jackson cytokeratin_5 R5_cell: R5 +0.1178\n"}
+,{"stream_name":"stdout","time":17361.756149736,"data":"negative control planted a=0 jackson cytokeratin_5 R5_cell: R5 +0.0181\n"}
+,{"stream_name":"stdout","time":17361.756152121,"data":"negative control shifted true map jackson cytokeratin_5 R5_table: R5 +0.0417\n"}
+,{"stream_name":"stdout","time":17361.756154584,"data":"negative control shuffled within image x state jackson cytokeratin_5 R5_table: R5 +0.0979\n"}
+,{"stream_name":"stdout","time":17361.756156999,"data":"GATE G-R5: FAIL\n"}
+,{"stream_name":"stdout","time":17363.183396215,"data":"[ 288.9 min] done\n"}
+,{"stream_name":"stderr","time":17371.134491184,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":17371.134542259,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":17371.513551876,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":17371.513601168,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":17372.526435193,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":17373.026252505,"data":"[NbConvertApp] Writing 89050 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":17376.492234173,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":17377.990973211,"data":"[NbConvertApp] Writing 530666 bytes to __results__.html\n"}
+]

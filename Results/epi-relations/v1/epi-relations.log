@@ -1,0 +1,160 @@
+[{"stream_name":"stderr","time":8.763135664,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":8.763191948,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":10.023608715,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.023643768,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.023650092,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.023654518,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.879005035,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.879044108,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.879050262,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.879053624,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":28.176746723,"data":"{\n"}
+,{"stream_name":"stdout","time":28.176829244,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":28.176836575,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":28.176841875,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/clinical.parquet\"\n"}
+,{"stream_name":"stdout","time":28.176846285,"data":" },\n"}
+,{"stream_name":"stdout","time":28.176850256,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":28.176854323,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":28.176858624,"data":"  \"clinical\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/clinical.parquet\"\n"}
+,{"stream_name":"stdout","time":28.176863302,"data":" }\n"}
+,{"stream_name":"stdout","time":28.176866921,"data":"}\n"}
+,{"stream_name":"stdout","time":32.991141028,"data":"jackson: 1,126,124 cells, 542 images, 349 patients, classes {'epithelial': 591813, 'stromal': 325675, 'immune': 208636}\n"}
+,{"stream_name":"stdout","time":37.041847961,"data":"danenberg: 1,062,219 cells, 704 images, 650 patients, classes {'epithelial': 600818, 'stromal': 290493, 'immune': 170908}\n"}
+,{"stream_name":"stdout","time":37.041902111,"data":"jackson clinical labels (patients with a label, positives): {'er_neg': (348, 79), 'pr_neg': (343, 138), 'grade3': (349, 151), 'tnbc': (333, 52)}\n"}
+,{"stream_name":"stdout","time":37.041911704,"data":"danenberg clinical labels (patients with a label, positives): {'er_neg': (553, 123), 'pr_neg': (552, 263), 'grade3': (544, 299), 'tnbc': (552, 89)}\n"}
+,{"stream_name":"stdout","time":37.055352767,"data":"Jackson split (cells): {'train': 806958, 'test': 229818, 'val': 89348} | test patients: 66\n"}
+,{"stream_name":"stdout","time":37.055388137,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stdout","time":41.361638249,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 25.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":41.564736869,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 25.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":46.429687801,"data":"542 of 542 Jackson images have a TIFF and a mask\n"}
+,{"stream_name":"stdout","time":863.416609614,"data":"{\n"}
+,{"stream_name":"stdout","time":863.416671587,"data":" \"images\": 542,\n"}
+,{"stream_name":"stdout","time":863.416679216,"data":" \"cells_with_full_mask_values\": 1126124,\n"}
+,{"stream_name":"stdout","time":863.416685054,"data":" \"cells_kept_after_erosion\": 967279,\n"}
+,{"stream_name":"stdout","time":863.41669052,"data":" \"median_pixels_full\": 90.0,\n"}
+,{"stream_name":"stdout","time":863.416695448,"data":" \"median_pixels_eroded\": 16.0,\n"}
+,{"stream_name":"stdout","time":863.416700512,"data":" \"table_vs_image_r\": {\n"}
+,{"stream_name":"stdout","time":863.416705033,"data":"  \"dna1\": 0.9999999999999714,\n"}
+,{"stream_name":"stdout","time":863.416709688,"data":"  \"histone_h3_trimethylate\": 0.9999999999999913,\n"}
+,{"stream_name":"stdout","time":863.416714256,"data":"  \"histone_h3_phospho\": 0.9977795227672299,\n"}
+,{"stream_name":"stdout","time":863.416718742,"data":"  \"cd45\": 0.9922979614488118\n"}
+,{"stream_name":"stdout","time":863.416723434,"data":" }\n"}
+,{"stream_name":"stdout","time":863.416727664,"data":"}\n"}
+,{"stream_name":"stdout","time":863.416732123,"data":"[  14.0 min] image means under full and eroded masks\n"}
+,{"stream_name":"stdout","time":863.478002779,"data":"122 candidate relations\n"}
+,{"stream_name":"stdout","time":1061.357028144,"data":"reliable relations by mark and family: {'h3k27me3': {'C': 20, 'K': 1, 'L': 4, 'P': 8}, 'phh3': {'C': 7, 'K': 0, 'L': 3, 'P': 6}}\n"}
+,{"stream_name":"stdout","time":1061.357068968,"data":"                             relation  effect     lo     hi  basel  zurich  full_img  eroded\n"}
+,{"stream_name":"stdout","time":1061.357075997,"data":"   H3K27me3 ~ SMA, cells (epithelial)   0.107  0.085  0.129  0.116   0.099     0.123   0.105\n"}
+,{"stream_name":"stdout","time":1061.357081798,"data":"   H3K27me3 ~ CD3, cells (epithelial)   0.114  0.103  0.126  0.091   0.152     0.174   0.089\n"}
+,{"stream_name":"stdout","time":1061.357086856,"data":"         H3K27me3 ~ CD68, cells (all)   0.115  0.096  0.135  0.100   0.146     0.163   0.114\n"}
+,{"stream_name":"stdout","time":1061.357091914,"data":"  H3K27me3 ~ CD68, cells (epithelial)   0.122  0.104  0.142  0.104   0.155     0.177   0.121\n"}
+,{"stream_name":"stdout","time":1061.357096921,"data":"       H3K27me3 ~ SMA, cells (immune)   0.126  0.107  0.144  0.131   0.119     0.174   0.094\n"}
+,{"stream_name":"stdout","time":1061.357101857,"data":"    H3K27me3 ~ panCK, cells (stromal)   0.126  0.110  0.142  0.111   0.175     0.127   0.074\n"}
+,{"stream_name":"stdout","time":1061.357106441,"data":"          H3K27me3 ~ SMA, cells (all)   0.136  0.114  0.158  0.132   0.148     0.146   0.087\n"}
+,{"stream_name":"stdout","time":1061.357111145,"data":"      H3K27me3 ~ CD20, cells (immune)   0.160  0.141  0.177  0.142   0.193     0.213   0.118\n"}
+,{"stream_name":"stdout","time":1061.357116377,"data":"      H3K27me3 ~ CD68, cells (immune)   0.196  0.179  0.212  0.193   0.199     0.203   0.122\n"}
+,{"stream_name":"stdout","time":1061.357119905,"data":"      H3K27me3 ~ HER2, cells (immune)   0.225  0.208  0.241  0.197   0.257     0.225   0.120\n"}
+,{"stream_name":"stdout","time":1061.357122895,"data":"     H3K27me3 ~ CD68, cells (stromal)   0.237  0.220  0.254  0.224   0.276     0.323   0.173\n"}
+,{"stream_name":"stdout","time":1061.357126064,"data":"     H3K27me3 ~ HER2, cells (stromal)   0.252  0.237  0.267  0.230   0.317     0.280   0.140\n"}
+,{"stream_name":"stdout","time":1061.357137668,"data":"   H3K27me3 ~ CK8/18, cells (stromal)   0.308  0.289  0.327  0.287   0.371     0.401   0.202\n"}
+,{"stream_name":"stdout","time":1061.357140334,"data":"  H3K27me3 ~ HER2, cells (epithelial)   0.316  0.295  0.336  0.298   0.351     0.311   0.187\n"}
+,{"stream_name":"stdout","time":1061.357142766,"data":"         H3K27me3 ~ HER2, cells (all)   0.320  0.297  0.341  0.304   0.354     0.329   0.188\n"}
+,{"stream_name":"stdout","time":1061.357145198,"data":"        H3K27me3 ~ panCK, cells (all)   0.334  0.301  0.364  0.335   0.332     0.345   0.218\n"}
+,{"stream_name":"stdout","time":1061.357147934,"data":"      H3K27me3 ~ SMA, cells (stromal)   0.359  0.335  0.382  0.336   0.430     0.405   0.204\n"}
+,{"stream_name":"stdout","time":1061.357150406,"data":"       H3K27me3 ~ CK8/18, cells (all)   0.375  0.347  0.400  0.377   0.380     0.419   0.252\n"}
+,{"stream_name":"stdout","time":1061.357152964,"data":"H3K27me3 ~ CK8/18, cells (epithelial)   0.423  0.400  0.447  0.430   0.414     0.444   0.279\n"}
+,{"stream_name":"stdout","time":1061.357156831,"data":" H3K27me3 ~ panCK, cells (epithelial)   0.474  0.448  0.500  0.476   0.465     0.478   0.323\n"}
+,{"stream_name":"stdout","time":1061.357159326,"data":" H3K27me3: stromal − epithelial cells  -0.338 -0.412 -0.255 -0.336  -0.320    -0.370  -0.235\n"}
+,{"stream_name":"stdout","time":1061.357162416,"data":"                  H3K27me3 vs grade 3  -0.195 -0.251 -0.139 -0.195  -0.255       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357164848,"data":"                      H3K27me3 vs ER−  -0.166 -0.229 -0.101 -0.127  -0.270       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357167437,"data":"          H3K27me3 vs triple-negative  -0.154 -0.229 -0.083 -0.117  -0.276       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357170166,"data":"                      H3K27me3 vs PR−  -0.149 -0.208 -0.084 -0.117  -0.130       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357174549,"data":"            H3K27me3 ~ HER2, patients   0.219  0.117  0.319  0.213   0.169       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357177179,"data":"             H3K27me3 ~ SMA, patients   0.368  0.266  0.460  0.370   0.418       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357179739,"data":"            H3K27me3 ~ CD45, patients   0.385  0.293  0.471  0.282   0.073       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357182266,"data":"             H3K27me3 ~ ERα, patients   0.408  0.316  0.499  0.321   0.232       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357184858,"data":"             H3K27me3 ~ CD3, patients   0.447  0.357  0.533  0.339   0.121       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357187297,"data":"             H3K27me3 ~ CK5, patients   0.556  0.468  0.634  0.515   0.232       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357189838,"data":"          H3K27me3 ~ CK8/18, patients   0.608  0.538  0.675  0.548   0.689       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357192497,"data":"           H3K27me3 ~ panCK, patients   0.645  0.583  0.701  0.645   0.698       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357194981,"data":"           pHH3 ~ SMA, cells (immune)   0.101  0.083  0.119  0.106   0.091     0.143   0.100\n"}
+,{"stream_name":"stdout","time":1061.357197443,"data":"          pHH3 ~ ERα, cells (stromal)   0.107  0.094  0.122  0.077   0.198     0.152   0.084\n"}
+,{"stream_name":"stdout","time":1061.357199934,"data":"             pHH3 ~ CD68, cells (all)   0.129  0.112  0.146  0.135   0.114     0.131   0.090\n"}
+,{"stream_name":"stdout","time":1061.357202395,"data":"              pHH3 ~ SMA, cells (all)   0.153  0.135  0.172  0.174   0.117     0.147   0.120\n"}
+,{"stream_name":"stdout","time":1061.357207581,"data":"       pHH3 ~ ERα, cells (epithelial)   0.157  0.135  0.181  0.137   0.189     0.189   0.109\n"}
+,{"stream_name":"stdout","time":1061.357210177,"data":"          pHH3 ~ CD68, cells (immune)   0.186  0.170  0.203  0.182   0.190     0.203   0.117\n"}
+,{"stream_name":"stdout","time":1061.357212645,"data":"          pHH3 ~ SMA, cells (stromal)   0.200  0.186  0.215  0.190   0.233     0.223   0.113\n"}
+,{"stream_name":"stdout","time":1061.357215337,"data":"                          pHH3 vs PR−  -0.112 -0.171 -0.049 -0.081  -0.110       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357218424,"data":"                      pHH3 vs grade 3  -0.111 -0.175 -0.047 -0.107  -0.130       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357222427,"data":"                          pHH3 vs ER−  -0.086 -0.151 -0.016 -0.045  -0.181       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357226434,"data":"              pHH3 ~ CK8/18, patients   0.205  0.105  0.307  0.165   0.031       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357229998,"data":"               pHH3 ~ panCK, patients   0.213  0.115  0.309  0.183   0.184       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357233833,"data":"                 pHH3 ~ SMA, patients   0.237  0.138  0.335  0.227   0.152       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357237211,"data":"                 pHH3 ~ CK5, patients   0.313  0.209  0.402  0.230   0.146       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357240957,"data":"                pHH3 ~ CD45, patients   0.334  0.232  0.429  0.248   0.179       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357244817,"data":"                 pHH3 ~ ERα, patients   0.430  0.351  0.513  0.382   0.107       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357248732,"data":"reliable patient-level relations that survive the brightness adjustment: {'h3k27me3': '5/8', 'phh3': '3/6'}\n"}
+,{"stream_name":"stdout","time":1061.357252756,"data":"\n"}
+,{"stream_name":"stdout","time":1061.357256326,"data":"large, significant but not reliable:\n"}
+,{"stream_name":"stdout","time":1061.35725976,"data":"                           relation  effect  basel  zurich  full_img  eroded\n"}
+,{"stream_name":"stdout","time":1061.357263439,"data":"        H3K27me3 ~ ERα, cells (all)   0.190  0.196   0.173     0.230   0.094\n"}
+,{"stream_name":"stdout","time":1061.357267097,"data":" H3K27me3 ~ ERα, cells (epithelial)   0.162  0.162   0.149     0.178   0.067\n"}
+,{"stream_name":"stdout","time":1061.357270837,"data":"     H3K27me3 ~ ERα, cells (immune)   0.115  0.129   0.082     0.178   0.068\n"}
+,{"stream_name":"stdout","time":1061.357275017,"data":"    H3K27me3 ~ ERα, cells (stromal)   0.121  0.128   0.103     0.177   0.055\n"}
+,{"stream_name":"stdout","time":1061.357279017,"data":"    H3K27me3 ~ CD3, cells (stromal)   0.111  0.095   0.161     0.270   0.103\n"}
+,{"stream_name":"stdout","time":1061.357282506,"data":"       H3K27me3 ~ CD20, cells (all)   0.115  0.110   0.131     0.280   0.132\n"}
+,{"stream_name":"stdout","time":1061.357286317,"data":"H3K27me3 ~ CD20, cells (epithelial)   0.138  0.136   0.133     0.221   0.100\n"}
+,{"stream_name":"stdout","time":1061.357289985,"data":"        H3K27me3 ~ CK5, cells (all)   0.317  0.313   0.325     0.343   0.152\n"}
+,{"stream_name":"stdout","time":1061.357293627,"data":" H3K27me3 ~ CK5, cells (epithelial)   0.304  0.298   0.314     0.314   0.154\n"}
+,{"stream_name":"stdout","time":1061.357297249,"data":"     H3K27me3 ~ CK5, cells (immune)   0.241  0.229   0.257     0.258   0.118\n"}
+,{"stream_name":"stdout","time":1061.357300733,"data":"    H3K27me3 ~ CK5, cells (stromal)   0.268  0.255   0.308     0.324   0.132\n"}
+,{"stream_name":"stdout","time":1061.357308117,"data":"  H3K27me3 ~ CK8/18, cells (immune)   0.153  0.156   0.148     0.207   0.097\n"}
+,{"stream_name":"stdout","time":1061.357311993,"data":"H3K27me3: immune − epithelial cells  -0.260 -0.246  -0.272    -0.282  -0.089\n"}
+,{"stream_name":"stdout","time":1061.35731579,"data":"          H3K27me3 ~ CD20, patients   0.328  0.252  -0.099       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357319458,"data":"          H3K27me3 ~ CD68, patients   0.227  0.202  -0.071       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357321967,"data":"            pHH3 ~ ERα, cells (all)   0.114  0.077   0.186     0.156   0.071\n"}
+,{"stream_name":"stdout","time":1061.357324527,"data":"         pHH3 ~ ERα, cells (immune)   0.173  0.132   0.244     0.228   0.109\n"}
+,{"stream_name":"stdout","time":1061.35732698,"data":"           pHH3 ~ HER2, cells (all)   0.107  0.083   0.154     0.191   0.051\n"}
+,{"stream_name":"stdout","time":1061.357329607,"data":"    pHH3 ~ HER2, cells (epithelial)   0.140  0.126   0.164     0.231   0.085\n"}
+,{"stream_name":"stdout","time":1061.357332214,"data":"        pHH3 ~ HER2, cells (immune)   0.228  0.236   0.206     0.280   0.110\n"}
+,{"stream_name":"stdout","time":1061.357334744,"data":"       pHH3 ~ HER2, cells (stromal)   0.147  0.133   0.190     0.199   0.056\n"}
+,{"stream_name":"stdout","time":1061.357337217,"data":"       pHH3 ~ CD68, cells (stromal)   0.159  0.164   0.145     0.189   0.084\n"}
+,{"stream_name":"stdout","time":1061.357340269,"data":"            pHH3 ~ CK5, cells (all)   0.117  0.102   0.141     0.149   0.062\n"}
+,{"stream_name":"stdout","time":1061.357342681,"data":"     pHH3 ~ CK5, cells (epithelial)   0.131  0.121   0.142     0.156   0.074\n"}
+,{"stream_name":"stdout","time":1061.357345136,"data":"         pHH3 ~ CK5, cells (immune)   0.134  0.135   0.126     0.154   0.064\n"}
+,{"stream_name":"stdout","time":1061.357347814,"data":"        pHH3 ~ CK5, cells (stromal)   0.102  0.098   0.113     0.120   0.045\n"}
+,{"stream_name":"stdout","time":1061.357350217,"data":"  pHH3 ~ CK8/18, cells (epithelial)   0.111  0.102   0.119     0.152   0.063\n"}
+,{"stream_name":"stdout","time":1061.357352857,"data":"   pHH3 ~ panCK, cells (epithelial)   0.102  0.089   0.118     0.136   0.048\n"}
+,{"stream_name":"stdout","time":1061.357355315,"data":"              pHH3 ~ HER2, patients   0.338  0.392  -0.051       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357357766,"data":"               pHH3 ~ CD3, patients   0.319  0.218  -0.003       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357360212,"data":"              pHH3 ~ CD20, patients   0.266  0.212  -0.021       NaN     NaN\n"}
+,{"stream_name":"stdout","time":1061.357362914,"data":"[  17.3 min] phase A\n"}
+,{"stream_name":"stdout","time":1510.805673823,"data":"[  24.8 min] per-cell models for H3K27me3\n"}
+,{"stream_name":"stdout","time":1930.587496058,"data":"[  31.8 min] per-cell models for pHH3\n"}
+,{"stream_name":"stdout","time":1933.290245875,"data":"image models found: [] | Jackson-test columns: 0 | Danenberg columns: 0\n"}
+,{"stream_name":"stdout","time":2103.894712627,"data":"         evaluation     mark   model  r_within  r_lo  r_hi  partial_beyond_nuclear  partial_lo  partial_hi  patient_spearman  patient_lo  patient_hi  auc_top1pct  auc_lo  auc_hi\n"}
+,{"stream_name":"stdout","time":2103.894765869,"data":"       Jackson test h3k27me3 nuclear     0.493 0.409 0.570                   0.173       0.129       0.213             0.456       0.237       0.642          NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":2103.894773178,"data":"       Jackson test h3k27me3    lgbm     0.731 0.694 0.763                   0.602       0.574       0.628             0.827       0.710       0.901          NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":2103.894790602,"data":"       Jackson test     phh3 nuclear     0.281 0.238 0.331                   0.120       0.089       0.149             0.533       0.344       0.673        0.752   0.684   0.804\n"}
+,{"stream_name":"stdout","time":2103.894795316,"data":"       Jackson test     phh3    lgbm     0.356 0.312 0.407                   0.293       0.260       0.325             0.663       0.517       0.765        0.810   0.760   0.850\n"}
+,{"stream_name":"stdout","time":2103.894799873,"data":"Jackson out-of-fold h3k27me3 nuclear     0.500 0.474 0.523                   0.158       0.140       0.176             0.468       0.368       0.556          NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":2103.894803198,"data":"Jackson out-of-fold h3k27me3    lgbm     0.728 0.709 0.743                   0.592       0.573       0.608             0.864       0.834       0.889          NaN     NaN     NaN\n"}
+,{"stream_name":"stdout","time":2103.894805988,"data":"Jackson out-of-fold     phh3 nuclear     0.291 0.268 0.314                   0.094       0.078       0.110             0.481       0.391       0.564        0.735   0.708   0.765\n"}
+,{"stream_name":"stdout","time":2103.894808612,"data":"Jackson out-of-fold     phh3    lgbm     0.346 0.323 0.369                   0.265       0.248       0.282             0.647       0.573       0.706        0.798   0.771   0.824\n"}
+,{"stream_name":"stdout","time":2103.894811307,"data":"[  34.7 min] accuracy\n"}
+,{"stream_name":"stdout","time":2285.327916354,"data":"[  37.7 min] fidelity: 49 reliable relations, 417 rows\n"}
+,{"stream_name":"stdout","time":2285.398452998,"data":"    mark   model  partial_beyond_nuclear  A_accuracy  B_jackson_test_reproduced  B_jackson_test_of  B_jackson_test B_jackson_test_full_inputs_reproduced  C_danenberg_reproduced  C_danenberg_of  C_danenberg C_danenberg_full_inputs_reproduced  jackson_oof_reproduced  jackson_oof_of  jackson_oof jackson_oof_full_inputs_reproduced             verdict\n"}
+,{"stream_name":"stdout","time":2285.398496038,"data":"h3k27me3 nuclear                0.172652       False                          7                 33           False                                  7/33                       0              33        False                               0/33                       3              33        False                               3/33                  no\n"}
+,{"stream_name":"stdout","time":2285.398503782,"data":"h3k27me3    lgbm                0.601887        True                         29                 33            True                                 27/33                      19              33        False                              27/33                      32              33         True                              29/33 only within Jackson\n"}
+,{"stream_name":"stdout","time":2285.398509879,"data":"    phh3 nuclear                0.120419       False                          4                 16           False                                  4/16                       0              16        False                               0/16                       6              16        False                               6/16                  no\n"}
+,{"stream_name":"stdout","time":2285.398516342,"data":"    phh3    lgbm                0.293145       False                          9                 16           False                                  3/16                      13              16         True                              10/16                      16              16         True                              11/16                  no\n"}
+,{"stream_name":"stdout","time":2287.192550426,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":2293.246177148,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2293.246240935,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2293.499555958,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2293.499587462,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2294.361054979,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2294.844631066,"data":"[NbConvertApp] Writing 79809 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2298.865320714,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2300.639028063,"data":"[NbConvertApp] Writing 594984 bytes to __results__.html\n"}
+]

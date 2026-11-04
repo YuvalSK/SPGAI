@@ -1,0 +1,505 @@
+train,test,cls,group,mean_abs_shap,share
+Both,Danenberg,B cell,neighbours: epithelial,0.24886431265622377,0.036104166098170486
+Both,Danenberg,B cell,neighbours: hormone/HER2,0.2827330604195595,0.04101769862412035
+Both,Danenberg,B cell,neighbours: immune,0.8711235281080008,0.12637886169834883
+Both,Danenberg,B cell,neighbours: nuclear,0.28670983854681253,0.04159463252239387
+Both,Danenberg,B cell,neighbours: proliferation,0.1082467120140791,0.0157039682726056
+Both,Danenberg,B cell,neighbours: size/density,0.18320695217698812,0.026578878108870285
+Both,Danenberg,B cell,neighbours: stroma,0.157218630425632,0.022808603957832047
+Both,Danenberg,B cell,own: epithelial,0.16310006007552147,0.02366185652228327
+Both,Danenberg,B cell,own: hormone/HER2,0.13726595789194107,0.019913955884068683
+Both,Danenberg,B cell,own: immune,3.7963992431759834,0.5507653041436056
+Both,Danenberg,B cell,own: nuclear,0.296744417399168,0.043050406143544176
+Both,Danenberg,B cell,own: proliferation,0.09788265079259872,0.014200394763820401
+Both,Danenberg,B cell,own: size/density,0.05813959240913391,0.008434642471694734
+Both,Danenberg,B cell,own: stroma,0.20531783998012543,0.02978663078864173
+Both,Danenberg,T cell,neighbours: epithelial,0.17245905846357346,0.04549254576279361
+Both,Danenberg,T cell,neighbours: hormone/HER2,0.19225838780403137,0.05071536156683358
+Both,Danenberg,T cell,neighbours: immune,0.3953884607180953,0.10429853788803857
+Both,Danenberg,T cell,neighbours: nuclear,0.16635411698371172,0.043882138445682756
+Both,Danenberg,T cell,neighbours: proliferation,0.06590643245726824,0.017385293769639983
+Both,Danenberg,T cell,neighbours: size/density,0.0990182850509882,0.026119786946342843
+Both,Danenberg,T cell,neighbours: stroma,0.06895983405411243,0.018190742976623573
+Both,Danenberg,T cell,own: epithelial,0.194351302459836,0.05126744631439657
+Both,Danenberg,T cell,own: hormone/HER2,0.2763322815299034,0.07289300472373586
+Both,Danenberg,T cell,own: immune,1.5279264226555824,0.40304790785763367
+Both,Danenberg,T cell,own: nuclear,0.28624286875128746,0.07550729385833763
+Both,Danenberg,T cell,own: proliferation,0.10369628667831421,0.027353785351561445
+Both,Danenberg,T cell,own: size/density,0.06870736926794052,0.018124145919091537
+Both,Danenberg,T cell,own: stroma,0.1733289361000061,0.04572200861928834
+Both,Danenberg,endothelial,neighbours: epithelial,0.25798201095312834,0.06532536435543676
+Both,Danenberg,endothelial,neighbours: hormone/HER2,0.3503646971657872,0.08871820719234444
+Both,Danenberg,endothelial,neighbours: immune,0.382114025298506,0.09675766862861876
+Both,Danenberg,endothelial,neighbours: nuclear,0.1712545081973076,0.043364508649918296
+Both,Danenberg,endothelial,neighbours: proliferation,0.05813019583001733,0.014719538810551802
+Both,Danenberg,endothelial,neighbours: size/density,0.19718637596815825,0.04993089172558013
+Both,Danenberg,endothelial,neighbours: stroma,0.4237872567027807,0.10731002852105824
+Both,Danenberg,endothelial,own: epithelial,0.24184629786759615,0.06123953165511453
+Both,Danenberg,endothelial,own: hormone/HER2,0.19384444318711758,0.049084658394169575
+Both,Danenberg,endothelial,own: immune,0.8370818309485912,0.21196313417359905
+Both,Danenberg,endothelial,own: nuclear,0.10704516619443893,0.02710562825022126
+Both,Danenberg,endothelial,own: proliferation,0.09169204533100128,0.023217961002835765
+Both,Danenberg,endothelial,own: size/density,0.019220830872654915,0.004867036175629068
+Both,Danenberg,endothelial,own: stroma,0.6176362633705139,0.1563958424649223
+Both,Danenberg,epithelial,neighbours: epithelial,0.8302497593685985,0.12798887774601173
+Both,Danenberg,epithelial,neighbours: hormone/HER2,0.1774321384727955,0.02735242018796658
+Both,Danenberg,epithelial,neighbours: immune,0.3687825279776007,0.05685043729983823
+Both,Danenberg,epithelial,neighbours: nuclear,0.16570363333448768,0.02554438809479025
+Both,Danenberg,epithelial,neighbours: proliferation,0.10921165905892849,0.016835750353438744
+Both,Danenberg,epithelial,neighbours: size/density,0.11951148975640535,0.018423542167972384
+Both,Danenberg,epithelial,neighbours: stroma,0.06454364210367203,0.009949859334824222
+Both,Danenberg,epithelial,own: epithelial,3.2847548127174377,0.5063682071648385
+Both,Danenberg,epithelial,own: hormone/HER2,0.6160025000572205,0.09496114606647979
+Both,Danenberg,epithelial,own: immune,0.2010809537023306,0.03099805246559933
+Both,Danenberg,epithelial,own: nuclear,0.1550564393401146,0.023903047769054737
+Both,Danenberg,epithelial,own: proliferation,0.1773384064435959,0.02733797073213628
+Both,Danenberg,epithelial,own: size/density,0.12007703632116318,0.018510725174434816
+Both,Danenberg,epithelial,own: stroma,0.09714490920305252,0.014975575442614401
+Both,Danenberg,myeloid,neighbours: epithelial,0.27746164379641414,0.06802620265971268
+Both,Danenberg,myeloid,neighbours: hormone/HER2,0.23003929667174816,0.056399506616389296
+Both,Danenberg,myeloid,neighbours: immune,0.40668723499402404,0.09970887466925335
+Both,Danenberg,myeloid,neighbours: nuclear,0.1604408766143024,0.03933582832614771
+Both,Danenberg,myeloid,neighbours: proliferation,0.06208544783294201,0.01522169766860336
+Both,Danenberg,myeloid,neighbours: size/density,0.08523733075708151,0.020897922526937486
+Both,Danenberg,myeloid,neighbours: stroma,0.05006262846291065,0.012274022682553839
+Both,Danenberg,myeloid,own: epithelial,0.22022903338074684,0.0539942914318773
+Both,Danenberg,myeloid,own: hormone/HER2,0.07864007540047169,0.019280451283899984
+Both,Danenberg,myeloid,own: immune,1.7290210351347923,0.42390989157869924
+Both,Danenberg,myeloid,own: nuclear,0.502872247248888,0.12329087702081906
+Both,Danenberg,myeloid,own: proliferation,0.0550018846988678,0.013484996715209708
+Both,Danenberg,myeloid,own: size/density,0.02832671068608761,0.0069449547528405015
+Both,Danenberg,myeloid,own: stroma,0.19264116883277893,0.04723048206705646
+Both,Danenberg,stroma,neighbours: epithelial,0.14093990111723542,0.05306675170182112
+Both,Danenberg,stroma,neighbours: hormone/HER2,0.12400203105062246,0.04668929763765944
+Both,Danenberg,stroma,neighbours: immune,0.2416718266904354,0.09099437929674094
+Both,Danenberg,stroma,neighbours: nuclear,0.12358271097764373,0.04653141506487515
+Both,Danenberg,stroma,neighbours: proliferation,0.09152290876954794,0.034460244658906534
+Both,Danenberg,stroma,neighbours: size/density,0.148557438980788,0.05593491030829066
+Both,Danenberg,stroma,neighbours: stroma,0.2191661992110312,0.08252055083598593
+Both,Danenberg,stroma,own: epithelial,0.06344715878367424,0.023889151295477386
+Both,Danenberg,stroma,own: hormone/HER2,0.26566120609641075,0.10002687066594337
+Both,Danenberg,stroma,own: immune,0.7050537765026093,0.2654671487457132
+Both,Danenberg,stroma,own: nuclear,0.20091544091701508,0.07564876753628792
+Both,Danenberg,stroma,own: proliferation,0.07542391121387482,0.028398643230475727
+Both,Danenberg,stroma,own: size/density,0.03994721174240112,0.015040941209052944
+Both,Danenberg,stroma,own: stroma,0.21600668132305145,0.0813309278127697
+Both,Jackson,B cell,neighbours: epithelial,0.35175470262765884,0.04574649647171636
+Both,Jackson,B cell,neighbours: hormone/HER2,0.3509558439254761,0.045642603086559576
+Both,Jackson,B cell,neighbours: immune,0.7529674358665943,0.09792512194115575
+Both,Jackson,B cell,neighbours: nuclear,0.27088677883148193,0.03522943966200892
+Both,Jackson,B cell,neighbours: proliferation,0.12486103270202875,0.016238460351173944
+Both,Jackson,B cell,neighbours: size/density,0.16790402866899967,0.021836299551121877
+Both,Jackson,B cell,neighbours: stroma,0.07488005328923464,0.009738320676337574
+Both,Jackson,B cell,own: epithelial,0.23661845549941063,0.030772766529591305
+Both,Jackson,B cell,own: hormone/HER2,0.11145912110805511,0.014495511367498404
+Both,Jackson,B cell,own: immune,4.849293515086174,0.6306616145314992
+Both,Jackson,B cell,own: nuclear,0.18818476051092148,0.024473854701684773
+Both,Jackson,B cell,own: proliferation,0.06825623661279678,0.008876878301994365
+Both,Jackson,B cell,own: size/density,0.05164351314306259,0.00671635595526615
+Both,Jackson,B cell,own: stroma,0.08955074101686478,0.01164627687239189
+Both,Jackson,T cell,neighbours: epithelial,0.21438953513279557,0.03782568609054264
+Both,Jackson,T cell,neighbours: hormone/HER2,0.1479940554127097,0.026111240363668277
+Both,Jackson,T cell,neighbours: immune,0.5498941466212273,0.0970202363666562
+Both,Jackson,T cell,neighbours: nuclear,0.22300798865035176,0.03934627764898361
+Both,Jackson,T cell,neighbours: proliferation,0.07997553236782551,0.014110433983615837
+Both,Jackson,T cell,neighbours: size/density,0.09040878433734179,0.015951218393442605
+Both,Jackson,T cell,neighbours: stroma,0.07779533509165049,0.013725772214873387
+Both,Jackson,T cell,own: epithelial,0.23372120782732964,0.04123645790128249
+Both,Jackson,T cell,own: hormone/HER2,0.15485378727316856,0.02732153294561865
+Both,Jackson,T cell,own: immune,3.4994382113218307,0.6174212337030293
+Both,Jackson,T cell,own: nuclear,0.2507362365722656,0.04423849405817257
+Both,Jackson,T cell,own: proliferation,0.03828306496143341,0.00675444907755442
+Both,Jackson,T cell,own: size/density,0.047181203961372375,0.008324386772476076
+Both,Jackson,T cell,own: stroma,0.06015029549598694,0.010612580480083969
+Both,Jackson,endothelial,neighbours: epithelial,0.3432642365805805,0.09123244975759806
+Both,Jackson,endothelial,neighbours: hormone/HER2,0.3131343242712319,0.08322454966772604
+Both,Jackson,endothelial,neighbours: immune,0.35603775968775153,0.0946273848569
+Both,Jackson,endothelial,neighbours: nuclear,0.20396220264956355,0.05420888465118959
+Both,Jackson,endothelial,neighbours: proliferation,0.07919985940679908,0.021049665022250096
+Both,Jackson,endothelial,neighbours: size/density,0.19293466862291098,0.0512779969069296
+Both,Jackson,endothelial,neighbours: stroma,0.2836891282349825,0.07539863283252106
+Both,Jackson,endothelial,own: epithelial,0.4084383640438318,0.10855436877985705
+Both,Jackson,endothelial,own: hormone/HER2,0.30901920795440674,0.0821308378777613
+Both,Jackson,endothelial,own: immune,0.5041864141821861,0.1340021965543208
+Both,Jackson,endothelial,own: nuclear,0.05921048764139414,0.01573690837320387
+Both,Jackson,endothelial,own: proliferation,0.10321273654699326,0.027431785190232892
+Both,Jackson,endothelial,own: size/density,0.014888625591993332,0.0039570850718739425
+Both,Jackson,endothelial,own: stroma,0.591345489025116,0.15716725445763569
+Both,Jackson,epithelial,neighbours: epithelial,0.8244515508413315,0.12145780055022465
+Both,Jackson,epithelial,neighbours: hormone/HER2,0.21896495018154383,0.032257809715440906
+Both,Jackson,epithelial,neighbours: immune,0.4181855076458305,0.061606885121157105
+Both,Jackson,epithelial,neighbours: nuclear,0.21649328246712685,0.03189368483268978
+Both,Jackson,epithelial,neighbours: proliferation,0.12053066119551659,0.017756518248686216
+Both,Jackson,epithelial,neighbours: size/density,0.14611551631242037,0.02152566663190436
+Both,Jackson,epithelial,neighbours: stroma,0.09241746924817562,0.013614896516171015
+Both,Jackson,epithelial,own: epithelial,3.1591159999370575,0.46539942904325116
+Both,Jackson,epithelial,own: hormone/HER2,0.7521151304244995,0.11080123435838587
+Both,Jackson,epithelial,own: immune,0.22596168890595436,0.03328856585341443
+Both,Jackson,epithelial,own: nuclear,0.16202841326594353,0.023869946853568053
+Both,Jackson,epithelial,own: proliferation,0.2181980162858963,0.032144825387814005
+Both,Jackson,epithelial,own: size/density,0.1413402557373047,0.020822177571915467
+Both,Jackson,epithelial,own: stroma,0.09204863011837006,0.013560559315376952
+Both,Jackson,myeloid,neighbours: epithelial,0.24165086261928082,0.0433923507651622
+Both,Jackson,myeloid,neighbours: hormone/HER2,0.24860350135713816,0.0446408103633879
+Both,Jackson,myeloid,neighbours: immune,0.5308446325361729,0.09532180538127889
+Both,Jackson,myeloid,neighbours: nuclear,0.16797126783058047,0.030161978704196877
+Both,Jackson,myeloid,neighbours: proliferation,0.10912831127643585,0.019595766843081352
+Both,Jackson,myeloid,neighbours: size/density,0.11769099207594991,0.021133335733650616
+Both,Jackson,myeloid,neighbours: stroma,0.04940834967419505,0.008872074432311165
+Both,Jackson,myeloid,own: epithelial,0.2372484765946865,0.042601830605158424
+Both,Jackson,myeloid,own: hormone/HER2,0.08667603880167007,0.015564095397178146
+Both,Jackson,myeloid,own: immune,3.3238064646720886,0.5968436215259648
+Both,Jackson,myeloid,own: nuclear,0.2761848121881485,0.04959348423829041
+Both,Jackson,myeloid,own: proliferation,0.04781712219119072,0.008586343604201218
+Both,Jackson,myeloid,own: size/density,0.019819777458906174,0.00355896406187996
+Both,Jackson,myeloid,own: stroma,0.11212314665317535,0.02013353834425798
+Both,Jackson,stroma,neighbours: epithelial,0.15331773599609733,0.05440843822151214
+Both,Jackson,stroma,neighbours: hormone/HER2,0.157301711384207,0.05582224646340731
+Both,Jackson,stroma,neighbours: immune,0.23770912922918797,0.08435672747401472
+Both,Jackson,stroma,neighbours: nuclear,0.16663145506754518,0.059133127487833406
+Both,Jackson,stroma,neighbours: proliferation,0.14899979904294014,0.05287611579036029
+Both,Jackson,stroma,neighbours: size/density,0.2185918022878468,0.07757249018345828
+Both,Jackson,stroma,neighbours: stroma,0.20666620414704084,0.07334040858191979
+Both,Jackson,stroma,own: epithelial,0.09407075308263302,0.03338323987302973
+Both,Jackson,stroma,own: hormone/HER2,0.2944951821118593,0.1045086063811556
+Both,Jackson,stroma,own: immune,0.559754841029644,0.19864229333603628
+Both,Jackson,stroma,own: nuclear,0.18733500689268112,0.06648027433373033
+Both,Jackson,stroma,own: proliferation,0.09096178412437439,0.0322799484345081
+Both,Jackson,stroma,own: size/density,0.08738832175731659,0.031011820483284557
+Both,Jackson,stroma,own: stroma,0.21467991173267365,0.07618426295574947
+Danenberg,Danenberg,B cell,neighbours: epithelial,0.3845920851454139,0.051477322290010105
+Danenberg,Danenberg,B cell,neighbours: hormone/HER2,0.2660139612853527,0.03560574163545462
+Danenberg,Danenberg,B cell,neighbours: immune,0.9027831014245749,0.12083674746565931
+Danenberg,Danenberg,B cell,neighbours: nuclear,0.3788875825703144,0.05071377948997677
+Danenberg,Danenberg,B cell,neighbours: proliferation,0.11964325699955225,0.01601414781602637
+Danenberg,Danenberg,B cell,neighbours: size/density,0.17180951032787561,0.022996556292345056
+Danenberg,Danenberg,B cell,neighbours: stroma,0.15680387429893017,0.02098806471941903
+Danenberg,Danenberg,B cell,own: epithelial,0.17150692827999592,0.022956055943535263
+Danenberg,Danenberg,B cell,own: hormone/HER2,0.1665300354361534,0.02228990308490725
+Danenberg,Danenberg,B cell,own: immune,4.027281194925308,0.5390481500556155
+Danenberg,Danenberg,B cell,own: nuclear,0.39151251316070557,0.05240361567223946
+Danenberg,Danenberg,B cell,own: proliferation,0.06255032867193222,0.008372308096703718
+Danenberg,Danenberg,B cell,own: size/density,0.04263605549931526,0.005706799632351148
+Danenberg,Danenberg,B cell,own: stroma,0.2285469025373459,0.030590807805756466
+Danenberg,Danenberg,T cell,neighbours: epithelial,0.24222781602293253,0.06975807864000222
+Danenberg,Danenberg,T cell,neighbours: hormone/HER2,0.12580646388232708,0.03623042697991842
+Danenberg,Danenberg,T cell,neighbours: immune,0.3749907836318016,0.10799187724743696
+Danenberg,Danenberg,T cell,neighbours: nuclear,0.19583817571401596,0.05639853872471664
+Danenberg,Danenberg,T cell,neighbours: proliferation,0.05939096491783857,0.017103731806143867
+Danenberg,Danenberg,T cell,neighbours: size/density,0.09664157638326287,0.027831364687692137
+Danenberg,Danenberg,T cell,neighbours: stroma,0.05642443522810936,0.01624941451599235
+Danenberg,Danenberg,T cell,own: epithelial,0.16381570138037205,0.047176533095923366
+Danenberg,Danenberg,T cell,own: hormone/HER2,0.17125403694808483,0.04931866526721004
+Danenberg,Danenberg,T cell,own: immune,1.4857234209775925,0.4278666791432242
+Danenberg,Danenberg,T cell,own: nuclear,0.3040926791727543,0.08757425706044288
+Danenberg,Danenberg,T cell,own: proliferation,0.05776066705584526,0.016634229796297112
+Danenberg,Danenberg,T cell,own: size/density,0.03443611413240433,0.009917098693062272
+Danenberg,Danenberg,T cell,own: stroma,0.10399521142244339,0.029949104341937566
+Danenberg,Danenberg,endothelial,neighbours: epithelial,0.29921264573931694,0.07205363750799147
+Danenberg,Danenberg,endothelial,neighbours: hormone/HER2,0.3056498086079955,0.07360377586786468
+Danenberg,Danenberg,endothelial,neighbours: immune,0.45270493160933256,0.10901623813278802
+Danenberg,Danenberg,endothelial,neighbours: nuclear,0.2634194064885378,0.06343423881967739
+Danenberg,Danenberg,endothelial,neighbours: proliferation,0.06874700728803873,0.016555022033417677
+Danenberg,Danenberg,endothelial,neighbours: size/density,0.2189398119226098,0.052723071932205594
+Danenberg,Danenberg,endothelial,neighbours: stroma,0.4064161889255047,0.09786940883417938
+Danenberg,Danenberg,endothelial,own: epithelial,0.24528668634593487,0.059067683920365904
+Danenberg,Danenberg,endothelial,own: hormone/HER2,0.14043914899230003,0.03381926425074327
+Danenberg,Danenberg,endothelial,own: immune,0.8482077941298485,0.20425760007126054
+Danenberg,Danenberg,endothelial,own: nuclear,0.13243931159377098,0.03189281698240596
+Danenberg,Danenberg,endothelial,own: proliferation,0.09851580113172531,0.023723669185222437
+Danenberg,Danenberg,endothelial,own: size/density,0.04180542379617691,0.010067197676872386
+Danenberg,Danenberg,endothelial,own: stroma,0.6308536529541016,0.15191637478500528
+Danenberg,Danenberg,epithelial,neighbours: epithelial,1.2834281846880913,0.1714732010928087
+Danenberg,Danenberg,epithelial,neighbours: hormone/HER2,0.3614835673943162,0.048296231283572334
+Danenberg,Danenberg,epithelial,neighbours: immune,0.4223912921734154,0.05643384479693781
+Danenberg,Danenberg,epithelial,neighbours: nuclear,0.2204833698924631,0.02945781437110842
+Danenberg,Danenberg,epithelial,neighbours: proliferation,0.07289909292012453,0.009739727527344092
+Danenberg,Danenberg,epithelial,neighbours: size/density,0.1498486641794443,0.02002062167005879
+Danenberg,Danenberg,epithelial,neighbours: stroma,0.11842852272093296,0.015822714612260168
+Danenberg,Danenberg,epithelial,own: epithelial,4.368228375911713,0.5836198017609052
+Danenberg,Danenberg,epithelial,own: hormone/HER2,0.21076957881450653,0.02815999742213065
+Danenberg,Danenberg,epithelial,own: immune,0.1008827518671751,0.013478501254762533
+Danenberg,Danenberg,epithelial,own: nuclear,0.05146488919854164,0.006875997737968746
+Danenberg,Danenberg,epithelial,own: proliferation,0.03205202892422676,0.004282330765933859
+Danenberg,Danenberg,epithelial,own: size/density,0.080655038356781,0.010775965321863043
+Danenberg,Danenberg,epithelial,own: stroma,0.011700484901666641,0.0015632503823456607
+Danenberg,Danenberg,myeloid,neighbours: epithelial,0.3185455845668912,0.08029690181743938
+Danenberg,Danenberg,myeloid,neighbours: hormone/HER2,0.17379069980233908,0.04380803073376813
+Danenberg,Danenberg,myeloid,neighbours: immune,0.4170283544808626,0.10512179875406942
+Danenberg,Danenberg,myeloid,neighbours: nuclear,0.19676653668284416,0.04959963045308558
+Danenberg,Danenberg,myeloid,neighbours: proliferation,0.052867515943944454,0.013326500013662547
+Danenberg,Danenberg,myeloid,neighbours: size/density,0.09173318836838007,0.02312350626310354
+Danenberg,Danenberg,myeloid,neighbours: stroma,0.08390087075531483,0.021149186514693292
+Danenberg,Danenberg,myeloid,own: epithelial,0.1797364018857479,0.045306784694135675
+Danenberg,Danenberg,myeloid,own: hormone/HER2,0.09823596104979515,0.024762682961316628
+Danenberg,Danenberg,myeloid,own: immune,1.6391346901655197,0.4131824255568716
+Danenberg,Danenberg,myeloid,own: nuclear,0.5375256314873695,0.13549596964146565
+Danenberg,Danenberg,myeloid,own: proliferation,0.01220798585563898,0.003077309776469644
+Danenberg,Danenberg,myeloid,own: size/density,0.04289146885275841,0.010811802863186407
+Danenberg,Danenberg,myeloid,own: stroma,0.12273193895816803,0.030937469956732484
+Danenberg,Danenberg,stroma,neighbours: epithelial,0.17450930178165436,0.0631099338495794
+Danenberg,Danenberg,stroma,neighbours: hormone/HER2,0.12628000229597092,0.04566818221182793
+Danenberg,Danenberg,stroma,neighbours: immune,0.2544396840967238,0.09201613592004076
+Danenberg,Danenberg,stroma,neighbours: nuclear,0.13534307992085814,0.04894577385617411
+Danenberg,Danenberg,stroma,neighbours: proliferation,0.04940279945731163,0.017866138789758998
+Danenberg,Danenberg,stroma,neighbours: size/density,0.11439699679613113,0.041370785549457494
+Danenberg,Danenberg,stroma,neighbours: stroma,0.18086436297744513,0.06540819238125468
+Danenberg,Danenberg,stroma,own: epithelial,0.09582337457686663,0.03465377930602245
+Danenberg,Danenberg,stroma,own: hormone/HER2,0.2746952474117279,0.0993414030997543
+Danenberg,Danenberg,stroma,own: immune,0.809176716953516,0.29263247608113896
+Danenberg,Danenberg,stroma,own: nuclear,0.21673726104199886,0.07838134739782408
+Danenberg,Danenberg,stroma,own: proliferation,0.025920430198311806,0.009373922297934888
+Danenberg,Danenberg,stroma,own: size/density,0.0365598089993,0.013221571021961644
+Danenberg,Danenberg,stroma,own: stroma,0.2710146903991699,0.09801035823727029
+Danenberg,Jackson,B cell,neighbours: epithelial,0.6095696240663528,0.07566426831729312
+Danenberg,Jackson,B cell,neighbours: hormone/HER2,0.4047266896814108,0.05023765560846037
+Danenberg,Jackson,B cell,neighbours: immune,0.8864841656759381,0.11003693937910962
+Danenberg,Jackson,B cell,neighbours: nuclear,0.4047406082972884,0.050239383289507444
+Danenberg,Jackson,B cell,neighbours: proliferation,0.1878961194306612,0.02332304930409746
+Danenberg,Jackson,B cell,neighbours: size/density,0.18142177164554596,0.022519405604261283
+Danenberg,Jackson,B cell,neighbours: stroma,0.12364466488361359,0.015347685859650325
+Danenberg,Jackson,B cell,own: epithelial,0.3188676033169031,0.03958019386549367
+Danenberg,Jackson,B cell,own: hormone/HER2,0.17562396079301834,0.02179973864797146
+Danenberg,Jackson,B cell,own: immune,4.11554316803813,0.51085150939861
+Danenberg,Jackson,B cell,own: nuclear,0.3608480766415596,0.04479111920087097
+Danenberg,Jackson,B cell,own: proliferation,0.070360466837883,0.00873365901377671
+Danenberg,Jackson,B cell,own: size/density,0.03488970547914505,0.0043307670406457196
+Danenberg,Jackson,B cell,own: stroma,0.18162494897842407,0.022544625470251864
+Danenberg,Jackson,T cell,neighbours: epithelial,0.4384089205414057,0.10043635267586104
+Danenberg,Jackson,T cell,neighbours: hormone/HER2,0.20933710178360343,0.04795763497904212
+Danenberg,Jackson,T cell,neighbours: immune,0.5065617505460978,0.11604967929739994
+Danenberg,Jackson,T cell,neighbours: nuclear,0.2803789107128978,0.06423280603975473
+Danenberg,Jackson,T cell,neighbours: proliferation,0.0973987253382802,0.02231335237470592
+Danenberg,Jackson,T cell,neighbours: size/density,0.1002989960834384,0.022977783689325303
+Danenberg,Jackson,T cell,neighbours: stroma,0.06534224189817905,0.01496944095893942
+Danenberg,Jackson,T cell,own: epithelial,0.3315802998840809,0.07596267862980226
+Danenberg,Jackson,T cell,own: hormone/HER2,0.11514169722795486,0.026378140518223972
+Danenberg,Jackson,T cell,own: immune,1.7981008253991604,0.4119320574579654
+Danenberg,Jackson,T cell,own: nuclear,0.2750762775540352,0.06301801065330014
+Danenberg,Jackson,T cell,own: proliferation,0.03604330122470856,0.0082572628972435
+Danenberg,Jackson,T cell,own: size/density,0.041924238204956055,0.00960454355905856
+Danenberg,Jackson,T cell,own: stroma,0.06944894045591354,0.01591025626937769
+Danenberg,Jackson,endothelial,neighbours: epithelial,0.4866465777158737,0.1134855633030847
+Danenberg,Jackson,endothelial,neighbours: hormone/HER2,0.3492143349722028,0.08143648251641622
+Danenberg,Jackson,endothelial,neighbours: immune,0.493288422934711,0.1150344358947085
+Danenberg,Jackson,endothelial,neighbours: nuclear,0.3433837229385972,0.0800767888057542
+Danenberg,Jackson,endothelial,neighbours: proliferation,0.08373994659632444,0.019528083511978482
+Danenberg,Jackson,endothelial,neighbours: size/density,0.22173108160495758,0.05170749749406912
+Danenberg,Jackson,endothelial,neighbours: stroma,0.31948660127818584,0.07450400059118772
+Danenberg,Jackson,endothelial,own: epithelial,0.27051742747426033,0.063084431384087
+Danenberg,Jackson,endothelial,own: hormone/HER2,0.16972491331398487,0.03957970378505451
+Danenberg,Jackson,endothelial,own: immune,0.6108204200863838,0.14244279652779523
+Danenberg,Jackson,endothelial,own: nuclear,0.13977854512631893,0.03259623648397954
+Danenberg,Jackson,endothelial,own: proliferation,0.16184519231319427,0.037742159625917406
+Danenberg,Jackson,endothelial,own: size/density,0.06664890795946121,0.01554246800381472
+Danenberg,Jackson,endothelial,own: stroma,0.5713543891906738,0.13323935207215265
+Danenberg,Jackson,epithelial,neighbours: epithelial,1.3727182867005467,0.1722024105109645
+Danenberg,Jackson,epithelial,neighbours: hormone/HER2,0.3940423158928752,0.04943114497525329
+Danenberg,Jackson,epithelial,neighbours: immune,0.42191218864172697,0.05292731699720659
+Danenberg,Jackson,epithelial,neighbours: nuclear,0.27916618809103966,0.03502036141587534
+Danenberg,Jackson,epithelial,neighbours: proliferation,0.06330495746806264,0.007941371786848308
+Danenberg,Jackson,epithelial,neighbours: size/density,0.17296579107642174,0.021697916060320687
+Danenberg,Jackson,epithelial,neighbours: stroma,0.1293134167790413,0.01622188783853333
+Danenberg,Jackson,epithelial,own: epithelial,4.674094378948212,0.5863477792994647
+Danenberg,Jackson,epithelial,own: hormone/HER2,0.2013084813952446,0.025253401290285995
+Danenberg,Jackson,epithelial,own: immune,0.08734702039510012,0.010957359283921183
+Danenberg,Jackson,epithelial,own: nuclear,0.05573614872992039,0.006991892842747324
+Danenberg,Jackson,epithelial,own: proliferation,0.026563070714473724,0.0033322385604697873
+Danenberg,Jackson,epithelial,own: size/density,0.08004949241876602,0.010041911503796968
+Danenberg,Jackson,epithelial,own: stroma,0.013017584569752216,0.0016330076343119902
+Danenberg,Jackson,myeloid,neighbours: epithelial,0.5295560825616121,0.1084436697158416
+Danenberg,Jackson,myeloid,neighbours: hormone/HER2,0.19412283971905708,0.03975290589235262
+Danenberg,Jackson,myeloid,neighbours: immune,0.4608616288751364,0.09437626705123406
+Danenberg,Jackson,myeloid,neighbours: nuclear,0.27612967137247324,0.05654644685830121
+Danenberg,Jackson,myeloid,neighbours: proliferation,0.08544115908443928,0.017496830158330954
+Danenberg,Jackson,myeloid,neighbours: size/density,0.13210734724998474,0.027053235727013923
+Danenberg,Jackson,myeloid,neighbours: stroma,0.10056147351861,0.02059320170139242
+Danenberg,Jackson,myeloid,own: epithelial,0.21282155439257622,0.043582070177194815
+Danenberg,Jackson,myeloid,own: hormone/HER2,0.10785279422998428,0.022086334536713128
+Danenberg,Jackson,myeloid,own: immune,2.1959468945860863,0.44969087806165486
+Danenberg,Jackson,myeloid,own: nuclear,0.41295539028942585,0.08456592120573493
+Danenberg,Jackson,myeloid,own: proliferation,0.014640694484114647,0.0029981539053725247
+Danenberg,Jackson,myeloid,own: size/density,0.03208686411380768,0.006570819236638658
+Danenberg,Jackson,myeloid,own: stroma,0.12815207242965698,0.026243265772224283
+Danenberg,Jackson,stroma,neighbours: epithelial,0.26428190153092146,0.09024226463725207
+Danenberg,Jackson,stroma,neighbours: hormone/HER2,0.14947834890335798,0.05104119745293289
+Danenberg,Jackson,stroma,neighbours: immune,0.24694556882604957,0.08432256330799003
+Danenberg,Jackson,stroma,neighbours: nuclear,0.22144143655896187,0.07561386763092066
+Danenberg,Jackson,stroma,neighbours: proliferation,0.07257777452468872,0.024782562474008302
+Danenberg,Jackson,stroma,neighbours: size/density,0.11694750189781189,0.03993314469811732
+Danenberg,Jackson,stroma,neighbours: stroma,0.19642029702663422,0.06707009568845287
+Danenberg,Jackson,stroma,own: epithelial,0.17878077365458012,0.06104686622402565
+Danenberg,Jackson,stroma,own: hormone/HER2,0.24431799910962582,0.08342534771990483
+Danenberg,Jackson,stroma,own: immune,0.5570712015032768,0.19021872665756054
+Danenberg,Jackson,stroma,own: nuclear,0.18423347175121307,0.06290875620503829
+Danenberg,Jackson,stroma,own: proliferation,0.011932756751775742,0.00407458470068451
+Danenberg,Jackson,stroma,own: size/density,0.03924080356955528,0.013399248907280581
+Danenberg,Jackson,stroma,own: stroma,0.44491249322891235,0.15192077369583146
+Jackson,Danenberg,B cell,neighbours: epithelial,0.38274478539824486,0.042366746929805896
+Jackson,Danenberg,B cell,neighbours: hormone/HER2,0.4769690576940775,0.05279661051331369
+Jackson,Danenberg,B cell,neighbours: immune,1.04402872081846,0.11556552117709792
+Jackson,Danenberg,B cell,neighbours: nuclear,0.3985699564218521,0.04411846515421084
+Jackson,Danenberg,B cell,neighbours: proliferation,0.1290524024516344,0.014285055431030647
+Jackson,Danenberg,B cell,neighbours: size/density,0.3423553965985775,0.037895968805044304
+Jackson,Danenberg,B cell,neighbours: stroma,0.1795157678425312,0.01987094114993835
+Jackson,Danenberg,B cell,own: epithelial,0.24542901664972305,0.027167003795520856
+Jackson,Danenberg,B cell,own: hormone/HER2,0.21614901721477509,0.02392594507051546
+Jackson,Danenberg,B cell,own: immune,5.244052790105343,0.5804741590764319
+Jackson,Danenberg,B cell,own: nuclear,0.16899750754237175,0.018706654948586164
+Jackson,Danenberg,B cell,own: proliferation,0.0844617560505867,0.009349232126360454
+Jackson,Danenberg,B cell,own: size/density,0.06154731288552284,0.006812788909762336
+Jackson,Danenberg,B cell,own: stroma,0.06021133437752724,0.006664906912381192
+Jackson,Danenberg,T cell,neighbours: epithelial,0.29869040474295616,0.03494478639692136
+Jackson,Danenberg,T cell,neighbours: hormone/HER2,0.2517887158319354,0.029457601423366814
+Jackson,Danenberg,T cell,neighbours: immune,1.039779013954103,0.12164721385642205
+Jackson,Danenberg,T cell,neighbours: nuclear,0.4921079045161605,0.05757334462200979
+Jackson,Danenberg,T cell,neighbours: proliferation,0.07833983656018972,0.009165238693628036
+Jackson,Danenberg,T cell,neighbours: size/density,0.2521629957482219,0.029501389678763045
+Jackson,Danenberg,T cell,neighbours: stroma,0.1184693668037653,0.013860126243756524
+Jackson,Danenberg,T cell,own: epithelial,0.20294353365898132,0.023743040692761876
+Jackson,Danenberg,T cell,own: hormone/HER2,0.39590077102184296,0.04631775128377649
+Jackson,Danenberg,T cell,own: immune,4.747370198369026,0.5554106690232674
+Jackson,Danenberg,T cell,own: nuclear,0.35660359263420105,0.041720243352647526
+Jackson,Danenberg,T cell,own: proliferation,0.09048163145780563,0.010585747764006613
+Jackson,Danenberg,T cell,own: size/density,0.11905296891927719,0.013928403801199004
+Jackson,Danenberg,T cell,own: stroma,0.1038045734167099,0.012144443167473436
+Jackson,Danenberg,endothelial,neighbours: epithelial,0.282477512024343,0.05966279252140454
+Jackson,Danenberg,endothelial,neighbours: hormone/HER2,0.38522240705788136,0.08136380266939543
+Jackson,Danenberg,endothelial,neighbours: immune,0.6957838628441095,0.14695827625751706
+Jackson,Danenberg,endothelial,neighbours: nuclear,0.5068140486255288,0.10704548200450076
+Jackson,Danenberg,endothelial,neighbours: proliferation,0.09483924880623817,0.02003123853598948
+Jackson,Danenberg,endothelial,neighbours: size/density,0.20807400532066822,0.04394783896098189
+Jackson,Danenberg,endothelial,neighbours: stroma,0.34347447007894516,0.07254611490260324
+Jackson,Danenberg,endothelial,own: epithelial,0.24352449737489223,0.051435427396094545
+Jackson,Danenberg,endothelial,own: hormone/HER2,0.3847203478217125,0.0812577614634023
+Jackson,Danenberg,endothelial,own: immune,0.7847151532769203,0.16574167990522518
+Jackson,Danenberg,endothelial,own: nuclear,0.12729492224752903,0.02688628372805887
+Jackson,Danenberg,endothelial,own: proliferation,0.0286464411765337,0.006050487573838666
+Jackson,Danenberg,endothelial,own: size/density,0.016653157770633698,0.0035173557348873526
+Jackson,Danenberg,endothelial,own: stroma,0.6323273181915283,0.1335554583461007
+Jackson,Danenberg,epithelial,neighbours: epithelial,0.4593084529042244,0.06992167477776248
+Jackson,Danenberg,epithelial,neighbours: hormone/HER2,0.2644421998411417,0.040256697602436664
+Jackson,Danenberg,epithelial,neighbours: immune,0.5658911885693669,0.08614703125221934
+Jackson,Danenberg,epithelial,neighbours: nuclear,0.2525405930355191,0.03844488622571664
+Jackson,Danenberg,epithelial,neighbours: proliferation,0.09632406570017338,0.014663653482910686
+Jackson,Danenberg,epithelial,neighbours: size/density,0.15294773550704122,0.02328361638567225
+Jackson,Danenberg,epithelial,neighbours: stroma,0.08866630960255861,0.013497894115759438
+Jackson,Danenberg,epithelial,own: epithelial,2.291581764817238,0.34885322460985385
+Jackson,Danenberg,epithelial,own: hormone/HER2,1.0260334610939026,0.15619564047663978
+Jackson,Danenberg,epithelial,own: immune,0.41156940534710884,0.06265424014558336
+Jackson,Danenberg,epithelial,own: nuclear,0.17436043079942465,0.026543324555383555
+Jackson,Danenberg,epithelial,own: proliferation,0.33124789595603943,0.05042669584111908
+Jackson,Danenberg,epithelial,own: size/density,0.18285803496837616,0.027836936095372963
+Jackson,Danenberg,epithelial,own: stroma,0.27112793922424316,0.041274484433569895
+Jackson,Danenberg,myeloid,neighbours: epithelial,0.29099868331104517,0.04366559154782154
+Jackson,Danenberg,myeloid,neighbours: hormone/HER2,0.2940152082592249,0.04411823396112152
+Jackson,Danenberg,myeloid,neighbours: immune,1.010899793356657,0.15168981855944208
+Jackson,Danenberg,myeloid,neighbours: nuclear,0.4208080852404237,0.063144045055656
+Jackson,Danenberg,myeloid,neighbours: proliferation,0.09015476796776056,0.013528106826383834
+Jackson,Danenberg,myeloid,neighbours: size/density,0.510846858844161,0.07665474643379638
+Jackson,Danenberg,myeloid,neighbours: stroma,0.1307881958782673,0.0196253257077199
+Jackson,Danenberg,myeloid,own: epithelial,0.10817326791584492,0.016231859469128633
+Jackson,Danenberg,myeloid,own: hormone/HER2,0.19101990014314651,0.02866334940849439
+Jackson,Danenberg,myeloid,own: immune,3.2029921486973763,0.4806226107435805
+Jackson,Danenberg,myeloid,own: nuclear,0.12972581759095192,0.019465911321938634
+Jackson,Danenberg,myeloid,own: proliferation,0.02169724367558956,0.003255763803711642
+Jackson,Danenberg,myeloid,own: size/density,0.07892235368490219,0.011842635233899161
+Jackson,Danenberg,myeloid,own: stroma,0.1832137405872345,0.02749200192730584
+Jackson,Danenberg,stroma,neighbours: epithelial,0.20209051575511694,0.059817902819711076
+Jackson,Danenberg,stroma,neighbours: hormone/HER2,0.20571550726890564,0.06089088434625062
+Jackson,Danenberg,stroma,neighbours: immune,0.42185587156564,0.12486748047006767
+Jackson,Danenberg,stroma,neighbours: nuclear,0.2999675520695746,0.08878907459718384
+Jackson,Danenberg,stroma,neighbours: proliferation,0.07571172062307596,0.022410335931015112
+Jackson,Danenberg,stroma,neighbours: size/density,0.2956893490627408,0.08752274534492006
+Jackson,Danenberg,stroma,neighbours: stroma,0.2616409696638584,0.07744457496448037
+Jackson,Danenberg,stroma,own: epithelial,0.09312040731310844,0.027563230537435025
+Jackson,Danenberg,stroma,own: hormone/HER2,0.31724055856466293,0.09390180846332655
+Jackson,Danenberg,stroma,own: immune,0.7026510164141655,0.20798160694965484
+Jackson,Danenberg,stroma,own: nuclear,0.20518473908305168,0.06073377930031329
+Jackson,Danenberg,stroma,own: proliferation,0.05661116912961006,0.016756656792388334
+Jackson,Danenberg,stroma,own: size/density,0.16719883680343628,0.04949011948485487
+Jackson,Danenberg,stroma,own: stroma,0.07375042140483856,0.021829799998398344
+Jackson,Jackson,B cell,neighbours: epithelial,0.53700215741992,0.06080244238892296
+Jackson,Jackson,B cell,neighbours: hormone/HER2,0.4445039853453636,0.05032927258702587
+Jackson,Jackson,B cell,neighbours: immune,0.9845600966364145,0.11147750102492864
+Jackson,Jackson,B cell,neighbours: nuclear,0.36507757287472486,0.04133616184868584
+Jackson,Jackson,B cell,neighbours: proliferation,0.13647030293941498,0.01545194487139474
+Jackson,Jackson,B cell,neighbours: size/density,0.36081512831151485,0.04085354360142265
+Jackson,Jackson,B cell,neighbours: stroma,0.1579610463231802,0.01788524922302832
+Jackson,Jackson,B cell,own: epithelial,0.26088079810142517,0.029538409627904678
+Jackson,Jackson,B cell,own: hormone/HER2,0.25327539443969727,0.02867728251398675
+Jackson,Jackson,B cell,own: immune,5.00395892560482,0.5665767261577443
+Jackson,Jackson,B cell,own: nuclear,0.16148050874471664,0.018283742801068294
+Jackson,Jackson,B cell,own: proliferation,0.0582895427942276,0.006599873983096988
+Jackson,Jackson,B cell,own: size/density,0.07242502272129059,0.008200373519326863
+Jackson,Jackson,B cell,own: stroma,0.035217057913541794,0.003987475851463047
+Jackson,Jackson,T cell,neighbours: epithelial,0.3110143980011344,0.04152004372770869
+Jackson,Jackson,T cell,neighbours: hormone/HER2,0.1997979274019599,0.026672780217733467
+Jackson,Jackson,T cell,neighbours: immune,0.8983490532264113,0.1199285056011145
+Jackson,Jackson,T cell,neighbours: nuclear,0.3826121613383293,0.05107825802155507
+Jackson,Jackson,T cell,neighbours: proliferation,0.08384301699697971,0.011192940758854911
+Jackson,Jackson,T cell,neighbours: size/density,0.22555406484752893,0.030111193229702776
+Jackson,Jackson,T cell,neighbours: stroma,0.11177245527505875,0.014921486787749537
+Jackson,Jackson,T cell,own: epithelial,0.22991260513663292,0.030693053055343124
+Jackson,Jackson,T cell,own: hormone/HER2,0.2485189437866211,0.03317697662712981
+Jackson,Jackson,T cell,own: immune,4.20961457490921,0.5619784239904956
+Jackson,Jackson,T cell,own: nuclear,0.31295162439346313,0.0417786610940972
+Jackson,Jackson,T cell,own: proliferation,0.06692305952310562,0.008934147022290787
+Jackson,Jackson,T cell,own: size/density,0.10200823843479156,0.013617975719515184
+Jackson,Jackson,T cell,own: stroma,0.10783284902572632,0.014395554146709425
+Jackson,Jackson,endothelial,neighbours: epithelial,0.285878743045032,0.07030920798559497
+Jackson,Jackson,endothelial,neighbours: hormone/HER2,0.31656480953097343,0.07785615956317342
+Jackson,Jackson,endothelial,neighbours: immune,0.4813703317195177,0.11838853917736422
+Jackson,Jackson,endothelial,neighbours: nuclear,0.37510377587750554,0.09225327183630154
+Jackson,Jackson,endothelial,neighbours: proliferation,0.06189627479761839,0.015222810943987456
+Jackson,Jackson,endothelial,neighbours: size/density,0.2099245749413967,0.05162898942268443
+Jackson,Jackson,endothelial,neighbours: stroma,0.2571234218776226,0.06323710519433041
+Jackson,Jackson,endothelial,own: epithelial,0.3965306244790554,0.09752300521611046
+Jackson,Jackson,endothelial,own: hormone/HER2,0.34126995503902435,0.08393215946207574
+Jackson,Jackson,endothelial,own: immune,0.697592094540596,0.17156626317066048
+Jackson,Jackson,endothelial,own: nuclear,0.07732883282005787,0.019018304516514255
+Jackson,Jackson,endothelial,own: proliferation,0.02300293929874897,0.005657358172940459
+Jackson,Jackson,endothelial,own: size/density,0.009913220070302486,0.0024380639298532277
+Jackson,Jackson,endothelial,own: stroma,0.5325217843055725,0.1309687614084089
+Jackson,Jackson,epithelial,neighbours: epithelial,0.4644453302025795,0.06709818352571842
+Jackson,Jackson,epithelial,neighbours: hormone/HER2,0.2836178494617343,0.04097412822743316
+Jackson,Jackson,epithelial,neighbours: immune,0.527546510566026,0.07621437935197257
+Jackson,Jackson,epithelial,neighbours: nuclear,0.27728964341804385,0.04005989547947357
+Jackson,Jackson,epithelial,neighbours: proliferation,0.09149441635236144,0.01321815236534193
+Jackson,Jackson,epithelial,neighbours: size/density,0.17709204042330384,0.025584398112225418
+Jackson,Jackson,epithelial,neighbours: stroma,0.07008511479943991,0.010125161325624079
+Jackson,Jackson,epithelial,own: epithelial,2.547681301832199,0.3680622377682563
+Jackson,Jackson,epithelial,own: hormone/HER2,1.1428955793380737,0.1651135501776059
+Jackson,Jackson,epithelial,own: immune,0.39790424332022667,0.05748502613282256
+Jackson,Jackson,epithelial,own: nuclear,0.1662321500480175,0.024015475205513632
+Jackson,Jackson,epithelial,own: proliferation,0.32666268944740295,0.047192794635240086
+Jackson,Jackson,epithelial,own: size/density,0.18714448809623718,0.02703667017737238
+Jackson,Jackson,epithelial,own: stroma,0.26178500056266785,0.037819947515400014
+Jackson,Jackson,myeloid,neighbours: epithelial,0.33636911027133465,0.047767143642820774
+Jackson,Jackson,myeloid,neighbours: hormone/HER2,0.235508156940341,0.033444069678546615
+Jackson,Jackson,myeloid,neighbours: immune,0.9644782282412052,0.1369637361516577
+Jackson,Jackson,myeloid,neighbours: nuclear,0.36807028762996197,0.05226896811568806
+Jackson,Jackson,myeloid,neighbours: proliferation,0.08645629603415728,0.01227749571938552
+Jackson,Jackson,myeloid,neighbours: size/density,0.377218684181571,0.05356811467474543
+Jackson,Jackson,myeloid,neighbours: stroma,0.10495745576918125,0.01490481055786394
+Jackson,Jackson,myeloid,own: epithelial,0.09639628976583481,0.013689055502644968
+Jackson,Jackson,myeloid,own: hormone/HER2,0.21217244863510132,0.030130209705720383
+Jackson,Jackson,myeloid,own: immune,3.8398236706852913,0.54528612538997
+Jackson,Jackson,myeloid,own: nuclear,0.1466631181538105,0.020827353101198497
+Jackson,Jackson,myeloid,own: proliferation,0.019019633531570435,0.002700942325540762
+Jackson,Jackson,myeloid,own: size/density,0.057646989822387695,0.00818634041990652
+Jackson,Jackson,myeloid,own: stroma,0.1970706731081009,0.027985635014310797
+Jackson,Jackson,stroma,neighbours: epithelial,0.20562079967930913,0.0650915956704232
+Jackson,Jackson,stroma,neighbours: hormone/HER2,0.19615448080003262,0.06209492509070479
+Jackson,Jackson,stroma,neighbours: immune,0.3629790307022631,0.11490512798395332
+Jackson,Jackson,stroma,neighbours: nuclear,0.26609890535473824,0.08423662578254122
+Jackson,Jackson,stroma,neighbours: proliferation,0.0683943247422576,0.021650999019641647
+Jackson,Jackson,stroma,neighbours: size/density,0.27680491004139185,0.0876257329613683
+Jackson,Jackson,stroma,neighbours: stroma,0.27177080838009715,0.08603213099886328
+Jackson,Jackson,stroma,own: epithelial,0.11289240047335625,0.035737369455501815
+Jackson,Jackson,stroma,own: hormone/HER2,0.3018418587744236,0.09555146297648996
+Jackson,Jackson,stroma,own: immune,0.6724526807665825,0.2128725210300555
+Jackson,Jackson,stroma,own: nuclear,0.19061389937996864,0.06034099121759305
+Jackson,Jackson,stroma,own: proliferation,0.0293637216091156,0.009295419030275039
+Jackson,Jackson,stroma,own: size/density,0.13560937345027924,0.0429286848388482
+Jackson,Jackson,stroma,own: stroma,0.06834825128316879,0.021636413943740652

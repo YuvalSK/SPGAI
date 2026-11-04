@@ -1,0 +1,331 @@
+rep,task,train,test,model,label,f1
+0,coarse,Jackson,Jackson,Table,epithelial,0.9352804513773647
+0,coarse,Jackson,Jackson,Table,T cell,0.7555555555555555
+0,coarse,Jackson,Jackson,Table,B cell,0.5263157894736842
+0,coarse,Jackson,Jackson,Table,myeloid,0.6292134831460674
+0,coarse,Jackson,Jackson,Table,endothelial,0.5902777777777778
+0,coarse,Jackson,Jackson,Table,stroma,0.729776247848537
+0,coarse,Jackson,Danenberg,Table,epithelial,0.8923346986541837
+0,coarse,Jackson,Danenberg,Table,T cell,0.4838709677419355
+0,coarse,Jackson,Danenberg,Table,B cell,0.5974025974025974
+0,coarse,Jackson,Danenberg,Table,myeloid,0.4387755102040816
+0,coarse,Jackson,Danenberg,Table,endothelial,0.12448132780082988
+0,coarse,Jackson,Danenberg,Table,stroma,0.5425467712733857
+0,coarse,Jackson,Jackson,Table + nbr,epithelial,0.9413342272879651
+0,coarse,Jackson,Jackson,Table + nbr,T cell,0.75
+0,coarse,Jackson,Jackson,Table + nbr,B cell,0.5882352941176471
+0,coarse,Jackson,Jackson,Table + nbr,myeloid,0.7
+0,coarse,Jackson,Jackson,Table + nbr,endothelial,0.5630252100840336
+0,coarse,Jackson,Jackson,Table + nbr,stroma,0.7792
+0,coarse,Jackson,Danenberg,Table + nbr,epithelial,0.8978893325727325
+0,coarse,Jackson,Danenberg,Table + nbr,T cell,0.4713375796178344
+0,coarse,Jackson,Danenberg,Table + nbr,B cell,0.6
+0,coarse,Jackson,Danenberg,Table + nbr,myeloid,0.4429657794676806
+0,coarse,Jackson,Danenberg,Table + nbr,endothelial,0.14709371293001186
+0,coarse,Jackson,Danenberg,Table + nbr,stroma,0.5162548764629389
+0,coarse,Jackson,Jackson,Table + K32,epithelial,0.9398471252907943
+0,coarse,Jackson,Jackson,Table + K32,T cell,0.75
+0,coarse,Jackson,Jackson,Table + K32,B cell,0.5882352941176471
+0,coarse,Jackson,Jackson,Table + K32,myeloid,0.6436781609195402
+0,coarse,Jackson,Jackson,Table + K32,endothelial,0.6060606060606061
+0,coarse,Jackson,Jackson,Table + K32,stroma,0.7539882451721243
+0,coarse,Jackson,Danenberg,Table + K32,epithelial,0.8937968119838678
+0,coarse,Jackson,Danenberg,Table + K32,T cell,0.41688654353562005
+0,coarse,Jackson,Danenberg,Table + K32,B cell,0.6063348416289592
+0,coarse,Jackson,Danenberg,Table + K32,myeloid,0.421474358974359
+0,coarse,Jackson,Danenberg,Table + K32,endothelial,0.09076682316118936
+0,coarse,Jackson,Danenberg,Table + K32,stroma,0.5148883374689827
+0,coarse,Jackson,Jackson,Table + nbr + K32,epithelial,0.9399530358939953
+0,coarse,Jackson,Jackson,Table + nbr + K32,T cell,0.8444444444444444
+0,coarse,Jackson,Jackson,Table + nbr + K32,B cell,0.5882352941176471
+0,coarse,Jackson,Jackson,Table + nbr + K32,myeloid,0.6746987951807228
+0,coarse,Jackson,Jackson,Table + nbr + K32,endothelial,0.5800865800865801
+0,coarse,Jackson,Jackson,Table + nbr + K32,stroma,0.7768069896743447
+0,coarse,Jackson,Danenberg,Table + nbr + K32,epithelial,0.9001605742892226
+0,coarse,Jackson,Danenberg,Table + nbr + K32,T cell,0.4207650273224044
+0,coarse,Jackson,Danenberg,Table + nbr + K32,B cell,0.6086956521739131
+0,coarse,Jackson,Danenberg,Table + nbr + K32,myeloid,0.4293193717277487
+0,coarse,Jackson,Danenberg,Table + nbr + K32,endothelial,0.1446700507614213
+0,coarse,Jackson,Danenberg,Table + nbr + K32,stroma,0.5170473353194307
+0,coarse,Jackson,Jackson,KRONOS linear,epithelial,0.9422632794457275
+0,coarse,Jackson,Jackson,KRONOS linear,T cell,0.5357142857142857
+0,coarse,Jackson,Jackson,KRONOS linear,B cell,0.6666666666666666
+0,coarse,Jackson,Jackson,KRONOS linear,myeloid,0.6024096385542169
+0,coarse,Jackson,Jackson,KRONOS linear,endothelial,0.5253164556962026
+0,coarse,Jackson,Jackson,KRONOS linear,stroma,0.6959641255605381
+0,coarse,Jackson,Danenberg,KRONOS linear,epithelial,0.8660162892687729
+0,coarse,Jackson,Danenberg,KRONOS linear,T cell,0.5371655104063429
+0,coarse,Jackson,Danenberg,KRONOS linear,B cell,0.49361702127659574
+0,coarse,Jackson,Danenberg,KRONOS linear,myeloid,0.3318556048131729
+0,coarse,Jackson,Danenberg,KRONOS linear,endothelial,0.08281573498964803
+0,coarse,Jackson,Danenberg,KRONOS linear,stroma,0.24592592592592594
+0,coarse,Danenberg,Jackson,Table,epithelial,0.9383797309978105
+0,coarse,Danenberg,Jackson,Table,T cell,0.1095890410958904
+0,coarse,Danenberg,Jackson,Table,B cell,0.7272727272727273
+0,coarse,Danenberg,Jackson,Table,myeloid,0.4117647058823529
+0,coarse,Danenberg,Jackson,Table,endothelial,0.4088397790055249
+0,coarse,Danenberg,Jackson,Table,stroma,0.4009603841536615
+0,coarse,Danenberg,Danenberg,Table,epithelial,0.93489088110115
+0,coarse,Danenberg,Danenberg,Table,T cell,0.6433063791554358
+0,coarse,Danenberg,Danenberg,Table,B cell,0.5317919075144508
+0,coarse,Danenberg,Danenberg,Table,myeloid,0.5625
+0,coarse,Danenberg,Danenberg,Table,endothelial,0.28957055214723926
+0,coarse,Danenberg,Danenberg,Table,stroma,0.5121753246753247
+0,coarse,Danenberg,Jackson,Table + nbr,epithelial,0.9269938650306748
+0,coarse,Danenberg,Jackson,Table + nbr,T cell,0.14414414414414414
+0,coarse,Danenberg,Jackson,Table + nbr,B cell,0.7272727272727273
+0,coarse,Danenberg,Jackson,Table + nbr,myeloid,0.4946236559139785
+0,coarse,Danenberg,Jackson,Table + nbr,endothelial,0.09929078014184398
+0,coarse,Danenberg,Jackson,Table + nbr,stroma,0.46794150731158607
+0,coarse,Danenberg,Danenberg,Table + nbr,epithelial,0.9322940270098794
+0,coarse,Danenberg,Danenberg,Table + nbr,T cell,0.623352165725047
+0,coarse,Danenberg,Danenberg,Table + nbr,B cell,0.594059405940594
+0,coarse,Danenberg,Danenberg,Table + nbr,myeloid,0.5105882352941177
+0,coarse,Danenberg,Danenberg,Table + nbr,endothelial,0.2932330827067669
+0,coarse,Danenberg,Danenberg,Table + nbr,stroma,0.5353653771004299
+0,coarse,Danenberg,Jackson,Table + K32,epithelial,0.9321771446268194
+0,coarse,Danenberg,Jackson,Table + K32,T cell,0.12121212121212122
+0,coarse,Danenberg,Jackson,Table + K32,B cell,0.6
+0,coarse,Danenberg,Jackson,Table + K32,myeloid,0.5348837209302325
+0,coarse,Danenberg,Jackson,Table + K32,endothelial,0.4854368932038835
+0,coarse,Danenberg,Jackson,Table + K32,stroma,0.42630937880633374
+0,coarse,Danenberg,Danenberg,Table + K32,epithelial,0.9346470216035433
+0,coarse,Danenberg,Danenberg,Table + K32,T cell,0.6299065420560748
+0,coarse,Danenberg,Danenberg,Table + K32,B cell,0.4722222222222222
+0,coarse,Danenberg,Danenberg,Table + K32,myeloid,0.542016806722689
+0,coarse,Danenberg,Danenberg,Table + K32,endothelial,0.31337579617834393
+0,coarse,Danenberg,Danenberg,Table + K32,stroma,0.5341365461847389
+0,coarse,Danenberg,Jackson,Table + nbr + K32,epithelial,0.9275184275184275
+0,coarse,Danenberg,Jackson,Table + nbr + K32,T cell,0.14492753623188406
+0,coarse,Danenberg,Jackson,Table + nbr + K32,B cell,0.8888888888888888
+0,coarse,Danenberg,Jackson,Table + nbr + K32,myeloid,0.5925925925925926
+0,coarse,Danenberg,Jackson,Table + nbr + K32,endothelial,0.3067484662576687
+0,coarse,Danenberg,Jackson,Table + nbr + K32,stroma,0.5022222222222222
+0,coarse,Danenberg,Danenberg,Table + nbr + K32,epithelial,0.9316579280419454
+0,coarse,Danenberg,Danenberg,Table + nbr + K32,T cell,0.6196377502383222
+0,coarse,Danenberg,Danenberg,Table + nbr + K32,B cell,0.5276073619631901
+0,coarse,Danenberg,Danenberg,Table + nbr + K32,myeloid,0.5351170568561873
+0,coarse,Danenberg,Danenberg,Table + nbr + K32,endothelial,0.2776998597475456
+0,coarse,Danenberg,Danenberg,Table + nbr + K32,stroma,0.5473282442748092
+0,coarse,Danenberg,Jackson,KRONOS linear,epithelial,0.9479843953185956
+0,coarse,Danenberg,Jackson,KRONOS linear,T cell,0.17486338797814208
+0,coarse,Danenberg,Jackson,KRONOS linear,B cell,0.0
+0,coarse,Danenberg,Jackson,KRONOS linear,myeloid,0.49019607843137253
+0,coarse,Danenberg,Jackson,KRONOS linear,endothelial,0.2843601895734597
+0,coarse,Danenberg,Jackson,KRONOS linear,stroma,0.6277939747327502
+0,coarse,Danenberg,Danenberg,KRONOS linear,epithelial,0.9185490673915081
+0,coarse,Danenberg,Danenberg,KRONOS linear,T cell,0.551594746716698
+0,coarse,Danenberg,Danenberg,KRONOS linear,B cell,0.28865979381443296
+0,coarse,Danenberg,Danenberg,KRONOS linear,myeloid,0.4901185770750988
+0,coarse,Danenberg,Danenberg,KRONOS linear,endothelial,0.31900668576886343
+0,coarse,Danenberg,Danenberg,KRONOS linear,stroma,0.5190779014308426
+0,coarse,Both,Jackson,Table,epithelial,0.9489098600715913
+0,coarse,Both,Jackson,Table,T cell,0.6808510638297872
+0,coarse,Both,Jackson,Table,B cell,0.5882352941176471
+0,coarse,Both,Jackson,Table,myeloid,0.6021505376344086
+0,coarse,Both,Jackson,Table,endothelial,0.5871559633027523
+0,coarse,Both,Jackson,Table,stroma,0.7654109589041096
+0,coarse,Both,Danenberg,Table,epithelial,0.9282956425813569
+0,coarse,Both,Danenberg,Table,T cell,0.6518771331058021
+0,coarse,Both,Danenberg,Table,B cell,0.6031746031746031
+0,coarse,Both,Danenberg,Table,myeloid,0.5283018867924528
+0,coarse,Both,Danenberg,Table,endothelial,0.29178743961352654
+0,coarse,Both,Danenberg,Table,stroma,0.4007029876977153
+0,coarse,Both,Jackson,Table + nbr,epithelial,0.9445544554455445
+0,coarse,Both,Jackson,Table + nbr,T cell,0.6956521739130435
+0,coarse,Both,Jackson,Table + nbr,B cell,0.625
+0,coarse,Both,Jackson,Table + nbr,myeloid,0.7
+0,coarse,Both,Jackson,Table + nbr,endothelial,0.5463414634146342
+0,coarse,Both,Jackson,Table + nbr,stroma,0.778046811945117
+0,coarse,Both,Danenberg,Table + nbr,epithelial,0.933519034354689
+0,coarse,Both,Danenberg,Table + nbr,T cell,0.6543859649122807
+0,coarse,Both,Danenberg,Table + nbr,B cell,0.6243386243386243
+0,coarse,Both,Danenberg,Table + nbr,myeloid,0.5059203444564048
+0,coarse,Both,Danenberg,Table + nbr,endothelial,0.2702104097452935
+0,coarse,Both,Danenberg,Table + nbr,stroma,0.5207928488146133
+0,coarse,Both,Jackson,Table + K32,epithelial,0.9467186484730344
+0,coarse,Both,Jackson,Table + K32,T cell,0.7111111111111111
+0,coarse,Both,Jackson,Table + K32,B cell,0.6666666666666666
+0,coarse,Both,Jackson,Table + K32,myeloid,0.6153846153846154
+0,coarse,Both,Jackson,Table + K32,endothelial,0.6375545851528385
+0,coarse,Both,Jackson,Table + K32,stroma,0.770293609671848
+0,coarse,Both,Danenberg,Table + K32,epithelial,0.9277086383601757
+0,coarse,Both,Danenberg,Table + K32,T cell,0.6569468267581475
+0,coarse,Both,Danenberg,Table + K32,B cell,0.6292134831460674
+0,coarse,Both,Danenberg,Table + K32,myeloid,0.5031578947368421
+0,coarse,Both,Danenberg,Table + K32,endothelial,0.28720083246618106
+0,coarse,Both,Danenberg,Table + K32,stroma,0.4179233089185696
+0,coarse,Both,Jackson,Table + nbr + K32,epithelial,0.9470220467258966
+0,coarse,Both,Jackson,Table + nbr + K32,T cell,0.6530612244897959
+0,coarse,Both,Jackson,Table + nbr + K32,B cell,0.7142857142857143
+0,coarse,Both,Jackson,Table + nbr + K32,myeloid,0.6588235294117647
+0,coarse,Both,Jackson,Table + nbr + K32,endothelial,0.5517241379310345
+0,coarse,Both,Jackson,Table + nbr + K32,stroma,0.7732463295269169
+0,coarse,Both,Danenberg,Table + nbr + K32,epithelial,0.933271719038817
+0,coarse,Both,Danenberg,Table + nbr + K32,T cell,0.6544821583986075
+0,coarse,Both,Danenberg,Table + nbr + K32,B cell,0.6288659793814433
+0,coarse,Both,Danenberg,Table + nbr + K32,myeloid,0.49892008639308855
+0,coarse,Both,Danenberg,Table + nbr + K32,endothelial,0.2722029988465975
+0,coarse,Both,Danenberg,Table + nbr + K32,stroma,0.5086342229199372
+0,coarse,Both,Jackson,KRONOS linear,epithelial,0.942998352553542
+0,coarse,Both,Jackson,KRONOS linear,T cell,0.625
+0,coarse,Both,Jackson,KRONOS linear,B cell,0.38461538461538464
+0,coarse,Both,Jackson,KRONOS linear,myeloid,0.48598130841121495
+0,coarse,Both,Jackson,KRONOS linear,endothelial,0.504950495049505
+0,coarse,Both,Jackson,KRONOS linear,stroma,0.7395659432387313
+0,coarse,Both,Danenberg,KRONOS linear,epithelial,0.9172499760283824
+0,coarse,Both,Danenberg,KRONOS linear,T cell,0.5752961082910322
+0,coarse,Both,Danenberg,KRONOS linear,B cell,0.34868421052631576
+0,coarse,Both,Danenberg,KRONOS linear,myeloid,0.44547996272134205
+0,coarse,Both,Danenberg,KRONOS linear,endothelial,0.3161833489242282
+0,coarse,Both,Danenberg,KRONOS linear,stroma,0.45606865549652637
+0,fine,Jackson,Jackson,Table + nbr,MC01 B cell,0.6976744186046512
+0,fine,Jackson,Jackson,Table + nbr,MC02 T & B cells,0.45454545454545453
+0,fine,Jackson,Jackson,Table + nbr,MC03 T cell,0.5462555066079295
+0,fine,Jackson,Jackson,Table + nbr,MC04 Macrophage,0.7301587301587301
+0,fine,Jackson,Jackson,Table + nbr,MC07 Endothelial,0.3956043956043956
+0,fine,Jackson,Jackson,Table + nbr,MC08 Vimentin hi,0.4581673306772908
+0,fine,Jackson,Jackson,Table + nbr,MC11 Fibronectin hi,0.49271137026239065
+0,fine,Jackson,Jackson,Table + nbr,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,Table + nbr,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,Table + nbr,MC16 Proliferative,0.0
+0,fine,Jackson,Jackson,Table + nbr,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,Table + nbr,MC19 CK7+ CK hi Ecadh hi,0.49060773480662984
+0,fine,Jackson,Jackson,Table + nbr,MC20 CK7+,0.5789473684210527
+0,fine,Jackson,Jackson,Table + nbr,MC21 Epithelial low,0.24347826086956523
+0,fine,Jackson,Jackson,Table + nbr,MC22 CK lo HR lo,0.10048622366288493
+0,fine,Jackson,Jackson,Table + nbr,MC23 CK+ HR hi,0.048
+0,fine,Jackson,Jackson,Table + nbr,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,Table + nbr,MC25 CK+ HR lo,0.0
+0,fine,Jackson,Jackson,Table + nbr + K32,MC01 B cell,0.723404255319149
+0,fine,Jackson,Jackson,Table + nbr + K32,MC02 T & B cells,0.45454545454545453
+0,fine,Jackson,Jackson,Table + nbr + K32,MC03 T cell,0.5150214592274678
+0,fine,Jackson,Jackson,Table + nbr + K32,MC04 Macrophage,0.6666666666666666
+0,fine,Jackson,Jackson,Table + nbr + K32,MC07 Endothelial,0.49019607843137253
+0,fine,Jackson,Jackson,Table + nbr + K32,MC08 Vimentin hi,0.48846153846153845
+0,fine,Jackson,Jackson,Table + nbr + K32,MC11 Fibronectin hi,0.49544072948328266
+0,fine,Jackson,Jackson,Table + nbr + K32,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,Table + nbr + K32,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,Table + nbr + K32,MC16 Proliferative,0.0
+0,fine,Jackson,Jackson,Table + nbr + K32,MC18 Basal CK,0.07407407407407407
+0,fine,Jackson,Jackson,Table + nbr + K32,MC19 CK7+ CK hi Ecadh hi,0.5173362685745735
+0,fine,Jackson,Jackson,Table + nbr + K32,MC20 CK7+,0.5555555555555556
+0,fine,Jackson,Jackson,Table + nbr + K32,MC21 Epithelial low,0.2857142857142857
+0,fine,Jackson,Jackson,Table + nbr + K32,MC22 CK lo HR lo,0.09722222222222222
+0,fine,Jackson,Jackson,Table + nbr + K32,MC23 CK+ HR hi,0.014084507042253521
+0,fine,Jackson,Jackson,Table + nbr + K32,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,Table + nbr + K32,MC25 CK+ HR lo,0.0
+0,fine,Jackson,Jackson,KRONOS linear,MC01 B cell,0.6046511627906976
+0,fine,Jackson,Jackson,KRONOS linear,MC02 T & B cells,0.5333333333333333
+0,fine,Jackson,Jackson,KRONOS linear,MC03 T cell,0.4372093023255814
+0,fine,Jackson,Jackson,KRONOS linear,MC04 Macrophage,0.5517241379310345
+0,fine,Jackson,Jackson,KRONOS linear,MC07 Endothelial,0.3568075117370892
+0,fine,Jackson,Jackson,KRONOS linear,MC08 Vimentin hi,0.20612813370473537
+0,fine,Jackson,Jackson,KRONOS linear,MC11 Fibronectin hi,0.4140625
+0,fine,Jackson,Jackson,KRONOS linear,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,KRONOS linear,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,KRONOS linear,MC16 Proliferative,0.0
+0,fine,Jackson,Jackson,KRONOS linear,MC18 Basal CK,0.5306122448979592
+0,fine,Jackson,Jackson,KRONOS linear,MC19 CK7+ CK hi Ecadh hi,0.8477810037328909
+0,fine,Jackson,Jackson,KRONOS linear,MC20 CK7+,0.15384615384615385
+0,fine,Jackson,Jackson,KRONOS linear,MC21 Epithelial low,0.16494845360824742
+0,fine,Jackson,Jackson,KRONOS linear,MC22 CK lo HR lo,0.05970149253731343
+0,fine,Jackson,Jackson,KRONOS linear,MC23 CK+ HR hi,0.06349206349206349
+0,fine,Jackson,Jackson,KRONOS linear,MC24 CK+ HR+,0.05405405405405406
+0,fine,Jackson,Jackson,KRONOS linear,MC25 CK+ HR lo,0.0
+0,fine,Danenberg,Danenberg,Table + nbr,B cells,0.5123152709359606
+0,fine,Danenberg,Danenberg,Table + nbr,Basal,0.6153846153846154
+0,fine,Danenberg,Danenberg,Table + nbr,CD15^{+},0.02236024844720497
+0,fine,Danenberg,Danenberg,Table + nbr,CD38^{+} lymphocytes,0.0
+0,fine,Danenberg,Danenberg,Table + nbr,CD4^{+} T cells,0.23357664233576642
+0,fine,Danenberg,Danenberg,Table + nbr,CD4^{+} T cells & APCs,0.4990328820116054
+0,fine,Danenberg,Danenberg,Table + nbr,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr,CD8^{+} T cells,0.4119496855345912
+0,fine,Danenberg,Danenberg,Table + nbr,CK8-18^{+} ER^{hi},0.04
+0,fine,Danenberg,Danenberg,Table + nbr,CK8-18^{hi}CXCL12^{hi},0.5264494286923402
+0,fine,Danenberg,Danenberg,Table + nbr,CK8-18^{hi}ER^{lo},0.5
+0,fine,Danenberg,Danenberg,Table + nbr,CK^{+} CXCL12^{+},0.4078303425774878
+0,fine,Danenberg,Danenberg,Table + nbr,CK^{lo}ER^{lo},0.21525600835945663
+0,fine,Danenberg,Danenberg,Table + nbr,CK^{lo}ER^{med},0.1643835616438356
+0,fine,Danenberg,Danenberg,Table + nbr,CK^{med}ER^{lo},0.47013188518231186
+0,fine,Danenberg,Danenberg,Table + nbr,ER^{hi}CXCL12^{+},0.7686635944700461
+0,fine,Danenberg,Danenberg,Table + nbr,Endothelial,0.19662921348314608
+0,fine,Danenberg,Danenberg,Table + nbr,Ep CD57^{+},0.051181102362204724
+0,fine,Danenberg,Danenberg,Table + nbr,Ep Ki67^{+},0.17682926829268292
+0,fine,Danenberg,Danenberg,Table + nbr,Fibroblasts,0.5454545454545454
+0,fine,Danenberg,Danenberg,Table + nbr,Fibroblasts FSP1^{+},0.18181818181818182
+0,fine,Danenberg,Danenberg,Table + nbr,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,Table + nbr,HER2^{+},0.11764705882352941
+0,fine,Danenberg,Danenberg,Table + nbr,Ki67^{+},0.16666666666666666
+0,fine,Danenberg,Danenberg,Table + nbr,MHC I & II^{hi},0.10309278350515463
+0,fine,Danenberg,Danenberg,Table + nbr,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr,Macrophages,0.4396551724137931
+0,fine,Danenberg,Danenberg,Table + nbr,Macrophages & granulocytes,0.1568627450980392
+0,fine,Danenberg,Danenberg,Table + nbr,Myofibroblasts,0.445440956651719
+0,fine,Danenberg,Danenberg,Table + nbr,Myofibroblasts PDPN^{+},0.08441558441558442
+0,fine,Danenberg,Danenberg,Table + nbr,T_{Reg} & T_{Ex},0.36823104693140796
+0,fine,Danenberg,Danenberg,Table + nbr + K32,B cells,0.5359477124183006
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Basal,0.6120218579234973
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CD15^{+},0.04744069912609238
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CD38^{+} lymphocytes,0.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CD4^{+} T cells,0.18461538461538463
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CD4^{+} T cells & APCs,0.4659090909090909
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CD8^{+} T cells,0.40456769983686786
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK8-18^{+} ER^{hi},0.07272727272727272
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK8-18^{hi}CXCL12^{hi},0.4991394148020654
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK8-18^{hi}ER^{lo},1.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK^{+} CXCL12^{+},0.3314166231050706
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK^{lo}ER^{lo},0.22576966932725198
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK^{lo}ER^{med},0.09859154929577464
+0,fine,Danenberg,Danenberg,Table + nbr + K32,CK^{med}ER^{lo},0.45915602013162987
+0,fine,Danenberg,Danenberg,Table + nbr + K32,ER^{hi}CXCL12^{+},0.7658802177858439
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Endothelial,0.216793893129771
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Ep CD57^{+},0.06640625
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Ep Ki67^{+},0.1390728476821192
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Fibroblasts,0.5452695829094608
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Fibroblasts FSP1^{+},0.21739130434782608
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,HER2^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Ki67^{+},0.16666666666666666
+0,fine,Danenberg,Danenberg,Table + nbr + K32,MHC I & II^{hi},0.13793103448275862
+0,fine,Danenberg,Danenberg,Table + nbr + K32,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Macrophages,0.4609053497942387
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Macrophages & granulocytes,0.08695652173913043
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Myofibroblasts,0.4605263157894737
+0,fine,Danenberg,Danenberg,Table + nbr + K32,Myofibroblasts PDPN^{+},0.09686609686609686
+0,fine,Danenberg,Danenberg,Table + nbr + K32,T_{Reg} & T_{Ex},0.3016393442622951
+0,fine,Danenberg,Danenberg,KRONOS linear,B cells,0.17391304347826086
+0,fine,Danenberg,Danenberg,KRONOS linear,Basal,0.48314606741573035
+0,fine,Danenberg,Danenberg,KRONOS linear,CD15^{+},0.024896265560165973
+0,fine,Danenberg,Danenberg,KRONOS linear,CD38^{+} lymphocytes,0.06557377049180328
+0,fine,Danenberg,Danenberg,KRONOS linear,CD4^{+} T cells,0.13414634146341464
+0,fine,Danenberg,Danenberg,KRONOS linear,CD4^{+} T cells & APCs,0.2827868852459016
+0,fine,Danenberg,Danenberg,KRONOS linear,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,KRONOS linear,CD8^{+} T cells,0.3784570596797671
+0,fine,Danenberg,Danenberg,KRONOS linear,CK8-18^{+} ER^{hi},0.1111111111111111
+0,fine,Danenberg,Danenberg,KRONOS linear,CK8-18^{hi}CXCL12^{hi},0.446761800219539
+0,fine,Danenberg,Danenberg,KRONOS linear,CK8-18^{hi}ER^{lo},0.06896551724137931
+0,fine,Danenberg,Danenberg,KRONOS linear,CK^{+} CXCL12^{+},0.3630737493553378
+0,fine,Danenberg,Danenberg,KRONOS linear,CK^{lo}ER^{lo},0.12234042553191489
+0,fine,Danenberg,Danenberg,KRONOS linear,CK^{lo}ER^{med},0.055944055944055944
+0,fine,Danenberg,Danenberg,KRONOS linear,CK^{med}ER^{lo},0.3937768240343348
+0,fine,Danenberg,Danenberg,KRONOS linear,ER^{hi}CXCL12^{+},0.627318718381113
+0,fine,Danenberg,Danenberg,KRONOS linear,Endothelial,0.27490542244640603
+0,fine,Danenberg,Danenberg,KRONOS linear,Ep CD57^{+},0.19964973730297722
+0,fine,Danenberg,Danenberg,KRONOS linear,Ep Ki67^{+},0.06569343065693431
+0,fine,Danenberg,Danenberg,KRONOS linear,Fibroblasts,0.5090521831735889
+0,fine,Danenberg,Danenberg,KRONOS linear,Fibroblasts FSP1^{+},0.09009009009009009
+0,fine,Danenberg,Danenberg,KRONOS linear,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,KRONOS linear,HER2^{+},0.0
+0,fine,Danenberg,Danenberg,KRONOS linear,Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,KRONOS linear,MHC I & II^{hi},0.015748031496062992
+0,fine,Danenberg,Danenberg,KRONOS linear,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,KRONOS linear,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,KRONOS linear,Macrophages,0.375
+0,fine,Danenberg,Danenberg,KRONOS linear,Macrophages & granulocytes,0.10666666666666667
+0,fine,Danenberg,Danenberg,KRONOS linear,Myofibroblasts,0.38126009693053314
+0,fine,Danenberg,Danenberg,KRONOS linear,Myofibroblasts PDPN^{+},0.13711583924349882
+0,fine,Danenberg,Danenberg,KRONOS linear,T_{Reg} & T_{Ex},0.11822660098522167

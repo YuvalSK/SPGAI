@@ -1,0 +1,13 @@
+cohort,marker,rung,monotone,detects_a01,dR2_a01
+danenberg,c_erb_b_2_her2,R5_cell,True,True,0.01785078167597773
+danenberg,c_erb_b_2_her2,R5_table,True,False,-0.0010720245425803957
+danenberg,cd20,R5_cell,True,False,0.028682743252053867
+danenberg,cd20,R5_table,False,True,0.03526444104501015
+danenberg,cd3,R5_cell,True,False,0.009817103607199987
+danenberg,cd3,R5_table,True,True,0.01744006254941328
+jackson,c_erb_b_2_her2,R5_cell,True,True,0.014648474934717244
+jackson,c_erb_b_2_her2,R5_table,False,True,0.014052240505425714
+jackson,cd20,R5_cell,False,False,-0.002862565347224219
+jackson,cd20,R5_table,True,False,0.019273149287460163
+jackson,cd3,R5_cell,True,True,0.05067398873559928
+jackson,cd3,R5_table,True,True,0.04269692428978978

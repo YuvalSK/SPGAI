@@ -1,0 +1,13 @@
+model,train,test,mean_diff,min_diff,max_diff,n_better,n_worse,n
+KRONOS2 linear,Both,Danenberg,0.0088,0.0074,0.0097,3,0,3
+KRONOS2 linear,Both,Jackson,-0.0127,-0.0167,-0.0101,0,3,3
+KRONOS2 linear,Danenberg,Danenberg,0.0006,0.0001,0.001,0,0,3
+KRONOS2 linear,Danenberg,Jackson,-0.0985,-0.1057,-0.0923,0,3,3
+KRONOS2 linear,Jackson,Danenberg,0.0593,0.0295,0.0834,3,0,3
+KRONOS2 linear,Jackson,Jackson,-0.0084,-0.0112,-0.0041,0,3,3
+Table + nbr + K2-32,Both,Danenberg,0.0053,0.0046,0.0056,3,0,3
+Table + nbr + K2-32,Both,Jackson,0.0,-0.0014,0.0011,0,0,3
+Table + nbr + K2-32,Danenberg,Danenberg,0.0029,0.0027,0.003,3,0,3
+Table + nbr + K2-32,Danenberg,Jackson,-0.0015,-0.0029,-0.0,0,0,3
+Table + nbr + K2-32,Jackson,Danenberg,0.0002,-0.0016,0.0019,0,0,3
+Table + nbr + K2-32,Jackson,Jackson,-0.0002,-0.0012,0.0003,0,0,3

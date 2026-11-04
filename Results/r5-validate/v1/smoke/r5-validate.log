@@ -1,0 +1,240 @@
+[{"stream_name":"stderr","time":7.765510336,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.765563031,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.787867086,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.787899416,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.787904747,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.787908436,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.522838084,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.522875431,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.522880643,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.522883574,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":24.967905375,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 42.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":25.170849234,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 42.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":28.975171326999998,"data":"python 3.12.13 | numpy 2.0.2 | imagecodecs 2024.9.22\n"}
+,{"stream_name":"stdout","time":28.975207451,"data":"SMOKE | cpus 4 | markers ['c_erb_b_2_her2', 'cd20', 'cd3']\n"}
+,{"stream_name":"stdout","time":31.308344391,"data":"{\n"}
+,{"stream_name":"stdout","time":31.308380761,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":31.308385766,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":31.308390065,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":31.308394064,"data":" },\n"}
+,{"stream_name":"stdout","time":31.308397714,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":31.308401243,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":31.308405194,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":31.308409212,"data":" }\n"}
+,{"stream_name":"stdout","time":31.308412834,"data":"}\n"}
+,{"stream_name":"stdout","time":31.308416187,"data":"{'danenberg': (794, 794), 'jackson': (735, 708)}\n"}
+,{"stream_name":"stdout","time":33.518533502,"data":"danenberg: cells in images with a tiff and a mask 1.0000\n"}
+,{"stream_name":"stdout","time":37.031580135,"data":"jackson: cells in images with a tiff and a mask 1.0000\n"}
+,{"stream_name":"stdout","time":38.310033706,"data":"danenberg: 89,190 cells, 60 images, 60 patients, cells by split {'A': 36840, 'B': 32012, 'S': 20338}, 512,928 contacts\n"}
+,{"stream_name":"stdout","time":38.310087825,"data":"jackson: 115,808 cells, 60 images, 58 patients, cells by split {'A': 42930, 'B': 41903, 'S': 30975}, 569,154 contacts\n"}
+,{"stream_name":"stdout","time":38.310092528,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stdout","time":53.212484719,"data":"danenberg full: cells with ≥1 pixel 1.0000, median pixels 129\n"}
+,{"stream_name":"stdout","time":53.212524017,"data":"danenberg erode1: cells with ≥1 pixel 0.9997, median pixels 76\n"}
+,{"stream_name":"stdout","time":53.212530557,"data":"danenberg erode2: cells with ≥1 pixel 0.9761, median pixels 37\n"}
+,{"stream_name":"stdout","time":53.212533982,"data":"   cohort                 channel     r\n"}
+,{"stream_name":"stdout","time":53.212537075,"data":"danenberg              histone_h3 0.991\n"}
+,{"stream_name":"stdout","time":53.212540206,"data":"danenberg                    dna1 0.984\n"}
+,{"stream_name":"stdout","time":53.212543167,"data":"danenberg         pan_cytokeratin 0.985\n"}
+,{"stream_name":"stdout","time":53.212546053,"data":"danenberg estrogen_receptor_alpha 0.769\n"}
+,{"stream_name":"stdout","time":53.212548904,"data":"[   0.4 min] pixel pass danenberg\n"}
+,{"stream_name":"stdout","time":67.749609065,"data":"jackson full: cells with ≥1 pixel 1.0000, median pixels 89\n"}
+,{"stream_name":"stdout","time":67.749667279,"data":"jackson erode1: cells with ≥1 pixel 0.9797, median pixels 46\n"}
+,{"stream_name":"stdout","time":67.749675551,"data":"jackson erode2: cells with ≥1 pixel 0.8643, median pixels 16\n"}
+,{"stream_name":"stdout","time":67.749680638,"data":" cohort                 channel     r\n"}
+,{"stream_name":"stdout","time":67.749685405,"data":"jackson              histone_h3 1.000\n"}
+,{"stream_name":"stdout","time":67.749690331,"data":"jackson                    dna1 1.000\n"}
+,{"stream_name":"stdout","time":67.749694826,"data":"jackson         pan_cytokeratin 1.000\n"}
+,{"stream_name":"stdout","time":67.749699298,"data":"jackson estrogen_receptor_alpha 0.999\n"}
+,{"stream_name":"stdout","time":67.749702281,"data":"[   0.6 min] pixel pass jackson\n"}
+,{"stream_name":"stdout","time":68.181434918,"data":"[   0.7 min] per-cell tables saved\n"}
+,{"stream_name":"stdout","time":68.686395638,"data":"danenberg: mean contacts 5.75, mean ring cells 9.30\n"}
+,{"stream_name":"stdout","time":68.806591928,"data":"jackson: mean contacts 4.91, mean ring cells 11.77\n"}
+,{"stream_name":"stdout","time":68.806629909,"data":"[   0.7 min] graphs\n"}
+,{"stream_name":"stdout","time":68.808010496,"data":"[   0.7 min] helpers ready\n"}
+,{"stream_name":"stdout","time":106.2385087,"data":"[   1.3 min] danenberg c_erb_b_2_her2: done\n"}
+,{"stream_name":"stdout","time":141.580675564,"data":"[   1.9 min] danenberg cd20: done\n"}
+,{"stream_name":"stdout","time":177.525081622,"data":"[   2.5 min] danenberg cd3: done\n"}
+,{"stream_name":"stdout","time":217.273004289,"data":"[   3.1 min] jackson c_erb_b_2_her2: done\n"}
+,{"stream_name":"stdout","time":255.59722644,"data":"[   3.8 min] jackson cd20: done\n"}
+,{"stream_name":"stdout","time":293.914607702,"data":"[   4.4 min] jackson cd3: done\n"}
+,{"stream_name":"stdout","time":293.955350143,"data":"rung                                                    R5_cell  R5_own  R5_table\n"}
+,{"stream_name":"stdout","time":293.955383684,"data":"cohort    marker         control                                                 \n"}
+,{"stream_name":"stdout","time":293.955388235,"data":"danenberg c_erb_b_2_her2 identity                        0.9232  0.7505    0.9278\n"}
+,{"stream_name":"stdout","time":293.955393116,"data":"                         kNN mean (S cells)              0.0048  0.0296    0.0006\n"}
+,{"stream_name":"stdout","time":293.955406763,"data":"                         planted a=0                    -0.0013  0.0212   -0.0053\n"}
+,{"stream_name":"stdout","time":293.955409344,"data":"                         planted a=0.05                  0.0034  0.0397   -0.0007\n"}
+,{"stream_name":"stdout","time":293.955411772,"data":"                         planted a=0.1                   0.0179  0.0351   -0.0011\n"}
+,{"stream_name":"stdout","time":293.955414386,"data":"                         planted a=0.2                   0.0594  0.0683    0.0508\n"}
+,{"stream_name":"stdout","time":293.955418237,"data":"                         planted a=0.4                   0.1859  0.2167    0.1709\n"}
+,{"stream_name":"stdout","time":293.955422347,"data":"                         shifted true map                0.0273  0.1930    0.0159\n"}
+,{"stream_name":"stdout","time":293.955425886,"data":"                         shuffled within image x state   0.0341  0.3281    0.0107\n"}
+,{"stream_name":"stdout","time":293.955429348,"data":"                         state mean                      0.0144  0.0162    0.0068\n"}
+,{"stream_name":"stdout","time":293.95543294,"data":"          cd20           identity                        0.9305  0.8671    0.9066\n"}
+,{"stream_name":"stdout","time":293.955436704,"data":"                         kNN mean (S cells)              0.0021 -0.0169    0.0123\n"}
+,{"stream_name":"stdout","time":293.955440269,"data":"                         planted a=0                     0.0088 -0.0029    0.0051\n"}
+,{"stream_name":"stdout","time":293.955443781,"data":"                         planted a=0.05                  0.0122  0.0076   -0.0017\n"}
+,{"stream_name":"stdout","time":293.955446933,"data":"                         planted a=0.1                   0.0287  0.0293    0.0353\n"}
+,{"stream_name":"stdout","time":293.955450459,"data":"                         planted a=0.2                   0.1223  0.1280    0.1411\n"}
+,{"stream_name":"stdout","time":293.955453872,"data":"                         planted a=0.4                   0.4636  0.4435    0.4739\n"}
+,{"stream_name":"stdout","time":293.955457396,"data":"                         shifted true map                0.0035  0.0097    0.0097\n"}
+,{"stream_name":"stdout","time":293.955460845,"data":"                         shuffled within image x state   0.0070  0.0333    0.0204\n"}
+,{"stream_name":"stdout","time":293.955464252,"data":"                         state mean                     -0.0006  0.0075   -0.0008\n"}
+,{"stream_name":"stdout","time":293.955467734,"data":"          cd3            identity                        0.8073  0.4623    0.8074\n"}
+,{"stream_name":"stdout","time":293.955471645,"data":"                         kNN mean (S cells)             -0.0040  0.0029    0.0033\n"}
+,{"stream_name":"stdout","time":293.955477481,"data":"                         planted a=0                    -0.0031  0.0116   -0.0030\n"}
+,{"stream_name":"stdout","time":293.955481896,"data":"                         planted a=0.05                 -0.0022  0.0136   -0.0021\n"}
+,{"stream_name":"stdout","time":293.955485624,"data":"                         planted a=0.1                   0.0098  0.0288    0.0174\n"}
+,{"stream_name":"stdout","time":293.955489569,"data":"                         planted a=0.2                   0.0574  0.0614    0.0694\n"}
+,{"stream_name":"stdout","time":293.955493144,"data":"                         planted a=0.4                   0.2188  0.1528    0.2281\n"}
+,{"stream_name":"stdout","time":293.955497372,"data":"                         shifted true map               -0.0047  0.0046   -0.0028\n"}
+,{"stream_name":"stdout","time":293.955500944,"data":"                         shuffled within image x state  -0.0006  0.0234    0.0008\n"}
+,{"stream_name":"stdout","time":293.955510412,"data":"                         state mean                     -0.0065  0.0175    0.0009\n"}
+,{"stream_name":"stdout","time":293.955513874,"data":"jackson   c_erb_b_2_her2 identity                        0.9059  0.5059    0.9025\n"}
+,{"stream_name":"stdout","time":293.955517562,"data":"                         kNN mean (S cells)              0.0008  0.0132    0.0097\n"}
+,{"stream_name":"stdout","time":293.955521086,"data":"                         planted a=0                    -0.0003 -0.0009    0.0045\n"}
+,{"stream_name":"stdout","time":293.955524558,"data":"                         planted a=0.05                 -0.0005  0.0025   -0.0009\n"}
+,{"stream_name":"stdout","time":293.955528499,"data":"                         planted a=0.1                   0.0146  0.0102    0.0141\n"}
+,{"stream_name":"stdout","time":293.955532129,"data":"                         planted a=0.2                   0.0541  0.0370    0.0465\n"}
+,{"stream_name":"stdout","time":293.955535819,"data":"                         planted a=0.4                   0.2102  0.1049    0.2070\n"}
+,{"stream_name":"stdout","time":293.955539656,"data":"                         shifted true map                0.0035  0.0019    0.0026\n"}
+,{"stream_name":"stdout","time":293.955543369,"data":"                         shuffled within image x state   0.0076  0.0937    0.0012\n"}
+,{"stream_name":"stdout","time":293.955547301,"data":"                         state mean                     -0.0002  0.0122   -0.0109\n"}
+,{"stream_name":"stdout","time":293.955551333,"data":"          cd20           identity                        0.8293  0.7589    0.8473\n"}
+,{"stream_name":"stdout","time":293.95555498,"data":"                         kNN mean (S cells)             -0.0018  0.0025    0.0178\n"}
+,{"stream_name":"stdout","time":293.955558818,"data":"                         planted a=0                     0.0027  0.0100    0.0022\n"}
+,{"stream_name":"stdout","time":293.955562487,"data":"                         planted a=0.05                 -0.0051  0.0106    0.0189\n"}
+,{"stream_name":"stdout","time":293.955565989,"data":"                         planted a=0.1                  -0.0029  0.0457    0.0193\n"}
+,{"stream_name":"stdout","time":293.955569837,"data":"                         planted a=0.2                   0.0909  0.1049    0.1146\n"}
+,{"stream_name":"stdout","time":293.955573264,"data":"                         planted a=0.4                   0.3908  0.3129    0.3524\n"}
+,{"stream_name":"stdout","time":293.955578633,"data":"                         shifted true map               -0.0117 -0.0019    0.0093\n"}
+,{"stream_name":"stdout","time":293.955582286,"data":"                         shuffled within image x state   0.0012 -0.0008   -0.0042\n"}
+,{"stream_name":"stdout","time":293.955585925,"data":"                         state mean                     -0.0020  0.0061    0.0109\n"}
+,{"stream_name":"stdout","time":293.955589951,"data":"          cd3            identity                        0.6630  0.5955    0.6572\n"}
+,{"stream_name":"stdout","time":293.95559383,"data":"                         kNN mean (S cells)             -0.0112  0.0074    0.0015\n"}
+,{"stream_name":"stdout","time":293.955597706,"data":"                         planted a=0                     0.0009 -0.0114   -0.0023\n"}
+,{"stream_name":"stdout","time":293.955601588,"data":"                         planted a=0.05                  0.0193  0.0073    0.0074\n"}
+,{"stream_name":"stdout","time":293.955605172,"data":"                         planted a=0.1                   0.0507  0.0558    0.0427\n"}
+,{"stream_name":"stdout","time":293.955609254,"data":"                         planted a=0.2                   0.1305  0.1304    0.1217\n"}
+,{"stream_name":"stdout","time":293.955618172,"data":"                         planted a=0.4                   0.2766  0.2864    0.2833\n"}
+,{"stream_name":"stdout","time":293.955622078,"data":"                         shifted true map               -0.0044  0.0027   -0.0012\n"}
+,{"stream_name":"stdout","time":293.955626825,"data":"                         shuffled within image x state   0.0117  0.0068    0.0048\n"}
+,{"stream_name":"stdout","time":293.955631078,"data":"                         state mean                      0.0067  0.0083    0.0022\n"}
+,{"stream_name":"stdout","time":293.955634872,"data":"split                              checker  random\n"}
+,{"stream_name":"stdout","time":293.955638606,"data":"cohort    marker         rung                     \n"}
+,{"stream_name":"stdout","time":293.955642129,"data":"danenberg c_erb_b_2_her2 R5_cell    0.9173  0.8809\n"}
+,{"stream_name":"stdout","time":293.955646139,"data":"                         R5_own     0.7854  0.7757\n"}
+,{"stream_name":"stdout","time":293.955649469,"data":"                         R5_table   0.9247  0.8883\n"}
+,{"stream_name":"stdout","time":293.955672187,"data":"          cd20           R5_cell    0.9673  0.9473\n"}
+,{"stream_name":"stdout","time":293.955676362,"data":"                         R5_own     0.8951  0.8787\n"}
+,{"stream_name":"stdout","time":293.955680049,"data":"                         R5_table   0.9467  0.9268\n"}
+,{"stream_name":"stdout","time":293.95568358,"data":"          cd3            R5_cell    0.5986  0.5719\n"}
+,{"stream_name":"stdout","time":293.955687198,"data":"                         R5_own     0.3701  0.3578\n"}
+,{"stream_name":"stdout","time":293.955690662,"data":"                         R5_table   0.6002  0.5735\n"}
+,{"stream_name":"stdout","time":293.955694272,"data":"jackson   c_erb_b_2_her2 R5_cell    0.8268  0.7790\n"}
+,{"stream_name":"stdout","time":293.955696569,"data":"                         R5_own     0.4859  0.4696\n"}
+,{"stream_name":"stdout","time":293.955698848,"data":"                         R5_table   0.8216  0.7738\n"}
+,{"stream_name":"stdout","time":293.955701084,"data":"          cd20           R5_cell    0.8917  0.8538\n"}
+,{"stream_name":"stdout","time":293.955703415,"data":"                         R5_own     0.8359  0.8030\n"}
+,{"stream_name":"stdout","time":293.955705675,"data":"                         R5_table   0.9025  0.8647\n"}
+,{"stream_name":"stdout","time":293.955708117,"data":"          cd3            R5_cell    0.8711  0.8167\n"}
+,{"stream_name":"stdout","time":293.955710417,"data":"                         R5_own     0.7788  0.7324\n"}
+,{"stream_name":"stdout","time":293.955712772,"data":"                         R5_table   0.8613  0.8068\n"}
+,{"stream_name":"stdout","time":293.955715061,"data":"[   4.4 min] R5 controls done\n"}
+,{"stream_name":"stdout","time":306.884769861,"data":"[   4.6 min] spillover danenberg c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":319.140846375,"data":"[   4.8 min] spillover danenberg cd20\n"}
+,{"stream_name":"stdout","time":332.110341966,"data":"[   5.1 min] spillover danenberg cd3\n"}
+,{"stream_name":"stdout","time":346.096164094,"data":"[   5.3 min] spillover jackson c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":359.429700542,"data":"[   5.5 min] spillover jackson cd20\n"}
+,{"stream_name":"stdout","time":373.040165632,"data":"[   5.7 min] spillover jackson cd3\n"}
+,{"stream_name":"stdout","time":373.044844712,"data":"mask                      erode1  erode2    full\n"}
+,{"stream_name":"stdout","time":373.044881055,"data":"cohort    marker                                \n"}
+,{"stream_name":"stdout","time":373.044906248,"data":"danenberg c_erb_b_2_her2 -0.0163 -0.0231 -0.0036\n"}
+,{"stream_name":"stdout","time":373.044910954,"data":"          cd20            0.0354  0.0204  0.0200\n"}
+,{"stream_name":"stdout","time":373.044915022,"data":"          cd3            -0.0012 -0.0017 -0.0143\n"}
+,{"stream_name":"stdout","time":373.044918849,"data":"jackson   c_erb_b_2_her2 -0.0102  0.0018 -0.0099\n"}
+,{"stream_name":"stdout","time":373.04492262,"data":"          cd20           -0.0244 -0.0023 -0.0208\n"}
+,{"stream_name":"stdout","time":373.044926444,"data":"          cd3             0.0055 -0.0057  0.0053\n"}
+,{"stream_name":"stdout","time":373.130750899,"data":"{\n"}
+,{"stream_name":"stdout","time":373.130806346,"data":" \"passed\": false,\n"}
+,{"stream_name":"stdout","time":373.130811934,"data":" \"n_failures\": 48,\n"}
+,{"stream_name":"stdout","time":373.130816014,"data":" \"failed_blocks\": [],\n"}
+,{"stream_name":"stdout","time":373.13081965,"data":" \"main_markers\": [\n"}
+,{"stream_name":"stdout","time":373.130823144,"data":"  \"danenberg:c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":373.130826675,"data":"  \"danenberg:cd20\",\n"}
+,{"stream_name":"stdout","time":373.130830421,"data":"  \"danenberg:cd3\",\n"}
+,{"stream_name":"stdout","time":373.130834222,"data":"  \"jackson:c_erb_b_2_her2\",\n"}
+,{"stream_name":"stdout","time":373.130837906,"data":"  \"jackson:cd20\",\n"}
+,{"stream_name":"stdout","time":373.130841656,"data":"  \"jackson:cd3\"\n"}
+,{"stream_name":"stdout","time":373.13084558,"data":" ],\n"}
+,{"stream_name":"stdout","time":373.130849157,"data":" \"ceiling_split_flags\": [\n"}
+,{"stream_name":"stdout","time":373.130853004,"data":"  \"jackson:cd3:R5_cell (0.054)\",\n"}
+,{"stream_name":"stdout","time":373.130856727,"data":"  \"jackson:cd3:R5_table (0.054)\"\n"}
+,{"stream_name":"stdout","time":373.130860212,"data":" ],\n"}
+,{"stream_name":"stdout","time":373.130863481,"data":" \"thresholds\": {\n"}
+,{"stream_name":"stdout","time":373.130866849,"data":"  \"NEG_TOL\": 0.01,\n"}
+,{"stream_name":"stdout","time":373.130870043,"data":"  \"ID_FRAC\": 0.9,\n"}
+,{"stream_name":"stdout","time":373.130872565,"data":"  \"MAIN_CEIL\": 0.05,\n"}
+,{"stream_name":"stdout","time":373.130874879,"data":"  \"MONO_TOL\": 0.002\n"}
+,{"stream_name":"stdout","time":373.130877324,"data":" },\n"}
+,{"stream_name":"stdout","time":373.130880448,"data":" \"smoke\": true,\n"}
+,{"stream_name":"stdout","time":373.130882837,"data":" \"minutes\": 5.735913058121999\n"}
+,{"stream_name":"stdout","time":373.130885432,"data":"}\n"}
+,{"stream_name":"stdout","time":373.130887774,"data":"negative control shifted true map danenberg c_erb_b_2_her2 R5_own: R5 +0.1930\n"}
+,{"stream_name":"stdout","time":373.130890433,"data":"negative control state mean danenberg c_erb_b_2_her2 R5_own: R5 +0.0162\n"}
+,{"stream_name":"stdout","time":373.13089306,"data":"negative control kNN mean (S cells) danenberg c_erb_b_2_her2 R5_own: R5 +0.0296\n"}
+,{"stream_name":"stdout","time":373.13089555,"data":"negative control planted a=0 danenberg c_erb_b_2_her2 R5_own: R5 +0.0212\n"}
+,{"stream_name":"stdout","time":373.130898611,"data":"negative control shifted true map danenberg c_erb_b_2_her2 R5_cell: R5 +0.0273\n"}
+,{"stream_name":"stdout","time":373.130902299,"data":"negative control state mean danenberg c_erb_b_2_her2 R5_cell: R5 +0.0144\n"}
+,{"stream_name":"stdout","time":373.130905802,"data":"negative control shuffled within image x state danenberg c_erb_b_2_her2 R5_cell: R5 +0.0341\n"}
+,{"stream_name":"stdout","time":373.130909641,"data":"negative control shifted true map danenberg c_erb_b_2_her2 R5_table: R5 +0.0159\n"}
+,{"stream_name":"stdout","time":373.130931313,"data":"negative control shuffled within image x state danenberg c_erb_b_2_her2 R5_table: R5 +0.0107\n"}
+,{"stream_name":"stdout","time":373.130935839,"data":"negative control kNN mean (S cells) danenberg cd20 R5_own: R5 -0.0169\n"}
+,{"stream_name":"stdout","time":373.130939914,"data":"negative control kNN mean (S cells) danenberg cd20 R5_table: R5 +0.0123\n"}
+,{"stream_name":"stdout","time":373.130943717,"data":"negative control shuffled within image x state danenberg cd20 R5_table: R5 +0.0204\n"}
+,{"stream_name":"stdout","time":373.130947592,"data":"negative control state mean danenberg cd3 R5_own: R5 +0.0175\n"}
+,{"stream_name":"stdout","time":373.130951377,"data":"negative control planted a=0 danenberg cd3 R5_own: R5 +0.0116\n"}
+,{"stream_name":"stdout","time":373.130955394,"data":"negative control state mean jackson c_erb_b_2_her2 R5_own: R5 +0.0122\n"}
+,{"stream_name":"stdout","time":373.130959285,"data":"negative control kNN mean (S cells) jackson c_erb_b_2_her2 R5_own: R5 +0.0132\n"}
+,{"stream_name":"stdout","time":373.130963095,"data":"negative control state mean jackson c_erb_b_2_her2 R5_table: R5 -0.0109\n"}
+,{"stream_name":"stdout","time":373.130967115,"data":"negative control planted a=0 jackson cd20 R5_own: R5 +0.0100\n"}
+,{"stream_name":"stdout","time":373.130971088,"data":"negative control shifted true map jackson cd20 R5_cell: R5 -0.0117\n"}
+,{"stream_name":"stdout","time":373.130975313,"data":"negative control state mean jackson cd20 R5_table: R5 +0.0109\n"}
+,{"stream_name":"stdout","time":373.130978179,"data":"negative control kNN mean (S cells) jackson cd20 R5_table: R5 +0.0178\n"}
+,{"stream_name":"stdout","time":373.130982483,"data":"negative control planted a=0 jackson cd3 R5_own: R5 -0.0114\n"}
+,{"stream_name":"stdout","time":373.130984871,"data":"negative control kNN mean (S cells) jackson cd3 R5_cell: R5 -0.0112\n"}
+,{"stream_name":"stdout","time":373.130987184,"data":"negative control shuffled within image x state jackson cd3 R5_cell: R5 +0.0117\n"}
+,{"stream_name":"stdout","time":373.130989601,"data":"identity ('danenberg', 'c_erb_b_2_her2', 'R5_own'): R5 0.7505 below the noise ceiling 0.7854\n"}
+,{"stream_name":"stdout","time":373.130991948,"data":"identity ('danenberg', 'cd20', 'R5_own'): R5 0.8671 below the noise ceiling 0.8951\n"}
+,{"stream_name":"stdout","time":373.130995187,"data":"identity ('danenberg', 'cd20', 'R5_cell'): R5 0.9305 below the noise ceiling 0.9673\n"}
+,{"stream_name":"stdout","time":373.130999087,"data":"identity ('danenberg', 'cd20', 'R5_table'): R5 0.9066 below the noise ceiling 0.9467\n"}
+,{"stream_name":"stdout","time":373.131002971,"data":"identity ('jackson', 'cd20', 'R5_own'): R5 0.7589 \u003c 0.9 x residual share 0.9488\n"}
+,{"stream_name":"stdout","time":373.131007381,"data":"identity ('jackson', 'cd20', 'R5_own'): R5 0.7589 below the noise ceiling 0.8359\n"}
+,{"stream_name":"stdout","time":373.131010894,"data":"identity ('jackson', 'cd20', 'R5_cell'): R5 0.8293 \u003c 0.9 x residual share 1.0215\n"}
+,{"stream_name":"stdout","time":373.131015056,"data":"identity ('jackson', 'cd20', 'R5_cell'): R5 0.8293 below the noise ceiling 0.8917\n"}
+,{"stream_name":"stdout","time":373.131018694,"data":"identity ('jackson', 'cd20', 'R5_table'): R5 0.8473 \u003c 0.9 x residual share 1.0323\n"}
+,{"stream_name":"stdout","time":373.131022169,"data":"identity ('jackson', 'cd20', 'R5_table'): R5 0.8473 below the noise ceiling 0.9025\n"}
+,{"stream_name":"stdout","time":373.13102594,"data":"identity ('jackson', 'cd3', 'R5_own'): R5 0.5955 \u003c 0.9 x residual share 0.8753\n"}
+,{"stream_name":"stdout","time":373.131029954,"data":"identity ('jackson', 'cd3', 'R5_own'): R5 0.5955 below the noise ceiling 0.7788\n"}
+,{"stream_name":"stdout","time":373.131038921,"data":"identity ('jackson', 'cd3', 'R5_cell'): R5 0.6630 \u003c 0.9 x residual share 0.9851\n"}
+,{"stream_name":"stdout","time":373.131043075,"data":"identity ('jackson', 'cd3', 'R5_cell'): R5 0.6630 below the noise ceiling 0.8711\n"}
+,{"stream_name":"stdout","time":373.131046601,"data":"identity ('jackson', 'cd3', 'R5_table'): R5 0.6572 \u003c 0.9 x residual share 0.9753\n"}
+,{"stream_name":"stdout","time":373.131050014,"data":"identity ('jackson', 'cd3', 'R5_table'): R5 0.6572 below the noise ceiling 0.8613\n"}
+,{"stream_name":"stdout","time":373.131053418,"data":"planted alpha 0.1 not detected: danenberg c_erb_b_2_her2 R5_table\n"}
+,{"stream_name":"stdout","time":373.131056787,"data":"planted alpha 0.1 not detected: danenberg cd20 R5_cell\n"}
+,{"stream_name":"stdout","time":373.131060317,"data":"planted curve not monotone: danenberg cd20 R5_table\n"}
+,{"stream_name":"stdout","time":373.131063745,"data":"planted alpha 0.1 not detected: danenberg cd3 R5_cell\n"}
+,{"stream_name":"stdout","time":373.131067223,"data":"planted curve not monotone: jackson c_erb_b_2_her2 R5_table\n"}
+,{"stream_name":"stdout","time":373.131070699,"data":"planted curve not monotone: jackson cd20 R5_cell\n"}
+,{"stream_name":"stdout","time":373.131074017,"data":"planted alpha 0.1 not detected: jackson cd20 R5_cell\n"}
+,{"stream_name":"stdout","time":373.131077727,"data":"planted alpha 0.1 not detected: jackson cd20 R5_table\n"}
+,{"stream_name":"stdout","time":373.131081507,"data":"GATE G-R5: FAIL\n"}
+,{"stream_name":"stdout","time":374.054592342,"data":"[   5.8 min] done\n"}
+,{"stream_name":"stderr","time":379.464944341,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":379.464982862,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":379.673292705,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":379.673320442,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":380.412251679,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":380.816738013,"data":"[NbConvertApp] Writing 62902 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":383.913981797,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":385.177809659,"data":"[NbConvertApp] Writing 505505 bytes to __results__.html\n"}
+]

@@ -1,0 +1,103 @@
+[{"stream_name":"stderr","time":7.78115567,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.781211053,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":8.775470556,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.775496786,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.775514041,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.775518368,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.426314882,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.426348229,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.426353482,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.426357898,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":24.86211877,"data":"{\n"}
+,{"stream_name":"stdout","time":24.862171561,"data":" \"danenberg\": {\n"}
+,{"stream_name":"stdout","time":24.862176977,"data":"  \"cells\": \"/kaggle/input/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":24.862181093,"data":"  \"contacts\": \"/kaggle/input/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":24.862184958,"data":"  \"report\": \"/kaggle/input/danenberg-cells-prep/prep_report.json\",\n"}
+,{"stream_name":"stdout","time":24.862188751,"data":"  \"clinical\": \"/kaggle/input/danenberg-cells-prep/clinical.parquet\",\n"}
+,{"stream_name":"stdout","time":24.862194231,"data":"  \"split\": \"/kaggle/input/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":24.862201459,"data":" },\n"}
+,{"stream_name":"stdout","time":24.862203807,"data":" \"jackson\": {\n"}
+,{"stream_name":"stdout","time":24.862206153,"data":"  \"cells\": \"/kaggle/input/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":24.862208615,"data":"  \"contacts\": \"/kaggle/input/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":24.862211187,"data":"  \"report\": \"/kaggle/input/jackson-cells-prep/prep_report.json\"\n"}
+,{"stream_name":"stdout","time":24.862213685,"data":" }\n"}
+,{"stream_name":"stdout","time":24.862215926,"data":"}\n"}
+,{"stream_name":"stdout","time":35.282425425,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; split cells {'train': 636350, 'test': 228511, 'val': 197358}\n"}
+,{"stream_name":"stdout","time":35.282459782,"data":"Jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":35.352011389,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stderr","time":36.44649145,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":36.446526101,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":36.649422123,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":36.649458239,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stderr","time":36.649462071,"data":"\n"}
+,{"stream_name":"stderr","time":36.649464697,"data":"ERROR: Could not find a version that satisfies the requirement imagecodecs==2024.9.22 (from versions: 2024.12.30, 2025.3.30, 2025.8.2, 2025.11.11, 2026.1.1, 2026.1.14, 2026.3.6, 2026.5.10, 2026.6.6, 2026.6.26, 2026.8.16, 2026.10.10)\n"}
+,{"stream_name":"stderr","time":36.649467633,"data":"ERROR: No matching distribution found for imagecodecs==2024.9.22\n"}
+,{"stream_name":"stdout","time":468.616049762,"data":"[   7.5 min] kill-test outputs loaded; per-cell image means recomputed\n"}
+,{"stream_name":"stdout","time":476.014559871,"data":"non-finite targets: Jackson 0, Danenberg 448\n"}
+,{"stream_name":"stdout","time":483.287175396,"data":"kNN graphs: mean degree Jackson 11.4, Danenberg 11.3; device cuda\n"}
+,{"stream_name":"stdout","time":485.738645796,"data":"[   7.7 min] features and graphs\n"}
+,{"stream_name":"stdout","time":486.32654608,"data":"Danenberg test: 228,511 cells, 130 patients\n"}
+,{"stream_name":"stdout","time":487.350620474,"data":"Jackson train 806,958 / val 89,348 cells; Danenberg train 728,537 cells\n"}
+,{"stream_name":"stdout","time":489.158446841,"data":"Danenberg inputs, median over cells: own scaling [0. 0. 0. 0. 0.] | Jackson scaling [0.28 1.15 0.97 0.   0.47]\n"}
+,{"stream_name":"stdout","time":489.706417657,"data":"target p01/p99: {'c_erb_b_2_her2': (0.0, 1.501), 'cd20': (0.0, 0.422), 'cd3': (0.0, 0.416), 'cd45': (0.0, 0.715), 'cd68': (0.0, 1.02), 'cytokeratin_5': (0.0, 0.449), 'cytokeratin_8_18': (0.0, 2.157), 'estrogen_receptor_alpha': (0.0, 0.796), 'ki_67': (0.0, 0.864), 'pan_cytokeratin': (0.0, 3.716), 'sma': (0.0, 2.857)}\n"}
+,{"stream_name":"stdout","time":540.377213213,"data":"[   8.7 min] trained c_erb_b_2_her2\n"}
+,{"stream_name":"stdout","time":608.082184222,"data":"[   9.8 min] trained cd20\n"}
+,{"stream_name":"stdout","time":691.502388604,"data":"[  11.2 min] trained cd3\n"}
+,{"stream_name":"stdout","time":874.219653046,"data":"[  14.2 min] trained cd45\n"}
+,{"stream_name":"stdout","time":988.571677898,"data":"[  16.1 min] trained cd68\n"}
+,{"stream_name":"stdout","time":1068.377552255,"data":"[  17.5 min] trained cytokeratin_5\n"}
+,{"stream_name":"stdout","time":1125.024175956,"data":"[  18.4 min] trained cytokeratin_8_18\n"}
+,{"stream_name":"stdout","time":1184.217986961,"data":"[  19.4 min] trained estrogen_receptor_alpha\n"}
+,{"stream_name":"stdout","time":1235.04773108,"data":"[  20.2 min] trained ki_67\n"}
+,{"stream_name":"stdout","time":1362.742272111,"data":"[  22.4 min] trained pan_cytokeratin\n"}
+,{"stream_name":"stdout","time":1519.446354018,"data":"[  25.0 min] trained sma\n"}
+,{"stream_name":"stdout","time":1521.600290547,"data":"[  25.0 min] cell pixel counts\n"}
+,{"stream_name":"stdout","time":1536.842460865,"data":"test: 228,511 cells in 145 images\n"}
+,{"stream_name":"stdout","time":1538.880308525,"data":"[  25.3 min] per-image pixel sums\n"}
+,{"stream_name":"stdout","time":1539.109588842,"data":"      image          marker                     model  r_direct  r_sums   Sg_direct  Sg_killtest\n"}
+,{"stream_name":"stdout","time":1539.10963486,"data":"MB_0006_165 pan_cytokeratin                     Table   0.70135 0.70135 21470.31943  21470.31943\n"}
+,{"stream_name":"stdout","time":1539.10965371,"data":"MB_0006_165 pan_cytokeratin Table (Danenberg-trained)   0.72179 0.72179 21470.31943  21470.31943\n"}
+,{"stream_name":"stdout","time":1539.109658903,"data":"MB_0006_165             cd3                     Table   0.10767 0.10767 11465.48988  11465.48988\n"}
+,{"stream_name":"stdout","time":1539.109663664,"data":"MB_0006_165             cd3 Table (Danenberg-trained)   0.14696 0.14696 11465.48988  11465.48988\n"}
+,{"stream_name":"stdout","time":1539.109668143,"data":"MB_0014_227 pan_cytokeratin                     Table   0.63936 0.63939 34325.32636  34325.32636\n"}
+,{"stream_name":"stdout","time":1539.109672346,"data":"MB_0014_227 pan_cytokeratin Table (Danenberg-trained)   0.68052 0.68055 34325.32636  34325.32636\n"}
+,{"stream_name":"stdout","time":1539.109676544,"data":"MB_0014_227             cd3                     Table   0.11872 0.11873 12044.53003  12044.53003\n"}
+,{"stream_name":"stdout","time":1539.109680528,"data":"MB_0014_227             cd3 Table (Danenberg-trained)   0.13519 0.13520 12044.53003  12044.53003\n"}
+,{"stream_name":"stdout","time":1539.109684701,"data":"max |r_direct - r_sums| = 2.895118999890478e-05\n"}
+,{"stream_name":"stdout","time":1603.974487663,"data":"patch sums: 15950 rows, 145 test images; max |r_direct - r_sums| = 9.99e-16\n"}
+,{"stream_name":"stdout","time":1603.974526275,"data":"[  26.4 min] patch sums\n"}
+,{"stream_name":"stdout","time":1606.703305289,"data":"median over 10 markers (ERα excluded), Danenberg test patients:\n"}
+,{"stream_name":"stdout","time":1606.703332984,"data":"metric                                             R4  per-image pixel r  pooled pixel r\n"}
+,{"stream_name":"stdout","time":1606.703340647,"data":"model                                                                                   \n"}
+,{"stream_name":"stdout","time":1606.703345525,"data":"GCN                                             0.485              0.199           0.289\n"}
+,{"stream_name":"stdout","time":1606.703351765,"data":"GCN [Jackson-scaled inputs]                     0.291              0.135           0.178\n"}
+,{"stream_name":"stdout","time":1606.703357263,"data":"GCN [Jackson-scaled inputs] [harmonised]        0.295                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703362867,"data":"GCN [harmonised]                                0.486                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703368668,"data":"GraphSAGE                                       0.512              0.197           0.279\n"}
+,{"stream_name":"stdout","time":1606.703374073,"data":"GraphSAGE [Jackson-scaled inputs]               0.244              0.150           0.187\n"}
+,{"stream_name":"stdout","time":1606.703378841,"data":"GraphSAGE [Jackson-scaled inputs] [harmonised]  0.242                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703383403,"data":"GraphSAGE [harmonised]                          0.506                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703387907,"data":"MLP                                             0.500              0.188           0.271\n"}
+,{"stream_name":"stdout","time":1606.703392351,"data":"MLP [Jackson-scaled inputs]                     0.359              0.178           0.250\n"}
+,{"stream_name":"stdout","time":1606.703396805,"data":"MLP [Jackson-scaled inputs] [harmonised]        0.349                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703401267,"data":"MLP [harmonised]                                0.488                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703405585,"data":"Painted true cell means                         1.000              0.382           0.533\n"}
+,{"stream_name":"stdout","time":1606.703410247,"data":"ResNet-UNet gamma                               0.256              0.216           0.270\n"}
+,{"stream_name":"stdout","time":1606.703428918,"data":"ResNet-UNet immuvis                             0.278              0.219           0.257\n"}
+,{"stream_name":"stdout","time":1606.703432911,"data":"ResNet-UNet residual                            0.198              0.172           0.211\n"}
+,{"stream_name":"stdout","time":1606.703437221,"data":"Table                                           0.469              0.191           0.266\n"}
+,{"stream_name":"stdout","time":1606.703441631,"data":"Table (Danenberg-trained)                       0.763              0.311           0.432\n"}
+,{"stream_name":"stdout","time":1606.703445592,"data":"Table [Jackson-scaled inputs]                   0.447              0.182           0.250\n"}
+,{"stream_name":"stdout","time":1606.703449545,"data":"Table [Jackson-scaled inputs] [harmonised]      0.428                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703455083,"data":"Table [harmonised]                              0.456                NaN             NaN\n"}
+,{"stream_name":"stdout","time":1606.703458576,"data":"[  26.4 min] metrics done\n"}
+,{"stream_name":"stdout","time":1606.71725717,"data":"failed blocks: none\n"}
+,{"stream_name":"stderr","time":1611.866901409,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1611.86693072,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1612.067803212,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1612.067825543,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1612.85665887,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1612.946966225,"data":"[NbConvertApp] Writing 64737 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1615.451404289,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1616.214010192,"data":"[NbConvertApp] Writing 542865 bytes to __results__.html\n"}
+]

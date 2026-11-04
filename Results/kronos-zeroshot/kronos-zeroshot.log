@@ -1,0 +1,165 @@
+[{"stream_name":"stderr","time":7.192249547,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.192292792,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.135772457,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.135809915,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.135813439,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.135815971,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.768392805,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.768421583,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.768427974,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.768431794,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":23.613155353,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 38.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":23.815883921,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 38.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":39.461180712,"data":"/usr/local/lib/python3.12/dist-packages/kronos/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stderr","time":39.461215205,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stderr","time":39.461220693,"data":"/usr/local/lib/python3.12/dist-packages/kronos/attention.py:30: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stderr","time":39.461225397,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stderr","time":39.46122981,"data":"/usr/local/lib/python3.12/dist-packages/kronos/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stderr","time":39.461234324,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stderr","time":39.461238723,"data":"\n"}
+,{"stream_name":"stderr","time":39.461242489,"data":"/usr/local/lib/python3.12/dist-packages/kronos/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)\n"}
+,{"stream_name":"stderr","time":39.461246909,"data":"  warnings.warn(\"xFormers is not available (SwiGLU)\")\n"}
+,{"stream_name":"stderr","time":39.461251105,"data":"/usr/local/lib/python3.12/dist-packages/kronos/attention.py:30: UserWarning: xFormers is not available (Attention)\n"}
+,{"stream_name":"stderr","time":39.461255534,"data":"  warnings.warn(\"xFormers is not available (Attention)\")\n"}
+,{"stream_name":"stderr","time":39.461259619,"data":"/usr/local/lib/python3.12/dist-packages/kronos/block.py:40: UserWarning: xFormers is not available (Block)\n"}
+,{"stream_name":"stderr","time":39.461263813,"data":"  warnings.warn(\"xFormers is not available (Block)\")\n"}
+,{"stream_name":"stdout","time":39.491504993,"data":"FULL | device cuda | GPUs 2 | KRONOS commit ['26f1bc02f9ee3a7da3d37ebc63179b2f73e5bc0b']\n"}
+,{"stream_name":"stdout","time":45.505355351,"data":"        channel  marker_id  kronos_mean  kronos_sd\n"}
+,{"stream_name":"stdout","time":45.505398232,"data":"0          DAPI          4     0.083207   0.095882\n"}
+,{"stream_name":"stdout","time":45.505402343,"data":"1     HISTONEH3         42     0.017520   0.032944\n"}
+,{"stream_name":"stdout","time":45.505419986,"data":"2          HER2        364     0.002635   0.002680\n"}
+,{"stream_name":"stdout","time":45.50542588,"data":"3          CD20        214     0.045192   0.057727\n"}
+,{"stream_name":"stdout","time":45.505430909,"data":"4           CD3        232     0.031814   0.066670\n"}
+,{"stream_name":"stdout","time":45.505436159,"data":"5          CD45        256     0.064862   0.112588\n"}
+,{"stream_name":"stdout","time":45.505441578,"data":"6          CD68        282     0.013593   0.033644\n"}
+,{"stream_name":"stdout","time":45.50544642,"data":"7          CK5*        500          NaN        NaN\n"}
+,{"stream_name":"stdout","time":45.505450745,"data":"8       CK8/18*        502          NaN        NaN\n"}
+,{"stream_name":"stdout","time":45.505455111,"data":"9      ERalpha*        504          NaN        NaN\n"}
+,{"stream_name":"stdout","time":45.505459433,"data":"10         KI67         46     0.029532   0.076519\n"}
+,{"stream_name":"stdout","time":45.505463745,"data":"11  CYTOKERATIN        322     0.017070   0.040264\n"}
+,{"stream_name":"stdout","time":45.505469778,"data":"12        A-SMA        130     0.029575   0.041247\n"}
+,{"stream_name":"stdout","time":51.548617057,"data":"[   0.2 min] KRONOS loaded, embedding dim 384\n"}
+,{"stream_name":"stdout","time":53.556233905,"data":"{\n"}
+,{"stream_name":"stdout","time":53.556263611,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":53.556267964,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":53.556271644,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":53.556289217,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":53.556295671,"data":" },\n"}
+,{"stream_name":"stdout","time":53.556300336,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":53.556305346,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":53.55631001,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":53.556314471,"data":" }\n"}
+,{"stream_name":"stdout","time":53.556318328,"data":"}\n"}
+,{"stream_name":"stdout","time":53.556322277,"data":"{'Danenberg': (794, 794), 'Jackson': (735, 708)}\n"}
+,{"stream_name":"stdout","time":73.856819126,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients, 27 fine labels\n"}
+,{"stream_name":"stdout","time":83.174093711,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients, 32 fine labels\n"}
+,{"stream_name":"stdout","time":83.174147082,"data":"[   0.7 min] tables, labels and neighbour features\n"}
+,{"stream_name":"stdout","time":84.232750371,"data":"Jackson {'train': 397, 'val': 39, 'test': 106} images\n"}
+,{"stream_name":"stdout","time":84.232792034,"data":"Danenberg {'train': 494, 'val': 65, 'test': 145} images\n"}
+,{"stream_name":"stdout","time":93.672732992,"data":"Jackson          DAPI  HISTONEH3       HER2    CD20     CD3     CD45       CD68     CK5*    CK8/18*  ERalpha*     KI67  CYTOKERATIN       A-SMA\n"}
+,{"stream_name":"stdout","time":93.672781752,"data":"q   69.345497    80.3508  21.648001  5.3810  6.1572  10.4590  22.705799  14.9768  57.047001   15.3142  29.8682   348.839203  159.833206\n"}
+,{"stream_name":"stdout","time":93.672787409,"data":"mu   0.087300     0.1065   0.068600  0.0326  0.0294   0.0349   0.026900   0.0164   0.041200    0.0343   0.0174     0.041500    0.022900\n"}
+,{"stream_name":"stdout","time":93.672791439,"data":"sd   0.135000     0.1443   0.125500  0.0999  0.0933   0.1000   0.077500   0.0715   0.106500    0.0954   0.0728     0.104400    0.080100\n"}
+,{"stream_name":"stdout","time":101.74669904,"data":"Danenberg           DAPI   HISTONEH3     HER2     CD20     CD3     CD45     CD68     CK5*    CK8/18*    ERalpha*    KI67  CYTOKERATIN    A-SMA\n"}
+,{"stream_name":"stdout","time":101.74674087,"data":"q   216.464005  265.349396  22.8046  14.3498  3.7770  24.5168  11.5540  27.3426  25.836901  190.281799  7.0751   273.616211  48.7925\n"}
+,{"stream_name":"stdout","time":101.746747532,"data":"mu    0.127000    0.074400   0.0648   0.0242  0.0463   0.0670   0.0205   0.0097   0.039200    0.049500  0.0230     0.045400   0.0568\n"}
+,{"stream_name":"stdout","time":101.746752076,"data":"sd    0.173000    0.135200   0.1172   0.0695  0.1282   0.1141   0.0749   0.0617   0.100600    0.083100  0.0820     0.101200   0.0942\n"}
+,{"stream_name":"stdout","time":101.746756169,"data":"[   1.0 min] embedding helpers ready\n"}
+,{"stream_name":"stdout","time":178.798419495,"data":"kronos {'macro_f1_val': 0.7047503334393556, 'weight_decay': 0.001, 'n_fit': 57056, 'n_val': 81503}\n"}
+,{"stream_name":"stdout","time":250.679670282,"data":"own {'macro_f1_val': 0.7121865889705651, 'weight_decay': 0.0001, 'n_fit': 57056, 'n_val': 81503}\n"}
+,{"stream_name":"stdout","time":250.679704714,"data":"normalisation used: own\n"}
+,{"stream_name":"stdout","time":285.964447451,"data":"PCA: 256 components explain 0.955 of the variance\n"}
+,{"stream_name":"stdout","time":285.964481443,"data":"[   4.1 min] calibration\n"}
+,{"stream_name":"stdout","time":317.747680229,"data":"[   4.6 min] Jackson: embedded 50 / 542 images\n"}
+,{"stream_name":"stdout","time":354.157612222,"data":"[   5.2 min] Jackson: embedded 100 / 542 images\n"}
+,{"stream_name":"stdout","time":399.304869388,"data":"[   6.0 min] Jackson: embedded 150 / 542 images\n"}
+,{"stream_name":"stdout","time":453.527700454,"data":"[   6.9 min] Jackson: embedded 200 / 542 images\n"}
+,{"stream_name":"stdout","time":510.150244982,"data":"[   7.8 min] Jackson: embedded 250 / 542 images\n"}
+,{"stream_name":"stdout","time":569.541771753,"data":"[   8.8 min] Jackson: embedded 300 / 542 images\n"}
+,{"stream_name":"stdout","time":634.34873672,"data":"[   9.9 min] Jackson: embedded 350 / 542 images\n"}
+,{"stream_name":"stdout","time":695.624757868,"data":"[  10.9 min] Jackson: embedded 400 / 542 images\n"}
+,{"stream_name":"stdout","time":734.486122229,"data":"[  11.6 min] Jackson: embedded 450 / 542 images\n"}
+,{"stream_name":"stdout","time":766.735538686,"data":"[  12.1 min] Jackson: embedded 500 / 542 images\n"}
+,{"stream_name":"stdout","time":791.088452138,"data":"[  12.5 min] Jackson: embedded 542 / 542 images\n"}
+,{"stream_name":"stdout","time":794.217983749,"data":"Jackson: cells with an embedding 1.0000\n"}
+,{"stream_name":"stdout","time":824.321233146,"data":"[  13.1 min] Danenberg: embedded 50 / 704 images\n"}
+,{"stream_name":"stdout","time":867.261112653,"data":"[  13.8 min] Danenberg: embedded 100 / 704 images\n"}
+,{"stream_name":"stdout","time":901.947625466,"data":"[  14.4 min] Danenberg: embedded 150 / 704 images\n"}
+,{"stream_name":"stdout","time":935.339377146,"data":"[  14.9 min] Danenberg: embedded 200 / 704 images\n"}
+,{"stream_name":"stdout","time":978.066335015,"data":"[  15.6 min] Danenberg: embedded 250 / 704 images\n"}
+,{"stream_name":"stdout","time":1016.004631213,"data":"[  16.3 min] Danenberg: embedded 300 / 704 images\n"}
+,{"stream_name":"stdout","time":1053.641262213,"data":"[  16.9 min] Danenberg: embedded 350 / 704 images\n"}
+,{"stream_name":"stdout","time":1088.972667638,"data":"[  17.5 min] Danenberg: embedded 400 / 704 images\n"}
+,{"stream_name":"stdout","time":1122.239686631,"data":"[  18.0 min] Danenberg: embedded 450 / 704 images\n"}
+,{"stream_name":"stdout","time":1151.949311454,"data":"[  18.5 min] Danenberg: embedded 500 / 704 images\n"}
+,{"stream_name":"stdout","time":1182.672470954,"data":"[  19.1 min] Danenberg: embedded 550 / 704 images\n"}
+,{"stream_name":"stdout","time":1216.620327258,"data":"[  19.6 min] Danenberg: embedded 600 / 704 images\n"}
+,{"stream_name":"stdout","time":1246.771561449,"data":"[  20.1 min] Danenberg: embedded 650 / 704 images\n"}
+,{"stream_name":"stdout","time":1277.187395021,"data":"[  20.6 min] Danenberg: embedded 700 / 704 images\n"}
+,{"stream_name":"stdout","time":1279.080713359,"data":"[  20.7 min] Danenberg: embedded 704 / 704 images\n"}
+,{"stream_name":"stdout","time":1284.014565037,"data":"Danenberg: cells with an embedding 1.0000\n"}
+,{"stream_name":"stdout","time":1284.51680046,"data":"[  20.8 min] embeddings saved\n"}
+,{"stream_name":"stdout","time":1573.800815937,"data":"[  25.6 min] rep 0 coarse / train Jackson: Table@J 0.721, Table@D 0.552, Table + nbr@J 0.748, Table + nbr@D 0.572, Table + K32@J 0.731, Table + K32@D 0.560, Table + nbr + K32@J 0.752, Table + nbr + K32@D 0.573, KRONOS linear@J 0.693, KRONOS linear@D 0.466\n"}
+,{"stream_name":"stdout","time":1844.577823743,"data":"[  30.1 min] rep 0 coarse / train Danenberg: Table@J 0.517, Table@D 0.644, Table + nbr@J 0.552, Table + nbr@D 0.670, Table + K32@J 0.532, Table + K32@D 0.662, Table + nbr + K32@J 0.558, Table + nbr + K32@D 0.681, KRONOS linear@J 0.561, KRONOS linear@D 0.628\n"}
+,{"stream_name":"stdout","time":2312.047186726,"data":"[  37.9 min] rep 0 coarse / train Both: Table@J 0.710, Table@D 0.618, Table + nbr@J 0.735, Table + nbr@D 0.640, Table + K32@J 0.720, Table + K32@D 0.632, Table + nbr + K32@J 0.736, Table + nbr + K32@D 0.647, KRONOS linear@J 0.686, KRONOS linear@D 0.597\n"}
+,{"stream_name":"stdout","time":2941.785738124,"data":"[  48.4 min] rep 0 fine / train Jackson: Table + nbr@J 0.398, Table + nbr + K32@J 0.402, KRONOS linear@J 0.333\n"}
+,{"stream_name":"stdout","time":3710.717090953,"data":"[  61.2 min] rep 0 fine / train Danenberg: Table + nbr@D 0.452, Table + nbr + K32@D 0.472, KRONOS linear@D 0.378\n"}
+,{"stream_name":"stdout","time":3711.008998325,"data":"model                           KRONOS linear  Table  Table + K32  Table + nbr  Table + nbr + K32\n"}
+,{"stream_name":"stdout","time":3711.009027707,"data":"rep task   train     test                                                                        \n"}
+,{"stream_name":"stdout","time":3711.009033437,"data":"0   coarse Both      Danenberg          0.597  0.618        0.632        0.640              0.647\n"}
+,{"stream_name":"stdout","time":3711.009038149,"data":"                     Jackson            0.686  0.710        0.720        0.735              0.736\n"}
+,{"stream_name":"stdout","time":3711.009042976,"data":"           Danenberg Danenberg          0.628  0.644        0.662        0.670              0.681\n"}
+,{"stream_name":"stdout","time":3711.009047852,"data":"                     Jackson            0.561  0.517        0.532        0.552              0.558\n"}
+,{"stream_name":"stdout","time":3711.009054175,"data":"           Jackson   Danenberg          0.466  0.552        0.560        0.572              0.573\n"}
+,{"stream_name":"stdout","time":3711.009073405,"data":"                     Jackson            0.693  0.721        0.731        0.748              0.752\n"}
+,{"stream_name":"stdout","time":3711.009076623,"data":"    fine   Danenberg Danenberg          0.378    NaN          NaN        0.452              0.472\n"}
+,{"stream_name":"stdout","time":3711.009079189,"data":"           Jackson   Jackson            0.333    NaN          NaN        0.398              0.402\n"}
+,{"stream_name":"stdout","time":3711.009081738,"data":" rep   task     train      test             model        base   diff     lo     hi   call\n"}
+,{"stream_name":"stdout","time":3711.009084227,"data":"   0 coarse   Jackson   Jackson             Table Table + nbr -0.027 -0.034 -0.021  worse\n"}
+,{"stream_name":"stdout","time":3711.009086701,"data":"   0 coarse   Jackson Danenberg             Table Table + nbr -0.020 -0.025 -0.014  worse\n"}
+,{"stream_name":"stdout","time":3711.0090891,"data":"   0 coarse   Jackson   Jackson       Table + K32 Table + nbr -0.016 -0.023 -0.010  worse\n"}
+,{"stream_name":"stdout","time":3711.009091588,"data":"   0 coarse   Jackson Danenberg       Table + K32 Table + nbr -0.011 -0.016 -0.007  worse\n"}
+,{"stream_name":"stdout","time":3711.009093985,"data":"   0 coarse   Jackson   Jackson Table + nbr + K32 Table + nbr  0.004  0.002  0.006 better\n"}
+,{"stream_name":"stdout","time":3711.009096396,"data":"   0 coarse   Jackson Danenberg Table + nbr + K32 Table + nbr  0.002 -0.000  0.004   n.s.\n"}
+,{"stream_name":"stdout","time":3711.009098896,"data":"   0 coarse   Jackson   Jackson     KRONOS linear Table + nbr -0.055 -0.077 -0.045  worse\n"}
+,{"stream_name":"stdout","time":3711.009101388,"data":"   0 coarse   Jackson Danenberg     KRONOS linear Table + nbr -0.105 -0.115 -0.095  worse\n"}
+,{"stream_name":"stdout","time":3711.009103784,"data":"   0 coarse Danenberg   Jackson             Table Table + nbr -0.035 -0.045 -0.027  worse\n"}
+,{"stream_name":"stdout","time":3711.009106207,"data":"   0 coarse Danenberg Danenberg             Table Table + nbr -0.026 -0.034 -0.019  worse\n"}
+,{"stream_name":"stdout","time":3711.009110027,"data":"   0 coarse Danenberg   Jackson       Table + K32 Table + nbr -0.020 -0.029 -0.011  worse\n"}
+,{"stream_name":"stdout","time":3711.009112496,"data":"   0 coarse Danenberg Danenberg       Table + K32 Table + nbr -0.008 -0.015 -0.002  worse\n"}
+,{"stream_name":"stdout","time":3711.009114925,"data":"   0 coarse Danenberg   Jackson Table + nbr + K32 Table + nbr  0.006  0.001  0.011 better\n"}
+,{"stream_name":"stdout","time":3711.009117332,"data":"   0 coarse Danenberg Danenberg Table + nbr + K32 Table + nbr  0.010  0.008  0.013 better\n"}
+,{"stream_name":"stdout","time":3711.009119742,"data":"   0 coarse Danenberg   Jackson     KRONOS linear Table + nbr  0.009 -0.024  0.029   n.s.\n"}
+,{"stream_name":"stdout","time":3711.009142108,"data":"   0 coarse Danenberg Danenberg     KRONOS linear Table + nbr -0.042 -0.056 -0.030  worse\n"}
+,{"stream_name":"stdout","time":3711.009146774,"data":"   0 coarse      Both   Jackson             Table Table + nbr -0.025 -0.037 -0.016  worse\n"}
+,{"stream_name":"stdout","time":3711.009150969,"data":"   0 coarse      Both Danenberg             Table Table + nbr -0.023 -0.030 -0.016  worse\n"}
+,{"stream_name":"stdout","time":3711.009154741,"data":"   0 coarse      Both   Jackson       Table + K32 Table + nbr -0.015 -0.022 -0.009  worse\n"}
+,{"stream_name":"stdout","time":3711.009158624,"data":"   0 coarse      Both Danenberg       Table + K32 Table + nbr -0.008 -0.014 -0.002  worse\n"}
+,{"stream_name":"stdout","time":3711.00916288,"data":"   0 coarse      Both   Jackson Table + nbr + K32 Table + nbr  0.001 -0.001  0.004   n.s.\n"}
+,{"stream_name":"stdout","time":3711.009171605,"data":"   0 coarse      Both Danenberg Table + nbr + K32 Table + nbr  0.007  0.005  0.009 better\n"}
+,{"stream_name":"stdout","time":3711.009175563,"data":"   0 coarse      Both   Jackson     KRONOS linear Table + nbr -0.049 -0.069 -0.038  worse\n"}
+,{"stream_name":"stdout","time":3711.009179311,"data":"   0 coarse      Both Danenberg     KRONOS linear Table + nbr -0.043 -0.055 -0.033  worse\n"}
+,{"stream_name":"stdout","time":3711.009183058,"data":"   0   fine   Jackson   Jackson Table + nbr + K32 Table + nbr  0.004  0.002  0.007 better\n"}
+,{"stream_name":"stdout","time":3711.00918676,"data":"   0   fine   Jackson   Jackson     KRONOS linear Table + nbr -0.065 -0.077 -0.051  worse\n"}
+,{"stream_name":"stdout","time":3711.009190513,"data":"   0   fine Danenberg Danenberg Table + nbr + K32 Table + nbr  0.020  0.006  0.031 better\n"}
+,{"stream_name":"stdout","time":3711.009194222,"data":"   0   fine Danenberg Danenberg     KRONOS linear Table + nbr -0.074 -0.094 -0.057  worse\n"}
+,{"stream_name":"stdout","time":3711.051603598,"data":"{\n"}
+,{"stream_name":"stdout","time":3711.051634978,"data":" \"within_005_coarse_own_cohort\": true,\n"}
+,{"stream_name":"stdout","time":3711.051638904,"data":" \"beats_table_nbr\": true,\n"}
+,{"stream_name":"stdout","time":3711.051669113,"data":" \"details\": [\n"}
+,{"stream_name":"stdout","time":3711.051675942,"data":"  \"KRONOS linear Danenberg-\u003eDanenberg: 0.628 vs Table + nbr 0.670\",\n"}
+,{"stream_name":"stdout","time":3711.051681372,"data":"  \"Table + nbr + K32 better than Table + nbr: Danenberg-\u003eDanenberg +0.010 [+0.008, +0.013]\"\n"}
+,{"stream_name":"stdout","time":3711.051686203,"data":" ],\n"}
+,{"stream_name":"stdout","time":3711.051689746,"data":" \"proceed_to_adaptation\": true\n"}
+,{"stream_name":"stdout","time":3711.05169346,"data":"}\n"}
+,{"stream_name":"stdout","time":3711.051696781,"data":"failed blocks: none\n"}
+,{"stream_name":"stdout","time":3711.051700215,"data":"[  61.2 min] done\n"}
+,{"stream_name":"stderr","time":3718.384931376,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3718.384974992,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3718.724552567,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3718.724576615,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3720.541230174,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3720.851696204,"data":"[NbConvertApp] Writing 63984 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3723.278571151,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3724.650641817,"data":"[NbConvertApp] Writing 535064 bytes to __results__.html\n"}
+]

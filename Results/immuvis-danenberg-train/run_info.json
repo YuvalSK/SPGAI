@@ -1,0 +1,1 @@
+{"code_source": "github.com/dav3794/multiplex-image-model", "train_minutes": 180.0, "child_exit_code": 0, "minutes": 196.27629839579265, "train_cohort": "danenberg", "n_train_images": 494, "n_val_images": 65, "total_steps": 19553, "s_per_step": 0.518799074490865, "best_val_loo_pixel_r": 0.6221817417906167, "nan_steps": 0}
