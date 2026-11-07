@@ -1,0 +1,51 @@
+task,train,test,setting,arm,mean,std,count
+coarse,Danenberg,Danenberg,main,0 base,0.6725166101686063,,1
+coarse,Danenberg,Danenberg,main,A1 pred counts,0.6680386652422481,,1
+coarse,Danenberg,Danenberg,main,A2 pred counts + mix,0.6676901293141477,,1
+coarse,Danenberg,Danenberg,main,A3 round 2,0.6702634935366945,,1
+coarse,Danenberg,Danenberg,revealed 20%,0 base (hidden cells),0.6719442419718541,,1
+coarse,Danenberg,Danenberg,revealed 20%,B revealed counts,0.6749182171295326,,1
+coarse,Danenberg,Danenberg,revealed 5%,0 base (hidden cells),0.672145160692934,,1
+coarse,Danenberg,Danenberg,revealed 5%,B revealed counts,0.6752505668659063,,1
+coarse,Danenberg,Danenberg,revealed 50%,0 base (hidden cells),0.6720730309601773,,1
+coarse,Danenberg,Danenberg,revealed 50%,B revealed counts,0.6773536293662694,,1
+coarse,Danenberg,Jackson,main,0 base,0.5795852049920406,,1
+coarse,Danenberg,Jackson,main,A1 pred counts,0.5881101143733113,,1
+coarse,Danenberg,Jackson,main,A2 pred counts + mix,0.5878369774193346,,1
+coarse,Danenberg,Jackson,main,A3 round 2,0.5918221760682946,,1
+coarse,Danenberg,Jackson,revealed 20%,0 base (hidden cells),0.57949134846176,,1
+coarse,Danenberg,Jackson,revealed 20%,B revealed counts,0.6259355339485284,,1
+coarse,Danenberg,Jackson,revealed 5%,0 base (hidden cells),0.580377247488472,,1
+coarse,Danenberg,Jackson,revealed 5%,B revealed counts,0.5882013900511825,,1
+coarse,Danenberg,Jackson,revealed 50%,0 base (hidden cells),0.5833218416939097,,1
+coarse,Danenberg,Jackson,revealed 50%,B revealed counts,0.6257522941523955,,1
+coarse,Jackson,Danenberg,main,0 base,0.5466136330982855,,1
+coarse,Jackson,Danenberg,main,A1 pred counts,0.5503141290695256,,1
+coarse,Jackson,Danenberg,main,A2 pred counts + mix,0.5510141111719838,,1
+coarse,Jackson,Danenberg,main,A3 round 2,0.5453103726372736,,1
+coarse,Jackson,Danenberg,revealed 20%,0 base (hidden cells),0.5476934549067913,,1
+coarse,Jackson,Danenberg,revealed 20%,B revealed counts,0.5772963756940371,,1
+coarse,Jackson,Danenberg,revealed 5%,0 base (hidden cells),0.5467380434753594,,1
+coarse,Jackson,Danenberg,revealed 5%,B revealed counts,0.5500420668546494,,1
+coarse,Jackson,Danenberg,revealed 50%,0 base (hidden cells),0.5485417868681546,,1
+coarse,Jackson,Danenberg,revealed 50%,B revealed counts,0.5994600254200595,,1
+coarse,Jackson,Jackson,main,0 base,0.7431038748569838,,1
+coarse,Jackson,Jackson,main,A1 pred counts,0.7434550663827914,,1
+coarse,Jackson,Jackson,main,A2 pred counts + mix,0.7390573085693471,,1
+coarse,Jackson,Jackson,main,A3 round 2,0.7418932480872945,,1
+coarse,Jackson,Jackson,revealed 20%,0 base (hidden cells),0.7432304761362049,,1
+coarse,Jackson,Jackson,revealed 20%,B revealed counts,0.759636808658124,,1
+coarse,Jackson,Jackson,revealed 5%,0 base (hidden cells),0.7429612946430805,,1
+coarse,Jackson,Jackson,revealed 5%,B revealed counts,0.7451064824417984,,1
+coarse,Jackson,Jackson,revealed 50%,0 base (hidden cells),0.7421879956322135,,1
+coarse,Jackson,Jackson,revealed 50%,B revealed counts,0.7631801836344051,,1
+fine,Danenberg,Danenberg,main,0 base,0.37477959602459887,,1
+fine,Danenberg,Danenberg,main,A1 pred counts,0.38055964566208705,,1
+fine,Danenberg,Danenberg,main,A2 pred counts + mix,0.38080177368813595,,1
+fine,Danenberg,Danenberg,revealed 20%,0 base (hidden cells),0.37458709714491534,,1
+fine,Danenberg,Danenberg,revealed 20%,B revealed counts,0.44879233447196265,,1
+fine,Jackson,Jackson,main,0 base,0.35813142485343097,,1
+fine,Jackson,Jackson,main,A1 pred counts,0.3569342824263137,,1
+fine,Jackson,Jackson,main,A2 pred counts + mix,0.35164585959906913,,1
+fine,Jackson,Jackson,revealed 20%,0 base (hidden cells),0.3582867669363501,,1
+fine,Jackson,Jackson,revealed 20%,B revealed counts,0.520084898789534,,1

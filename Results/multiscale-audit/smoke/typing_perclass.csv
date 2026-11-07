@@ -1,0 +1,493 @@
+rep,task,train,test,arm,label,f1
+0,coarse,Jackson,Jackson,0 base,epithelial,0.8978275627970129
+0,coarse,Jackson,Jackson,0 base,T cell,0.9242819843342036
+0,coarse,Jackson,Jackson,0 base,B cell,0.9090909090909091
+0,coarse,Jackson,Jackson,0 base,myeloid,0.723404255319149
+0,coarse,Jackson,Jackson,0 base,endothelial,0.47876447876447875
+0,coarse,Jackson,Jackson,0 base,stroma,0.39285714285714285
+0,coarse,Jackson,Danenberg,0 base,epithelial,0.7833530883708679
+0,coarse,Jackson,Danenberg,0 base,T cell,0.2488619119878604
+0,coarse,Jackson,Danenberg,0 base,B cell,0.5595854922279793
+0,coarse,Jackson,Danenberg,0 base,myeloid,0.3157894736842105
+0,coarse,Jackson,Danenberg,0 base,endothelial,0.32973805855161786
+0,coarse,Jackson,Danenberg,0 base,stroma,0.45456885456885454
+0,coarse,Jackson,Jackson,1 +pix,epithelial,0.8976964769647696
+0,coarse,Jackson,Jackson,1 +pix,T cell,0.9071618037135278
+0,coarse,Jackson,Jackson,1 +pix,B cell,0.8571428571428571
+0,coarse,Jackson,Jackson,1 +pix,myeloid,0.7115384615384616
+0,coarse,Jackson,Jackson,1 +pix,endothelial,0.4722222222222222
+0,coarse,Jackson,Jackson,1 +pix,stroma,0.4063047285464098
+0,coarse,Jackson,Danenberg,1 +pix,epithelial,0.7908436886854153
+0,coarse,Jackson,Danenberg,1 +pix,T cell,0.2608695652173913
+0,coarse,Jackson,Danenberg,1 +pix,B cell,0.526829268292683
+0,coarse,Jackson,Danenberg,1 +pix,myeloid,0.3380681818181818
+0,coarse,Jackson,Danenberg,1 +pix,endothelial,0.28
+0,coarse,Jackson,Danenberg,1 +pix,stroma,0.4618610747051114
+0,coarse,Jackson,Jackson,2 +pix e2,epithelial,0.9013846673421142
+0,coarse,Jackson,Jackson,2 +pix e2,T cell,0.9246753246753247
+0,coarse,Jackson,Jackson,2 +pix e2,B cell,0.8888888888888888
+0,coarse,Jackson,Jackson,2 +pix e2,myeloid,0.6792452830188679
+0,coarse,Jackson,Jackson,2 +pix e2,endothelial,0.4810126582278481
+0,coarse,Jackson,Jackson,2 +pix e2,stroma,0.406563354603464
+0,coarse,Jackson,Danenberg,2 +pix e2,epithelial,0.7985499741066805
+0,coarse,Jackson,Danenberg,2 +pix e2,T cell,0.2711864406779661
+0,coarse,Jackson,Danenberg,2 +pix e2,B cell,0.5567010309278351
+0,coarse,Jackson,Danenberg,2 +pix e2,myeloid,0.3518987341772152
+0,coarse,Jackson,Danenberg,2 +pix e2,endothelial,0.3565365025466893
+0,coarse,Jackson,Danenberg,2 +pix e2,stroma,0.45036714713081316
+0,coarse,Jackson,Jackson,3 +band,epithelial,0.8946111869031378
+0,coarse,Jackson,Jackson,3 +band,T cell,0.9214659685863874
+0,coarse,Jackson,Jackson,3 +band,B cell,0.8695652173913043
+0,coarse,Jackson,Jackson,3 +band,myeloid,0.7272727272727273
+0,coarse,Jackson,Jackson,3 +band,endothelial,0.4743083003952569
+0,coarse,Jackson,Jackson,3 +band,stroma,0.397212543554007
+0,coarse,Jackson,Danenberg,3 +band,epithelial,0.7872949752668575
+0,coarse,Jackson,Danenberg,3 +band,T cell,0.2398753894080997
+0,coarse,Jackson,Danenberg,3 +band,B cell,0.5454545454545454
+0,coarse,Jackson,Danenberg,3 +band,myeloid,0.3609467455621302
+0,coarse,Jackson,Danenberg,3 +band,endothelial,0.21172638436482086
+0,coarse,Jackson,Danenberg,3 +band,stroma,0.4563307493540052
+0,coarse,Jackson,Jackson,4 +band +pix,epithelial,0.8998479986488769
+0,coarse,Jackson,Jackson,4 +band +pix,T cell,0.91005291005291
+0,coarse,Jackson,Jackson,4 +band +pix,B cell,0.8627450980392157
+0,coarse,Jackson,Jackson,4 +band +pix,myeloid,0.7037037037037037
+0,coarse,Jackson,Jackson,4 +band +pix,endothelial,0.5155555555555555
+0,coarse,Jackson,Jackson,4 +band +pix,stroma,0.40577096483318303
+0,coarse,Jackson,Danenberg,4 +band +pix,epithelial,0.7851527258667355
+0,coarse,Jackson,Danenberg,4 +band +pix,T cell,0.2632375189107413
+0,coarse,Jackson,Danenberg,4 +band +pix,B cell,0.5294117647058824
+0,coarse,Jackson,Danenberg,4 +band +pix,myeloid,0.3393939393939394
+0,coarse,Jackson,Danenberg,4 +band +pix,endothelial,0.37400950871632327
+0,coarse,Jackson,Danenberg,4 +band +pix,stroma,0.44704008494823466
+0,coarse,Jackson,Jackson,5 +B2,epithelial,0.8932038834951457
+0,coarse,Jackson,Jackson,5 +B2,T cell,0.9322916666666666
+0,coarse,Jackson,Jackson,5 +B2,B cell,0.8695652173913043
+0,coarse,Jackson,Jackson,5 +B2,myeloid,0.7391304347826086
+0,coarse,Jackson,Jackson,5 +B2,endothelial,0.48826291079812206
+0,coarse,Jackson,Jackson,5 +B2,stroma,0.418212478920742
+0,coarse,Jackson,Danenberg,5 +B2,epithelial,0.7874364655284765
+0,coarse,Jackson,Danenberg,5 +B2,T cell,0.25068870523415976
+0,coarse,Jackson,Danenberg,5 +B2,B cell,0.5373134328358209
+0,coarse,Jackson,Danenberg,5 +B2,myeloid,0.24287856071964017
+0,coarse,Jackson,Danenberg,5 +B2,endothelial,0.20921985815602837
+0,coarse,Jackson,Danenberg,5 +B2,stroma,0.4585821864450792
+0,coarse,Danenberg,Danenberg,0 base,epithelial,0.730753108844488
+0,coarse,Danenberg,Danenberg,0 base,T cell,0.44493392070484583
+0,coarse,Danenberg,Danenberg,0 base,B cell,0.6666666666666666
+0,coarse,Danenberg,Danenberg,0 base,myeloid,0.3164005805515239
+0,coarse,Danenberg,Danenberg,0 base,endothelial,0.33575129533678755
+0,coarse,Danenberg,Danenberg,0 base,stroma,0.46713799423932967
+0,coarse,Danenberg,Jackson,0 base,epithelial,0.8919825561891983
+0,coarse,Danenberg,Jackson,0 base,T cell,0.643312101910828
+0,coarse,Danenberg,Jackson,0 base,B cell,0.9047619047619048
+0,coarse,Danenberg,Jackson,0 base,myeloid,0.4444444444444444
+0,coarse,Danenberg,Jackson,0 base,endothelial,0.03225806451612903
+0,coarse,Danenberg,Jackson,0 base,stroma,0.38848920863309355
+0,coarse,Danenberg,Danenberg,1 +pix,epithelial,0.8008418837148119
+0,coarse,Danenberg,Danenberg,1 +pix,T cell,0.5012594458438288
+0,coarse,Danenberg,Danenberg,1 +pix,B cell,0.6176470588235294
+0,coarse,Danenberg,Danenberg,1 +pix,myeloid,0.3641703377386197
+0,coarse,Danenberg,Danenberg,1 +pix,endothelial,0.3867403314917127
+0,coarse,Danenberg,Danenberg,1 +pix,stroma,0.5030707610146863
+0,coarse,Danenberg,Jackson,1 +pix,epithelial,0.8851049760290958
+0,coarse,Danenberg,Jackson,1 +pix,T cell,0.5827814569536424
+0,coarse,Danenberg,Jackson,1 +pix,B cell,0.8421052631578947
+0,coarse,Danenberg,Jackson,1 +pix,myeloid,0.6391752577319587
+0,coarse,Danenberg,Jackson,1 +pix,endothelial,0.03418803418803419
+0,coarse,Danenberg,Jackson,1 +pix,stroma,0.35323801513877207
+0,coarse,Danenberg,Danenberg,2 +pix e2,epithelial,0.8191940615058324
+0,coarse,Danenberg,Danenberg,2 +pix e2,T cell,0.45605095541401275
+0,coarse,Danenberg,Danenberg,2 +pix e2,B cell,0.6474820143884892
+0,coarse,Danenberg,Danenberg,2 +pix e2,myeloid,0.35294117647058826
+0,coarse,Danenberg,Danenberg,2 +pix e2,endothelial,0.3388116308470291
+0,coarse,Danenberg,Danenberg,2 +pix e2,stroma,0.510806536636795
+0,coarse,Danenberg,Jackson,2 +pix e2,epithelial,0.8847558950514779
+0,coarse,Danenberg,Jackson,2 +pix e2,T cell,0.5517241379310345
+0,coarse,Danenberg,Jackson,2 +pix e2,B cell,0.8421052631578947
+0,coarse,Danenberg,Jackson,2 +pix e2,myeloid,0.4782608695652174
+0,coarse,Danenberg,Jackson,2 +pix e2,endothelial,0.05
+0,coarse,Danenberg,Jackson,2 +pix e2,stroma,0.36260162601626017
+0,coarse,Danenberg,Danenberg,3 +band,epithelial,0.7170185631288083
+0,coarse,Danenberg,Danenberg,3 +band,T cell,0.44745762711864406
+0,coarse,Danenberg,Danenberg,3 +band,B cell,0.6428571428571429
+0,coarse,Danenberg,Danenberg,3 +band,myeloid,0.33053221288515405
+0,coarse,Danenberg,Danenberg,3 +band,endothelial,0.34363411619283063
+0,coarse,Danenberg,Danenberg,3 +band,stroma,0.45818003433897475
+0,coarse,Danenberg,Jackson,3 +band,epithelial,0.8914534203043988
+0,coarse,Danenberg,Jackson,3 +band,T cell,0.6807228915662651
+0,coarse,Danenberg,Jackson,3 +band,B cell,0.926829268292683
+0,coarse,Danenberg,Jackson,3 +band,myeloid,0.5263157894736842
+0,coarse,Danenberg,Jackson,3 +band,endothelial,0.0625
+0,coarse,Danenberg,Jackson,3 +band,stroma,0.3861955628594905
+0,coarse,Danenberg,Danenberg,4 +band +pix,epithelial,0.6810369938829013
+0,coarse,Danenberg,Danenberg,4 +band +pix,T cell,0.4681933842239186
+0,coarse,Danenberg,Danenberg,4 +band +pix,B cell,0.6524822695035462
+0,coarse,Danenberg,Danenberg,4 +band +pix,myeloid,0.3755725190839695
+0,coarse,Danenberg,Danenberg,4 +band +pix,endothelial,0.3138121546961326
+0,coarse,Danenberg,Danenberg,4 +band +pix,stroma,0.4587664587664588
+0,coarse,Danenberg,Jackson,4 +band +pix,epithelial,0.8910660909996679
+0,coarse,Danenberg,Jackson,4 +band +pix,T cell,0.6032786885245902
+0,coarse,Danenberg,Jackson,4 +band +pix,B cell,0.8108108108108109
+0,coarse,Danenberg,Jackson,4 +band +pix,myeloid,0.6363636363636364
+0,coarse,Danenberg,Jackson,4 +band +pix,endothelial,0.01652892561983471
+0,coarse,Danenberg,Jackson,4 +band +pix,stroma,0.37079573420836753
+0,coarse,Danenberg,Danenberg,5 +B2,epithelial,0.8164309764309764
+0,coarse,Danenberg,Danenberg,5 +B2,T cell,0.4287245444801715
+0,coarse,Danenberg,Danenberg,5 +B2,B cell,0.6530612244897959
+0,coarse,Danenberg,Danenberg,5 +B2,myeloid,0.3374485596707819
+0,coarse,Danenberg,Danenberg,5 +B2,endothelial,0.40568475452196384
+0,coarse,Danenberg,Danenberg,5 +B2,stroma,0.4893848666303756
+0,coarse,Danenberg,Jackson,5 +B2,epithelial,0.886849132176235
+0,coarse,Danenberg,Jackson,5 +B2,T cell,0.5223367697594502
+0,coarse,Danenberg,Jackson,5 +B2,B cell,0.926829268292683
+0,coarse,Danenberg,Jackson,5 +B2,myeloid,0.5510204081632653
+0,coarse,Danenberg,Jackson,5 +B2,endothelial,0.05309734513274336
+0,coarse,Danenberg,Jackson,5 +B2,stroma,0.3786793953858393
+0,fine,Danenberg,Danenberg,0 base,B cells,0.6666666666666666
+0,fine,Danenberg,Danenberg,0 base,Basal,0.0
+0,fine,Danenberg,Danenberg,0 base,CD15^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,CD38^{+} lymphocytes,0.0
+0,fine,Danenberg,Danenberg,0 base,CD4^{+} T cells,0.15789473684210525
+0,fine,Danenberg,Danenberg,0 base,CD4^{+} T cells & APCs,0.16842105263157894
+0,fine,Danenberg,Danenberg,0 base,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,CD8^{+} T cells,0.3013698630136986
+0,fine,Danenberg,Danenberg,0 base,CK8-18^{+} ER^{hi},0.011396011396011397
+0,fine,Danenberg,Danenberg,0 base,CK8-18^{hi}CXCL12^{hi},0.03423423423423423
+0,fine,Danenberg,Danenberg,0 base,CK8-18^{hi}ER^{lo},0.03278688524590164
+0,fine,Danenberg,Danenberg,0 base,CK^{+} CXCL12^{+},0.29457364341085274
+0,fine,Danenberg,Danenberg,0 base,CK^{lo}ER^{lo},0.20221169036334913
+0,fine,Danenberg,Danenberg,0 base,CK^{lo}ER^{med},0.042105263157894736
+0,fine,Danenberg,Danenberg,0 base,CK^{med}ER^{lo},0.6318367346938776
+0,fine,Danenberg,Danenberg,0 base,ER^{hi}CXCL12^{+},0.19047619047619047
+0,fine,Danenberg,Danenberg,0 base,Endothelial,0.2725060827250608
+0,fine,Danenberg,Danenberg,0 base,Ep CD57^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,Ep Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,Fibroblasts,0.5714285714285714
+0,fine,Danenberg,Danenberg,0 base,Fibroblasts FSP1^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,0 base,HER2^{+},0.5934579439252337
+0,fine,Danenberg,Danenberg,0 base,Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,MHC I & II^{hi},0.0
+0,fine,Danenberg,Danenberg,0 base,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,0 base,Macrophages,0.32688172043010755
+0,fine,Danenberg,Danenberg,0 base,Macrophages & granulocytes,0.0
+0,fine,Danenberg,Danenberg,0 base,Myofibroblasts,0.274209012464046
+0,fine,Danenberg,Danenberg,0 base,Myofibroblasts PDPN^{+},0.16633663366336635
+0,fine,Danenberg,Danenberg,0 base,T_{Reg} & T_{Ex},0.2857142857142857
+0,fine,Danenberg,Danenberg,1 +pix,B cells,0.6666666666666666
+0,fine,Danenberg,Danenberg,1 +pix,Basal,0.0
+0,fine,Danenberg,Danenberg,1 +pix,CD15^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,CD38^{+} lymphocytes,0.0
+0,fine,Danenberg,Danenberg,1 +pix,CD4^{+} T cells,0.1111111111111111
+0,fine,Danenberg,Danenberg,1 +pix,CD4^{+} T cells & APCs,0.17647058823529413
+0,fine,Danenberg,Danenberg,1 +pix,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,CD8^{+} T cells,0.3340471092077088
+0,fine,Danenberg,Danenberg,1 +pix,CK8-18^{+} ER^{hi},0.10162866449511401
+0,fine,Danenberg,Danenberg,1 +pix,CK8-18^{hi}CXCL12^{hi},0.04918032786885246
+0,fine,Danenberg,Danenberg,1 +pix,CK8-18^{hi}ER^{lo},0.0
+0,fine,Danenberg,Danenberg,1 +pix,CK^{+} CXCL12^{+},0.3740340030911901
+0,fine,Danenberg,Danenberg,1 +pix,CK^{lo}ER^{lo},0.2740112994350282
+0,fine,Danenberg,Danenberg,1 +pix,CK^{lo}ER^{med},0.13937282229965156
+0,fine,Danenberg,Danenberg,1 +pix,CK^{med}ER^{lo},0.6342460155292194
+0,fine,Danenberg,Danenberg,1 +pix,ER^{hi}CXCL12^{+},0.1696969696969697
+0,fine,Danenberg,Danenberg,1 +pix,Endothelial,0.2733990147783251
+0,fine,Danenberg,Danenberg,1 +pix,Ep CD57^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,Ep Ki67^{+},0.17647058823529413
+0,fine,Danenberg,Danenberg,1 +pix,Fibroblasts,0.5914602003162889
+0,fine,Danenberg,Danenberg,1 +pix,Fibroblasts FSP1^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,1 +pix,HER2^{+},0.5349397590361445
+0,fine,Danenberg,Danenberg,1 +pix,Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,MHC I & II^{hi},0.0
+0,fine,Danenberg,Danenberg,1 +pix,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,1 +pix,Macrophages,0.3704663212435233
+0,fine,Danenberg,Danenberg,1 +pix,Macrophages & granulocytes,0.0
+0,fine,Danenberg,Danenberg,1 +pix,Myofibroblasts,0.2824427480916031
+0,fine,Danenberg,Danenberg,1 +pix,Myofibroblasts PDPN^{+},0.22916666666666666
+0,fine,Danenberg,Danenberg,1 +pix,T_{Reg} & T_{Ex},0.2222222222222222
+0,fine,Danenberg,Danenberg,2 +pix e2,B cells,0.6853146853146853
+0,fine,Danenberg,Danenberg,2 +pix e2,Basal,0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,CD15^{+},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,CD38^{+} lymphocytes,0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,CD4^{+} T cells,0.1
+0,fine,Danenberg,Danenberg,2 +pix e2,CD4^{+} T cells & APCs,0.1794871794871795
+0,fine,Danenberg,Danenberg,2 +pix e2,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,CD8^{+} T cells,0.3699421965317919
+0,fine,Danenberg,Danenberg,2 +pix e2,CK8-18^{+} ER^{hi},0.06848357791754019
+0,fine,Danenberg,Danenberg,2 +pix e2,CK8-18^{hi}CXCL12^{hi},0.041666666666666664
+0,fine,Danenberg,Danenberg,2 +pix e2,CK8-18^{hi}ER^{lo},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,CK^{+} CXCL12^{+},0.37258347978910367
+0,fine,Danenberg,Danenberg,2 +pix e2,CK^{lo}ER^{lo},0.22054380664652568
+0,fine,Danenberg,Danenberg,2 +pix e2,CK^{lo}ER^{med},0.05907172995780591
+0,fine,Danenberg,Danenberg,2 +pix e2,CK^{med}ER^{lo},0.6187161639597835
+0,fine,Danenberg,Danenberg,2 +pix e2,ER^{hi}CXCL12^{+},0.1487603305785124
+0,fine,Danenberg,Danenberg,2 +pix e2,Endothelial,0.2793017456359102
+0,fine,Danenberg,Danenberg,2 +pix e2,Ep CD57^{+},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,Ep Ki67^{+},0.09523809523809523
+0,fine,Danenberg,Danenberg,2 +pix e2,Fibroblasts,0.5793991416309013
+0,fine,Danenberg,Danenberg,2 +pix e2,Fibroblasts FSP1^{+},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,HER2^{+},0.5633802816901409
+0,fine,Danenberg,Danenberg,2 +pix e2,Ki67^{+},0.8
+0,fine,Danenberg,Danenberg,2 +pix e2,MHC I & II^{hi},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,Macrophages,0.35379061371841153
+0,fine,Danenberg,Danenberg,2 +pix e2,Macrophages & granulocytes,0.0
+0,fine,Danenberg,Danenberg,2 +pix e2,Myofibroblasts,0.271036315323295
+0,fine,Danenberg,Danenberg,2 +pix e2,Myofibroblasts PDPN^{+},0.32483474976392823
+0,fine,Danenberg,Danenberg,2 +pix e2,T_{Reg} & T_{Ex},0.23529411764705882
+0,fine,Danenberg,Danenberg,3 +band,B cells,0.6490066225165563
+0,fine,Danenberg,Danenberg,3 +band,Basal,0.0
+0,fine,Danenberg,Danenberg,3 +band,CD15^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,CD38^{+} lymphocytes,0.08333333333333333
+0,fine,Danenberg,Danenberg,3 +band,CD4^{+} T cells,0.16049382716049382
+0,fine,Danenberg,Danenberg,3 +band,CD4^{+} T cells & APCs,0.20253164556962025
+0,fine,Danenberg,Danenberg,3 +band,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,CD8^{+} T cells,0.3400447427293065
+0,fine,Danenberg,Danenberg,3 +band,CK8-18^{+} ER^{hi},0.06178643384822028
+0,fine,Danenberg,Danenberg,3 +band,CK8-18^{hi}CXCL12^{hi},0.04
+0,fine,Danenberg,Danenberg,3 +band,CK8-18^{hi}ER^{lo},0.0
+0,fine,Danenberg,Danenberg,3 +band,CK^{+} CXCL12^{+},0.23925233644859814
+0,fine,Danenberg,Danenberg,3 +band,CK^{lo}ER^{lo},0.19783616692426584
+0,fine,Danenberg,Danenberg,3 +band,CK^{lo}ER^{med},0.06896551724137931
+0,fine,Danenberg,Danenberg,3 +band,CK^{med}ER^{lo},0.5957287373548146
+0,fine,Danenberg,Danenberg,3 +band,ER^{hi}CXCL12^{+},0.07741935483870968
+0,fine,Danenberg,Danenberg,3 +band,Endothelial,0.30662020905923343
+0,fine,Danenberg,Danenberg,3 +band,Ep CD57^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,Ep Ki67^{+},0.1
+0,fine,Danenberg,Danenberg,3 +band,Fibroblasts,0.5833774483853891
+0,fine,Danenberg,Danenberg,3 +band,Fibroblasts FSP1^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,3 +band,HER2^{+},0.6157407407407407
+0,fine,Danenberg,Danenberg,3 +band,Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,MHC I & II^{hi},0.0
+0,fine,Danenberg,Danenberg,3 +band,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,3 +band,Macrophages,0.3761904761904762
+0,fine,Danenberg,Danenberg,3 +band,Macrophages & granulocytes,0.0
+0,fine,Danenberg,Danenberg,3 +band,Myofibroblasts,0.28952772073921973
+0,fine,Danenberg,Danenberg,3 +band,Myofibroblasts PDPN^{+},0.15434782608695652
+0,fine,Danenberg,Danenberg,3 +band,T_{Reg} & T_{Ex},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,B cells,0.6709677419354839
+0,fine,Danenberg,Danenberg,4 +band +pix,Basal,0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,CD15^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,CD38^{+} lymphocytes,0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,CD4^{+} T cells,0.08974358974358974
+0,fine,Danenberg,Danenberg,4 +band +pix,CD4^{+} T cells & APCs,0.18181818181818182
+0,fine,Danenberg,Danenberg,4 +band +pix,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,CD8^{+} T cells,0.354978354978355
+0,fine,Danenberg,Danenberg,4 +band +pix,CK8-18^{+} ER^{hi},0.036885245901639344
+0,fine,Danenberg,Danenberg,4 +band +pix,CK8-18^{hi}CXCL12^{hi},0.048462255358807084
+0,fine,Danenberg,Danenberg,4 +band +pix,CK8-18^{hi}ER^{lo},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,CK^{+} CXCL12^{+},0.3591549295774648
+0,fine,Danenberg,Danenberg,4 +band +pix,CK^{lo}ER^{lo},0.24411764705882352
+0,fine,Danenberg,Danenberg,4 +band +pix,CK^{lo}ER^{med},0.10810810810810811
+0,fine,Danenberg,Danenberg,4 +band +pix,CK^{med}ER^{lo},0.6048136645962733
+0,fine,Danenberg,Danenberg,4 +band +pix,ER^{hi}CXCL12^{+},0.2
+0,fine,Danenberg,Danenberg,4 +band +pix,Endothelial,0.23043478260869565
+0,fine,Danenberg,Danenberg,4 +band +pix,Ep CD57^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,Ep Ki67^{+},0.24
+0,fine,Danenberg,Danenberg,4 +band +pix,Fibroblasts,0.575013068478829
+0,fine,Danenberg,Danenberg,4 +band +pix,Fibroblasts FSP1^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,HER2^{+},0.6122448979591837
+0,fine,Danenberg,Danenberg,4 +band +pix,Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,MHC I & II^{hi},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,Macrophages,0.3739021329987453
+0,fine,Danenberg,Danenberg,4 +band +pix,Macrophages & granulocytes,0.0
+0,fine,Danenberg,Danenberg,4 +band +pix,Myofibroblasts,0.2967479674796748
+0,fine,Danenberg,Danenberg,4 +band +pix,Myofibroblasts PDPN^{+},0.05317919075144509
+0,fine,Danenberg,Danenberg,4 +band +pix,T_{Reg} & T_{Ex},0.2
+0,fine,Danenberg,Danenberg,5 +B2,B cells,0.6134969325153374
+0,fine,Danenberg,Danenberg,5 +B2,Basal,0.0
+0,fine,Danenberg,Danenberg,5 +B2,CD15^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,CD38^{+} lymphocytes,0.015810276679841896
+0,fine,Danenberg,Danenberg,5 +B2,CD4^{+} T cells,0.10582010582010581
+0,fine,Danenberg,Danenberg,5 +B2,CD4^{+} T cells & APCs,0.125
+0,fine,Danenberg,Danenberg,5 +B2,CD57^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,CD8^{+} T cells,0.334841628959276
+0,fine,Danenberg,Danenberg,5 +B2,CK8-18^{+} ER^{hi},0.03770848440899202
+0,fine,Danenberg,Danenberg,5 +B2,CK8-18^{hi}CXCL12^{hi},0.04247460757156048
+0,fine,Danenberg,Danenberg,5 +B2,CK8-18^{hi}ER^{lo},0.0
+0,fine,Danenberg,Danenberg,5 +B2,CK^{+} CXCL12^{+},0.3667296786389414
+0,fine,Danenberg,Danenberg,5 +B2,CK^{lo}ER^{lo},0.19938650306748465
+0,fine,Danenberg,Danenberg,5 +B2,CK^{lo}ER^{med},0.35471698113207545
+0,fine,Danenberg,Danenberg,5 +B2,CK^{med}ER^{lo},0.6356773937226857
+0,fine,Danenberg,Danenberg,5 +B2,ER^{hi}CXCL12^{+},0.11594202898550725
+0,fine,Danenberg,Danenberg,5 +B2,Endothelial,0.3877266387726639
+0,fine,Danenberg,Danenberg,5 +B2,Ep CD57^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,Ep Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,Fibroblasts,0.5797845048742946
+0,fine,Danenberg,Danenberg,5 +B2,Fibroblasts FSP1^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,Granulocytes,0.0
+0,fine,Danenberg,Danenberg,5 +B2,HER2^{+},0.6799116997792495
+0,fine,Danenberg,Danenberg,5 +B2,Ki67^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,MHC I & II^{hi},0.0
+0,fine,Danenberg,Danenberg,5 +B2,MHC I^{hi}CD57^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,MHC^{hi}CD15^{+},0.0
+0,fine,Danenberg,Danenberg,5 +B2,Macrophages,0.36488027366020526
+0,fine,Danenberg,Danenberg,5 +B2,Macrophages & granulocytes,0.0
+0,fine,Danenberg,Danenberg,5 +B2,Myofibroblasts,0.2644466209598433
+0,fine,Danenberg,Danenberg,5 +B2,Myofibroblasts PDPN^{+},0.12513484358144553
+0,fine,Danenberg,Danenberg,5 +B2,T_{Reg} & T_{Ex},0.2222222222222222
+0,fine,Jackson,Jackson,0 base,MC01 B cell,0.8397790055248618
+0,fine,Jackson,Jackson,0 base,MC02 T & B cells,0.875
+0,fine,Jackson,Jackson,0 base,MC03 T cell,0.5027027027027027
+0,fine,Jackson,Jackson,0 base,MC04 Macrophage,0.5984251968503937
+0,fine,Jackson,Jackson,0 base,MC05 T cell,0.0
+0,fine,Jackson,Jackson,0 base,MC07 Endothelial,0.3602941176470588
+0,fine,Jackson,Jackson,0 base,MC08 Vimentin hi,0.2146341463414634
+0,fine,Jackson,Jackson,0 base,MC09 Small circular,0.12060301507537688
+0,fine,Jackson,Jackson,0 base,MC10 Small elongated,0.21578099838969403
+0,fine,Jackson,Jackson,0 base,MC11 Fibronectin hi,0.5036496350364964
+0,fine,Jackson,Jackson,0 base,MC12 Large elongated,0.0
+0,fine,Jackson,Jackson,0 base,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,0 base,MC14 Hypoxic,0.03040317250495704
+0,fine,Jackson,Jackson,0 base,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,0 base,MC16 Proliferative,0.46153846153846156
+0,fine,Jackson,Jackson,0 base,MC17 p53+ EGFR+,0.0
+0,fine,Jackson,Jackson,0 base,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,0 base,MC19 CK7+ CK hi Ecadh hi,0.13712374581939799
+0,fine,Jackson,Jackson,0 base,MC20 CK7+,0.08588957055214724
+0,fine,Jackson,Jackson,0 base,MC21 Epithelial low,0.026785714285714284
+0,fine,Jackson,Jackson,0 base,MC22 CK lo HR lo,0.22691292875989447
+0,fine,Jackson,Jackson,0 base,MC23 CK+ HR hi,0.0
+0,fine,Jackson,Jackson,0 base,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,0 base,MC25 CK+ HR lo,0.08809135399673736
+0,fine,Jackson,Jackson,0 base,MC26 CK lo HR hi p53+,0.0
+0,fine,Jackson,Jackson,0 base,MC27 Myoepithelial,0.0
+0,fine,Jackson,Jackson,1 +pix,MC01 B cell,0.8486486486486486
+0,fine,Jackson,Jackson,1 +pix,MC02 T & B cells,0.8627450980392157
+0,fine,Jackson,Jackson,1 +pix,MC03 T cell,0.4913294797687861
+0,fine,Jackson,Jackson,1 +pix,MC04 Macrophage,0.5142857142857142
+0,fine,Jackson,Jackson,1 +pix,MC05 T cell,0.0
+0,fine,Jackson,Jackson,1 +pix,MC07 Endothelial,0.42342342342342343
+0,fine,Jackson,Jackson,1 +pix,MC08 Vimentin hi,0.3557692307692308
+0,fine,Jackson,Jackson,1 +pix,MC09 Small circular,0.13761467889908258
+0,fine,Jackson,Jackson,1 +pix,MC10 Small elongated,0.23076923076923078
+0,fine,Jackson,Jackson,1 +pix,MC11 Fibronectin hi,0.532871972318339
+0,fine,Jackson,Jackson,1 +pix,MC12 Large elongated,0.0
+0,fine,Jackson,Jackson,1 +pix,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,1 +pix,MC14 Hypoxic,0.04395604395604396
+0,fine,Jackson,Jackson,1 +pix,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,1 +pix,MC16 Proliferative,0.23622047244094488
+0,fine,Jackson,Jackson,1 +pix,MC17 p53+ EGFR+,0.0
+0,fine,Jackson,Jackson,1 +pix,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,1 +pix,MC19 CK7+ CK hi Ecadh hi,0.25
+0,fine,Jackson,Jackson,1 +pix,MC20 CK7+,0.09271523178807947
+0,fine,Jackson,Jackson,1 +pix,MC21 Epithelial low,0.10833333333333334
+0,fine,Jackson,Jackson,1 +pix,MC22 CK lo HR lo,0.15298804780876493
+0,fine,Jackson,Jackson,1 +pix,MC23 CK+ HR hi,0.0
+0,fine,Jackson,Jackson,1 +pix,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,1 +pix,MC25 CK+ HR lo,0.08756345177664974
+0,fine,Jackson,Jackson,1 +pix,MC26 CK lo HR hi p53+,0.0
+0,fine,Jackson,Jackson,1 +pix,MC27 Myoepithelial,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC01 B cell,0.8486486486486486
+0,fine,Jackson,Jackson,2 +pix e2,MC02 T & B cells,0.875
+0,fine,Jackson,Jackson,2 +pix e2,MC03 T cell,0.5100286532951289
+0,fine,Jackson,Jackson,2 +pix e2,MC04 Macrophage,0.578125
+0,fine,Jackson,Jackson,2 +pix e2,MC05 T cell,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC07 Endothelial,0.3778801843317972
+0,fine,Jackson,Jackson,2 +pix e2,MC08 Vimentin hi,0.29914529914529914
+0,fine,Jackson,Jackson,2 +pix e2,MC09 Small circular,0.1553398058252427
+0,fine,Jackson,Jackson,2 +pix e2,MC10 Small elongated,0.2222222222222222
+0,fine,Jackson,Jackson,2 +pix e2,MC11 Fibronectin hi,0.5436241610738255
+0,fine,Jackson,Jackson,2 +pix e2,MC12 Large elongated,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC14 Hypoxic,0.048051948051948054
+0,fine,Jackson,Jackson,2 +pix e2,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC16 Proliferative,0.2047244094488189
+0,fine,Jackson,Jackson,2 +pix e2,MC17 p53+ EGFR+,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC19 CK7+ CK hi Ecadh hi,0.1880064829821718
+0,fine,Jackson,Jackson,2 +pix e2,MC20 CK7+,0.11428571428571428
+0,fine,Jackson,Jackson,2 +pix e2,MC21 Epithelial low,0.16736401673640167
+0,fine,Jackson,Jackson,2 +pix e2,MC22 CK lo HR lo,0.19956927494615936
+0,fine,Jackson,Jackson,2 +pix e2,MC23 CK+ HR hi,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC25 CK+ HR lo,0.08618331053351573
+0,fine,Jackson,Jackson,2 +pix e2,MC26 CK lo HR hi p53+,0.0
+0,fine,Jackson,Jackson,2 +pix e2,MC27 Myoepithelial,0.0
+0,fine,Jackson,Jackson,3 +band,MC01 B cell,0.8189415041782729
+0,fine,Jackson,Jackson,3 +band,MC02 T & B cells,0.9565217391304348
+0,fine,Jackson,Jackson,3 +band,MC03 T cell,0.5038167938931297
+0,fine,Jackson,Jackson,3 +band,MC04 Macrophage,0.5426356589147286
+0,fine,Jackson,Jackson,3 +band,MC05 T cell,0.0
+0,fine,Jackson,Jackson,3 +band,MC07 Endothelial,0.3983050847457627
+0,fine,Jackson,Jackson,3 +band,MC08 Vimentin hi,0.26556016597510373
+0,fine,Jackson,Jackson,3 +band,MC09 Small circular,0.08118081180811808
+0,fine,Jackson,Jackson,3 +band,MC10 Small elongated,0.22018348623853212
+0,fine,Jackson,Jackson,3 +band,MC11 Fibronectin hi,0.4357976653696498
+0,fine,Jackson,Jackson,3 +band,MC12 Large elongated,0.0
+0,fine,Jackson,Jackson,3 +band,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,3 +band,MC14 Hypoxic,0.03032300593276203
+0,fine,Jackson,Jackson,3 +band,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,3 +band,MC16 Proliferative,0.3663003663003663
+0,fine,Jackson,Jackson,3 +band,MC17 p53+ EGFR+,0.0
+0,fine,Jackson,Jackson,3 +band,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,3 +band,MC19 CK7+ CK hi Ecadh hi,0.21303656597774245
+0,fine,Jackson,Jackson,3 +band,MC20 CK7+,0.10778443113772455
+0,fine,Jackson,Jackson,3 +band,MC21 Epithelial low,0.06289308176100629
+0,fine,Jackson,Jackson,3 +band,MC22 CK lo HR lo,0.24074074074074073
+0,fine,Jackson,Jackson,3 +band,MC23 CK+ HR hi,0.0
+0,fine,Jackson,Jackson,3 +band,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,3 +band,MC25 CK+ HR lo,0.09302325581395349
+0,fine,Jackson,Jackson,3 +band,MC26 CK lo HR hi p53+,0.0
+0,fine,Jackson,Jackson,3 +band,MC27 Myoepithelial,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC01 B cell,0.8418230563002681
+0,fine,Jackson,Jackson,4 +band +pix,MC02 T & B cells,0.8461538461538461
+0,fine,Jackson,Jackson,4 +band +pix,MC03 T cell,0.49710982658959535
+0,fine,Jackson,Jackson,4 +band +pix,MC04 Macrophage,0.4857142857142857
+0,fine,Jackson,Jackson,4 +band +pix,MC05 T cell,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC07 Endothelial,0.4375
+0,fine,Jackson,Jackson,4 +band +pix,MC08 Vimentin hi,0.3114754098360656
+0,fine,Jackson,Jackson,4 +band +pix,MC09 Small circular,0.12389380530973451
+0,fine,Jackson,Jackson,4 +band +pix,MC10 Small elongated,0.26900584795321636
+0,fine,Jackson,Jackson,4 +band +pix,MC11 Fibronectin hi,0.5071428571428571
+0,fine,Jackson,Jackson,4 +band +pix,MC12 Large elongated,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC14 Hypoxic,0.04412719013627515
+0,fine,Jackson,Jackson,4 +band +pix,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC16 Proliferative,0.4968553459119497
+0,fine,Jackson,Jackson,4 +band +pix,MC17 p53+ EGFR+,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC19 CK7+ CK hi Ecadh hi,0.24186046511627907
+0,fine,Jackson,Jackson,4 +band +pix,MC20 CK7+,0.09210526315789473
+0,fine,Jackson,Jackson,4 +band +pix,MC21 Epithelial low,0.11764705882352941
+0,fine,Jackson,Jackson,4 +band +pix,MC22 CK lo HR lo,0.2220620043258832
+0,fine,Jackson,Jackson,4 +band +pix,MC23 CK+ HR hi,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC25 CK+ HR lo,0.09281437125748503
+0,fine,Jackson,Jackson,4 +band +pix,MC26 CK lo HR hi p53+,0.0
+0,fine,Jackson,Jackson,4 +band +pix,MC27 Myoepithelial,0.0
+0,fine,Jackson,Jackson,5 +B2,MC01 B cell,0.8406593406593407
+0,fine,Jackson,Jackson,5 +B2,MC02 T & B cells,0.88
+0,fine,Jackson,Jackson,5 +B2,MC03 T cell,0.5025906735751295
+0,fine,Jackson,Jackson,5 +B2,MC04 Macrophage,0.5581395348837209
+0,fine,Jackson,Jackson,5 +B2,MC05 T cell,0.0
+0,fine,Jackson,Jackson,5 +B2,MC07 Endothelial,0.336996336996337
+0,fine,Jackson,Jackson,5 +B2,MC08 Vimentin hi,0.23728813559322035
+0,fine,Jackson,Jackson,5 +B2,MC09 Small circular,0.1044776119402985
+0,fine,Jackson,Jackson,5 +B2,MC10 Small elongated,0.2861788617886179
+0,fine,Jackson,Jackson,5 +B2,MC11 Fibronectin hi,0.48727272727272725
+0,fine,Jackson,Jackson,5 +B2,MC12 Large elongated,0.0
+0,fine,Jackson,Jackson,5 +B2,MC13 SMA hi Vimentin hi,0.0
+0,fine,Jackson,Jackson,5 +B2,MC14 Hypoxic,0.005578800557880056
+0,fine,Jackson,Jackson,5 +B2,MC15 Apoptotic,0.0
+0,fine,Jackson,Jackson,5 +B2,MC16 Proliferative,0.13852813852813853
+0,fine,Jackson,Jackson,5 +B2,MC17 p53+ EGFR+,0.0
+0,fine,Jackson,Jackson,5 +B2,MC18 Basal CK,0.0
+0,fine,Jackson,Jackson,5 +B2,MC19 CK7+ CK hi Ecadh hi,0.21904761904761905
+0,fine,Jackson,Jackson,5 +B2,MC20 CK7+,0.15463917525773196
+0,fine,Jackson,Jackson,5 +B2,MC21 Epithelial low,0.09230769230769231
+0,fine,Jackson,Jackson,5 +B2,MC22 CK lo HR lo,0.25547996976568405
+0,fine,Jackson,Jackson,5 +B2,MC23 CK+ HR hi,0.0
+0,fine,Jackson,Jackson,5 +B2,MC24 CK+ HR+,0.0
+0,fine,Jackson,Jackson,5 +B2,MC25 CK+ HR lo,0.08468595624558928
+0,fine,Jackson,Jackson,5 +B2,MC26 CK lo HR hi p53+,0.0
+0,fine,Jackson,Jackson,5 +B2,MC27 Myoepithelial,0.0

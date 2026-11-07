@@ -1,0 +1,49 @@
+{
+ "n_reps": 1,
+ "B1": {
+  "J->J": {
+   "imputation_markers": [],
+   "coarse_typing": false
+  },
+  "D->D": {
+   "imputation_markers": [],
+   "coarse_typing": false
+  },
+  "J->D": {
+   "imputation_markers": [],
+   "coarse_typing": false
+  },
+  "D->J": {
+   "imputation_markers": [],
+   "coarse_typing": false
+  },
+  "fine D->D": {
+   "typing": false
+  },
+  "fine J->J": {
+   "typing": false
+  }
+ },
+ "B2": {
+  "J->J": {
+   "imputation_markers": [],
+   "coarse_typing": null
+  },
+  "D->D": {
+   "imputation_markers": [],
+   "coarse_typing": null
+  },
+  "J->D": {
+   "imputation_markers": [],
+   "coarse_typing": false
+  },
+  "D->J": {
+   "imputation_markers": [],
+   "coarse_typing": false
+  }
+ },
+ "B1_pass": false,
+ "B2_pass": false,
+ "build_B3": false,
+ "note": "Passes need 3/3 replicates; a smoke or partial run cannot pass."
+}

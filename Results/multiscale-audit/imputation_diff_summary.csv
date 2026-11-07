@@ -1,0 +1,21 @@
+train,test,arm,base,mean_diff,n_ci_pos,n_ci_neg
+Danenberg,Danenberg,1 +pix,0 base,0.006472606475093817,13,0
+Danenberg,Danenberg,2 +pix e2,0 base,0.0022065546153160606,9,0
+Danenberg,Danenberg,3 +band,0 base,0.0032699551482197145,7,1
+Danenberg,Danenberg,4 +band +pix,3 +band,0.005983172342758593,15,0
+Danenberg,Danenberg,5 +B2,0 base,0.0034182886459974303,7,0
+Danenberg,Jackson,1 +pix,0 base,-0.002250246218147261,2,5
+Danenberg,Jackson,2 +pix e2,0 base,-0.004000532001752848,1,8
+Danenberg,Jackson,3 +band,0 base,0.004022834241389214,11,2
+Danenberg,Jackson,4 +band +pix,3 +band,-0.006574843050132297,1,9
+Danenberg,Jackson,5 +B2,0 base,0.0030542907168215803,6,5
+Jackson,Danenberg,1 +pix,0 base,0.0012642302681315646,8,2
+Jackson,Danenberg,2 +pix e2,0 base,0.002296891621663505,10,3
+Jackson,Danenberg,3 +band,0 base,0.003446002754977619,11,3
+Jackson,Danenberg,4 +band +pix,3 +band,-0.0003362702535961141,8,3
+Jackson,Danenberg,5 +B2,0 base,0.0022393251558461965,10,4
+Jackson,Jackson,1 +pix,0 base,0.006259930886577962,13,0
+Jackson,Jackson,2 +pix e2,0 base,0.0011874545008582352,6,2
+Jackson,Jackson,3 +band,0 base,0.002249154341397469,6,0
+Jackson,Jackson,4 +band +pix,3 +band,0.005683564000839076,17,0
+Jackson,Jackson,5 +B2,0 base,0.0010224144507761008,1,2

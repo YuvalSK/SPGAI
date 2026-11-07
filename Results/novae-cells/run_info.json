@@ -1,0 +1,26 @@
+{
+ "skipped": [],
+ "reps": [
+  0,
+  1,
+  2
+ ],
+ "budget_min": 660.0,
+ "smoke": false,
+ "minutes": 404.62357837756474,
+ "device": "cuda",
+ "novae": "1.1.2",
+ "novae_init": {
+  "embedding_size": 14,
+  "output_size": 64,
+  "num_prototypes": 512
+ },
+ "novae_fit": {
+  "max_epochs": 30,
+  "lr": 0.0005,
+  "patience": 4,
+  "min_delta": 0.05
+ },
+ "radius_um": 40.0,
+ "domain_level": 10
+}

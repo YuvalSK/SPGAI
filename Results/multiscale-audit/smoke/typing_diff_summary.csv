@@ -1,0 +1,31 @@
+task,train,test,arm,base,mean_diff,n_ci_pos,n_ci_neg
+coarse,Danenberg,Danenberg,1 +pix,0 base,0.03534770871392451,0,0
+coarse,Danenberg,Danenberg,2 +pix e2,0 base,0.027273801486517424,0,0
+coarse,Danenberg,Danenberg,3 +band,0 base,-0.003660644970347793,0,0
+coarse,Danenberg,Danenberg,4 +band +pix,3 +band,0.0016973472725619887,0,0
+coarse,Danenberg,Danenberg,5 +B2,0 base,0.028181893313403872,0,0
+coarse,Danenberg,Jackson,1 +pix,0 base,0.00522412045730003,0,0
+coarse,Danenberg,Jackson,2 +pix e2,0 base,-0.0226334147889522,0,1
+coarse,Danenberg,Jackson,3 +band,0 base,0.02812810867348725,1,0
+coarse,Danenberg,Jackson,4 +band +pix,3 +band,-0.024195507661602278,0,1
+coarse,Danenberg,Jackson,5 +B2,0 base,0.0022606730757697147,0,0
+coarse,Jackson,Danenberg,1 +pix,0 base,-0.005570850112101233,0,0
+coarse,Jackson,Danenberg,2 +pix e2,0 base,0.015557158362634937,1,0
+coarse,Jackson,Danenberg,3 +band,0 base,-0.015044681663488602,0,0
+coarse,Jackson,Danenberg,4 +band +pix,3 +band,0.02276945885523296,0,0
+coarse,Jackson,Danenberg,5 +B2,0 base,-0.03429627841203087,0,1
+coarse,Jackson,Jackson,1 +pix,0 base,-0.01235996383910809,0,1
+coarse,Jackson,Jackson,2 +pix e2,0 base,-0.007409359401064908,0,0
+coarse,Jackson,Jackson,3 +band,0 base,-0.006965064843346136,0,0
+coarse,Jackson,Jackson,4 +band +pix,3 +band,0.0022067144551041196,0,0
+coarse,Jackson,Jackson,5 +B2,0 base,0.0024067098152820154,0,0
+fine,Danenberg,Danenberg,1 +pix,0 base,0.017375924133708642,1,0
+fine,Danenberg,Danenberg,2 +pix e2,0 base,0.040797773393367986,1,0
+fine,Danenberg,Danenberg,3 +band,0 base,-0.002939431546989918,0,0
+fine,Danenberg,Danenberg,4 +band +pix,3 +band,0.012084593578070901,0,0
+fine,Danenberg,Danenberg,5 +B2,0 base,0.012400150102453544,0,0
+fine,Jackson,Jackson,1 +pix,0 base,0.003548708391309996,0,0
+fine,Jackson,Jackson,2 +pix e2,0 base,0.00567762463050156,0,0
+fine,Jackson,Jackson,3 +band,0 base,0.0021491562127247954,1,0
+fine,Jackson,Jackson,4 +band +pix,3 +band,0.012619403296136367,0,0
+fine,Jackson,Jackson,5 +B2,0 base,-0.004510573504592663,0,0

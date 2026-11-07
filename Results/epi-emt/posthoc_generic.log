@@ -1,0 +1,91 @@
+Basel done
+Zurich done
+C:\Users\Yuval\OneDrive - Bar Ilan University\Academic\Postdoc\Multiplexed analyses\IMC\Results\epi-emt\epi_emt.py:71: RuntimeWarning: Mean of empty slice.
+  bs = np.array([z[rs.integers(0, len(z), len(z))].mean() for _ in range(N_BOOT)])
+C:\Users\Yuval\anaconda3\Lib\site-packages\numpy\_core\_methods.py:147: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+C:\Users\Yuval\OneDrive - Bar Ilan University\Academic\Postdoc\Multiplexed analyses\IMC\Results\epi-emt\epi_emt.py:72: RuntimeWarning: Mean of empty slice.
+  return dict(r=float(np.tanh(z.mean())), lo=float(np.tanh(np.percentile(bs, 2.5))), hi=float(np.tanh(np.percentile(bs, 97.5))),
+       set                                              test      r     lo     hi  n_pat  frac_pos
+0    Basel                                   off-target cd45  0.065  0.053  0.077    264     0.735
+1    Basel                                    off-target cd3  0.081  0.072  0.090    264     0.898
+2    Basel                                   off-target cd20  0.148  0.136  0.159    264     0.955
+3    Basel                                   off-target cd68  0.103  0.087  0.118    264     0.807
+4    Basel                                    off-target sma  0.093  0.074  0.111    264     0.727
+5    Basel                         off-target c_erb_b_2_her2  0.288  0.270  0.304    264     0.962
+6    Basel                off-target estrogen_receptor_alpha  0.128  0.113  0.145    264     0.826
+7    Basel              off-target progesterone_receptor_a_b  0.265  0.249  0.282    264     0.970
+8    Basel                                  off-target gata3  0.172  0.153  0.193    264     0.845
+9    Basel                                  off-target ki_67 -0.090 -0.105 -0.075    264     0.227
+10   Basel                                    off-target p53  0.136  0.125  0.147    264     0.936
+11   Basel                  off-target carbonic_anhydrase_ix  0.317  0.303  0.330    264     0.996
+12   Basel                                   off-target egfr  0.275  0.261  0.289    264     0.992
+13   Basel                                     off-target s6  0.064  0.050  0.078    264     0.723
+14   Basel                                  off-target m_tor  0.373  0.355  0.391    264     0.996
+15   Basel                                  off-target c_myc  0.282  0.265  0.297    264     0.989
+16   Basel                           off-target cleaved_parp  0.166  0.133  0.199    264     0.799
+17   Basel                                   off-target v_wf  0.215  0.199  0.231    264     0.989
+18   Basel                            off-target fibronectin  0.028  0.004  0.053    264     0.542
+19   Basel                                   off-target cd44  0.156  0.138  0.176    264     0.830
+20   Basel                          off-target cytokeratin_5  0.325  0.306  0.345    264     0.992
+21   Basel                       off-target keratin_14_krt14  0.225  0.210  0.239    264     0.966
+22   Basel                          off-target cytokeratin_7  0.362  0.339  0.387    264     0.992
+23   Basel            generic intensity (mean of off-target)  0.369  0.353  0.383    264     0.996
+24   Basel                  primary axis + generic covariate -0.326 -0.349 -0.302    264     0.027
+25   Basel                     total H3 vs generic (control)  0.468  0.448  0.489    264     0.973
+26   Basel               marker vimentin + generic covariate -0.064 -0.082 -0.044    264     0.318
+27   Basel                  marker twist + generic covariate  0.063  0.053  0.074    264     0.761
+28   Basel                   marker slug + generic covariate  0.078  0.065  0.091    264     0.777
+29   Basel  marker e_cadherin_p_cadherin + generic covariate  0.137  0.120  0.154    264     0.852
+30   Basel        marker pan_cytokeratin + generic covariate  0.475  0.446  0.505    264     0.977
+31   Basel       marker cytokeratin_8_18 + generic covariate  0.395  0.371  0.423    264     0.989
+32   Basel         marker cytokeratin_19 + generic covariate  0.452  0.426  0.478    264     1.000
+33  Zurich                                   off-target cd45  0.121  0.103  0.138     71     0.930
+34  Zurich                                    off-target cd3  0.147  0.133  0.160     71     1.000
+35  Zurich                                   off-target cd20  0.157  0.132  0.181     71     0.915
+36  Zurich                                   off-target cd68  0.160  0.138  0.184     71     0.972
+37  Zurich                                    off-target sma  0.097  0.068  0.127     71     0.732
+38  Zurich                         off-target c_erb_b_2_her2  0.329  0.306  0.353     71     1.000
+39  Zurich                off-target estrogen_receptor_alpha  0.096  0.072  0.120     71     0.817
+40  Zurich              off-target progesterone_receptor_a_b  0.190  0.159  0.218     71     0.901
+41  Zurich                                  off-target gata3  0.099  0.067  0.131     71     0.831
+42  Zurich                                  off-target ki_67 -0.104 -0.131 -0.078     71     0.225
+43  Zurich                                    off-target p53  0.134  0.111  0.155     71     0.915
+44  Zurich                  off-target carbonic_anhydrase_ix  0.346  0.322  0.368     71     1.000
+45  Zurich                                   off-target egfr  0.290  0.263  0.316     71     0.986
+46  Zurich                                     off-target s6  0.089  0.065  0.113     71     0.859
+47  Zurich                                  off-target m_tor  0.346  0.317  0.373     71     1.000
+48  Zurich                                  off-target c_myc  0.318  0.292  0.342     71     0.972
+49  Zurich                           off-target cleaved_parp  0.263  0.240  0.285     71     1.000
+50  Zurich                                   off-target v_wf  0.164  0.149  0.181     71     0.986
+51  Zurich                            off-target fibronectin -0.024 -0.069  0.019     71     0.479
+52  Zurich                                   off-target cd44  0.201  0.177  0.226     71     0.958
+53  Zurich                          off-target cytokeratin_5  0.326  0.302  0.354     71     1.000
+54  Zurich                       off-target keratin_14_krt14  0.216  0.196  0.238     71     0.986
+55  Zurich                          off-target cytokeratin_7  0.387  0.345  0.431     71     1.000
+56  Zurich            generic intensity (mean of off-target)  0.372  0.348  0.396     71     0.986
+57  Zurich                  primary axis + generic covariate -0.333 -0.366 -0.299     71     0.014
+58  Zurich                     total H3 vs generic (control)  0.432  0.398  0.466     71     1.000
+59  Zurich               marker vimentin + generic covariate -0.024 -0.053  0.010     71     0.394
+60  Zurich                  marker twist + generic covariate -0.021 -0.042 -0.002     71     0.423
+61  Zurich                   marker slug + generic covariate  0.085  0.068  0.104     71     0.859
+62  Zurich  marker e_cadherin_p_cadherin + generic covariate  0.171  0.145  0.194     71     0.944
+63  Zurich        marker pan_cytokeratin + generic covariate  0.420  0.381  0.460     71     1.000
+64  Zurich       marker cytokeratin_8_18 + generic covariate  0.366  0.330  0.406     71     0.986
+65  Zurich         marker cytokeratin_19 + generic covariate  0.445  0.409  0.478     71     1.000
+66   Keren                                   off-target cd45 -0.007 -0.048  0.037     40     0.400
+67   Keren                                    off-target cd3  0.034  0.011  0.059     40     0.575
+68   Keren                                   off-target cd20  0.023  0.002  0.045     36     0.556
+69   Keren                                   off-target cd68    NaN    NaN    NaN      0       NaN
+70   Keren                                    off-target sma -0.077 -0.135 -0.018     40     0.225
+71   Keren                            off-target hla_class_1 -0.005 -0.065  0.062     40     0.475
+72   Keren                                 off-target hla_dr -0.048 -0.077 -0.026     40     0.250
+73   Keren                           off-target beta_catenin -0.040 -0.078 -0.001     40     0.325
+74   Keren                                    off-target p53  0.074  0.049  0.100     37     0.865
+75   Keren                                   off-target egfr -0.052 -0.085 -0.019     39     0.333
+76   Keren                                   off-target ki67 -0.044 -0.065 -0.023     39     0.282
+77   Keren                                   off-target cd63 -0.019 -0.037 -0.003     40     0.450
+78   Keren                                  off-target pd_l1 -0.035 -0.063 -0.007     38     0.289
+79   Keren                                    off-target ido  0.019 -0.005  0.046     34     0.529
+80   Keren            generic intensity (mean of off-target) -0.032 -0.077  0.012     40     0.475
+81   Keren                   common axis + generic covariate -0.050 -0.094 -0.005     40     0.225

@@ -1,0 +1,91 @@
+rep,task,train,test,arm,seconds
+0,coarse,Jackson,Jackson,A1 pred counts,55.53487968444824
+0,coarse,Jackson,Jackson,A2 pred counts + mix,62.53526949882507
+0,coarse,Jackson,Jackson,A3 round 2,61.82261371612549
+0,coarse,Jackson,Jackson,B 0.05,49.76866817474365
+0,coarse,Jackson,Jackson,B 0.2,44.65836477279663
+0,coarse,Jackson,Jackson,B 0.5,36.53111219406128
+0,coarse,Danenberg,Danenberg,A1 pred counts,57.71042203903198
+0,coarse,Danenberg,Danenberg,A2 pred counts + mix,63.948784589767456
+0,coarse,Danenberg,Danenberg,A3 round 2,64.4338047504425
+0,coarse,Danenberg,Danenberg,B 0.05,52.083411693573
+0,coarse,Danenberg,Danenberg,B 0.2,47.434677600860596
+0,coarse,Danenberg,Danenberg,B 0.5,33.5242486000061
+0,coarse,Jackson,Danenberg,A1 pred counts,55.0630407333374
+0,coarse,Jackson,Danenberg,A2 pred counts + mix,61.019662857055664
+0,coarse,Jackson,Danenberg,A3 round 2,61.048338651657104
+0,coarse,Jackson,Danenberg,B 0.05,50.76948523521423
+0,coarse,Jackson,Danenberg,B 0.2,45.58702993392944
+0,coarse,Jackson,Danenberg,B 0.5,32.0601544380188
+0,coarse,Danenberg,Jackson,A1 pred counts,56.48171067237854
+0,coarse,Danenberg,Jackson,A2 pred counts + mix,62.66307497024536
+0,coarse,Danenberg,Jackson,A3 round 2,62.970677852630615
+0,coarse,Danenberg,Jackson,B 0.05,51.54060745239258
+0,coarse,Danenberg,Jackson,B 0.2,47.37747287750244
+0,coarse,Danenberg,Jackson,B 0.5,33.31368613243103
+0,fine,Danenberg,Danenberg,A1 pred counts,330.3998589515686
+0,fine,Danenberg,Danenberg,A2 pred counts + mix,350.07096433639526
+0,fine,Danenberg,Danenberg,B 0.2,335.4587688446045
+0,fine,Jackson,Jackson,A1 pred counts,255.04298663139343
+0,fine,Jackson,Jackson,A2 pred counts + mix,278.36798334121704
+0,fine,Jackson,Jackson,B 0.2,263.543536901474
+1,coarse,Jackson,Jackson,A1 pred counts,56.85356783866882
+1,coarse,Jackson,Jackson,A2 pred counts + mix,61.914998292922974
+1,coarse,Jackson,Jackson,A3 round 2,62.65437197685242
+1,coarse,Jackson,Jackson,B 0.05,51.263362646102905
+1,coarse,Jackson,Jackson,B 0.2,46.32597756385803
+1,coarse,Jackson,Jackson,B 0.5,32.89953827857971
+1,coarse,Danenberg,Danenberg,A1 pred counts,58.372562408447266
+1,coarse,Danenberg,Danenberg,A2 pred counts + mix,64.64476227760315
+1,coarse,Danenberg,Danenberg,A3 round 2,64.35628175735474
+1,coarse,Danenberg,Danenberg,B 0.05,52.44329595565796
+1,coarse,Danenberg,Danenberg,B 0.2,46.91862511634827
+1,coarse,Danenberg,Danenberg,B 0.5,33.73322367668152
+1,coarse,Jackson,Danenberg,A1 pred counts,55.61494326591492
+1,coarse,Jackson,Danenberg,A2 pred counts + mix,61.415651082992554
+1,coarse,Jackson,Danenberg,A3 round 2,62.405985832214355
+1,coarse,Jackson,Danenberg,B 0.05,50.64976525306702
+1,coarse,Jackson,Danenberg,B 0.2,45.35748863220215
+1,coarse,Jackson,Danenberg,B 0.5,32.01665925979614
+1,coarse,Danenberg,Jackson,A1 pred counts,60.007840156555176
+1,coarse,Danenberg,Jackson,A2 pred counts + mix,66.36387348175049
+1,coarse,Danenberg,Jackson,A3 round 2,66.45600652694702
+1,coarse,Danenberg,Jackson,B 0.05,54.09536027908325
+1,coarse,Danenberg,Jackson,B 0.2,49.73467230796814
+1,coarse,Danenberg,Jackson,B 0.5,34.80063509941101
+1,fine,Danenberg,Danenberg,A1 pred counts,357.1210103034973
+1,fine,Danenberg,Danenberg,A2 pred counts + mix,385.7111027240753
+1,fine,Danenberg,Danenberg,B 0.2,400.59037804603577
+1,fine,Jackson,Jackson,A1 pred counts,288.5200192928314
+1,fine,Jackson,Jackson,A2 pred counts + mix,306.0544123649597
+1,fine,Jackson,Jackson,B 0.2,293.95830368995667
+2,coarse,Jackson,Jackson,A1 pred counts,60.00767970085144
+2,coarse,Jackson,Jackson,A2 pred counts + mix,68.61757445335388
+2,coarse,Jackson,Jackson,A3 round 2,67.32457089424133
+2,coarse,Jackson,Jackson,B 0.05,56.330241680145264
+2,coarse,Jackson,Jackson,B 0.2,46.87292838096619
+2,coarse,Jackson,Jackson,B 0.5,32.08975267410278
+2,coarse,Danenberg,Danenberg,A1 pred counts,60.013450145721436
+2,coarse,Danenberg,Danenberg,A2 pred counts + mix,65.93266296386719
+2,coarse,Danenberg,Danenberg,A3 round 2,76.72218370437622
+2,coarse,Danenberg,Danenberg,B 0.05,53.342743158340454
+2,coarse,Danenberg,Danenberg,B 0.2,49.128103256225586
+2,coarse,Danenberg,Danenberg,B 0.5,33.79387712478638
+2,coarse,Jackson,Danenberg,A1 pred counts,56.65166425704956
+2,coarse,Jackson,Danenberg,A2 pred counts + mix,62.182254791259766
+2,coarse,Jackson,Danenberg,A3 round 2,62.06037878990173
+2,coarse,Jackson,Danenberg,B 0.05,51.24991798400879
+2,coarse,Jackson,Danenberg,B 0.2,45.79571843147278
+2,coarse,Jackson,Danenberg,B 0.5,32.319600105285645
+2,coarse,Danenberg,Jackson,A1 pred counts,56.699649810791016
+2,coarse,Danenberg,Jackson,A2 pred counts + mix,61.820719718933105
+2,coarse,Danenberg,Jackson,A3 round 2,63.22008991241455
+2,coarse,Danenberg,Jackson,B 0.05,50.42060565948486
+2,coarse,Danenberg,Jackson,B 0.2,46.08517646789551
+2,coarse,Danenberg,Jackson,B 0.5,33.18625020980835
+2,fine,Danenberg,Danenberg,A1 pred counts,323.47850489616394
+2,fine,Danenberg,Danenberg,A2 pred counts + mix,344.28548669815063
+2,fine,Danenberg,Danenberg,B 0.2,363.0458359718323
+2,fine,Jackson,Jackson,A1 pred counts,272.6992721557617
+2,fine,Jackson,Jackson,A2 pred counts + mix,254.79228043556213
+2,fine,Jackson,Jackson,B 0.2,247.40159273147583

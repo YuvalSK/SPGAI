@@ -1,0 +1,169 @@
+train,test,graph,share_bin,cls,n,error_rate
+Jackson,Jackson,contact,0–0.25,B cell,20,0.1
+Jackson,Jackson,contact,0–0.25,T cell,133,0.11278195488721804
+Jackson,Jackson,contact,0–0.25,endothelial,29,0.5172413793103449
+Jackson,Jackson,contact,0–0.25,epithelial,81,0.18518518518518517
+Jackson,Jackson,contact,0–0.25,myeloid,37,0.24324324324324326
+Jackson,Jackson,contact,0–0.25,stroma,254,0.6141732283464567
+Jackson,Jackson,contact,0.25–0.5,B cell,2,0.0
+Jackson,Jackson,contact,0.25–0.5,T cell,41,0.0975609756097561
+Jackson,Jackson,contact,0.25–0.5,endothelial,48,0.3333333333333333
+Jackson,Jackson,contact,0.25–0.5,epithelial,149,0.08053691275167785
+Jackson,Jackson,contact,0.25–0.5,myeloid,3,0.0
+Jackson,Jackson,contact,0.25–0.5,stroma,111,0.4144144144144144
+Jackson,Jackson,contact,0.5–0.75,T cell,14,0.07142857142857142
+Jackson,Jackson,contact,0.5–0.75,endothelial,19,0.3157894736842105
+Jackson,Jackson,contact,0.5–0.75,epithelial,319,0.08150470219435736
+Jackson,Jackson,contact,0.5–0.75,myeloid,1,0.0
+Jackson,Jackson,contact,0.5–0.75,stroma,33,0.5454545454545454
+Jackson,Jackson,contact,0.75–1,T cell,8,0.25
+Jackson,Jackson,contact,0.75–1,endothelial,7,0.5714285714285714
+Jackson,Jackson,contact,0.75–1,epithelial,2439,0.12259122591225913
+Jackson,Jackson,contact,0.75–1,stroma,32,0.15625
+Jackson,Jackson,30um_noncontact,0–0.25,B cell,22,0.09090909090909091
+Jackson,Jackson,30um_noncontact,0–0.25,T cell,141,0.1276595744680851
+Jackson,Jackson,30um_noncontact,0–0.25,endothelial,81,0.4691358024691358
+Jackson,Jackson,30um_noncontact,0–0.25,epithelial,82,0.14634146341463414
+Jackson,Jackson,30um_noncontact,0–0.25,myeloid,42,0.21428571428571427
+Jackson,Jackson,30um_noncontact,0–0.25,stroma,287,0.5609756097560976
+Jackson,Jackson,30um_noncontact,0.25–0.5,T cell,52,0.09615384615384616
+Jackson,Jackson,30um_noncontact,0.25–0.5,endothelial,24,0.20833333333333334
+Jackson,Jackson,30um_noncontact,0.25–0.5,epithelial,237,0.08860759493670886
+Jackson,Jackson,30um_noncontact,0.25–0.5,myeloid,1,0.0
+Jackson,Jackson,30um_noncontact,0.25–0.5,stroma,125,0.448
+Jackson,Jackson,30um_noncontact,0.5–0.75,T cell,7,0.0
+Jackson,Jackson,30um_noncontact,0.5–0.75,epithelial,441,0.10430839002267574
+Jackson,Jackson,30um_noncontact,0.5–0.75,stroma,30,0.26666666666666666
+Jackson,Jackson,30um_noncontact,0.75–1,epithelial,2308,0.1503466204506066
+Jackson,Jackson,30um_noncontact,0.75–1,stroma,3,0.3333333333333333
+Danenberg,Jackson,contact,0–0.25,B cell,20,0.15
+Danenberg,Jackson,contact,0–0.25,T cell,133,0.5112781954887218
+Danenberg,Jackson,contact,0–0.25,endothelial,29,0.9655172413793104
+Danenberg,Jackson,contact,0–0.25,epithelial,81,0.1728395061728395
+Danenberg,Jackson,contact,0–0.25,myeloid,37,0.4594594594594595
+Danenberg,Jackson,contact,0–0.25,stroma,254,0.5393700787401575
+Danenberg,Jackson,contact,0.25–0.5,B cell,2,0.0
+Danenberg,Jackson,contact,0.25–0.5,T cell,41,0.43902439024390244
+Danenberg,Jackson,contact,0.25–0.5,endothelial,48,0.9791666666666666
+Danenberg,Jackson,contact,0.25–0.5,epithelial,149,0.053691275167785234
+Danenberg,Jackson,contact,0.25–0.5,myeloid,3,1.0
+Danenberg,Jackson,contact,0.25–0.5,stroma,111,0.3783783783783784
+Danenberg,Jackson,contact,0.5–0.75,T cell,14,0.2857142857142857
+Danenberg,Jackson,contact,0.5–0.75,endothelial,19,1.0
+Danenberg,Jackson,contact,0.5–0.75,epithelial,319,0.07836990595611286
+Danenberg,Jackson,contact,0.5–0.75,myeloid,1,1.0
+Danenberg,Jackson,contact,0.5–0.75,stroma,33,0.45454545454545453
+Danenberg,Jackson,contact,0.75–1,T cell,8,0.625
+Danenberg,Jackson,contact,0.75–1,endothelial,7,1.0
+Danenberg,Jackson,contact,0.75–1,epithelial,2439,0.12177121771217712
+Danenberg,Jackson,contact,0.75–1,stroma,32,0.125
+Danenberg,Jackson,30um_noncontact,0–0.25,B cell,22,0.13636363636363635
+Danenberg,Jackson,30um_noncontact,0–0.25,T cell,141,0.5531914893617021
+Danenberg,Jackson,30um_noncontact,0–0.25,endothelial,81,0.9753086419753086
+Danenberg,Jackson,30um_noncontact,0–0.25,epithelial,82,0.0975609756097561
+Danenberg,Jackson,30um_noncontact,0–0.25,myeloid,42,0.5
+Danenberg,Jackson,30um_noncontact,0–0.25,stroma,287,0.5121951219512195
+Danenberg,Jackson,30um_noncontact,0.25–0.5,T cell,52,0.34615384615384615
+Danenberg,Jackson,30um_noncontact,0.25–0.5,endothelial,24,1.0
+Danenberg,Jackson,30um_noncontact,0.25–0.5,epithelial,237,0.05907172995780591
+Danenberg,Jackson,30um_noncontact,0.25–0.5,myeloid,1,0.0
+Danenberg,Jackson,30um_noncontact,0.25–0.5,stroma,125,0.376
+Danenberg,Jackson,30um_noncontact,0.5–0.75,T cell,7,0.42857142857142855
+Danenberg,Jackson,30um_noncontact,0.5–0.75,epithelial,441,0.10657596371882086
+Danenberg,Jackson,30um_noncontact,0.5–0.75,stroma,30,0.26666666666666666
+Danenberg,Jackson,30um_noncontact,0.75–1,epithelial,2308,0.14861351819757365
+Danenberg,Jackson,30um_noncontact,0.75–1,stroma,3,0.3333333333333333
+Jackson,Danenberg,contact,0–0.25,B cell,39,0.28205128205128205
+Jackson,Danenberg,contact,0–0.25,T cell,191,0.8272251308900523
+Jackson,Danenberg,contact,0–0.25,endothelial,138,0.9637681159420289
+Jackson,Danenberg,contact,0–0.25,epithelial,159,0.4968553459119497
+Jackson,Danenberg,contact,0–0.25,myeloid,183,0.6174863387978142
+Jackson,Danenberg,contact,0–0.25,stroma,487,0.28952772073921973
+Jackson,Danenberg,contact,0.25–0.5,B cell,21,0.14285714285714285
+Jackson,Danenberg,contact,0.25–0.5,T cell,87,0.7126436781609196
+Jackson,Danenberg,contact,0.25–0.5,endothelial,60,0.8333333333333334
+Jackson,Danenberg,contact,0.25–0.5,epithelial,372,0.4327956989247312
+Jackson,Danenberg,contact,0.25–0.5,myeloid,54,0.5370370370370371
+Jackson,Danenberg,contact,0.25–0.5,stroma,459,0.39869281045751637
+Jackson,Danenberg,contact,0.5–0.75,B cell,7,0.0
+Jackson,Danenberg,contact,0.5–0.75,T cell,37,0.5405405405405406
+Jackson,Danenberg,contact,0.5–0.75,endothelial,72,0.5972222222222222
+Jackson,Danenberg,contact,0.5–0.75,epithelial,724,0.3259668508287293
+Jackson,Danenberg,contact,0.5–0.75,myeloid,18,0.4444444444444444
+Jackson,Danenberg,contact,0.5–0.75,stroma,342,0.6491228070175439
+Jackson,Danenberg,contact,0.75–1,B cell,1,0.0
+Jackson,Danenberg,contact,0.75–1,T cell,11,0.36363636363636365
+Jackson,Danenberg,contact,0.75–1,endothelial,113,0.4424778761061947
+Jackson,Danenberg,contact,0.75–1,epithelial,2551,0.13994511956095648
+Jackson,Danenberg,contact,0.75–1,myeloid,22,0.7727272727272727
+Jackson,Danenberg,contact,0.75–1,stroma,675,0.8088888888888889
+Jackson,Danenberg,30um_noncontact,0–0.25,B cell,51,0.19607843137254902
+Jackson,Danenberg,30um_noncontact,0–0.25,T cell,195,0.8153846153846154
+Jackson,Danenberg,30um_noncontact,0–0.25,endothelial,167,0.9401197604790419
+Jackson,Danenberg,30um_noncontact,0–0.25,epithelial,212,0.37735849056603776
+Jackson,Danenberg,30um_noncontact,0–0.25,myeloid,189,0.5767195767195767
+Jackson,Danenberg,30um_noncontact,0–0.25,stroma,582,0.29037800687285226
+Jackson,Danenberg,30um_noncontact,0.25–0.5,B cell,15,0.13333333333333333
+Jackson,Danenberg,30um_noncontact,0.25–0.5,T cell,96,0.6145833333333334
+Jackson,Danenberg,30um_noncontact,0.25–0.5,endothelial,34,0.9411764705882353
+Jackson,Danenberg,30um_noncontact,0.25–0.5,epithelial,398,0.4120603015075377
+Jackson,Danenberg,30um_noncontact,0.25–0.5,myeloid,57,0.5614035087719298
+Jackson,Danenberg,30um_noncontact,0.25–0.5,stroma,448,0.38392857142857145
+Jackson,Danenberg,30um_noncontact,0.5–0.75,B cell,2,1.0
+Jackson,Danenberg,30um_noncontact,0.5–0.75,T cell,32,0.71875
+Jackson,Danenberg,30um_noncontact,0.5–0.75,endothelial,89,0.5393258426966292
+Jackson,Danenberg,30um_noncontact,0.5–0.75,epithelial,883,0.26613816534541335
+Jackson,Danenberg,30um_noncontact,0.5–0.75,myeloid,18,0.7222222222222222
+Jackson,Danenberg,30um_noncontact,0.5–0.75,stroma,381,0.7480314960629921
+Jackson,Danenberg,30um_noncontact,0.75–1,T cell,3,1.0
+Jackson,Danenberg,30um_noncontact,0.75–1,endothelial,93,0.41935483870967744
+Jackson,Danenberg,30um_noncontact,0.75–1,epithelial,2309,0.15244694673018622
+Jackson,Danenberg,30um_noncontact,0.75–1,myeloid,13,0.9230769230769231
+Jackson,Danenberg,30um_noncontact,0.75–1,stroma,545,0.8532110091743119
+Danenberg,Danenberg,contact,0–0.25,B cell,39,0.41025641025641024
+Danenberg,Danenberg,contact,0–0.25,T cell,191,0.4712041884816754
+Danenberg,Danenberg,contact,0–0.25,endothelial,138,0.8913043478260869
+Danenberg,Danenberg,contact,0–0.25,epithelial,159,0.48427672955974843
+Danenberg,Danenberg,contact,0–0.25,myeloid,183,0.7158469945355191
+Danenberg,Danenberg,contact,0–0.25,stroma,487,0.3141683778234086
+Danenberg,Danenberg,contact,0.25–0.5,B cell,21,0.14285714285714285
+Danenberg,Danenberg,contact,0.25–0.5,T cell,87,0.2988505747126437
+Danenberg,Danenberg,contact,0.25–0.5,endothelial,60,0.6666666666666666
+Danenberg,Danenberg,contact,0.25–0.5,epithelial,372,0.489247311827957
+Danenberg,Danenberg,contact,0.25–0.5,myeloid,54,0.5
+Danenberg,Danenberg,contact,0.25–0.5,stroma,459,0.4008714596949891
+Danenberg,Danenberg,contact,0.5–0.75,B cell,7,0.14285714285714285
+Danenberg,Danenberg,contact,0.5–0.75,T cell,37,0.16216216216216217
+Danenberg,Danenberg,contact,0.5–0.75,endothelial,72,0.4861111111111111
+Danenberg,Danenberg,contact,0.5–0.75,epithelial,724,0.43370165745856354
+Danenberg,Danenberg,contact,0.5–0.75,myeloid,18,0.2222222222222222
+Danenberg,Danenberg,contact,0.5–0.75,stroma,342,0.5964912280701754
+Danenberg,Danenberg,contact,0.75–1,B cell,1,0.0
+Danenberg,Danenberg,contact,0.75–1,T cell,11,0.18181818181818182
+Danenberg,Danenberg,contact,0.75–1,endothelial,113,0.20353982300884957
+Danenberg,Danenberg,contact,0.75–1,epithelial,2551,0.2426499411995296
+Danenberg,Danenberg,contact,0.75–1,myeloid,22,0.2727272727272727
+Danenberg,Danenberg,contact,0.75–1,stroma,675,0.8044444444444444
+Danenberg,Danenberg,30um_noncontact,0–0.25,B cell,51,0.3137254901960784
+Danenberg,Danenberg,30um_noncontact,0–0.25,T cell,195,0.49230769230769234
+Danenberg,Danenberg,30um_noncontact,0–0.25,endothelial,167,0.8802395209580839
+Danenberg,Danenberg,30um_noncontact,0–0.25,epithelial,212,0.38207547169811323
+Danenberg,Danenberg,30um_noncontact,0–0.25,myeloid,189,0.6772486772486772
+Danenberg,Danenberg,30um_noncontact,0–0.25,stroma,582,0.3161512027491409
+Danenberg,Danenberg,30um_noncontact,0.25–0.5,B cell,15,0.13333333333333333
+Danenberg,Danenberg,30um_noncontact,0.25–0.5,T cell,96,0.17708333333333334
+Danenberg,Danenberg,30um_noncontact,0.25–0.5,endothelial,34,0.7941176470588235
+Danenberg,Danenberg,30um_noncontact,0.25–0.5,epithelial,398,0.44472361809045224
+Danenberg,Danenberg,30um_noncontact,0.25–0.5,myeloid,57,0.5964912280701754
+Danenberg,Danenberg,30um_noncontact,0.25–0.5,stroma,448,0.35714285714285715
+Danenberg,Danenberg,30um_noncontact,0.5–0.75,B cell,2,1.0
+Danenberg,Danenberg,30um_noncontact,0.5–0.75,T cell,32,0.34375
+Danenberg,Danenberg,30um_noncontact,0.5–0.75,endothelial,89,0.3146067415730337
+Danenberg,Danenberg,30um_noncontact,0.5–0.75,epithelial,883,0.3873159682899207
+Danenberg,Danenberg,30um_noncontact,0.5–0.75,myeloid,18,0.2777777777777778
+Danenberg,Danenberg,30um_noncontact,0.5–0.75,stroma,381,0.7270341207349081
+Danenberg,Danenberg,30um_noncontact,0.75–1,T cell,3,0.0
+Danenberg,Danenberg,30um_noncontact,0.75–1,endothelial,93,0.20430107526881722
+Danenberg,Danenberg,30um_noncontact,0.75–1,epithelial,2309,0.256388046773495
+Danenberg,Danenberg,30um_noncontact,0.75–1,myeloid,13,0.07692307692307693
+Danenberg,Danenberg,30um_noncontact,0.75–1,stroma,545,0.8495412844036697

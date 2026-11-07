@@ -1,0 +1,39 @@
+[{"stream_name":"stderr","time":9.928974106,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.92903159,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.929038783,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.929043717999999,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.746775606,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.746815082,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.746821349,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.74682645,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":20.280795669,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 20.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":20.483545906,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.2/45.2 MB 20.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":25.009434142,"data":"python 3.12.13 | numpy 2.0.2 | imagecodecs 2024.9.22\n"}
+,{"stream_name":"stdout","time":26.010063443,"data":"{'danenberg': '/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet', 'jackson': '/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet'} {'danenberg': (794, 794), 'jackson': (735, 708)}\n"}
+,{"stream_name":"stdout","time":31.880846748,"data":"danenberg: 1,062,219 cells, 704 images\n"}
+,{"stream_name":"stdout","time":31.880889926000002,"data":"jackson: 1,126,124 cells, 542 images\n"}
+,{"stream_name":"stdout","time":300.346473072,"data":"danenberg: cells with ≥1 pixel 1.0000, with ≥1 eroded pixel 0.9748, median pixels 130 / 37\n"}
+,{"stream_name":"stdout","time":300.346601169,"data":"   cohort         channel     r\n"}
+,{"stream_name":"stdout","time":300.346606788,"data":"danenberg      histone_h3 0.992\n"}
+,{"stream_name":"stdout","time":300.346610621,"data":"danenberg            dna1 0.986\n"}
+,{"stream_name":"stdout","time":300.346614291,"data":"danenberg pan_cytokeratin 0.986\n"}
+,{"stream_name":"stdout","time":300.346617961,"data":"danenberg            cd45 0.964\n"}
+,{"stream_name":"stdout","time":300.865363023,"data":"highest NaN fractions: {'dio_e2__cd45': 0.22, 'dio_e2__cd68': 0.22, 'dio_e2__histone_h3': 0.22, 'dio_e2__dna2': 0.22, 'dio_e2__dna1': 0.22, 'dio_e2__c_erb_b_2_her2': 0.22}\n"}
+,{"stream_name":"stdout","time":308.820215597,"data":"[   4.7 min] danenberg: 117 features saved\n"}
+,{"stream_name":"stdout","time":526.645999539,"data":"jackson: cells with ≥1 pixel 1.0000, with ≥1 eroded pixel 0.8696, median pixels 90 / 16\n"}
+,{"stream_name":"stdout","time":526.64612918,"data":" cohort         channel     r\n"}
+,{"stream_name":"stdout","time":526.646135763,"data":"jackson      histone_h3 1.000\n"}
+,{"stream_name":"stdout","time":526.646139452,"data":"jackson            dna1 1.000\n"}
+,{"stream_name":"stdout","time":526.646143163,"data":"jackson pan_cytokeratin 1.000\n"}
+,{"stream_name":"stdout","time":526.646146797,"data":"jackson            cd45 0.912\n"}
+,{"stream_name":"stdout","time":527.125527272,"data":"highest NaN fractions: {'dio_e2__cd45': 0.467, 'dio_e2__cd68': 0.467, 'dio_e2__histone_h3': 0.467, 'dio_e2__dna2': 0.467, 'dio_e2__dna1': 0.467, 'dio_e2__c_erb_b_2_her2': 0.467}\n"}
+,{"stream_name":"stdout","time":535.116378691,"data":"[   8.5 min] jackson: 117 features saved\n"}
+,{"stream_name":"stderr","time":541.417720538,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":541.417761427,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":541.675942695,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":541.675971861,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":542.469956291,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":542.8828436,"data":"[NbConvertApp] Writing 19793 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":546.10608673,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":547.333285576,"data":"[NbConvertApp] Writing 368340 bytes to __results__.html\n"}
+]

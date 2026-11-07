@@ -1,0 +1,53 @@
+rep,task,train,test,model,base,metric,diff,lo,hi,call
+2,coarse,Jackson,Jackson,Novae [cohort],Table + nbr,macro_f1,-0.30984123000219105,-0.37504521912619543,-0.27622618013342504,worse
+2,coarse,Jackson,Jackson,Novae [cohort],Table + nbr,bal_acc,-0.32399637644020396,-0.4092934242637337,-0.29038151592692857,worse
+2,coarse,Jackson,Danenberg,Novae [cohort],Table + nbr,macro_f1,-0.15349469131305976,-0.17011724845208306,-0.13981066346851828,worse
+2,coarse,Jackson,Danenberg,Novae [cohort],Table + nbr,bal_acc,-0.13361995567630142,-0.14894246636713313,-0.12151399273716856,worse
+2,coarse,Jackson,Jackson,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.0030778024525663916,-0.004928943902957375,-0.0010060670855839592,worse
+2,coarse,Jackson,Jackson,Table + nbr + Novae [cohort],Table + nbr,bal_acc,-0.003370205273102611,-0.005173243047030704,-0.0008414960725839575,worse
+2,coarse,Jackson,Danenberg,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.0024469349924221007,-0.004411382635993472,-0.0005933104321135808,worse
+2,coarse,Jackson,Danenberg,Table + nbr + Novae [cohort],Table + nbr,bal_acc,-0.002839888020535475,-0.004738746251729725,-0.0010805310164591162,worse
+2,coarse,Jackson,Jackson,Table + nbr + Novae [cohort]-corr,Table + nbr,macro_f1,-0.0009361295751875165,-0.002892729246780071,0.000915846282854213,n.s.
+2,coarse,Jackson,Jackson,Table + nbr + Novae [cohort]-corr,Table + nbr,bal_acc,-0.0009553008372463756,-0.003042617228509148,0.0012317042259503946,n.s.
+2,coarse,Jackson,Danenberg,Table + nbr + Novae [cohort]-corr,Table + nbr,macro_f1,6.356221139025564e-05,-0.002223030714701918,0.002033342378732539,n.s.
+2,coarse,Jackson,Danenberg,Table + nbr + Novae [cohort]-corr,Table + nbr,bal_acc,0.0013340459057085141,-0.00079903864202297,0.0031950830501967535,n.s.
+2,coarse,Jackson,Jackson,Table + nbr + Novae [img],Table + nbr,macro_f1,-0.0026248003906036432,-0.005589224277025076,0.0014295027104144515,n.s.
+2,coarse,Jackson,Jackson,Table + nbr + Novae [img],Table + nbr,bal_acc,-0.0018118230210111275,-0.003935812261941671,0.0008289434195730409,n.s.
+2,coarse,Jackson,Danenberg,Table + nbr + Novae [img],Table + nbr,macro_f1,0.002401093191071846,0.0003542360150248086,0.00422263907892727,better
+2,coarse,Jackson,Danenberg,Table + nbr + Novae [img],Table + nbr,bal_acc,0.002931688800975163,0.0012003983355619752,0.004606404694281585,better
+2,coarse,Danenberg,Jackson,Novae [cohort],Table + nbr,macro_f1,-0.15371395483317418,-0.21459639047195844,-0.11600491958405061,worse
+2,coarse,Danenberg,Jackson,Novae [cohort],Table + nbr,bal_acc,-0.1714253528494341,-0.2707346785695612,-0.12912101346718546,worse
+2,coarse,Danenberg,Danenberg,Novae [cohort],Table + nbr,macro_f1,-0.2337019095554828,-0.2550072968222885,-0.21598672308549635,worse
+2,coarse,Danenberg,Danenberg,Novae [cohort],Table + nbr,bal_acc,-0.23902901514155456,-0.25723941452480026,-0.22330135433095197,worse
+2,coarse,Danenberg,Jackson,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.005082216849745191,-0.015438224074755086,0.005892558542352029,n.s.
+2,coarse,Danenberg,Jackson,Table + nbr + Novae [cohort],Table + nbr,bal_acc,0.0020821316601293827,-0.006529497204287868,0.01733926088567551,n.s.
+2,coarse,Danenberg,Danenberg,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.001120927462773036,-0.002651500131708978,0.0003799648616592875,n.s.
+2,coarse,Danenberg,Danenberg,Table + nbr + Novae [cohort],Table + nbr,bal_acc,-0.001011017278264248,-0.0025817343467921085,0.0005289028196736265,n.s.
+2,coarse,Danenberg,Jackson,Table + nbr + Novae [cohort]-corr,Table + nbr,macro_f1,0.0003131795195894238,-0.007149943747520662,0.00946253344182307,n.s.
+2,coarse,Danenberg,Jackson,Table + nbr + Novae [cohort]-corr,Table + nbr,bal_acc,0.0065919854240787945,-0.0028317010871184213,0.021354887136365488,n.s.
+2,coarse,Danenberg,Danenberg,Table + nbr + Novae [cohort]-corr,Table + nbr,macro_f1,-0.0019104692407068136,-0.0035495583432133214,-0.00042568544755122186,worse
+2,coarse,Danenberg,Danenberg,Table + nbr + Novae [cohort]-corr,Table + nbr,bal_acc,-0.0017852813960588243,-0.003476558509743724,-0.0002169306304572627,worse
+2,coarse,Danenberg,Jackson,Table + nbr + Novae [img],Table + nbr,macro_f1,-0.0022773718642634666,-0.007264641125671639,0.006163670654061359,n.s.
+2,coarse,Danenberg,Jackson,Table + nbr + Novae [img],Table + nbr,bal_acc,0.002091186859562555,-0.006173063763687178,0.015289840235677908,n.s.
+2,coarse,Danenberg,Danenberg,Table + nbr + Novae [img],Table + nbr,macro_f1,-0.00039769925547317175,-0.00203533678702264,0.0013200479731541367,n.s.
+2,coarse,Danenberg,Danenberg,Table + nbr + Novae [img],Table + nbr,bal_acc,-0.0008112683671229748,-0.002627833730017096,0.0011215787691228071,n.s.
+2,coarse,Both,Jackson,Novae [cohort],Table + nbr,macro_f1,-0.30730174936164767,-0.3604717996303223,-0.28170952489067,worse
+2,coarse,Both,Jackson,Novae [cohort],Table + nbr,bal_acc,-0.31887057165559096,-0.39566829110692975,-0.2875477157257682,worse
+2,coarse,Both,Danenberg,Novae [cohort],Table + nbr,macro_f1,-0.2300009353968374,-0.2505850037520357,-0.2113417707171802,worse
+2,coarse,Both,Danenberg,Novae [cohort],Table + nbr,bal_acc,-0.2500360599393327,-0.2692169049191791,-0.23311599789235077,worse
+2,coarse,Both,Jackson,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.002202680527181644,-0.005161776452885186,0.0009982301288385257,n.s.
+2,coarse,Both,Jackson,Table + nbr + Novae [cohort],Table + nbr,bal_acc,-0.0004631198950122428,-0.0024526168358930565,0.0017754285753973221,n.s.
+2,coarse,Both,Danenberg,Table + nbr + Novae [cohort],Table + nbr,macro_f1,0.001076334355224473,-0.00032484021558270844,0.002433260375722374,n.s.
+2,coarse,Both,Danenberg,Table + nbr + Novae [cohort],Table + nbr,bal_acc,0.0004542643831637605,-0.0010234751669855574,0.0017737136399713109,n.s.
+2,coarse,Both,Jackson,Table + nbr + Novae [cohort]-corr,Table + nbr,macro_f1,-0.0002370949732690697,-0.002284933783462781,0.0013528190953934454,n.s.
+2,coarse,Both,Jackson,Table + nbr + Novae [cohort]-corr,Table + nbr,bal_acc,0.0010319824121891585,-0.0010047165942619785,0.0032794707977548076,n.s.
+2,coarse,Both,Danenberg,Table + nbr + Novae [cohort]-corr,Table + nbr,macro_f1,-0.0009307044266186892,-0.002105497087382141,0.0003285639382319181,n.s.
+2,coarse,Both,Danenberg,Table + nbr + Novae [cohort]-corr,Table + nbr,bal_acc,-0.0010333186172236664,-0.00242624747506861,0.0004334120791550403,n.s.
+2,coarse,Both,Jackson,Table + nbr + Novae [img],Table + nbr,macro_f1,0.000875468025194448,-0.002232498715719003,0.006076368239063239,n.s.
+2,coarse,Both,Jackson,Table + nbr + Novae [img],Table + nbr,bal_acc,3.363990232596592e-05,-0.0025601051700485295,0.0035004320597295598,n.s.
+2,coarse,Both,Danenberg,Table + nbr + Novae [img],Table + nbr,macro_f1,6.145510209321081e-05,-0.0016395688051544343,0.0015473677344501554,n.s.
+2,coarse,Both,Danenberg,Table + nbr + Novae [img],Table + nbr,bal_acc,-0.0004622127182292157,-0.00205928757917071,0.0012080534696478084,n.s.
+2,fine,Danenberg,Danenberg,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.002774730298380601,-0.0055702942447530355,0.0009238987475998903,n.s.
+2,fine,Danenberg,Danenberg,Table + nbr + Novae [cohort],Table + nbr,bal_acc,-0.002575429882500091,-0.0050350951054916075,0.0015859189056371577,n.s.
+2,fine,Jackson,Jackson,Table + nbr + Novae [cohort],Table + nbr,macro_f1,-0.0006451334916937612,-0.005754344859642706,0.005286468631734272,n.s.
+2,fine,Jackson,Jackson,Table + nbr + Novae [cohort],Table + nbr,bal_acc,-0.0002844583184916649,-0.005025626531411918,0.0053747680378971934,n.s.

@@ -1,0 +1,83 @@
+Jackson: 1,126,124 cells; LISI pool 202,079 labelled test cells from 66 patients
+Danenberg: 1,062,219 cells; LISI pool 220,153 labelled test cells from 130 patients
+draw 0 Intensity                        iLISI 1.455  cLISI 1.515
+draw 0 Intensity, no cohort scaling     iLISI 1.059  cLISI 1.522
+draw 0 Rank                             iLISI 1.049  cLISI 1.616
+draw 0 Intensity + neighbours           iLISI 1.267  cLISI 1.637
+draw 0 Novae [cohort]                   iLISI 1.770  cLISI 2.174
+draw 0 Novae [cohort]-corr              iLISI 1.674  cLISI 2.192
+draw 0 Novae [img]                      iLISI 1.795  cLISI 2.012
+draw 0 Intensity + pixel features       iLISI 1.426  cLISI 1.514
+draw 0 Pixel features only              iLISI 1.478  cLISI 1.564
+draw 0 Intensity + patch means          iLISI 1.293  cLISI 1.597
+draw 0 KRONOS                           iLISI 1.257  cLISI 1.803
+draw 0 KRONOS2                          iLISI 1.276  cLISI 1.819
+draw 0 Intensity + KRONOS2              iLISI 1.229  cLISI 1.646
+draw 1 Intensity                        iLISI 1.449  cLISI 1.506
+draw 1 Intensity, no cohort scaling     iLISI 1.062  cLISI 1.506
+draw 1 Rank                             iLISI 1.047  cLISI 1.626
+draw 1 Intensity + neighbours           iLISI 1.265  cLISI 1.643
+draw 1 Novae [cohort]                   iLISI 1.766  cLISI 2.205
+draw 1 Novae [cohort]-corr              iLISI 1.682  cLISI 2.217
+draw 1 Novae [img]                      iLISI 1.779  cLISI 2.015
+draw 1 Intensity + pixel features       iLISI 1.417  cLISI 1.521
+draw 1 Pixel features only              iLISI 1.463  cLISI 1.569
+draw 1 Intensity + patch means          iLISI 1.289  cLISI 1.592
+draw 1 KRONOS                           iLISI 1.262  cLISI 1.814
+draw 1 KRONOS2                          iLISI 1.279  cLISI 1.813
+draw 1 Intensity + KRONOS2              iLISI 1.235  cLISI 1.632
+draw 2 Intensity                        iLISI 1.457  cLISI 1.519
+draw 2 Intensity, no cohort scaling     iLISI 1.058  cLISI 1.522
+draw 2 Rank                             iLISI 1.050  cLISI 1.622
+draw 2 Intensity + neighbours           iLISI 1.270  cLISI 1.635
+draw 2 Novae [cohort]                   iLISI 1.773  cLISI 2.181
+draw 2 Novae [cohort]-corr              iLISI 1.689  cLISI 2.192
+draw 2 Novae [img]                      iLISI 1.792  cLISI 2.010
+draw 2 Intensity + pixel features       iLISI 1.424  cLISI 1.509
+draw 2 Pixel features only              iLISI 1.476  cLISI 1.549
+draw 2 Intensity + patch means          iLISI 1.294  cLISI 1.603
+draw 2 KRONOS                           iLISI 1.266  cLISI 1.810
+draw 2 KRONOS2                          iLISI 1.285  cLISI 1.809
+draw 2 Intensity + KRONOS2              iLISI 1.238  cLISI 1.628
+draw 3 Intensity                        iLISI 1.463  cLISI 1.510
+draw 3 Intensity, no cohort scaling     iLISI 1.058  cLISI 1.515
+draw 3 Rank                             iLISI 1.048  cLISI 1.622
+draw 3 Intensity + neighbours           iLISI 1.268  cLISI 1.631
+draw 3 Novae [cohort]                   iLISI 1.768  cLISI 2.165
+draw 3 Novae [cohort]-corr              iLISI 1.675  cLISI 2.176
+draw 3 Novae [img]                      iLISI 1.786  cLISI 1.992
+draw 3 Intensity + pixel features       iLISI 1.421  cLISI 1.505
+draw 3 Pixel features only              iLISI 1.469  cLISI 1.551
+draw 3 Intensity + patch means          iLISI 1.288  cLISI 1.584
+draw 3 KRONOS                           iLISI 1.261  cLISI 1.797
+draw 3 KRONOS2                          iLISI 1.291  cLISI 1.826
+draw 3 Intensity + KRONOS2              iLISI 1.242  cLISI 1.644
+draw 4 Intensity                        iLISI 1.455  cLISI 1.505
+draw 4 Intensity, no cohort scaling     iLISI 1.056  cLISI 1.501
+draw 4 Rank                             iLISI 1.045  cLISI 1.631
+draw 4 Intensity + neighbours           iLISI 1.268  cLISI 1.630
+draw 4 Novae [cohort]                   iLISI 1.770  cLISI 2.206
+draw 4 Novae [cohort]-corr              iLISI 1.679  cLISI 2.221
+draw 4 Novae [img]                      iLISI 1.781  cLISI 2.022
+draw 4 Intensity + pixel features       iLISI 1.415  cLISI 1.515
+draw 4 Pixel features only              iLISI 1.465  cLISI 1.561
+draw 4 Intensity + patch means          iLISI 1.286  cLISI 1.581
+draw 4 KRONOS                           iLISI 1.257  cLISI 1.802
+draw 4 KRONOS2                          iLISI 1.277  cLISI 1.811
+draw 4 Intensity + KRONOS2              iLISI 1.228  cLISI 1.636
+                             ilisi_mean               clisi_mean               ilisi_median               clisi_median              
+                                   mean    min    max       mean    min    max         mean    min    max         mean    min    max
+space                                                                                                                               
+Intensity                         1.456  1.449  1.463      1.511  1.505  1.519        1.410  1.399  1.427        1.300  1.284  1.307
+Intensity + KRONOS2               1.234  1.228  1.242      1.637  1.628  1.646        1.117  1.110  1.126        1.453  1.436  1.461
+Intensity + neighbours            1.268  1.265  1.270      1.635  1.630  1.643        1.159  1.155  1.162        1.397  1.375  1.415
+Intensity + patch means           1.290  1.286  1.294      1.591  1.581  1.603        1.180  1.172  1.187        1.359  1.338  1.386
+Intensity + pixel features        1.421  1.415  1.426      1.513  1.505  1.521        1.351  1.339  1.359        1.297  1.264  1.308
+Intensity, no cohort scaling      1.059  1.056  1.062      1.513  1.501  1.522        1.000  1.000  1.000        1.278  1.260  1.289
+KRONOS                            1.261  1.257  1.266      1.805  1.797  1.814        1.134  1.130  1.142        1.696  1.672  1.710
+KRONOS2                           1.282  1.276  1.291      1.816  1.809  1.826        1.157  1.148  1.164        1.666  1.653  1.681
+Novae [cohort]                    1.769  1.766  1.773      2.186  2.165  2.206        1.858  1.850  1.864        1.970  1.933  1.984
+Novae [cohort]-corr               1.680  1.674  1.689      2.199  2.176  2.221        1.753  1.741  1.765        1.984  1.952  1.997
+Novae [img]                       1.787  1.779  1.795      2.010  1.992  2.022        1.854  1.849  1.858        1.891  1.880  1.902
+Pixel features only               1.470  1.463  1.478      1.559  1.549  1.569        1.422  1.408  1.438        1.347  1.317  1.366
+Rank                              1.048  1.045  1.050      1.623  1.616  1.631        1.000  1.000  1.000        1.382  1.347  1.401

@@ -1,0 +1,26 @@
+{
+ "sign": -1,
+ "basel_r": -0.3354416912789896,
+ "band": "substantive",
+ "D1": true,
+ "R1": true,
+ "R2": true,
+ "C1": {
+  "Basel": true,
+  "Zurich": true
+ },
+ "C2": {
+  "Basel|C2a + fine phenotype": true,
+  "Basel|C2b + neighbour means": true,
+  "Basel|C2c common axis (vimentin - pan-CK)": true,
+  "Zurich|C2a + fine phenotype": true,
+  "Zurich|C2b + neighbour means": true,
+  "Zurich|C2c common axis (vimentin - pan-CK)": true
+ },
+ "C0": {
+  "Basel": true,
+  "Zurich": true,
+  "Keren": true
+ },
+ "claim": "replicated across hospitals and technologies"
+}

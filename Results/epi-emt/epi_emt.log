@@ -1,0 +1,73 @@
+Basel: 404,842 epithelial tumour cells, 281 patients, 289 images
+Basel    primary                                    r -0.335 [-0.357, -0.314]  patients 264  pos 0.03
+Basel    C1 total H3 (negative control)             r -0.122 [-0.140, -0.104]  patients 264  pos 0.20
+Basel    C2a + fine phenotype                       r -0.272 [-0.291, -0.251]  patients 264  pos 0.05
+Basel    C2b + neighbour means                      r -0.297 [-0.316, -0.276]  patients 264  pos 0.02
+Basel    C2c common axis (vimentin - pan-CK)        r -0.342 [-0.366, -0.319]  patients 264  pos 0.05
+Basel    C0 shuffled axis                           r -0.003 [-0.007, +0.001]  patients 264  pos 0.44
+Zurich: 187,127 epithelial tumour cells, 71 patients, 263 images
+Zurich   primary                                    r -0.342 [-0.373, -0.306]  patients 71  pos 0.01
+Zurich   C1 total H3 (negative control)             r -0.122 [-0.148, -0.095]  patients 71  pos 0.14
+Zurich   C2a + fine phenotype                       r -0.301 [-0.330, -0.272]  patients 71  pos 0.03
+Zurich   C2b + neighbour means                      r -0.316 [-0.341, -0.286]  patients 71  pos 0.00
+Zurich   C2c common axis (vimentin - pan-CK)        r -0.306 [-0.341, -0.269]  patients 71  pos 0.01
+Zurich   C0 shuffled axis                           r +0.009 [+0.003, +0.014]  patients 71  pos 0.63
+Keren: 114,635 tumour cells, 40 patients
+Keren    R2 common axis (vimentin - K6/K17)         r -0.060 [-0.106, -0.011]  patients 40  pos 0.25
+Keren    C0 shuffled axis                           r -0.002 [-0.009, +0.004]  patients 40  pos 0.42
+               set                                   test      r     lo     hi  n_pat  n_cells  frac_pos
+0            Basel                        marker vimentin -0.007 -0.027  0.014    264   404084     0.447
+1            Basel                           marker twist  0.206  0.193  0.220    264   404084     0.985
+2            Basel                            marker slug  0.216  0.202  0.230    264   404084     0.962
+3            Basel           marker e_cadherin_p_cadherin  0.289  0.274  0.305    264   404084     0.989
+4            Basel                 marker pan_cytokeratin  0.553  0.526  0.580    264   404084     0.989
+5            Basel                marker cytokeratin_8_18  0.483  0.460  0.507    264   404084     1.000
+6            Basel                  marker cytokeratin_19  0.528  0.505  0.550    264   404084     1.000
+7           Zurich                        marker vimentin  0.023 -0.008  0.056     71   187127     0.479
+8           Zurich                           marker twist  0.152  0.127  0.179     71   187127     0.944
+9           Zurich                            marker slug  0.253  0.231  0.275     71   187127     0.986
+10          Zurich           marker e_cadherin_p_cadherin  0.319  0.294  0.340     71   187127     0.986
+11          Zurich                 marker pan_cytokeratin  0.509  0.472  0.548     71   187127     1.000
+12          Zurich                marker cytokeratin_8_18  0.465  0.425  0.503     71   187127     0.986
+13          Zurich                  marker cytokeratin_19  0.527  0.493  0.557     71   187127     1.000
+14  Jackson (both)                       subtype HR+HER2+ -0.314 -0.375 -0.251     38    56597     0.026
+15  Jackson (both)                       subtype HR+HER2- -0.365 -0.387 -0.341    205   345221     0.024
+16  Jackson (both)                       subtype HR-HER2+ -0.316 -0.373 -0.254     24    36418     0.042
+17  Jackson (both)                      subtype TripleNeg -0.244 -0.286 -0.203     52   108938     0.038
+18  Jackson (both)                            subtype nan -0.346 -0.412 -0.271     16    44037     0.000
+19           Keren                      + neighbour means -0.027 -0.062  0.013     40   114635     0.375
+20           Keren                no crosstalk covariates -0.099 -0.164 -0.033     40   114635     0.275
+21           Keren  pan-keratin axis, crosstalk regressed -0.077 -0.147 -0.014     40   114635     0.225
+22           Keren                  H3K9ac on common axis  0.021 -0.010  0.053     40   114635     0.675
+23           Keren                        marker vimentin -0.076 -0.140 -0.010     40   114635     0.300
+24           Keren                        marker keratin6 -0.003 -0.033  0.026     40   114635     0.500
+25           Keren                       marker keratin17  0.048  0.022  0.071     40   114635     0.850
+      set    rho      p  n_pat
+0   Basel  0.175  0.004    264
+1  Zurich -0.089  0.458     71
+{
+ "sign": -1,
+ "basel_r": -0.3354416912789896,
+ "band": "substantive",
+ "D1": true,
+ "R1": true,
+ "R2": true,
+ "C1": {
+  "Basel": true,
+  "Zurich": true
+ },
+ "C2": {
+  "Basel|C2a + fine phenotype": true,
+  "Basel|C2b + neighbour means": true,
+  "Basel|C2c common axis (vimentin - pan-CK)": true,
+  "Zurich|C2a + fine phenotype": true,
+  "Zurich|C2b + neighbour means": true,
+  "Zurich|C2c common axis (vimentin - pan-CK)": true
+ },
+ "C0": {
+  "Basel": true,
+  "Zurich": true,
+  "Keren": true
+ },
+ "claim": "replicated across hospitals and technologies"
+}

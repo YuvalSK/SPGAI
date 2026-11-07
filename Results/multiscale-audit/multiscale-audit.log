@@ -1,0 +1,222 @@
+[{"stream_name":"stderr","time":8.273889841,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.273934521,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.273938341,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.273940831,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.880648192,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.880684453,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.880689762,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.880692922,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":21.768276141,"data":"{\n"}
+,{"stream_name":"stdout","time":21.768317171,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":21.768321711,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":21.768326161,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":21.768329771,"data":"  \"pix\": \"/kaggle/input/notebooks/yuvalsamoilov/pixel-features/pixfeat_danenberg.parquet\",\n"}
+,{"stream_name":"stdout","time":21.768332781,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":21.768335841,"data":" },\n"}
+,{"stream_name":"stdout","time":21.768338521,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":21.768341251,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":21.768344571,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":21.768348111,"data":"  \"pix\": \"/kaggle/input/notebooks/yuvalsamoilov/pixel-features/pixfeat_jackson.parquet\"\n"}
+,{"stream_name":"stdout","time":21.768351391,"data":" }\n"}
+,{"stream_name":"stdout","time":21.768354131,"data":"}\n"}
+,{"stream_name":"stdout","time":51.255014945,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients; pixel-feature NaN fraction 0.010 (full) / 0.272 (e2)\n"}
+,{"stream_name":"stdout","time":51.255056445,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; pixel-feature NaN fraction 0.001 (full) / 0.105 (e2)\n"}
+,{"stream_name":"stdout","time":51.255063045,"data":"[   0.5 min] tables and pixel features loaded\n"}
+,{"stream_name":"stdout","time":60.918373875,"data":"Jackson: kNN-10 / 30 µm / contact / non-contact graphs built; mean contact degree 5.24\n"}
+,{"stream_name":"stdout","time":69.154675267,"data":"Danenberg: kNN-10 / 30 µm / contact / non-contact graphs built; mean contact degree 5.84\n"}
+,{"stream_name":"stdout","time":69.154717147,"data":"[   0.8 min] graphs and neighbour features\n"}
+,{"stream_name":"stdout","time":74.033590207,"data":"   cohort           graph         cls   edges  same_type_share  null_share  ratio\n"}
+,{"stream_name":"stdout","time":74.033626487,"data":"  Jackson         contact  epithelial 3470662            0.884       0.600  1.474\n"}
+,{"stream_name":"stdout","time":74.033630687,"data":"  Jackson         contact      T cell  173550            0.590       0.384  1.537\n"}
+,{"stream_name":"stdout","time":74.033651967,"data":"  Jackson         contact      B cell   95414            0.609       0.427  1.428\n"}
+,{"stream_name":"stdout","time":74.033654057,"data":"  Jackson         contact     myeloid  120742            0.343       0.454  0.755\n"}
+,{"stream_name":"stdout","time":74.033655997,"data":"  Jackson         contact endothelial  140353            0.378       0.482  0.784\n"}
+,{"stream_name":"stdout","time":74.033657857,"data":"  Jackson         contact      stroma  942467            0.569       0.500  1.137\n"}
+,{"stream_name":"stdout","time":74.033659737,"data":"  Jackson 30um_noncontact  epithelial 7529827            0.822       0.612  1.343\n"}
+,{"stream_name":"stdout","time":74.033661737,"data":"  Jackson 30um_noncontact      T cell  498930            0.531       0.382  1.388\n"}
+,{"stream_name":"stdout","time":74.033663617,"data":"  Jackson 30um_noncontact      B cell  276765            0.535       0.429  1.249\n"}
+,{"stream_name":"stdout","time":74.033665507,"data":"  Jackson 30um_noncontact     myeloid  315826            0.237       0.454  0.522\n"}
+,{"stream_name":"stdout","time":74.033667357,"data":"  Jackson 30um_noncontact endothelial  321615            0.171       0.490  0.349\n"}
+,{"stream_name":"stdout","time":74.033669237,"data":"  Jackson 30um_noncontact      stroma 2513365            0.496       0.503  0.986\n"}
+,{"stream_name":"stdout","time":74.033671107,"data":"Danenberg         contact  epithelial 3748620            0.859       0.569  1.509\n"}
+,{"stream_name":"stdout","time":74.033673427,"data":"Danenberg         contact      T cell  300933            0.284       0.355  0.802\n"}
+,{"stream_name":"stdout","time":74.033675557,"data":"Danenberg         contact      B cell  179783            0.523       0.313  1.673\n"}
+,{"stream_name":"stdout","time":74.033677447,"data":"Danenberg         contact     myeloid  258665            0.241       0.422  0.571\n"}
+,{"stream_name":"stdout","time":74.033679347,"data":"Danenberg         contact endothelial  226285            0.354       0.418  0.845\n"}
+,{"stream_name":"stdout","time":74.033681217,"data":"Danenberg         contact      stroma 1113592            0.465       0.452  1.027\n"}
+,{"stream_name":"stdout","time":74.033683087,"data":"Danenberg 30um_noncontact  epithelial 5765951            0.809       0.575  1.405\n"}
+,{"stream_name":"stdout","time":74.033684947,"data":"Danenberg 30um_noncontact      T cell  539239            0.253       0.350  0.723\n"}
+,{"stream_name":"stdout","time":74.033686827,"data":"Danenberg 30um_noncontact      B cell  381333            0.510       0.314  1.624\n"}
+,{"stream_name":"stdout","time":74.033688717,"data":"Danenberg 30um_noncontact     myeloid  444298            0.194       0.417  0.465\n"}
+,{"stream_name":"stdout","time":74.033690597,"data":"Danenberg 30um_noncontact endothelial  336729            0.220       0.420  0.524\n"}
+,{"stream_name":"stdout","time":74.033693847,"data":"Danenberg 30um_noncontact      stroma 1789286            0.387       0.452  0.855\n"}
+,{"stream_name":"stdout","time":74.033695957,"data":"[   0.9 min] B0 homophily\n"}
+,{"stream_name":"stdout","time":74.097232819,"data":"[   0.9 min] replicate 0\n"}
+,{"stream_name":"stdout","time":594.282783666,"data":"[   9.6 min] rep 0 imputation, train Jackson\n"}
+,{"stream_name":"stdout","time":1129.900958153,"data":"[  18.5 min] rep 0 imputation, train Danenberg\n"}
+,{"stream_name":"stdout","time":1346.562778101,"data":"[  22.1 min] rep 0 stage-1 predicted types\n"}
+,{"stream_name":"stdout","time":1665.664224583,"data":"[  27.4 min] rep 0 typing coarse, train Jackson: 0 base 0.782, 1 +pix 0.790, 2 +pix e2 0.784, 3 +band 0.785, 4 +band +pix 0.792, 5 +B2 0.784\n"}
+,{"stream_name":"stdout","time":1995.873723291,"data":"[  32.9 min] rep 0 typing coarse, train Danenberg: 0 base 0.708, 1 +pix 0.719, 2 +pix e2 0.715, 3 +band 0.713, 4 +band +pix 0.719, 5 +B2 0.714\n"}
+,{"stream_name":"stdout","time":3536.8795187,"data":"[  58.6 min] rep 0 typing fine, train Danenberg: 0 base 0.452, 1 +pix 0.471, 2 +pix e2 0.461, 3 +band 0.460, 4 +band +pix 0.473, 5 +B2 0.451\n"}
+,{"stream_name":"stdout","time":4761.904659131,"data":"[  79.0 min] rep 0 typing fine, train Jackson: 0 base 0.396, 1 +pix 0.410, 2 +pix e2 0.411, 3 +band 0.396, 4 +band +pix 0.413, 5 +B2 0.400\n"}
+,{"stream_name":"stdout","time":4762.137785684,"data":"[  79.0 min] replicate 0 done (78 min)\n"}
+,{"stream_name":"stdout","time":4762.139010154,"data":"[  79.0 min] replicate 1\n"}
+,{"stream_name":"stdout","time":5291.739414071,"data":"[  87.9 min] rep 1 imputation, train Jackson\n"}
+,{"stream_name":"stdout","time":5835.707169993,"data":"[  96.9 min] rep 1 imputation, train Danenberg\n"}
+,{"stream_name":"stdout","time":6052.034616681,"data":"[ 100.5 min] rep 1 stage-1 predicted types\n"}
+,{"stream_name":"stdout","time":6375.695727731,"data":"[ 105.9 min] rep 1 typing coarse, train Jackson: 0 base 0.796, 1 +pix 0.805, 2 +pix e2 0.801, 3 +band 0.799, 4 +band +pix 0.806, 5 +B2 0.801\n"}
+,{"stream_name":"stdout","time":6714.042684442,"data":"[ 111.6 min] rep 1 typing coarse, train Danenberg: 0 base 0.707, 1 +pix 0.718, 2 +pix e2 0.714, 3 +band 0.710, 4 +band +pix 0.718, 5 +B2 0.712\n"}
+,{"stream_name":"stdout","time":8248.785437787,"data":"[ 137.1 min] rep 1 typing fine, train Danenberg: 0 base 0.447, 1 +pix 0.469, 2 +pix e2 0.457, 3 +band 0.452, 4 +band +pix 0.466, 5 +B2 0.440\n"}
+,{"stream_name":"stdout","time":9511.224306055,"data":"[ 158.2 min] rep 1 typing fine, train Jackson: 0 base 0.425, 1 +pix 0.444, 2 +pix e2 0.442, 3 +band 0.428, 4 +band +pix 0.447, 5 +B2 0.429\n"}
+,{"stream_name":"stdout","time":9511.4964071,"data":"[ 158.2 min] replicate 1 done (79 min)\n"}
+,{"stream_name":"stdout","time":9511.49720325,"data":"[ 158.2 min] replicate 2\n"}
+,{"stream_name":"stdout","time":10019.233467833,"data":"[ 166.6 min] rep 2 imputation, train Jackson\n"}
+,{"stream_name":"stdout","time":10540.07796987,"data":"[ 175.3 min] rep 2 imputation, train Danenberg\n"}
+,{"stream_name":"stdout","time":10757.971973062,"data":"[ 179.0 min] rep 2 stage-1 predicted types\n"}
+,{"stream_name":"stdout","time":11063.710768382,"data":"[ 184.1 min] rep 2 typing coarse, train Jackson: 0 base 0.781, 1 +pix 0.791, 2 +pix e2 0.784, 3 +band 0.782, 4 +band +pix 0.791, 5 +B2 0.785\n"}
+,{"stream_name":"stdout","time":11384.135096901,"data":"[ 189.4 min] rep 2 typing coarse, train Danenberg: 0 base 0.710, 1 +pix 0.718, 2 +pix e2 0.714, 3 +band 0.712, 4 +band +pix 0.719, 5 +B2 0.711\n"}
+,{"stream_name":"stdout","time":12917.154482,"data":"[ 214.9 min] rep 2 typing fine, train Danenberg: 0 base 0.445, 1 +pix 0.466, 2 +pix e2 0.454, 3 +band 0.454, 4 +band +pix 0.468, 5 +B2 0.444\n"}
+,{"stream_name":"stdout","time":14095.529428222,"data":"[ 234.6 min] rep 2 typing fine, train Jackson: 0 base 0.425, 1 +pix 0.447, 2 +pix e2 0.446, 3 +band 0.436, 4 +band +pix 0.449, 5 +B2 0.424\n"}
+,{"stream_name":"stdout","time":14095.68410549,"data":"[ 234.6 min] replicate 2 done (76 min)\n"}
+,{"stream_name":"stdout","time":14096.31399089,"data":"share_bin                        0.25–0.5  0.5–0.75  0.75–1  0–0.25\n"}
+,{"stream_name":"stdout","time":14096.314062271,"data":"train     test      cls                                            \n"}
+,{"stream_name":"stdout","time":14096.314069071,"data":"Danenberg Danenberg B cell          0.152     0.110   0.036   0.295\n"}
+,{"stream_name":"stdout","time":14096.314073981,"data":"                    T cell          0.256     0.188   0.189   0.382\n"}
+,{"stream_name":"stdout","time":14096.314093031,"data":"                    endothelial     0.483     0.317   0.211   0.682\n"}
+,{"stream_name":"stdout","time":14096.314096991,"data":"                    epithelial      0.161     0.085   0.032   0.425\n"}
+,{"stream_name":"stdout","time":14096.314100451,"data":"                    myeloid         0.295     0.220   0.207   0.384\n"}
+,{"stream_name":"stdout","time":14096.314104351,"data":"                    stroma          0.286     0.249   0.190   0.379\n"}
+,{"stream_name":"stdout","time":14096.314107781,"data":"          Jackson   B cell          0.088     0.043   0.054   0.218\n"}
+,{"stream_name":"stdout","time":14096.314110851,"data":"                    T cell          0.243     0.183   0.100   0.289\n"}
+,{"stream_name":"stdout","time":14096.314114071,"data":"                    endothelial     0.973     0.958   0.964   0.983\n"}
+,{"stream_name":"stdout","time":14096.314117911,"data":"                    epithelial      0.216     0.090   0.067   0.588\n"}
+,{"stream_name":"stdout","time":14096.314121411,"data":"                    myeloid         0.422     0.312   0.238   0.549\n"}
+,{"stream_name":"stdout","time":14096.314124791,"data":"                    stroma          0.299     0.205   0.159   0.425\n"}
+,{"stream_name":"stdout","time":14096.314128021,"data":"Jackson   Danenberg B cell          0.223     0.177   0.098   0.332\n"}
+,{"stream_name":"stdout","time":14096.314131011,"data":"                    T cell          0.533     0.423   0.440   0.730\n"}
+,{"stream_name":"stdout","time":14096.3141344,"data":"                    endothelial     0.852     0.817   0.872   0.888\n"}
+,{"stream_name":"stdout","time":14096.314138051,"data":"                    epithelial      0.315     0.192   0.092   0.593\n"}
+,{"stream_name":"stdout","time":14096.314141131,"data":"                    myeloid         0.541     0.431   0.397   0.646\n"}
+,{"stream_name":"stdout","time":14096.31414438,"data":"                    stroma          0.261     0.237   0.205   0.334\n"}
+,{"stream_name":"stdout","time":14096.31414748,"data":"          Jackson   B cell          0.046     0.016   0.029   0.087\n"}
+,{"stream_name":"stdout","time":14096.31415082,"data":"                    T cell          0.100     0.066   0.030   0.124\n"}
+,{"stream_name":"stdout","time":14096.314153971,"data":"                    endothelial     0.552     0.449   0.451   0.670\n"}
+,{"stream_name":"stdout","time":14096.31415724,"data":"                    epithelial      0.241     0.117   0.068   0.543\n"}
+,{"stream_name":"stdout","time":14096.314160651,"data":"                    myeloid         0.108     0.060   0.060   0.210\n"}
+,{"stream_name":"stdout","time":14096.31416446,"data":"                    stroma          0.201     0.171   0.121   0.274\n"}
+,{"stream_name":"stdout","time":14096.462550909,"data":"{\n"}
+,{"stream_name":"stdout","time":14096.462596198,"data":" \"n_reps\": 3,\n"}
+,{"stream_name":"stdout","time":14096.462600458,"data":" \"B1\": {\n"}
+,{"stream_name":"stdout","time":14096.462603598,"data":"  \"J-\u003eJ\": {\n"}
+,{"stream_name":"stdout","time":14096.462606938,"data":"   \"imputation_markers\": [],\n"}
+,{"stream_name":"stdout","time":14096.462613129,"data":"   \"coarse_typing\": false\n"}
+,{"stream_name":"stdout","time":14096.462616649,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462619358,"data":"  \"D-\u003eD\": {\n"}
+,{"stream_name":"stdout","time":14096.462623718,"data":"   \"imputation_markers\": [],\n"}
+,{"stream_name":"stdout","time":14096.462626758,"data":"   \"coarse_typing\": true\n"}
+,{"stream_name":"stdout","time":14096.462628678,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462630638,"data":"  \"J-\u003eD\": {\n"}
+,{"stream_name":"stdout","time":14096.462645178,"data":"   \"imputation_markers\": [],\n"}
+,{"stream_name":"stdout","time":14096.462647209,"data":"   \"coarse_typing\": false\n"}
+,{"stream_name":"stdout","time":14096.462649089,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462650949,"data":"  \"D-\u003eJ\": {\n"}
+,{"stream_name":"stdout","time":14096.462652879,"data":"   \"imputation_markers\": [],\n"}
+,{"stream_name":"stdout","time":14096.462654779,"data":"   \"coarse_typing\": false\n"}
+,{"stream_name":"stdout","time":14096.462656779,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462658549,"data":"  \"fine D-\u003eD\": {\n"}
+,{"stream_name":"stdout","time":14096.462660469,"data":"   \"typing\": true\n"}
+,{"stream_name":"stdout","time":14096.462662309,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462664089,"data":"  \"fine J-\u003eJ\": {\n"}
+,{"stream_name":"stdout","time":14096.462665919,"data":"   \"typing\": true\n"}
+,{"stream_name":"stdout","time":14096.462667749,"data":"  }\n"}
+,{"stream_name":"stdout","time":14096.462669559,"data":" },\n"}
+,{"stream_name":"stdout","time":14096.462671359,"data":" \"B2\": {\n"}
+,{"stream_name":"stdout","time":14096.462673299,"data":"  \"J-\u003eJ\": {\n"}
+,{"stream_name":"stdout","time":14096.462675249,"data":"   \"imputation_markers\": [],\n"}
+,{"stream_name":"stdout","time":14096.462677159,"data":"   \"coarse_typing\": null\n"}
+,{"stream_name":"stdout","time":14096.462679059,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462680859,"data":"  \"D-\u003eD\": {\n"}
+,{"stream_name":"stdout","time":14096.462682719,"data":"   \"imputation_markers\": [],\n"}
+,{"stream_name":"stdout","time":14096.462684599,"data":"   \"coarse_typing\": null\n"}
+,{"stream_name":"stdout","time":14096.462686459,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462688239,"data":"  \"J-\u003eD\": {\n"}
+,{"stream_name":"stdout","time":14096.462690068,"data":"   \"imputation_markers\": [\n"}
+,{"stream_name":"stdout","time":14096.462691919,"data":"    \"cytokeratin_5\"\n"}
+,{"stream_name":"stdout","time":14096.462693839,"data":"   ],\n"}
+,{"stream_name":"stdout","time":14096.462695659,"data":"   \"coarse_typing\": false\n"}
+,{"stream_name":"stdout","time":14096.462697539,"data":"  },\n"}
+,{"stream_name":"stdout","time":14096.462699308,"data":"  \"D-\u003eJ\": {\n"}
+,{"stream_name":"stdout","time":14096.462701168,"data":"   \"imputation_markers\": [\n"}
+,{"stream_name":"stdout","time":14096.462703019,"data":"    \"c_erb_b_2_her2\"\n"}
+,{"stream_name":"stdout","time":14096.462704979,"data":"   ],\n"}
+,{"stream_name":"stdout","time":14096.462706808,"data":"   \"coarse_typing\": false\n"}
+,{"stream_name":"stdout","time":14096.462708668,"data":"  }\n"}
+,{"stream_name":"stdout","time":14096.462710439,"data":" },\n"}
+,{"stream_name":"stdout","time":14096.462712228,"data":" \"B1_pass\": true,\n"}
+,{"stream_name":"stdout","time":14096.462714108,"data":" \"B2_pass\": false,\n"}
+,{"stream_name":"stdout","time":14096.462715979,"data":" \"build_B3\": true,\n"}
+,{"stream_name":"stdout","time":14096.462717888,"data":" \"note\": \"Passes need 3/3 replicates; a smoke or partial run cannot pass.\"\n"}
+,{"stream_name":"stdout","time":14096.462719968,"data":"}\n"}
+,{"stream_name":"stdout","time":14096.462721799,"data":"                                          mean_diff  n_ci_pos  n_ci_neg\n"}
+,{"stream_name":"stdout","time":14096.462723719,"data":"train     test      arm          base                                  \n"}
+,{"stream_name":"stdout","time":14096.462725599,"data":"Danenberg Danenberg 1 +pix       0 base      0.0065        13         0\n"}
+,{"stream_name":"stdout","time":14096.462732788,"data":"                    2 +pix e2    0 base      0.0022         9         0\n"}
+,{"stream_name":"stdout","time":14096.462735919,"data":"                    3 +band      0 base      0.0033         7         1\n"}
+,{"stream_name":"stdout","time":14096.462738728,"data":"                    4 +band +pix 3 +band     0.0060        15         0\n"}
+,{"stream_name":"stdout","time":14096.462741448,"data":"                    5 +B2        0 base      0.0034         7         0\n"}
+,{"stream_name":"stdout","time":14096.462744379,"data":"          Jackson   1 +pix       0 base     -0.0023         2         5\n"}
+,{"stream_name":"stdout","time":14096.462747379,"data":"                    2 +pix e2    0 base     -0.0040         1         8\n"}
+,{"stream_name":"stdout","time":14096.462750088,"data":"                    3 +band      0 base      0.0040        11         2\n"}
+,{"stream_name":"stdout","time":14096.462752979,"data":"                    4 +band +pix 3 +band    -0.0066         1         9\n"}
+,{"stream_name":"stdout","time":14096.462755608,"data":"                    5 +B2        0 base      0.0031         6         5\n"}
+,{"stream_name":"stdout","time":14096.462758268,"data":"Jackson   Danenberg 1 +pix       0 base      0.0013         8         2\n"}
+,{"stream_name":"stdout","time":14096.462760999,"data":"                    2 +pix e2    0 base      0.0023        10         3\n"}
+,{"stream_name":"stdout","time":14096.462763619,"data":"                    3 +band      0 base      0.0034        11         3\n"}
+,{"stream_name":"stdout","time":14096.462766379,"data":"                    4 +band +pix 3 +band    -0.0003         8         3\n"}
+,{"stream_name":"stdout","time":14096.462771708,"data":"                    5 +B2        0 base      0.0022        10         4\n"}
+,{"stream_name":"stdout","time":14096.462774539,"data":"          Jackson   1 +pix       0 base      0.0063        13         0\n"}
+,{"stream_name":"stdout","time":14096.462777248,"data":"                    2 +pix e2    0 base      0.0012         6         2\n"}
+,{"stream_name":"stdout","time":14096.462779928,"data":"                    3 +band      0 base      0.0022         6         0\n"}
+,{"stream_name":"stdout","time":14096.462782659,"data":"                    4 +band +pix 3 +band     0.0057        17         0\n"}
+,{"stream_name":"stdout","time":14096.462785299,"data":"                    5 +B2        0 base      0.0010         1         2\n"}
+,{"stream_name":"stdout","time":14096.462787999,"data":"                                                 mean_diff  n_ci_pos  n_ci_neg\n"}
+,{"stream_name":"stdout","time":14096.462795359,"data":"task   train     test      arm          base                                  \n"}
+,{"stream_name":"stdout","time":14096.462798959,"data":"coarse Danenberg Danenberg 1 +pix       0 base      0.0101         3         0\n"}
+,{"stream_name":"stdout","time":14096.462801939,"data":"                           2 +pix e2    0 base      0.0060         3         0\n"}
+,{"stream_name":"stdout","time":14096.462805348,"data":"                           3 +band      0 base      0.0032         3         0\n"}
+,{"stream_name":"stdout","time":14096.462808508,"data":"                           4 +band +pix 3 +band     0.0073         3         0\n"}
+,{"stream_name":"stdout","time":14096.462810439,"data":"                           5 +B2        0 base      0.0041         2         0\n"}
+,{"stream_name":"stdout","time":14096.462812348,"data":"                 Jackson   1 +pix       0 base      0.0026         0         0\n"}
+,{"stream_name":"stdout","time":14096.462814239,"data":"                           2 +pix e2    0 base      0.0060         0         0\n"}
+,{"stream_name":"stdout","time":14096.462816148,"data":"                           3 +band      0 base      0.0005         0         0\n"}
+,{"stream_name":"stdout","time":14096.462825179,"data":"                           4 +band +pix 3 +band     0.0018         1         0\n"}
+,{"stream_name":"stdout","time":14096.462827219,"data":"                           5 +B2        0 base     -0.0096         0         2\n"}
+,{"stream_name":"stdout","time":14096.462829099,"data":"       Jackson   Danenberg 1 +pix       0 base     -0.0022         0         1\n"}
+,{"stream_name":"stdout","time":14096.462831109,"data":"                           2 +pix e2    0 base     -0.0039         0         1\n"}
+,{"stream_name":"stdout","time":14096.462833099,"data":"                           3 +band      0 base     -0.0002         0         0\n"}
+,{"stream_name":"stdout","time":14096.462835049,"data":"                           4 +band +pix 3 +band    -0.0022         0         1\n"}
+,{"stream_name":"stdout","time":14096.462837029,"data":"                           5 +B2        0 base      0.0053         2         0\n"}
+,{"stream_name":"stdout","time":14096.462839019,"data":"                 Jackson   1 +pix       0 base      0.0089         3         0\n"}
+,{"stream_name":"stdout","time":14096.462841139,"data":"                           2 +pix e2    0 base      0.0035         1         0\n"}
+,{"stream_name":"stdout","time":14096.462843259,"data":"                           3 +band      0 base      0.0023         2         0\n"}
+,{"stream_name":"stdout","time":14096.462845799,"data":"                           4 +band +pix 3 +band     0.0075         3         0\n"}
+,{"stream_name":"stdout","time":14096.462847759,"data":"                           5 +B2        0 base      0.0037         1         0\n"}
+,{"stream_name":"stdout","time":14096.462849669,"data":"fine   Danenberg Danenberg 1 +pix       0 base      0.0206         3         0\n"}
+,{"stream_name":"stdout","time":14096.462851839,"data":"                           2 +pix e2    0 base      0.0092         3         0\n"}
+,{"stream_name":"stdout","time":14096.462853739,"data":"                           3 +band      0 base      0.0074         2         0\n"}
+,{"stream_name":"stdout","time":14096.462855819,"data":"                           4 +band +pix 3 +band     0.0135         3         0\n"}
+,{"stream_name":"stdout","time":14096.462857709,"data":"                           5 +B2        0 base     -0.0031         0         0\n"}
+,{"stream_name":"stdout","time":14096.462859679,"data":"       Jackson   Jackson   1 +pix       0 base      0.0181         3         0\n"}
+,{"stream_name":"stdout","time":14096.462861689,"data":"                           2 +pix e2    0 base      0.0175         3         0\n"}
+,{"stream_name":"stdout","time":14096.462863698,"data":"                           3 +band      0 base      0.0044         2         0\n"}
+,{"stream_name":"stdout","time":14096.462865598,"data":"                           4 +band +pix 3 +band     0.0162         3         0\n"}
+,{"stream_name":"stdout","time":14096.462867638,"data":"                           5 +B2        0 base      0.0020         0         0\n"}
+,{"stream_name":"stderr","time":14102.354892615,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":14102.354933365,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":14102.578994482,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":14102.579026632,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":14103.244238832,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":14103.519788168,"data":"[NbConvertApp] Writing 62233 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":14105.989180553,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":14106.991351999,"data":"[NbConvertApp] Writing 509912 bytes to __results__.html\n"}
+]

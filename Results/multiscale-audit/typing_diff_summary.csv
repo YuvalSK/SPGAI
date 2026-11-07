@@ -1,0 +1,31 @@
+task,train,test,arm,base,mean_diff,n_ci_pos,n_ci_neg
+coarse,Danenberg,Danenberg,1 +pix,0 base,0.010111014746590263,3,0
+coarse,Danenberg,Danenberg,2 +pix e2,0 base,0.006026935444227166,3,0
+coarse,Danenberg,Danenberg,3 +band,0 base,0.0032030985641969822,3,0
+coarse,Danenberg,Danenberg,4 +band +pix,3 +band,0.007285080209708712,3,0
+coarse,Danenberg,Danenberg,5 +B2,0 base,0.004063735095229244,2,0
+coarse,Danenberg,Jackson,1 +pix,0 base,0.0025527600593813573,0,0
+coarse,Danenberg,Jackson,2 +pix e2,0 base,0.0060115502948789494,0,0
+coarse,Danenberg,Jackson,3 +band,0 base,0.00047639137605163623,0,0
+coarse,Danenberg,Jackson,4 +band +pix,3 +band,0.0017857478294903324,1,0
+coarse,Danenberg,Jackson,5 +B2,0 base,-0.009646847935276074,0,2
+coarse,Jackson,Danenberg,1 +pix,0 base,-0.002200090030435864,0,1
+coarse,Jackson,Danenberg,2 +pix e2,0 base,-0.0038914665729835227,0,1
+coarse,Jackson,Danenberg,3 +band,0 base,-0.0001827992373192681,0,0
+coarse,Jackson,Danenberg,4 +band +pix,3 +band,-0.0022166081430721927,0,1
+coarse,Jackson,Danenberg,5 +B2,0 base,0.005286834016189197,2,0
+coarse,Jackson,Jackson,1 +pix,0 base,0.008925217889049245,3,0
+coarse,Jackson,Jackson,2 +pix e2,0 base,0.0034639960713949516,1,0
+coarse,Jackson,Jackson,3 +band,0 base,0.0023095143745973288,2,0
+coarse,Jackson,Jackson,4 +band +pix,3 +band,0.007514902919701878,3,0
+coarse,Jackson,Jackson,5 +B2,0 base,0.0037251569431693645,1,0
+fine,Danenberg,Danenberg,1 +pix,0 base,0.02056638254840611,3,0
+fine,Danenberg,Danenberg,2 +pix e2,0 base,0.009210671568249914,3,0
+fine,Danenberg,Danenberg,3 +band,0 base,0.007435263626724402,2,0
+fine,Danenberg,Danenberg,4 +band +pix,3 +band,0.01346627378525663,3,0
+fine,Danenberg,Danenberg,5 +B2,0 base,-0.0031033470432701624,0,0
+fine,Jackson,Jackson,1 +pix,0 base,0.0181182833214526,3,0
+fine,Jackson,Jackson,2 +pix e2,0 base,0.017481899885111247,3,0
+fine,Jackson,Jackson,3 +band,0 base,0.004407491327983089,2,0
+fine,Jackson,Jackson,4 +band +pix,3 +band,0.016151831949813827,3,0
+fine,Jackson,Jackson,5 +B2,0 base,0.002032299139641721,0,0

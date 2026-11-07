@@ -1,0 +1,36 @@
+{
+ "n_reps": 1,
+ "H_N1": {
+  "claim": false,
+  "transfer_pass": {
+   "J->D": false,
+   "D->J": false
+  },
+  "loss_ge2_reps": {
+   "J->D": false,
+   "D->J": false,
+   "J->J": false,
+   "D->D": false
+  },
+  "mean_gain": {
+   "J->D": 0.0033617007684864,
+   "D->J": -0.011360909779865,
+   "J->J": -0.0052608210452893,
+   "D->D": 0.0019785984361671
+  },
+  "ci_lo": {
+   "J->D": [
+    -0.000693922966138
+   ],
+   "D->J": [
+    -0.025542964610945
+   ]
+  }
+ },
+ "H_N2": {
+  "claim": true,
+  "ilisi_higher_all_draws": true,
+  "mean_clisi_rise": 0.105926915216637
+ },
+ "note": "H-N1 needs all 3 replicates; with fewer it is reported but cannot be claimed."
+}

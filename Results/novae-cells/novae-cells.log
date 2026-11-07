@@ -1,0 +1,2344 @@
+[{"stream_name":"stderr","time":6.54298393,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.5430625970000005,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.453142047,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.453173635,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.453179182,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.453183302,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.10319936,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.103232552,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.10325284,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.10325802,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":62.16349133,"data":"novae 1.1.2 | anndata 0.12.19 | torch 2.10.0+cu128 | lightning 2.6.6\n"}
+,{"stream_name":"stdout","time":63.330823684,"data":"{\n"}
+,{"stream_name":"stdout","time":63.330853163,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":63.330856972,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":63.330860336,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":63.330863483,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":63.330866654,"data":" },\n"}
+,{"stream_name":"stdout","time":63.330869462,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":63.330872428,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":63.33087542,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":63.330878538,"data":" }\n"}
+,{"stream_name":"stdout","time":63.330881299,"data":"}\n"}
+,{"stream_name":"stdout","time":75.196435578,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients, 27 fine labels; coarse {'epithelial': 591813, 'stroma': 291265, 'unlabelled': 118279, 'T cell': 38040, 'myeloid': 34909, 'endothelial': 34410, 'B cell': 17408}\n"}
+,{"stream_name":"stdout","time":75.196476556,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients, 32 fine labels; coarse {'epithelial': 600818, 'stroma': 243138, 'T cell': 56364, 'myeloid': 50675, 'endothelial': 47355, 'unlabelled': 35585, 'B cell': 28284}\n"}
+,{"stream_name":"stdout","time":76.53216601,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stdout","time":99.134682699,"data":"[   0.6 min] neighbour features\n"}
+,{"stream_name":"stdout","time":120.890893232,"data":"           mean_degree  isolated_fraction  median_edge_um\n"}
+,{"stream_name":"stdout","time":120.890922517,"data":"Jackson          5.799                0.0          12.568\n"}
+,{"stream_name":"stdout","time":120.890939686,"data":"Danenberg        5.791                0.0          13.803\n"}
+,{"stream_name":"stdout","time":120.890943799,"data":"[   1.0 min] Delaunay graphs\n"}
+,{"stream_name":"stdout","time":121.027012704,"data":"LISI check: separated 1.000 (expect ~1), random 1.911 (expect ~2)\n"}
+,{"stream_name":"stdout","time":121.464316315,"data":"[   1.0 min] replicate 0\n"}
+,{"stream_name":"stdout","time":122.379704497,"data":"Jackson {'train': (397, 251), 'val': (39, 32), 'test': (106, 66)} (images, patients)\n"}
+,{"stream_name":"stdout","time":122.379755129,"data":"Danenberg {'train': (494, 465), 'val': (65, 55), 'test': (145, 130)} (images, patients)\n"}
+,{"stream_name":"stderr","time":125.164623562,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":125.164665082,"data":"\n"}
+,{"stream_name":"stderr","time":125.16466904,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stdout","time":2747.31624906,"data":"{\"rep\": 0, \"variant\": \"cohort\", \"n_train_cells\": 1730014, \"epochs\": 13, \"fit_min\": 16.746655690670014, \"total_min\": 43.750498171647386, \"final_loss\": 5.850611209869385, \"valid_Jackson\": 0.9987727816830119, \"valid_Danenberg\": 0.9989201850089294, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":2747.316326581,"data":"[  44.8 min] rep 0 Novae [cohort] done\n"}
+,{"stream_name":"stderr","time":2752.664492937,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":2752.664541962,"data":"\n"}
+,{"stream_name":"stderr","time":2752.664548614,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":4383.591903234,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":4383.592974931,"data":"Exception ignored in: Exception ignored in: \n"}
+,{"stream_name":"stderr","time":4383.608849408,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4383.625368368,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4383.634230189,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4383.634265211,"data":"\n"}
+,{"stream_name":"stderr","time":4383.635491219,"data":"\n"}
+,{"stream_name":"stderr","time":4383.636810656,"data":"\n"}
+,{"stream_name":"stderr","time":4383.636830269,"data":"\n"}
+,{"stream_name":"stderr","time":4383.637567805,"data":"\n"}
+,{"stream_name":"stderr","time":4383.63935306,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4383.639371133,"data":"\n"}
+,{"stream_name":"stderr","time":4383.641437038,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4383.643678342,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4383.643701884,"data":"\n"}
+,{"stream_name":"stderr","time":4383.643916434,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4383.645459308,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4383.6454764,"data":"\n"}
+,{"stream_name":"stderr","time":4383.64562739,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4383.647839046,"data":"    \n"}
+,{"stream_name":"stderr","time":4383.649323779,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":4383.650816527,"data":"self._shutdown_workers()  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4383.650839387,"data":"\n"}
+,{"stream_name":"stderr","time":4383.652379035,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4383.653705506,"data":"\n"}
+,{"stream_name":"stderr","time":4383.65372135,"data":"\n"}
+,{"stream_name":"stderr","time":4383.65506213,"data":"\n"}
+,{"stream_name":"stderr","time":4383.656464309,"data":"    \n"}
+,{"stream_name":"stderr","time":4383.658174424,"data":"      File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4383.658191203,"data":"\n"}
+,{"stream_name":"stderr","time":4383.658336346,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4383.659574237,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":4383.661066435,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":4383.661085458,"data":"\n"}
+,{"stream_name":"stderr","time":4383.661244653,"data":"\n"}
+,{"stream_name":"stderr","time":4383.663464389,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":4383.665306926,"data":"Exception ignored in:     \n"}
+,{"stream_name":"stderr","time":4383.667780866,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":4383.672223873,"data":"if w.is_alive():  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4383.672256254,"data":"\n"}
+,{"stream_name":"stderr","time":4383.672261273,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4383.673414277,"data":"\n"}
+,{"stream_name":"stderr","time":4383.673436652,"data":"\n"}
+,{"stream_name":"stderr","time":4383.67344126,"data":"\n"}
+,{"stream_name":"stderr","time":4383.676533986,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4383.677796277,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4383.677813765,"data":"\n"}
+,{"stream_name":"stderr","time":4383.679901238,"data":"\n"}
+,{"stream_name":"stderr","time":4383.685496172,"data":" \n"}
+,{"stream_name":"stderr","time":4383.686909262,"data":"     \n"}
+,{"stream_name":"stderr","time":4383.690125613,"data":"    Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4383.690147581,"data":"\n"}
+,{"stream_name":"stderr","time":4383.691868288,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4383.694344723,"data":" \n"}
+,{"stream_name":"stderr","time":4383.698167361,"data":" if w.is_alive():\n"}
+,{"stream_name":"stderr","time":4383.702891725,"data":"if w.is_alive():  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4383.702917025,"data":"\n"}
+,{"stream_name":"stderr","time":4383.702931252,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4383.704246152,"data":" \n"}
+,{"stream_name":"stderr","time":4383.705442653,"data":" \n"}
+,{"stream_name":"stderr","time":4383.70546207,"data":"\n"}
+,{"stream_name":"stderr","time":4383.708895044,"data":"\n"}
+,{"stream_name":"stderr","time":4383.710360498,"data":" \n"}
+,{"stream_name":"stderr","time":4383.716470795,"data":"     \n"}
+,{"stream_name":"stderr","time":4383.718259132,"data":"     \n"}
+,{"stream_name":"stderr","time":4383.723557885,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.725046855,"data":" self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":4383.727417209,"data":"self._shutdown_workers() \n"}
+,{"stream_name":"stderr","time":4383.731373403,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.733869084,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.735271212,"data":" \n"}
+,{"stream_name":"stderr","time":4383.73529072,"data":"\n"}
+,{"stream_name":"stderr","time":4383.735303463,"data":"\n"}
+,{"stream_name":"stderr","time":4383.736533342,"data":" \n"}
+,{"stream_name":"stderr","time":4383.738834237,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.742116931,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.743426092,"data":"   File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4383.743445338,"data":"\n"}
+,{"stream_name":"stderr","time":4383.743672204,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4383.745923144,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.748705359,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.75064305,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.753427488,"data":"^    \n"}
+,{"stream_name":"stderr","time":4383.755205435,"data":"     \n"}
+,{"stream_name":"stderr","time":4383.757846247,"data":" if w.is_alive():\n"}
+,{"stream_name":"stderr","time":4383.762322534,"data":"if w.is_alive():^\n"}
+,{"stream_name":"stderr","time":4383.765412726,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.768335033,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.770933698,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.770955033,"data":"\n"}
+,{"stream_name":"stderr","time":4383.770968159,"data":"\n"}
+,{"stream_name":"stderr","time":4383.773202772,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.777786903,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.78137878,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.782918288,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.787570937,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.790185995,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.79318691,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.795520919,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.798685817,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.800883443,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.805131114,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.80683813,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.808035962,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.811874752,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.813846558,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.81755832,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.821915732,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.826470529,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.827792125,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.829234555,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.830642908,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.832110934,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.833787234,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.835504077,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.836926354,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.839663526,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.839681652,"data":"\n"}
+,{"stream_name":"stderr","time":4383.841026446,"data":"\n"}
+,{"stream_name":"stderr","time":4383.842579215,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.84484183,"data":"^  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4383.844859276,"data":"\n"}
+,{"stream_name":"stderr","time":4383.844863876,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4383.845528117,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.84785558,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.850042497,"data":"^    \n"}
+,{"stream_name":"stderr","time":4383.852591239,"data":"    ^\n"}
+,{"stream_name":"stderr","time":4383.854721701,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.856174801,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.857659713,"data":"^assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":4383.860277937,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'^\n"}
+,{"stream_name":"stderr","time":4383.861740946,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.864844995,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.864863224,"data":"\n"}
+,{"stream_name":"stderr","time":4383.865014579,"data":"\n"}
+,{"stream_name":"stderr","time":4383.86638853,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.867882862,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.869434894,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.871055592,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.872456402,"data":"^\n"}
+,{"stream_name":"stderr","time":4383.872471877,"data":"\n"}
+,{"stream_name":"stderr","time":4383.872661417,"data":"\n"}
+,{"stream_name":"stderr","time":4383.874917058,"data":" \n"}
+,{"stream_name":"stderr","time":4383.876460745,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.877957213,"data":"^  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4383.877973379,"data":"\n"}
+,{"stream_name":"stderr","time":4383.878137568,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4383.879381347,"data":"    \n"}
+,{"stream_name":"stderr","time":4383.881831409,"data":"    ^\n"}
+,{"stream_name":"stderr","time":4383.882295296,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.883698324,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.885169923,"data":" assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":4383.886719181,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":4383.886746815,"data":"\n"}
+,{"stream_name":"stderr","time":4383.887158171,"data":"\n"}
+,{"stream_name":"stderr","time":4383.888625178,"data":" \n"}
+,{"stream_name":"stderr","time":4383.890136869,"data":"   File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4383.890170506,"data":"\n"}
+,{"stream_name":"stderr","time":4383.890443687,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4383.891798543,"data":" \n"}
+,{"stream_name":"stderr","time":4383.893233248,"data":" \n"}
+,{"stream_name":"stderr","time":4383.893248718,"data":"\n"}
+,{"stream_name":"stderr","time":4383.893398228,"data":"\n"}
+,{"stream_name":"stderr","time":4383.89460628,"data":" \n"}
+,{"stream_name":"stderr","time":4383.896046472,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.897431267,"data":"     \n"}
+,{"stream_name":"stderr","time":4383.898871302,"data":"     \n"}
+,{"stream_name":"stderr","time":4383.900412479,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.901714786,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.904845176,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.904863584,"data":" assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":4383.905874223,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process' \n"}
+,{"stream_name":"stderr","time":4383.907321905,"data":" \n"}
+,{"stream_name":"stderr","time":4383.907338212,"data":"\n"}
+,{"stream_name":"stderr","time":4383.907504874,"data":"\n"}
+,{"stream_name":"stderr","time":4383.908827075,"data":" \n"}
+,{"stream_name":"stderr","time":4383.910357607,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.911788983,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.913348054,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.914901025,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.916482745,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.91792547,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.919306174,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.920851176,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.922199629,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.923598455,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.925050909,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.926516206,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.927923487,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.929434508,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.930924654,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.932308128,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.934345493,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.935819159,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.93725061,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.939066056,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.940913866,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.942373019,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.943846584,"data":"  \n"}
+,{"stream_name":"stderr","time":4383.945318152,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.94674667,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.948244485,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.94977302,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.951271408,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.953815867,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.954194816,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.95555415,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.957322594,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.958706793,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.960150111,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.961541439,"data":"^ \n"}
+,{"stream_name":"stderr","time":4383.963070518,"data":" ^\n"}
+,{"stream_name":"stderr","time":4383.964677623,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.966064245,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.967385327,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.96896171,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.970471229,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.971832389,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.97330631,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.97481249,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.976164618,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.977569681,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.978946231,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.980222044,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.981757438,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.985788235,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.989606305,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.994944677,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.997623046,"data":"^^\n"}
+,{"stream_name":"stderr","time":4383.999013302,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.000675602,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.002425034,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.006484338,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.006508132,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.006512506,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.007507817,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.008685294,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.010042651,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.012614303,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.012634377,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.0139541,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.015152604,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.016463929,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.017658622,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.019371861,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.020842702,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.022241223,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.023429164,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.025081603,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.02662687,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.0279633,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.029884677,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.030870365,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.032129497,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.033490571,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.034616621,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.036121702,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.037400252,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.040040723,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.041092883,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.043125721,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.04459049,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.045639747,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.047047417,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.049998684,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.052539475,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.054044249,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.056655571,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.05842723,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.060581315,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.061933532,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.064757799,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.066877345,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.066894059,"data":"\n"}
+,{"stream_name":"stderr","time":4384.067020824,"data":"\n"}
+,{"stream_name":"stderr","time":4384.068775152,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.071075008,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.073629879,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.075170658,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.077483733,"data":"^AssertionError\n"}
+,{"stream_name":"stderr","time":4384.078899717,"data":"AssertionError^\n"}
+,{"stream_name":"stderr","time":4384.080245516,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.082583567,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.084483856,"data":"^: \n"}
+,{"stream_name":"stderr","time":4384.086244802,"data":": ^\n"}
+,{"stream_name":"stderr","time":4384.087596907,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.089519156,"data":"^can only test a child process\n"}
+,{"stream_name":"stderr","time":4384.090968502,"data":"can only test a child process^\n"}
+,{"stream_name":"stderr","time":4384.09382721,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.093847127,"data":"\n"}
+,{"stream_name":"stderr","time":4384.093851295,"data":"\n"}
+,{"stream_name":"stderr","time":4384.093855046,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.095095671,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.095114606,"data":"\n"}
+,{"stream_name":"stderr","time":4384.095276489,"data":"\n"}
+,{"stream_name":"stderr","time":4384.096585621,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":4384.098257701,"data":"AssertionError^\n"}
+,{"stream_name":"stderr","time":4384.100305466,"data":"^: \n"}
+,{"stream_name":"stderr","time":4384.1016659,"data":": ^\n"}
+,{"stream_name":"stderr","time":4384.103289964,"data":"^can only test a child process\n"}
+,{"stream_name":"stderr","time":4384.104774491,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":4384.104790428,"data":"\n"}
+,{"stream_name":"stderr","time":4384.10635158,"data":"\n"}
+,{"stream_name":"stderr","time":4384.108150134,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.1096543,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.111176003,"data":"^^\n"}
+,{"stream_name":"stderr","time":4384.112657209,"data":"^\n"}
+,{"stream_name":"stderr","time":4384.112674663,"data":"\n"}
+,{"stream_name":"stderr","time":4384.112832034,"data":"\n"}
+,{"stream_name":"stderr","time":4384.114222383,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":4384.116210773,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":4384.121109094,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":4384.126021064,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":4384.126043912,"data":"\n"}
+,{"stream_name":"stderr","time":4384.126048131,"data":"\n"}
+,{"stream_name":"stderr","time":4387.000256459,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":4387.008986514,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4387.01442286,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":4387.0144573,"data":"\n"}
+,{"stream_name":"stderr","time":4387.014462446,"data":"\n"}
+,{"stream_name":"stderr","time":4387.016945546,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4387.017004861,"data":"\n"}
+,{"stream_name":"stderr","time":4387.018915958,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4387.020694978,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4387.020759408,"data":"\n"}
+,{"stream_name":"stderr","time":4387.02076882,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":4387.024029929,"data":"    \n"}
+,{"stream_name":"stderr","time":4387.027487092,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":4387.031962551,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":4387.031999388,"data":"\n"}
+,{"stream_name":"stderr","time":4387.032005294,"data":"\n"}
+,{"stream_name":"stderr","time":4387.037340513,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4387.03740438,"data":"\n"}
+,{"stream_name":"stderr","time":4387.03741083,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":4387.041114951,"data":"    \n"}
+,{"stream_name":"stderr","time":4387.0462755,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":4387.051732276,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":4387.051824452,"data":"\n"}
+,{"stream_name":"stderr","time":4387.05183075,"data":"\n"}
+,{"stream_name":"stderr","time":4387.056797158,"data":" \n"}
+,{"stream_name":"stderr","time":4387.062924708,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.063900892,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.065374523,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.066532292,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.068126462,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.069289414,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.07491719,"data":" ^\n"}
+,{"stream_name":"stderr","time":4387.077416089,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.082807737,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.085337382,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.08659537,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.092479789,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.096431619,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.099109274,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.100711325,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.103466698,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.104982813,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.107746603,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.114745778,"data":"^\n"}
+,{"stream_name":"stderr","time":4387.114788766,"data":"\n"}
+,{"stream_name":"stderr","time":4387.114823074,"data":"\n"}
+,{"stream_name":"stderr","time":4387.116700517,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4387.11675027,"data":"\n"}
+,{"stream_name":"stderr","time":4387.116758394,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":4387.118493183,"data":"    \n"}
+,{"stream_name":"stderr","time":4387.120318719,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":4387.126515162,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":4387.126554361,"data":"\n"}
+,{"stream_name":"stderr","time":4387.126667534,"data":"\n"}
+,{"stream_name":"stderr","time":4387.128548618,"data":" \n"}
+,{"stream_name":"stderr","time":4387.130712374,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.133319733,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.137906839,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.141382863,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.146532293,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.14970477,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.152519775,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.155145847,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.160452909,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.164985435,"data":"  \n"}
+,{"stream_name":"stderr","time":4387.167954995,"data":" ^\n"}
+,{"stream_name":"stderr","time":4387.169479523,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.172473787,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.177605457,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.17981,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.189938487,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.191541627,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.195316216,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.196783111,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.201360619,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.202703822,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.205617078,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.207858544,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.210502645,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.214286341,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.216876106,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.217588692,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.22275938,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.228498753,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.230847763,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.232910953,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.235375891,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.238065339,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.240199511,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.242058948,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.244075566,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.245883189,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.248017663,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.251072317,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.253556672,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.255775,"data":"^^\n"}
+,{"stream_name":"stderr","time":4387.259351308,"data":"^\n"}
+,{"stream_name":"stderr","time":4387.259399309,"data":"\n"}
+,{"stream_name":"stderr","time":4387.259958682,"data":"\n"}
+,{"stream_name":"stderr","time":4387.264128411,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":4387.266667148,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":4387.272622094,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":4387.277415142,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":4387.277449798,"data":"\n"}
+,{"stream_name":"stderr","time":4387.277467443,"data":"\n"}
+,{"stream_name":"stdout","time":4920.646676304,"data":"{\"rep\": 0, \"variant\": \"img\", \"n_train_cells\": 1730014, \"epochs\": 6, \"fit_min\": 8.353803551197052, \"total_min\": 36.22068258523941, \"final_loss\": 5.0309038162231445, \"valid_Jackson\": 0.9987727816830119, \"valid_Danenberg\": 0.9989201850089294, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":4920.646768225,"data":"[  81.0 min] rep 0 Novae [img] done\n"}
+,{"stream_name":"stdout","time":5094.057606148,"data":"[  83.9 min] rep 0 LISI\n"}
+,{"stream_name":"stdout","time":5172.63907114,"data":"[  85.2 min] rep 0 coarse / train Jackson: Table + nbr Jackson F1 0.781, Danenberg F1 0.568\n"}
+,{"stream_name":"stdout","time":5239.279829242,"data":"[  86.3 min] rep 0 coarse / train Jackson: Novae [cohort] Jackson F1 0.396, Danenberg F1 0.379\n"}
+,{"stream_name":"stdout","time":5355.818810646,"data":"[  88.2 min] rep 0 coarse / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.781, Danenberg F1 0.567\n"}
+,{"stream_name":"stdout","time":5467.818101189,"data":"[  90.1 min] rep 0 coarse / train Jackson: Table + nbr + Novae [cohort]-corr Jackson F1 0.782, Danenberg F1 0.570\n"}
+,{"stream_name":"stdout","time":5582.902070575,"data":"[  92.0 min] rep 0 coarse / train Jackson: Table + nbr + Novae [img] Jackson F1 0.782, Danenberg F1 0.568\n"}
+,{"stream_name":"stdout","time":5660.028780036,"data":"[  93.3 min] rep 0 coarse / train Danenberg: Table + nbr Jackson F1 0.587, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":5720.72001251,"data":"[  94.3 min] rep 0 coarse / train Danenberg: Novae [cohort] Jackson F1 0.351, Danenberg F1 0.378\n"}
+,{"stream_name":"stdout","time":5835.282460419,"data":"[  96.2 min] rep 0 coarse / train Danenberg: Table + nbr + Novae [cohort] Jackson F1 0.590, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":5950.969019106,"data":"[  98.1 min] rep 0 coarse / train Danenberg: Table + nbr + Novae [cohort]-corr Jackson F1 0.591, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":6067.474810624,"data":"[ 100.1 min] rep 0 coarse / train Danenberg: Table + nbr + Novae [img] Jackson F1 0.585, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":6195.569898739,"data":"[ 102.2 min] rep 0 coarse / train Both: Table + nbr Jackson F1 0.772, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":6294.460908765,"data":"[ 103.9 min] rep 0 coarse / train Both: Novae [cohort] Jackson F1 0.392, Danenberg F1 0.383\n"}
+,{"stream_name":"stdout","time":6490.380140266,"data":"[ 107.1 min] rep 0 coarse / train Both: Table + nbr + Novae [cohort] Jackson F1 0.772, Danenberg F1 0.691\n"}
+,{"stream_name":"stdout","time":6685.153112374,"data":"[ 110.4 min] rep 0 coarse / train Both: Table + nbr + Novae [cohort]-corr Jackson F1 0.772, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":6879.374414499,"data":"[ 113.6 min] rep 0 coarse / train Both: Table + nbr + Novae [img] Jackson F1 0.772, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":7206.854921676,"data":"[ 119.1 min] rep 0 fine / train Danenberg: Table + nbr Danenberg F1 0.455\n"}
+,{"stream_name":"stdout","time":7740.856424903,"data":"[ 128.0 min] rep 0 fine / train Danenberg: Table + nbr + Novae [cohort] Danenberg F1 0.455\n"}
+,{"stream_name":"stdout","time":8020.544771369,"data":"[ 132.6 min] rep 0 fine / train Jackson: Table + nbr Jackson F1 0.400\n"}
+,{"stream_name":"stdout","time":8453.13054457,"data":"[ 139.8 min] rep 0 fine / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.401\n"}
+,{"stream_name":"stdout","time":8453.136159071,"data":"--- replicate 0: macro-F1\n"}
+,{"stream_name":"stdout","time":8453.136204657,"data":"model                       Novae [cohort]  Table + nbr  Table + nbr + Novae [cohort]  Table + nbr + Novae [cohort]-corr  Table + nbr + Novae [img]\n"}
+,{"stream_name":"stdout","time":8453.13620968,"data":"task   train     test                                                                                                                              \n"}
+,{"stream_name":"stdout","time":8453.136213811,"data":"coarse Both      Danenberg           0.383        0.692                         0.691                              0.692                      0.692\n"}
+,{"stream_name":"stdout","time":8453.136217849,"data":"                 Jackson             0.392        0.772                         0.772                              0.772                      0.772\n"}
+,{"stream_name":"stdout","time":8453.136221826,"data":"       Danenberg Danenberg           0.378        0.703                         0.703                              0.703                      0.703\n"}
+,{"stream_name":"stdout","time":8453.136225793,"data":"                 Jackson             0.351        0.587                         0.590                              0.591                      0.585\n"}
+,{"stream_name":"stdout","time":8453.136229769,"data":"       Jackson   Danenberg           0.379        0.568                         0.567                              0.570                      0.568\n"}
+,{"stream_name":"stdout","time":8453.136233745,"data":"                 Jackson             0.396        0.781                         0.781                              0.782                      0.782\n"}
+,{"stream_name":"stdout","time":8453.136237722,"data":"fine   Danenberg Danenberg             NaN        0.455                         0.455                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":8453.1362417,"data":"       Jackson   Jackson               NaN        0.400                         0.401                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":8453.136245744,"data":"[ 139.8 min] replicate 0 done (139 min)\n"}
+,{"stream_name":"stdout","time":8453.137410191,"data":"[ 139.8 min] replicate 1\n"}
+,{"stream_name":"stdout","time":8454.138226202,"data":"Jackson {'train': (378, 242), 'val': (46, 31), 'test': (118, 76)} (images, patients)\n"}
+,{"stream_name":"stdout","time":8454.138269723,"data":"Danenberg {'train': (489, 455), 'val': (70, 65), 'test': (145, 130)} (images, patients)\n"}
+,{"stream_name":"stderr","time":8458.393062175,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":8458.393125467,"data":"\n"}
+,{"stream_name":"stderr","time":8458.39313194,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":9890.515395958,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":9890.521342943,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":9890.528717453,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003eException ignored in: \n"}
+,{"stream_name":"stderr","time":9890.5327594,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":9890.532788182,"data":"\n"}
+,{"stream_name":"stderr","time":9890.534512584,"data":"\n"}
+,{"stream_name":"stderr","time":9890.535850054,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":9890.542661621,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003eTraceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9890.542701582,"data":"\n"}
+,{"stream_name":"stderr","time":9890.542914308,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9890.544207295,"data":"\n"}
+,{"stream_name":"stderr","time":9890.544239131,"data":"\n"}
+,{"stream_name":"stderr","time":9890.54697087,"data":"\n"}
+,{"stream_name":"stderr","time":9890.548462587,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9890.548479083,"data":"\n"}
+,{"stream_name":"stderr","time":9890.549134819,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9890.551171968,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9890.551190335,"data":"\n"}
+,{"stream_name":"stderr","time":9890.553874294,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9890.555310725,"data":"    \n"}
+,{"stream_name":"stderr","time":9890.557525698,"data":"      File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9890.557543234,"data":"\n"}
+,{"stream_name":"stderr","time":9890.561282386,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9890.562553528,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":9890.567720289,"data":"self._shutdown_workers()    \n"}
+,{"stream_name":"stderr","time":9890.569396475,"data":"    \n"}
+,{"stream_name":"stderr","time":9890.569413096,"data":"\n"}
+,{"stream_name":"stderr","time":9890.569598865,"data":"\n"}
+,{"stream_name":"stderr","time":9890.573712146,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":9890.57691863,"data":"self._shutdown_workers()  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9890.576937998,"data":"\n"}
+,{"stream_name":"stderr","time":9890.577194495,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9890.578448756,"data":"\n"}
+,{"stream_name":"stderr","time":9890.578464176,"data":"\n"}
+,{"stream_name":"stderr","time":9890.579989808,"data":"\n"}
+,{"stream_name":"stderr","time":9890.583065415,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9890.583081983,"data":"\n"}
+,{"stream_name":"stderr","time":9890.583291943,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9890.584536136,"data":"    \n"}
+,{"stream_name":"stderr","time":9890.588891703,"data":"        \n"}
+,{"stream_name":"stderr","time":9890.592591943,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":9890.594167554,"data":"if w.is_alive():if w.is_alive():\n"}
+,{"stream_name":"stderr","time":9890.598213508,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":9890.598240822,"data":"\n"}
+,{"stream_name":"stderr","time":9890.598425238,"data":"\n"}
+,{"stream_name":"stderr","time":9890.599523008,"data":"\n"}
+,{"stream_name":"stderr","time":9890.59953917,"data":"\n"}
+,{"stream_name":"stderr","time":9890.599880502,"data":"\n"}
+,{"stream_name":"stderr","time":9890.602463927,"data":" \n"}
+,{"stream_name":"stderr","time":9890.605759674,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.610537511,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.611846311,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.613283347,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.617119892,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.619950016,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.622804993,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.62420104,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.627294871,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.629932092,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.633623104,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.635135401,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.640117758,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.641645809,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.643339575,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.647301643,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.649396362,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.65242635,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.654914219,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.657999039,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.659246607,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.66822695,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.669748395,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.671212367,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.67228487,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.678715026,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.680213516,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.684456704,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.6859678,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.689614876,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.690786174,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.692188364,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.692203777,"data":"\n"}
+,{"stream_name":"stderr","time":9890.694877185,"data":"\n"}
+,{"stream_name":"stderr","time":9890.695958279,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9890.69597478,"data":"\n"}
+,{"stream_name":"stderr","time":9890.696306994,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9890.697521706,"data":"    \n"}
+,{"stream_name":"stderr","time":9890.701243183,"data":"    ^\n"}
+,{"stream_name":"stderr","time":9890.703803991,"data":"^assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":9890.706314006,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'^\n"}
+,{"stream_name":"stderr","time":9890.710877275,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.710893773,"data":"\n"}
+,{"stream_name":"stderr","time":9890.711058357,"data":"\n"}
+,{"stream_name":"stderr","time":9890.712105745,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.713482192,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.71752667,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.718637299,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.720022235,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.722159762,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.72454852,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.726866529,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.726894609,"data":"\n"}
+,{"stream_name":"stderr","time":9890.729851297,"data":"\n"}
+,{"stream_name":"stderr","time":9890.731020643,"data":" \n"}
+,{"stream_name":"stderr","time":9890.73337588,"data":"   File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9890.73339124,"data":"\n"}
+,{"stream_name":"stderr","time":9890.733547405,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9890.737597658,"data":" \n"}
+,{"stream_name":"stderr","time":9890.739171608,"data":"     \n"}
+,{"stream_name":"stderr","time":9890.74309869,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":9890.744250915,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process' \n"}
+,{"stream_name":"stderr","time":9890.745427417,"data":" \n"}
+,{"stream_name":"stderr","time":9890.745442858,"data":"\n"}
+,{"stream_name":"stderr","time":9890.745446794,"data":"\n"}
+,{"stream_name":"stderr","time":9890.746389816,"data":" \n"}
+,{"stream_name":"stderr","time":9890.754537029,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.755693705,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.757845024,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.758013835,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.759002,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.759951816,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.760898507,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.761830416,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.762794797,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.763684912,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.76459024,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.765485753,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.766533591,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.767815271,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.768846215,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.770840934,"data":"  \n"}
+,{"stream_name":"stderr","time":9890.774318144,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.775626058,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.776906656,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.778913296,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.779827347,"data":"^ \n"}
+,{"stream_name":"stderr","time":9890.780701648,"data":" ^\n"}
+,{"stream_name":"stderr","time":9890.782569092,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.783765075,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.784627433,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.787464592,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.789661669,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.79157398,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.793679359,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.794609295,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.79547208,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.799669319,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.80378477,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.806802447,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.809091757,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.811252411,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.812918786,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.815426992,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.816797712,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.82021077,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.822830162,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.825073017,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.828510453,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.831035969,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.833409291,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.835414148,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.837287371,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.83845201,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.840337842,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.84314065,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.844806928,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.846663675,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.849787185,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.850495341,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.852396948,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.854081505,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.856056533,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.858016671,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.859053769,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.860284769,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.861298122,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.863225568,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.865170361,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.866814623,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.868450256,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.870121259,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.871787335,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.873782049,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.877869173,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.878964599,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.879977693,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.882610087,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.886525684,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.887596987,"data":"^^\n"}
+,{"stream_name":"stderr","time":9890.891969819,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.89198601,"data":"\n"}
+,{"stream_name":"stderr","time":9890.891998948,"data":"\n"}
+,{"stream_name":"stderr","time":9890.892998207,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.893973003,"data":"^AssertionError\n"}
+,{"stream_name":"stderr","time":9890.895497877,"data":"AssertionError^\n"}
+,{"stream_name":"stderr","time":9890.898812231,"data":"^: \n"}
+,{"stream_name":"stderr","time":9890.899869775,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":9890.903327843,"data":"can only test a child process^\n"}
+,{"stream_name":"stderr","time":9890.904390227,"data":"^\n"}
+,{"stream_name":"stderr","time":9890.904404859,"data":"\n"}
+,{"stream_name":"stderr","time":9890.904408765,"data":"\n"}
+,{"stream_name":"stderr","time":9890.905372314,"data":"\n"}
+,{"stream_name":"stderr","time":9890.905387149,"data":"\n"}
+,{"stream_name":"stderr","time":9890.907853394,"data":"\n"}
+,{"stream_name":"stderr","time":9890.908841146,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":9890.911282186,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":9890.912309466,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":9890.916275237,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":9890.916306548,"data":"\n"}
+,{"stream_name":"stderr","time":9890.916322934,"data":"\n"}
+,{"stream_name":"stderr","time":9890.952405521,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":9890.959549129,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":9890.963979662,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":9890.964002659,"data":"\n"}
+,{"stream_name":"stderr","time":9890.96690825,"data":"\n"}
+,{"stream_name":"stderr","time":9890.968488598,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9890.968508394,"data":"\n"}
+,{"stream_name":"stderr","time":9890.968697155,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9890.97146107,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9890.971481782,"data":"\n"}
+,{"stream_name":"stderr","time":9890.974803428,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9890.977460102,"data":"    \n"}
+,{"stream_name":"stderr","time":9890.982097138,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":9890.983363825,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":9890.983380216,"data":"\n"}
+,{"stream_name":"stderr","time":9890.983393211,"data":"\n"}
+,{"stream_name":"stderr","time":9890.98442292,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9890.984438321,"data":"\n"}
+,{"stream_name":"stderr","time":9890.987448141,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9890.989209559,"data":"    \n"}
+,{"stream_name":"stderr","time":9890.993797726,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":9890.99898999,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":9890.999009964,"data":"\n"}
+,{"stream_name":"stderr","time":9890.999048082,"data":"\n"}
+,{"stream_name":"stderr","time":9891.002069102,"data":" \n"}
+,{"stream_name":"stderr","time":9891.004674982,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.006206443,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.012535874,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.012557174,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.01541312,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.018674702,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.022882047,"data":" ^\n"}
+,{"stream_name":"stderr","time":9891.028924954,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.034482498,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.0408463,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.040877156,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.044083609,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.049113205,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.054514932,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.058406711,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.064400875,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.066754469,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.072173029,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.075604903,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.075627179,"data":"\n"}
+,{"stream_name":"stderr","time":9891.075778784,"data":"\n"}
+,{"stream_name":"stderr","time":9891.077287378,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9891.077306998,"data":"\n"}
+,{"stream_name":"stderr","time":9891.077430714,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9891.078894162,"data":"    \n"}
+,{"stream_name":"stderr","time":9891.086284656,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":9891.092917639,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":9891.09294129,"data":"\n"}
+,{"stream_name":"stderr","time":9891.093105226,"data":"\n"}
+,{"stream_name":"stderr","time":9891.098534026,"data":" \n"}
+,{"stream_name":"stderr","time":9891.100459267,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.102944176,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.104755008,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.114900178,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.116692709,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.12112248,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.123984638,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.127564132,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.128940351,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.133457553,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.135033365,"data":" ^\n"}
+,{"stream_name":"stderr","time":9891.137614588,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.142400983,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.145458227,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.147771523,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.151447942,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.155293406,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.156589954,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.160854715,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.164026786,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.165856216,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.167686725,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.169004132,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.172812671,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.177324475,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.179385995,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.182505938,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.186458005,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.189722778,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.192201855,"data":"^Exception ignored in: \n"}
+,{"stream_name":"stderr","time":9891.193937695,"data":"Exception ignored in: ^\n"}
+,{"stream_name":"stderr","time":9891.196458788,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.198428642,"data":"^\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":9891.19991811,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e^\n"}
+,{"stream_name":"stderr","time":9891.201551751,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.20156772,"data":"\n"}
+,{"stream_name":"stderr","time":9891.201704708,"data":"\n"}
+,{"stream_name":"stderr","time":9891.203343652,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9891.203372194,"data":"\n"}
+,{"stream_name":"stderr","time":9891.203817808,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9891.205067535,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9891.205085361,"data":"\n"}
+,{"stream_name":"stderr","time":9891.206834469,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":9891.206963371,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.208372671,"data":"^    \n"}
+,{"stream_name":"stderr","time":9891.209781115,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":9891.212074984,"data":"self._shutdown_workers()^\n"}
+,{"stream_name":"stderr","time":9891.213977977,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.215405472,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.215421837,"data":"\n"}
+,{"stream_name":"stderr","time":9891.215433753,"data":"\n"}
+,{"stream_name":"stderr","time":9891.217030472,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.218758598,"data":"^  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9891.21878004,"data":"\n"}
+,{"stream_name":"stderr","time":9891.218910078,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":9891.220496838,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.221672304,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.223238454,"data":"^    \n"}
+,{"stream_name":"stderr","time":9891.225577056,"data":"    ^\n"}
+,{"stream_name":"stderr","time":9891.227892713,"data":"^if w.is_alive():\n"}
+,{"stream_name":"stderr","time":9891.228671671,"data":"if w.is_alive():^\n"}
+,{"stream_name":"stderr","time":9891.230264854,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.231806142,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.231822939,"data":"\n"}
+,{"stream_name":"stderr","time":9891.23183636,"data":"\n"}
+,{"stream_name":"stderr","time":9891.233182577,"data":" \n"}
+,{"stream_name":"stderr","time":9891.235374913,"data":" \n"}
+,{"stream_name":"stderr","time":9891.235390893,"data":"\n"}
+,{"stream_name":"stderr","time":9891.235395232,"data":"\n"}
+,{"stream_name":"stderr","time":9891.23667251,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":9891.239410313,"data":"AssertionError \n"}
+,{"stream_name":"stderr","time":9891.241428056,"data":" : \n"}
+,{"stream_name":"stderr","time":9891.242751225,"data":":  \n"}
+,{"stream_name":"stderr","time":9891.244047737,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.245187878,"data":" can only test a child process\n"}
+,{"stream_name":"stderr","time":9891.246618011,"data":"can only test a child process \n"}
+,{"stream_name":"stderr","time":9891.248261705,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.249429147,"data":" \n"}
+,{"stream_name":"stderr","time":9891.249445033,"data":"\n"}
+,{"stream_name":"stderr","time":9891.249468576,"data":"\n"}
+,{"stream_name":"stderr","time":9891.25053487,"data":" \n"}
+,{"stream_name":"stderr","time":9891.251680883,"data":" ^\n"}
+,{"stream_name":"stderr","time":9891.253927469,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.256922797,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.258702515,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.262036996,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.26899904,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.271262421,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.274293903,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.278620472,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.279720177,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.284237868,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.288603988,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.291068987,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.291085595,"data":"\n"}
+,{"stream_name":"stderr","time":9891.291090344,"data":"\n"}
+,{"stream_name":"stderr","time":9891.293975768,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9891.293992613,"data":"\n"}
+,{"stream_name":"stderr","time":9891.294117358,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":9891.297067692,"data":"    \n"}
+,{"stream_name":"stderr","time":9891.298350663,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":9891.301685237,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":9891.301700721,"data":"\n"}
+,{"stream_name":"stderr","time":9891.301704944,"data":"\n"}
+,{"stream_name":"stderr","time":9891.304094399,"data":" \n"}
+,{"stream_name":"stderr","time":9891.307020869,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.30938197,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.313503954,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.318139206,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.326897025,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.331298839,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.340701444,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.341747541,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.344031846,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.348931183,"data":"  \n"}
+,{"stream_name":"stderr","time":9891.353115553,"data":" ^\n"}
+,{"stream_name":"stderr","time":9891.354336191,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.356634341,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.361066639,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.364991845,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.369311388,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.372827418,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.374976009,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.37682316,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.383771072,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.384915441,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.388499356,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.392365942,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.397508575,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.397530105,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.399832884,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.402909838,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.407037503,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.408989747,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.410790341,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.412804496,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.417998516,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.420270129,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.422071483,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.424250201,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.425811226,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.433792245,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.438106123,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.439268905,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.4405845,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.443993628,"data":"^^\n"}
+,{"stream_name":"stderr","time":9891.445146015,"data":"^\n"}
+,{"stream_name":"stderr","time":9891.445161411,"data":"\n"}
+,{"stream_name":"stderr","time":9891.447883706,"data":"\n"}
+,{"stream_name":"stderr","time":9891.448959978,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":9891.450162582,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":9891.451488493,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":9891.454971242,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":9891.454988093,"data":"\n"}
+,{"stream_name":"stderr","time":9891.45511673,"data":"\n"}
+,{"stream_name":"stdout","time":10462.116879091,"data":"{\"rep\": 1, \"variant\": \"cohort\", \"n_train_cells\": 1691691, \"epochs\": 6, \"fit_min\": 7.804637062549591, \"total_min\": 33.46861042976379, \"final_loss\": 6.237586498260498, \"valid_Jackson\": 0.9987727816830119, \"valid_Danenberg\": 0.9989201850089294, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":10462.11693157,"data":"[ 173.3 min] rep 1 Novae [cohort] done\n"}
+,{"stream_name":"stderr","time":10467.337885563,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":10467.337938477,"data":"\n"}
+,{"stream_name":"stderr","time":10467.337990483,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":11974.563390058,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":11974.572685799,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":11974.578133906,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":11974.578154707,"data":"\n"}
+,{"stream_name":"stderr","time":11974.581910096,"data":"\n"}
+,{"stream_name":"stderr","time":11974.590202957,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11974.590219536,"data":"\n"}
+,{"stream_name":"stderr","time":11974.590363968,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11974.60090862,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11974.600928175,"data":"\n"}
+,{"stream_name":"stderr","time":11974.600941783,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11974.602470133,"data":"    \n"}
+,{"stream_name":"stderr","time":11974.60571198,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11974.611000269,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11974.61101738,"data":"\n"}
+,{"stream_name":"stderr","time":11974.613874475,"data":"\n"}
+,{"stream_name":"stderr","time":11974.615091121,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11974.61510701,"data":"\n"}
+,{"stream_name":"stderr","time":11974.615657672,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11974.62284677,"data":"    \n"}
+,{"stream_name":"stderr","time":11974.624104495,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":11974.625482298,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":11974.625494961,"data":"\n"}
+,{"stream_name":"stderr","time":11974.630842564,"data":"\n"}
+,{"stream_name":"stderr","time":11974.632038889,"data":" \n"}
+,{"stream_name":"stderr","time":11974.636214438,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.639920259,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.641026797,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.647976635,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.656041431,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.657214769,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.660865112,"data":" ^\n"}
+,{"stream_name":"stderr","time":11974.6671435,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.672096989,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.676879112,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.680969522,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.68606263,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.687365375,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.694074591,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.697180637,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.701993217,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.706116706,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.707404554,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.711026572,"data":"^\n"}
+,{"stream_name":"stderr","time":11974.711040753,"data":"\n"}
+,{"stream_name":"stderr","time":11974.713944892,"data":"\n"}
+,{"stream_name":"stderr","time":11974.715168219,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11974.715181482,"data":"\n"}
+,{"stream_name":"stderr","time":11974.717836723,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11974.719015209,"data":"    \n"}
+,{"stream_name":"stderr","time":11974.720187682,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11974.727019456,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11974.727035179,"data":"\n"}
+,{"stream_name":"stderr","time":11974.727047923,"data":"\n"}
+,{"stream_name":"stderr","time":11974.728278271,"data":" \n"}
+,{"stream_name":"stderr","time":11974.735169628,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.736362259,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.740012703,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.743972389,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.748112873,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.749298409,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.752942313,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.75711963,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.761011261,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.763121745,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.769012977,"data":" ^\n"}
+,{"stream_name":"stderr","time":11974.770203117,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.786145567,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.790234865,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.795214765,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.801196536,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.80278715,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.807543271,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.813837704,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.820107941,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.82502966,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.835117957,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.843035735,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.847991548,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.85794878,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.864184851,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.869930272,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.8843047,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.884329569,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.893982603,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.896268327,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.897745955,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.905160718,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.907228453,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.911866417,"data":"^Exception ignored in: \n"}
+,{"stream_name":"stderr","time":11974.913706009,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":11974.919927305,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e^\n"}
+,{"stream_name":"stderr","time":11974.921014737,"data":"^\n"}
+,{"stream_name":"stderr","time":11974.921029186,"data":"\n"}
+,{"stream_name":"stderr","time":11974.921033399,"data":"\n"}
+,{"stream_name":"stderr","time":11974.922786652,"data":"^\n"}
+,{"stream_name":"stderr","time":11974.923927099,"data":"^Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11974.923942283,"data":"\n"}
+,{"stream_name":"stderr","time":11974.926155078,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11974.928703363,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11974.928718942,"data":"\n"}
+,{"stream_name":"stderr","time":11974.928875929,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11974.930032372,"data":"^\n"}
+,{"stream_name":"stderr","time":11974.933838359,"data":"^    \n"}
+,{"stream_name":"stderr","time":11974.935959747,"data":"    ^\n"}
+,{"stream_name":"stderr","time":11974.938317253,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.939887718,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.941684342,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.942686959,"data":"^\n"}
+,{"stream_name":"stderr","time":11974.942700747,"data":"\n"}
+,{"stream_name":"stderr","time":11974.942808136,"data":"\n"}
+,{"stream_name":"stderr","time":11974.944480629,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11974.945775758,"data":"self._shutdown_workers()AssertionError\n"}
+,{"stream_name":"stderr","time":11974.946861475,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":11974.946877173,"data":"\n"}
+,{"stream_name":"stderr","time":11974.947126647,"data":"\n"}
+,{"stream_name":"stderr","time":11974.948493667,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11974.948524898,"data":"\n"}
+,{"stream_name":"stderr","time":11974.949305524,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11974.950769477,"data":"    \n"}
+,{"stream_name":"stderr","time":11974.952017659,"data":"    : \n"}
+,{"stream_name":"stderr","time":11974.953234098,"data":": if w.is_alive():\n"}
+,{"stream_name":"stderr","time":11974.954541446,"data":"if w.is_alive():can only test a child process\n"}
+,{"stream_name":"stderr","time":11974.955749023,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":11974.955763489,"data":"\n"}
+,{"stream_name":"stderr","time":11974.955926075,"data":"\n"}
+,{"stream_name":"stderr","time":11974.957140856,"data":"\n"}
+,{"stream_name":"stderr","time":11974.957164094,"data":"\n"}
+,{"stream_name":"stderr","time":11974.957273452,"data":"\n"}
+,{"stream_name":"stderr","time":11974.958401225,"data":" \n"}
+,{"stream_name":"stderr","time":11974.959626311,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.960892759,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.962197603,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.963784373,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.965190068,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.966314678,"data":"  \n"}
+,{"stream_name":"stderr","time":11974.968495492,"data":" ^\n"}
+,{"stream_name":"stderr","time":11974.971712921,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.976029147,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.977198244,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.978355964,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.981258601,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.984983268,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.988956456,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.990075536,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.991561003,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.9950566,"data":"^^\n"}
+,{"stream_name":"stderr","time":11974.99843016,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.001612836,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.001628412,"data":"\n"}
+,{"stream_name":"stderr","time":11975.002872172,"data":"\n"}
+,{"stream_name":"stderr","time":11975.004485543,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11975.004502695,"data":"\n"}
+,{"stream_name":"stderr","time":11975.006611655,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11975.007702897,"data":"    \n"}
+,{"stream_name":"stderr","time":11975.015016092,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11975.01630009,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11975.016316362,"data":"\n"}
+,{"stream_name":"stderr","time":11975.016556018,"data":"\n"}
+,{"stream_name":"stderr","time":11975.020448585,"data":" \n"}
+,{"stream_name":"stderr","time":11975.025408108,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.029832465,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.034797365,"data":" Exception ignored in: \n"}
+,{"stream_name":"stderr","time":11975.036202376,"data":"Exception ignored in:  \n"}
+,{"stream_name":"stderr","time":11975.038572624,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.039819188,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.044662514,"data":" \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":11975.045807955,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e \n"}
+,{"stream_name":"stderr","time":11975.04886287,"data":" \n"}
+,{"stream_name":"stderr","time":11975.048879406,"data":"\n"}
+,{"stream_name":"stderr","time":11975.048884283,"data":"\n"}
+,{"stream_name":"stderr","time":11975.051896133,"data":" \n"}
+,{"stream_name":"stderr","time":11975.055693304,"data":" Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11975.055709252,"data":"\n"}
+,{"stream_name":"stderr","time":11975.057227081,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11975.058504172,"data":" \n"}
+,{"stream_name":"stderr","time":11975.061524525,"data":"   File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11975.061540619,"data":"\n"}
+,{"stream_name":"stderr","time":11975.061685053,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11975.063045883,"data":" \n"}
+,{"stream_name":"stderr","time":11975.067020984,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.068862588,"data":"     \n"}
+,{"stream_name":"stderr","time":11975.071822851,"data":"    ^\n"}
+,{"stream_name":"stderr","time":11975.07395854,"data":"^self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11975.075327875,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11975.075345096,"data":"\n"}
+,{"stream_name":"stderr","time":11975.075358144,"data":"\n"}
+,{"stream_name":"stderr","time":11975.076911391,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.077829236,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.079163308,"data":"^  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11975.07918248,"data":"\n"}
+,{"stream_name":"stderr","time":11975.079561206,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11975.080768226,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.082171222,"data":"^    \n"}
+,{"stream_name":"stderr","time":11975.083969803,"data":"    ^\n"}
+,{"stream_name":"stderr","time":11975.084771988,"data":"^if w.is_alive():\n"}
+,{"stream_name":"stderr","time":11975.087843092,"data":"if w.is_alive():^\n"}
+,{"stream_name":"stderr","time":11975.08786122,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.087866044,"data":"\n"}
+,{"stream_name":"stderr","time":11975.087869829,"data":"\n"}
+,{"stream_name":"stderr","time":11975.088249558,"data":" \n"}
+,{"stream_name":"stderr","time":11975.090785994,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.090801504,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.091469012,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.092603155,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.093792493,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.095282814,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.096407512,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.097553464,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.098719333,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.100540059,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.101629017,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.102685837,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.103857831,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.10496924,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.106158306,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.107112881,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.109209157,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.110677038,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.112487936,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.113710375,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.114988599,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.116196583,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.117441394,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.11862679,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.119667295,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.120834554,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.122402635,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.124031397,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.125411712,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.126589487,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.12792198,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.129530153,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.131456013,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.132807304,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.13487954,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.136536318,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.138546708,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.139670416,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.141615619,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.141632065,"data":"\n"}
+,{"stream_name":"stderr","time":11975.141645044,"data":"\n"}
+,{"stream_name":"stderr","time":11975.142678055,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11975.142694688,"data":"\n"}
+,{"stream_name":"stderr","time":11975.142713593,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11975.143862565,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.145973179,"data":"^    \n"}
+,{"stream_name":"stderr","time":11975.147348691,"data":"    ^\n"}
+,{"stream_name":"stderr","time":11975.148577553,"data":"^assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11975.14995102,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'^\n"}
+,{"stream_name":"stderr","time":11975.151220565,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.151238131,"data":"\n"}
+,{"stream_name":"stderr","time":11975.151346836,"data":"\n"}
+,{"stream_name":"stderr","time":11975.152876787,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.154419207,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.155598202,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.1587881,"data":"^ \n"}
+,{"stream_name":"stderr","time":11975.158872293,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.159957113,"data":" \n"}
+,{"stream_name":"stderr","time":11975.159974093,"data":"\n"}
+,{"stream_name":"stderr","time":11975.160066364,"data":"\n"}
+,{"stream_name":"stderr","time":11975.16197907,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":11975.164029927,"data":"AssertionError \n"}
+,{"stream_name":"stderr","time":11975.16520774,"data":" : \n"}
+,{"stream_name":"stderr","time":11975.166331729,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":11975.167394023,"data":"can only test a child process \n"}
+,{"stream_name":"stderr","time":11975.168800813,"data":" \n"}
+,{"stream_name":"stderr","time":11975.168818388,"data":"\n"}
+,{"stream_name":"stderr","time":11975.168831871,"data":"\n"}
+,{"stream_name":"stderr","time":11975.170287992,"data":" \n"}
+,{"stream_name":"stderr","time":11975.171312796,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.172715921,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.173903734,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.17522367,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.176295186,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.177724466,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.17886162,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.182402862,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.184128427,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.188253264,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.190352574,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.191529842,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.194784072,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.198807901,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.201085088,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.20482308,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.206058773,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.209977597,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.211798381,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.212211273,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.215951316,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.217019592,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.220943303,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.22204283,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.225973962,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.229843865,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.230984281,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.234939121,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.236030474,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.237064067,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.239959764,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.241244188,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.245820741,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.246956469,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.249051419,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.253962423,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.255322065,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.255339068,"data":"\n"}
+,{"stream_name":"stderr","time":11975.2568661,"data":"\n"}
+,{"stream_name":"stderr","time":11975.257919599,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":11975.260228054,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":11975.26238788,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":11975.26597862,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":11975.265996167,"data":"\n"}
+,{"stream_name":"stderr","time":11975.266015099,"data":"\n"}
+,{"stream_name":"stderr","time":11975.458821172,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":11975.461152799,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":11975.467094789,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":11975.467120457,"data":"\n"}
+,{"stream_name":"stderr","time":11975.469910607,"data":"\n"}
+,{"stream_name":"stderr","time":11975.472508547,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11975.472546705,"data":"\n"}
+,{"stream_name":"stderr","time":11975.472692356,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":11975.474320555,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11975.4743424,"data":"\n"}
+,{"stream_name":"stderr","time":11975.474431765,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":11975.476206968,"data":"    \n"}
+,{"stream_name":"stderr","time":11975.479052149,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11975.4805154,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":11975.480538774,"data":"\n"}
+,{"stream_name":"stderr","time":11975.481484221,"data":"\n"}
+,{"stream_name":"stderr","time":11975.4862936,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11975.48632342,"data":"\n"}
+,{"stream_name":"stderr","time":11975.486662062,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":11975.490863015,"data":"    \n"}
+,{"stream_name":"stderr","time":11975.493083247,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":11975.49817264,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":11975.498198122,"data":"\n"}
+,{"stream_name":"stderr","time":11975.498213779,"data":"\n"}
+,{"stream_name":"stderr","time":11975.499587765,"data":" \n"}
+,{"stream_name":"stderr","time":11975.503426017,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.508846172,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.511614096,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.51696707,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.518290336,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.519783915,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.523617191,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.526428952,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.528012833,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.532492069,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.534680416,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.537405519,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.540811314,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.544579267,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.547795512,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.551887419,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.555427362,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.55859819,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.563250341,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.56332511,"data":"\n"}
+,{"stream_name":"stderr","time":11975.564490807,"data":"\n"}
+,{"stream_name":"stderr","time":11975.565883766,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11975.565971233,"data":"\n"}
+,{"stream_name":"stderr","time":11975.565976858,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":11975.57147129,"data":"    \n"}
+,{"stream_name":"stderr","time":11975.572975153,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11975.575708613,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":11975.576799072,"data":"\n"}
+,{"stream_name":"stderr","time":11975.576817983,"data":"\n"}
+,{"stream_name":"stderr","time":11975.579776104,"data":" \n"}
+,{"stream_name":"stderr","time":11975.582118452,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.583491954,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.584778212,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.587984617,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.590676733,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.596443089,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.599798956,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.602674978,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.605435701,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.607279708,"data":"  \n"}
+,{"stream_name":"stderr","time":11975.612207888,"data":" ^\n"}
+,{"stream_name":"stderr","time":11975.615605006,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.617801889,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.623276358,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.625782424,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.630235805,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.633646649,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.638635545,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.641498715,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.64578686,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.650097167,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.651368974,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.655279438,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.65727754,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.660841808,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.664201154,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.668678624,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.671796755,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.672580051,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.675952528,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.678654284,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.681669999,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.686308136,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.687645331,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.691463963,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.693555587,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.696520034,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.699450041,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.701421251,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.705858475,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.707705902,"data":"^^\n"}
+,{"stream_name":"stderr","time":11975.711453247,"data":"^\n"}
+,{"stream_name":"stderr","time":11975.711469174,"data":"\n"}
+,{"stream_name":"stderr","time":11975.712281025,"data":"\n"}
+,{"stream_name":"stderr","time":11975.714225181,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":11975.71587924,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":11975.717905887,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":11975.71940258,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":11975.719418281,"data":"\n"}
+,{"stream_name":"stderr","time":11975.719596162,"data":"\n"}
+,{"stream_name":"stdout","time":12558.599794685,"data":"{\"rep\": 1, \"variant\": \"img\", \"n_train_cells\": 1691691, \"epochs\": 6, \"fit_min\": 8.275014468034108, \"total_min\": 34.940226674079895, \"final_loss\": 5.030796051025391, \"valid_Jackson\": 0.9987727816830119, \"valid_Danenberg\": 0.9989201850089294, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":12558.599938094,"data":"[ 208.3 min] rep 1 Novae [img] done\n"}
+,{"stream_name":"stdout","time":12679.979804167,"data":"[ 210.3 min] rep 1 LISI\n"}
+,{"stream_name":"stdout","time":12757.399321743,"data":"[ 211.6 min] rep 1 coarse / train Jackson: Table + nbr Jackson F1 0.795, Danenberg F1 0.571\n"}
+,{"stream_name":"stdout","time":12827.456912122,"data":"[ 212.8 min] rep 1 coarse / train Jackson: Novae [cohort] Jackson F1 0.527, Danenberg F1 0.418\n"}
+,{"stream_name":"stdout","time":12941.43908413,"data":"[ 214.7 min] rep 1 coarse / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.794, Danenberg F1 0.570\n"}
+,{"stream_name":"stdout","time":13058.644898199,"data":"[ 216.6 min] rep 1 coarse / train Jackson: Table + nbr + Novae [cohort]-corr Jackson F1 0.794, Danenberg F1 0.568\n"}
+,{"stream_name":"stdout","time":13179.225927645,"data":"[ 218.6 min] rep 1 coarse / train Jackson: Table + nbr + Novae [img] Jackson F1 0.796, Danenberg F1 0.572\n"}
+,{"stream_name":"stdout","time":13264.298234313,"data":"[ 220.0 min] rep 1 coarse / train Danenberg: Table + nbr Jackson F1 0.600, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":13336.523713319,"data":"[ 221.2 min] rep 1 coarse / train Danenberg: Novae [cohort] Jackson F1 0.429, Danenberg F1 0.463\n"}
+,{"stream_name":"stdout","time":13461.419977296,"data":"[ 223.3 min] rep 1 coarse / train Danenberg: Table + nbr + Novae [cohort] Jackson F1 0.602, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":13586.143259886,"data":"[ 225.4 min] rep 1 coarse / train Danenberg: Table + nbr + Novae [cohort]-corr Jackson F1 0.602, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":13713.792650167,"data":"[ 227.5 min] rep 1 coarse / train Danenberg: Table + nbr + Novae [img] Jackson F1 0.602, Danenberg F1 0.705\n"}
+,{"stream_name":"stdout","time":13851.606774143,"data":"[ 229.8 min] rep 1 coarse / train Both: Table + nbr Jackson F1 0.782, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":13962.778356813,"data":"[ 231.7 min] rep 1 coarse / train Both: Novae [cohort] Jackson F1 0.519, Danenberg F1 0.464\n"}
+,{"stream_name":"stdout","time":14176.688893698,"data":"[ 235.2 min] rep 1 coarse / train Both: Table + nbr + Novae [cohort] Jackson F1 0.783, Danenberg F1 0.693\n"}
+,{"stream_name":"stdout","time":14389.077130385,"data":"[ 238.8 min] rep 1 coarse / train Both: Table + nbr + Novae [cohort]-corr Jackson F1 0.783, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":14601.792104045,"data":"[ 242.3 min] rep 1 coarse / train Both: Table + nbr + Novae [img] Jackson F1 0.784, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":14955.471417672,"data":"[ 248.2 min] rep 1 fine / train Danenberg: Table + nbr Danenberg F1 0.451\n"}
+,{"stream_name":"stdout","time":15516.823618611,"data":"[ 257.6 min] rep 1 fine / train Danenberg: Table + nbr + Novae [cohort] Danenberg F1 0.452\n"}
+,{"stream_name":"stdout","time":15815.222725191,"data":"[ 262.5 min] rep 1 fine / train Jackson: Table + nbr Jackson F1 0.426\n"}
+,{"stream_name":"stdout","time":16282.708463086,"data":"[ 270.3 min] rep 1 fine / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.431\n"}
+,{"stream_name":"stdout","time":16282.709525403,"data":"--- replicate 1: macro-F1\n"}
+,{"stream_name":"stdout","time":16282.709545078,"data":"model                       Novae [cohort]  Table + nbr  Table + nbr + Novae [cohort]  Table + nbr + Novae [cohort]-corr  Table + nbr + Novae [img]\n"}
+,{"stream_name":"stdout","time":16282.709549952,"data":"task   train     test                                                                                                                              \n"}
+,{"stream_name":"stdout","time":16282.709553999,"data":"coarse Both      Danenberg           0.464        0.692                         0.693                              0.692                      0.692\n"}
+,{"stream_name":"stdout","time":16282.709558032,"data":"                 Jackson             0.519        0.782                         0.783                              0.783                      0.784\n"}
+,{"stream_name":"stdout","time":16282.709562016,"data":"       Danenberg Danenberg           0.463        0.704                         0.704                              0.704                      0.705\n"}
+,{"stream_name":"stdout","time":16282.70956566,"data":"                 Jackson             0.429        0.600                         0.602                              0.602                      0.602\n"}
+,{"stream_name":"stdout","time":16282.709570039,"data":"       Jackson   Danenberg           0.418        0.571                         0.570                              0.568                      0.572\n"}
+,{"stream_name":"stdout","time":16282.709574216,"data":"                 Jackson             0.527        0.795                         0.794                              0.794                      0.796\n"}
+,{"stream_name":"stdout","time":16282.709578111,"data":"fine   Danenberg Danenberg             NaN        0.451                         0.452                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":16282.709582317,"data":"       Jackson   Jackson               NaN        0.426                         0.431                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":16282.709586054,"data":"[ 270.3 min] replicate 1 done (130 min)\n"}
+,{"stream_name":"stdout","time":16282.710451463,"data":"[ 270.3 min] replicate 2\n"}
+,{"stream_name":"stdout","time":16283.707415993,"data":"Jackson {'train': (390, 254), 'val': (65, 40), 'test': (87, 55)} (images, patients)\n"}
+,{"stream_name":"stdout","time":16283.70745427,"data":"Danenberg {'train': (490, 452), 'val': (69, 68), 'test': (145, 130)} (images, patients)\n"}
+,{"stream_name":"stderr","time":16288.00105051,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":16288.001092958,"data":"\n"}
+,{"stream_name":"stderr","time":16288.001098278,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":18128.635300325,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":18128.660586131,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":18128.666370362,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":18128.666418152,"data":"\n"}
+,{"stream_name":"stderr","time":18128.666424122,"data":"\n"}
+,{"stream_name":"stderr","time":18128.672207576,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18128.67223754,"data":"\n"}
+,{"stream_name":"stderr","time":18128.672243469,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18128.676611539,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18128.676639983,"data":"\n"}
+,{"stream_name":"stderr","time":18128.676644577,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18128.6832478,"data":"    \n"}
+,{"stream_name":"stderr","time":18128.693235089,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18128.701362267,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18128.701391939,"data":"\n"}
+,{"stream_name":"stderr","time":18128.701396479,"data":"\n"}
+,{"stream_name":"stderr","time":18128.702749587,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18128.702772758,"data":"\n"}
+,{"stream_name":"stderr","time":18128.702777575,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18128.710328778,"data":"    \n"}
+,{"stream_name":"stderr","time":18128.713051716,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18128.726904796,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18128.726932995,"data":"\n"}
+,{"stream_name":"stderr","time":18128.726938011,"data":"\n"}
+,{"stream_name":"stderr","time":18128.731406138,"data":" \n"}
+,{"stream_name":"stderr","time":18128.738151304,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.745259012,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.746761477,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.754053641,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.755297722,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.761904169,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.763506543,"data":" ^\n"}
+,{"stream_name":"stderr","time":18128.767477732,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.776047784,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.777690085,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.782436959,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.785496009,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.792654268,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.797818228,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.805055924,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.810261646,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.815517178,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.818178841,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.822247978,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.822265866,"data":"\n"}
+,{"stream_name":"stderr","time":18128.82227839,"data":"\n"}
+,{"stream_name":"stderr","time":18128.823595375,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18128.823610615,"data":"\n"}
+,{"stream_name":"stderr","time":18128.824577401,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18128.826230879,"data":"    \n"}
+,{"stream_name":"stderr","time":18128.829961575,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":18128.833187584,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":18128.83320364,"data":"\n"}
+,{"stream_name":"stderr","time":18128.833221892,"data":"\n"}
+,{"stream_name":"stderr","time":18128.834411703,"data":" \n"}
+,{"stream_name":"stderr","time":18128.837616264,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.840980771,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.842951401,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.846481931,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.850084673,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.851373709,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.857384975,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.861705954,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.863469289,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.866289131,"data":"  \n"}
+,{"stream_name":"stderr","time":18128.873038582,"data":" ^\n"}
+,{"stream_name":"stderr","time":18128.874357954,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.876407886,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.880799454,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.883338835,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.88466821,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.888156105,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.891646966,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.89554979,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.898320315,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.90224039,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.90511643,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.906744723,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.908051209,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.91237215,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.913673944,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.918033893,"data":"^Exception ignored in: \n"}
+,{"stream_name":"stderr","time":18128.919304909,"data":"Exception ignored in: ^\n"}
+,{"stream_name":"stderr","time":18128.92100996,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.923073958,"data":"^\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":18128.924337224,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e^\n"}
+,{"stream_name":"stderr","time":18128.926770088,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.926786348,"data":"\n"}
+,{"stream_name":"stderr","time":18128.929050058,"data":"\n"}
+,{"stream_name":"stderr","time":18128.930753471,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.933053364,"data":"^^\n"}
+,{"stream_name":"stderr","time":18128.934543491,"data":"^Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18128.934558969,"data":"\n"}
+,{"stream_name":"stderr","time":18128.934715386,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18128.935994012,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.938825327,"data":"^  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18128.938842014,"data":"\n"}
+,{"stream_name":"stderr","time":18128.938846567,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18128.940132276,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.942627701,"data":"^    \n"}
+,{"stream_name":"stderr","time":18128.944021473,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18128.945464442,"data":"^Exception ignored in: \n"}
+,{"stream_name":"stderr","time":18128.947513078,"data":"Exception ignored in: self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18128.9501622,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18128.950179,"data":"\n"}
+,{"stream_name":"stderr","time":18128.953881624,"data":"\n"}
+,{"stream_name":"stderr","time":18128.953913378,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.953918858,"data":"^  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18128.953924147,"data":"\n"}
+,{"stream_name":"stderr","time":18128.953928252,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18128.95466754,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.955897452,"data":"^\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":18128.95738368,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e    \n"}
+,{"stream_name":"stderr","time":18128.958839136,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18128.960345939,"data":"^if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18128.96192616,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18128.961944271,"data":"\n"}
+,{"stream_name":"stderr","time":18128.962110798,"data":"\n"}
+,{"stream_name":"stderr","time":18128.963373819,"data":"\n"}
+,{"stream_name":"stderr","time":18128.963389135,"data":"\n"}
+,{"stream_name":"stderr","time":18128.963549884,"data":"\n"}
+,{"stream_name":"stderr","time":18128.964858083,"data":"^\n"}
+,{"stream_name":"stderr","time":18128.966378109,"data":"^Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18128.966395434,"data":"\n"}
+,{"stream_name":"stderr","time":18128.966543544,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18128.967896752,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18128.967914145,"data":"\n"}
+,{"stream_name":"stderr","time":18128.968094653,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18128.969382882,"data":" \n"}
+,{"stream_name":"stderr","time":18128.971088646,"data":" ^\n"}
+,{"stream_name":"stderr","time":18128.972634668,"data":"^ \n"}
+,{"stream_name":"stderr","time":18128.974111322,"data":"     \n"}
+,{"stream_name":"stderr","time":18128.975561272,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18128.977175389,"data":"^ \n"}
+,{"stream_name":"stderr","time":18128.978845593,"data":" ^\n"}
+,{"stream_name":"stderr","time":18128.980271789,"data":"^self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18128.981870579,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18128.981887007,"data":"\n"}
+,{"stream_name":"stderr","time":18128.982044551,"data":"\n"}
+,{"stream_name":"stderr","time":18128.983359081,"data":" \n"}
+,{"stream_name":"stderr","time":18128.984886088,"data":" \n"}
+,{"stream_name":"stderr","time":18128.984914893,"data":"\n"}
+,{"stream_name":"stderr","time":18128.985084901,"data":"\n"}
+,{"stream_name":"stderr","time":18128.986448387,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":18128.987992764,"data":"AssertionError \n"}
+,{"stream_name":"stderr","time":18128.989894295,"data":"   File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18128.989911902,"data":"\n"}
+,{"stream_name":"stderr","time":18128.990098961,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18128.991497341,"data":": \n"}
+,{"stream_name":"stderr","time":18128.992977667,"data":":  \n"}
+,{"stream_name":"stderr","time":18128.994885772,"data":"     \n"}
+,{"stream_name":"stderr","time":18128.996413917,"data":"    can only test a child process\n"}
+,{"stream_name":"stderr","time":18128.998066153,"data":"can only test a child process \n"}
+,{"stream_name":"stderr","time":18128.999867493,"data":" if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18129.001010514,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18129.001026729,"data":"\n"}
+,{"stream_name":"stderr","time":18129.001188076,"data":"\n"}
+,{"stream_name":"stderr","time":18129.002510915,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.003990843,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.004007967,"data":"\n"}
+,{"stream_name":"stderr","time":18129.004172111,"data":"\n"}
+,{"stream_name":"stderr","time":18129.005488335,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.006936418,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.008394726,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.009907557,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.011470302,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.013330497,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.014878302,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.01609182,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.017524519,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.019035951,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.02062238,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.022022677,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.023457427,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.024800146,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.026362303,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.028832796,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.030414626,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.03183866,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.033183709,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.034742018,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.036700852,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.036713713,"data":"\n"}
+,{"stream_name":"stderr","time":18129.036882899,"data":"\n"}
+,{"stream_name":"stderr","time":18129.038094908,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.039481292,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.041087096,"data":"^  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18129.041103002,"data":"\n"}
+,{"stream_name":"stderr","time":18129.04123473,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18129.043900753,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.044084282,"data":"^    \n"}
+,{"stream_name":"stderr","time":18129.045576835,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18129.049385234,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.051855832,"data":"^assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":18129.053450801,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'^\n"}
+,{"stream_name":"stderr","time":18129.055269149,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.055302555,"data":"\n"}
+,{"stream_name":"stderr","time":18129.05541127,"data":"\n"}
+,{"stream_name":"stderr","time":18129.056935169,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.058392072,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.061305228,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.06257887,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.064829417,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.065867036,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.06733509,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.068879994,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.070579782,"data":" \n"}
+,{"stream_name":"stderr","time":18129.070597983,"data":"\n"}
+,{"stream_name":"stderr","time":18129.070772142,"data":"\n"}
+,{"stream_name":"stderr","time":18129.072253408,"data":" \n"}
+,{"stream_name":"stderr","time":18129.074028066,"data":"   File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18129.074046307,"data":"\n"}
+,{"stream_name":"stderr","time":18129.074333165,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18129.075775765,"data":" \n"}
+,{"stream_name":"stderr","time":18129.077390762,"data":"     \n"}
+,{"stream_name":"stderr","time":18129.078924252,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":18129.080227336,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process' \n"}
+,{"stream_name":"stderr","time":18129.081866241,"data":" \n"}
+,{"stream_name":"stderr","time":18129.081885171,"data":"\n"}
+,{"stream_name":"stderr","time":18129.081964515,"data":"\n"}
+,{"stream_name":"stderr","time":18129.083454583,"data":" \n"}
+,{"stream_name":"stderr","time":18129.085033177,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.086620009,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.088069392,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.090031132,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.091463449,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.09276841,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.095113199,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.097559847,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.098901697,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.100782333,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.101888387,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.104072445,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.105024328,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.110864248,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.110882998,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.111260981,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.114303311,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.115895827,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.117812843,"data":"^ \n"}
+,{"stream_name":"stderr","time":18129.119196421,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.121845791,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.122259952,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.123630834,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.125159746,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.126691564,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.128554752,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.132579274,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.134540058,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.138873944,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.139946608,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.142012272,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.144079603,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.147024978,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.148922088,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.150840566,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.152992982,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.155363235,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.157493923,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.159240223,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.162169738,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.164849218,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.166505966,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.168834868,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.170706389,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.173362017,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.176017502,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.178045196,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.180788299,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.18230258,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.186443612,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.188024275,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.192023486,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.193539739,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.196618326,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.198626609,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.201297952,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.202581545,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.204649449,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.20577899,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.207681413,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.208608121,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.213293666,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.214526139,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.215988848,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.217644591,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.21893702,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.220376482,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.222045902,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.223471735,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.225837952,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.226324866,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.227545209,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.229256504,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.230549374,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.231824402,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.232910146,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.232926902,"data":"\n"}
+,{"stream_name":"stderr","time":18129.233049519,"data":"\n"}
+,{"stream_name":"stderr","time":18129.234149287,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.235418891,"data":"^AssertionError\n"}
+,{"stream_name":"stderr","time":18129.236655607,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":18129.237926388,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":18129.239254959,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":18129.239287202,"data":"\n"}
+,{"stream_name":"stderr","time":18129.239338799,"data":"\n"}
+,{"stream_name":"stderr","time":18129.240719486,"data":"\n"}
+,{"stream_name":"stderr","time":18129.240791948,"data":"\n"}
+,{"stream_name":"stderr","time":18129.240800304,"data":"\n"}
+,{"stream_name":"stderr","time":18129.241973532,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":18129.243338853,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":18129.244835717,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":18129.246119087,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":18129.246135039,"data":"\n"}
+,{"stream_name":"stderr","time":18129.246203643,"data":"\n"}
+,{"stream_name":"stderr","time":18129.623584199,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":18129.628663797,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":18129.630757794,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":18129.630778059,"data":"\n"}
+,{"stream_name":"stderr","time":18129.635930379,"data":"\n"}
+,{"stream_name":"stderr","time":18129.637785694,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18129.63780551,"data":"\n"}
+,{"stream_name":"stderr","time":18129.637959925,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18129.639223845,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18129.639241751,"data":"\n"}
+,{"stream_name":"stderr","time":18129.641770107,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":18129.646406438,"data":"    \n"}
+,{"stream_name":"stderr","time":18129.647647724,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18129.650829077,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":18129.650846093,"data":"\n"}
+,{"stream_name":"stderr","time":18129.650861022,"data":"\n"}
+,{"stream_name":"stderr","time":18129.652154849,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18129.65219375,"data":"\n"}
+,{"stream_name":"stderr","time":18129.652308714,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":18129.65367027,"data":"    \n"}
+,{"stream_name":"stderr","time":18129.655538024,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18129.656966768,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":18129.656982716,"data":"\n"}
+,{"stream_name":"stderr","time":18129.657230889,"data":"\n"}
+,{"stream_name":"stderr","time":18129.658938559,"data":" \n"}
+,{"stream_name":"stderr","time":18129.660365625,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.662842907,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.663083469,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.664825934,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.66627836,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.668034912,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.670949743,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.674223292,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.678087746,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.682081421,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.686505052,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.690135866,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.693372717,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.696087462,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.70023965,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.701630333,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.70614916,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.708406795,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.712088655,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.712105599,"data":"\n"}
+,{"stream_name":"stderr","time":18129.712289639,"data":"\n"}
+,{"stream_name":"stderr","time":18129.716221741,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18129.716239464,"data":"\n"}
+,{"stream_name":"stderr","time":18129.716413937,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":18129.717508857,"data":"    \n"}
+,{"stream_name":"stderr","time":18129.718931738,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":18129.720403444,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":18129.720422036,"data":"\n"}
+,{"stream_name":"stderr","time":18129.72078154,"data":"\n"}
+,{"stream_name":"stderr","time":18129.722666195,"data":" \n"}
+,{"stream_name":"stderr","time":18129.728243453,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.731163383,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.732649299,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.735040611,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.738984834,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.74268163,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.746558841,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.750508723,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.753675437,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.75618033,"data":"  \n"}
+,{"stream_name":"stderr","time":18129.759169786,"data":" ^\n"}
+,{"stream_name":"stderr","time":18129.761426268,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.764006752,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.766828857,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.769889663,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.772242062,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.775615028,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.778900562,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.782876656,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.785548403,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.788258665,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.790392006,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.793405966,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.796845363,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.800179797,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.803122169,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.806151986,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.808607316,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.812126947,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.815515585,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.818832438,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.821330892,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.824310325,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.827079511,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.830445074,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.837300174,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.842988883,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.846952519,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.851205173,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.853681126,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.858669377,"data":"^^\n"}
+,{"stream_name":"stderr","time":18129.860905534,"data":"^\n"}
+,{"stream_name":"stderr","time":18129.860921656,"data":"\n"}
+,{"stream_name":"stderr","time":18129.861548016,"data":"\n"}
+,{"stream_name":"stderr","time":18129.86591223,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":18129.868825726,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":18129.868843094,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":18129.872665678,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":18129.872686552,"data":"\n"}
+,{"stream_name":"stderr","time":18129.87290678,"data":"\n"}
+,{"stream_name":"stdout","time":18453.436068048,"data":"{\"rep\": 2, \"variant\": \"cohort\", \"n_train_cells\": 1785178, \"epochs\": 6, \"fit_min\": 8.186299641927084, \"total_min\": 36.16367579698563, \"final_loss\": 6.238006591796875, \"valid_Jackson\": 0.9987727816830119, \"valid_Danenberg\": 0.9989201850089294, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":18453.436130768,"data":"[ 306.5 min] rep 2 Novae [cohort] done\n"}
+,{"stream_name":"stderr","time":18458.699687377,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":18458.69974436,"data":"\n"}
+,{"stream_name":"stderr","time":18458.699752981,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":20085.170763533,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":20085.184902164,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20085.191859483,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20085.191982005,"data":"\n"}
+,{"stream_name":"stderr","time":20085.191991576,"data":"\n"}
+,{"stream_name":"stderr","time":20085.200907444,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20085.200937798,"data":"\n"}
+,{"stream_name":"stderr","time":20085.200987298,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20085.202129611,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20085.202150869,"data":"\n"}
+,{"stream_name":"stderr","time":20085.202156991,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20085.209261258,"data":"    \n"}
+,{"stream_name":"stderr","time":20085.21067593,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20085.21735842,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20085.217385638,"data":"\n"}
+,{"stream_name":"stderr","time":20085.219910493,"data":"\n"}
+,{"stream_name":"stderr","time":20085.22441373,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20085.224454735,"data":"\n"}
+,{"stream_name":"stderr","time":20085.224471485,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20085.225798472,"data":"    \n"}
+,{"stream_name":"stderr","time":20085.233385058,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20085.234769698,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20085.234788137,"data":"\n"}
+,{"stream_name":"stderr","time":20085.234802415,"data":"\n"}
+,{"stream_name":"stderr","time":20085.239145594,"data":" \n"}
+,{"stream_name":"stderr","time":20085.240477205,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.247263416,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.24864208,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.258053554,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.263518732,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.27236259,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.273966242,"data":" ^\n"}
+,{"stream_name":"stderr","time":20085.277566048,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.281480573,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.288472525,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.290078165,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.2973126,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.301921096,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.303319743,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.310254294,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.311715156,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.319334018,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.320650598,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.327261497,"data":"^\n"}
+,{"stream_name":"stderr","time":20085.327285709,"data":"\n"}
+,{"stream_name":"stderr","time":20085.327312693,"data":"\n"}
+,{"stream_name":"stderr","time":20085.328716923,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20085.328735871,"data":"\n"}
+,{"stream_name":"stderr","time":20085.331877353,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20085.333874441,"data":"    \n"}
+,{"stream_name":"stderr","time":20085.33735632,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20085.338793637,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20085.338810697,"data":"\n"}
+,{"stream_name":"stderr","time":20085.341899173,"data":"\n"}
+,{"stream_name":"stderr","time":20085.343195092,"data":" \n"}
+,{"stream_name":"stderr","time":20085.347782487,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.35106757,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.358122922,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.363566346,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.372250879,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.377050844,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.383815615,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.387167115,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.395529482,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.404708523,"data":"  \n"}
+,{"stream_name":"stderr","time":20085.410228158,"data":" ^\n"}
+,{"stream_name":"stderr","time":20085.419231497,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.425462531,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.43345891,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.437508701,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.446699881,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.452370469,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.453814591,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.466652882,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.477136374,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.478452379,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.484535909,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.490928328,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.501368925,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.503224687,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.504461536,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.510247837,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.514026574,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.523199782,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.532321231,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.535390046,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.539501712,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.541621225,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.547285044,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.55339799,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.555514192,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.568491252,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.573546067,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.575883943,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.577468292,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.582996821,"data":"^^\n"}
+,{"stream_name":"stderr","time":20085.590493247,"data":"^\n"}
+,{"stream_name":"stderr","time":20085.590522911,"data":"\n"}
+,{"stream_name":"stderr","time":20085.592901648,"data":"\n"}
+,{"stream_name":"stderr","time":20085.601959846,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":20085.6087656,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":20085.610282479,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":20085.614425635,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":20085.614448339,"data":"\n"}
+,{"stream_name":"stderr","time":20085.614503723,"data":"\n"}
+,{"stream_name":"stderr","time":20086.172044573,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":20086.178973439,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20086.182934281,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20086.182961185,"data":"\n"}
+,{"stream_name":"stderr","time":20086.18296588,"data":"\n"}
+,{"stream_name":"stderr","time":20086.18808417,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20086.188109233,"data":"\n"}
+,{"stream_name":"stderr","time":20086.188114426,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20086.189845899,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20086.189865428,"data":"\n"}
+,{"stream_name":"stderr","time":20086.18986971,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20086.193027363,"data":"    \n"}
+,{"stream_name":"stderr","time":20086.194668075,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20086.202710353,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20086.202747,"data":"\n"}
+,{"stream_name":"stderr","time":20086.203998071,"data":"\n"}
+,{"stream_name":"stderr","time":20086.206073122,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20086.206092375,"data":"\n"}
+,{"stream_name":"stderr","time":20086.207440767,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20086.209839555,"data":"    \n"}
+,{"stream_name":"stderr","time":20086.212201483,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20086.215893908,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20086.215917713,"data":"\n"}
+,{"stream_name":"stderr","time":20086.216071469,"data":"\n"}
+,{"stream_name":"stderr","time":20086.221352002,"data":" \n"}
+,{"stream_name":"stderr","time":20086.224382503,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.229642797,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.23260943,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.235309457,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.238399891,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.240453981,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.243611347,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.246793743,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.250150566,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.256429045,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.258908905,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.260491564,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.264707294,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.267635514,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.270910595,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.274699439,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.27682728,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.279041715,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.28312137,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.283140851,"data":"\n"}
+,{"stream_name":"stderr","time":20086.283834171,"data":"\n"}
+,{"stream_name":"stderr","time":20086.285643608,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20086.285662883,"data":"\n"}
+,{"stream_name":"stderr","time":20086.286220084,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20086.289887001,"data":"    \n"}
+,{"stream_name":"stderr","time":20086.291937849,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20086.294824856,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20086.294843837,"data":"\n"}
+,{"stream_name":"stderr","time":20086.29512863,"data":"\n"}
+,{"stream_name":"stderr","time":20086.297894343,"data":" \n"}
+,{"stream_name":"stderr","time":20086.304182922,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.305498985,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.307958967,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.310520654,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.313690167,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.315972523,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.320919969,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.322865521,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.325268819,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.327761731,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.330285872,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.333048686,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.334668656,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.337523537,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.3413231,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.344621263,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.347789825,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.350842662,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.355023597,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.357494001,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.360198568,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.36228957,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.36548262,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.369393665,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.37147076,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.374677068,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.377079718,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.382294927,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.386566604,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.389133838,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.39090156,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.392239905,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.394211628,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.39545871,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.39788435,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.400959327,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.403899637,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.40770823,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.410209605,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.413906978,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.416249063,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.419027729,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.419046193,"data":"\n"}
+,{"stream_name":"stderr","time":20086.41984248,"data":"\n"}
+,{"stream_name":"stderr","time":20086.423190655,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":20086.424373664,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":20086.425573106,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":20086.426811265,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":20086.42682677,"data":"\n"}
+,{"stream_name":"stderr","time":20086.428887347,"data":"\n"}
+,{"stream_name":"stderr","time":20086.584718223,"data":"Exception ignored in: \n"}
+,{"stream_name":"stderr","time":20086.589474583,"data":"Exception ignored in: \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20086.592228332,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20086.592271978,"data":"\n"}
+,{"stream_name":"stderr","time":20086.592276908,"data":"\n"}
+,{"stream_name":"stderr","time":20086.595209079,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20086.595252723,"data":"\n"}
+,{"stream_name":"stderr","time":20086.595258014,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20086.597462753,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20086.597503586,"data":"\n"}
+,{"stream_name":"stderr","time":20086.597513778,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20086.603153348,"data":"    \n"}
+,{"stream_name":"stderr","time":20086.604514086,"data":"    self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20086.607176047,"data":"self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20086.60719423,"data":"\n"}
+,{"stream_name":"stderr","time":20086.607400271,"data":"\n"}
+,{"stream_name":"stderr","time":20086.610227198,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20086.610247248,"data":"\n"}
+,{"stream_name":"stderr","time":20086.610777499,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20086.615961385,"data":"    \n"}
+,{"stream_name":"stderr","time":20086.617536829,"data":"    if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20086.619273565,"data":"if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20086.619290961,"data":"\n"}
+,{"stream_name":"stderr","time":20086.620261225,"data":"\n"}
+,{"stream_name":"stderr","time":20086.621595575,"data":" \n"}
+,{"stream_name":"stderr","time":20086.62483842,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.630873506,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.632390727,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.63512462,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.637696092,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.638871466,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.640251752,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.645080594,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.647507263,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.652882936,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.655046962,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.658908384,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.660864019,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.664325311,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.668121635,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.672720965,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.674642399,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.677745463,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.682509492,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.682529258,"data":"\n"}
+,{"stream_name":"stderr","time":20086.682534493,"data":"\n"}
+,{"stream_name":"stderr","time":20086.683531184,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20086.683550431,"data":"\n"}
+,{"stream_name":"stderr","time":20086.684096704,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20086.685626284,"data":"    \n"}
+,{"stream_name":"stderr","time":20086.688254757,"data":"    assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20086.691416723,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20086.691434037,"data":"\n"}
+,{"stream_name":"stderr","time":20086.691438445,"data":"\n"}
+,{"stream_name":"stderr","time":20086.694852228,"data":" \n"}
+,{"stream_name":"stderr","time":20086.69728519,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.699765011,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.703177111,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.706641321,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.708354057,"data":" Exception ignored in: \n"}
+,{"stream_name":"stderr","time":20086.711093508,"data":"Exception ignored in:  \n"}
+,{"stream_name":"stderr","time":20086.713501291,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.717781873,"data":" \u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20086.719327836,"data":"\u003cfunction _MultiProcessingDataLoaderIter.__del__ at 0x79fdf8fe51c0\u003e\n"}
+,{"stream_name":"stderr","time":20086.719346977,"data":"\n"}
+,{"stream_name":"stderr","time":20086.719692536,"data":"\n"}
+,{"stream_name":"stderr","time":20086.721633202,"data":" \n"}
+,{"stream_name":"stderr","time":20086.724547922,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.725607976,"data":" Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20086.725634929,"data":"\n"}
+,{"stream_name":"stderr","time":20086.725649365,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":20086.726969529,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20086.72698927,"data":"\n"}
+,{"stream_name":"stderr","time":20086.727808141,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1707, in __del__\n"}
+,{"stream_name":"stderr","time":20086.72902418,"data":" \n"}
+,{"stream_name":"stderr","time":20086.730112934,"data":"     \n"}
+,{"stream_name":"stderr","time":20086.731998483,"data":"     \n"}
+,{"stream_name":"stderr","time":20086.734496363,"data":" self._shutdown_workers()\n"}
+,{"stream_name":"stderr","time":20086.737563735,"data":"self._shutdown_workers()^\n"}
+,{"stream_name":"stderr","time":20086.741268557,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.743713456,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.743754173,"data":"\n"}
+,{"stream_name":"stderr","time":20086.745168513,"data":"\n"}
+,{"stream_name":"stderr","time":20086.746921031,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20086.746944298,"data":"\n"}
+,{"stream_name":"stderr","time":20086.747541772,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py\", line 1690, in _shutdown_workers\n"}
+,{"stream_name":"stderr","time":20086.749686726,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.752658434,"data":"^    \n"}
+,{"stream_name":"stderr","time":20086.754761379,"data":"    ^\n"}
+,{"stream_name":"stderr","time":20086.756687948,"data":"^if w.is_alive():\n"}
+,{"stream_name":"stderr","time":20086.758765584,"data":"if w.is_alive():^\n"}
+,{"stream_name":"stderr","time":20086.76155092,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.76157992,"data":"\n"}
+,{"stream_name":"stderr","time":20086.761893699,"data":"\n"}
+,{"stream_name":"stderr","time":20086.763597938,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.766408731,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.769059017,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.772276344,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.773687076,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.776640987,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.780276934,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.782700388,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.785711745,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.788058745,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.789655839,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.792641246,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.794002189,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.797073924,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.799426849,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.801673701,"data":"^ \n"}
+,{"stream_name":"stderr","time":20086.803548723,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.806307609,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.808368454,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.811396151,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.813856435,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.816116057,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.819277408,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.820819606,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.822338268,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.825875916,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.825901078,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.826644125,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.828869603,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.829808648,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.831562608,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.833870337,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.835345521,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.838131438,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.839782438,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.841398827,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.842989433,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.845272523,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.849456744,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.854316165,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.856036727,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.857786651,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.860793105,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.863412516,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.867396843,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.869013906,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.869038929,"data":"\n"}
+,{"stream_name":"stderr","time":20086.869176832,"data":"\n"}
+,{"stream_name":"stderr","time":20086.870714115,"data":"\n"}
+,{"stream_name":"stderr","time":20086.870752845,"data":"\n"}
+,{"stream_name":"stderr","time":20086.870928493,"data":"\n"}
+,{"stream_name":"stderr","time":20086.872240368,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":20086.874554095,"data":"AssertionError  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20086.874578626,"data":"\n"}
+,{"stream_name":"stderr","time":20086.874771039,"data":"  File \"/usr/lib/python3.12/multiprocessing/process.py\", line 160, in is_alive\n"}
+,{"stream_name":"stderr","time":20086.87610183,"data":": \n"}
+,{"stream_name":"stderr","time":20086.877497749,"data":":     \n"}
+,{"stream_name":"stderr","time":20086.879839846,"data":"    can only test a child process\n"}
+,{"stream_name":"stderr","time":20086.880368836,"data":"can only test a child processassert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20086.882082299,"data":"assert self._parent_pid == os.getpid(), 'can only test a child process'\n"}
+,{"stream_name":"stderr","time":20086.882104252,"data":"\n"}
+,{"stream_name":"stderr","time":20086.882257874,"data":"\n"}
+,{"stream_name":"stderr","time":20086.883799572,"data":"\n"}
+,{"stream_name":"stderr","time":20086.883818865,"data":"\n"}
+,{"stream_name":"stderr","time":20086.883987439,"data":"\n"}
+,{"stream_name":"stderr","time":20086.885359719,"data":" \n"}
+,{"stream_name":"stderr","time":20086.887009437,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.888543655,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.890155343,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.891775036,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.893515842,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.895119221,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.896531396,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.898011161,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.899653265,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.901198099,"data":"  \n"}
+,{"stream_name":"stderr","time":20086.902760529,"data":" ^\n"}
+,{"stream_name":"stderr","time":20086.904276998,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.905892178,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.907451804,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.90914988,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.91064302,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.912113573,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.913765674,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.915853936,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.916400112,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.91789486,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.919438071,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.921950273,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.925186798,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.928478736,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.932876507,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.937819558,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.941715248,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.944812786,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.94772156,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.94961792,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.953350351,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.960720023,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.963418278,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.968289115,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.973787407,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.976926849,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.983689535,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.986902889,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.994827185,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.994887075,"data":"^^\n"}
+,{"stream_name":"stderr","time":20086.995857174,"data":"^\n"}
+,{"stream_name":"stderr","time":20086.995886927,"data":"\n"}
+,{"stream_name":"stderr","time":20086.995904745,"data":"\n"}
+,{"stream_name":"stderr","time":20086.999059749,"data":"AssertionError\n"}
+,{"stream_name":"stderr","time":20087.004488398,"data":"AssertionError: \n"}
+,{"stream_name":"stderr","time":20087.008299059,"data":": can only test a child process\n"}
+,{"stream_name":"stderr","time":20087.012427988,"data":"can only test a child process\n"}
+,{"stream_name":"stderr","time":20087.012464975,"data":"\n"}
+,{"stream_name":"stderr","time":20087.012602991,"data":"\n"}
+,{"stream_name":"stdout","time":20713.175755202,"data":"{\"rep\": 2, \"variant\": \"img\", \"n_train_cells\": 1785178, \"epochs\": 6, \"fit_min\": 8.853013467788696, \"total_min\": 37.66226328611374, \"final_loss\": 5.030707359313965, \"valid_Jackson\": 0.9987727816830119, \"valid_Danenberg\": 0.9989201850089294, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":20713.175802181,"data":"[ 344.2 min] rep 2 Novae [img] done\n"}
+,{"stream_name":"stdout","time":20838.363930002,"data":"[ 346.3 min] rep 2 LISI\n"}
+,{"stream_name":"stdout","time":20916.194611092,"data":"[ 347.6 min] rep 2 coarse / train Jackson: Table + nbr Jackson F1 0.781, Danenberg F1 0.559\n"}
+,{"stream_name":"stdout","time":20986.145291556,"data":"[ 348.7 min] rep 2 coarse / train Jackson: Novae [cohort] Jackson F1 0.471, Danenberg F1 0.405\n"}
+,{"stream_name":"stdout","time":21100.761432326,"data":"[ 350.6 min] rep 2 coarse / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.778, Danenberg F1 0.556\n"}
+,{"stream_name":"stdout","time":21214.427240463,"data":"[ 352.5 min] rep 2 coarse / train Jackson: Table + nbr + Novae [cohort]-corr Jackson F1 0.780, Danenberg F1 0.559\n"}
+,{"stream_name":"stdout","time":21330.242249794,"data":"[ 354.5 min] rep 2 coarse / train Jackson: Table + nbr + Novae [img] Jackson F1 0.778, Danenberg F1 0.561\n"}
+,{"stream_name":"stdout","time":21410.916094816,"data":"[ 355.8 min] rep 2 coarse / train Danenberg: Table + nbr Jackson F1 0.533, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":21479.56123327,"data":"[ 357.0 min] rep 2 coarse / train Danenberg: Novae [cohort] Jackson F1 0.379, Danenberg F1 0.471\n"}
+,{"stream_name":"stdout","time":21599.138427629,"data":"[ 358.9 min] rep 2 coarse / train Danenberg: Table + nbr + Novae [cohort] Jackson F1 0.528, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":21717.53848561,"data":"[ 360.9 min] rep 2 coarse / train Danenberg: Table + nbr + Novae [cohort]-corr Jackson F1 0.533, Danenberg F1 0.703\n"}
+,{"stream_name":"stdout","time":21837.061961531,"data":"[ 362.9 min] rep 2 coarse / train Danenberg: Table + nbr + Novae [img] Jackson F1 0.531, Danenberg F1 0.704\n"}
+,{"stream_name":"stdout","time":21969.844617192,"data":"[ 365.1 min] rep 2 coarse / train Both: Table + nbr Jackson F1 0.761, Danenberg F1 0.691\n"}
+,{"stream_name":"stdout","time":22076.415075826,"data":"[ 366.9 min] rep 2 coarse / train Both: Novae [cohort] Jackson F1 0.454, Danenberg F1 0.461\n"}
+,{"stream_name":"stdout","time":22283.381299245,"data":"[ 370.4 min] rep 2 coarse / train Both: Table + nbr + Novae [cohort] Jackson F1 0.759, Danenberg F1 0.692\n"}
+,{"stream_name":"stdout","time":22492.345595967,"data":"[ 373.8 min] rep 2 coarse / train Both: Table + nbr + Novae [cohort]-corr Jackson F1 0.761, Danenberg F1 0.690\n"}
+,{"stream_name":"stdout","time":22702.291204288,"data":"[ 377.3 min] rep 2 coarse / train Both: Table + nbr + Novae [img] Jackson F1 0.762, Danenberg F1 0.691\n"}
+,{"stream_name":"stdout","time":23059.90926105,"data":"[ 383.3 min] rep 2 fine / train Danenberg: Table + nbr Danenberg F1 0.456\n"}
+,{"stream_name":"stdout","time":23616.559722912,"data":"[ 392.6 min] rep 2 fine / train Danenberg: Table + nbr + Novae [cohort] Danenberg F1 0.454\n"}
+,{"stream_name":"stdout","time":23895.737508656,"data":"[ 397.2 min] rep 2 fine / train Jackson: Table + nbr Jackson F1 0.435\n"}
+,{"stream_name":"stdout","time":24339.655458362,"data":"[ 404.6 min] rep 2 fine / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.435\n"}
+,{"stream_name":"stdout","time":24339.65667109,"data":"--- replicate 2: macro-F1\n"}
+,{"stream_name":"stdout","time":24339.65669078,"data":"model                       Novae [cohort]  Table + nbr  Table + nbr + Novae [cohort]  Table + nbr + Novae [cohort]-corr  Table + nbr + Novae [img]\n"}
+,{"stream_name":"stdout","time":24339.65669484,"data":"task   train     test                                                                                                                              \n"}
+,{"stream_name":"stdout","time":24339.656698262,"data":"coarse Both      Danenberg           0.461        0.691                         0.692                              0.690                      0.691\n"}
+,{"stream_name":"stdout","time":24339.656701467,"data":"                 Jackson             0.454        0.761                         0.759                              0.761                      0.762\n"}
+,{"stream_name":"stdout","time":24339.656704709,"data":"       Danenberg Danenberg           0.471        0.704                         0.703                              0.703                      0.704\n"}
+,{"stream_name":"stdout","time":24339.656708022,"data":"                 Jackson             0.379        0.533                         0.528                              0.533                      0.531\n"}
+,{"stream_name":"stdout","time":24339.656711207,"data":"       Jackson   Danenberg           0.405        0.559                         0.556                              0.559                      0.561\n"}
+,{"stream_name":"stdout","time":24339.656721073,"data":"                 Jackson             0.471        0.781                         0.778                              0.780                      0.778\n"}
+,{"stream_name":"stdout","time":24339.656724376,"data":"fine   Danenberg Danenberg             NaN        0.456                         0.454                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":24339.656740127,"data":"       Jackson   Jackson               NaN        0.435                         0.435                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":24339.656743627,"data":"[ 404.6 min] replicate 2 done (134 min)\n"}
+,{"stream_name":"stdout","time":24339.658038761,"data":"skipped units: none\n"}
+,{"stream_name":"stdout","time":24340.27998636,"data":"model                       Novae [cohort]  Table + nbr  Table + nbr + Novae [cohort]  Table + nbr + Novae [cohort]-corr  Table + nbr + Novae [img]\n"}
+,{"stream_name":"stdout","time":24340.28002416,"data":"task   train     test                                                                                                                              \n"}
+,{"stream_name":"stdout","time":24340.280030075,"data":"coarse Both      Danenberg           0.436        0.692                         0.692                              0.692                      0.692\n"}
+,{"stream_name":"stdout","time":24340.280035302,"data":"                 Jackson             0.455        0.771                         0.771                              0.772                      0.773\n"}
+,{"stream_name":"stdout","time":24340.28004658,"data":"       Danenberg Danenberg           0.437        0.704                         0.704                              0.703                      0.704\n"}
+,{"stream_name":"stdout","time":24340.280050122,"data":"                 Jackson             0.387        0.574                         0.573                              0.575                      0.573\n"}
+,{"stream_name":"stdout","time":24340.28005345,"data":"       Jackson   Danenberg           0.401        0.566                         0.564                              0.566                      0.567\n"}
+,{"stream_name":"stdout","time":24340.280072642,"data":"                 Jackson             0.464        0.786                         0.784                              0.785                      0.785\n"}
+,{"stream_name":"stdout","time":24340.280075412,"data":"fine   Danenberg Danenberg             NaN        0.454                         0.453                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":24340.280078158,"data":"       Jackson   Jackson               NaN        0.421                         0.422                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":24340.379687794,"data":"                            cell-type-graph  this run  diff\n"}
+,{"stream_name":"stdout","time":24340.379721264,"data":"task   train     test                                      \n"}
+,{"stream_name":"stdout","time":24340.379748909,"data":"coarse Both      Danenberg           0.6917    0.6917   0.0\n"}
+,{"stream_name":"stdout","time":24340.379754369,"data":"                 Jackson             0.7714    0.7714   0.0\n"}
+,{"stream_name":"stdout","time":24340.379759494,"data":"       Danenberg Danenberg           0.7040    0.7040   0.0\n"}
+,{"stream_name":"stdout","time":24340.379764161,"data":"                 Jackson             0.5736    0.5736   0.0\n"}
+,{"stream_name":"stdout","time":24340.379768494,"data":"       Jackson   Danenberg           0.5658    0.5658   0.0\n"}
+,{"stream_name":"stdout","time":24340.379774758,"data":"                 Jackson             0.7858    0.7858   0.0\n"}
+,{"stream_name":"stdout","time":24340.379783979,"data":"fine   Danenberg Danenberg           0.4539    0.4539   0.0\n"}
+,{"stream_name":"stdout","time":24340.379787701,"data":"       Jackson   Jackson             0.4205    0.4205   0.0\n"}
+,{"stream_name":"stdout","time":24340.379790872,"data":"                    ilisi_median               clisi_median               ilisi_mean               clisi_mean              \n"}
+,{"stream_name":"stdout","time":24340.379794114,"data":"                            mean    min    max         mean    min    max       mean    min    max       mean    min    max\n"}
+,{"stream_name":"stdout","time":24340.379797288,"data":"space                                                                                                                      \n"}
+,{"stream_name":"stdout","time":24340.379800348,"data":"Novae [cohort]             1.745  1.618  1.864        1.850  1.716  1.984      1.682  1.593  1.773      2.027  1.880  2.206\n"}
+,{"stream_name":"stdout","time":24340.379803387,"data":"Novae [cohort]-corr        1.669  1.612  1.765        1.853  1.701  1.997      1.625  1.582  1.689      2.033  1.880  2.221\n"}
+,{"stream_name":"stdout","time":24340.379806512,"data":"Novae [img]                1.817  1.781  1.858        1.899  1.849  1.943      1.748  1.715  1.795      2.046  1.992  2.087\n"}
+,{"stream_name":"stdout","time":24340.379809705,"data":"Table                      1.430  1.399  1.458        1.285  1.241  1.324      1.469  1.449  1.490      1.511  1.481  1.530\n"}
+,{"stream_name":"stdout","time":24340.379832163,"data":"Table + nbr                1.156  1.141  1.169        1.384  1.360  1.415      1.266  1.254  1.275      1.634  1.622  1.656\n"}
+,{"stream_name":"stdout","time":24340.379837701,"data":"{\n"}
+,{"stream_name":"stdout","time":24340.379842499,"data":" \"n_reps\": 3,\n"}
+,{"stream_name":"stdout","time":24340.37984772,"data":" \"H_N1\": {\n"}
+,{"stream_name":"stdout","time":24340.379852821,"data":"  \"claim\": false,\n"}
+,{"stream_name":"stdout","time":24340.379857956,"data":"  \"transfer_pass\": {\n"}
+,{"stream_name":"stdout","time":24340.379862439,"data":"   \"J-\u003eD\": false,\n"}
+,{"stream_name":"stdout","time":24340.379886281,"data":"   \"D-\u003eJ\": false\n"}
+,{"stream_name":"stdout","time":24340.379889819,"data":"  },\n"}
+,{"stream_name":"stdout","time":24340.379892604,"data":"  \"loss_ge2_reps\": {\n"}
+,{"stream_name":"stdout","time":24340.379895482,"data":"   \"J-\u003eD\": false,\n"}
+,{"stream_name":"stdout","time":24340.379898338,"data":"   \"D-\u003eJ\": false,\n"}
+,{"stream_name":"stdout","time":24340.379901269,"data":"   \"J-\u003eJ\": true,\n"}
+,{"stream_name":"stdout","time":24340.379904154,"data":"   \"D-\u003eD\": false\n"}
+,{"stream_name":"stdout","time":24340.379906979,"data":"  },\n"}
+,{"stream_name":"stdout","time":24340.379909756,"data":"  \"mean_gain\": {\n"}
+,{"stream_name":"stdout","time":24340.379912994,"data":"   \"J-\u003eD\": -0.0014464859688525999,\n"}
+,{"stream_name":"stdout","time":24340.379915964,"data":"   \"D-\u003eJ\": -0.0003826562856965668,\n"}
+,{"stream_name":"stdout","time":24340.379918867,"data":"   \"J-\u003eJ\": -0.001517232728268563,\n"}
+,{"stream_name":"stdout","time":24340.37992276,"data":"   \"D-\u003eD\": -0.0005043070017983999\n"}
+,{"stream_name":"stdout","time":24340.379940829,"data":"  },\n"}
+,{"stream_name":"stdout","time":24340.379945804,"data":"  \"ci_lo\": {\n"}
+,{"stream_name":"stdout","time":24340.379950808,"data":"   \"J-\u003eD\": [\n"}
+,{"stream_name":"stdout","time":24340.379955808,"data":"    -0.0030826555135555,\n"}
+,{"stream_name":"stdout","time":24340.37996085,"data":"    -0.0021092095996171,\n"}
+,{"stream_name":"stdout","time":24340.379966374,"data":"    -0.0044113826359934\n"}
+,{"stream_name":"stdout","time":24340.379970546,"data":"   ],\n"}
+,{"stream_name":"stdout","time":24340.379974632,"data":"   \"D-\u003eJ\": [\n"}
+,{"stream_name":"stdout","time":24340.379979014,"data":"    -0.000449135239492,\n"}
+,{"stream_name":"stdout","time":24340.379982998,"data":"    -0.0003229633603976,\n"}
+,{"stream_name":"stdout","time":24340.379989386,"data":"    -0.015438224074755\n"}
+,{"stream_name":"stdout","time":24340.379997672,"data":"   ]\n"}
+,{"stream_name":"stdout","time":24340.380000579,"data":"  }\n"}
+,{"stream_name":"stdout","time":24340.380003312,"data":" },\n"}
+,{"stream_name":"stdout","time":24340.380006043,"data":" \"H_N2\": {\n"}
+,{"stream_name":"stdout","time":24340.380008843,"data":"  \"claim\": false,\n"}
+,{"stream_name":"stdout","time":24340.380011718,"data":"  \"ilisi_higher_all_draws\": true,\n"}
+,{"stream_name":"stdout","time":24340.380014622,"data":"  \"mean_clisi_rise\": 0.39909068292133565\n"}
+,{"stream_name":"stdout","time":24340.380017511,"data":" },\n"}
+,{"stream_name":"stdout","time":24340.3800203,"data":" \"note\": \"H-N1 needs all 3 replicates; with fewer it is reported but cannot be claimed.\"\n"}
+,{"stream_name":"stdout","time":24340.380023946,"data":"}\n"}
+,{"stream_name":"stderr","time":24346.306355345,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":24346.306388616,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":24346.478527959,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":24346.478553807,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":24347.152436431,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":24347.727064295,"data":"[NbConvertApp] Writing 260765 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":24350.358906036,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":24351.510289558,"data":"[NbConvertApp] Writing 672978 bytes to __results__.html\n"}
+]

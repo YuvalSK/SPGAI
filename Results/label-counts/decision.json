@@ -1,0 +1,79 @@
+{
+ "n_reps": 3,
+ "claims": [
+  {
+   "task": "coarse",
+   "train": "Danenberg",
+   "test": "Danenberg",
+   "setting": "revealed 50%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.01515994472711483
+  },
+  {
+   "task": "coarse",
+   "train": "Danenberg",
+   "test": "Jackson",
+   "setting": "revealed 20%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.02010290274974273
+  },
+  {
+   "task": "coarse",
+   "train": "Danenberg",
+   "test": "Jackson",
+   "setting": "revealed 50%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.04381773156169999
+  },
+  {
+   "task": "coarse",
+   "train": "Jackson",
+   "test": "Danenberg",
+   "setting": "revealed 20%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.02598691567941458
+  },
+  {
+   "task": "coarse",
+   "train": "Jackson",
+   "test": "Danenberg",
+   "setting": "revealed 50%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.03944300597006467
+  },
+  {
+   "task": "coarse",
+   "train": "Jackson",
+   "test": "Jackson",
+   "setting": "revealed 20%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.012972835282381209
+  },
+  {
+   "task": "coarse",
+   "train": "Jackson",
+   "test": "Jackson",
+   "setting": "revealed 50%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.0272143793946585
+  },
+  {
+   "task": "fine",
+   "train": "Danenberg",
+   "test": "Danenberg",
+   "setting": "revealed 20%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.07109445550147904
+  },
+  {
+   "task": "fine",
+   "train": "Jackson",
+   "test": "Jackson",
+   "setting": "revealed 20%",
+   "arm": "B revealed counts",
+   "mean_diff": 0.14873468788349586
+  }
+ ],
+ "smoke": false,
+ "minutes": 270.93042784929276
+}

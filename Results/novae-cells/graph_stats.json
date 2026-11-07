@@ -1,0 +1,12 @@
+{
+ "Jackson": {
+  "mean_degree": 5.799196180882389,
+  "isolated_fraction": 0.0004484408466563185,
+  "median_edge_um": 12.568114758982396
+ },
+ "Danenberg": {
+  "mean_degree": 5.790504594626908,
+  "isolated_fraction": 0.0004660055977157253,
+  "median_edge_um": 13.803180759019323
+ }
+}

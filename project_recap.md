@@ -1,4 +1,4 @@
-# IMC project recap (updated 2026-10-30)
+# IMC project recap (updated 2026-11-06)
 
 ## Main results
 Cell-level r = per-cell Pearson within each image (image mean removed). In the virtual-cell results, unless marked as medians, numbers are means over the 10 shared markers (ERα excluded); calls use 1000× patient-bootstrap CIs. Item numbers point to "Experiments in order".
@@ -101,6 +101,42 @@ The main result: **virtual cells are trustworthy within a cohort and not across 
 - For an unseen cohort (S2), its intervals have to widen by the uncertainty of that offset.
 - For few-shot (S3), the bar to beat is TabPFN at k = 5: coverage 0.62 / 0.64, CRPS 0.085 / 0.104.
 
+### Across scales: pixel, patch, cell (items 24–27, 32–34, 40–42; updated 2026-11-06)
+The main result: **for marker imputation, the information sits in per-cell means.** Sub-cellular pixels, patches, neighbourhoods and graph foundation models add ≤ 0.007 R4. Extra scales help only cell typing: pixel morphology within a cohort, and graph context or known neighbour labels across cohorts.
+
+**Positive findings:**
+1. **Sub-cellular morphology and texture help fine cell typing within a cohort** (`multiscale-audit`, item 41; 3 replicates).
+   - Fine typing gains +0.021 macro-F1 (Danenberg) and +0.018 (Jackson); coarse Danenberg gains +0.010.
+   - The gain survives the 2-px erosion and outside-band controls, so it isn't spillover.
+   - It comes from shape-defined classes (stroma "small elongated / circular" +0.06–0.07, Jackson "epithelial low" +0.13) and endothelial cells (+0.015 to +0.027).
+2. **Known neighbour labels help typing, including across cohorts** (`label-counts`, item 42; pre-registered).
+   - Revealing 20% of the target cohort's cell labels gives +0.020 / +0.026 macro-F1 on the hidden cells (D→J / J→D); 50% gives +0.04. 5% is not enough.
+   - This parallels imputation: the lever is a little target-cohort ground truth, not a better model.
+3. **Graph learning wins only cross-cohort typing:** the SAGE+ GNN beats Table + nbr on J→D (0.590 vs 0.566) and D→J, driven by endothelial cells (item 24, `cell-type-graph`).
+4. **Typing errors sit at compartment borders.** Endothelial and myeloid cells are heterophilous (same-type share 0.35–0.85 of chance). A cell's error rate is far higher when most of its neighbours are another type (epithelial 0.43–0.54 vs 0.03–0.07).
+
+**Cohort mixing vs type separation (item 43, `Results/scale-lisi/fig_scale_lisi.png`):** no representation at any scale beats cohort-scaled intensity on both iLISI and cLISI. Patch embeddings (KRONOS, KRONOS2) separate the cohorts more; Novae mixes them only by blurring cell types.
+
+**Negative findings (support PIVOT-A):** pixel features don't help imputation (≤ +0.007 R4) or transfer. Patch and typed-edge features fail (B2). Predicted-type neighbour counts add nothing, and iterating them hurts D→J. Novae (graph FM, trained from scratch) adds ±0.002 and blurs cell types when aligning cohorts.
+
+**Best model and preprocessing by scale**
+
+| Scale | Within cohort | Across cohorts |
+|---|---|---|
+| **Pixel** (image → marker map) | Image models win only on pixel metrics (ImmuVis validation pixel r 0.62–0.65), which reward texture. Scored per cell, the table wins (H3K27me3: LightGBM 0.60 ≈ ImmuVis 0.59). As extra table columns, pixel features help **typing only** (+0.01–0.02). U-Net inputs: ImmuVis-style ≥ gamma > residual. | ImmuVis wins pixel metrics J→D (per-image r 0.31) and every metric D→J (cell r 0.44 vs 0.41; one run per direction). Pixel features: no transfer gain. |
+| **Patch** (32–128 µm) | Not needed: true cell values painted into masks score r 0.98 per patch. Patch means (B2) add nothing; KRONOS embeddings add ~+0.01 typing (Danenberg only). | J→D: LightGBM pooled patch r 0.59 vs ImmuVis 0.38. D→J: ImmuVis 0.68 vs 0.66. B2 and KRONOS: no consistent gain. |
+| **Cell** (per-cell means) | **Imputation: LightGBM** (R4 0.72–0.74 Danenberg); MLP, GraphSAGE and TabPFN tie (TabPFN wins at equal data). Quantile LightGBM gives the distribution (CRPS −30%, coverage 0.74–0.76). **Typing: LightGBM Table + nbr**; every GNN is below it. Own-cohort input scaling +0.02 r. | **Imputation: LightGBM** J→D (0.43 vs 0.26–0.30 for image models); D→J ImmuVis edges it. **Typing: SAGE+ GNN.** No input harmonisation helps (ComBat, CytoNorm-like, GMM, rank). What works: pooling cohorts in training, k target patients (TabPFN k = 5: coverage 0.44 → 0.64), or ~20% revealed target labels. |
+
+**So, still gradient-boosted trees?** Yes for imputation and within-cohort typing: LightGBM on cell means (+ neighbour features for typing, + pixel features for fine typing). XGBoost was used only for SHAP; TabPFN ties. The exceptions are cross-cohort typing (SAGE+) and D→J imputation (ImmuVis, one run). Across cohorts, architecture and preprocessing matter less than target-cohort data.
+
+### H3K27me3 and the epithelial–mesenchymal axis (item 44, 2026-11-07; pre-registered)
+- **Measured, not imputed: tumour cells with more keratin carry more H3K27me3,** in both Jackson hospitals (Basel 264 patients, Zurich 71).
+  - Per keratin, r ≈ +0.4 to +0.5 within patients, in 97–99% of patients.
+  - It holds beyond total H3, DNA, cell size, cell cluster, neighbourhood and a generic per-cell signal factor.
+- **It is not an EMT effect.** Vimentin is flat, and Twist / Slug go slightly the other way.
+- **Cross-technology replication (Keren, MIBI, TNBC) is weak** (−0.06), vimentin-driven, and not robust to neighbourhood adjustment.
+- **Methods point:** in Jackson, H3K27me3 correlates +0.12 to +0.16 even with immune markers inside tumour cells. That points to a generic per-cell signal factor, which any IMC epigenetic association must model.
+
 ### Epigenetic marks: imputing a mark the target cohort never measured (items 28–31)
 Can H3K27me3 (and pHH3) be given to cells from the 14 channels shared across cohorts? **Within Jackson, yes. Across cohorts, not shown.**
 
@@ -140,6 +176,7 @@ Can H3K27me3 (and pHH3) be given to cells from the 14 channels shared across coh
 - **Uncertainty doesn't transfer:** under transfer, 80% intervals cover only 44–59% of cells, even with TabPFN (items 36, 38).
 - **Input harmonisation (ComBat, CytoNorm-like, GMM landmarks) doesn't rescue transfer** (pre-registered, item 37).
 - **Virtual cells from another cohort don't mix with real cells** (iLISI ≤ 0.09 for every model, item 39).
+- **Finer or coarser scales don't help imputation:** sub-cellular pixel features (≤ +0.007 R4), patch / typed-edge features and Novae (±0.002) add nothing beyond cell means and Table + nbr (items 40–41).
 - **Not yet validated:** the R5 rung ("information beyond the rest of the panel") failed its positive controls. Earlier ERα results were measured in a saturated target space.
 
 ## Part 1: Virtual staining across cohorts (Jackson 2020 → Danenberg 2022)
@@ -346,5 +383,31 @@ For clinical value, we built k-means cell states for each encoding, described ea
     - iLISI against measured cells from the other half of the test patients; cLISI on 6 coarse types.
     - 5,000 cells per side, 3 sampling replicates.
     - Cohort labels are read with duckdb, because local pyarrow fails on `cells.parquet`.
+
+40. **4–5 Nov 2026, `novae-cells`** (2×T4, Novae 1.1.2 trained from scratch on both cohorts, pre-registered in `future_plan.md` §18.9):
+    - Both claims fail. Its niche latent adds ±0.002 macro-F1 to Table + nbr; alone it reaches 0.39–0.46.
+    - Its alignment mixes the cohorts but blurs cell types (cLISI +0.40).
+    - Training was shallow and partly collapsed (2/3 `[cohort]` fits at loss ln 512). `Results/novae-cells/summary.md`.
+
+41. **5 Nov 2026, `pixel-features` + `multiscale-audit`** (CPU; Track B0–B2, `future_plan.md` §18.10):
+    - Sub-cellular pixel features (membrane vs centre, texture, shape) add ≤ +0.007 R4 to imputation and nothing in transfer.
+    - They do help within-cohort typing: fine +0.02, coarse D→D +0.010; stable under 2-px erosion and beyond the outside band.
+    - Patch / typed-edge features (B2) fail.
+    - Endothelial and myeloid cells are heterophilous. `Results/multiscale-audit/summary.md`.
+42. **5 Nov 2026, `label-counts`** (CPU; §16 arms A/B, pre-registered):
+    - Counts of neighbours by *predicted* type add nothing (round 2 hurts D→J).
+    - Counts from *revealed true* labels help: 20% revealed gives +0.02–0.03 macro-F1 in transfer and +0.07 / +0.15 on fine labels (partly label leakage).
+    - `Results/label-counts/summary.md`.
+
+43. **6 Nov 2026, `scale-lisi`** (local, on saved outputs; same cells, draws and LISI code as `novae-cells`, reproduced within 6e-4):
+    - iLISI (cohort) vs cLISI (coarse type) for 13 spaces at pixel, patch and cell scale; baseline = cohort-scaled intensity.
+    - No space beats intensity on both axes. Patch spaces (incl. KRONOS / KRONOS2) separate cohorts more; Novae mixes more but blurs types most.
+    - Cohort scaling is the one step that matters (iLISI 1.06 → 1.46). `Results/scale-lisi/summary.md`.
+
+44. **7 Nov 2026, `epi-emt`** (local CPU; pre-registered `future_plan.md` §19):
+    - H3K27me3 vs the epithelial → mesenchymal axis in tumour cells, as a within-patient rank partial correlation.
+    - The pre-registered rules pass in Basel (−0.34), Zurich (−0.34) and Keren (−0.06).
+    - Per marker, the effect is keratin-driven (+0.4 to +0.5, robust to a generic per-cell signal factor). Vimentin ≈ 0, and Twist / Slug go the opposite way.
+    - Keren's weak signal is vimentin-driven and not robust to the neighbourhood adjustment. `Results/epi-emt/summary.md`.
 
 Details: `Results/<experiment>/summary.md` and `Results/c2s-imc-summary.md`. The previous long version is in git: `git show HEAD:session_summary.md`.

@@ -1,0 +1,469 @@
+rep,block,train,marker,arm,seconds
+0,imputation,Jackson,c_erb_b_2_her2,0 base,6.422595024108887
+0,imputation,Jackson,c_erb_b_2_her2,1 +pix,8.757427453994751
+0,imputation,Jackson,c_erb_b_2_her2,2 +pix e2,8.89680814743042
+0,imputation,Jackson,c_erb_b_2_her2,3 +band,7.255023956298828
+0,imputation,Jackson,c_erb_b_2_her2,4 +band +pix,9.543828248977661
+0,imputation,Jackson,c_erb_b_2_her2,5 +B2,9.972373723983765
+0,imputation,Jackson,cd20,0 base,5.266685962677002
+0,imputation,Jackson,cd20,1 +pix,7.340941667556763
+0,imputation,Jackson,cd20,2 +pix e2,7.425417184829712
+0,imputation,Jackson,cd20,3 +band,6.141361474990845
+0,imputation,Jackson,cd20,4 +band +pix,7.872653961181641
+0,imputation,Jackson,cd20,5 +B2,8.48212194442749
+0,imputation,Jackson,cd3,0 base,6.033583164215088
+0,imputation,Jackson,cd3,1 +pix,8.225517272949219
+0,imputation,Jackson,cd3,2 +pix e2,8.378150939941406
+0,imputation,Jackson,cd3,3 +band,6.855239629745483
+0,imputation,Jackson,cd3,4 +band +pix,8.999184370040894
+0,imputation,Jackson,cd3,5 +B2,9.512354612350464
+0,imputation,Jackson,cd45,0 base,5.533893346786499
+0,imputation,Jackson,cd45,1 +pix,7.622967720031738
+0,imputation,Jackson,cd45,2 +pix e2,7.824154376983643
+0,imputation,Jackson,cd45,3 +band,6.445101022720337
+0,imputation,Jackson,cd45,4 +band +pix,8.370120525360107
+0,imputation,Jackson,cd45,5 +B2,8.746583223342896
+0,imputation,Jackson,cd68,0 base,5.822312355041504
+0,imputation,Jackson,cd68,1 +pix,8.06778621673584
+0,imputation,Jackson,cd68,2 +pix e2,8.091193914413452
+0,imputation,Jackson,cd68,3 +band,6.680295944213867
+0,imputation,Jackson,cd68,4 +band +pix,8.751980304718018
+0,imputation,Jackson,cd68,5 +B2,9.191976308822632
+0,imputation,Jackson,cytokeratin_5,0 base,5.577651500701904
+0,imputation,Jackson,cytokeratin_5,1 +pix,7.584310293197632
+0,imputation,Jackson,cytokeratin_5,2 +pix e2,7.85988974571228
+0,imputation,Jackson,cytokeratin_5,3 +band,6.4808385372161865
+0,imputation,Jackson,cytokeratin_5,4 +band +pix,8.297622203826904
+0,imputation,Jackson,cytokeratin_5,5 +B2,8.884547710418701
+0,imputation,Jackson,cytokeratin_8_18,0 base,5.57206654548645
+0,imputation,Jackson,cytokeratin_8_18,1 +pix,7.9086692333221436
+0,imputation,Jackson,cytokeratin_8_18,2 +pix e2,7.986364841461182
+0,imputation,Jackson,cytokeratin_8_18,3 +band,6.519369602203369
+0,imputation,Jackson,cytokeratin_8_18,4 +band +pix,8.58907699584961
+0,imputation,Jackson,cytokeratin_8_18,5 +B2,9.099943161010742
+0,imputation,Jackson,estrogen_receptor_alpha,0 base,5.835394620895386
+0,imputation,Jackson,estrogen_receptor_alpha,1 +pix,8.18616771697998
+0,imputation,Jackson,estrogen_receptor_alpha,2 +pix e2,8.124470949172974
+0,imputation,Jackson,estrogen_receptor_alpha,3 +band,6.852862119674683
+0,imputation,Jackson,estrogen_receptor_alpha,4 +band +pix,8.942183017730713
+0,imputation,Jackson,estrogen_receptor_alpha,5 +B2,9.232503652572632
+0,imputation,Jackson,ki_67,0 base,5.566851615905762
+0,imputation,Jackson,ki_67,1 +pix,7.8904194831848145
+0,imputation,Jackson,ki_67,2 +pix e2,7.970573663711548
+0,imputation,Jackson,ki_67,3 +band,6.532007217407227
+0,imputation,Jackson,ki_67,4 +band +pix,8.46579647064209
+0,imputation,Jackson,ki_67,5 +B2,8.814982891082764
+0,imputation,Jackson,pan_cytokeratin,0 base,6.606557369232178
+0,imputation,Jackson,pan_cytokeratin,1 +pix,9.137707710266113
+0,imputation,Jackson,pan_cytokeratin,2 +pix e2,8.997303485870361
+0,imputation,Jackson,pan_cytokeratin,3 +band,7.373997688293457
+0,imputation,Jackson,pan_cytokeratin,4 +band +pix,9.696244955062866
+0,imputation,Jackson,pan_cytokeratin,5 +B2,10.293200016021729
+0,imputation,Jackson,sma,0 base,6.390697956085205
+0,imputation,Jackson,sma,1 +pix,9.113739967346191
+0,imputation,Jackson,sma,2 +pix e2,9.10247802734375
+0,imputation,Jackson,sma,3 +band,7.498832702636719
+0,imputation,Jackson,sma,4 +band +pix,9.69370412826538
+0,imputation,Jackson,sma,5 +B2,10.213348388671875
+0,imputation,Danenberg,c_erb_b_2_her2,0 base,6.091107606887817
+0,imputation,Danenberg,c_erb_b_2_her2,1 +pix,8.81855034828186
+0,imputation,Danenberg,c_erb_b_2_her2,2 +pix e2,8.794574975967407
+0,imputation,Danenberg,c_erb_b_2_her2,3 +band,7.075440406799316
+0,imputation,Danenberg,c_erb_b_2_her2,4 +band +pix,9.561349391937256
+0,imputation,Danenberg,c_erb_b_2_her2,5 +B2,9.679145097732544
+0,imputation,Danenberg,cd20,0 base,5.617613792419434
+0,imputation,Danenberg,cd20,1 +pix,8.007823944091797
+0,imputation,Danenberg,cd20,2 +pix e2,7.84017539024353
+0,imputation,Danenberg,cd20,3 +band,6.363085746765137
+0,imputation,Danenberg,cd20,4 +band +pix,8.467907667160034
+0,imputation,Danenberg,cd20,5 +B2,8.970933437347412
+0,imputation,Danenberg,cd3,0 base,5.99551796913147
+0,imputation,Danenberg,cd3,1 +pix,8.250022411346436
+0,imputation,Danenberg,cd3,2 +pix e2,8.227887630462646
+0,imputation,Danenberg,cd3,3 +band,6.678370952606201
+0,imputation,Danenberg,cd3,4 +band +pix,8.909780502319336
+0,imputation,Danenberg,cd3,5 +B2,9.201802492141724
+0,imputation,Danenberg,cd45,0 base,6.33919358253479
+0,imputation,Danenberg,cd45,1 +pix,8.739106893539429
+0,imputation,Danenberg,cd45,2 +pix e2,8.825896978378296
+0,imputation,Danenberg,cd45,3 +band,7.259473562240601
+0,imputation,Danenberg,cd45,4 +band +pix,9.56478500366211
+0,imputation,Danenberg,cd45,5 +B2,10.011829376220703
+0,imputation,Danenberg,cd68,0 base,5.797219514846802
+0,imputation,Danenberg,cd68,1 +pix,8.322576522827148
+0,imputation,Danenberg,cd68,2 +pix e2,8.312579154968262
+0,imputation,Danenberg,cd68,3 +band,6.8602211475372314
+0,imputation,Danenberg,cd68,4 +band +pix,9.155369520187378
+0,imputation,Danenberg,cd68,5 +B2,9.395699739456177
+0,imputation,Danenberg,cytokeratin_5,0 base,5.450224161148071
+0,imputation,Danenberg,cytokeratin_5,1 +pix,7.686621189117432
+0,imputation,Danenberg,cytokeratin_5,2 +pix e2,7.833714962005615
+0,imputation,Danenberg,cytokeratin_5,3 +band,6.331065654754639
+0,imputation,Danenberg,cytokeratin_5,4 +band +pix,8.323196649551392
+0,imputation,Danenberg,cytokeratin_5,5 +B2,8.793930530548096
+0,imputation,Danenberg,cytokeratin_8_18,0 base,5.488668918609619
+0,imputation,Danenberg,cytokeratin_8_18,1 +pix,7.745890855789185
+0,imputation,Danenberg,cytokeratin_8_18,2 +pix e2,7.737349271774292
+0,imputation,Danenberg,cytokeratin_8_18,3 +band,6.26539945602417
+0,imputation,Danenberg,cytokeratin_8_18,4 +band +pix,8.394000768661499
+0,imputation,Danenberg,cytokeratin_8_18,5 +B2,8.794055223464966
+0,imputation,Danenberg,estrogen_receptor_alpha,0 base,6.967400550842285
+0,imputation,Danenberg,estrogen_receptor_alpha,1 +pix,9.58479928970337
+0,imputation,Danenberg,estrogen_receptor_alpha,2 +pix e2,9.694874048233032
+0,imputation,Danenberg,estrogen_receptor_alpha,3 +band,8.033375978469849
+0,imputation,Danenberg,estrogen_receptor_alpha,4 +band +pix,10.57598090171814
+0,imputation,Danenberg,estrogen_receptor_alpha,5 +B2,10.79504132270813
+0,imputation,Danenberg,ki_67,0 base,5.6799070835113525
+0,imputation,Danenberg,ki_67,1 +pix,7.868111610412598
+0,imputation,Danenberg,ki_67,2 +pix e2,8.022436618804932
+0,imputation,Danenberg,ki_67,3 +band,6.5638158321380615
+0,imputation,Danenberg,ki_67,4 +band +pix,8.57057523727417
+0,imputation,Danenberg,ki_67,5 +B2,8.757030010223389
+0,imputation,Danenberg,pan_cytokeratin,0 base,6.294264316558838
+0,imputation,Danenberg,pan_cytokeratin,1 +pix,8.932366132736206
+0,imputation,Danenberg,pan_cytokeratin,2 +pix e2,8.973992586135864
+0,imputation,Danenberg,pan_cytokeratin,3 +band,7.319232940673828
+0,imputation,Danenberg,pan_cytokeratin,4 +band +pix,9.761231422424316
+0,imputation,Danenberg,pan_cytokeratin,5 +B2,9.943758964538574
+0,imputation,Danenberg,sma,0 base,6.674287796020508
+0,imputation,Danenberg,sma,1 +pix,9.384702444076538
+0,imputation,Danenberg,sma,2 +pix e2,9.211556196212769
+0,imputation,Danenberg,sma,3 +band,7.553250312805176
+0,imputation,Danenberg,sma,4 +band +pix,10.053809881210327
+0,imputation,Danenberg,sma,5 +B2,10.352143049240112
+0,typing,Jackson,coarse,0 base,38.804242849349976
+0,typing,Jackson,coarse,1 +pix,53.959113359451294
+0,typing,Jackson,coarse,2 +pix e2,55.03892970085144
+0,typing,Jackson,coarse,3 +band,44.30551743507385
+0,typing,Jackson,coarse,4 +band +pix,58.759904861450195
+0,typing,Jackson,coarse,5 +B2,68.06344747543335
+0,typing,Danenberg,coarse,0 base,40.07131052017212
+0,typing,Danenberg,coarse,1 +pix,55.93054676055908
+0,typing,Danenberg,coarse,2 +pix e2,56.41481328010559
+0,typing,Danenberg,coarse,3 +band,45.12519955635071
+0,typing,Danenberg,coarse,4 +band +pix,61.37504529953003
+0,typing,Danenberg,coarse,5 +B2,71.0869688987732
+0,typing,Danenberg,fine,0 base,183.54655647277832
+0,typing,Danenberg,fine,1 +pix,265.82561683654785
+0,typing,Danenberg,fine,2 +pix e2,268.15544080734253
+0,typing,Danenberg,fine,3 +band,210.08858251571655
+0,typing,Danenberg,fine,4 +band +pix,285.2934262752533
+0,typing,Danenberg,fine,5 +B2,327.9640829563141
+0,typing,Jackson,fine,0 base,147.02670288085938
+0,typing,Jackson,fine,1 +pix,206.60433864593506
+0,typing,Jackson,fine,2 +pix e2,211.34933972358704
+0,typing,Jackson,fine,3 +band,166.07729625701904
+0,typing,Jackson,fine,4 +band +pix,230.15176820755005
+0,typing,Jackson,fine,5 +B2,263.67700362205505
+1,imputation,Jackson,c_erb_b_2_her2,0 base,6.612527847290039
+1,imputation,Jackson,c_erb_b_2_her2,1 +pix,9.301342487335205
+1,imputation,Jackson,c_erb_b_2_her2,2 +pix e2,9.232021808624268
+1,imputation,Jackson,c_erb_b_2_her2,3 +band,7.53716254234314
+1,imputation,Jackson,c_erb_b_2_her2,4 +band +pix,9.807007074356079
+1,imputation,Jackson,c_erb_b_2_her2,5 +B2,10.268322944641113
+1,imputation,Jackson,cd20,0 base,5.455780982971191
+1,imputation,Jackson,cd20,1 +pix,7.459014892578125
+1,imputation,Jackson,cd20,2 +pix e2,7.542249917984009
+1,imputation,Jackson,cd20,3 +band,6.364822626113892
+1,imputation,Jackson,cd20,4 +band +pix,8.175238847732544
+1,imputation,Jackson,cd20,5 +B2,8.74751091003418
+1,imputation,Jackson,cd3,0 base,6.055323600769043
+1,imputation,Jackson,cd3,1 +pix,8.285346269607544
+1,imputation,Jackson,cd3,2 +pix e2,8.354385614395142
+1,imputation,Jackson,cd3,3 +band,6.875600099563599
+1,imputation,Jackson,cd3,4 +band +pix,9.143568515777588
+1,imputation,Jackson,cd3,5 +B2,9.502751111984253
+1,imputation,Jackson,cd45,0 base,5.673062324523926
+1,imputation,Jackson,cd45,1 +pix,7.857831239700317
+1,imputation,Jackson,cd45,2 +pix e2,7.897578001022339
+1,imputation,Jackson,cd45,3 +band,6.5472025871276855
+1,imputation,Jackson,cd45,4 +band +pix,8.58516263961792
+1,imputation,Jackson,cd45,5 +B2,8.825584411621094
+1,imputation,Jackson,cd68,0 base,5.858175277709961
+1,imputation,Jackson,cd68,1 +pix,8.279036283493042
+1,imputation,Jackson,cd68,2 +pix e2,8.225955724716187
+1,imputation,Jackson,cd68,3 +band,6.624424695968628
+1,imputation,Jackson,cd68,4 +band +pix,8.874481439590454
+1,imputation,Jackson,cd68,5 +B2,9.13947319984436
+1,imputation,Jackson,cytokeratin_5,0 base,5.61924147605896
+1,imputation,Jackson,cytokeratin_5,1 +pix,7.715964078903198
+1,imputation,Jackson,cytokeratin_5,2 +pix e2,7.882226467132568
+1,imputation,Jackson,cytokeratin_5,3 +band,6.463878154754639
+1,imputation,Jackson,cytokeratin_5,4 +band +pix,8.542173624038696
+1,imputation,Jackson,cytokeratin_5,5 +B2,8.872550964355469
+1,imputation,Jackson,cytokeratin_8_18,0 base,5.853073358535767
+1,imputation,Jackson,cytokeratin_8_18,1 +pix,8.09839916229248
+1,imputation,Jackson,cytokeratin_8_18,2 +pix e2,8.290135145187378
+1,imputation,Jackson,cytokeratin_8_18,3 +band,6.806090831756592
+1,imputation,Jackson,cytokeratin_8_18,4 +band +pix,8.893245935440063
+1,imputation,Jackson,cytokeratin_8_18,5 +B2,9.337791442871094
+1,imputation,Jackson,estrogen_receptor_alpha,0 base,6.01731276512146
+1,imputation,Jackson,estrogen_receptor_alpha,1 +pix,8.54138469696045
+1,imputation,Jackson,estrogen_receptor_alpha,2 +pix e2,8.581063985824585
+1,imputation,Jackson,estrogen_receptor_alpha,3 +band,7.002452611923218
+1,imputation,Jackson,estrogen_receptor_alpha,4 +band +pix,9.109686613082886
+1,imputation,Jackson,estrogen_receptor_alpha,5 +B2,9.484737396240234
+1,imputation,Jackson,ki_67,0 base,5.800851345062256
+1,imputation,Jackson,ki_67,1 +pix,7.846635580062866
+1,imputation,Jackson,ki_67,2 +pix e2,7.970950603485107
+1,imputation,Jackson,ki_67,3 +band,6.542680978775024
+1,imputation,Jackson,ki_67,4 +band +pix,8.526276588439941
+1,imputation,Jackson,ki_67,5 +B2,9.029650926589966
+1,imputation,Jackson,pan_cytokeratin,0 base,6.664607524871826
+1,imputation,Jackson,pan_cytokeratin,1 +pix,9.10673975944519
+1,imputation,Jackson,pan_cytokeratin,2 +pix e2,9.06862998008728
+1,imputation,Jackson,pan_cytokeratin,3 +band,7.533295631408691
+1,imputation,Jackson,pan_cytokeratin,4 +band +pix,9.75919222831726
+1,imputation,Jackson,pan_cytokeratin,5 +B2,10.266905784606934
+1,imputation,Jackson,sma,0 base,6.669507265090942
+1,imputation,Jackson,sma,1 +pix,9.048746109008789
+1,imputation,Jackson,sma,2 +pix e2,9.173411130905151
+1,imputation,Jackson,sma,3 +band,7.482116937637329
+1,imputation,Jackson,sma,4 +band +pix,9.87803053855896
+1,imputation,Jackson,sma,5 +B2,10.230450868606567
+1,imputation,Danenberg,c_erb_b_2_her2,0 base,6.315875291824341
+1,imputation,Danenberg,c_erb_b_2_her2,1 +pix,8.767487049102783
+1,imputation,Danenberg,c_erb_b_2_her2,2 +pix e2,8.80665111541748
+1,imputation,Danenberg,c_erb_b_2_her2,3 +band,7.110435485839844
+1,imputation,Danenberg,c_erb_b_2_her2,4 +band +pix,9.630844831466675
+1,imputation,Danenberg,c_erb_b_2_her2,5 +B2,9.878259181976318
+1,imputation,Danenberg,cd20,0 base,5.851243734359741
+1,imputation,Danenberg,cd20,1 +pix,8.33178424835205
+1,imputation,Danenberg,cd20,2 +pix e2,8.265141010284424
+1,imputation,Danenberg,cd20,3 +band,6.804646253585815
+1,imputation,Danenberg,cd20,4 +band +pix,8.78511118888855
+1,imputation,Danenberg,cd20,5 +B2,9.443055152893066
+1,imputation,Danenberg,cd3,0 base,6.230169296264648
+1,imputation,Danenberg,cd3,1 +pix,8.593654155731201
+1,imputation,Danenberg,cd3,2 +pix e2,8.456833839416504
+1,imputation,Danenberg,cd3,3 +band,6.959268569946289
+1,imputation,Danenberg,cd3,4 +band +pix,9.288919925689697
+1,imputation,Danenberg,cd3,5 +B2,9.776710271835327
+1,imputation,Danenberg,cd45,0 base,6.668075323104858
+1,imputation,Danenberg,cd45,1 +pix,9.044202327728271
+1,imputation,Danenberg,cd45,2 +pix e2,8.935600757598877
+1,imputation,Danenberg,cd45,3 +band,7.410242080688477
+1,imputation,Danenberg,cd45,4 +band +pix,9.724393606185913
+1,imputation,Danenberg,cd45,5 +B2,10.079287052154541
+1,imputation,Danenberg,cd68,0 base,6.1183061599731445
+1,imputation,Danenberg,cd68,1 +pix,8.359164237976074
+1,imputation,Danenberg,cd68,2 +pix e2,8.443521738052368
+1,imputation,Danenberg,cd68,3 +band,6.838096618652344
+1,imputation,Danenberg,cd68,4 +band +pix,9.135711193084717
+1,imputation,Danenberg,cd68,5 +B2,9.198239088058472
+1,imputation,Danenberg,cytokeratin_5,0 base,5.522996425628662
+1,imputation,Danenberg,cytokeratin_5,1 +pix,7.7624876499176025
+1,imputation,Danenberg,cytokeratin_5,2 +pix e2,7.674518823623657
+1,imputation,Danenberg,cytokeratin_5,3 +band,6.3386266231536865
+1,imputation,Danenberg,cytokeratin_5,4 +band +pix,8.338913440704346
+1,imputation,Danenberg,cytokeratin_5,5 +B2,8.656434297561646
+1,imputation,Danenberg,cytokeratin_8_18,0 base,5.3694140911102295
+1,imputation,Danenberg,cytokeratin_8_18,1 +pix,7.735591650009155
+1,imputation,Danenberg,cytokeratin_8_18,2 +pix e2,7.7238922119140625
+1,imputation,Danenberg,cytokeratin_8_18,3 +band,6.340757369995117
+1,imputation,Danenberg,cytokeratin_8_18,4 +band +pix,8.455406188964844
+1,imputation,Danenberg,cytokeratin_8_18,5 +B2,8.765157222747803
+1,imputation,Danenberg,estrogen_receptor_alpha,0 base,7.088481903076172
+1,imputation,Danenberg,estrogen_receptor_alpha,1 +pix,9.680379390716553
+1,imputation,Danenberg,estrogen_receptor_alpha,2 +pix e2,9.770356893539429
+1,imputation,Danenberg,estrogen_receptor_alpha,3 +band,8.072441577911377
+1,imputation,Danenberg,estrogen_receptor_alpha,4 +band +pix,10.69043493270874
+1,imputation,Danenberg,estrogen_receptor_alpha,5 +B2,10.810553550720215
+1,imputation,Danenberg,ki_67,0 base,5.699841022491455
+1,imputation,Danenberg,ki_67,1 +pix,8.020688772201538
+1,imputation,Danenberg,ki_67,2 +pix e2,8.13431191444397
+1,imputation,Danenberg,ki_67,3 +band,6.461465835571289
+1,imputation,Danenberg,ki_67,4 +band +pix,8.518629789352417
+1,imputation,Danenberg,ki_67,5 +B2,8.834020376205444
+1,imputation,Danenberg,pan_cytokeratin,0 base,6.518770217895508
+1,imputation,Danenberg,pan_cytokeratin,1 +pix,9.132546663284302
+1,imputation,Danenberg,pan_cytokeratin,2 +pix e2,9.230758905410767
+1,imputation,Danenberg,pan_cytokeratin,3 +band,7.432223320007324
+1,imputation,Danenberg,pan_cytokeratin,4 +band +pix,10.045635461807251
+1,imputation,Danenberg,pan_cytokeratin,5 +B2,9.997201919555664
+1,imputation,Danenberg,sma,0 base,6.700712442398071
+1,imputation,Danenberg,sma,1 +pix,9.45528531074524
+1,imputation,Danenberg,sma,2 +pix e2,9.451354026794434
+1,imputation,Danenberg,sma,3 +band,7.704725980758667
+1,imputation,Danenberg,sma,4 +band +pix,10.198813438415527
+1,imputation,Danenberg,sma,5 +B2,10.308151721954346
+1,typing,Jackson,coarse,0 base,39.98463678359985
+1,typing,Jackson,coarse,1 +pix,54.229453563690186
+1,typing,Jackson,coarse,2 +pix e2,55.88892674446106
+1,typing,Jackson,coarse,3 +band,45.02395439147949
+1,typing,Jackson,coarse,4 +band +pix,59.71301341056824
+1,typing,Jackson,coarse,5 +B2,68.60957336425781
+1,typing,Danenberg,coarse,0 base,41.48538017272949
+1,typing,Danenberg,coarse,1 +pix,57.25095725059509
+1,typing,Danenberg,coarse,2 +pix e2,57.51315426826477
+1,typing,Danenberg,coarse,3 +band,46.81371092796326
+1,typing,Danenberg,coarse,4 +band +pix,63.04036545753479
+1,typing,Danenberg,coarse,5 +B2,72.00497674942017
+1,typing,Danenberg,fine,0 base,184.4611794948578
+1,typing,Danenberg,fine,1 +pix,260.75371265411377
+1,typing,Danenberg,fine,2 +pix e2,265.0771961212158
+1,typing,Danenberg,fine,3 +band,209.8860218524933
+1,typing,Danenberg,fine,4 +band +pix,285.16375064849854
+1,typing,Danenberg,fine,5 +B2,329.2880530357361
+1,typing,Jackson,fine,0 base,152.83960366249084
+1,typing,Jackson,fine,1 +pix,215.49863481521606
+1,typing,Jackson,fine,2 +pix e2,218.28857040405273
+1,typing,Jackson,fine,3 +band,173.61826634407043
+1,typing,Jackson,fine,4 +band +pix,232.98301362991333
+1,typing,Jackson,fine,5 +B2,269.0417652130127
+2,imputation,Jackson,c_erb_b_2_her2,0 base,6.226231813430786
+2,imputation,Jackson,c_erb_b_2_her2,1 +pix,8.646400213241577
+2,imputation,Jackson,c_erb_b_2_her2,2 +pix e2,8.654584884643555
+2,imputation,Jackson,c_erb_b_2_her2,3 +band,7.0158772468566895
+2,imputation,Jackson,c_erb_b_2_her2,4 +band +pix,9.298524618148804
+2,imputation,Jackson,c_erb_b_2_her2,5 +B2,9.726335763931274
+2,imputation,Jackson,cd20,0 base,5.21307897567749
+2,imputation,Jackson,cd20,1 +pix,7.147546052932739
+2,imputation,Jackson,cd20,2 +pix e2,7.315714120864868
+2,imputation,Jackson,cd20,3 +band,6.004574537277222
+2,imputation,Jackson,cd20,4 +band +pix,7.849469900131226
+2,imputation,Jackson,cd20,5 +B2,8.225056171417236
+2,imputation,Jackson,cd3,0 base,5.780887126922607
+2,imputation,Jackson,cd3,1 +pix,8.102241039276123
+2,imputation,Jackson,cd3,2 +pix e2,8.307523012161255
+2,imputation,Jackson,cd3,3 +band,6.742299556732178
+2,imputation,Jackson,cd3,4 +band +pix,8.771923542022705
+2,imputation,Jackson,cd3,5 +B2,9.049396753311157
+2,imputation,Jackson,cd45,0 base,5.478728294372559
+2,imputation,Jackson,cd45,1 +pix,7.50575590133667
+2,imputation,Jackson,cd45,2 +pix e2,7.581977844238281
+2,imputation,Jackson,cd45,3 +band,6.415278196334839
+2,imputation,Jackson,cd45,4 +band +pix,8.325086116790771
+2,imputation,Jackson,cd45,5 +B2,8.578192234039307
+2,imputation,Jackson,cd68,0 base,5.5541090965271
+2,imputation,Jackson,cd68,1 +pix,7.896020412445068
+2,imputation,Jackson,cd68,2 +pix e2,7.965328216552734
+2,imputation,Jackson,cd68,3 +band,6.413088083267212
+2,imputation,Jackson,cd68,4 +band +pix,8.387600898742676
+2,imputation,Jackson,cd68,5 +B2,8.79617166519165
+2,imputation,Jackson,cytokeratin_5,0 base,5.31615424156189
+2,imputation,Jackson,cytokeratin_5,1 +pix,7.325829982757568
+2,imputation,Jackson,cytokeratin_5,2 +pix e2,7.382028818130493
+2,imputation,Jackson,cytokeratin_5,3 +band,6.060554027557373
+2,imputation,Jackson,cytokeratin_5,4 +band +pix,7.917359352111816
+2,imputation,Jackson,cytokeratin_5,5 +B2,8.24986743927002
+2,imputation,Jackson,cytokeratin_8_18,0 base,5.389731168746948
+2,imputation,Jackson,cytokeratin_8_18,1 +pix,7.61823844909668
+2,imputation,Jackson,cytokeratin_8_18,2 +pix e2,7.803614616394043
+2,imputation,Jackson,cytokeratin_8_18,3 +band,6.370358943939209
+2,imputation,Jackson,cytokeratin_8_18,4 +band +pix,8.616270303726196
+2,imputation,Jackson,cytokeratin_8_18,5 +B2,8.980203628540039
+2,imputation,Jackson,estrogen_receptor_alpha,0 base,5.773048639297485
+2,imputation,Jackson,estrogen_receptor_alpha,1 +pix,7.986788272857666
+2,imputation,Jackson,estrogen_receptor_alpha,2 +pix e2,8.282819509506226
+2,imputation,Jackson,estrogen_receptor_alpha,3 +band,6.715320825576782
+2,imputation,Jackson,estrogen_receptor_alpha,4 +band +pix,8.89216160774231
+2,imputation,Jackson,estrogen_receptor_alpha,5 +B2,9.150949954986572
+2,imputation,Jackson,ki_67,0 base,5.412504196166992
+2,imputation,Jackson,ki_67,1 +pix,7.615015983581543
+2,imputation,Jackson,ki_67,2 +pix e2,7.666659593582153
+2,imputation,Jackson,ki_67,3 +band,6.296607494354248
+2,imputation,Jackson,ki_67,4 +band +pix,8.398975372314453
+2,imputation,Jackson,ki_67,5 +B2,8.78149676322937
+2,imputation,Jackson,pan_cytokeratin,0 base,6.409221887588501
+2,imputation,Jackson,pan_cytokeratin,1 +pix,8.905073165893555
+2,imputation,Jackson,pan_cytokeratin,2 +pix e2,8.863394737243652
+2,imputation,Jackson,pan_cytokeratin,3 +band,7.26849102973938
+2,imputation,Jackson,pan_cytokeratin,4 +band +pix,9.662213802337646
+2,imputation,Jackson,pan_cytokeratin,5 +B2,10.113446712493896
+2,imputation,Jackson,sma,0 base,6.310029029846191
+2,imputation,Jackson,sma,1 +pix,8.805118322372437
+2,imputation,Jackson,sma,2 +pix e2,8.830873489379883
+2,imputation,Jackson,sma,3 +band,7.2179882526397705
+2,imputation,Jackson,sma,4 +band +pix,9.60466456413269
+2,imputation,Jackson,sma,5 +B2,10.02708888053894
+2,imputation,Danenberg,c_erb_b_2_her2,0 base,5.993057012557983
+2,imputation,Danenberg,c_erb_b_2_her2,1 +pix,8.442318677902222
+2,imputation,Danenberg,c_erb_b_2_her2,2 +pix e2,8.454463958740234
+2,imputation,Danenberg,c_erb_b_2_her2,3 +band,6.768282413482666
+2,imputation,Danenberg,c_erb_b_2_her2,4 +band +pix,9.226624727249146
+2,imputation,Danenberg,c_erb_b_2_her2,5 +B2,9.543647527694702
+2,imputation,Danenberg,cd20,0 base,5.326247930526733
+2,imputation,Danenberg,cd20,1 +pix,7.537421226501465
+2,imputation,Danenberg,cd20,2 +pix e2,7.719172954559326
+2,imputation,Danenberg,cd20,3 +band,7.103147029876709
+2,imputation,Danenberg,cd20,4 +band +pix,8.137526273727417
+2,imputation,Danenberg,cd20,5 +B2,8.622300624847412
+2,imputation,Danenberg,cd3,0 base,5.675403594970703
+2,imputation,Danenberg,cd3,1 +pix,8.05635404586792
+2,imputation,Danenberg,cd3,2 +pix e2,8.076919078826904
+2,imputation,Danenberg,cd3,3 +band,6.387905836105347
+2,imputation,Danenberg,cd3,4 +band +pix,8.671393632888794
+2,imputation,Danenberg,cd3,5 +B2,9.058047533035278
+2,imputation,Danenberg,cd45,0 base,6.19800329208374
+2,imputation,Danenberg,cd45,1 +pix,8.45419955253601
+2,imputation,Danenberg,cd45,2 +pix e2,8.458776473999023
+2,imputation,Danenberg,cd45,3 +band,7.062526226043701
+2,imputation,Danenberg,cd45,4 +band +pix,9.251962900161743
+2,imputation,Danenberg,cd45,5 +B2,9.73990535736084
+2,imputation,Danenberg,cd68,0 base,5.684771299362183
+2,imputation,Danenberg,cd68,1 +pix,7.944791078567505
+2,imputation,Danenberg,cd68,2 +pix e2,8.076644659042358
+2,imputation,Danenberg,cd68,3 +band,6.529775381088257
+2,imputation,Danenberg,cd68,4 +band +pix,8.680336475372314
+2,imputation,Danenberg,cd68,5 +B2,9.096505403518677
+2,imputation,Danenberg,cytokeratin_5,0 base,5.33720064163208
+2,imputation,Danenberg,cytokeratin_5,1 +pix,7.44534969329834
+2,imputation,Danenberg,cytokeratin_5,2 +pix e2,7.545572757720947
+2,imputation,Danenberg,cytokeratin_5,3 +band,6.009160041809082
+2,imputation,Danenberg,cytokeratin_5,4 +band +pix,8.16810917854309
+2,imputation,Danenberg,cytokeratin_5,5 +B2,8.601135969161987
+2,imputation,Danenberg,cytokeratin_8_18,0 base,5.325381278991699
+2,imputation,Danenberg,cytokeratin_8_18,1 +pix,7.359291076660156
+2,imputation,Danenberg,cytokeratin_8_18,2 +pix e2,7.615553379058838
+2,imputation,Danenberg,cytokeratin_8_18,3 +band,5.936404705047607
+2,imputation,Danenberg,cytokeratin_8_18,4 +band +pix,8.094411373138428
+2,imputation,Danenberg,cytokeratin_8_18,5 +B2,8.719748735427856
+2,imputation,Danenberg,estrogen_receptor_alpha,0 base,6.871840476989746
+2,imputation,Danenberg,estrogen_receptor_alpha,1 +pix,9.396945238113403
+2,imputation,Danenberg,estrogen_receptor_alpha,2 +pix e2,9.454717636108398
+2,imputation,Danenberg,estrogen_receptor_alpha,3 +band,7.781368255615234
+2,imputation,Danenberg,estrogen_receptor_alpha,4 +band +pix,10.133886575698853
+2,imputation,Danenberg,estrogen_receptor_alpha,5 +B2,10.483432531356812
+2,imputation,Danenberg,ki_67,0 base,5.384846210479736
+2,imputation,Danenberg,ki_67,1 +pix,7.831254482269287
+2,imputation,Danenberg,ki_67,2 +pix e2,7.690040826797485
+2,imputation,Danenberg,ki_67,3 +band,6.211901426315308
+2,imputation,Danenberg,ki_67,4 +band +pix,8.248672008514404
+2,imputation,Danenberg,ki_67,5 +B2,8.787623643875122
+2,imputation,Danenberg,pan_cytokeratin,0 base,6.164346933364868
+2,imputation,Danenberg,pan_cytokeratin,1 +pix,8.726373195648193
+2,imputation,Danenberg,pan_cytokeratin,2 +pix e2,8.626834630966187
+2,imputation,Danenberg,pan_cytokeratin,3 +band,7.029360294342041
+2,imputation,Danenberg,pan_cytokeratin,4 +band +pix,9.53324031829834
+2,imputation,Danenberg,pan_cytokeratin,5 +B2,10.051511287689209
+2,imputation,Danenberg,sma,0 base,6.576584815979004
+2,imputation,Danenberg,sma,1 +pix,9.02793002128601
+2,imputation,Danenberg,sma,2 +pix e2,9.167249202728271
+2,imputation,Danenberg,sma,3 +band,7.356921672821045
+2,imputation,Danenberg,sma,4 +band +pix,9.923974990844727
+2,imputation,Danenberg,sma,5 +B2,10.166334390640259
+2,typing,Jackson,coarse,0 base,37.63125991821289
+2,typing,Jackson,coarse,1 +pix,51.58964514732361
+2,typing,Jackson,coarse,2 +pix e2,52.422691822052
+2,typing,Jackson,coarse,3 +band,42.19993257522583
+2,typing,Jackson,coarse,4 +band +pix,56.21129012107849
+2,typing,Jackson,coarse,5 +B2,65.52145981788635
+2,typing,Danenberg,coarse,0 base,38.85905408859253
+2,typing,Danenberg,coarse,1 +pix,54.491945028305054
+2,typing,Danenberg,coarse,2 +pix e2,54.7678165435791
+2,typing,Danenberg,coarse,3 +band,43.84124159812927
+2,typing,Danenberg,coarse,4 +band +pix,59.36390042304993
+2,typing,Danenberg,coarse,5 +B2,68.91115999221802
+2,typing,Danenberg,fine,0 base,187.66371321678162
+2,typing,Danenberg,fine,1 +pix,259.1069164276123
+2,typing,Danenberg,fine,2 +pix e2,265.51275610923767
+2,typing,Danenberg,fine,3 +band,207.59117150306702
+2,typing,Danenberg,fine,4 +band +pix,281.3880350589752
+2,typing,Danenberg,fine,5 +B2,331.6218492984772
+2,typing,Jackson,fine,0 base,139.53439164161682
+2,typing,Jackson,fine,1 +pix,198.4098756313324
+2,typing,Jackson,fine,2 +pix e2,201.87032294273376
+2,typing,Jackson,fine,3 +band,163.05228543281555
+2,typing,Jackson,fine,4 +band +pix,220.06296110153198
+2,typing,Jackson,fine,5 +B2,255.30483508110046

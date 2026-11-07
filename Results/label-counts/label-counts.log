@@ -1,0 +1,146 @@
+[{"stream_name":"stderr","time":10.738066121,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.738119197,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.738126431,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.738130611,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.591089105,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.591128414,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.591134391,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.591138421,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":28.11249463,"data":"{\n"}
+,{"stream_name":"stdout","time":28.112532177,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":28.112538398,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":28.112541686,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":28.112544567,"data":"  \"pix\": \"/kaggle/input/notebooks/yuvalsamoilov/pixel-features/pixfeat_danenberg.parquet\",\n"}
+,{"stream_name":"stdout","time":28.112547279,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":28.112549951,"data":" },\n"}
+,{"stream_name":"stdout","time":28.112552277,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":28.112554601,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":28.112557115,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":28.112559794,"data":"  \"pix\": \"/kaggle/input/notebooks/yuvalsamoilov/pixel-features/pixfeat_jackson.parquet\"\n"}
+,{"stream_name":"stdout","time":28.112562362,"data":" }\n"}
+,{"stream_name":"stdout","time":28.112564583,"data":"}\n"}
+,{"stream_name":"stdout","time":69.711879293,"data":"Jackson: 1,126,124 cells, 542 images, 349 patients; pixel-feature NaN fraction 0.010 (full) / 0.272 (e2)\n"}
+,{"stream_name":"stdout","time":69.711919569,"data":"Danenberg: 1,062,219 cells, 704 images, 650 patients; pixel-feature NaN fraction 0.001 (full) / 0.105 (e2)\n"}
+,{"stream_name":"stdout","time":69.71192579,"data":"[   0.7 min] tables and pixel features loaded\n"}
+,{"stream_name":"stdout","time":83.832163876,"data":"Jackson: kNN-10 / 30 µm / contact / non-contact graphs built; mean contact degree 5.24\n"}
+,{"stream_name":"stdout","time":96.09109068,"data":"Danenberg: kNN-10 / 30 µm / contact / non-contact graphs built; mean contact degree 5.84\n"}
+,{"stream_name":"stdout","time":96.091139383,"data":"[   1.2 min] graphs and neighbour features\n"}
+,{"stream_name":"stdout","time":97.354898112,"data":"[   1.2 min] replicate 0\n"}
+,{"stream_name":"stdout","time":800.507397363,"data":"[  12.9 min] rep 0: stage-1 and stage-2 predicted types\n"}
+,{"stream_name":"stdout","time":1198.475542379,"data":"[  19.5 min] rep 0 coarse Jackson-\u003eJackson: base 0.782; A1 pred counts [main] 0.784, A2 pred counts + mix [main] 0.784, A3 round 2 [main] 0.785, 0 base (hidden cells) [revealed 5%] 0.782, B revealed counts [revealed 5%] 0.786, 0 base (hidden cells) [revealed 20%] 0.783, B revealed counts [revealed 20%] 0.798, 0 base (hidden cells) [revealed 50%] 0.782, B revealed counts [revealed 50%] 0.812\n"}
+,{"stream_name":"stdout","time":1605.438445174,"data":"[  26.3 min] rep 0 coarse Danenberg-\u003eDanenberg: base 0.708; A1 pred counts [main] 0.711, A2 pred counts + mix [main] 0.711, A3 round 2 [main] 0.711, 0 base (hidden cells) [revealed 5%] 0.708, B revealed counts [revealed 5%] 0.711, 0 base (hidden cells) [revealed 20%] 0.707, B revealed counts [revealed 20%] 0.716, 0 base (hidden cells) [revealed 50%] 0.706, B revealed counts [revealed 50%] 0.723\n"}
+,{"stream_name":"stdout","time":1995.914658477,"data":"[  32.8 min] rep 0 coarse Jackson-\u003eDanenberg: base 0.558; A1 pred counts [main] 0.561, A2 pred counts + mix [main] 0.563, A3 round 2 [main] 0.564, 0 base (hidden cells) [revealed 5%] 0.559, B revealed counts [revealed 5%] 0.564, 0 base (hidden cells) [revealed 20%] 0.559, B revealed counts [revealed 20%] 0.587, 0 base (hidden cells) [revealed 50%] 0.560, B revealed counts [revealed 50%] 0.598\n"}
+,{"stream_name":"stdout","time":2401.98807682,"data":"[  39.6 min] rep 0 coarse Danenberg-\u003eJackson: base 0.609; A1 pred counts [main] 0.603, A2 pred counts + mix [main] 0.600, A3 round 2 [main] 0.597, 0 base (hidden cells) [revealed 5%] 0.609, B revealed counts [revealed 5%] 0.608, 0 base (hidden cells) [revealed 20%] 0.608, B revealed counts [revealed 20%] 0.630, 0 base (hidden cells) [revealed 50%] 0.611, B revealed counts [revealed 50%] 0.655\n"}
+,{"stream_name":"stdout","time":4034.074485003,"data":"[  66.8 min] rep 0 fine Danenberg-\u003eDanenberg: base 0.452; A1 pred counts [main] 0.456, A2 pred counts + mix [main] 0.455, 0 base (hidden cells) [revealed 20%] 0.452, B revealed counts [revealed 20%] 0.525\n"}
+,{"stream_name":"stdout","time":5349.521055705,"data":"[  88.7 min] rep 0 fine Jackson-\u003eJackson: base 0.396; A1 pred counts [main] 0.395, A2 pred counts + mix [main] 0.397, 0 base (hidden cells) [revealed 20%] 0.396, B revealed counts [revealed 20%] 0.548\n"}
+,{"stream_name":"stdout","time":5349.9439502,"data":"[  88.7 min] replicate 0 done (88 min)\n"}
+,{"stream_name":"stdout","time":5349.944957482,"data":"[  88.7 min] replicate 1\n"}
+,{"stream_name":"stdout","time":6057.130683557,"data":"[ 100.5 min] rep 1: stage-1 and stage-2 predicted types\n"}
+,{"stream_name":"stdout","time":6459.005312987,"data":"[ 107.2 min] rep 1 coarse Jackson-\u003eJackson: base 0.796; A1 pred counts [main] 0.800, A2 pred counts + mix [main] 0.800, A3 round 2 [main] 0.800, 0 base (hidden cells) [revealed 5%] 0.796, B revealed counts [revealed 5%] 0.802, 0 base (hidden cells) [revealed 20%] 0.796, B revealed counts [revealed 20%] 0.810, 0 base (hidden cells) [revealed 50%] 0.798, B revealed counts [revealed 50%] 0.826\n"}
+,{"stream_name":"stdout","time":6869.752337288,"data":"[ 114.1 min] rep 1 coarse Danenberg-\u003eDanenberg: base 0.707; A1 pred counts [main] 0.710, A2 pred counts + mix [main] 0.708, A3 round 2 [main] 0.710, 0 base (hidden cells) [revealed 5%] 0.707, B revealed counts [revealed 5%] 0.710, 0 base (hidden cells) [revealed 20%] 0.706, B revealed counts [revealed 20%] 0.715, 0 base (hidden cells) [revealed 50%] 0.708, B revealed counts [revealed 50%] 0.722\n"}
+,{"stream_name":"stdout","time":7262.453078674,"data":"[ 120.6 min] rep 1 coarse Jackson-\u003eDanenberg: base 0.553; A1 pred counts [main] 0.555, A2 pred counts + mix [main] 0.555, A3 round 2 [main] 0.557, 0 base (hidden cells) [revealed 5%] 0.553, B revealed counts [revealed 5%] 0.561, 0 base (hidden cells) [revealed 20%] 0.554, B revealed counts [revealed 20%] 0.580, 0 base (hidden cells) [revealed 50%] 0.553, B revealed counts [revealed 50%] 0.593\n"}
+,{"stream_name":"stdout","time":7686.992562663,"data":"[ 127.7 min] rep 1 coarse Danenberg-\u003eJackson: base 0.610; A1 pred counts [main] 0.607, A2 pred counts + mix [main] 0.606, A3 round 2 [main] 0.601, 0 base (hidden cells) [revealed 5%] 0.610, B revealed counts [revealed 5%] 0.615, 0 base (hidden cells) [revealed 20%] 0.610, B revealed counts [revealed 20%] 0.631, 0 base (hidden cells) [revealed 50%] 0.608, B revealed counts [revealed 50%] 0.654\n"}
+,{"stream_name":"stdout","time":9520.589838059,"data":"[ 158.2 min] rep 1 fine Danenberg-\u003eDanenberg: base 0.447; A1 pred counts [main] 0.447, A2 pred counts + mix [main] 0.449, 0 base (hidden cells) [revealed 20%] 0.448, B revealed counts [revealed 20%] 0.516\n"}
+,{"stream_name":"stdout","time":10982.963175341,"data":"[ 182.6 min] rep 1 fine Jackson-\u003eJackson: base 0.425; A1 pred counts [main] 0.428, A2 pred counts + mix [main] 0.427, 0 base (hidden cells) [revealed 20%] 0.425, B revealed counts [revealed 20%] 0.593\n"}
+,{"stream_name":"stdout","time":10983.6875916,"data":"[ 182.6 min] replicate 1 done (94 min)\n"}
+,{"stream_name":"stdout","time":10983.689038263,"data":"[ 182.6 min] replicate 2\n"}
+,{"stream_name":"stdout","time":11722.672111747,"data":"[ 194.9 min] rep 2: stage-1 and stage-2 predicted types\n"}
+,{"stream_name":"stdout","time":12157.892759948,"data":"[ 202.2 min] rep 2 coarse Jackson-\u003eJackson: base 0.781; A1 pred counts [main] 0.781, A2 pred counts + mix [main] 0.781, A3 round 2 [main] 0.782, 0 base (hidden cells) [revealed 5%] 0.781, B revealed counts [revealed 5%] 0.785, 0 base (hidden cells) [revealed 20%] 0.781, B revealed counts [revealed 20%] 0.791, 0 base (hidden cells) [revealed 50%] 0.780, B revealed counts [revealed 50%] 0.804\n"}
+,{"stream_name":"stdout","time":12589.963786305,"data":"[ 209.4 min] rep 2 coarse Danenberg-\u003eDanenberg: base 0.710; A1 pred counts [main] 0.710, A2 pred counts + mix [main] 0.709, A3 round 2 [main] 0.710, 0 base (hidden cells) [revealed 5%] 0.710, B revealed counts [revealed 5%] 0.712, 0 base (hidden cells) [revealed 20%] 0.709, B revealed counts [revealed 20%] 0.715, 0 base (hidden cells) [revealed 50%] 0.709, B revealed counts [revealed 50%] 0.723\n"}
+,{"stream_name":"stdout","time":12987.609398741,"data":"[ 216.0 min] rep 2 coarse Jackson-\u003eDanenberg: base 0.548; A1 pred counts [main] 0.550, A2 pred counts + mix [main] 0.550, A3 round 2 [main] 0.550, 0 base (hidden cells) [revealed 5%] 0.548, B revealed counts [revealed 5%] 0.552, 0 base (hidden cells) [revealed 20%] 0.547, B revealed counts [revealed 20%] 0.571, 0 base (hidden cells) [revealed 50%] 0.547, B revealed counts [revealed 50%] 0.588\n"}
+,{"stream_name":"stdout","time":13393.688700696,"data":"[ 222.8 min] rep 2 coarse Danenberg-\u003eJackson: base 0.555; A1 pred counts [main] 0.546, A2 pred counts + mix [main] 0.547, A3 round 2 [main] 0.547, 0 base (hidden cells) [revealed 5%] 0.555, B revealed counts [revealed 5%] 0.561, 0 base (hidden cells) [revealed 20%] 0.555, B revealed counts [revealed 20%] 0.571, 0 base (hidden cells) [revealed 50%] 0.557, B revealed counts [revealed 50%] 0.599\n"}
+,{"stream_name":"stdout","time":15045.465227067,"data":"[ 250.3 min] rep 2 fine Danenberg-\u003eDanenberg: base 0.445; A1 pred counts [main] 0.448, A2 pred counts + mix [main] 0.447, 0 base (hidden cells) [revealed 20%] 0.444, B revealed counts [revealed 20%] 0.517\n"}
+,{"stream_name":"stdout","time":16281.327583752,"data":"[ 270.9 min] rep 2 fine Jackson-\u003eJackson: base 0.425; A1 pred counts [main] 0.431, A2 pred counts + mix [main] 0.430, 0 base (hidden cells) [revealed 20%] 0.426, B revealed counts [revealed 20%] 0.551\n"}
+,{"stream_name":"stdout","time":16282.068840181,"data":"[ 270.9 min] replicate 2 done (88 min)\n"}
+,{"stream_name":"stdout","time":16282.269227084,"data":"  task     train      test      setting                   arm   mean    std  count\n"}
+,{"stream_name":"stdout","time":16282.26926394,"data":"coarse Danenberg Danenberg         main                0 base 0.7082 0.0013      3\n"}
+,{"stream_name":"stdout","time":16282.269336286,"data":"coarse Danenberg Danenberg         main        A1 pred counts 0.7100 0.0008      3\n"}
+,{"stream_name":"stdout","time":16282.269341119,"data":"coarse Danenberg Danenberg         main  A2 pred counts + mix 0.7095 0.0015      3\n"}
+,{"stream_name":"stdout","time":16282.269343591,"data":"coarse Danenberg Danenberg         main            A3 round 2 0.7101 0.0004      3\n"}
+,{"stream_name":"stdout","time":16282.269345934,"data":"coarse Danenberg Danenberg revealed 20% 0 base (hidden cells) 0.7076 0.0017      3\n"}
+,{"stream_name":"stdout","time":16282.269348279,"data":"coarse Danenberg Danenberg revealed 20%     B revealed counts 0.7155 0.0006      3\n"}
+,{"stream_name":"stdout","time":16282.269350697,"data":"coarse Danenberg Danenberg  revealed 5% 0 base (hidden cells) 0.7083 0.0016      3\n"}
+,{"stream_name":"stdout","time":16282.269353109,"data":"coarse Danenberg Danenberg  revealed 5%     B revealed counts 0.7111 0.0006      3\n"}
+,{"stream_name":"stdout","time":16282.269355518,"data":"coarse Danenberg Danenberg revealed 50% 0 base (hidden cells) 0.7077 0.0017      3\n"}
+,{"stream_name":"stdout","time":16282.269358115,"data":"coarse Danenberg Danenberg revealed 50%     B revealed counts 0.7229 0.0007      3\n"}
+,{"stream_name":"stdout","time":16282.269360498,"data":"coarse Danenberg   Jackson         main                0 base 0.5912 0.0313      3\n"}
+,{"stream_name":"stdout","time":16282.269362808,"data":"coarse Danenberg   Jackson         main        A1 pred counts 0.5855 0.0338      3\n"}
+,{"stream_name":"stdout","time":16282.269365185,"data":"coarse Danenberg   Jackson         main  A2 pred counts + mix 0.5844 0.0322      3\n"}
+,{"stream_name":"stdout","time":16282.269367504,"data":"coarse Danenberg   Jackson         main            A3 round 2 0.5818 0.0303      3\n"}
+,{"stream_name":"stdout","time":16282.269369912,"data":"coarse Danenberg   Jackson revealed 20% 0 base (hidden cells) 0.5907 0.0312      3\n"}
+,{"stream_name":"stdout","time":16282.269372255,"data":"coarse Danenberg   Jackson revealed 20%     B revealed counts 0.6108 0.0346      3\n"}
+,{"stream_name":"stdout","time":16282.269374584,"data":"coarse Danenberg   Jackson  revealed 5% 0 base (hidden cells) 0.5913 0.0312      3\n"}
+,{"stream_name":"stdout","time":16282.269377096,"data":"coarse Danenberg   Jackson  revealed 5%     B revealed counts 0.5945 0.0289      3\n"}
+,{"stream_name":"stdout","time":16282.26937955,"data":"coarse Danenberg   Jackson revealed 50% 0 base (hidden cells) 0.5923 0.0303      3\n"}
+,{"stream_name":"stdout","time":16282.269381891,"data":"coarse Danenberg   Jackson revealed 50%     B revealed counts 0.6361 0.0324      3\n"}
+,{"stream_name":"stdout","time":16282.269384427,"data":"coarse   Jackson Danenberg         main                0 base 0.5532 0.0052      3\n"}
+,{"stream_name":"stdout","time":16282.269386742,"data":"coarse   Jackson Danenberg         main        A1 pred counts 0.5555 0.0056      3\n"}
+,{"stream_name":"stdout","time":16282.269389062,"data":"coarse   Jackson Danenberg         main  A2 pred counts + mix 0.5561 0.0061      3\n"}
+,{"stream_name":"stdout","time":16282.269393659,"data":"coarse   Jackson Danenberg         main            A3 round 2 0.5567 0.0069      3\n"}
+,{"stream_name":"stdout","time":16282.26939606,"data":"coarse   Jackson Danenberg revealed 20% 0 base (hidden cells) 0.5533 0.0062      3\n"}
+,{"stream_name":"stdout","time":16282.269398583,"data":"coarse   Jackson Danenberg revealed 20%     B revealed counts 0.5793 0.0076      3\n"}
+,{"stream_name":"stdout","time":16282.269400925,"data":"coarse   Jackson Danenberg  revealed 5% 0 base (hidden cells) 0.5532 0.0054      3\n"}
+,{"stream_name":"stdout","time":16282.269403613,"data":"coarse   Jackson Danenberg  revealed 5%     B revealed counts 0.5587 0.0063      3\n"}
+,{"stream_name":"stdout","time":16282.269410067,"data":"coarse   Jackson Danenberg revealed 50% 0 base (hidden cells) 0.5535 0.0067      3\n"}
+,{"stream_name":"stdout","time":16282.269412572,"data":"coarse   Jackson Danenberg revealed 50%     B revealed counts 0.5930 0.0050      3\n"}
+,{"stream_name":"stdout","time":16282.269414871,"data":"coarse   Jackson   Jackson         main                0 base 0.7863 0.0083      3\n"}
+,{"stream_name":"stdout","time":16282.269417264,"data":"coarse   Jackson   Jackson         main        A1 pred counts 0.7884 0.0102      3\n"}
+,{"stream_name":"stdout","time":16282.269419944,"data":"coarse   Jackson   Jackson         main  A2 pred counts + mix 0.7883 0.0101      3\n"}
+,{"stream_name":"stdout","time":16282.26942244,"data":"coarse   Jackson   Jackson         main            A3 round 2 0.7891 0.0097      3\n"}
+,{"stream_name":"stdout","time":16282.269424787,"data":"coarse   Jackson   Jackson revealed 20% 0 base (hidden cells) 0.7867 0.0081      3\n"}
+,{"stream_name":"stdout","time":16282.269427139,"data":"coarse   Jackson   Jackson revealed 20%     B revealed counts 0.7996 0.0099      3\n"}
+,{"stream_name":"stdout","time":16282.269429508,"data":"coarse   Jackson   Jackson  revealed 5% 0 base (hidden cells) 0.7862 0.0087      3\n"}
+,{"stream_name":"stdout","time":16282.269431844,"data":"coarse   Jackson   Jackson  revealed 5%     B revealed counts 0.7909 0.0097      3\n"}
+,{"stream_name":"stdout","time":16282.269434154,"data":"coarse   Jackson   Jackson revealed 50% 0 base (hidden cells) 0.7866 0.0097      3\n"}
+,{"stream_name":"stdout","time":16282.269436476,"data":"coarse   Jackson   Jackson revealed 50%     B revealed counts 0.8139 0.0111      3\n"}
+,{"stream_name":"stdout","time":16282.26943882,"data":"  fine Danenberg Danenberg         main                0 base 0.4482 0.0036      3\n"}
+,{"stream_name":"stdout","time":16282.269441324,"data":"  fine Danenberg Danenberg         main        A1 pred counts 0.4503 0.0049      3\n"}
+,{"stream_name":"stdout","time":16282.269443655,"data":"  fine Danenberg Danenberg         main  A2 pred counts + mix 0.4504 0.0037      3\n"}
+,{"stream_name":"stdout","time":16282.269445997,"data":"  fine Danenberg Danenberg revealed 20% 0 base (hidden cells) 0.4481 0.0038      3\n"}
+,{"stream_name":"stdout","time":16282.269448352,"data":"  fine Danenberg Danenberg revealed 20%     B revealed counts 0.5191 0.0047      3\n"}
+,{"stream_name":"stdout","time":16282.269450669,"data":"  fine   Jackson   Jackson         main                0 base 0.4156 0.0170      3\n"}
+,{"stream_name":"stdout","time":16282.269453062,"data":"  fine   Jackson   Jackson         main        A1 pred counts 0.4179 0.0199      3\n"}
+,{"stream_name":"stdout","time":16282.269455387,"data":"  fine   Jackson   Jackson         main  A2 pred counts + mix 0.4179 0.0185      3\n"}
+,{"stream_name":"stdout","time":16282.26945806,"data":"  fine   Jackson   Jackson revealed 20% 0 base (hidden cells) 0.4155 0.0171      3\n"}
+,{"stream_name":"stdout","time":16282.269460643,"data":"  fine   Jackson   Jackson revealed 20%     B revealed counts 0.5642 0.0249      3\n"}
+,{"stream_name":"stdout","time":16282.26946315,"data":"  task     train      test      setting                  arm  mean_diff  n_ci_pos  n_ci_neg  n  claim\n"}
+,{"stream_name":"stdout","time":16282.269465561,"data":"coarse Danenberg Danenberg         main       A1 pred counts     0.0018         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269467974,"data":"coarse Danenberg Danenberg         main A2 pred counts + mix     0.0013         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269470357,"data":"coarse Danenberg Danenberg         main           A3 round 2     0.0019         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.26947547,"data":"coarse Danenberg Danenberg revealed 20%    B revealed counts     0.0080         3         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269477968,"data":"coarse Danenberg Danenberg  revealed 5%    B revealed counts     0.0028         2         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.26948037,"data":"coarse Danenberg Danenberg revealed 50%    B revealed counts     0.0152         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269482962,"data":"coarse Danenberg   Jackson         main       A1 pred counts    -0.0057         0         1  3  False\n"}
+,{"stream_name":"stdout","time":16282.269485451,"data":"coarse Danenberg   Jackson         main A2 pred counts + mix    -0.0068         0         2  3  False\n"}
+,{"stream_name":"stdout","time":16282.269487834,"data":"coarse Danenberg   Jackson         main           A3 round 2    -0.0093         0         3  3  False\n"}
+,{"stream_name":"stdout","time":16282.269490232,"data":"coarse Danenberg   Jackson revealed 20%    B revealed counts     0.0201         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269492749,"data":"coarse Danenberg   Jackson  revealed 5%    B revealed counts     0.0032         2         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269495131,"data":"coarse Danenberg   Jackson revealed 50%    B revealed counts     0.0438         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269497494,"data":"coarse   Jackson Danenberg         main       A1 pred counts     0.0023         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269500096,"data":"coarse   Jackson Danenberg         main A2 pred counts + mix     0.0029         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269502661,"data":"coarse   Jackson Danenberg         main           A3 round 2     0.0035         2         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269505096,"data":"coarse   Jackson Danenberg revealed 20%    B revealed counts     0.0260         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269507507,"data":"coarse   Jackson Danenberg  revealed 5%    B revealed counts     0.0055         3         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269510324,"data":"coarse   Jackson Danenberg revealed 50%    B revealed counts     0.0394         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269512785,"data":"coarse   Jackson   Jackson         main       A1 pred counts     0.0021         2         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269515157,"data":"coarse   Jackson   Jackson         main A2 pred counts + mix     0.0019         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269524132,"data":"coarse   Jackson   Jackson         main           A3 round 2     0.0028         2         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.26952707,"data":"coarse   Jackson   Jackson revealed 20%    B revealed counts     0.0130         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269529496,"data":"coarse   Jackson   Jackson  revealed 5%    B revealed counts     0.0047         3         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269531902,"data":"coarse   Jackson   Jackson revealed 50%    B revealed counts     0.0272         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269534302,"data":"  fine Danenberg Danenberg         main       A1 pred counts     0.0021         0         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269536687,"data":"  fine Danenberg Danenberg         main A2 pred counts + mix     0.0022         0         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269539112,"data":"  fine Danenberg Danenberg revealed 20%    B revealed counts     0.0711         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.269581255,"data":"  fine   Jackson   Jackson         main       A1 pred counts     0.0024         1         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269585475,"data":"  fine   Jackson   Jackson         main A2 pred counts + mix     0.0023         0         0  3  False\n"}
+,{"stream_name":"stdout","time":16282.269588055,"data":"  fine   Jackson   Jackson revealed 20%    B revealed counts     0.1487         3         0  3   True\n"}
+,{"stream_name":"stdout","time":16282.437425748,"data":"multiscale-audit output not mounted (or smoke run): arm-0 reproduction check skipped\n"}
+,{"stream_name":"stderr","time":16289.42513519,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":16289.425177223,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":16289.715708472,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":16289.71573876,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":16290.5741535,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":16290.990579573,"data":"[NbConvertApp] Writing 54334 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":16294.054311255,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":16295.393324669,"data":"[NbConvertApp] Writing 476558 bytes to __results__.html\n"}
+]

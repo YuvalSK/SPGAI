@@ -1,0 +1,141 @@
+[{"stream_name":"stderr","time":6.503300922,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.503348773,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.395062815,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.395109936,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.395115213,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.395119008,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.031643244,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.031674645,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.031679711,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.031683757,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":60.230087431,"data":"novae 1.1.2 | anndata 0.12.19 | torch 2.10.0+cu128 | lightning 2.6.6\n"}
+,{"stream_name":"stdout","time":61.414182581,"data":"{\n"}
+,{"stream_name":"stdout","time":61.414219307,"data":" \"Danenberg\": {\n"}
+,{"stream_name":"stdout","time":61.414223289,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":61.4142266,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/cell_neighbours.parquet\",\n"}
+,{"stream_name":"stdout","time":61.414229843,"data":"  \"split\": \"/kaggle/input/notebooks/yuvalsamoilov/danenberg-cells-prep/danenberg_patient_split.csv\"\n"}
+,{"stream_name":"stdout","time":61.414262718,"data":" },\n"}
+,{"stream_name":"stdout","time":61.414268295,"data":" \"Jackson\": {\n"}
+,{"stream_name":"stdout","time":61.414272881,"data":"  \"cells\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cells.parquet\",\n"}
+,{"stream_name":"stdout","time":61.414277292,"data":"  \"contacts\": \"/kaggle/input/notebooks/yuvalsamoilov/jackson-cells-prep/cell_neighbours.parquet\"\n"}
+,{"stream_name":"stdout","time":61.414281735,"data":" }\n"}
+,{"stream_name":"stdout","time":61.414285603,"data":"}\n"}
+,{"stream_name":"stdout","time":69.918062671,"data":"Jackson: 79,779 cells, 42 images, 42 patients, 27 fine labels; coarse {'epithelial': 42950, 'stroma': 21080, 'unlabelled': 8943, 'endothelial': 2214, 'myeloid': 2078, 'T cell': 1370, 'B cell': 1144}\n"}
+,{"stream_name":"stdout","time":69.918107432,"data":"Danenberg: 61,579 cells, 42 images, 42 patients, 32 fine labels; coarse {'epithelial': 35208, 'stroma': 14882, 'T cell': 3725, 'endothelial': 2541, 'myeloid': 2118, 'unlabelled': 2099, 'B cell': 1006}\n"}
+,{"stream_name":"stdout","time":69.918112611,"data":"[   0.2 min] tables loaded\n"}
+,{"stream_name":"stdout","time":71.846932953,"data":"[   0.2 min] neighbour features\n"}
+,{"stream_name":"stdout","time":73.104493073,"data":"           mean_degree  isolated_fraction  median_edge_um\n"}
+,{"stream_name":"stdout","time":73.10452123,"data":"Jackson          5.761              0.001          12.944\n"}
+,{"stream_name":"stdout","time":73.104538497,"data":"Danenberg        5.813              0.000          13.488\n"}
+,{"stream_name":"stdout","time":73.104543015,"data":"[   0.2 min] Delaunay graphs\n"}
+,{"stream_name":"stdout","time":73.241753777,"data":"LISI check: separated 1.000 (expect ~1), random 1.911 (expect ~2)\n"}
+,{"stream_name":"stdout","time":73.302564658,"data":"[   0.2 min] replicate 0\n"}
+,{"stream_name":"stdout","time":73.44322651,"data":"Jackson {'train': (30, 30), 'val': (7, 7), 'test': (5, 5)} (images, patients)\n"}
+,{"stream_name":"stdout","time":73.443282919,"data":"Danenberg {'train': (29, 29), 'val': (6, 6), 'test': (7, 7)} (images, patients)\n"}
+,{"stream_name":"stderr","time":73.572781165,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":73.572820403,"data":"\n"}
+,{"stream_name":"stderr","time":73.572826733,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stdout","time":173.727755929,"data":"{\"rep\": 0, \"variant\": \"cohort\", \"n_train_cells\": 122941, \"epochs\": 3, \"fit_min\": 0.36501745382944745, \"total_min\": 1.672532323996226, \"final_loss\": 6.182647705078125, \"valid_Jackson\": 0.9975306784993545, \"valid_Danenberg\": 0.9991880348820215, \"domains_Jackson\": 9, \"domains_Danenberg\": 9}\n"}
+,{"stream_name":"stdout","time":173.727806397,"data":"[   1.9 min] rep 0 Novae [cohort] done\n"}
+,{"stream_name":"stderr","time":174.038839295,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stderr","time":174.038880639,"data":"\n"}
+,{"stream_name":"stderr","time":174.038887101,"data":"\u001b[36;20m[INFO] (novae.module.embed)\u001b[0m Running PCA embedding initialization\n"}
+,{"stream_name":"stdout","time":270.626449173,"data":"{\"rep\": 0, \"variant\": \"img\", \"n_train_cells\": 122941, \"epochs\": 3, \"fit_min\": 0.31730777422587075, \"total_min\": 1.6145082513491313, \"final_loss\": 5.290487766265869, \"valid_Jackson\": 0.9975306784993545, \"valid_Danenberg\": 0.9991880348820215, \"domains_Jackson\": 10, \"domains_Danenberg\": 10}\n"}
+,{"stream_name":"stdout","time":270.626511761,"data":"[   3.5 min] rep 0 Novae [img] done\n"}
+,{"stream_name":"stdout","time":316.060158018,"data":"[   4.3 min] rep 0 LISI\n"}
+,{"stream_name":"stdout","time":317.450111297,"data":"[   4.3 min] rep 0 coarse / train Jackson: Table + nbr Jackson F1 0.709, Danenberg F1 0.444\n"}
+,{"stream_name":"stdout","time":318.470887079,"data":"[   4.3 min] rep 0 coarse / train Jackson: Novae [cohort] Jackson F1 0.354, Danenberg F1 0.294\n"}
+,{"stream_name":"stdout","time":320.091668588,"data":"[   4.3 min] rep 0 coarse / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.703, Danenberg F1 0.447\n"}
+,{"stream_name":"stdout","time":321.808114609,"data":"[   4.4 min] rep 0 coarse / train Jackson: Table + nbr + Novae [cohort]-corr Jackson F1 0.698, Danenberg F1 0.451\n"}
+,{"stream_name":"stdout","time":323.462773053,"data":"[   4.4 min] rep 0 coarse / train Jackson: Table + nbr + Novae [img] Jackson F1 0.713, Danenberg F1 0.446\n"}
+,{"stream_name":"stdout","time":324.621836445,"data":"[   4.4 min] rep 0 coarse / train Danenberg: Table + nbr Jackson F1 0.506, Danenberg F1 0.568\n"}
+,{"stream_name":"stdout","time":325.58613681,"data":"[   4.4 min] rep 0 coarse / train Danenberg: Novae [cohort] Jackson F1 0.310, Danenberg F1 0.347\n"}
+,{"stream_name":"stdout","time":327.512140445,"data":"[   4.5 min] rep 0 coarse / train Danenberg: Table + nbr + Novae [cohort] Jackson F1 0.494, Danenberg F1 0.570\n"}
+,{"stream_name":"stdout","time":329.424934691,"data":"[   4.5 min] rep 0 coarse / train Danenberg: Table + nbr + Novae [cohort]-corr Jackson F1 0.503, Danenberg F1 0.575\n"}
+,{"stream_name":"stdout","time":331.458268438,"data":"[   4.5 min] rep 0 coarse / train Danenberg: Table + nbr + Novae [img] Jackson F1 0.517, Danenberg F1 0.578\n"}
+,{"stream_name":"stdout","time":333.213841076,"data":"[   4.5 min] rep 0 coarse / train Both: Table + nbr Jackson F1 0.708, Danenberg F1 0.566\n"}
+,{"stream_name":"stdout","time":334.723871781,"data":"[   4.6 min] rep 0 coarse / train Both: Novae [cohort] Jackson F1 0.331, Danenberg F1 0.348\n"}
+,{"stream_name":"stdout","time":337.740936963,"data":"[   4.6 min] rep 0 coarse / train Both: Table + nbr + Novae [cohort] Jackson F1 0.703, Danenberg F1 0.570\n"}
+,{"stream_name":"stdout","time":340.779875459,"data":"[   4.7 min] rep 0 coarse / train Both: Table + nbr + Novae [cohort]-corr Jackson F1 0.710, Danenberg F1 0.569\n"}
+,{"stream_name":"stdout","time":343.861726403,"data":"[   4.7 min] rep 0 coarse / train Both: Table + nbr + Novae [img] Jackson F1 0.716, Danenberg F1 0.566\n"}
+,{"stream_name":"stdout","time":348.249196908,"data":"[   4.8 min] rep 0 fine / train Danenberg: Table + nbr Danenberg F1 0.343\n"}
+,{"stream_name":"stdout","time":355.302984926,"data":"[   4.9 min] rep 0 fine / train Danenberg: Table + nbr + Novae [cohort] Danenberg F1 0.345\n"}
+,{"stream_name":"stdout","time":358.898425635,"data":"[   5.0 min] rep 0 fine / train Jackson: Table + nbr Jackson F1 0.293\n"}
+,{"stream_name":"stdout","time":364.910875666,"data":"[   5.1 min] rep 0 fine / train Jackson: Table + nbr + Novae [cohort] Jackson F1 0.298\n"}
+,{"stream_name":"stdout","time":364.938864732,"data":"--- replicate 0: macro-F1\n"}
+,{"stream_name":"stdout","time":364.938881907,"data":"model                       Novae [cohort]  Table + nbr  Table + nbr + Novae [cohort]  Table + nbr + Novae [cohort]-corr  Table + nbr + Novae [img]\n"}
+,{"stream_name":"stdout","time":364.938885908,"data":"task   train     test                                                                                                                              \n"}
+,{"stream_name":"stdout","time":364.938889297,"data":"coarse Both      Danenberg           0.348        0.566                         0.570                              0.569                      0.566\n"}
+,{"stream_name":"stdout","time":364.93889289,"data":"                 Jackson             0.331        0.708                         0.703                              0.710                      0.716\n"}
+,{"stream_name":"stdout","time":364.938896102,"data":"       Danenberg Danenberg           0.347        0.568                         0.570                              0.575                      0.578\n"}
+,{"stream_name":"stdout","time":364.93889913,"data":"                 Jackson             0.310        0.506                         0.494                              0.503                      0.517\n"}
+,{"stream_name":"stdout","time":364.938902137,"data":"       Jackson   Danenberg           0.294        0.444                         0.447                              0.451                      0.446\n"}
+,{"stream_name":"stdout","time":364.938905084,"data":"                 Jackson             0.354        0.709                         0.703                              0.698                      0.713\n"}
+,{"stream_name":"stdout","time":364.938908102,"data":"fine   Danenberg Danenberg             NaN        0.343                         0.345                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":364.938911045,"data":"       Jackson   Jackson               NaN        0.293                         0.298                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":364.938914034,"data":"[   5.1 min] replicate 0 done (5 min)\n"}
+,{"stream_name":"stdout","time":364.940936051,"data":"skipped units: none\n"}
+,{"stream_name":"stdout","time":365.111990785,"data":"model                       Novae [cohort]  Table + nbr  Table + nbr + Novae [cohort]  Table + nbr + Novae [cohort]-corr  Table + nbr + Novae [img]\n"}
+,{"stream_name":"stdout","time":365.112030483,"data":"task   train     test                                                                                                                              \n"}
+,{"stream_name":"stdout","time":365.112036173,"data":"coarse Both      Danenberg           0.348        0.566                         0.570                              0.569                      0.566\n"}
+,{"stream_name":"stdout","time":365.112040641,"data":"                 Jackson             0.331        0.708                         0.703                              0.710                      0.716\n"}
+,{"stream_name":"stdout","time":365.112045082,"data":"       Danenberg Danenberg           0.347        0.568                         0.570                              0.575                      0.578\n"}
+,{"stream_name":"stdout","time":365.112049368,"data":"                 Jackson             0.310        0.506                         0.494                              0.503                      0.517\n"}
+,{"stream_name":"stdout","time":365.11205376,"data":"       Jackson   Danenberg           0.294        0.444                         0.447                              0.451                      0.446\n"}
+,{"stream_name":"stdout","time":365.112059902,"data":"                 Jackson             0.354        0.709                         0.703                              0.698                      0.713\n"}
+,{"stream_name":"stdout","time":365.112068906,"data":"fine   Danenberg Danenberg             NaN        0.343                         0.345                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":365.112072565,"data":"       Jackson   Jackson               NaN        0.293                         0.298                                NaN                        NaN\n"}
+,{"stream_name":"stdout","time":365.176422011,"data":"cell-type-graph output not mounted (or smoke run): reproduction check skipped\n"}
+,{"stream_name":"stdout","time":365.176446901,"data":"                    ilisi_median               clisi_median               ilisi_mean               clisi_mean              \n"}
+,{"stream_name":"stdout","time":365.176452304,"data":"                            mean    min    max         mean    min    max       mean    min    max       mean    min    max\n"}
+,{"stream_name":"stdout","time":365.176456277,"data":"space                                                                                                                      \n"}
+,{"stream_name":"stdout","time":365.176459974,"data":"Novae [cohort]             1.122  1.115  1.128        1.629  1.592  1.666      1.267  1.261  1.273      1.756  1.751  1.760\n"}
+,{"stream_name":"stdout","time":365.176463573,"data":"Novae [cohort]-corr        1.106  1.099  1.114        1.636  1.619  1.652      1.261  1.254  1.268      1.760  1.752  1.769\n"}
+,{"stream_name":"stdout","time":365.176467265,"data":"Novae [img]                1.717  1.711  1.723        1.818  1.801  1.835      1.669  1.664  1.674      1.848  1.829  1.868\n"}
+,{"stream_name":"stdout","time":365.176470913,"data":"Table                      1.205  1.205  1.206        1.277  1.270  1.285      1.328  1.320  1.335      1.528  1.524  1.532\n"}
+,{"stream_name":"stdout","time":365.176474461,"data":"Table + nbr                1.022  1.021  1.023        1.432  1.408  1.456      1.133  1.132  1.134      1.654  1.646  1.663\n"}
+,{"stream_name":"stdout","time":365.176477941,"data":"{\n"}
+,{"stream_name":"stdout","time":365.176481133,"data":" \"n_reps\": 1,\n"}
+,{"stream_name":"stdout","time":365.176496061,"data":" \"H_N1\": {\n"}
+,{"stream_name":"stdout","time":365.176501562,"data":"  \"claim\": false,\n"}
+,{"stream_name":"stdout","time":365.176505486,"data":"  \"transfer_pass\": {\n"}
+,{"stream_name":"stdout","time":365.176509561,"data":"   \"J-\u003eD\": false,\n"}
+,{"stream_name":"stdout","time":365.176513452,"data":"   \"D-\u003eJ\": false\n"}
+,{"stream_name":"stdout","time":365.176516896,"data":"  },\n"}
+,{"stream_name":"stdout","time":365.176520089,"data":"  \"loss_ge2_reps\": {\n"}
+,{"stream_name":"stdout","time":365.176523448,"data":"   \"J-\u003eD\": false,\n"}
+,{"stream_name":"stdout","time":365.176527029,"data":"   \"D-\u003eJ\": false,\n"}
+,{"stream_name":"stdout","time":365.176531001,"data":"   \"J-\u003eJ\": false,\n"}
+,{"stream_name":"stdout","time":365.176534992,"data":"   \"D-\u003eD\": false\n"}
+,{"stream_name":"stdout","time":365.176538764,"data":"  },\n"}
+,{"stream_name":"stdout","time":365.176541909,"data":"  \"mean_gain\": {\n"}
+,{"stream_name":"stdout","time":365.176545339,"data":"   \"J-\u003eD\": 0.0033617007684864,\n"}
+,{"stream_name":"stdout","time":365.176548611,"data":"   \"D-\u003eJ\": -0.011360909779865,\n"}
+,{"stream_name":"stdout","time":365.176552116,"data":"   \"J-\u003eJ\": -0.0052608210452893,\n"}
+,{"stream_name":"stdout","time":365.176555576,"data":"   \"D-\u003eD\": 0.0019785984361671\n"}
+,{"stream_name":"stdout","time":365.176558944,"data":"  },\n"}
+,{"stream_name":"stdout","time":365.176562002,"data":"  \"ci_lo\": {\n"}
+,{"stream_name":"stdout","time":365.176565173,"data":"   \"J-\u003eD\": [\n"}
+,{"stream_name":"stdout","time":365.176568459,"data":"    -0.000693922966138\n"}
+,{"stream_name":"stdout","time":365.176571768,"data":"   ],\n"}
+,{"stream_name":"stdout","time":365.176575491,"data":"   \"D-\u003eJ\": [\n"}
+,{"stream_name":"stdout","time":365.176578895,"data":"    -0.025542964610945\n"}
+,{"stream_name":"stdout","time":365.176582235,"data":"   ]\n"}
+,{"stream_name":"stdout","time":365.176585621,"data":"  }\n"}
+,{"stream_name":"stdout","time":365.176606229,"data":" },\n"}
+,{"stream_name":"stdout","time":365.176609705,"data":" \"H_N2\": {\n"}
+,{"stream_name":"stdout","time":365.17661422,"data":"  \"claim\": true,\n"}
+,{"stream_name":"stdout","time":365.176617825,"data":"  \"ilisi_higher_all_draws\": true,\n"}
+,{"stream_name":"stdout","time":365.176621513,"data":"  \"mean_clisi_rise\": 0.105926915216637\n"}
+,{"stream_name":"stdout","time":365.176625465,"data":" },\n"}
+,{"stream_name":"stdout","time":365.176629065,"data":" \"note\": \"H-N1 needs all 3 replicates; with fewer it is reported but cannot be claimed.\"\n"}
+,{"stream_name":"stdout","time":365.176633221,"data":"}\n"}
+,{"stream_name":"stderr","time":370.295414098,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":370.29544198,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":370.44730846,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":370.447339188,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":371.146907226,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":371.470059408,"data":"[NbConvertApp] Writing 118139 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":373.853803249,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":374.85589866,"data":"[NbConvertApp] Writing 560690 bytes to __results__.html\n"}
+]

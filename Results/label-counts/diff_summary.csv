@@ -1,0 +1,31 @@
+task,train,test,setting,arm,mean_diff,n_ci_pos,n_ci_neg,n,claim
+coarse,Danenberg,Danenberg,main,A1 pred counts,0.0018384812571264157,1,0,3,False
+coarse,Danenberg,Danenberg,main,A2 pred counts + mix,0.0013052111917097504,1,0,3,False
+coarse,Danenberg,Danenberg,main,A3 round 2,0.0018669032646205785,1,0,3,False
+coarse,Danenberg,Danenberg,revealed 20%,B revealed counts,0.007963769297389253,3,0,3,False
+coarse,Danenberg,Danenberg,revealed 5%,B revealed counts,0.002802862727927735,2,0,3,False
+coarse,Danenberg,Danenberg,revealed 50%,B revealed counts,0.01515994472711483,3,0,3,True
+coarse,Danenberg,Jackson,main,A1 pred counts,-0.005723439925139943,0,1,3,False
+coarse,Danenberg,Jackson,main,A2 pred counts + mix,-0.006832640968117569,0,2,3,False
+coarse,Danenberg,Jackson,main,A3 round 2,-0.009345831557194706,0,3,3,False
+coarse,Danenberg,Jackson,revealed 20%,B revealed counts,0.02010290274974273,3,0,3,True
+coarse,Danenberg,Jackson,revealed 5%,B revealed counts,0.0031947765180309062,2,0,3,False
+coarse,Danenberg,Jackson,revealed 50%,B revealed counts,0.04381773156169999,3,0,3,True
+coarse,Jackson,Danenberg,main,A1 pred counts,0.0022628194871512353,1,0,3,False
+coarse,Jackson,Danenberg,main,A2 pred counts + mix,0.0028966577225129444,1,0,3,False
+coarse,Jackson,Danenberg,main,A3 round 2,0.0035457760614270675,2,0,3,False
+coarse,Jackson,Danenberg,revealed 20%,B revealed counts,0.02598691567941458,3,0,3,True
+coarse,Jackson,Danenberg,revealed 5%,B revealed counts,0.005461602809206563,3,0,3,False
+coarse,Jackson,Danenberg,revealed 50%,B revealed counts,0.03944300597006467,3,0,3,True
+coarse,Jackson,Jackson,main,A1 pred counts,0.0020626108873513793,2,0,3,False
+coarse,Jackson,Jackson,main,A2 pred counts + mix,0.001941431802919465,1,0,3,False
+coarse,Jackson,Jackson,main,A3 round 2,0.0027891101288690288,2,0,3,False
+coarse,Jackson,Jackson,revealed 20%,B revealed counts,0.012972835282381209,3,0,3,True
+coarse,Jackson,Jackson,revealed 5%,B revealed counts,0.004745329279038961,3,0,3,False
+coarse,Jackson,Jackson,revealed 50%,B revealed counts,0.0272143793946585,3,0,3,True
+fine,Danenberg,Danenberg,main,A1 pred counts,0.002097331111966416,0,0,3,False
+fine,Danenberg,Danenberg,main,A2 pred counts + mix,0.0021777954395632015,0,0,3,False
+fine,Danenberg,Danenberg,revealed 20%,B revealed counts,0.07109445550147904,3,0,3,True
+fine,Jackson,Jackson,main,A1 pred counts,0.0023706432577133376,1,0,3,False
+fine,Jackson,Jackson,main,A2 pred counts + mix,0.0023151884117718438,0,0,3,False
+fine,Jackson,Jackson,revealed 20%,B revealed counts,0.14873468788349586,3,0,3,True

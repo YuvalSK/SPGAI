@@ -1,0 +1,20 @@
+rep,task,train,model,n_train,seconds
+1,coarse,Jackson,Table + nbr,300000,76.86581444740295
+1,coarse,Jackson,Novae [cohort],300000,70.04057240486145
+1,coarse,Jackson,Table + nbr + Novae [cohort],300000,113.96727228164673
+1,coarse,Jackson,Table + nbr + Novae [cohort]-corr,300000,117.25339269638062
+1,coarse,Jackson,Table + nbr + Novae [img],300000,120.51412653923035
+1,coarse,Danenberg,Table + nbr,300000,85.1009407043457
+1,coarse,Danenberg,Novae [cohort],300000,72.15079283714294
+1,coarse,Danenberg,Table + nbr + Novae [cohort],300000,124.89511394500732
+1,coarse,Danenberg,Table + nbr + Novae [cohort]-corr,300000,124.7522382736206
+1,coarse,Danenberg,Table + nbr + Novae [img],300000,127.57571911811829
+1,coarse,Both,Table + nbr,600000,137.81567406654358
+1,coarse,Both,Novae [cohort],600000,111.15380811691284
+1,coarse,Both,Table + nbr + Novae [cohort],600000,213.8993022441864
+1,coarse,Both,Table + nbr + Novae [cohort]-corr,600000,212.382648229599
+1,coarse,Both,Table + nbr + Novae [img],600000,212.70922660827637
+1,fine,Danenberg,Table + nbr,300000,353.70750856399536
+1,fine,Danenberg,Table + nbr + Novae [cohort],300000,561.2680559158325
+1,fine,Jackson,Table + nbr,300000,298.3577160835266
+1,fine,Jackson,Table + nbr + Novae [cohort],300000,467.4640564918518
